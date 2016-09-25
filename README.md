@@ -20,7 +20,8 @@ A retro dark theme for [Hugo](https://gohugo.io/).
 - Related posts feature guides users to similar content
 - Configurable [menu system](https://gohugo.io/extras/menus/) for global site navigation
 - Simple list pagination with page indicators
-- Custom archetypes, meta descriptions and rel meta for SEO control
+- Custom page meta descriptions and rel meta for SEO control
+- Site verification with Google, Bing and Yandex
 - Default 404 page with engaging MP4 background video
 - Full site keyboard accessibility
 - No JavaScript for predictable use on terminal-based browsers
@@ -57,6 +58,11 @@ SectionPagesMenu = "main" # Enable menu system for lazy bloggers
   author = "" # Optional, controls author name display on posts
   show_menu = false # Optional, set false to disable menu entirely
   powered_by = true # Optional, set false to disable theme credits
+
+  [params.seo]
+    google_verify = "" # Optional, Google verification code
+    bing_verify = "" # Optional, Bing verification code
+    yandex_verify = "" # Optional, Yandex verification code
 ```
 
 Configure menu in `config.toml` if desired:
