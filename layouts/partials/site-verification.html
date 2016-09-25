@@ -1,0 +1,9 @@
+{{ if .Site.Params.seo.google_verify }}
+  <meta name="google-site-verification" content="{{ .Site.Params.seo.google_verify }}" />
+{{ end }}
+{{ if .Site.Params.seo.bing_verify }}
+  <meta name="msvalidate.01" content="{{ .Site.Params.seo.bing_verify }}">
+{{ end }}
+{{ if .Site.Params.seo.yandex_verify }}
+  <meta name="yandex-verification" content="{{ .Site.Params.seo.yandex_verify }}">
+{{ end }}
