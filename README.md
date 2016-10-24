@@ -7,6 +7,10 @@ A retro dark theme for [Hugo](https://gohugo.io/).
 > Simplicity is the ultimate sophistication<br>
 > --- Leonardo da Vinci
 
+## Demo
+
+For a production example of this theme running on AWS please check out [Hack Cabin](http://hackcabin.com). There you can read more about the overall [site architecture](http://hackcabin.com/post/initial-commit/) as well.
+
 ## Features
 
 - Dark theme intended for low-light reading
