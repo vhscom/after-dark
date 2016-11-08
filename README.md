@@ -9,7 +9,7 @@ A retro dark theme for [Hugo](https://gohugo.io/).
 
 ## Demo
 
-For a production example of this theme running on AWS please check out [Hack Cabin](http://hackcabin.com). There you can read more about the overall [site architecture](http://hackcabin.com/post/initial-commit/) as well.
+Head to [Hack Cabin](http://hackcabin.com) for a production example running on AWS. There you can learn how After Dark is used within the Hack Cabin [site architecture](http://hackcabin.com/post/initial-commit/) as well.
 
 ## Features
 
