@@ -100,6 +100,22 @@ If an update is available consider taking the automatic update, but keep the ver
 
 Once the vendor file is updated pop open your favorite dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations. Make any tweaks necessary to the `hack.css` style overrides indicated in `critical-custom.css.html`.
 
+## CSS Customization
+
+If you want to customize the css rules without touching the default css theme files, create a `custom.css.html` file in `layouts/partials` based at the root directory.
+In the `custom.css.html`file, create a `<style media="screen"></style>` element and put your css customizations into. 
+
+Example:
+
+```css
+<style media="screen">
+  /* personal enhancements */
+  .dark {
+    color: #b2df82;
+  }
+</style>
+```
+
 ## Contributing
 
 Issues have been disabled for this repo. If you feel passionate something needs to be changed please feel free to submit a pull with your suggested changes.
