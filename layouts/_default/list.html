@@ -2,12 +2,14 @@
   {{ partial "menu" . }}
 {{ end }}
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
   {{ range .Data.Pages }}
-    <article>
+    <section>
       <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
       <p>{{ .Summary }}</p>
-    </article>
+    </section>
   {{ end }}
 {{ end }}
 {{ define "footer" }}

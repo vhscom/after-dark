@@ -1,16 +1,28 @@
 {{ define "title" -}}
-  {{ .Title }} &ndash; {{ .Site.Title }}
+  {{ .Title }} | {{ .Site.Title }}
 {{- end }}
 {{ define "header" }}
   {{ partial "menu" . }}
 {{ end }}
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+  <article itemscope itemtype="http://schema.org/BlogPosting">
+    {{ template "_internal/schema.html" . }}
+    <header>
+      <h1 itemprop="headline">{{ .Title }}</h1>
+    </header>
+    <div itemprop="articleBody">
+      {{ .Content }}
+    </div>
+    <article>
+      {{ template "_internal/disqus.html" . }}
+    </article>
+    <footer>
+      <hr>
+      {{ partial "post/byline" . }}
+      {{ partial "post/related-posts" . }}
+    </footer>
+  </article>
 {{ end }}
 {{ define "footer" }}
-  <hr>
-  {{ partial "post/byline" . }}
-  {{ partial "post/related-posts" . }}
   {{ partial "powered-by" . }}
 {{ end }}

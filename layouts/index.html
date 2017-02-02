@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Site.Title }}</title>
     <meta name="description" content="{{ .Site.Params.description }}">
+    {{ partial "meta/name-author" . }}
+    {{ template "_internal/schema.html" . }}
+    {{ template "_internal/opengraph.html" . }}
+    {{ partial "meta/ogimage-maybe" . }}
     {{ partial "site-verification" . }}
     {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
@@ -20,7 +24,9 @@
       {{ partial "menu" . }}
     </header>
     <main>
-      <h1>{{ .Title }}</h1>
+      <header>
+        <h1>{{ .Title }}</h1>
+      </header>
       {{ range (.Paginate (where .Data.Pages "Type" "post")).Pages }}
         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         <p>{{ .Summary }}</p>
