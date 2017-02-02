@@ -1,15 +1,17 @@
 <p>
   Published
-  {{ with .Site.Params.author }}
-    by {{ . }}
+  {{ if isset .Params "author" }}
+    by <span itemprop="author">{{ index .Params "author" }}</span>
+  {{ else }}
+    by <span itemprop="author">{{ .Site.Params.author }}</span>
   {{ end }}
   on <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date.Format "2 Jan, 2006" }}</time>
   {{ with .Params.categories }}
-    in {{ delimit (apply (apply (sort .) "partial" "post/category-link" ".") "chomp" ".") ", " " and "}}
+    in <span itemprop="articleSection">{{ delimit (apply (apply (sort .) "partial" "post/category-link" ".") "chomp" ".") ", " " and "}}</span>
   {{ end }}
   {{ with .Params.tags }}
     and tagged {{ delimit (apply (apply (sort .) "partial" "post/tag-link" ".") "chomp" ".") ", " " and " }}
   {{ end }}
-  using {{ .WordCount }} words
-  for a {{ .ReadingTime }} minute read.
+  using <span itemprop="wordCount">{{ .WordCount }}</span> words
+  for a <span itemprop="timeRequired" content="PT{{ .ReadingTime }}M">{{ .ReadingTime }} minute</span> read.
 </p>

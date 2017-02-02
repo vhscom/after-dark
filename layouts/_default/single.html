@@ -1,11 +1,13 @@
 {{ define "title" -}}
-  {{ .Title }} &ndash; {{ .Site.Title }}
+  {{ .Title }} | {{ .Site.Title }}
 {{- end }}
 {{ define "header" }}
   {{ partial "menu" . }}
 {{ end }}
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
   {{ .Content }}
 {{ end }}
 {{ define "footer" }}
