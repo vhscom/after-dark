@@ -2,7 +2,9 @@
   {{ partial "menu" . }}
 {{ end }}
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
   <ul>
     {{ range $key, $value := .Data.Terms }}
       <li><a href="{{ $key | urlize }}">{{ $key }}</a> {{ len $value }}

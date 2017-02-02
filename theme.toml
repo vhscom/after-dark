@@ -90,7 +90,9 @@ min_version = 0.16
 # X Check out the menu stuff in "creating a new theme md"
 # X Confirm RSS is working as expected
 # X Confirm list template works
-# - create archives page (grouped by date)
+# - create archives page (grouped by date or keyword)
+# X Add custom post author support
+# - Add multi-author support
 # X test <!--more--> verify not wraping p in a p (update, index.html, terms, list)
 # X get them Tags and Categories displaying on posts ONLY
 # X prevent pages from showing up with posts on the homepage

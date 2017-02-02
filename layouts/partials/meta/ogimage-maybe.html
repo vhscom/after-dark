@@ -1,0 +1,13 @@
+<!-- {{/*
+  Hack to allow generic site image for Nodes until supported
+  by the Hugo internal opengraph template.
+*/}}-->
+{{ if .IsNode }}
+  <meta property="og:image" content="{{ index .Site.Params.images 0 }}">
+{{ end }}
+<!-- {{/*
+  Fallback to site image if not overriden at Page level
+*/}}-->
+{{ if and (.IsPage) (not .Params.images) }}
+  <meta property="og:image" content="{{ index .Site.Params.images 0 }}">
+{{ end }}
