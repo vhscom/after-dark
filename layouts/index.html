@@ -28,8 +28,13 @@
         <h1>{{ .Title }}</h1>
       </header>
       {{ range (.Paginate (where .Data.Pages "Type" "post")).Pages }}
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <p>{{ .Summary }}</p>
+        <article itemscope itemtype="http://schema.org/CreativeWork">
+          <h2 itemprop="headline"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          <div itemprop="hasPart">{{ .Summary }}</div>
+          {{ if .Truncated }}
+            <p><a href="{{ .RelPermalink }}">Read More&nbsp;&raquo;</a></p>
+          {{ end }}
+        </article>
       {{ end }}
     </main>
     <footer>
