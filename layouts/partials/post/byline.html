@@ -5,7 +5,7 @@
   {{ else }}
     by <span itemprop="author">{{ .Site.Params.author }}</span>
   {{ end }}
-  on <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date.Format "2 Jan, 2006" }}</time>
+  on <time datetime="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" }}">{{ .PublishDate.Format "2 Jan, 2006" }}</time>
   {{ with .Params.categories }}
     in <span itemprop="articleSection">{{ delimit (apply (apply (sort .) "partial" "post/category-link" ".") "chomp" ".") ", " " and "}}</span>
   {{ end }}
