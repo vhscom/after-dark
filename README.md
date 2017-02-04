@@ -156,7 +156,7 @@ Example customization file:
 </style>
 ```
 
-Your customizations will automatically be added to generated pages, inline in the document `HEAD`. Thanks to @rsommerard for making the suggestion.
+Your customizations will automatically be added to generated pages, inline in the document `HEAD`. Thanks to [@rsommerard](https://github.com/rsommerard) for making the suggestion.
 
 ## Upgrading hack.css
 
