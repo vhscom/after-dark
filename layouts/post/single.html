@@ -9,6 +9,7 @@
     {{ template "_internal/schema.html" . }}
     <header>
       <h1 itemprop="headline">{{ .Title }}</h1>
+      <span class="muted">{{ partial "post/meta" . }}</span>
     </header>
     <blockquote>{{ .Description }}</blockquote>
     {{ if not .Params.notoc }}
