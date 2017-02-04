@@ -15,7 +15,7 @@ Head to [Hack Cabin](http://hackcabin.com) for a production example running on A
 
 - Dark theme intended for low-light reading
 - Entire page served in a single HTTP request (including favicon)
-- Grid layouts and more using [hack.css](http://hackcss.com)
+- Customizable grid layouts and more using [hack.css](http://hackcss.com)
 - Responsive typography optimized for mobile, tablet and desktop
 - Gentle content fade-in using CSS keyframe animation
 - [Schema.org Structured Data](https://moz.com/learn/seo/schema-structured-data) for site nav and posts
@@ -26,10 +26,10 @@ Head to [Hack Cabin](http://hackcabin.com) for a production example running on A
 - Rich post bylines including links to category and tag taxonomy listings, author, word count and reading time
 - [Block Templates](https://gohugo.io/templates/blocks/) for foolproof layouts
 - Extensible [taxonomy terms template](https://gohugo.io/templates/terms)
-- Related posts feature guides users to similar content
+- Related posts feature to guide readers to similar content
 - Configurable [Section Menu](#section-menu) for global site navigation
-- [Customizable CSS](#customizing-css)
 - Simple list pagination with page indicators
+- Configurable post Table of Contents using the [`details` element](http://devdocs.io/html/element/details)
 - Custom page meta descriptions and rel meta
 - Site verification with Google, Bing and Yandex
 - Default 404 page with MP4 background video
