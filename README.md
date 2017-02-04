@@ -23,7 +23,8 @@ Head to [Hack Cabin](http://hackcabin.com) for a production example running on A
 - Facebook share author name attribution using `meta name="author"`
 - Google Analytics using the [internal async template](https://gohugo.io/extras/analytics)
 - Post comments with [Disqus](https://disqus.com/) using the [internal template](https://gohugo.io/extras/comments)
-- Rich post bylines including links to category and tag taxonomy listings, author, word count and reading time
+- Post reading time and update notice set user expectations
+- Rich post bylines including links to category and tag taxonomy listings, author and word count
 - [Block Templates](https://gohugo.io/templates/blocks/) for foolproof layouts
 - Extensible [taxonomy terms template](https://gohugo.io/templates/terms)
 - Related posts feature to guide readers to similar content
