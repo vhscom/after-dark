@@ -7,7 +7,7 @@
   </header>
   <ul>
     {{ range $key, $value := .Data.Terms }}
-      <li><a href="{{ $key | urlize }}">{{ $key }}</a> {{ len $value }}
+      <li><a href="{{ $key | urlize }}">{{ $key }}</a> ({{ len $value }})
     {{ end }}
   </ul>
 {{ end }}
