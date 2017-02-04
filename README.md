@@ -1,8 +1,8 @@
 # After Dark
 
-A retro dark theme for [Hugo](https://gohugo.io/).
+A retro dark theme for the [Hugo](https://gohugo.io/) static site generator.
 
-![Theme screenshot](https://cloud.githubusercontent.com/assets/440298/18599964/ae2ea6de-7c20-11e6-889c-db5ca4afef67.png)
+![After Dark for Hugo theme screenshot](https://cloud.githubusercontent.com/assets/440298/22617041/a7a9491a-eaf5-11e6-9acd-15da80cb9e71.png)
 
 > Simplicity is the ultimate sophistication<br>
 > --- Leonardo da Vinci
