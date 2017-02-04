@@ -14,7 +14,7 @@ Head to [Hack Cabin](http://hackcabin.com) for a production example running on A
 ## Features
 
 - Dark theme intended for low-light reading
-- Entire page served in a single HTTP request (including favicon)
+- Entire page served in a single HTTP request
 - Grid layouts and more using [hack.css](hackcss.com)
 - Responsive typography optimized for mobile, tablet and desktop
 - Gentle content fade-in using CSS keyframe animation
@@ -27,17 +27,16 @@ Head to [Hack Cabin](http://hackcabin.com) for a production example running on A
 - [Block Templates](https://gohugo.io/templates/blocks/) for foolproof layouts
 - Extensible [taxonomy terms template](https://gohugo.io/templates/terms)
 - Related posts feature guides users to similar content
-- Configurable [menu system](https://gohugo.io/extras/menus/) for global site navigation
+- Configurable [Section Menu](#section-menu) for global site navigation
+- [Customizable CSS](#customizing-css)
 - Simple list pagination with page indicators
-- Custom page meta descriptions and rel meta for SEO control
+- Custom page meta descriptions and rel meta
 - Site verification with Google, Bing and Yandex
 - Default 404 page with MP4 background video
 - Full site keyboard accessibility
 - No JavaScript required unless Analytics or Disqus enabled
 
 ## Getting started
-
-[Install Hugo](https://gohugo.io/#action) and create a new site:
 
 ```shell
 brew update && brew install hugo
@@ -57,7 +56,7 @@ Copy the custom archetypes to your site:
 cp themes/after-dark/archetypes/* archetypes
 ```
 
-And include the following in your site's `config.toml`:
+Include settings in your site's `config.toml`:
 
 ```toml
 baseurl = "https://c74ce35e.ngrok.io" # Controls base URL
@@ -82,7 +81,11 @@ SectionPagesMenu = "main" # Enable menu system for lazy bloggers
     yandex_verify = "" # Optional, Yandex verification code
 ```
 
-Configure menu in `config.toml` if desired:
+## Section Menu
+
+Theme uses [Section Menu for Lazy Bloggers](https://gohugo.io/extras/menus/#section-menu-for-the-lazy-blogger) to produce global site navigation, if enabled.
+
+To customize the menu, update the settings in `config.toml` like:
 
 ```toml
 [menu]
@@ -98,7 +101,7 @@ Configure menu in `config.toml` if desired:
     url = "/post/"
 ```
 
-Or add pages to the menu using front matter:
+Or update the menu using front matter from your pages:
 
 ```toml
 menu = "main"
@@ -136,13 +139,32 @@ Test how things are looking during development using a combination of the [Faceb
 
 **Gotcha:** Relative source URLs are not currently permitted.
 
+## Customizing CSS
+
+To customize CSS without having to tamper with theme files do the following:
+
+1. Create a `critical-custom.css.html` in your site's `layouts/partials directory`.
+2. Add your customizations inside a `<style media="screen"></style>` element.
+
+Example customization file:
+
+```html
+<style media="screen">
+  .hack ul li {
+    margin: 0;
+  }
+</style>
+```
+
+Your customizations will automatically be added to generated pages, inline in the document `HEAD`. Thanks to @rsommerard for making the suggestion.
+
 ## Upgrading hack.css
 
 The specific version of [`hack.css`](hackcss.com) used is _pinned_ in the `package.json` dependency manifest. To check for updates do an `npm i` and run `npm run ncu`.
 
 If an update is available consider taking the automatic update, but keep the version pinned in the manifest. Once the new `hack` dependency version is pulled down to the `node_modules` directory, copy the contents of `hack.css` and `dark.css` into the `critical-vendor.css.html` file.
 
-Once the vendor file is updated pop open your favorite dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations. Make any tweaks necessary to the `hack.css` style overrides indicated in `critical-custom.css.html`.
+Once the vendor file is updated pop open your favorite dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations. Make any tweaks necessary to the `hack.css` style overrides indicated in `critical-theme.css.html`. And finally adjust any [Customized CSS](#customizing-css).
 
 ## Contributing
 
