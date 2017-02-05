@@ -29,7 +29,7 @@
         <h1>{{ .Title }}</h1>
       </header>
       {{ range (.Paginate (where .Data.Pages "Type" "post")).Pages }}
-        {{ partial "work-summary" . }}
+        {{ partial "page-summary" . }}
       {{ end }}
     </main>
     <footer>
