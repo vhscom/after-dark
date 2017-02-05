@@ -4,10 +4,12 @@
       <a href="{{ .Permalink }}">{{ .Title }}</a>
     </h2>
     {{ if eq .Type "post" }}
-      <span class="muted">{{ partial "post/meta" . }}</span>
+      <p class="muted">{{ partial "post/meta" . }}</p>
     {{ end }}
   </header>
-  <blockquote itemprop="description">{{ .Description }}</blockquote>
+  {{ if .Description }}
+    <blockquote itemprop="description">{{ .Description }}</blockquote>
+  {{ end }}
   {{ .Summary }}
   {{ if .Truncated }}
     <p><a itemprop="url" href="{{ .RelPermalink }}">Read More&nbsp;&raquo;</a></p>
