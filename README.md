@@ -30,9 +30,9 @@ Head to [Hack Cabin](http://hackcabin.com) for a production example running on A
 - Related posts feature to guide readers to similar content
 - Configurable [Section Menu](#section-menu) for global site navigation
 - Simple list pagination with page indicators
-- Configurable post Table of Contents using the [`details` element](http://devdocs.io/html/element/details)
-- Custom page meta descriptions and rel meta
+- Optional [Table of Contents for posts](#using-the-table-of-contents)
 - Site verification with Google, Bing and Yandex
+- Custom page meta descriptions and links for [improved SEO and UX](#improving-seo-and-ux)
 - Default 404 page with MP4 background video
 - Full site keyboard accessibility
 - No JavaScript required unless Analytics or Disqus enabled
@@ -64,6 +64,7 @@ baseurl = "https://c74ce35e.ngrok.io" # Controls base URL
 languageCode = "en-US" # Controls html lang attribute
 title = "After Dark" # Homepage title and page title suffix
 paginate = 5 # Number of posts to show before paginating
+images = [] # Optional, adds a default OpenGraph image
 
 enableRobotsTXT = true # Suggested, enable robots.txt file
 googleAnalytics = "" # Optional, add tracking Id for analytics
@@ -71,7 +72,7 @@ disqusShortname = "" # Optional, add Disqus shortname for comments
 SectionPagesMenu = "main" # Enable menu system for lazy bloggers
 
 [params]
-  description = "" # Suggested, controls homepage description meta
+  description = "" # Suggested, controls default description meta
   author = "" # Optional, controls author name display on posts
   show_menu = false # Optional, set false to disable menu entirely
   powered_by = true # Optional, set false to disable credits
@@ -139,6 +140,34 @@ images = [
 Test how things are looking during development using a combination of the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) and [ngrok](https://ngrok.com/).
 
 **Gotcha:** Relative source URLs are not currently permitted.
+
+## Improving SEO and UX
+
+Aside from OpenGraph and microformats After Dark uses long-standing markup concepts. Learn to use them to improve your site's SEO and usability.
+
+### Using Custom Descriptions
+
+To help your content stand out in SERPs and enable users to [quickly grok the subject matter](https://moz.com/learn/seo/meta-description) add a `description` to the front matter of your post or page:
+
+```toml
+description = Become a Digital Nomad in Bali: The Lost Guide
+```
+
+Descriptions will also be used to accent the content summaries After Dark displays in lists when the site is generated. If no custom description is provided After Dark will fallback to the description provided in `config.toml`.
+
+### Using Link Types
+
+For related content split across multiple pages in a sequence After Dark supports use of `prev` and `next` settings in your front matter. Learn more about [link types](http://devdocs.io/html/link_types).
+
+## Using the Table of Contents
+
+For longer posts its possible to automatically generate a Table of Contents. The feature uses the HTML5 [`details` element](http://devdocs.io/html/element/details) and is opt-in on a per post basis. To add a Table of Contents to a post set the following in the post front matter:
+
+```toml
+toc = true
+```
+
+To hide the Table of Contents set `toc = false` or simply remove the setting from the post front matter.
 
 ## Customizing CSS
 

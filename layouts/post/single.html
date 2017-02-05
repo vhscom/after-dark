@@ -9,10 +9,12 @@
     {{ template "_internal/schema.html" . }}
     <header>
       <h1 itemprop="headline">{{ .Title }}</h1>
-      <span class="muted">{{ partial "post/meta" . }}</span>
+      <p class="muted">{{ partial "post/meta" . }}</p>
     </header>
-    <blockquote>{{ .Description }}</blockquote>
-    {{ if not .Params.notoc }}
+    {{ if .Description }}
+      <blockquote itemprop="description">{{ .Description }}</blockquote>
+    {{ end }}
+    {{ if and (isset .Params "toc") .Params.toc  }}
       <details>
         <summary>Table of Contents</summary>
         {{ .TableOfContents }}
