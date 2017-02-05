@@ -6,7 +6,7 @@
     <h1>{{ .Title }}</h1>
   </header>
   {{ range .Data.Pages }}
-    {{ partial "work-summary" . }}
+    {{ partial "page-summary" . }}
   {{ end }}
 {{ end }}
 {{ define "footer" }}
