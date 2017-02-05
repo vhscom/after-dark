@@ -86,6 +86,7 @@ min_version = 0.16
 
 ######
 # TODO:
+# - Add noindex meta for pages to not crawl (or custom robots.txt)
 # X Similar posts feature - https://gohugo.io/templates/functions/
 # X Check out the menu stuff in "creating a new theme md"
 # X Confirm RSS is working as expected
