@@ -150,10 +150,14 @@ Aside from OpenGraph and microformats After Dark uses long-standing markup conce
 To help your content stand out in SERPs and enable users to [quickly grok the subject matter](https://moz.com/learn/seo/meta-description) add a `description` to the front matter of your post or page:
 
 ```toml
-description = Become a Digital Nomad in Bali: The Lost Guide
+description = "Become a Digital Nomad in Bali: The Lost Guide"
 ```
 
 Descriptions will also be used to accent the content summaries After Dark displays in lists when the site is generated. If no custom description is provided After Dark will fallback to the description provided in `config.toml`.
+
+### Setting Last Modified
+
+Let your readers and search engines know when posts were last modified. To do so add `publishdate` to your page front matter and update `date` anytime you make an update to a post. Updates will be made visible to readers and search engines alike using call-outs on the page, Schema Structured Data and via the `lastmod` setting your `sitemap.xml` file.
 
 ### Using Link Types
 
