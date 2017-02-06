@@ -25,12 +25,12 @@ features = [
   "Responsive Design",
   "Flexbox Layouts"
   "Google Analytics",
-  "Disqus Commenting"
+  "Disqus Commenting",
   "OpenGraph support",
   "Schema Structured Data",
   "Paginated Lists",
   "Reading Time",
-  "Last Modified time"
+  "Last Modified time",
   "Author Byline",
   "Word Count",
   "Related Posts",
