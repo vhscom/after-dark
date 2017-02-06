@@ -199,3 +199,7 @@ The specific version of [`hack.css`](hackcss.com) used is _pinned_ in the `packa
 If an update is available consider taking the automatic update, but keep the version pinned in the manifest. Once the new `hack` dependency version is pulled down to the `node_modules` directory, copy the contents of `hack.css` and `dark.css` into the `critical-vendor.css.html` file.
 
 Once the vendor file is updated pop open your favorite dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations. Make any tweaks necessary to the `hack.css` style overrides indicated in `critical-theme.css.html`. And finally adjust any [Customized CSS](#customizing-css).
+
+## Contributing
+
+Issues have been disabled for this repo. If you feel passionate something needs to be changed please feel free to submit a pull with your suggested changes.
