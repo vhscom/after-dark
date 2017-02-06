@@ -23,7 +23,7 @@ tags = [
 features = [
   "Mobile-first Design",
   "Responsive Design",
-  "Flexbox Layouts"
+  "Flexbox Layouts",
   "Google Analytics",
   "Disqus Commenting",
   "OpenGraph support",
