@@ -15,14 +15,13 @@ Head to [Hack Cabin](http://hackcabin.com) for a production example running on A
 
 - Dark theme intended for low-light reading
 - Entire page served in a single HTTP request (including favicon)
-- Customizable grid layouts and more using [hack.css](http://hackcss.com)
 - Responsive typography optimized for mobile, tablet and desktop
-- Gentle content fade-in using CSS keyframe animation
-- [Schema.org Structured Data](https://moz.com/learn/seo/schema-structured-data) for site nav and posts
-- OpenGraph tags using the *undocumented* [internal template](https://github.com/spf13/hugo/blob/95ad3ad2fa3e6f4514166b47b77f051d280c16e9/tpl/template_embedded.go#L161-L204)
-- Facebook share author name attribution using `meta name="author"`
+- SEO-optimized using OpenGraph, [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and Meta tags
 - Google Analytics using the [internal async template](https://gohugo.io/extras/analytics)
 - Post comments with [Disqus](https://disqus.com/) using the [internal template](https://gohugo.io/extras/comments)
+- Facebook share author name attribution using `meta name="author"`
+- Gentle content fade-in using CSS keyframe animation
+- Customizable grid layouts and more using [hack.css](http://hackcss.com)
 - Post reading time and update notice set user expectations
 - Rich post bylines including links to category and tag taxonomy listings, author and word count
 - [Block Templates](https://gohugo.io/templates/blocks/) for foolproof layouts
@@ -32,7 +31,6 @@ Head to [Hack Cabin](http://hackcabin.com) for a production example running on A
 - Simple list pagination with page indicators
 - Optional [Table of Contents for posts](#using-the-table-of-contents)
 - Site verification with Google, Bing and Yandex
-- Custom page meta descriptions and links for [improved SEO and UX](#improving-seo-and-ux)
 - Default 404 page with MP4 background video
 - Full site keyboard accessibility
 - No JavaScript required unless Analytics or Disqus enabled
@@ -112,7 +110,7 @@ weight = 3
 
 ## Using OpenGraph
 
-To use OpenGraph to achieve rich sharing cards for Facebook, as shown here:
+After Dark leverages OpenGraph tags using the *undocumented* [internal template](https://github.com/spf13/hugo/blob/95ad3ad2fa3e6f4514166b47b77f051d280c16e9/tpl/template_embedded.go#L161-L204) to achieve rich sharing cards for Facebook and other social networks, as shown here:
 
 ![OpenGraph image with author attribution](https://cloud.githubusercontent.com/assets/440298/22554715/156ba7f0-e99c-11e6-9d5b-14f0ac4fe496.png)
 
@@ -139,13 +137,15 @@ images = [
 
 Test how things are looking during development using a combination of the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) and [ngrok](https://ngrok.com/).
 
-**Gotcha:** Relative source URLs are not currently permitted.
+**Gotcha:** Relative source URLs not currently supported.
 
 ## Improving SEO and UX
 
-Aside from OpenGraph and microformats After Dark uses long-standing markup concepts. Learn to use them to improve your site's SEO and usability.
+After Dark is built with SEO in mind. Aside from OpenGraph, Schema Structured Data and SEO meta is applied to give robots what they want, automatically, without any user configuration necessary. This helps ensure your After Dark site will rank well in Search Engine Results Pages (SERPs) and prevent crawlers from indexing of unwanted content.
 
-### Using Custom Descriptions
+To fine-tune your SEO, however, the following options are available, all of which are recommended for optimal user experience within search engines.
+
+### Custom Meta Descriptions
 
 To help your content stand out in SERPs and enable users to [quickly grok the subject matter](https://moz.com/learn/seo/meta-description) add a `description` to the front matter of your post or page:
 
@@ -155,13 +155,53 @@ description = "Become a Digital Nomad in Bali: The Lost Guide"
 
 Descriptions will also be used to accent the content summaries After Dark displays in lists when the site is generated. If no custom description is provided After Dark will fallback to the description provided in `config.toml`.
 
-### Setting Last Modified
+### Specifying Publish Dates
 
-Let your readers and search engines know when posts were last modified. To do so add `publishdate` to your page front matter and update `date` anytime you make an update to a post. Updates will be made visible to readers and search engines alike using call-outs on the page, Schema Structured Data and via the `lastmod` setting your `sitemap.xml` file.
+Let user agents know when posts were last modified. To do so add `publishdate` to your page front matter and update `date` anytime you make an update to a post. Updates will be made visible to readers and search engines alike using visible callouts, Schema Structured Data and via the `lastmod` setting your `sitemap.xml` file.
 
 ### Using Link Types
 
 For related content split across multiple pages in a sequence After Dark supports use of `prev` and `next` settings in your front matter. Learn more about [link types](http://devdocs.io/html/link_types).
+
+### Blocking Search Indexing
+
+Just because a page appears in your `sitemap.xml` does not mean you want it to appear in a SERP. Examples of pages which will appear in your `sitemap.xml` that you typically do not want indexed by crawlers include error pages, search pages, legal pages, and pages that simply list summaries of other pages.
+
+Though it possible to block search indexing from a `robots.txt` file, After Dark makes it possible to block page indexing using `meta` tags. By default the following page types will be blocked:
+
+- Section Pages (e.g. Posts)
+- Taxonomy Pages (e.g. Category and Tag listings)
+- Taxonomy Terms Pages (e.g. Pages listing taxonomies)
+
+If you do not like this behavior you may override the defaults by setting `params.noindex_kinds` in your site's `config.toml`, e.g.
+
+```
+noindex_kinds = [
+  "section",
+  "taxonomy",
+  "taxonomyTerm"
+]
+```
+
+To block individual pages from being indexed in search simply add `nofollow` to your page's front matter and set the value to `true`, like:
+
+```toml
+noindex = true
+```
+
+And, finally, if you're using Hugo `v0.18` or better, you can also add an `_index.md` file with the `noindex` front matter to control indexing for a specific section:
+
+```shell
+├── content
+│   ├── modules
+│   │   ├── starry-night.md
+│   │   └── flying-toilets.md
+│   └── news
+│       ├── _index.md
+│       └── return-flying-toasters.md
+```
+
+Read more about how to [block search indexing with meta tags](https://support.google.com/webmasters/answer/93710).
 
 ## Using the Table of Contents
 
