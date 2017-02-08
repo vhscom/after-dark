@@ -37,7 +37,7 @@ Head to [Hack Cabin](http://hackcabin.com) for a production example running on A
 ## Getting started
 
 ```shell
-brew update && brew install hugo
+brew install hugo
 hugo new site flying-toasters && cd $_
 ```
 
@@ -166,7 +166,7 @@ For related content split across multiple pages in a sequence After Dark support
 
 Just because a page appears in your `sitemap.xml` does not mean you want it to appear in a SERP. Examples of pages which will appear in your `sitemap.xml` that you typically do not want indexed by crawlers include error pages, search pages, legal pages, and pages that simply list summaries of other pages.
 
-Though it possible to block search indexing from a `robots.txt` file, After Dark makes it possible to block page indexing using `meta` tags. By default the following page types will be blocked:
+Though it's possible to block search indexing from a `robots.txt` file, After Dark makes it possible to block page indexing using Hugo configuration as well. By default the following page types will be blocked:
 
 - Section Pages (e.g. Posts)
 - Taxonomy Pages (e.g. Category and Tag listings)
@@ -182,25 +182,25 @@ noindex_kinds = [
 ]
 ```
 
-To block individual pages from being indexed in search simply add `nofollow` to your page's front matter and set the value to `true`, like:
+To block individual pages from being indexed simply add `nofollow` to your page's front matter and set the value to `true`, like:
 
 ```toml
 noindex = true
 ```
 
-And, finally, if you're using Hugo `v0.18` or better, you can also add an `_index.md` file with the `noindex` front matter to control indexing for a specific section:
+And, finally, if you're using Hugo `v0.18` or better, you can also add an `_index.md` file with the `noindex` front matter to control indexing for specific sections:
 
 ```shell
 ├── content
-│   ├── modules
-│   │   ├── starry-night.md
-│   │   └── flying-toilets.md
-│   └── news
-│       ├── _index.md
-│       └── return-flying-toasters.md
+│   ├── modules
+│   │   ├── starry-night.md
+│   │   └── flying-toilets.md
+│   └── news
+│       ├── _index.md
+│       └── return-flying-toasters.md
 ```
 
-Read more about how to [block search indexing with meta tags](https://support.google.com/webmasters/answer/93710).
+To learn more about how this works, read [block search indexing with meta tags](https://support.google.com/webmasters/answer/93710).
 
 ## Using the Table of Contents
 
