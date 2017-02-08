@@ -168,7 +168,7 @@ Just because a page appears in your `sitemap.xml` does not mean you want it to a
 
 Though it's possible to block search indexing from a `robots.txt` file, After Dark makes it possible to block page indexing using Hugo configuration as well. By default the following page types will be blocked:
 
-- Section Pages (e.g. Posts)
+- Section Pages (e.g. Post listings)
 - Taxonomy Pages (e.g. Category and Tag listings)
 - Taxonomy Terms Pages (e.g. Pages listing taxonomies)
 
