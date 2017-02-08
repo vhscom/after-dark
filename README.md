@@ -19,7 +19,6 @@ Head to [Hack Cabin](http://hackcabin.com) for a production example running on A
 - SEO-optimized using OpenGraph, [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and Meta tags
 - Google Analytics using the [internal async template](https://gohugo.io/extras/analytics)
 - Post comments with [Disqus](https://disqus.com/) using the [internal template](https://gohugo.io/extras/comments)
-- Facebook share author name attribution using `meta name="author"`
 - Gentle content fade-in using CSS keyframe animation
 - Customizable grid layouts and more using [hack.css](http://hackcss.com)
 - Post reading time and update notice set user expectations
