@@ -1,9 +1,12 @@
-{{ if .Site.Params.seo.google_verify }}
-  <meta name="google-site-verification" content="{{ .Site.Params.seo.google_verify }}" />
+{{ if .Site.Params.seo.webmaster_verifications.google }}
+  <meta name="google-site-verification" content="{{ .Site.Params.seo.webmaster_verifications.google }}" />
 {{ end }}
-{{ if .Site.Params.seo.bing_verify }}
-  <meta name="msvalidate.01" content="{{ .Site.Params.seo.bing_verify }}">
+{{ if .Site.Params.seo.webmaster_verifications.bing }}
+  <meta name="msvalidate.01" content="{{ .Site.Params.seo.webmaster_verifications.bing }}">
 {{ end }}
-{{ if .Site.Params.seo.yandex_verify }}
-  <meta name="yandex-verification" content="{{ .Site.Params.seo.yandex_verify }}">
+{{ if .Site.Params.seo.webmaster_verifications.alexa }}
+  <meta name="alexaVerifyID" content="{{ .Site.Params.seo.webmaster_verifications.alexa }}">
+{{ end }}
+{{ if .Site.Params.seo.webmaster_verifications.yandex }}
+  <meta name="yandex-verification" content="{{ .Site.Params.seo.webmaster_verifications.yandex }}">
 {{ end }}

@@ -73,11 +73,6 @@ SectionPagesMenu = "main" # Enable menu system for lazy bloggers
   author = "" # Optional, controls author name display on posts
   show_menu = false # Optional, set false to disable menu entirely
   powered_by = true # Optional, set false to disable credits
-
-  [params.seo]
-    google_verify = "" # Optional, Google verification code
-    bing_verify = "" # Optional, Bing verification code
-    yandex_verify = "" # Optional, Yandex verification code
 ```
 
 ## Section Menu
@@ -143,6 +138,20 @@ Test how things are looking during development using a combination of the [Faceb
 After Dark is built with SEO in mind. Aside from OpenGraph, Schema Structured Data and SEO meta is applied to give robots what they want, automatically, without any user configuration necessary. This helps ensure your After Dark site will rank well in Search Engine Results Pages (SERPs) and prevent crawlers from indexing of unwanted content.
 
 To fine-tune your SEO, however, the following options are available, all of which are recommended for optimal user experience within search engines.
+
+### Webmaster verifications
+
+After Dark ships with the ability to verify your site with several webmaster tools used for SEO including Google, Bing, Alexa and Yandex. Specific naming conventions were chosen to provide parity with the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag/). To allow verification of your site with any or all of these providers simply add the following to your `config.toml` and fill in their respective values:
+
+```toml
+[params.seo.webmaster_verifications]
+  google = "" # Optional, Google verification code
+  bing = "" # Optional, Bing verification code
+  alexa = "" # Optional, Alexa verification code
+  yandex = "" # Optional, Yandex verification code
+```
+
+Note that claiming your site with Alexa was [retired in May 2016](https://support.alexa.com/hc/en-us/articles/219135887-Claiming-has-been-retired-May-2016). However, Alexa verification has been added as a convenience for existing sites migrating to After Dark.
 
 ### Custom Meta Descriptions
 
