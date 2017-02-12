@@ -1,14 +1,16 @@
 <p>
   Published
-  {{ if isset .Params "author" }}
-    by <span itemprop="author">{{ index .Params "author" }}</span>
+  {{ with .Params.author }}
+    by <span itemprop="author">{{ index . }}</span>
   {{ else }}
     by <span itemprop="author">{{ .Site.Params.author }}</span>
   {{ end }}
-  {{ if isset .Params "publishdate" }}
-    on <time datetime="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" }}">{{ .PublishDate.Format "2 Jan, 2006" }}</time>
-  {{ else }}
-    on <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date.Format "2 Jan, 2006" }}</time>
+  {{ with .PublishDate }}
+    {{ if eq (.Format "2006-01-02") "0001-01-01" }}
+      on <time datetime="{{ $.Date.Format "2006-01-02T15:04:05-07:00" }}">{{ $.Date.Format "2 Jan, 2006" }}</time>
+    {{ else }}
+      on <time datetime="{{ .Format "2006-01-02T15:04:05-07:00" }}">{{ .Format "2 Jan, 2006" }}</time>
+    {{ end }}
   {{ end }}
   {{ with .Params.categories }}
     in <span itemprop="articleSection">{{ delimit (apply (apply (sort .) "partial" "post/category-link" ".") "chomp" ".") ", " " and "}}</span>
