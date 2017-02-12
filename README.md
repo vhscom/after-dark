@@ -16,6 +16,7 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 - Dark theme intended for low-light reading
 - Entire page served in a single HTTP request (including favicon)
 - Responsive typography optimized for mobile, tablet and desktop
+- [Related Content](#related-content) increases page views and reader loyalty
 - SEO-optimized using OpenGraph, [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and Meta tags
 - Google Analytics using the [internal async template](https://gohugo.io/extras/analytics)
 - Post comments with [Disqus](https://disqus.com/) using the [internal template](https://gohugo.io/extras/comments)
@@ -25,7 +26,6 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 - Rich post bylines including links to category and tag taxonomy listings, author and word count
 - [Block Templates](https://gohugo.io/templates/blocks/) for foolproof layouts
 - Extensible [taxonomy terms template](https://gohugo.io/templates/terms)
-- Related posts feature to guide readers to similar content
 - Configurable [Section Menu](#section-menu) for global site navigation
 - Simple list pagination with page indicators
 - Optional [Table of Contents for posts](#using-the-table-of-contents)
@@ -100,6 +100,18 @@ Or update the menu using front matter from your pages:
 ```toml
 menu = "main"
 weight = 3
+```
+
+## Related Content
+
+Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can increase your site's page views, the time spent on your site and reader loyalty.
+
+Related content surfaces content across sections by matching taxonomy tags. If if finds related content it will automatically output it in reverse chronological order below the byline of your post content.
+
+By default After Dark will display up to 7 items by title along with their reading times. You can limit the number of items displayed by setting the following optional parameter in the `[params]` section of your `config.toml` file:
+
+```toml
+related_content_limit = 5
 ```
 
 ## Using OpenGraph
@@ -181,11 +193,12 @@ Though it's possible to block search indexing from a `robots.txt` file, After Da
 - Taxonomy Pages (e.g. Category and Tag listings)
 - Taxonomy Terms Pages (e.g. Pages listing taxonomies)
 
-If you do not like this behavior you may override the defaults by setting `params.noindex_kinds` in your site's `config.toml`, e.g.
+To customize behavior configure the `noindex_kinds` setting in the `[params]` section of your `config.toml`:
 
 ```
 [params]
   noindex_kinds = [
+    "page",
     "section",
     "taxonomy",
     "taxonomyTerm"
