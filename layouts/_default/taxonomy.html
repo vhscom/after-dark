@@ -5,7 +5,7 @@
   <header>
     <h1>{{ .Title }}</h1>
   </header>
-  {{ range .Data.Pages }}
+  {{ range .Paginator.Pages }}
     {{ partial "page-summary" . }}
   {{ end }}
 {{ end }}
