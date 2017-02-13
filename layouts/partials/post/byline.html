@@ -5,13 +5,9 @@
   {{ else }}
     by <span itemprop="author">{{ .Site.Params.author }}</span>
   {{ end }}
-  {{ with .PublishDate }}
-    {{ if eq (.Format "2006-01-02") "0001-01-01" }}
-      on <time datetime="{{ $.Date.Format "2006-01-02T15:04:05-07:00" }}">{{ $.Date.Format "2 Jan, 2006" }}</time>
-    {{ else }}
-      on <time datetime="{{ .Format "2006-01-02T15:04:05-07:00" }}">{{ .Format "2 Jan, 2006" }}</time>
-    {{ end }}
-  {{ end }}
+  <time datetime="{{ dateFormat "2006-01-02T15:04:05-07:00" (default .Date (.PublishDate)) }}">
+    {{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}
+  </time>
   {{ with .Params.categories }}
     in <span itemprop="articleSection">{{ delimit (apply (apply (sort .) "partial" "post/category-link" ".") "chomp" ".") ", " " and "}}</span>
   {{ end }}
