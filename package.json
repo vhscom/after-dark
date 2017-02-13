@@ -1,15 +1,19 @@
 {
   "name": "after-dark",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A retro dark theme for Hugo",
   "private": true,
   "dependencies": {
-    "hack": "0.7.7"
+    "hack": "0.7.7",
+    "lazysizes": "^3.0.0-rc4"
   },
   "devDependencies": {
-    "npm-check-updates": "^2.8.0"
+    "npm-check-updates": "^2.8.0",
+    "rimraf": "^2.5.4"
   },
   "scripts": {
+    "hugo-clean": "rimraf ./public && mkdir public",
+    "lazysizes-copy": "cp -i node_modules/lazysizes/lazysizes.min.js static/js",
     "ncu": "npm-check-updates .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -32,5 +36,5 @@
   "bugs": {
     "url": "https://codeberg.org/vhs/after-dark/issues"
   },
-  "homepage": "https://codeberg.org/vhs/after-dark#readme"
+  "homepage": "https://vhs.github.io/after-dark/"
 }

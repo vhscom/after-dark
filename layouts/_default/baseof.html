@@ -35,6 +35,10 @@
     {{ partial "critical-theme.css" }}
     {{ partial "critical-custom.css" }}
     {{ template "_internal/google_analytics_async.html" . }}
+    {{ $lazylist := findRE "class=\".*?\\blazyload\\b.*?\"|class=lazyload\b" .Content }}<!-- http://regexr.com/3f9d1 -->
+    {{ if ge (len $lazylist) 1 }}
+      <script src="/js/lazysizes.min.js" async></script>
+    {{ end }}
   </head>
   <body class="hack dark main container">
     <header>{{ block "header" . }}{{ end }}</header>
