@@ -14,7 +14,8 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 ## Features
 
 - Dark theme intended for low-light reading
-- Entire page served in a single HTTP request (including favicon)
+- Mobile-optimized to limit number of HTTP round-trips
+- [Intelligent lazyloading](#intelligent-lazyloading) with [lazysizes](https://github.com/aFarkas/lazysizes)
 - Responsive typography optimized for mobile, tablet and desktop
 - [Related Content](#related-content) increases page views and reader loyalty
 - SEO-optimized using OpenGraph, [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and Meta tags
@@ -32,7 +33,6 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 - Site verification with Google, Bing and Yandex
 - Default 404 page with MP4 background video
 - Full site keyboard accessibility
-- No JavaScript required unless Analytics or Disqus enabled
 
 ## Getting started
 
@@ -101,6 +101,41 @@ Or update the menu using front matter from your pages:
 menu = "main"
 weight = 3
 ```
+
+## Intelligent Lazyloading
+
+Improve user experience and decrease bandwidth consumption. By lazyloading you can increase your site's page views, time spent on your site and reader loyalty.
+
+Lazyloading prioritizes when and how images and more are downloaded, making perceived performance faster and reducing overall bandwidth consumption. When activated, lazyloading will begin working automatically. No JavaScript configuration is necessary.
+
+To activate lazyloading, add the `lazyload` value to the `class` attribute of your images/iframes in conjunction with a `data-src` and/or `data-srcset` attribute:
+
+```html
+<!-- non-responsive -->
+<img data-src="image.jpg" class="lazyload">
+```
+
+```html
+<!-- responsive with automatic sizes calculation -->
+<img
+  data-sizes="auto"
+  data-src="image2.jpg"
+  data-srcset="image1.jpg 300w, image2.jpg 600w, image3.jpg 900w"
+  class="lazyload">
+```
+
+```html
+<!-- iframe example -->
+<iframe frameborder="0"
+  class="lazyload"
+  allowfullscreen=""
+  data-src="//www.youtube.com/embed/ZfV-aYdU4uE">
+</iframe>
+```
+
+Additional information and examples are available on the [lazysizes](https://github.com/aFarkas/lazysizes) repository on GitHub.
+
+**Caveat:** Currently this feature only supports lazy-lazyloading of _content_. If no lazyloaded content is detected on a page the feature will not be activated and the lazysizes library will not be loaded.
 
 ## Related Content
 
