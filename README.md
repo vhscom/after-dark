@@ -104,9 +104,9 @@ weight = 3
 
 ## Intelligent Lazyloading
 
-Improve user experience and decrease bandwidth consumption. By lazyloading you can increase your site's page views, time spent on your site and reader loyalty.
+Enhance user experience and decrease bandwidth consumption. By lazyloading you can increase your site's page views, time spent on your site and reader loyalty.
 
-Lazyloading prioritizes when and how images and more are downloaded, making perceived performance faster and reduce page load times. When activated, lazyloading will begin working automatically. No JavaScript configuration is necessary.
+Lazyloading prioritizes when and how images and more are downloaded, making perceived performance faster and reducing page load times or improved SEO. When activated, lazyloading will begin working automatically. No JavaScript configuration is necessary.
 
 To activate lazyloading, add the `lazyload` value to the `class` attribute of your images/iframes in conjunction with a `data-src` and/or `data-srcset` attribute:
 
