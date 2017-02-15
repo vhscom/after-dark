@@ -70,9 +70,10 @@ SectionPagesMenu = "main" # Enable menu system for lazy bloggers
 [params]
   description = "" # Suggested, controls default description meta
   author = "" # Optional, controls author name display on posts
+  hide_author = false # Optional, set true to hide author name on posts
   show_menu = false # Optional, set true to enable section menu
   powered_by = true # Optional, set false to disable credits
-  images = [] # Optional, adds a default OpenGraph image
+  images = [] # Suggested, adds default OpenGraph image
 ```
 
 ## Section Menu
