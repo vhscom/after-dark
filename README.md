@@ -18,6 +18,7 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 - [Intelligent lazyloading](#intelligent-lazyloading) with [lazysizes](https://github.com/aFarkas/lazysizes)
 - Responsive typography optimized for mobile, tablet and desktop
 - [Related Content](#related-content) increases page views and reader loyalty
+- Optional [Table of Contents](#table-of-contents) with smooth scroll
 - SEO-optimized using OpenGraph, [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and Meta tags
 - Google Analytics using the [internal async template](https://gohugo.io/extras/analytics)
 - Post comments with [Disqus](https://disqus.com/) using the [internal template](https://gohugo.io/extras/comments)
@@ -29,7 +30,6 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 - Extensible [taxonomy terms template](https://gohugo.io/templates/terms)
 - Configurable [Section Menu](#section-menu) for global site navigation
 - Simple list pagination with page indicators
-- Optional [Table of Contents for posts](#using-the-table-of-contents)
 - Site verification with Google, Bing and Yandex
 - Default 404 page with MP4 background video
 - Full site keyboard accessibility
@@ -260,15 +260,19 @@ And, finally, if you're using Hugo `v0.18` or better, you can also add an `_inde
 
 To learn more about how this works, read [block search indexing with meta tags](https://support.google.com/webmasters/answer/93710).
 
-## Using the Table of Contents
+## Table of Contents
 
-For longer posts its possible to automatically generate a Table of Contents. The feature uses the HTML5 [`details` element](http://devdocs.io/html/element/details) and is opt-in on a per post basis. To add a Table of Contents to a post set the following in the post front matter:
+Help users locate and share information on your site. By providing a Table of Contents (TOC), users will spend less time scrolling and are more likely to deep link to specific information.
+
+To automatically generate a TOC for a post based on the [page outline](https://gsnedders.html5.org/outliner/), add the following to your post front matter:
 
 ```toml
 toc = true
 ```
 
-To hide the Table of Contents set `toc = false` or simply remove the setting from the post front matter.
+To hide the TOC set `toc = false`, or simply remove the setting from the post front matter.
+
+After Dark uses the [`details` element](http://devdocs.io/html/element/details) and [`summary`](http://devdocs.io/html/element/summary) elements to provide a TOC which does not require use of CSS or JavaScript to function. When a page is first opened, the TOC will be collapsed so it does not [clutter up your page](https://en.wikipedia.org/wiki/Progressive_disclosure). Once expanded, selecting an item in the TOC will smooth scroll to that section within the document and update the browser's location bar with the [fragment identifier](https://www.w3.org/Addressing/URL/4_2_Fragments.html) for that section.
 
 ## Customizing CSS
 

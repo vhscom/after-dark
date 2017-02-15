@@ -5,7 +5,8 @@
   "private": true,
   "dependencies": {
     "hack": "0.7.7",
-    "lazysizes": "^3.0.0-rc4"
+    "lazysizes": "^3.0.0-rc4",
+    "smoothscroll-polyfill": "^0.3.4"
   },
   "devDependencies": {
     "npm-check-updates": "^2.8.0",
@@ -14,6 +15,7 @@
   "scripts": {
     "hugo-clean": "rimraf ./public && mkdir public",
     "lazysizes-copy": "cp -i node_modules/lazysizes/lazysizes.min.js static/js",
+    "smoothscroll-copy": "cp -i node_modules/smoothscroll-polyfill/dist/smoothscroll.js static/js",
     "ncu": "npm-check-updates .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
