@@ -11,12 +11,7 @@
     {{ if .Description }}
       <blockquote itemprop="description">{{ .Description }}</blockquote>
     {{ end }}
-    {{ if and (isset .Params "toc") .Params.toc  }}
-      <details>
-        <summary>Table of Contents</summary>
-        {{ .TableOfContents }}
-      </details>
-    {{ end }}
+    {{ partial "toc-maybe" . }}
     <div itemprop="articleBody">
       {{ .Content }}
     </div>
