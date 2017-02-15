@@ -206,7 +206,7 @@ Note that claiming your site with Alexa was [retired in May 2016](https://suppor
 To help your content stand out in SERPs and enable users to [quickly grok the subject matter](https://moz.com/learn/seo/meta-description) add a `description` to the front matter of your post or page:
 
 ```toml
-description = "Become a Digital Nomad in Bali: The Lost Guide"
+description = "Everything you need to know to become a Digital Nomad in Bali."
 ```
 
 Descriptions will also be used to accent the content summaries After Dark displays in lists when the site is generated. If no custom description is provided After Dark will fallback to the description provided in `config.toml`.
