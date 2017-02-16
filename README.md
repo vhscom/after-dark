@@ -129,7 +129,7 @@ To activate lazyloading, add the `lazyload` value to the `class` attribute of yo
 <!-- iframe example -->
 <iframe frameborder="0"
   class="lazyload"
-  allowfullscreen=""
+  allowfullscreen
   data-src="//www.youtube.com/embed/ZfV-aYdU4uE">
 </iframe>
 ```
@@ -173,7 +173,7 @@ To configure a site-wide OpenGraph image and fallback for posts not specifying t
 
 ```toml
 images = [
-  "https://source.unsplash.com/-09QE4q0ezw/2000x1322" # Optional, OpenGraph image for Node types
+  "https://source.unsplash.com/-09QE4q0ezw/2000x1322" # Default OpenGraph image for site
 ]
 ```
 
