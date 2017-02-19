@@ -15,9 +15,11 @@
     <div itemprop="articleBody">
       {{ .Content }}
     </div>
-    <article>
-      {{ template "_internal/disqus.html" . }}
-    </article>
+    {{ if .Site.DisqusShortname }}
+      <article>
+        {{ template "_internal/disqus.html" . }}
+      </article>
+    {{ end }}
     <footer>
       <hr>
       {{ partial "post/byline" . }}
