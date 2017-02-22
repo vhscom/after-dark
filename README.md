@@ -1,6 +1,6 @@
 # After Dark
 
-A retro dark theme for the [Hugo](https://gohugo.io/).
+A retro dark theme for [Hugo](https://gohugo.io/).
 
 ![Theme screenshot](https://cloud.githubusercontent.com/assets/440298/22641591/4f3166d4-ec92-11e6-9022-de351c1e2938.png "After Dark for Hugo running in Safari on macOS")
 
