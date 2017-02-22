@@ -30,7 +30,7 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 - Extensible [taxonomy terms template](https://gohugo.io/templates/terms)
 - Configurable [Section Menu](#section-menu) for global site navigation
 - Simple list pagination with page indicators
-- Site verification with Google, Bing and Yandex
+- Site verification with Google, Bing Alexa and Yandex
 - Default 404 page with MP4 background video
 - Full site keyboard accessibility
 
@@ -151,7 +151,7 @@ Additional information and examples are available on the [lazysizes](https://git
 
 Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can increase your site's page views, the time spent on your site and reader loyalty.
 
-Related content surfaces content across sections by matching taxonomy tags. If if finds related content it will automatically output it in reverse chronological order below the byline of your post content.
+Related content surfaces content across sections by matching taxonomy tags. If After Dark finds related content it will automatically output a list of links to that content in reverse chronological order below the byline of your post content.
 
 By default After Dark will display up to 7 items by title along with their reading times. You can limit the number of items displayed by setting the following optional parameter in the `[params]` section of your `config.toml` file:
 
