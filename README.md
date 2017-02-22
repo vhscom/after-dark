@@ -303,9 +303,9 @@ Your customizations will automatically be added to generated pages, inline in th
 
 ## Customizing Markdown Output
 
-Gain more control over markdown conversion to HTML. By modifying the markdown processor settings you can take advantage of certain Black Friday features not enabled by default.
+Gain more control over markdown conversion to HTML. By modifying the markdown processor settings you can take advantage of [Blackfriday](https://github.com/russross/blackfriday) features not enabled by default.
 
-To customize markdown output add a section to your site's `config.toml` file like so:
+To customize conversion output add a section to your site's `config.toml` file like so:
 
 ```toml
 [blackfriday]
@@ -313,7 +313,7 @@ To customize markdown output add a section to your site's `config.toml` file lik
   fractions = false
 ```
 
-See the Hugo docs for a list of [additional configuration settings](https://gohugo.io/content/front-matter#configure-blackfriday-rendering).
+See the Hugo docs for Blackfriday [configuration options](http://gohugo.io/overview/configuration/#configure-blackfriday-rendering).
 
 ## Creating Shortcodes
 
