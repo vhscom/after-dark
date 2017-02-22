@@ -1,8 +1,8 @@
 # After Dark
 
-A retro dark theme for the [Hugo](https://gohugo.io/) static site generator.
+A retro dark theme for the [Hugo](https://gohugo.io/).
 
-[![Theme screenshot](https://cloud.githubusercontent.com/assets/440298/22641591/4f3166d4-ec92-11e6-9022-de351c1e2938.png "After Dark Hugo in Safari")](https://hackcabin.com)
+![Theme screenshot](https://cloud.githubusercontent.com/assets/440298/22641591/4f3166d4-ec92-11e6-9022-de351c1e2938.png "After Dark for Hugo running in Safari on macOS")
 
 > Simplicity is the ultimate sophistication<br>
 > --- Leonardo da Vinci
@@ -34,7 +34,13 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 - Default 404 page with MP4 background video
 - Full site keyboard accessibility
 
+## Derivative works
+
+A number of sites and themes have been created based on After Dark. To [view them](https://codeberg.org/vhs/after-dark/wiki#derivative-works) head to the After Dark wiki.
+
 ## Getting started
+
+[Install Hugo](https://gohugo.io/#action) on your machine. Instructions for [Homebrew](https://brew.sh/) on macOS:
 
 ```shell
 brew install hugo
@@ -62,10 +68,13 @@ languageCode = "en-US" # Controls html lang attribute
 title = "After Dark" # Homepage title and page title suffix
 paginate = 5 # Number of posts to show before paginating
 
+# theme = "after-dark" # Uncomment to use as default theme
+
 enableRobotsTXT = true # Suggested, enable robots.txt file
 googleAnalytics = "" # Optional, add tracking Id for analytics
 disqusShortname = "" # Optional, add Disqus shortname for comments
 SectionPagesMenu = "main" # Enable menu system for lazy bloggers
+footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 
 [params]
   description = "" # Suggested, controls default description meta
@@ -229,25 +238,23 @@ Though it's possible to block search indexing from a `robots.txt` file, After Da
 - Taxonomy Pages (e.g. Category and Tag listings)
 - Taxonomy Terms Pages (e.g. Pages listing taxonomies)
 
-To customize behavior configure the `noindex_kinds` setting in the `[params]` section of your `config.toml`:
+To customize default blocking configure the `noindex_kinds` setting in the `[params]` section of your `config.toml`. For example, if you want to enable taxonomy for Hugo sections appearing in the menu do:
 
 ```
 [params]
   noindex_kinds = [
-    "page",
-    "section",
     "taxonomy",
     "taxonomyTerm"
   ]
 ```
 
-To block individual pages from being indexed simply add `nofollow` to your page's front matter and set the value to `true`, like:
+To block individual pages from being indexed add `nofollow` to your page's front matter and set the value to `true`, like:
 
 ```toml
 noindex = true
 ```
 
-And, finally, if you're using Hugo `v0.18` or better, you can also add an `_index.md` file with the `noindex` front matter to control indexing for specific sections:
+And, finally, if you're using Hugo `v0.18` or better, you can also add an `_index.md` file with the `noindex` front matter to control indexing for specific section list layouts:
 
 ```shell
 ├── content
@@ -259,7 +266,7 @@ And, finally, if you're using Hugo `v0.18` or better, you can also add an `_inde
 │       └── return-flying-toasters.md
 ```
 
-To learn more about how this works, read [block search indexing with meta tags](https://support.google.com/webmasters/answer/93710).
+To learn more about how crawlers use this feature read [block search indexing with meta tags](https://support.google.com/webmasters/answer/93710).
 
 ## Table of Contents
 
@@ -293,6 +300,53 @@ Example customization file:
 ```
 
 Your customizations will automatically be added to generated pages, inline in the document `HEAD`. Thanks to [@rsommerard](https://github.com/rsommerard) for making the suggestion.
+
+## Customizing Markdown Output
+
+Gain more control over markdown conversion to HTML. By modifying the markdown processor settings you can take advantage of certain Black Friday features not enabled by default.
+
+To customize markdown output add a section to your site's `config.toml` file like so:
+
+```toml
+[blackfriday]
+  hrefTargetBlank = true
+  fractions = false
+```
+
+See the Hugo docs for a list of [additional configuration settings](https://gohugo.io/content/front-matter#configure-blackfriday-rendering).
+
+## Creating Shortcodes
+
+Keep your content <abbr title="Don't Repeat Yourself">DRY</abbr> to improve thematic consistency throughout your site. To help achieve this, Hugo provides [Shortcodes](https://gohugo.io/extras/shortcodes). Shortcodes are very powerful, and can be used to achieve functionality not otherwise available in the Black Friday markdown processor, such as [Block Attributes](https://kramdown.gettalong.org/quickref.html#block-attributes).
+
+To create your own custom shortcodes add a `layouts/shortcodes` directory to your site and place your shortcodes within. Here's an example shortcode overriding one of Hugo's [built-in shortcodes](https://gohugo.io/extras/shortcodes#built-in-shortcodes) for use in creating `figure` elements which leverage After Dark's [Intelligent lazyloading](#intelligent-lazyloading) feature:
+
+```html
+<figure {{ with .Get "class" }}class="{{ . }}"{{ end }}>
+  {{ with .Get "link" }}<a href="{{ . }}">{{ end }}
+    <img class="lazyload" data-src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{ . }}{{ else }}{{ .Get "caption" }}{{ end }}"{{ end }} />
+  {{ if .Get "link" }}</a>{{ end }}
+  {{ if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
+  <figcaption>{{ if isset .Params "title" }}
+    <b>{{ .Get "title" }}</b>{{ end }}
+    {{ if or (.Get "caption") (.Get "attr")}}
+    <small>{{ .Get "caption" }}
+    {{ with .Get "attrlink" }}Source: <a href="{{.}}"> {{ end }}
+      {{ .Get "attr" }}
+    {{ if .Get "attrlink"}}</a> {{ end }}
+    </small>{{ end }}
+  </figcaption>
+  {{ end }}
+</figure>
+```
+
+To use it create a file called `figure.html` in your site's shortcode directory, copy the contents above into the file and reference it from your content files like:
+
+```
+{{< figure src="/images/amazon-affiliate-earnings.png" caption="Amazon Affiliate earnings over 1,694 sessions to Hack Cabin in early 2017" >}}
+```
+
+Reference the Hugo docs for [additional usage instructions](https://gohugo.io/extras/shortcodes#figure).
 
 ## Upgrading hack.css
 

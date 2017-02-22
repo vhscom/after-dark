@@ -7,18 +7,12 @@ licenselink = "https://codeberg.org/vhs/after-dark/blob/master/LICENSE.md"
 description = "A retro dark theme for Hugo"
 homepage = "https://vhs.github.io/after-dark/"
 tags = [
-  "mobile-first",
-  "blog",
   "personal",
-  "accessible",
   "minimal",
   "responsive",
-  "retro",
-  "dark",
-  "analytics",
-  "disqus",
-  "open-graph",
-  "schema-org"
+  "accessible",
+  "throwback",
+  "dark"
 ]
 features = [
   "Mobile-first Design",
@@ -98,7 +92,7 @@ min_version = 0.16
 
 ######
 # TODO:
-# - Add noindex meta for pages to not crawl (or custom robots.txt)
+# X Add noindex meta for pages to not crawl (or custom robots.txt)
 # X Similar posts feature - https://gohugo.io/templates/functions/
 # X Check out the menu stuff in "creating a new theme md"
 # X Confirm RSS is working as expected
@@ -114,14 +108,12 @@ min_version = 0.16
 # X create 404 page (https://gohugo.io/templates/404/)
 # X set prev and next links (use frontmatter) - see https://github.com/gecampbell/galliard.xyz/blob/2c4a07d9f5fc5fe413b906f5d877ba78bcb2dbab/layouts/partials/head.html
 # - link to feed from homepage, and taxonomies (tags, categories)
-# - check all pages for a meta description (including terms pages) :/
-# - dynamic sitemap
-# - create an install script to copy taxonomy datas?
-# - document the package manifest and make a README - https://github.com/yoshiharuyamashita/blackburn
-# - add post modified (last updated) day and time
+# X check all pages for a meta description (including terms pages)
+# - dynamic sitemap page
+# X create an install script to copy taxonomy datas
+# X document the package manifest and make a README - https://github.com/yoshiharuyamashita/blackburn
+# X add post modified (last updated) day and time
 # X Test in Lynx browser before publishing
-# - Add RSS link!!
 # - Set the VERSION number in package.json and tag the repo
 # - Apply LD-data (search "BlogPosting" https://gohugo.io/templates/functions/#strings)
-
-# - document features (check against current theme toml files)
+# X document features (check against current theme toml files)
