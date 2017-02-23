@@ -319,19 +319,23 @@ See the Hugo docs for Blackfriday [configuration options](http://gohugo.io/overv
 
 Keep your content <abbr title="Don't Repeat Yourself">DRY</abbr> to improve thematic consistency throughout your site. To help achieve this, Hugo provides [Shortcodes](https://gohugo.io/extras/shortcodes). Shortcodes are very powerful, and can be used to achieve functionality not otherwise available in the Black Friday markdown processor, such as [Block Attributes](https://kramdown.gettalong.org/quickref.html#block-attributes).
 
-To create your own custom shortcodes add a `layouts/shortcodes` directory to your site and place your shortcodes within. Here's an example shortcode overriding one of Hugo's [built-in shortcodes](https://gohugo.io/extras/shortcodes#built-in-shortcodes) for use in creating `figure` elements which leverage After Dark's [Intelligent lazyloading](#intelligent-lazyloading) feature:
+To create your own custom shortcodes add a `layouts/shortcodes` directory to your site and place your shortcodes within. Here's an example shortcode overriding Hugo's [built-in `figure` shortcode](https://gohugo.io/extras/shortcodes#figure) to leverage After Dark's [Intelligent lazyloading](#intelligent-lazyloading) feature and improve display for use with the theme:
 
 ```html
+<!--{{/*
+  Similar to the internal shortcode, but with image lazyloading and
+  and adjusted caption title and small caption text.
+*/}}-->
 <figure {{ with .Get "class" }}class="{{ . }}"{{ end }}>
   {{ with .Get "link" }}<a href="{{ . }}">{{ end }}
     <img class="lazyload" data-src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{ . }}{{ else }}{{ .Get "caption" }}{{ end }}"{{ end }} />
   {{ if .Get "link" }}</a>{{ end }}
   {{ if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
   <figcaption>{{ if isset .Params "title" }}
-    <b>{{ .Get "title" }}</b>{{ end }}
+    <header><b>{{ .Get "title" }}</b></header>{{ end }}
     {{ if or (.Get "caption") (.Get "attr")}}
     <small>{{ .Get "caption" }}
-    {{ with .Get "attrlink" }}Source: <a href="{{.}}"> {{ end }}
+    {{ with .Get "attrlink" }}<a href="{{ . }}"> {{ end }}
       {{ .Get "attr" }}
     {{ if .Get "attrlink"}}</a> {{ end }}
     </small>{{ end }}
@@ -340,10 +344,10 @@ To create your own custom shortcodes add a `layouts/shortcodes` directory to you
 </figure>
 ```
 
-To use it create a file called `figure.html` in your site's shortcode directory, copy the contents above into the file and reference it from your content files like:
+To use it create a file called `figure.html` with the above contents in your `shortcodes` directory and use it like:
 
 ```
-{{< figure src="/images/amazon-affiliate-earnings.png" caption="Amazon Affiliate earnings over 1,694 sessions to Hack Cabin in early 2017" >}}
+{{< figure src="/gear/southeast-asia-carry-on-packing-list/" caption="Southeast Asia Carry-On Packing List: Digital Nomad Edition" >}}
 ```
 
 Reference the Hugo docs for [additional usage instructions](https://gohugo.io/extras/shortcodes#figure).
