@@ -15,7 +15,7 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 
 - Dark theme intended for low-light reading
 - Mobile-optimized to limit number of HTTP round-trips
-- [Intelligent lazyloading](#intelligent-lazyloading) with [lazysizes](https://github.com/aFarkas/lazysizes)
+- [Intelligent Lazyloading](#intelligent-lazyloading) with [lazysizes](https://github.com/aFarkas/lazysizes)
 - Responsive typography optimized for mobile, tablet and desktop
 - [Related Content](#related-content) increases page views and reader loyalty
 - Optional [Table of Contents](#table-of-contents) with smooth scroll
@@ -116,6 +116,8 @@ weight = 3
 
 Lazyloading prioritizes when and how images and more are downloaded, making perceived performance faster and reducing page load times for improved SEO. When activated, lazyloading will begin working automatically. No JavaScript configuration is necessary.
 
+**What makes it _Intelligent_?** To save unnecessary HTTP requests lazy-loading applies only to page content. If no lazyloaded content is detected on a page when the site is generated, the feature will not be activated and the lazysizes library will not be loaded.
+
 To activate lazyloading, add the `lazyload` value to the `class` attribute of your images/iframes in conjunction with a `data-src` and/or `data-srcset` attribute:
 
 ```html
@@ -141,9 +143,7 @@ To activate lazyloading, add the `lazyload` value to the `class` attribute of yo
 </iframe>
 ```
 
-To save unnecessary HTTP requests lazy-loading applies only to page content. If no lazyloaded content is detected on a page the feature will not be activated, and the lazysizes library will not be loaded.
-
-Additional information and examples, including LQIP, are available on the [lazysizes](https://github.com/aFarkas/lazysizes) repository on GitHub.
+Additional information and examples, including LQIP (Low-Quality Image Placeholders), are available on the [lazysizes](https://github.com/aFarkas/lazysizes) repository on GitHub.
 
 ## Related Content
 
@@ -351,7 +351,7 @@ See the Hugo docs for additional [configuration options](http://gohugo.io/overvi
 
 Keep your content <abbr title="Don't Repeat Yourself">DRY</abbr> to improve thematic consistency throughout your site. To help achieve this, Hugo provides [Shortcodes](https://gohugo.io/extras/shortcodes). Shortcodes are very powerful, and can be used to achieve functionality not otherwise available in the markdown processor.
 
-To create your own custom shortcodes add a `layouts/shortcodes` directory to your site and place your shortcodes within. Here's an example shortcode overriding Hugo's [built-in `figure` shortcode](https://gohugo.io/extras/shortcodes#figure) to leverage After Dark's [Intelligent lazyloading](#intelligent-lazyloading) feature and improve display for use with the theme:
+To create your own custom shortcodes add a `layouts/shortcodes` directory to your site and place your shortcodes within. Here's an example shortcode overriding Hugo's [built-in `figure` shortcode](https://gohugo.io/extras/shortcodes#figure) to leverage After Dark's [Intelligent Lazyloading](#intelligent-lazyloading) feature and improve display for use with the theme:
 
 ```html
 <!--{{/*
