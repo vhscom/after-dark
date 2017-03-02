@@ -31,7 +31,7 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 - Configurable [Section Menu](#section-menu) for global site navigation
 - Simple list pagination with page indicators
 - Site verification with Google, Bing Alexa and Yandex
-- Default 404 page with MP4 background video
+- 404 page with animated background video
 - Full site keyboard accessibility
 
 ## Derivative works
@@ -82,7 +82,7 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   hide_author = false # Optional, set true to hide author name on posts
   show_menu = false # Optional, set true to enable section menu
   powered_by = true # Optional, set false to disable credits
-  images = [] # Suggested, adds default OpenGraph image
+  images = [] # Suggested, adds default OpenGraph images
 ```
 
 ## Section Menu
@@ -114,8 +114,6 @@ weight = 3
 
 ## Intelligent Lazyloading
 
-Enhance user experience and decrease bandwidth consumption. By lazyloading you can increase your site's page views, time spent on your site and reader loyalty.
-
 Lazyloading prioritizes when and how images and more are downloaded, making perceived performance faster and reducing page load times for improved SEO. When activated, lazyloading will begin working automatically. No JavaScript configuration is necessary.
 
 To activate lazyloading, add the `lazyload` value to the `class` attribute of your images/iframes in conjunction with a `data-src` and/or `data-srcset` attribute:
@@ -143,9 +141,9 @@ To activate lazyloading, add the `lazyload` value to the `class` attribute of yo
 </iframe>
 ```
 
-Additional information and examples are available on the [lazysizes](https://github.com/aFarkas/lazysizes) repository on GitHub.
+To save unnecessary HTTP requests lazy-loading applies only to page content. If no lazyloaded content is detected on a page the feature will not be activated, and the lazysizes library will not be loaded.
 
-**Caveat:** Currently this feature only supports lazy-lazyloading of _content_. If no lazyloaded content is detected on a page the feature will not be activated and the lazysizes library will not be loaded.
+Additional information and examples, including LQIP, are available on the [lazysizes](https://github.com/aFarkas/lazysizes) repository on GitHub.
 
 ## Related Content
 
@@ -178,7 +176,7 @@ images = [
 ]
 ```
 
-To configure a site-wide OpenGraph image and fallback for posts not specifying their own, add the following to your site parameters in `config.toml` in the `[params]` section:
+To configure a site-wide OpenGraph images and fallbacks for posts not specifying their own, add the following to your site parameters in `config.toml` in the `[params]` section:
 
 ```toml
 images = [
@@ -188,17 +186,15 @@ images = [
 
 Test how things are looking during development using a combination of the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) and [ngrok](https://ngrok.com/).
 
-**Gotcha:** Relative source URLs not currently supported.
-
 ## Improving SEO and UX
 
-After Dark is built with SEO in mind. Aside from OpenGraph, Schema Structured Data and SEO meta is applied to give robots what they want, automatically, without any user configuration necessary. This helps ensure your After Dark site will rank well in Search Engine Results Pages (SERPs) and prevent crawlers from indexing of unwanted content.
+After Dark is built with SEO in mind. Aside from OpenGraph, Schema Structured Data and SEO meta is applied to give robots what they want, automatically, without any user configuration necessary. This helps ensure your After Dark site will rank well in Search Engine Results Pages (SERPs) and prevent crawlers from indexing undesirable content.
 
-To fine-tune your SEO, however, the following options are available, all of which are recommended for optimal user experience within search engines.
+Fine-tune your SEO settings using the following available options.
 
 ### Webmaster verifications
 
-After Dark ships with the ability to verify your site with several webmaster tools used for SEO including Google, Bing, Alexa and Yandex. Specific naming conventions were chosen to provide parity with the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag/). To allow verification of your site with any or all of these providers simply add the following to your `config.toml` and fill in their respective values:
+Verify your site with several webmaster tools including Google, Bing, Alexa and Yandex. To allow verification of your site with any or all of these providers simply add the following to your `config.toml` and fill in their respective values:
 
 ```toml
 [params.seo.webmaster_verifications]
@@ -208,25 +204,49 @@ After Dark ships with the ability to verify your site with several webmaster too
   yandex = "" # Optional, Yandex verification code
 ```
 
-Note that claiming your site with Alexa was [retired in May 2016](https://support.alexa.com/hc/en-us/articles/219135887-Claiming-has-been-retired-May-2016). However, Alexa verification has been added as a convenience for existing sites migrating to After Dark.
+**Note:** Claiming your site with Alexa was [retired in May 2016](https://support.alexa.com/hc/en-us/articles/219135887-Claiming-has-been-retired-May-2016). However, Alexa verification has been added as a convenience for existing sites migrating to After Dark.
 
 ### Custom Meta Descriptions
 
-To help your content stand out in SERPs and enable users to [quickly grok the subject matter](https://moz.com/learn/seo/meta-description) add a `description` to the front matter of your post or page:
+Well-crafted page titles help catch the human eye on search results pages. And meta descriptions provide a summary of the content and why its relevant for the reader, driving click-throughs.
+
+To add a custom meta description to your pages and posts add `description` to the front matter:
 
 ```toml
 description = "Everything you need to know to become a Digital Nomad in Bali."
 ```
 
-Descriptions will also be used to accent the content summaries After Dark displays in lists when the site is generated. If no custom description is provided After Dark will fallback to the description provided in `config.toml`.
+In addition to appearing in search engines, meta descriptions also appear on individual pages and in content summaries in After Dark, adding transparency to how your page will appear in search.
+
+If no custom description is provided After Dark will fallback to the description provided in `config.toml`. Learn more on [how to craft your meta descriptions](https://moz.com/learn/seo/meta-description).
 
 ### Specifying Publish Dates
 
-Let user agents know when posts were last modified. To do so add `publishdate` to your page front matter and update `date` anytime you make an update to a post. Updates will be made visible to readers and search engines alike using visible callouts, Schema Structured Data and via the `lastmod` setting your `sitemap.xml` file.
+Help user agents know when posts were last modified. To do so add `publishdate` to your page front matter and update `date` anytime you make an update to a post.
+
+Updates will be made visible to readers by surfacing content higher in your page and post listings, and using using visible callouts on content summaries. For robots, making this change will automatically update Schema Structured Data and Web feeds, as well as the `lastmod` setting your `sitemap.xml` file.
+
+You can be specific and use a datetime (with timezone offset) like:
+
+```
+date = "2017-02-02T01:20:56-06:00"
+publishdate = "2016-11-21T10:32:33+08:00"
+```
+
+Or less specific and use just the dates:
+
+```
+date = "2017-02-02"
+publishdate = "2016-11-21"
+```
+
+Review the W3C website for more [information on dates and times](https://www.w3.org/TR/html51/infrastructure.html#dates-and-times) for the Web infrastructure.
 
 ### Using Link Types
 
-For related content split across multiple pages in a sequence After Dark supports use of `prev` and `next` settings in your front matter. Learn more about [link types](http://devdocs.io/html/link_types).
+For related content split across multiple pages in a sequence After Dark supports use of `prev` and `next` settings in your front matter.
+
+Learn more about [link types](http://devdocs.io/html/link_types).
 
 ### Blocking Search Indexing
 
@@ -238,7 +258,7 @@ Though it's possible to block search indexing from a `robots.txt` file, After Da
 - Taxonomy Pages (e.g. Category and Tag listings)
 - Taxonomy Terms Pages (e.g. Pages listing taxonomies)
 
-To customize default blocking configure the `noindex_kinds` setting in the `[params]` section of your `config.toml`. For example, if you want to enable taxonomy for Hugo sections appearing in the menu do:
+To customize default blocking configure the `noindex_kinds` setting in the `[params]` section of your `config.toml`. For example, if you want to enable crawling for sections appearing in [Section Menu](#section-menu) add the following to your configuration file:
 
 ```
 [params]
@@ -280,14 +300,24 @@ toc = true
 
 To hide the TOC set `toc = false`, or simply remove the setting from the post front matter.
 
-After Dark uses the [`details` element](http://devdocs.io/html/element/details) and [`summary`](http://devdocs.io/html/element/summary) elements to provide a TOC which does not require use of CSS or JavaScript to function. When a page is first opened, the TOC will be collapsed so it does not [clutter up your page](https://en.wikipedia.org/wiki/Progressive_disclosure). Once expanded, selecting an item in the TOC will smooth scroll to that section within the document and update the browser's location bar with the [fragment identifier](https://www.w3.org/Addressing/URL/4_2_Fragments.html) for that section.
+After Dark uses the HTML5 [`details`](http://devdocs.io/html/element/details) and [`summary`](http://devdocs.io/html/element/summary) elements to provide a TOC which does not require use of CSS or JavaScript to function.
+
+When a page is first loaded, the TOC will be collapsed so it does not clutter up the page. Once expanded, selecting an item in the TOC will smooth scroll to that section within the document, updating the browser's location bar to support deep linking.
+
+If you would also like to highlight the section header when anchoring to content, add the following to your theme's `critical-custom.css.html` file:
+
+```html
+:target {
+  color: #ff2e88;
+}
+```
 
 ## Customizing CSS
 
 To customize CSS without having to tamper with theme files do the following:
 
 1. Create a `critical-custom.css.html` in your site's `layouts/partials directory`.
-2. Add your customizations inside a `<style media="screen"></style>` element.
+1. Add your customizations inside a `<style media="screen"></style>` element.
 
 Example customization file:
 
@@ -305,7 +335,7 @@ Your customizations will automatically be added to generated pages, inline in th
 
 Gain more control over markdown conversion to HTML. By modifying the markdown processor settings you can take advantage of [Blackfriday](https://github.com/russross/blackfriday) features not enabled by default.
 
-To customize conversion output add a section to your site's `config.toml` file like so:
+To customize conversion output add a `[blackfriday]` section to your site's `config.toml` file like so:
 
 ```toml
 [blackfriday]
@@ -313,11 +343,13 @@ To customize conversion output add a section to your site's `config.toml` file l
   fractions = false
 ```
 
-See the Hugo docs for Blackfriday [configuration options](http://gohugo.io/overview/configuration/#configure-blackfriday-rendering).
+Overrides to theme markdown processing defaults are available from page front matter as well, giving you control on a page-by-page basis.
+
+See the Hugo docs for additional [configuration options](http://gohugo.io/overview/configuration/#configure-blackfriday-rendering).
 
 ## Creating Shortcodes
 
-Keep your content <abbr title="Don't Repeat Yourself">DRY</abbr> to improve thematic consistency throughout your site. To help achieve this, Hugo provides [Shortcodes](https://gohugo.io/extras/shortcodes). Shortcodes are very powerful, and can be used to achieve functionality not otherwise available in the Black Friday markdown processor, such as [Block Attributes](https://kramdown.gettalong.org/quickref.html#block-attributes).
+Keep your content <abbr title="Don't Repeat Yourself">DRY</abbr> to improve thematic consistency throughout your site. To help achieve this, Hugo provides [Shortcodes](https://gohugo.io/extras/shortcodes). Shortcodes are very powerful, and can be used to achieve functionality not otherwise available in the markdown processor.
 
 To create your own custom shortcodes add a `layouts/shortcodes` directory to your site and place your shortcodes within. Here's an example shortcode overriding Hugo's [built-in `figure` shortcode](https://gohugo.io/extras/shortcodes#figure) to leverage After Dark's [Intelligent lazyloading](#intelligent-lazyloading) feature and improve display for use with the theme:
 
@@ -350,15 +382,17 @@ To use it create a file called `figure.html` with the above contents in your `sh
 {{< figure src="/gear/southeast-asia-carry-on-packing-list/" caption="Southeast Asia Carry-On Packing List: Digital Nomad Edition" >}}
 ```
 
-Reference the Hugo docs for [additional usage instructions](https://gohugo.io/extras/shortcodes#figure).
+Reference the Hugo docs for [additional usage instructions](https://gohugo.io/extras/shortcodes#figure), including caption titles, attribution links and more.
 
 ## Upgrading hack.css
 
 The specific version of [`hack.css`](hackcss.com) used is _pinned_ in the `package.json` dependency manifest. To check for updates do an `npm i` and run `npm run ncu`.
 
-If an update is available consider taking the automatic update, but keep the version pinned in the manifest. Once the new `hack` dependency version is pulled down to the `node_modules` directory, copy the contents of `hack.css` and `dark.css` into the `critical-vendor.css.html` file.
+If an update is available consider taking the automatic update when prompted, but keep the version of `hack.css` pinned in your manifest so you don't forget which version you're using.
 
-Once the vendor file is updated pop open your favorite dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations. Make any tweaks necessary to the `hack.css` style overrides indicated in `critical-theme.css.html`. And finally adjust any [Customized CSS](#customizing-css).
+After the new `hack` dependency version is pulled down to the `node_modules` directory, copy the contents of `hack.css` and `dark.css` into the `critical-vendor.css.html` file.
+
+Once the vendor file is updated pop open your favorite dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations, making any tweaks necessary to the `hack.css` style overrides indicated in `critical-theme.css.html`. And, finally, adjust your [Customized CSS](#customizing-css) if necessary.
 
 ## Contributing
 
