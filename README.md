@@ -302,15 +302,7 @@ To hide the TOC set `toc = false`, or simply remove the setting from the post fr
 
 After Dark uses the HTML5 [`details`](http://devdocs.io/html/element/details) and [`summary`](http://devdocs.io/html/element/summary) elements to provide a TOC which does not require use of CSS or JavaScript to function.
 
-When a page is first loaded, the TOC will be collapsed so it does not clutter up the page. Once expanded, selecting an item in the TOC will smooth scroll to that section within the document, updating the browser's location bar to support deep linking.
-
-If you would also like to highlight the section header when anchoring to content, add the following to your theme's `critical-custom.css.html` file:
-
-```html
-:target {
-  color: #ff2e88;
-}
-```
+When a page is first loaded, the TOC will be collapsed so it does not clutter up the page. Once expanded, selecting an item in the TOC will smooth scroll to that section within the document, highlight the section header and updating the browser's location bar for deep linking and back-button support.
 
 ## Customizing CSS
 
