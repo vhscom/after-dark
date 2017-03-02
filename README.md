@@ -31,7 +31,7 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 - Configurable [Section Menu](#section-menu) for global site navigation
 - Simple list pagination with page indicators
 - Site verification with Google, Bing Alexa and Yandex
-- 404 page with animated background video
+- 404 page with [animated background video](https://hackcabin.com/post/after-dark-error-page-redesign/)
 - Full site keyboard accessibility
 
 ## Derivative works
