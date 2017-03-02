@@ -95,12 +95,12 @@ To customize the menu, update the settings in `config.toml` like:
 [menu]
   [[menu.main]]
     name = "Home"
-    weight = 0
+    weight = 1
     identifier = "home"
     url = "/"
   [[menu.main]]
     name = "Posts"
-    weight = 1
+    weight = 2
     identifier = "post"
     url = "/post/"
 ```
