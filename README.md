@@ -15,52 +15,51 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 
 - Dark theme intended for low-light reading
 - Mobile-optimized to limit number of HTTP round-trips
-- [Intelligent Lazyloading](#intelligent-lazyloading) with [lazysizes](https://github.com/aFarkas/lazysizes)
 - Responsive typography optimized for mobile, tablet and desktop
-- [Related Content](#related-content) increases page views and reader loyalty
-- Optional [Table of Contents](#table-of-contents) with smooth scroll
-- SEO-optimized using OpenGraph, [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and Meta tags
+- Configurable [Section Menu](#adding-a-section-menu) for global site navigation
+- [Intelligent Lazyloading](#using-intelligent-lazyloading) with [lazysizes]
+- [Related Content](#about-related-content) for increased page views and reader loyalty
+- Accessible [Table of Contents](#creating-a-table-of-contents) with smooth scroll
+- SEO-optimized using [OpenGraph](https://opg.me), [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and Meta tags
 - Google Analytics using the [internal async template](https://gohugo.io/extras/analytics)
 - Post comments with [Disqus](https://disqus.com/) using the [internal template](https://gohugo.io/extras/comments)
-- Gentle content fade-in using CSS keyframe animation
 - Customizable grid layouts and more using [hack.css](http://hackcss.com)
 - Post reading time and update notice set user expectations
 - Rich post bylines including links to category and tag taxonomy listings, author and word count
 - [Block Templates](https://gohugo.io/templates/blocks/) for foolproof layouts
 - Extensible [taxonomy terms template](https://gohugo.io/templates/terms)
-- Configurable [Section Menu](#section-menu) for global site navigation
 - Simple list pagination with page indicators
 - Site verification with Google, Bing Alexa and Yandex
-- 404 page with [animated background video](https://hackcabin.com/post/after-dark-error-page-redesign/)
+- 404 page with [animated background](https://hackcabin.com/post/after-dark-error-page-redesign/)
 - Full site keyboard accessibility
 
-## Derivative works
+## Derivative Works
 
 A number of sites and themes have been created based on After Dark. To [view them](https://codeberg.org/vhs/after-dark/wiki#derivative-works) head to the After Dark wiki.
 
-## Getting started
+## Getting Started
 
-[Install Hugo](https://gohugo.io/#action) on your machine. Instructions for [Homebrew](https://brew.sh/) on macOS:
+[Install Hugo](https://gohugo.io/#action) on your machine and use it to create a new site. Instructions for [Homebrew](https://brew.sh/) on macOS:
 
 ```shell
 brew install hugo
 hugo new site flying-toasters && cd $_
 ```
 
-Clone the theme and use it to serve your site:
+Clone After Dark and use it to serve your site:
 
 ```shell
 (cd themes; git clone git@github.com:vhs/after-dark.git)
 hugo serve --theme=after-dark
 ```
 
-Copy the custom archetypes to your site:
+Copy custom archetypes to your site:
 
 ```shell
 cp themes/after-dark/archetypes/* archetypes
 ```
 
-Include settings in your site's `config.toml`:
+Finally, include the settings in your site's `config.toml`:
 
 ```toml
 baseurl = "https://c74ce35e.ngrok.io" # Controls base URL
@@ -85,24 +84,25 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   images = [] # Suggested, adds default OpenGraph images
 ```
 
-## Section Menu
+That's it! Everything else is optional. Read on to learn more about specific features and how to customize the theme.
+
+## Adding a Section Menu
 
 Theme uses [Section Menu for Lazy Bloggers](https://gohugo.io/extras/menus/#section-menu-for-the-lazy-blogger) to produce global site navigation, if enabled.
 
 To customize the menu, update the settings in `config.toml` like:
 
 ```toml
-[menu]
-  [[menu.main]]
-    name = "Home"
-    weight = 1
-    identifier = "home"
-    url = "/"
-  [[menu.main]]
-    name = "Posts"
-    weight = 2
-    identifier = "post"
-    url = "/post/"
+[[menu.main]]
+  name = "Home"
+  weight = 1
+  identifier = "home"
+  url = "/"
+[[menu.main]]
+  name = "Posts"
+  weight = 2
+  identifier = "post"
+  url = "/post/"
 ```
 
 Or update the menu using front matter from your pages:
@@ -112,13 +112,13 @@ menu = "main"
 weight = 3
 ```
 
-## Intelligent Lazyloading
+## Using Intelligent Lazyloading
 
-Lazyloading prioritizes when and how images and more are downloaded, making perceived performance faster and reducing page load times for improved SEO. When activated, lazyloading will begin working automatically. No JavaScript configuration is necessary.
+Lazyloading prioritizes when and how images and more are downloaded, improving perceived performance and reducing page load times. When activated, lazyloading will start working automatically. No JavaScript configuration is necessary.
 
-**What makes it _Intelligent_?** To save unnecessary HTTP requests lazy-loading applies only to page content. If no lazyloaded content is detected on a page when the site is generated, the feature will not be activated and the lazysizes library will not be loaded.
+**What makes it _Intelligent_?** If no lazyloaded content is detected on a page when the site is generated, the feature will not be activated and no additional downloads will occur.
 
-To activate lazyloading, add the `lazyload` value to the `class` attribute of your images/iframes in conjunction with a `data-src` and/or `data-srcset` attribute:
+To activate lazyloading with [lazysizes], add `lazyload` to the `class` attribute of your images/iframes in conjunction with a `data-src` and/or `data-srcset` attribute:
 
 ```html
 <!-- non-responsive -->
@@ -143,9 +143,9 @@ To activate lazyloading, add the `lazyload` value to the `class` attribute of yo
 </iframe>
 ```
 
-Additional information and examples, including LQIP (Low-Quality Image Placeholders), are available on the [lazysizes](https://github.com/aFarkas/lazysizes) repository on GitHub.
+Additional information and examples, including how to set-up and use LQIP (Low-Quality Image Placeholders), are available on the [lazysizes] repository on GitHub.
 
-## Related Content
+## About Related Content
 
 Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can increase your site's page views, the time spent on your site and reader loyalty.
 
@@ -156,6 +156,22 @@ By default After Dark will display up to 7 items by title along with their readi
 ```toml
 related_content_limit = 5
 ```
+
+## Creating a Table of Contents
+
+Help users locate and share information on your site. By providing a Table of Contents (TOC), users will spend less time scrolling and are more likely to deep link to specific information.
+
+To automatically generate a TOC for a post based on the [page outline](https://gsnedders.html5.org/outliner/), add the following to your post front matter:
+
+```toml
+toc = true
+```
+
+To hide the TOC set `toc = false`, or simply remove the setting from the post front matter.
+
+After Dark uses the HTML5 [`details`](http://devdocs.io/html/element/details) and [`summary`](http://devdocs.io/html/element/summary) elements to provide a TOC which does not require use of CSS or JavaScript to function.
+
+When a page is first loaded, the TOC will be collapsed so it does not clutter up the page. Once expanded, selecting an item in the TOC will smooth scroll to that section within the document, highlight the section header and updating the browser's location bar for deep linking and back-button support.
 
 ## Using OpenGraph
 
@@ -192,7 +208,7 @@ After Dark is built with SEO in mind. Aside from OpenGraph, Schema Structured Da
 
 Fine-tune your SEO settings using the following available options.
 
-### Webmaster verifications
+### Webmaster Verification
 
 Verify your site with several webmaster tools including Google, Bing, Alexa and Yandex. To allow verification of your site with any or all of these providers simply add the following to your `config.toml` and fill in their respective values:
 
@@ -258,7 +274,7 @@ Though it's possible to block search indexing from a `robots.txt` file, After Da
 - Taxonomy Pages (e.g. Category and Tag listings)
 - Taxonomy Terms Pages (e.g. Pages listing taxonomies)
 
-To customize default blocking configure the `noindex_kinds` setting in the `[params]` section of your `config.toml`. For example, if you want to enable crawling for sections appearing in [Section Menu](#section-menu) add the following to your configuration file:
+To customize default blocking configure the `noindex_kinds` setting in the `[params]` section of your `config.toml`. For example, if you want to enable crawling for sections appearing in [Section Menu](#adding-a-section-menu) add the following to your configuration file:
 
 ```
 [params]
@@ -288,33 +304,17 @@ And, finally, if you're using Hugo `v0.18` or better, you can also add an `_inde
 
 To learn more about how crawlers use this feature read [block search indexing with meta tags](https://support.google.com/webmasters/answer/93710).
 
-## Table of Contents
-
-Help users locate and share information on your site. By providing a Table of Contents (TOC), users will spend less time scrolling and are more likely to deep link to specific information.
-
-To automatically generate a TOC for a post based on the [page outline](https://gsnedders.html5.org/outliner/), add the following to your post front matter:
-
-```toml
-toc = true
-```
-
-To hide the TOC set `toc = false`, or simply remove the setting from the post front matter.
-
-After Dark uses the HTML5 [`details`](http://devdocs.io/html/element/details) and [`summary`](http://devdocs.io/html/element/summary) elements to provide a TOC which does not require use of CSS or JavaScript to function.
-
-When a page is first loaded, the TOC will be collapsed so it does not clutter up the page. Once expanded, selecting an item in the TOC will smooth scroll to that section within the document, highlight the section header and updating the browser's location bar for deep linking and back-button support.
-
 ## Customizing CSS
 
 To customize CSS without having to tamper with theme files do the following:
 
 1. Create a `critical-custom.css.html` in your site's `layouts/partials directory`.
-1. Add your customizations inside a `<style media="screen"></style>` element.
+1. Add your customizations inside a `style` element.
 
 Example customization file:
 
 ```html
-<style media="screen">
+<style media="screen,projection">
   .hack ul li {
     margin: 0;
   }
@@ -343,7 +343,7 @@ See the Hugo docs for additional [configuration options](http://gohugo.io/overvi
 
 Keep your content <abbr title="Don't Repeat Yourself">DRY</abbr> to improve thematic consistency throughout your site. To help achieve this, Hugo provides [Shortcodes](https://gohugo.io/extras/shortcodes). Shortcodes are very powerful, and can be used to achieve functionality not otherwise available in the markdown processor.
 
-To create your own custom shortcodes add a `layouts/shortcodes` directory to your site and place your shortcodes within. Here's an example shortcode overriding Hugo's [built-in `figure` shortcode](https://gohugo.io/extras/shortcodes#figure) to leverage After Dark's [Intelligent Lazyloading](#intelligent-lazyloading) feature and improve display for use with the theme:
+To create your own custom shortcodes add a `layouts/shortcodes` directory to your site and place your shortcodes within. Here's an example shortcode overriding Hugo's [built-in `figure` shortcode](https://gohugo.io/extras/shortcodes#figure) to leverage After Dark's [Intelligent Lazyloading](#using-intelligent-lazyloading) feature and improve display for use with the theme:
 
 ```html
 <!--{{/*
@@ -389,3 +389,5 @@ Once the vendor file is updated pop open your favorite dev tools and test the ch
 ## Contributing
 
 Issues have been disabled for this repo. If you feel passionate something needs to be changed please feel free to submit a pull with your suggested changes.
+
+[lazysizes]: https://github.com/aFarkas/lazysizes
