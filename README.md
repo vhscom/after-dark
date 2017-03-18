@@ -33,10 +33,6 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 - 404 page with [animated background](https://hackcabin.com/post/after-dark-error-page-redesign/)
 - Full site keyboard accessibility
 
-## Derivative Works
-
-A number of sites and themes have been created based on After Dark. To [view them](https://codeberg.org/vhs/after-dark/wiki#derivative-works) head to the After Dark wiki.
-
 ## Getting Started
 
 [Install Hugo](https://gohugo.io/#action) on your machine and use it to create a new site. Instructions for [Homebrew](https://brew.sh/) on macOS:
