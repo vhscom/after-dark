@@ -384,10 +384,10 @@ Once the vendor file is updated pop open your favorite dev tools and test the ch
 
 ## Contributing
 
-Issues have been disabled for this repo. If you feel passionate something needs to be changed please feel free to submit a pull with your suggested changes.
-
-[lazysizes]: https://github.com/aFarkas/lazysizes
+Issues have been disabled for this repo. If you feel passionate something needs to be changed please feel free to submit a pull with your suggested changes. For a listing of derivative works head to the [After Dark wiki](https://codeberg.org/vhs/after-dark/wiki#derivative-works).
 
 ## License
 
 MIT License 2017 © Comfusion LLC
+
+[lazysizes]: https://github.com/aFarkas/lazysizes
