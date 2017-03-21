@@ -387,3 +387,7 @@ Once the vendor file is updated pop open your favorite dev tools and test the ch
 Issues have been disabled for this repo. If you feel passionate something needs to be changed please feel free to submit a pull with your suggested changes.
 
 [lazysizes]: https://github.com/aFarkas/lazysizes
+
+## License
+
+MIT License 2017 © Comfusion LLC
