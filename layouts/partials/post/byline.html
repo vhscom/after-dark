@@ -11,7 +11,7 @@
     {{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}
   </time>
   {{ with .Params.categories }}
-    in <span itemprop="articleSection">{{ delimit (apply (apply (sort .) "partial" "post/category-link" ".") "chomp" ".") ", " " and "}}</span>
+    in <span itemprop="articleSection">{{ delimit (apply (apply (sort .) "partial" "post/category-link" ".") "chomp" ".") ", " " and " }}</span>
   {{ end }}
   {{ with .Params.tags }}
     and tagged {{ delimit (apply (apply (sort .) "partial" "post/tag-link" ".") "chomp" ".") ", " " and " }}
