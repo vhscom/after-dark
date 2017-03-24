@@ -13,7 +13,7 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 
 ## Features
 
-- Dark theme intended for low-light reading
+- [Configurable](#configuring-a-theme-variant) dark theme intended for low-light reading
 - Mobile-optimized to limit number of HTTP round-trips
 - Responsive typography optimized for mobile, tablet and desktop
 - Configurable [Section Menu](#adding-a-section-menu) for global site navigation
@@ -77,7 +77,8 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   hide_author = false # Optional, set true to hide author name on posts
   show_menu = false # Optional, set true to enable section menu
   powered_by = true # Optional, set false to disable credits
-  images = [] # Suggested, adds default OpenGraph images
+  images = [] # Suggested, controls default OpenGraph images
+  theme_variant = "" # Optional, for use to overriding default theme
 ```
 
 That's it! Everything else is optional. Read on to learn more about specific features and how to customize the theme.
@@ -302,7 +303,7 @@ To learn more about how crawlers use this feature read [block search indexing wi
 
 ## Customizing CSS
 
-To customize CSS without having to tamper with theme files do the following:
+To add your own theme css or override existing CSS without having to change theme files do the following:
 
 1. Create a `critical-custom.css.html` in your site's `layouts/partials directory`.
 1. Add your customizations inside a `style` element.
@@ -310,7 +311,7 @@ To customize CSS without having to tamper with theme files do the following:
 Example customization file:
 
 ```html
-<style media="screen,projection">
+<style media="screen">
   .hack ul li {
     margin: 0;
   }
@@ -318,6 +319,8 @@ Example customization file:
 ```
 
 Your customizations will automatically be added to generated pages, inline in the document `HEAD`. Thanks to [@rsommerard](https://github.com/rsommerard) for making the suggestion.
+
+If you choose to modify the Hack CSS
 
 ## Customizing Markdown Output
 
@@ -372,19 +375,23 @@ To use it create a file called `figure.html` with the above contents in your `sh
 
 Reference the Hugo docs for [additional usage instructions](https://gohugo.io/extras/shortcodes#figure), including caption titles, attribution links and more.
 
-## Upgrading hack.css
+## Configuring a Theme Variant
 
-The specific version of [`hack.css`](hackcss.com) used is _pinned_ in the `package.json` dependency manifest. To check for updates do an `npm i` and run `npm run ncu`.
+[`hack.css`](hackcss.com) provides a few variants you may wish to use instead of the After Dark defaults. To download them do an `npm i` from `/themes/after-dark/` (assumes NPM installed).
 
-If an update is available consider taking the automatic update when prompted, but keep the version of `hack.css` pinned in your manifest so you don't forget which version you're using.
+Once downloaded, open `node_modules/hack/dist` directory and replace the CSS contents of `critical-vendor.css.html` with those you wish to use, updating the `theme_variant` setting in the site configuration like:
 
-After the new `hack` dependency version is pulled down to the `node_modules` directory, copy the contents of `hack.css` and `dark.css` into the `critical-vendor.css.html` file.
+    theme_variant = "standard dark-grey"
 
-Once the vendor file is updated pop open your favorite dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations, making any tweaks necessary to the `hack.css` style overrides indicated in `critical-theme.css.html`. And, finally, adjust your [Customized CSS](#customizing-css) if necessary.
+**Why not use external CSS files?** After Dark is optimized for speed, and, as a result, limits the number of HTTP requests whenever possible. This just so happens to be of those occasions.
+
+Once the vendor file is updated, open your favorite dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations, making any tweaks necessary to `critical-theme.css.html`.
+
+And, finally, adjust your [Customized CSS](#customizing-css), 404 page and `/meta/theme-color` as necessary.
 
 ## Contributing
 
-Issues have been disabled for this repo. If you feel passionate something needs to be changed please feel free to submit a pull with your suggested changes. For a listing of derivative works head to the [After Dark wiki](https://codeberg.org/vhs/after-dark/wiki#derivative-works).
+Issues have been disabled for this repo. If you feel passionate something needs to be changed please feel free to submit a pull with your suggested changes. For a showcase of derivative works head to the [After Dark wiki](https://codeberg.org/vhs/after-dark/wiki#derivative-works).
 
 ## License
 

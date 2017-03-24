@@ -17,6 +17,7 @@
     {{ partial "meta/name-author" . }}
     {{ template "_internal/opengraph.html" . }}
     {{ partial "meta/ogimage-maybe" . }}
+    {{ partial "meta/theme-color" . }}
     {{ if eq .Kind "home" }}
       {{ partial "site-verification" . }}
     {{ end }}
@@ -37,10 +38,11 @@
     {{ template "_internal/google_analytics_async.html" . }}
     {{ $lazylist := findRE "class=\".*?\\blazyload\\b.*?\"|class=lazyload\b" .Content }}<!-- http://regexr.com/3f9d1 -->
     {{ if ge (len $lazylist) 1 }}
-      <script src="/js/lazysizes.min.js" async></script>
+      <script async src="/js/lazysizes.min.js"></script>
     {{ end }}
   </head>
-  <body class="hack dark main container">
+  {{ $theme_variant := .Site.Params.theme_variant | default "hack dark" }}
+  <body class="{{ $theme_variant }} main container">
     <header>{{ block "header" . }}{{ end }}</header>
     <main>{{ block "main" . }}{{ end }}</main>
     <footer>{{ block "footer" . }}{{ end }}</footer>
