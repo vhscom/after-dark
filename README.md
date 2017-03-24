@@ -6,7 +6,7 @@
 
 ## Demo
 
-Head to [Hack Cabin](https://hackcabin.com) for a **production example** running on AWS with [HTTP/2 enabled](https://vhs.codeberg.page/zero-to-http-2-aws-hugo/) and read more about the Hack Cabin [site architecture](https://hackcabin.com/post/initial-commit/).
+Head to [Hack Cabin](https://hackcabin.com) for a **production example** running on AWS and to learn more about the JAMstack [site architecture](https://hackcabin.com/post/initial-commit/).
 
 ## Features
 
@@ -76,7 +76,7 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   theme_variant = "" # Optional, for use to overriding default theme
 ```
 
-That's it! Everything else is optional. Read on to learn more about specific features and how to customize the theme.
+That's it! Everything else is optional. Read on to learn more about specific features and how to customize the theme. And, when you're ready, here are instructions to [run After Dark on AWS with HTTP/2 enabled](https://vhs.codeberg.page/zero-to-http-2-aws-hugo/).
 
 ## Adding a Section Menu
 
