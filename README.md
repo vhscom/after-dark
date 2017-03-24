@@ -2,7 +2,7 @@
 
 > A simple, yet highly configurable responsive dark theme for the [Hugo](https://gohugo.io/) static site generator.
 
-![Theme screenshots](https://codeberg.org/vhs/after-dark/blob/master/images/minimal-mac.png "After Dark running on a MacBook and iPhone")
+![Theme screenshots](https://raw.githubusercontent.com/vhs/after-dark/master/images/minimal-mac.png "After Dark running on a MacBook and iPhone")
 
 ## Demo
 
