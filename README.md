@@ -6,7 +6,7 @@
 
 ## Demo
 
-Head to [Hack Cabin](https://hackcabin.com) for a **production example** running on AWS and to learn more about the JAMstack [site architecture](https://hackcabin.com/post/initial-commit/).
+Head to [Hack Cabin](https://hackcabin.com) for a **production example** running on AWS and to learn more about [the architecture](https://hackcabin.com/post/initial-commit/).
 
 ## Features
 
