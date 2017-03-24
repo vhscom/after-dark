@@ -1,11 +1,8 @@
 # After Dark
 
-A retro dark theme for [Hugo](https://gohugo.io/).
+> A simple, yet highly configurable responsive dark theme for the [Hugo](https://gohugo.io/) static site generator.
 
-![Theme screenshot](https://cloud.githubusercontent.com/assets/440298/23494101/893790ee-ff4b-11e6-9517-a6e97911c0e6.png "After Dark for Hugo running in Safari on macOS")
-
-> Simplicity is the ultimate sophistication<br>
-> --- Leonardo da Vinci
+![Theme screenshots](https://codeberg.org/vhs/after-dark/blob/master/images/minimal-mac.png "After Dark running on a MacBook and iPhone")
 
 ## Demo
 
@@ -14,19 +11,17 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 ## Features
 
 - [Configurable](#configuring-a-theme-variant) dark theme intended for low-light reading
-- Mobile-optimized to limit number of HTTP round-trips
-- Responsive typography optimized for mobile, tablet and desktop
+- Optimized for mobile, tablet, desktop and terminal browsing
 - Configurable [Section Menu](#adding-a-section-menu) for global site navigation
-- [Intelligent Lazyloading](#using-intelligent-lazyloading) with [lazysizes]
+- [Intelligent Lazyloading](#using-intelligent-lazyloading) for images and iFrame embeds
 - [Related Content](#about-related-content) for increased page views and reader loyalty
 - Accessible [Table of Contents](#creating-a-table-of-contents) with smooth scroll
 - SEO-optimized using [OpenGraph](https://opg.me), [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and Meta tags
 - Google Analytics using the [internal async template](https://gohugo.io/extras/analytics)
 - Post comments with [Disqus](https://disqus.com/) using the [internal template](https://gohugo.io/extras/comments)
-- Customizable grid layouts and more using [hack.css](http://hackcss.com)
 - Post reading time and update notice set user expectations
 - Rich post bylines including links to category and tag taxonomy listings, author and word count
-- [Block Templates](https://gohugo.io/templates/blocks/) for foolproof layouts
+- [Block Templates](https://gohugo.io/templates/blocks/) for foolproof layout extensions
 - Extensible [taxonomy terms template](https://gohugo.io/templates/terms)
 - Simple list pagination with page indicators
 - Site verification with Google, Bing Alexa and Yandex
