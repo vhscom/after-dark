@@ -374,7 +374,7 @@ Reference the Hugo docs for [additional usage instructions](https://gohugo.io/ex
 
 ## Configuring a Theme Variant
 
-[`hack.css`](hackcss.com) provides a few variants you may wish to use instead of the After Dark defaults. To download them do an `npm i` from `/themes/after-dark/` (assumes NPM installed).
+[`hack.css`](http://hackcss.com/) provides a few variants you may wish to use instead of the After Dark defaults. To download them do an `npm i` from `/themes/after-dark/` (assumes NPM installed).
 
 Once downloaded, open `node_modules/hack/dist` directory and replace the CSS contents of `critical-vendor.css.html` with those you wish to use, updating the `theme_variant` setting in the site configuration like:
 
