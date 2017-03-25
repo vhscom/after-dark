@@ -76,7 +76,9 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   theme_variant = "" # Optional, for use to overriding default theme
 ```
 
-That's it! Everything else is optional. Read on to learn more about specific features and how to customize the theme. And, when you're ready, here are instructions to [run After Dark on AWS with HTTP/2 enabled](https://vhs.codeberg.page/zero-to-http-2-aws-hugo/).
+That's it! Everything else is optional. Read on to learn more about configuring specific features and how to customize the theme.
+
+When you're ready to host, **save money over using Netify** by [turning your site into a JAMstack](https://vhs.codeberg.page/zero-to-http-2-aws-hugo/) site with Amazon Web Services and receive your first year free.
 
 ## Adding a Section Menu
 
@@ -364,7 +366,7 @@ To create your own custom shortcodes add a `layouts/shortcodes` directory to you
 
 To use it create a file called `figure.html` with the above contents in your `shortcodes` directory and use it like:
 
-```
+```html
 {{< figure src="/gear/southeast-asia-carry-on-packing-list/" caption="Southeast Asia Carry-On Packing List: Digital Nomad Edition" >}}
 ```
 
