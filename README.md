@@ -6,7 +6,7 @@
 
 ## Demo
 
-Head to [Hack Cabin](https://hackcabin.com) for a **production example** running on AWS and to learn more about [the architecture](https://hackcabin.com/post/initial-commit/).
+Head to [Hack Cabin](https://hackcabin.com) for a **production example** running on AWS and to learn more about the [Hack Cabin architecture](https://hackcabin.com/post/initial-commit/) and how to recreate it yourself.
 
 ## Features
 
@@ -76,9 +76,9 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   theme_variant = "" # Optional, for use to overriding default theme
 ```
 
-That's it! Everything else is optional. Read on to learn more about configuring specific features and how to customize the theme.
+That's it! Everything else is optional.
 
-When you're ready to host, **save money over using Netify** by [turning your site into a JAMstack](https://vhs.codeberg.page/zero-to-http-2-aws-hugo/) site with Amazon Web Services and receive your first year free.
+Read on to learn more about configuring specific features and how to customize the theme. And when you're ready to host, **save money over using Netify** by [turning your After Dark site into a JAMstack site](https://vhs.codeberg.page/zero-to-http-2-aws-hugo/) using Amazon Web Services.
 
 ## Adding a Section Menu
 
