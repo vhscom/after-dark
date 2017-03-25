@@ -4,7 +4,7 @@
 name = "After Dark"
 license = "MIT"
 licenselink = "https://codeberg.org/vhs/after-dark/blob/master/LICENSE.md"
-description = "A retro dark theme for Hugo"
+description = "A simple, yet highly configurable responsive dark theme."
 homepage = "https://vhs.github.io/after-dark/"
 tags = [
   "personal",
