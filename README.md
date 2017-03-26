@@ -1,12 +1,8 @@
-# After Dark
-
-> A simple, yet highly configurable responsive dark theme for the [Hugo](https://gohugo.io/) static site generator.
-
 ![Theme screenshots](https://raw.githubusercontent.com/vhs/after-dark/master/images/minimal-mac.png "After Dark running on a MacBook and iPhone")
 
 ## Demo
 
-Head to [Hack Cabin](https://hackcabin.com) for a **production example** running on AWS and to learn more about the [Hack Cabin architecture](https://hackcabin.com/post/initial-commit/) and how to recreate it yourself.
+Head to [Hack Cabin](https://hackcabin.com) for a **production example** running on AWS and to learn more about the [site architecture](https://hackcabin.com/post/initial-commit/) and [how to replicate it](http://vhs.codeberg.page/zero-to-http-2).
 
 ## Features
 
@@ -78,7 +74,7 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 
 That's it! Everything else is optional.
 
-Read on to learn more about configuring specific features and how to customize the theme. And when you're ready to host, **save money over using Netify** by [turning your After Dark site into a JAMstack site](https://vhs.codeberg.page/zero-to-http-2-aws-hugo/) using Amazon Web Services.
+Read on to learn how to configure specific features and customize the theme. And when you're ready to host, **save money over using Netify** by [hosting After Dark on Amazon Web Services](http://vhs.codeberg.page/zero-to-http-2).
 
 ## Adding a Section Menu
 
@@ -385,10 +381,6 @@ Once downloaded, open `node_modules/hack/dist` directory and replace the CSS con
 Once the vendor file is updated, open your favorite dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations, making any tweaks necessary to `critical-theme.css.html`.
 
 And, finally, adjust your [Customized CSS](#customizing-css), 404 page and `/meta/theme-color` as necessary.
-
-## Contributing
-
-Issues have been disabled for this repo. If you feel passionate something needs to be changed please feel free to submit a pull with your suggested changes. For a showcase of derivative works head to the [After Dark wiki](https://codeberg.org/vhs/after-dark/wiki#derivative-works).
 
 ## License
 
