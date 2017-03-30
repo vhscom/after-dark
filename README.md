@@ -397,6 +397,6 @@ There's only one rule...there are no rules.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://codeberg.org/vhs/after-dark/blob/master/LICENSE) file for the full license text.
+This project is licensed under the ISC License. See the [LICENSE](https://codeberg.org/vhs/after-dark/blob/master/LICENSE) file for the full license text.
 
 [lazysizes]: https://github.com/aFarkas/lazysizes
