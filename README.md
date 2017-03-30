@@ -10,8 +10,8 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 
 ## Features
 
-- High-performance pages load in a single HTTP request
-- Generates ~800-1000 pages per second
+- High-performance pages load content in a single HTTP request
+- Capable of generating ~800-1000 pages per second
 - Optimized for mobile, tablet, desktop and terminal browsing
 - [Theme Variants](#theme-variants) for light and dark display
 - [Section Menu](#section-menu) for global site navigation
@@ -19,13 +19,11 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 - [Related Content](#related-content) for increased page views and reader loyalty
 - Accessible [Table of Contents](#table-of-contents) with smooth scroll
 - SEO-optimized using [OpenGraph](https://opg.me), [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and Meta tags
-- Google Analytics using the [internal async template](https://gohugo.io/extras/analytics)
-- Post comments with [Disqus](https://disqus.com/) using the [internal template](https://gohugo.io/extras/comments)
+- Google Analytics async tracking snippet with preloading support
+- Post comments with [Disqus](https://disqus.com/)
 - Reading time and post summaries set user expectations
 - [Modification Dating](#modification-dating) adds visibility to fresh content
-- Configurable bylines including category and tag taxonomy listings, author and word count
-- [Block Templates](https://gohugo.io/templates/blocks/) for foolproof layout reuse and extension
-- Extensible [taxonomy terms template](https://gohugo.io/templates/terms)
+- Configurable post bylines including category and tag taxonomy listings, author and word count
 - Simple list pagination with page indicator
 - Site verification with Google, Bing, Alexa and Yandex
 - 404 page with engaging [animated background](https://hackcabin.com/post/after-dark-error-page-redesign/)
