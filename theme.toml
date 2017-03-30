@@ -1,8 +1,5 @@
-# theme.toml template for a Hugo theme
-# See https://github.com/spf13/hugoThemes#themetoml for an example
-
 name = "After Dark"
-license = "MIT"
+license = "ISC"
 licenselink = "https://codeberg.org/vhs/after-dark/blob/master/LICENSE.md"
 description = "A simple, yet highly configurable responsive dark theme."
 homepage = "https://vhs.github.io/after-dark/"
@@ -11,109 +8,34 @@ tags = [
   "minimal",
   "responsive",
   "accessible",
-  "throwback",
   "dark"
 ]
 features = [
-  "Mobile-first Design",
+  "Mobile-optimized",
+  "SEO-optimized",
   "Responsive Design",
   "Flexbox Layouts",
   "Google Analytics",
-  "Disqus Commenting",
-  "OpenGraph support",
+  "Disqus",
+  "Image lazyloading",
+  "OpenGraph",
   "Schema Structured Data",
-  "Paginated Lists",
-  "Reading Time",
-  "Last Modified time",
-  "Author Byline",
+  "Pagination",
+  "Reading time",
+  "Related content",
+  "Modification dating",
+  "Author byline",
   "Word Count",
   "Related Posts",
   "Section Menu",
   "Block Templates",
   "Table of Contents",
-  "SEO Site Verification"
+  "Keyboard accessible",
+  "Terminal friendly",
+  "Customizable theme"
 ]
 min_version = 0.16
 
 [author]
   name = "VHS"
   homepage = "https://vhs.codeberg.page"
-
-########
-# Copy the following to your config.toml for theme features
-# enableRobotsTXT = true
-# googleAnalytics = ""
-# SectionPagesMenu = "main"
-#
-# [params]
-#   description = ""
-#   author = ""
-#   powered_by = true
-#
-########
-# UX simple retro and good for low-light reading
-# - Page content fades in using brief keyframe animation
-# - Zero JavaScript (okay, except Google Analytics)
-########
-# Customizing
-# - Set your favicon
-# - Change the hack theme
-# - Upgrading hack
-# - Block templates
-# - Set your site description
-# - Disable the Powered By
-# - robots.txt
-# - 404 page
-# - prev and next rel
-# - Creating your menu
-########
-# Then copy archetypes/* to the site archetypes folder
-# - Descriptions provided for all pages (for SEO purposes)
-# - Provide some best practices on description length and wording
-########
-# Taxonomy Terms pages - document
-# - Linked to by RICH METADATA (post content types only)
-########
-# Use of Block Templates
-# - Affords layout inheritance
-# - Helps prevent invalid markup
-########
-# Google Analytics provided using a Hugo-internal template
-# - To use simply add the provided key and assign your tracking code
-########
-# PageSpeed 100 - Desktop and Mobile
-# - Gives a whole new meaning to flying toasters
-# - HTML5, CSS3, No JavaScript
-# - Favicon partial using data URI saves an http request
-########
-# Related posts
-# - Conditionally renders for post
-# - Displays posts containing same tag
-
-######
-# TODO:
-# X Add noindex meta for pages to not crawl (or custom robots.txt)
-# X Similar posts feature - https://gohugo.io/templates/functions/
-# X Check out the menu stuff in "creating a new theme md"
-# X Confirm RSS is working as expected
-# X Confirm list template works
-# - create archives page (grouped by date or keyword)
-# X Add custom post author support
-# - Add multi-author support
-# X test <!--more--> verify not wraping p in a p (update, index.html, terms, list)
-# X get them Tags and Categories displaying on posts ONLY
-# X prevent pages from showing up with posts on the homepage
-# X add favicon - https://github.com/yoshiharuyamashita/blackburn/blob/master/layouts/partials/favicon.html
-# X create summary layout with readmore... link (search "delimit .Params.tag" for big hitters)
-# X create 404 page (https://gohugo.io/templates/404/)
-# X set prev and next links (use frontmatter) - see https://github.com/gecampbell/galliard.xyz/blob/2c4a07d9f5fc5fe413b906f5d877ba78bcb2dbab/layouts/partials/head.html
-# - link to feed from homepage, and taxonomies (tags, categories)
-# X check all pages for a meta description (including terms pages)
-# - dynamic sitemap page
-# X create an install script to copy taxonomy datas
-# X document the package manifest and make a README - https://github.com/yoshiharuyamashita/blackburn
-# X add post modified (last updated) day and time
-# X Test in Lynx browser before publishing
-# - Set the VERSION number in package.json and tag the repo
-# - Apply LD-data (search "BlogPosting" https://gohugo.io/templates/functions/#strings)
-# X document features (check against current theme toml files)
