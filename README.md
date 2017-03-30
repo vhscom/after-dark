@@ -393,7 +393,7 @@ And, finally, adjust your [Customized CSS](#custom-css), 404 page and `/meta/the
 
 ## Contributing
 
-Issues have been disabled for this repo. If you feel passionate something needs to be changed please feel free to submit a pull with your suggested changes or comment directly in the commit of code in question. If you need general support, you know [where to go](http://stackoverflow.com/questions/tagged/hugo).
+There's only one rule...there are no rules.
 
 ## License
 
