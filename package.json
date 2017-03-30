@@ -13,7 +13,8 @@
   "scripts": {
     "copy:lazysizes": "cp -i node_modules/lazysizes/lazysizes.min.js static/js",
     "copy:smoothscroll": "cp -i node_modules/smoothscroll-polyfill/dist/smoothscroll.js static/js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
   },
   "dependencies": {
     "hack": "0.7.7",
