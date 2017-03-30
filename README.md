@@ -23,7 +23,7 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 - Post comments with [Disqus](https://disqus.com/)
 - Reading time and post summaries set user expectations
 - [Modification Dating](#modification-dating) adds visibility to fresh content
-- [Syntax Highlighting](#code-highlighting) with optional line numbers and ability to call attention to individual lines
+- [Syntax Highlighting](#syntax-highlighting) with optional line numbers and ability to call attention to individual lines
 - Configurable post bylines including category and tag taxonomy listings, author and word count
 - Simple list pagination with page indicator
 - Site verification with Google, Bing, Alexa and Yandex
