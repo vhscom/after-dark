@@ -368,9 +368,7 @@ To set-up syntax highlighting for your After Dark site:
 
 Then choose either `./dist/light.css` or `dark.css` depending on your [Theme Variant](#theme-variants), and copy the contents of the file into your [Custom CSS](#custom-css) file.
 
-Once configured, syntax highlighting can be achieved using the Hugo built-in [`highlight` shortcode](https://gohugo.io/extras/shortcodes#highlight).
-
-Reference Hugo's Syntax Highlighting docs for [additional usage instructions](https://gohugo.io/extras/highlighting/#usage).
+Once configured, syntax highlighting can be achieved using the Hugo built-in [`highlight` shortcode](https://gohugo.io/extras/shortcodes#highlight). Reference Hugo's Syntax Highlighting docs for [additional usage instructions](https://gohugo.io/extras/highlighting/#usage).
 
 ### Custom CSS
 
