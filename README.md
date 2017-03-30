@@ -23,6 +23,7 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 - Post comments with [Disqus](https://disqus.com/)
 - Reading time and post summaries set user expectations
 - [Modification Dating](#modification-dating) adds visibility to fresh content
+- [Syntax Highlighting](#code-highlighting) with optional line numbers and ability to call attention to individual lines
 - Configurable post bylines including category and tag taxonomy listings, author and word count
 - Simple list pagination with page indicator
 - Site verification with Google, Bing, Alexa and Yandex
@@ -351,6 +352,25 @@ Additional theme-provided shortcodes at your disposal:
 To create your own custom shortcodes add a `layouts/shortcodes` directory to your site, place your shortcodes within and start using them in your markdown content.
 
 Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/extras/shortcodes#using-a-shortcode).
+
+### Syntax Highlighting
+
+Provide a richer experience when sharing code snippets on your site. After Dark provides support for code highlighting using the lovely [One Dark](https://github.com/atom/one-dark-syntax) or [One Light](https://github.com/atom/one-light-syntax) syntax themes used in [Atom](https://github.com/atom/atom).
+
+**Why not use Highlight.js?** Because it's slow, doesn't support line numbers or highlighting of individual lines. In addition, JS-based solutions force browsers to do the same work over and over again when that work can be done once at site generation.
+
+To set-up syntax highlighting for your After Dark site:
+
+- Follow Hugo's [Pygments installation](https://gohugo.io/extras/highlighting/#pygments) instructions.
+- Open the `themes/after-dark` folder and run `npm i`
+- Then open `./node_modules/atom-one-pygments` and `npm i`
+- Once dependencies are instaled, issue `npm run build` to generate the stylesheets to the `./dist` directory
+
+Then choose either `./dist/light.css` or `dark.css` depending on your [Theme Variant](#theme-variants), and copy the contents of the file into your [Custom CSS](#custom-css) file.
+
+Once configured, syntax highlighting can be achieved using the Hugo built-in [`highlight` shortcode](https://gohugo.io/extras/shortcodes#highlight).
+
+Reference Hugo's Syntax Highlighting docs for [additional usage instructions](https://gohugo.io/extras/highlighting/#usage).
 
 ### Custom CSS
 
