@@ -342,40 +342,34 @@ See the Hugo docs for additional [configuration options](http://gohugo.io/overvi
 
 ### Shortcodes
 
-Keep your content <abbr title="Don't Repeat Yourself">DRY</abbr> to improve thematic consistency throughout your site. To help achieve this, Hugo provides [Shortcodes](https://gohugo.io/extras/shortcodes). Shortcodes are very powerful, and can be used to achieve functionality not otherwise available in the markdown processor.
+Keep your content <abbr title="Don't Repeat Yourself">DRY</abbr> and improve thematic consistency across your site. To help achieve this, Hugo provides [Shortcodes](https://gohugo.io/extras/shortcodes).
 
-To create your own custom shortcodes add a `layouts/shortcodes` directory to your site and place your shortcodes within. Here's an example shortcode overriding Hugo's [built-in `figure` shortcode](https://gohugo.io/extras/shortcodes#figure) to leverage After Dark's [Intelligent Lazyloading](#intelligent-lazyloading) feature and improve display for use with the theme:
+Shortcodes are very powerful, and can be used to achieve functionality not otherwise available in the markdown processor. Hugo provides a number of [built-in shortcodes](https://gohugo.io/extras/shortcodes#built-in-shortcodes) you can use on your site. And After Dark provides some as well.
+
+Here's the `blockquote` shortcode provided by After Dark:
 
 ```html
-<!--{{/*
-  Similar to the internal shortcode, but with image lazyloading and
-  and adjusted caption title and small caption text.
-*/}}-->
-<figure {{ with .Get "class" }}class="{{ . }}"{{ end }}>
-  {{ with .Get "link" }}<a href="{{ . }}">{{ end }}
-    <img class="lazyload" data-src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{ . }}{{ else }}{{ .Get "caption" }}{{ end }}"{{ end }} />
-  {{ if .Get "link" }}</a>{{ end }}
-  {{ if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
-  <figcaption>{{ if isset .Params "title" }}
-    <header><b>{{ .Get "title" }}</b></header>{{ end }}
-    {{ if or (.Get "caption") (.Get "attr")}}
-    <small>{{ .Get "caption" }}
-    {{ with .Get "attrlink" }}<a href="{{ . }}"> {{ end }}
-      {{ .Get "attr" }}
-    {{ if .Get "attrlink"}}</a> {{ end }}
-    </small>{{ end }}
-  </figcaption>
+<blockquote {{ with .Get "class" }}class="{{ . }}"{{ end }} {{ with .Get "citelink" }}cite="{{ . }}"{{ end }}>
+  {{ .Inner }}
+  {{ with .Get "citelink" }}
+    <cite><a target="_blank" href="{{ . }}">{{ $.Get "cite" }}</a></cite>
+  {{ else }}
+    <cite>{{ .Get "cite" }}</cite>
   {{ end }}
-</figure>
+</blockquote>
 ```
 
-To use it create a file called `figure.html` with the above contents in your `shortcodes` directory and use it like:
+Use it in your markdown files like:
 
 ```html
-{{< figure src="/gear/southeast-asia-carry-on-packing-list/" caption="Southeast Asia Carry-On Packing List: Digital Nomad Edition" >}}
+{{< blockquote cite="Bitly" citelink="https://bitly.is/2mkxskj" >}}
+  <p>When you create your own Branded Short Domain, you can expect to see up to a 34% increase in CTR when compared to standard bit.ly links.</p>
+{{< /blockquote >}}
 ```
 
-Reference the Hugo docs for [additional usage instructions](https://gohugo.io/extras/shortcodes#figure), including caption titles, attribution links and more.
+To create your own custom shortcodes add a `layouts/shortcodes` directory to your site and place your shortcodes within.
+
+Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/extras/shortcodes#using-a-shortcode).
 
 ### Theme Variants
 
