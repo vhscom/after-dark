@@ -10,21 +10,23 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 
 ## Features
 
-- [Configurable](#configuring-a-theme-variant) dark theme intended for low-light reading
+- High-performance pages load in a single HTTP request
+- Generates ~800-1000 pages per second
 - Optimized for mobile, tablet, desktop and terminal browsing
-- Configurable [Section Menu](#adding-a-section-menu) for global site navigation
-- [Intelligent Lazyloading](#using-intelligent-lazyloading) for images and iFrame embeds
-- [Related Content](#about-related-content) for increased page views and reader loyalty
-- Accessible [Table of Contents](#creating-a-table-of-contents) with smooth scroll
+- [Configurable](#theme-variants) dark theme intended for low-light reading
+- Configurable [Section Menu](#section-menu) for global site navigation
+- [Intelligent Lazyloading](#intelligent-lazyloading) for images and iFrame embeds
+- [Related Content](#related-content) for increased page views and reader loyalty
+- Accessible [Table of Contents](#table-of-contents) with smooth scroll
 - SEO-optimized using [OpenGraph](https://opg.me), [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and Meta tags
 - Google Analytics using the [internal async template](https://gohugo.io/extras/analytics)
 - Post comments with [Disqus](https://disqus.com/) using the [internal template](https://gohugo.io/extras/comments)
 - Post reading time and update notice set user expectations
 - Rich post bylines including links to category and tag taxonomy listings, author and word count
-- [Block Templates](https://gohugo.io/templates/blocks/) for foolproof layout extensions
+- [Block Templates](https://gohugo.io/templates/blocks/) for foolproof layout reuse and extension
 - Extensible [taxonomy terms template](https://gohugo.io/templates/terms)
-- Simple list pagination with page indicators
-- Site verification with Google, Bing Alexa and Yandex
+- Simple list pagination with page indicator
+- Site verification with Google, Bing, Alexa and Yandex
 - 404 page with [animated background](https://hackcabin.com/post/after-dark-error-page-redesign/)
 - Full site keyboard accessibility
 
@@ -80,7 +82,9 @@ That's it! Everything else is optional.
 
 Read on to learn how to configure specific features and customize the theme. And when you're ready to host, **save money over using Netify** by [hosting After Dark on Amazon Web Services](http://vhs.codeberg.page/zero-to-http-2).
 
-## Adding a Section Menu
+## Customizing
+
+### Section Menu
 
 Theme uses [Section Menu for Lazy Bloggers](https://gohugo.io/extras/menus/#section-menu-for-the-lazy-blogger) to produce global site navigation, if enabled.
 
@@ -106,7 +110,7 @@ menu = "main"
 weight = 3
 ```
 
-## Using Intelligent Lazyloading
+### Intelligent Lazyloading
 
 Lazyloading prioritizes when and how images and more are downloaded, improving perceived performance and reducing page load times. When activated, lazyloading will start working automatically. No JavaScript configuration is necessary.
 
@@ -139,7 +143,7 @@ To activate lazyloading with [lazysizes], add `lazyload` to the `class` attribut
 
 Additional information and examples, including how to set-up and use LQIP (Low-Quality Image Placeholders), are available on the [lazysizes] repository on GitHub.
 
-## About Related Content
+### Related Content
 
 Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can increase your site's page views, the time spent on your site and reader loyalty.
 
@@ -151,7 +155,7 @@ By default After Dark will display up to 7 items by title along with their readi
 related_content_limit = 5
 ```
 
-## Creating a Table of Contents
+### Table of Contents
 
 Help users locate and share information on your site. By providing a Table of Contents (TOC), users will spend less time scrolling and are more likely to deep link to specific information.
 
@@ -167,7 +171,7 @@ After Dark uses the HTML5 [`details`](http://devdocs.io/html/element/details) an
 
 When a page is first loaded, the TOC will be collapsed so it does not clutter up the page. Once expanded, selecting an item in the TOC will smooth scroll to that section within the document, highlight the section header and updating the browser's location bar for deep linking and back-button support.
 
-## Using OpenGraph
+### OpenGraph
 
 After Dark leverages OpenGraph tags using the *undocumented* [internal template](https://github.com/spf13/hugo/blob/95ad3ad2fa3e6f4514166b47b77f051d280c16e9/tpl/template_embedded.go#L161-L204) to achieve rich sharing cards for Facebook and other social networks, as shown here:
 
@@ -196,7 +200,7 @@ images = [
 
 Test how things are looking during development using a combination of the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) and [ngrok](https://ngrok.com/).
 
-## Improving SEO and UX
+### SEO and UX
 
 After Dark is built with SEO in mind. Aside from OpenGraph, Schema Structured Data and SEO meta is applied to give robots what they want, automatically, without any user configuration necessary. This helps ensure your After Dark site will rank well in Search Engine Results Pages (SERPs) and prevent crawlers from indexing undesirable content.
 
@@ -216,7 +220,7 @@ Verify your site with several webmaster tools including Google, Bing, Alexa and 
 
 **Note:** Claiming your site with Alexa was [retired in May 2016](https://support.alexa.com/hc/en-us/articles/219135887-Claiming-has-been-retired-May-2016). However, Alexa verification has been added as a convenience for existing sites migrating to After Dark.
 
-### Custom Meta Descriptions
+### Meta Descriptions
 
 Well-crafted page titles help catch the human eye on search results pages. And meta descriptions provide a summary of the content and why its relevant for the reader, driving click-throughs.
 
@@ -230,7 +234,7 @@ In addition to appearing in search engines, meta descriptions also appear on ind
 
 If no custom description is provided After Dark will fallback to the description provided in `config.toml`. Learn more on [how to craft your meta descriptions](https://moz.com/learn/seo/meta-description).
 
-### Specifying Publish Dates
+### Publish Dates
 
 Help user agents know when posts were last modified. To do so add `publishdate` to your page front matter and update `date` anytime you make an update to a post.
 
@@ -252,13 +256,13 @@ publishdate = "2016-11-21"
 
 Review the W3C website for more [information on dates and times](https://www.w3.org/TR/html51/infrastructure.html#dates-and-times) for the Web infrastructure.
 
-### Using Link Types
+### Link Types
 
 For related content split across multiple pages in a sequence After Dark supports use of `prev` and `next` settings in your front matter.
 
 Learn more about [link types](http://devdocs.io/html/link_types).
 
-### Blocking Search Indexing
+### Search Index Blocking
 
 Just because a page appears in your `sitemap.xml` does not mean you want it to appear in a SERP. Examples of pages which will appear in your `sitemap.xml` that you typically do not want indexed by crawlers include error pages, search pages, legal pages, and pages that simply list summaries of other pages.
 
@@ -298,7 +302,7 @@ And, finally, if you're using Hugo `v0.18` or better, you can also add an `_inde
 
 To learn more about how crawlers use this feature read [block search indexing with meta tags](https://support.google.com/webmasters/answer/93710).
 
-## Customizing CSS
+### Custom CSS
 
 To add your own theme css or override existing CSS without having to change theme files do the following:
 
@@ -319,7 +323,7 @@ Your customizations will automatically be added to generated pages, inline in th
 
 If you choose to modify the Hack CSS
 
-## Customizing Markdown Output
+### Markdown Output
 
 Gain more control over markdown conversion to HTML. By modifying the markdown processor settings you can take advantage of [Blackfriday](https://github.com/russross/blackfriday) features not enabled by default.
 
@@ -335,11 +339,11 @@ Overrides to theme markdown processing defaults are available from page front ma
 
 See the Hugo docs for additional [configuration options](http://gohugo.io/overview/configuration/#configure-blackfriday-rendering).
 
-## Creating Shortcodes
+### Shortcodes
 
 Keep your content <abbr title="Don't Repeat Yourself">DRY</abbr> to improve thematic consistency throughout your site. To help achieve this, Hugo provides [Shortcodes](https://gohugo.io/extras/shortcodes). Shortcodes are very powerful, and can be used to achieve functionality not otherwise available in the markdown processor.
 
-To create your own custom shortcodes add a `layouts/shortcodes` directory to your site and place your shortcodes within. Here's an example shortcode overriding Hugo's [built-in `figure` shortcode](https://gohugo.io/extras/shortcodes#figure) to leverage After Dark's [Intelligent Lazyloading](#using-intelligent-lazyloading) feature and improve display for use with the theme:
+To create your own custom shortcodes add a `layouts/shortcodes` directory to your site and place your shortcodes within. Here's an example shortcode overriding Hugo's [built-in `figure` shortcode](https://gohugo.io/extras/shortcodes#figure) to leverage After Dark's [Intelligent Lazyloading](#intelligent-lazyloading) feature and improve display for use with the theme:
 
 ```html
 <!--{{/*
@@ -372,7 +376,7 @@ To use it create a file called `figure.html` with the above contents in your `sh
 
 Reference the Hugo docs for [additional usage instructions](https://gohugo.io/extras/shortcodes#figure), including caption titles, attribution links and more.
 
-## Configuring a Theme Variant
+### Theme Variants
 
 [`hack.css`](http://hackcss.com/) provides a few variants you may wish to use instead of the After Dark defaults. To download them do an `npm i` from `/themes/after-dark/` (assumes NPM installed).
 
@@ -384,11 +388,11 @@ Once downloaded, open `node_modules/hack/dist` directory and replace the CSS con
 
 Once the vendor file is updated, open your favorite dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations, making any tweaks necessary to `critical-theme.css.html`.
 
-And, finally, adjust your [Customized CSS](#customizing-css), 404 page and `/meta/theme-color` as necessary.
+And, finally, adjust your [Customized CSS](#custom-css), 404 page and `/meta/theme-color` as necessary.
 
 ## Contributing
 
-Issues have been disabled for this repo. If you feel passionate something needs to be changed please feel free to submit a pull with your suggested changes. If you need support, submit [your questions](http://stackoverflow.com/questions/tagged/hugo) to StackOverflow.
+Issues have been disabled for this repo. If you feel passionate something needs to be changed please feel free to submit a pull with your suggested changes or comment directly in the commit of code in question. If you need general support, you know [where to go](http://stackoverflow.com/questions/tagged/hugo).
 
 ## License
 
