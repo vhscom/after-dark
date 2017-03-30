@@ -303,27 +303,6 @@ And, finally, if you're using Hugo `v0.18` or better, you can also add an `_inde
 
 To learn more about how crawlers use this feature read [block search indexing with meta tags](https://support.google.com/webmasters/answer/93710).
 
-### Custom CSS
-
-To add your own theme css or override existing CSS without having to change theme files do the following:
-
-1. Create a `critical-custom.css.html` in your site's `layouts/partials directory`.
-1. Add your customizations inside a `style` element.
-
-Example customization file:
-
-```html
-<style media="screen">
-  .hack ul li {
-    margin: 0;
-  }
-</style>
-```
-
-Your customizations will automatically be added to generated pages, inline in the document `HEAD`. Thanks to [@rsommerard](https://github.com/rsommerard) for making the suggestion.
-
-If you choose to modify the Hack CSS
-
 ### Markdown Output
 
 Gain more control over markdown conversion to HTML. By modifying the markdown processor settings you can take advantage of [Blackfriday](https://github.com/russross/blackfriday) features not enabled by default.
@@ -374,6 +353,25 @@ Additional theme-provided shortcodes at your disposal:
 To create your own custom shortcodes add a `layouts/shortcodes` directory to your site, place your shortcodes within and start using them in your markdown content.
 
 Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/extras/shortcodes#using-a-shortcode).
+
+### Custom CSS
+
+To add your own theme css or override existing CSS without having to change theme files do the following:
+
+1. Create a `critical-custom.css.html` in your site's `layouts/partials directory`.
+1. Add your customizations inside a `style` element.
+
+Example customization file:
+
+```html
+<style media="screen">
+  .hack ul li {
+    margin: 0;
+  }
+</style>
+```
+
+Your customizations will automatically be added to generated pages, inline in the document `HEAD`. Thanks to [@rsommerard](https://github.com/rsommerard) for making the suggestion.
 
 ### Theme Variants
 
