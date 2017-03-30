@@ -13,21 +13,22 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** running
 - High-performance pages load in a single HTTP request
 - Generates ~800-1000 pages per second
 - Optimized for mobile, tablet, desktop and terminal browsing
-- [Configurable](#theme-variants) dark theme intended for low-light reading
-- Configurable [Section Menu](#section-menu) for global site navigation
+- [Theme Variants](#theme-variants) for light and dark display
+- [Section Menu](#section-menu) for global site navigation
 - [Intelligent Lazyloading](#intelligent-lazyloading) for images and iFrame embeds
 - [Related Content](#related-content) for increased page views and reader loyalty
 - Accessible [Table of Contents](#table-of-contents) with smooth scroll
 - SEO-optimized using [OpenGraph](https://opg.me), [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and Meta tags
 - Google Analytics using the [internal async template](https://gohugo.io/extras/analytics)
 - Post comments with [Disqus](https://disqus.com/) using the [internal template](https://gohugo.io/extras/comments)
-- Post reading time and update notice set user expectations
-- Rich post bylines including links to category and tag taxonomy listings, author and word count
+- Reading time and post summaries set user expectations
+- [Modification Dating](#modification-dating) adds visibility to fresh content
+- Configurable bylines including category and tag taxonomy listings, author and word count
 - [Block Templates](https://gohugo.io/templates/blocks/) for foolproof layout reuse and extension
 - Extensible [taxonomy terms template](https://gohugo.io/templates/terms)
 - Simple list pagination with page indicator
 - Site verification with Google, Bing, Alexa and Yandex
-- 404 page with [animated background](https://hackcabin.com/post/after-dark-error-page-redesign/)
+- 404 page with engaging [animated background](https://hackcabin.com/post/after-dark-error-page-redesign/)
 - Full site keyboard accessibility
 
 ## Getting Started
@@ -234,7 +235,7 @@ In addition to appearing in search engines, meta descriptions also appear on ind
 
 If no custom description is provided After Dark will fallback to the description provided in `config.toml`. Learn more on [how to craft your meta descriptions](https://moz.com/learn/seo/meta-description).
 
-### Publish Dates
+### Modification Dating
 
 Help user agents know when posts were last modified. To do so add `publishdate` to your page front matter and update `date` anytime you make an update to a post.
 
