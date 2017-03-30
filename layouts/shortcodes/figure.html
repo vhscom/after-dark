@@ -1,0 +1,35 @@
+<!--{{/*
+  Similar to the Hugo built-in, but with After Dark Intelligent Lazyloading,
+  an adjusted caption title and smaller caption text.
+*/}}-->
+<figure {{ with .Get "class" }}class="{{ . }}"{{ end }}>
+  {{ with .Get "link" }}<a href="{{ . }}">{{ end }}
+    {{ if .Get "lqipsrc" }}
+      <img class="lazyload blur-up" src="{{ .Get "lqipsrc" }}" data-src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{ . }}{{ else }}{{ .Get "caption" }}{{ end }}"{{ end }} />
+    {{ else }}
+      <img class="lazyload" data-src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{ . }}{{ else }}{{ .Get "caption" }}{{ end }}"{{ end }} />
+    {{ end }}
+  {{ if .Get "link" }}</a>{{ end }}
+  {{ if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
+  <figcaption>{{ if isset .Params "title" }}
+    <header><b>{{ .Get "title" }}</b></header>{{ end }}
+    {{ if or (.Get "caption") (.Get "attr")}}
+    <small>{{ .Get "caption" }}
+    {{ with .Get "attrlink" }}<a href="{{ . }}"> {{ end }}
+      {{ .Get "attr" }}
+    {{ if .Get "attrlink"}}</a> {{ end }}
+    </small>{{ end }}
+  </figcaption>
+  {{ end }}
+</figure>
+<style media="screen">
+  .blur-up {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    transition: filter 400ms, -webkit-filter 400ms;
+  }
+  .blur-up.lazyloaded {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+</style>

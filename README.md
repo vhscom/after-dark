@@ -367,7 +367,11 @@ Use it in your markdown files like:
 {{< /blockquote >}}
 ```
 
-To create your own custom shortcodes add a `layouts/shortcodes` directory to your site and place your shortcodes within.
+Additional theme-provided shortcodes at your disposal:
+
+- `figure` - Similar to the Hugo built-in, but with [Intelligent Lazyloading](#intelligent-lazyloading), an adjusted caption title and smaller caption text.
+
+To create your own custom shortcodes add a `layouts/shortcodes` directory to your site, place your shortcodes within and start using them in your markdown content.
 
 Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/extras/shortcodes#using-a-shortcode).
 
