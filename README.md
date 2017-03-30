@@ -397,6 +397,6 @@ Issues have been disabled for this repo. If you feel passionate something needs 
 
 ## License
 
-MIT License 2017 © Comfusion LLC
+This project is licensed under the MIT License. See the [LICENSE](https://codeberg.org/vhs/after-dark/blob/master/LICENSE) file for the full license text.
 
 [lazysizes]: https://github.com/aFarkas/lazysizes
