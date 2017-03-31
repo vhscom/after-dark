@@ -31,9 +31,9 @@
 | Accessibility | After Dark uses HTML5 to provide a better experience for aural readers. In addition, After Dark uses semantic markup to provide deeper meaning to the tags used in pages and posts, and enable full site navigation via the keyboard. |
 | Engaging error page | Captivate users when they find errors in your URLs with an <a target="_features" href="https://hackcabin.com/post/after-dark-error-page-redesign/">engaging 404 page</a> with animated background. |
 
-## Demo
+## Demo & Tutorial
 
-Head to [Hack Cabin](https://hackcabin.com) for a **production example** running on AWS and to learn more about the [site architecture](https://hackcabin.com/post/initial-commit/) and [how to replicate it](http://vhs.codeberg.page/zero-to-http-2).
+Head to [Hack Cabin](https://hackcabin.com) for a **production example** running on AWS and to learn more about the [site architecture](https://hackcabin.com/post/initial-commit/). There's also a [step-by-step guide](http://vhs.codeberg.page/zero-to-http-2) to hosting with HTTPS, HTTP/2 and custom email for those who want to go all out.
 
 ## Getting Started
 
