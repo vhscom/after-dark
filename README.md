@@ -11,26 +11,27 @@
 
 | Feature        | Summary        |
 | :------------- | :------------- |
-| Deceptive simplicity | Instead of trying to be a starter kit that does everything, After Dark is designed specifically as a theme so you can <abbr title="Bring Your Own Boilerplate">BYOB</abbr>, making it a suitable starting point and for **both novice and advanced** Web developers alike. |
-| Responsive design | Optimized for mobile, tablet, desktop and <kbd>terminal</kbd> browsers. |
-| Performance optimized | Page **content and styles load in a single request**. External resources are loaded asynchronously, and only when required by the page to save bandwidth consumption. |
-| Vertical scaling | The Achilles’ heel of many static site generators is their ability to scale in a performant way for sites with hundreds, thousands or even hundreds of thousands of pages. After Dark can **generate ~800-1000 static documents per second** thanks to <a target="hugo" href="https://gohugo.io/">Hugo</a>, and is likely to become faster over time. |
-| Search aware | Using <a target="_features" href="https://opg.me">OpenGraph</a>, <a target="_features" href="https://moz.com/learn/seo/schema-structured-data">Schema Structured Data</a> and meta tags, After Dark gives search engines what they want, automatically without requiring additional work. For power users, additional [SEO and UX](#seo-and-ux) configuration options have been provided. |
-| Personalization | Not completely satisfied with the default look-and-feel? Customize it to _your_ liking using one of the available [Theme Variants](#theme-variants) made available by <a target="_features" href="http://hackcss.com/">hack.css</a>. |
-| [Section Menu](#section-menu) | Add and customize your site's global navigation. After Dark uses Hugo's <a target="hugo" href="https://gohugo.io/extras/menus#section-menu-for-the-lazy-blogger">Section Menu for "the Lazy Blogger"</a>, making navigation easy to create and predictable to use. |
-| [Intelligent Lazyloading](#intelligent-lazyloading) | Lazyload your images, iFrames and script embeds. After Dark uses the <a title="_features" href="https://github.com/aFarkas/lazysizes">lazysizes</a> library, a zero-configuration library with support for <abbr title="Low Quality Image Placeholders">LQIP</abbr>. |
+| Deceptive Simplicity | After Dark is not opinionated. It is designed as a <a target="hugo" href="http://themes.gohugo.io/">Hugo theme</a>, making it a suitable starting point for **novice and advanced developers** alike. |
+| Adaptive design | Optimized for mobile, tablet, desktop _and_ <kbd>terminal</kbd> browsers. |
+| Performance Optimized | Page content and styles **load in a single request** on all pages. External resources, if present, are loaded asynchronously, and only when necessary. This keeps pages zippy, and affords sub-second page loads over 2G connections. |
+| Vertical Scaling | The Achilles’ heel of many static site generators is their ability to scale up for large sites in a performant way. After Dark is capable of generating **~1000 documents per second** thanks to <a target="hugo" href="https://gohugo.io/">Hugo</a>, and is likely to become faster over time. |
+| Search Awareness | Using <a target="feature" href="https://moz.com/learn/seo/schema-structured-data">Schema Structured Data</a> and meta tags, After Dark gives crawlers rich data about the site structure, page and page author. No configuration required. |
+| Social Awareness | After Dark provides automatic and configurable [OpenGraph](#opengraph) support, making social shares pop like 37 pieces of flair. |
+| Personalization | Not completely satisfied with the default look-and-feel? Customize the theme to _your_ liking using one of the available [Theme Variants](#theme-variants) made available by <a target="feature" href="http://hackcss.com/">hack.css</a>. |
+| [Section Menu](#section-menu) | Add and customize your site's global navigation. After Dark uses Hugo's <a target="hugo" href="https://gohugo.io/extras/menus#section-menu-for-the-lazy-blogger">Section Menu for "the Lazy Blogger"</a>, making navigation easy to create and predictable to use. Don't want navigation? Simply disable it from your site configuration. |
+| [Intelligent Lazyloading](#intelligent-lazyloading) | Lazyload your images, iFrames and script embeds. After Dark uses the <a title="feature" href="https://github.com/aFarkas/lazysizes">lazysizes</a> library, a zero-configuration JavaScript library with support for <abbr title="Low Quality Image Placeholders">LQIP</abbr> and responsive images. |
 | [Related Content](#related-content) | Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can **increase your site's page views**, the time spent on your site and reader loyalty. |
 | [Table Of Contents](#table-of-contents) | Help users locate and share information on your site. By providing a <abbr title="Table Of Contents">TOC</abbr>, users will spend less time scrolling to location information in larger documents, and are more likely to _deep link_ to specific information on a page. |
-| Analytics | Better understand and action on user behavior by enabling Google Analytics. After Dark uses the <a target="_features" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/">async tracking snippet</a> to help boost performance by allowing supported browsers to preload the script before pages even load. |
-| <abbr title="User Generated Content">UGC</abbr> | Generate content for your site and enable user interaction by enabling the <a target="_features" href="https://disqus.com/">Disqus</a> commenting feature. |
-| Reading Time | Set user expectations up-front by providing an **estimated reading time** for each post near the top of the page. This feature is automatic and uses an average human reading speed of around 200-250 words per minute. |
-| [Modification Dating](#modification-dating) | Surface recently updated content to your users and crawlers, and help them understand when a post was last modified using modification dating. |
-| [Syntax Highlighting](#syntax-highlighting) | For sharing code snippets, After Dark provides an **opt-in syntax highlighting** system with support for optional line numbers and the ability to call attention to individual lines of code in shard snippets. |
-| Taxonomy pages | Help users locate content by specific category or tag. After Dark automatically generates **taxonomy and taxonomy terms pages**, and provides links to them in post bylines. |
-| Post Bylines | Rich and configurable post bylines including category  and tag taxonomy hyperlinks, author, word count and related metadata. |
-| Pagination | Pagination can be hard. After Dark keeps it simple with list pagination with page indicators. |
-| Accessibility | After Dark uses HTML5 to provide a better experience for aural readers. In addition, After Dark uses semantic markup to provide deeper meaning to the tags used in pages and posts, and enable **full site navigation via keyboard**. |
-| Engaging error page | Captivate users when they find errors in your URLs with an <a target="_features" href="https://hackcabin.com/post/after-dark-error-page-redesign/">engaging 404 page</a> with animated background. |
+| Analytics | Understand and action on user behavior by enabling Google Analytics. After Dark uses the <a target="feature" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/">async tracking snippet</a> to boost performance and allow script preloading. |
+| User Generated Content | Improve search rankings and provide interactivity to users with <abbr title="User Generated Content">UGC</abbr>. Enable <a target="feature" href="https://disqus.com/">Disqus</a> commenting to get started. |
+| Reading Time | Set user expectations up-front. After Dark provides **estimated reading time** for each post near the top of the page. This feature is automatic and assumes a reading speed of 200-250 words per minute. |
+| [Modification Dating](#modification-dating) | Surface recently updated content to users and crawlers, and help them understand when a post or page was was last modified. Recently updated posts will be flagged as updated, and lifted upwards in chronological listings. |
+| [Syntax Highlighting](#syntax-highlighting) | Sharing code snippets with style. After Dark provides **opt-in syntax highlighting** with support for line numbers and highlighted lines. |
+| Taxonomy Pages | Help users discover taxonomic content. After Dark automatically generates **taxonomy and taxonomy terms pages**, and links to them in post bylines. |
+| Post Bylines | Rich post bylines include optional author name, word count, links to taxonomy pages and metadata for search engines. |
+| Pagination | Pagination can be hard. After Dark makes it easy with simple list pagination with page indication. |
+| Accessibility | After Dark uses HTML5 to provide a better experience for aural readers. In addition, After Dark uses semantic markup to provide deeper meaning to tags used in pages and posts, and affords full site **navigation via keyboard**. |
+| Animated Error Page | Limit bounce rate when URL error occur. After Dark provides an <a target="feature" href="https://hackcabin.com/post/after-dark-error-page-redesign/">engaging 404 page</a> with animated background. |
 
 ## Demo & Tutorial
 
@@ -268,7 +269,7 @@ For related content split across multiple pages in a sequence After Dark support
 
 Learn more about [link types](http://devdocs.io/html/link_types).
 
-### Search Index Blocking
+### Index Blocking
 
 Just because a page appears in your `sitemap.xml` does not mean you want it to appear in a SERP. Examples of pages which will appear in your `sitemap.xml` that you typically do not want indexed by crawlers include error pages, search pages, legal pages, and pages that simply list summaries of other pages.
 
