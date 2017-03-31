@@ -1,8 +1,11 @@
-# After Dark
 
-> A simple, yet highly configurable responsive dark theme for the [Hugo](https://gohugo.io/) static site generator.
+<h1 align="center">After Dark</h1>
 
-![Theme screenshots](https://raw.githubusercontent.com/vhs/after-dark/master/images/minimal-mac.png "After Dark running on a MacBook and iPhone")
+<p align="center">
+  <strong>A simple, yet highly configurable responsive dark theme for the <a target="hugo" href="https://gohugo.io/">Hugo</a> static site generator.</strong>
+</p>
+
+<img align="center" src="https://raw.githubusercontent.com/vhs/after-dark/master/images/minimal-mac.png" title="After Dark running on a MacBook and iPhone" alt="After Dark theme screenshots">
 
 ## Features
 
@@ -11,22 +14,22 @@
 | Deceptive simplicity | Instead of trying to be a starter kit that does everything, After Dark is designed specifically as a theme so you can <abbr title="Bring Your Own Boilerplate">BYOB</abbr>, making it a suitable starting point and for both novice and advanced Web developers alike. |
 | Responsive design | Optimized for mobile, tablet, desktop and terminal browsers. |
 | Performance optimized | Page content and theme CSS loads in a single HTTP request. External resources are loaded asynchronously, and only when required by the page to save bandwidth consumption. |
-| Vertical scaling | The Achilles’ heel of many static site generators is their ability to scale in a performant way for sites with hundreds, thousands or even hundreds of thousands of pages. After Dark is capable of generating ~800-1000 static documents per second thanks to [Hugo](https://gohugo.io/), and is likely to become faster over time. |
-| Search aware | Using [OpenGraph](https://opg.me), [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and meta tags, After Dark gives search engines what they want, automatically without requiring additional work. For power users, additional [SEO and UX](#seo-and-ux) configuration options have been provided. |
-| Personalization | Not completely satisfied with the default look-and-feel? Customize it to your liking using one of the available [Theme Variants](#theme-variants) made available by [hack.css](http://hackcss.com/). |
-| [Section Menu](#section-menu) | Add and customize your site's global navigation. After Dark uses Hugo's [Section Menu for "the Lazy Blogger"](https://gohugo.io/extras/menus#section-menu-for-the-lazy-blogger), making navigation easy to create and predictable to use. |
-| [Intelligent Lazyloading](#intelligent-lazyloading) | As a high-performance theme, it would be remissful not to provide lazy-loading for images and iFrame embeds. To achieve this, After Dark uses the [lazysizes](https://github.com/aFarkas/lazysizes) JavaScript library, a zero-configuration library. Simply add `class="lazyload"` to your content-based images and iFrames and you're off to the races. |
+| Vertical scaling | The Achilles’ heel of many static site generators is their ability to scale in a performant way for sites with hundreds, thousands or even hundreds of thousands of pages. After Dark is capable of generating ~800-1000 static documents per second thanks to <a target="hugo" href="https://gohugo.io/">Hugo</a>, and is likely to become faster over time. |
+| Search aware | Using <a target="_features" href="https://opg.me">OpenGraph</a>, <a target="_features" href="https://moz.com/learn/seo/schema-structured-data">Schema Structured Data</a> and meta tags, After Dark gives search engines what they want, automatically without requiring additional work. For power users, additional [SEO and UX](#seo-and-ux) configuration options have been provided. |
+| Personalization | Not completely satisfied with the default look-and-feel? Customize it to your liking using one of the available [Theme Variants](#theme-variants) made available by <a target="_features" href="http://hackcss.com/">hack.css</a>. |
+| [Section Menu](#section-menu) | Add and customize your site's global navigation. After Dark uses Hugo's <a target="hugo" href="https://gohugo.io/extras/menus#section-menu-for-the-lazy-blogger">Section Menu for "the Lazy Blogger"</a>, making navigation easy to create and predictable to use. |
+| [Intelligent Lazyloading](#intelligent-lazyloading) | Lazyload your images, iFrames and script embeds. After Dark uses the <a title="_features" href="https://github.com/aFarkas/lazysizes">lazysizes</a> library, a zero-configuration library with support for <abbr title="Low Quality Image Placeholders">LQIP</abbr>. |
 | [Related Content](#related-content) | Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can increase your site's page views, the time spent on your site and reader loyalty. |
-| Accessible [Table Of Contents](#table-of-contents) | Help users locate and share information on your site. By providing a <abbr title="Table Of Contents">TOC</abbr>, users will spend less time scrolling to location information in larger documents, and are more likely to deep to specific information on a page. |
-| Analytics | Better understand and action on user behavior by enabling Google Analytics. After Dark uses the [async tracking snippet](https://developers.google.com/analytics/devguides/collection/analyticsjs/) to help boost performance by allowing supported browsers to preload the script before pages even load. |
-| User Generated Content | Allow users to post comments and engage with your site. After Dark provides [Disqus](https://disqus.com/) support to make this possible. This feature will be replaced with a static commenting system in an upcoming major release of the theme, and an upgrade approach provided. |
+| [Table Of Contents](#table-of-contents) | Help users locate and share information on your site. By providing a <abbr title="Table Of Contents">TOC</abbr>, users will spend less time scrolling to location information in larger documents, and are more likely to deep to specific information on a page. |
+| Analytics | Better understand and action on user behavior by enabling Google Analytics. After Dark uses the <a target="_features" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/">async tracking snippet</a> to help boost performance by allowing supported browsers to preload the script before pages even load. |
+| <abbr title="User Generated Content">UGC</abbr> | Generate content for your site and enable user interaction by enabling the <a target="_features" href="https://disqus.com/">Disqus</a> commenting feature. |
 | Post reading time | Set user expectations up-front by providing an estimated reading time for each post near the top of the page. This feature is automatic and uses an average human reading speed of around 200-250 words per minute. |
 | [Modification Dating](#modification-dating) | Surface recently updated content to your users and crawlers, and help them understand when a post was last modified using modification dating. |
 | [Syntax Highlighting](#syntax-highlighting) | For sharing code snippets, After Dark provides an opt-in code highlighting system with support for optional line numbers and the ability to call attention to individual lines of code. |
 | Post Bylines | Rich and configurable post bylines including category  and tag taxonomy hyperlinks, author, word count and related metadata. |
 | Pagination | Pagination can be hard. After Dark keeps it simple with list pagination with page indicators. |
 | Accessibility | After Dark uses HTML5 to provide a better experience for aural readers. In addition, After Dark uses semantic markup to provide deeper meaning to the tags used in pages and posts, and enable full site navigation via the keyboard. |
-| Engaging error page | Captivate users when they find errors in your URLs with an [engaging 404 page](https://hackcabin.com/post/after-dark-error-page-redesign/) with animated background. |
+| Engaging error page | Captivate users when they find errors in your URLs with an <a target="_features" href="https://hackcabin.com/post/after-dark-error-page-redesign/">engaging 404 page</a> with animated background. |
 
 ## Demo
 
