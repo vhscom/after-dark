@@ -8,7 +8,7 @@
 
 | Feature        | Summary        |
 | :------------- | :------------- |
-| Deceptive simplicity | Instead of trying to be a starter kit that does everything, After Dark is designed specifically as a theme so you can <a abbr="Bring Your Own Boilerplate">BYOB</abbr>, making it a suitable starting point and for both novice and advanced Web developers alike. |
+| Deceptive simplicity | Instead of trying to be a starter kit that does everything, After Dark is designed specifically as a theme so you can <abbr title="Bring Your Own Boilerplate">BYOB</abbr>, making it a suitable starting point and for both novice and advanced Web developers alike. |
 | Responsive design | Optimized for mobile, tablet, desktop and terminal browsers. |
 | Performance optimized | Page content and theme CSS loads in a single HTTP request. External resources are loaded asynchronously, and only when required by the page to save bandwidth consumption. |
 | Vertical scaling | The Achilles’ heel of many static site generators is their ability to scale in a performant way for sites with hundreds, thousands or even hundreds of thousands of pages. After Dark is capable of generating ~800-1000 static documents per second thanks to [Hugo](https://gohugo.io/), and is likely to become faster over time. |
@@ -17,7 +17,7 @@
 | [Section Menu](#section-menu) | Add and customize your site's global navigation. After Dark uses Hugo's [Section Menu for "the Lazy Blogger"](https://gohugo.io/extras/menus#section-menu-for-the-lazy-blogger), making navigation easy to create and predictable to use. |
 | [Intelligent Lazyloading](#intelligent-lazyloading) | As a high-performance theme, it would be remissful not to provide lazy-loading for images and iFrame embeds. To achieve this, After Dark uses the [lazysizes](https://github.com/aFarkas/lazysizes) JavaScript library, a zero-configuration library. Simply add `class="lazyload"` to your content-based images and iFrames and you're off to the races. |
 | [Related Content](#related-content) | Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can increase your site's page views, the time spent on your site and reader loyalty. |
-| Accessible [Table of Contents](#table-of-contents) | Help users locate and share information on your site. By providing a <abbr title="Table of Contents">TOC</abbr>, users will spend less time scrolling to location information in larger documents, and are more likely to deep to specific information on a page. |
+| Accessible [Table Of Contents](#table-of-contents) | Help users locate and share information on your site. By providing a <abbr title="Table Of Contents">TOC</abbr>, users will spend less time scrolling to location information in larger documents, and are more likely to deep to specific information on a page. |
 | Analytics | Better understand and action on user behavior by enabling Google Analytics. After Dark uses the [async tracking snippet](https://developers.google.com/analytics/devguides/collection/analyticsjs/) to help boost performance by allowing supported browsers to preload the script before pages even load. |
 | User Generated Content | Allow users to post comments and engage with your site. After Dark provides [Disqus](https://disqus.com/) support to make this possible. This feature will be replaced with a static commenting system in an upcoming major release of the theme, and an upgrade approach provided. |
 | Post reading time | Set user expectations up-front by providing an estimated reading time for each post near the top of the page. This feature is automatic and uses an average human reading speed of around 200-250 words per minute. |
@@ -157,9 +157,9 @@ By default After Dark will display up to 7 items by title along with their readi
 related_content_limit = 5
 ```
 
-### Table of Contents
+### Table Of Contents
 
-Help users locate and share information on your site. By providing a <abbr title="Table of Contents">TOC</abbr>, users will spend less time scrolling to location information in larger documents, and are more likely to deep to specific information on a page.
+Help users locate and share information on your site. By providing a <abbr title="Table Of Contents">TOC</abbr>, users will spend less time scrolling to location information in larger documents, and are more likely to deep to specific information on a page.
 
 To automatically generate a TOC for a post based on the [page outline](https://gsnedders.html5.org/outliner/), add the following to your post front matter:
 
