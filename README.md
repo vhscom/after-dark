@@ -11,7 +11,7 @@
 
 | Feature        | Summary        |
 | :------------- | :------------- |
-| Deceptive Simplicity | After Dark is not opinionated. It is designed as a <a target="hugo" href="http://themes.gohugo.io/">Hugo theme</a>, making it a suitable starting point for **novice and advanced developers** alike. |
+| Deceptive Simplicity | After Dark is unopinionated. It is designed as a <a target="hugo" href="http://themes.gohugo.io/">Hugo theme</a>, making it a suitable starting point for **novice and advanced developers** alike. |
 | Adaptive design | Optimized for mobile, tablet, desktop _and_ <kbd>terminal</kbd> browsers. |
 | Performance Optimized | Page content and styles **load in a single request** on all pages. External resources, if present, are loaded asynchronously, and only when necessary. This keeps pages zippy, and affords sub-second page loads over 2G connections. |
 | Vertical Scaling | The Achilles’ heel of many static site generators is their ability to scale up for large sites in a performant way. After Dark is capable of generating **~1000 documents per second** thanks to <a target="hugo" href="https://gohugo.io/">Hugo</a>, and is likely to become faster over time. |
