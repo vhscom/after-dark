@@ -12,7 +12,7 @@
 | Feature        | Summary        |
 | :------------- | :------------- |
 | Deceptive Simplicity | After Dark is designed as a <a target="hugo" href="http://themes.gohugo.io/">Hugo theme</a>, making it a suitable starting point for **novice and advanced developers** alike. It utilizes a _Code For Today_ philosophy, and provides only the code needed to run your site, and nothing more.  |
-| Adaptive design | Optimized for mobile, tablet, desktop and <kbd>terminal</kbd> browsers. |
+| Universal Design | Optimized for mobile, tablet, desktop and <kbd>terminal</kbd> browsers. |
 | Performance Optimized | Page content and styles **load in a single request** on all pages. External resources, if present, are loaded asynchronously, and only when necessary. This keeps pages zippy, and affords **sub-second page loads over 2G**. |
 | Vertical Scaling | The Achilles’ heel of many static site generators is their ability to scale up for large sites in a performant way. After Dark is capable of generating **~1000 documents per second** thanks to <a target="hugo" href="https://gohugo.io/">Hugo</a>, and is likely to become faster over time. |
 | Search Awareness | Using <a target="feature" href="https://moz.com/learn/seo/schema-structured-data">Schema Structured Data</a> and meta tags, After Dark gives crawlers rich data about the site structure, page and page author. No configuration required. |
@@ -364,14 +364,14 @@ Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/ext
 
 Provide a richer experience when sharing code snippets on your site. After Dark provides support for code highlighting using the lovely [One Dark](https://github.com/atom/one-dark-syntax) or [One Light](https://github.com/atom/one-light-syntax) syntax themes used in [Atom](https://github.com/atom/atom).
 
-**Why not use Highlight.js?** Because it's slow, doesn't support line numbers or highlighting of individual lines. In addition, JS-based solutions force browsers to do the same work over and over again when that work can be done once at site generation.
+**Why not use Highlight.js?** Because it's slow, doesn't support line numbers or highlighting of individual lines. In addition, JS-based solutions force browsers to do the same work over and over when that work can be done once during site generation.
 
 To set-up syntax highlighting for your After Dark site:
 
 - Follow Hugo's [Pygments installation](https://gohugo.io/extras/highlighting/#pygments) instructions.
-- Open the `themes/after-dark` folder and run `npm i`
+- Open the `themes/after-dark` folder and run `npm i` (assumes NPM installed)
 - Then open `./node_modules/atom-one-pygments` and `npm i`
-- Once dependencies are instaled, issue `npm run build` to generate the stylesheets to the `./dist` directory
+- Once dependencies are installed, issue `npm run build` to generate the stylesheets to the `./dist` directory
 
 Then choose either `./dist/light.css` or `dark.css` depending on your [Theme Variant](#theme-variants), and copy the contents of the file into your [Custom CSS](#custom-css) file.
 
