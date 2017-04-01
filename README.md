@@ -1,4 +1,3 @@
-
 <h1 align="center">After Dark</h1>
 
 <p align="center">
@@ -11,10 +10,10 @@
 
 | Feature        | Summary        |
 | :------------- | :------------- |
-| Deceptive Simplicity | After Dark is designed as a <a target="hugo" href="http://themes.gohugo.io/">Hugo theme</a>, making it a suitable starting point for **novice and advanced developers** alike. It utilizes a _Code For Today_ philosophy, and provides only the code needed to run your site, and nothing more.  |
-| Universal Design | Optimized for mobile, tablet, desktop and <kbd>terminal</kbd> browsers. |
-| Performance Optimized | Page content and styles **load in a single request** on all pages. External resources, if present, are loaded asynchronously, and only when necessary. This keeps pages zippy, and affords **sub-second page loads over 2G**. |
-| Vertical Scaling | The Achilles’ heel of many static site generators is their ability to scale up for large sites in a performant way. After Dark is capable of generating **~1000 documents per second** thanks to <a target="hugo" href="https://gohugo.io/">Hugo</a>, and is likely to become faster over time. |
+| Deceptive Simplicity | After Dark is a <a target="hugo" href="http://themes.gohugo.io/">Hugo theme</a>, making it a suitable starting point for **novice and advanced developers** alike. It advances using the <abbr title="Extreme Programming">XP</abbr>'s _code for today_ philosophy, and, as a result, includes only what's necessary to create and run your site, and nothing more. |
+| Inclusive Design | Optimized for mobile, tablet, desktop and <kbd>terminal</kbd> browsers. |
+| Performance Optimized | Page content and styles **load in a single request** on all pages. External resources, if present, are loaded asynchronously, and only when necessary. This keeps pages zippy, and affords **~1 second page loads over 2G**. |
+| Vertical Scaling | The Achilles’ heel of many static site generators is their ability to scale up for large sites in a performant way. After Dark is capable of generating **~1000 pages per second** thanks to <a target="hugo" href="https://gohugo.io/">Hugo</a>, and is likely to become faster over time. |
 | Search Awareness | Using <a target="feature" href="https://moz.com/learn/seo/schema-structured-data">Schema Structured Data</a> and meta tags, After Dark gives crawlers rich data about the site structure, page and page author. No configuration required. |
 | Social Awareness | After Dark provides automatic and configurable [OpenGraph](#opengraph) support, making social shares pop like 37 pieces of flair. |
 | Personalization | Not completely satisfied with the default look-and-feel? Customize the theme to your liking using one of the available [Theme Variants](#theme-variants) provided by <a target="feature" href="http://hackcss.com/">hack.css</a>. |
@@ -25,12 +24,12 @@
 | Analytics | Understand and action on user behavior by enabling Google Analytics. After Dark uses the <a target="feature" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/">async tracking snippet</a> to boost performance and allow script preloading. |
 | User Generated Content | Improve search rankings and provide interactivity to users with <abbr title="User Generated Content">UGC</abbr>. Enable <a target="feature" href="https://disqus.com/">Disqus</a> commenting to get started. |
 | Reading Time | Set user expectations up-front. After Dark provides **estimated reading time** for each post near the top of the page. This feature is automatic and assumes a reading speed of 200-250 words per minute. |
-| [Modification Dating](#modification-dating) | Surface recently updated content to users and crawlers, and help them understand when a post or page was was last modified. Recently updated posts will be flagged as updated, and lifted upwards in chronological listings. |
+| [Modification Dating](#modification-dating) | Surface recently updated content to users and crawlers, allowing them to understand when a post or page was was last modified. Recently updated posts will be flagged as modified, and visually lifted upwards in chronological listings. |
 | [Syntax Highlighting](#syntax-highlighting) | Sharing code snippets with style. After Dark provides **opt-in syntax highlighting** with support for line numbers and highlighted lines. |
 | Taxonomy Pages | Help users discover taxonomic content. After Dark automatically generates **taxonomy and taxonomy terms pages**, and links to them in post bylines. |
 | Post Bylines | Rich post bylines include optional author name, word count, links to taxonomy pages and metadata for search engines. |
 | Pagination | Pagination can be hard. After Dark makes it easy with simple list pagination with page indication. |
-| Accessibility | After Dark uses HTML5 to provide a better experience for aural readers. In addition, After Dark uses semantic markup to provide deeper meaning to tags used in pages and posts, and affords full site **navigation via keyboard**. |
+| Accessibility | After Dark uses semantic HTML5 markup to provide a better experience for aural readers and facilitates **navigation via keyboard** only. |
 | Animated Error Page | Limit bounce rate when URL error occur. After Dark provides an <a target="feature" href="https://hackcabin.com/post/after-dark-error-page-redesign/">engaging 404 page</a> with animated background. |
 
 ## Demo & Tutorial
@@ -87,7 +86,7 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 
 That's it! Everything else is optional.
 
-Read on to learn how to configure specific features and customize the theme. And when you're ready to host, **save money over using Netify** by [hosting After Dark on Amazon Web Services](http://vhs.codeberg.page/zero-to-http-2).
+Read on to learn how to configure specific features and customize the theme. And when you're ready, learn to [host your site on AWS](http://vhs.codeberg.page/zero-to-http-2) to receive a free year of web hosting and eliminate tiered pricing plans.
 
 ## Customizing
 
