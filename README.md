@@ -103,10 +103,6 @@
         <td>Rich post bylines include optional author name, word count, links to taxonomy pages and metadata for search engines.</td>
       </tr>
       <tr>
-        <td>Post Bylines</td>
-        <td>Pagination can be hard. After Dark makes it easy with simple list pagination with page indication.</td>
-      </tr>
-      <tr>
         <td>Pagination</td>
         <td>Pagination can be hard. After Dark makes it easy with simple list pagination with page indication.</td>
       </tr>
