@@ -22,7 +22,7 @@
     <tbody>
       <tr>
         <td>Deceptive Simplicity</td>
-        <td>After Dark is a <a target="hugo" href="http://themes.gohugo.io/">Hugo theme</a>, making it a suitable starting point for <b>novice and advanced developers</b> alike. It advances using a "code for today" philosophy, and includes only what's necessary to create and run your site &endash; nothing more.</td>
+        <td>After Dark is a <a target="hugo" href="http://themes.gohugo.io/">Hugo theme</a>, making it a suitable starting point for <b>novice and advanced developers</b> alike. It advances using a "code for today" philosophy, and includes only what's necessary to create and run your site &ndash; nothing more.</td>
       </tr>
       <tr>
         <td>Inclusive Design</td>
@@ -489,7 +489,7 @@ And, finally, adjust your [Customized CSS](#custom-css), 404 page and `/meta/the
 
 ## Contributing
 
-There's only one rule...there are no rules.
+If you think you've spotted a bug or would like to make an enhancement suggestion, please feel free to open an issue on GitHub. If you have a site or derivative work built using After Dark you would like to share, please feel free to add it to the Wiki. For general questions, please feel free to reach out to me at: https://vhs.codeberg.page/contact
 
 ## License
 
