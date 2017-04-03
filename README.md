@@ -5,15 +5,9 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/after-dark">
-    <img src="https://img.shields.io/npm/dm/after-dark.svg" alt="NPM downloads per month">
-  </a>
-  <a href="https://www.npmjs.com/package/after-dark">
-    <img src="https://img.shields.io/npm/v/after-dark.svg" alt="Latest NPM version">
-  </a>
-  <a href="https://codeberg.org/vhs/after-dark/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/vhs/after-dark.svg" alt="Project license">
-  </a>
+  <a href="https://www.npmjs.com/package/after-dark"><img src="https://img.shields.io/npm/dm/after-dark.svg" alt="NPM downloads per month"></a>
+  <a href="https://www.npmjs.com/package/after-dark"><img src="https://img.shields.io/npm/v/after-dark.svg" alt="Latest NPM version"></a>
+  <a href="https://codeberg.org/vhs/after-dark/blob/master/LICENSE"><img src="https://img.shields.io/github/license/vhs/after-dark.svg" alt="Project license"></a>
 </p>
 
 <img align="center" src="https://raw.githubusercontent.com/vhs/after-dark/master/images/minimal-mac.png" title="After Dark running on a MacBook and iPhone" alt="After Dark theme screenshots">
