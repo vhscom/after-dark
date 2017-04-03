@@ -32,7 +32,7 @@
       </tr>
       <tr>
         <td>Semantic Versioning</td>
-        <td>Predictable changes enable theme users stay up-to-date with what's happening. After Dark uses <a target="feature" href="http://semver.org/">Semantic Versioning</a> and maintains a <a target="feature" href="https://codeberg.org/vhs/after-dark/blob/master/CHANGELOG.md">CHANGELOG</a> for easy consumption.
+        <td>Predictable changes enable theme users stay up-to-date with what's happening. After Dark uses <a target="feature" href="http://semver.org/">Semantic Versioning</a> and maintains a <a target="feature" href="https://codeberg.org/vhs/after-dark/blob/master/CHANGELOG.md">CHANGELOG</a> for easy consumption.</td>
       </tr>
       <tr>
         <td>Inclusive Design</td>
