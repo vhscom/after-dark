@@ -27,7 +27,7 @@
     </thead>
     <tbody>
       <tr>
-        <td>Opinionated Design</td>
+        <td>Deceptive Simplicity</td>
         <td>After Dark is a <a target="feature" href="http://themes.gohugo.io/">Hugo theme</a>, making it a suitable starting point for <b>novice and advanced developers</b> alike. It advances using the "Code for today, not for tomorrow" philosophy of <abbr title="eXtreme Programming">XP</abbr>, and includes only what's necessary to create and run your site &ndash; nothing more.</td>
       </tr>
       <tr>
