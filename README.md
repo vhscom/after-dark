@@ -495,7 +495,7 @@ And, finally, adjust your [Customized CSS](#custom-css), 404 page and `/meta/the
 
 ## Contributing
 
-If you think you've spotted a bug or would like to make an enhancement suggestion, please feel free to open an issue on GitHub. If you have a site or derivative work built using After Dark you would like to share, please feel free to add it to the Wiki. For general questions, please feel free to reach out to me at: https://vhs.codeberg.page/contact
+If you've spotted a bug or would like to make an enhancement suggestion, please [open an issue on GitHub](https://codeberg.org/vhs/after-dark/issues). Build something awesome with After Dark? [Add it to the wiki](https://codeberg.org/vhs/after-dark/wiki) for others to see. For general questions or support, please feel free to reach out to me directly at: [https://vhs.codeberg.page/contact](https://vhs.codeberg.page/contact). Thanks!
 
 ## License
 
