@@ -4,13 +4,13 @@
   <strong>A simple, yet highly configurable responsive dark theme for the <a target="intro" href="https://gohugo.io/">Hugo</a> static site generator.</strong>
 </p>
 
+<img align="center" src="https://raw.githubusercontent.com/vhs/after-dark/master/images/minimal-mac.png" title="After Dark running on a MacBook and iPhone" alt="After Dark theme screenshots">
+
 <p align="center">
   <a href="https://www.npmjs.com/package/after-dark"><img src="https://img.shields.io/npm/dm/after-dark.svg" alt="NPM downloads per month"></a>
   <a href="https://www.npmjs.com/package/after-dark"><img src="https://img.shields.io/npm/v/after-dark.svg" alt="Latest NPM version"></a>
   <a href="https://codeberg.org/vhs/after-dark/blob/master/LICENSE"><img src="https://img.shields.io/github/license/vhs/after-dark.svg" alt="Project license"></a>
 </p>
-
-<img align="center" src="https://raw.githubusercontent.com/vhs/after-dark/master/images/minimal-mac.png" title="After Dark running on a MacBook and iPhone" alt="After Dark theme screenshots">
 
 ## Features
 
@@ -56,7 +56,7 @@
       </tr>
       <tr>
         <td><a href="#theme-variants">Personalization</a></td>
-        <td>Not completely satisfied with the default look-and-feel? Customize the theme to your liking using one of the available theme tariants provided by <a target="feature" href="http://hackcss.com/">hack.css</a>.</td>
+        <td>Not completely satisfied with the default look-and-feel? Customize the theme to your liking using one of the available theme variants provided by <a target="feature" href="http://hackcss.com/">hack.css</a>.</td>
       </tr>
       <tr>
         <td><a href="#section-menu">Section Menu</a></td>
