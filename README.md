@@ -51,8 +51,8 @@
         <td>Using <a target="feature" href="https://moz.com/learn/seo/schema-structured-data">Schema Structured Data</a> and meta tags, After Dark gives crawlers rich data about the site structure, page and page author. No configuration required.</td>
       </tr>
       <tr>
-        <td><a href="#opengraph">Social Awareness</a></td>
-        <td>After Dark provides automatic and configurable <a target="feature"href="http://ogp.me/">OpenGraph</a> support, making social shares pop like 37 pieces of flair.</td>
+        <td><a href="#open-graph">Social Awareness</a></td>
+        <td>After Dark provides automatic and configurable <a target="feature"href="http://ogp.me/">Open Graph</a> support, making social shares pop like 37 pieces of flair.</td>
       </tr>
       <tr>
         <td><a href="#theme-variants">Personalization</a></td>
@@ -166,7 +166,7 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   hide_author = false # Optional, set true to hide author name on posts
   show_menu = false # Optional, set true to enable section menu
   powered_by = true # Optional, set false to disable credits
-  images = [] # Suggested, controls default OpenGraph images
+  images = [] # Suggested, controls default Open Graph images
   theme_variant = "" # Optional, for use to overriding default theme
 ```
 
@@ -261,13 +261,13 @@ After Dark uses the HTML5 [`details`](http://devdocs.io/html/element/details) an
 
 When a page is first loaded, the TOC will be collapsed so it does not clutter up the page. Once expanded, selecting an item in the TOC will smooth scroll to that section within the document, highlight the section header and updating the browser's location bar for deep linking and back-button support.
 
-### OpenGraph
+### Open Graph
 
-After Dark leverages OpenGraph tags using the *undocumented* [internal template](https://github.com/spf13/hugo/blob/95ad3ad2fa3e6f4514166b47b77f051d280c16e9/tpl/template_embedded.go#L161-L204) to achieve rich sharing cards for Facebook and other social networks, as shown here:
+After Dark leverages Open Graph tags using the *undocumented* [internal template](https://github.com/spf13/hugo/blob/142558719324aa1628541d556ef1fa2d123f1e68/tpl/tplimpl/template_embedded.go#L159-L201) to achieve rich sharing cards for Facebook and other social networks, as shown here:
 
-![OpenGraph image with author attribution](https://cloud.githubusercontent.com/assets/440298/22554715/156ba7f0-e99c-11e6-9d5b-14f0ac4fe496.png)
+![Open Graph image with author attribution](https://cloud.githubusercontent.com/assets/440298/22554715/156ba7f0-e99c-11e6-9d5b-14f0ac4fe496.png)
 
-Specify `author` in `config.toml` and, optionally, override it from your post front matter:
+To create a social sharing card like the one shown above, specify `author` in `config.toml` and, optionally, override it from your front matter when specifying applicable details for the post or page:
 
 ```toml
 title = "Become a Digital Nomad in Bali: The Lost Guide"
@@ -280,19 +280,21 @@ images = [
 ]
 ```
 
-To configure a site-wide OpenGraph images and fallbacks for posts not specifying their own, add the following to your site parameters in `config.toml` in the `[params]` section:
+To configure site-wide Open Graph images to use as fallbacks for posts not specifying their own open graph images, add an array of URLs to the `[params]` section in `config.toml`:
 
 ```toml
 images = [
-  "https://source.unsplash.com/-09QE4q0ezw/2000x1322" # Default OpenGraph image for site
+  "https://source.unsplash.com/-09QE4q0ezw/2000x1322" # Default Open Graph image for site
 ]
 ```
 
-Test how things are looking during development using a combination of the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) and [ngrok](https://ngrok.com/).
+**Note:** Image URLs must include the URL scheme and domain as shown above. And, though possible, After Dark does not currently support relative links to images. If you would like to see this feature, please open an Issue against the repo.
+
+Test how things are looking during development using a combination of the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) and [ngrok](https://ngrok.com/). And reference the [Open Graph docs](http://ogp.me/) for additional information.
 
 ### SEO and UX
 
-After Dark is built with SEO in mind. Aside from OpenGraph, Schema Structured Data and SEO meta is applied to give robots what they want, automatically, without any user configuration necessary. This helps ensure your After Dark site will rank well in Search Engine Results Pages (SERPs) and prevent crawlers from indexing undesirable content.
+After Dark is built with SEO in mind. Aside from Open Graph, Schema Structured Data and SEO meta is applied to give robots what they want, automatically, without any user configuration necessary. This helps ensure your After Dark site will rank well in Search Engine Results Pages (SERPs) and prevent crawlers from indexing undesirable content.
 
 Fine-tune your SEO settings using the following available options.
 
