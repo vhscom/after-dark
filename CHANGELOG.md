@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://codeberg.org/vhs/after-dark/compare/v1.2.0...v1.3.0) (2017-04-08)
+
+
+### Bug Fixes
+
+* **bundle:** remove images folder from npm release ([b277a20](https://codeberg.org/vhs/after-dark/commit/b277a20))
+
+
+### Features
+
+* **powered-by:** add page generation date ([c0c421a](https://codeberg.org/vhs/after-dark/commit/c0c421a))
+
+
+### Reverts
+
+* **powered-by:** remove page generation date ([478ba0b](https://codeberg.org/vhs/after-dark/commit/478ba0b))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://codeberg.org/vhs/after-dark/compare/v1.1.0...v1.2.0) (2017-03-30)
 
