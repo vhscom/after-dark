@@ -52,7 +52,7 @@
       </tr>
       <tr>
         <td><a href="#open-graph">Social Awareness</a></td>
-        <td>After Dark provides automatic and configurable <a target="feature"href="http://ogp.me/">Open Graph</a> support, making social shares pop like 37 pieces of flair.</td>
+        <td>After Dark provides automatic and configurable <a target="feature" href="http://ogp.me/">Open Graph</a> support, making social shares pop like 37 pieces of flair.</td>
       </tr>
       <tr>
         <td><a href="#theme-variants">Personalization</a></td>
