@@ -462,9 +462,9 @@ To set-up syntax highlighting for your After Dark site:
 
 Then choose either `./dist/light.css` or `dark.css` depending on your [Theme Variant](#theme-variants), and copy the contents of the file into your [Custom CSS](#custom-css) file.
 
-**Customize:** [Atom One Pygments](https://codeberg.org/vhs/atom-one-pygments) is built as a theme roller, making it possible to modify the look-and-feel of the resulting syntax highlighting. Make it your own. See the [README](https://codeberg.org/vhs/atom-one-pygments/blob/master/README.md) for more details.
+Once configured, syntax highlighting with Pygments can be achieved using the Hugo built-in [`highlight` shortcode](https://gohugo.io/extras/shortcodes#highlight). Reference Hugo's Syntax Highlighting docs for [usage instructions](https://gohugo.io/extras/highlighting/#usage).
 
-Once configured and, optionally customized, syntax highlighting with Pygments can be achieved using the Hugo built-in [`highlight` shortcode](https://gohugo.io/extras/shortcodes#highlight). Reference Hugo's Syntax Highlighting docs for [usage instructions](https://gohugo.io/extras/highlighting/#usage).
+**Not completely satisfied?** [Atom One Pygments](https://codeberg.org/vhs/atom-one-pygments) is built as a theme roller, making it possible to modify the look-and-feel of the resulting syntax highlighting. Make it your own. See the [README](https://codeberg.org/vhs/atom-one-pygments/blob/master/README.md) for more details.
 
 ### Custom CSS
 
