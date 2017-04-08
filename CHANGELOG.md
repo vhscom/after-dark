@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.1"></a>
+## [1.3.1](https://codeberg.org/vhs/after-dark/compare/v1.3.0...v1.3.1) (2017-04-08)
+
+
+### Bug Fixes
+
+* **bundle:** add images to npm ignore file ([1694334](https://codeberg.org/vhs/after-dark/commit/1694334))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://codeberg.org/vhs/after-dark/compare/v1.2.0...v1.3.0) (2017-04-08)
 
