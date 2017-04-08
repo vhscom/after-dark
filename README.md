@@ -28,7 +28,7 @@
     <tbody>
       <tr>
         <td>Deceptive Simplicity</td>
-        <td>After Dark is a <a target="feature" href="http://themes.gohugo.io/">Hugo theme</a>, making it a suitable starting point for <b>novice and advanced developers</b> alike. It advances using the "Code for today, not for tomorrow" philosophy of <abbr title="eXtreme Programming">XP</abbr>, and includes only what's necessary to create and run your site &ndash; nothing more.</td>
+        <td>After Dark is a <a target="feature" href="http://themes.gohugo.io/">Hugo theme</a>, making it a suitable starting point for <b>novice and advanced developers</b> alike. It advances using the "Code for today, not for tomorrow" philosophy of <abbr title="eXtreme Programming">XP</abbr> and includes only what's necessary to create and run your site &ndash; nothing more.</td>
       </tr>
       <tr>
         <td>Semantic Versioning</td>
@@ -40,11 +40,11 @@
       </tr>
       <tr>
         <td>Performance Optimized</td>
-        <td>Page content and styles <b>load in a single request</b> on all pages. External resources, if present, are loaded asynchronously, and only when necessary. This keeps pages zippy, and affords <b>~1 second page loads over 2G</b> when hosted using a <abbr title="Content Delivery Network">CDN</abbr>.</td>
+        <td>Page content and styles <b>load in a single request</b> on all pages. External resources, if present, are loaded asynchronously and only when necessary. This keeps pages zippy and affords <b>~1 second page loads over 2G</b> when hosted using a <abbr title="Content Delivery Network">CDN</abbr>.</td>
       </tr>
       <tr>
         <td>Vertical Scaling</td>
-        <td>After Dark is capable of generating <b>~1000 pages per second</b> thanks to <a target="feature" href="https://gohugo.io/">Hugo</a>, and is likely to become faster over time.</td>
+        <td>After Dark is capable of generating <b>~1000 pages per second</b> thanks to <a target="feature" href="https://gohugo.io/">Hugo</a> and is likely to become faster over time.</td>
       </tr>
       <tr>
         <td><a href="#seo-and-ux">Search Awareness</a></td>
@@ -63,7 +63,7 @@
         <td>Add and customize your site's global navigation. After Dark uses Hugo's <a target="feature" href="https://gohugo.io/extras/menus#section-menu-for-the-lazy-blogger">Section Menu for "the Lazy Blogger"</a>, making navigation easy to create and predictable to use. Don't want navigation? Simply disable it from your site configuration.</td>
       </tr>
       <tr>
-        <td><a href="#intelligent-lazyloading">Intelligent Lazyloading</a></td>
+        <td><a href="#intelligent-lazy-loading">Intelligent Lazy Loading</a></td>
         <td>Lazyload your images, iFrames and script embeds. After Dark uses the <a title="feature" href="https://github.com/aFarkas/lazysizes">lazysizes</a> library, a zero-configuration JavaScript library with support for <abbr title="Low Quality Image Placeholders">LQIP</abbr> and responsive images.</td>
       </tr>
       <tr>
@@ -72,7 +72,7 @@
       </tr>
       <tr>
         <td><a href="#table-of-contents">Table Of Contents</a></td>
-        <td>Help users locate and share information on your site. By providing a <abbr title="Table Of Contents">TOC</abbr>, users will spend less time scrolling to locate information in larger documents, and are more likely to <i>deep link</i> to specific information on a page.</td>
+        <td>Help users locate and share information on your site. By providing a <abbr title="Table Of Contents">TOC</abbr>, users will spend less time scrolling to locate information in larger documents and are more likely to <i>deep link</i> to specific information on a page.</td>
       </tr>
       <tr>
         <td>Analytics</td>
@@ -88,7 +88,7 @@
       </tr>
       <tr>
         <td><a href="#modification-dating">Modification Dating</a></td>
-        <td>Surface recently updated content to users and crawlers, allowing them to understand when a post or page was was last modified. Recently updated posts will be flagged as modified, and visually lifted upwards in chronological listings.</td>
+        <td>Surface recently updated content to users and crawlers, allowing them to understand when a post or page was was last modified. Recently updated posts will be flagged as modified and visually lifted upwards in chronological listings.</td>
       </tr>
       <tr>
         <td><a href="#syntax-highlighting">Syntax Highlighting</a></td>
@@ -96,7 +96,7 @@
       </tr>
       <tr>
         <td>Taxonomy Pages</td>
-        <td>Help users discover taxonomic content. After Dark automatically generates <b>taxonomy and taxonomy terms pages</b>, and links to them in post bylines.</td>
+        <td>Help users discover taxonomic content. After Dark automatically generates <b>taxonomy and taxonomy terms pages</b> and links to them in post bylines.</td>
       </tr>
       <tr>
         <td>Post Bylines</td>
@@ -176,7 +176,7 @@ That's it! Everything else is optional. Read on to learn how to configure specif
 
 ### Section Menu
 
-Theme uses [Section Menu for Lazy Bloggers](https://gohugo.io/extras/menus/#section-menu-for-the-lazy-blogger) to produce global site navigation, if enabled.
+Theme uses [Section Menu for Lazy Bloggers](https://gohugo.io/extras/menus/#section-menu-for-the-lazy-blogger) to produce global site navigation if enabled.
 
 To customize the menu, update the settings in `config.toml` like:
 
@@ -200,13 +200,13 @@ menu = "main"
 weight = 3
 ```
 
-### Intelligent Lazyloading
+### Intelligent Lazy Loading
 
-Lazyloading prioritizes when and how images and more are downloaded, improving perceived performance and reducing page load times. When activated, lazyloading will start working automatically. No JavaScript configuration is necessary.
+Lazy loading prioritizes when and how images and more are downloaded, improving perceived performance and reducing page load times. When activated, lazy loading will start working automatically. No JavaScript configuration is necessary.
 
-**What makes it _Intelligent_?** If no lazyloaded content is detected on a page when the site is generated, the feature will not be activated and no additional downloads will occur.
+**What makes it _Intelligent_?** If no lazy loaded content is detected on a page when the site is generated, the feature will not be activated and no additional downloads will occur.
 
-To activate lazyloading with [lazysizes], add `lazyload` to the `class` attribute of your images/iframes in conjunction with a `data-src` and/or `data-srcset` attribute:
+To activate lazy loading with [lazysizes], add `lazyload` to the `class` attribute of your images/iframes in conjunction with a `data-src` and/or `data-srcset` attribute:
 
 ```html
 <!-- non-responsive -->
@@ -237,7 +237,7 @@ Additional information and examples, including how to set-up and use LQIP (Low-Q
 
 Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can increase your site's page views, the time spent on your site and reader loyalty.
 
-Related content surfaces content across sections by matching taxonomy tags. If After Dark finds related content it will automatically output a list of links to that content in reverse chronological order below the byline of your post content.
+Related content surfaces content across sections by matching taxonomy tags. If After Dark finds related content, it will automatically output a list of links to that content in reverse chronological order below the byline of your post content.
 
 By default After Dark will display up to 7 items by title along with their reading times. You can limit the number of items displayed by setting the following optional parameter in the `[params]` section of your `config.toml` file:
 
@@ -247,7 +247,7 @@ related_content_limit = 5
 
 ### Table Of Contents
 
-Help users locate and share information on your site. By providing a <abbr title="Table Of Contents">TOC</abbr>, users will spend less time scrolling to location information in larger documents, and are more likely to deep to specific information on a page.
+Help users locate and share information on your site. By providing a <abbr title="Table Of Contents">TOC</abbr>, users will spend less time scrolling to location information in larger documents and are more likely to deep to specific information on a page.
 
 To automatically generate a TOC for a post based on the [page outline](https://gsnedders.html5.org/outliner/), add the following to your post front matter:
 
@@ -288,13 +288,13 @@ images = [
 ]
 ```
 
-**Note:** Image URLs must include the URL scheme and domain as shown above. And, though possible, After Dark does not currently support relative links to images. If you would like to see this feature, please open an Issue against the repo.
+**Note:** Image URLs must include the URL scheme and domain as shown above. While it would be possible, After Dark does not currently support relative links to images. If you would like to see this feature, please open an Issue against the repo.
 
-Test how things are looking during development using a combination of the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) and [ngrok](https://ngrok.com/). And reference the [Open Graph docs](http://ogp.me/) for additional information.
+Test how things are looking during development using a combination of the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) and [ngrok](https://ngrok.com/). Also reference the [Open Graph docs](http://ogp.me/) for additional information.
 
 ### SEO and UX
 
-After Dark is built with SEO in mind. Aside from Open Graph, Schema Structured Data and SEO meta is applied to give robots what they want, automatically, without any user configuration necessary. This helps ensure your After Dark site will rank well in Search Engine Results Pages (SERPs) and prevent crawlers from indexing undesirable content.
+After Dark is built with SEO in mind. Aside from Open Graph, Schema Structured Data and SEO meta are applied to give robots what they want, automatically, without any user configuration necessary. This helps ensure your After Dark site will rank well in Search Engine Results Pages (SERPs) and prevent crawlers from indexing undesirable content.
 
 Fine-tune your SEO settings using the following available options.
 
@@ -314,7 +314,7 @@ Verify your site with several webmaster tools including Google, Bing, Alexa and 
 
 ### Meta Descriptions
 
-Well-crafted page titles help catch the human eye on search results pages. And meta descriptions provide a summary of the content and why its relevant for the reader, driving click-throughs.
+Well-crafted page titles help catch the human eye on search results pages and meta descriptions provide a summary of the content and why its relevant for the reader, driving click-throughs.
 
 To add a custom meta description to your pages and posts add `description` to the front matter:
 
@@ -324,13 +324,13 @@ description = "Everything you need to know to become a Digital Nomad in Bali."
 
 In addition to appearing in search engines, meta descriptions also appear on individual pages and in content summaries in After Dark, adding transparency to how your page will appear in search.
 
-If no custom description is provided After Dark will fallback to the description provided in `config.toml`. Learn more on [how to craft your meta descriptions](https://moz.com/learn/seo/meta-description).
+If no custom description is provided, After Dark will fallback to the description provided in `config.toml`. Learn more on [how to craft your meta descriptions](https://moz.com/learn/seo/meta-description).
 
 ### Modification Dating
 
 Help user agents know when posts were last modified. To do so add `publishdate` to your page front matter and update `date` anytime you make an update to a post.
 
-Updates will be made visible to readers by surfacing content higher in your page and post listings, and using using visible callouts on content summaries. For robots, making this change will automatically update Schema Structured Data and Web feeds, as well as the `lastmod` setting your `sitemap.xml` file.
+Updates will be made visible to readers by surfacing content higher in your page and post listings and by using visible callouts on content summaries. For robots, making this change will automatically update Schema Structured Data and Web feeds, as well as the `lastmod` setting in your `sitemap.xml` file.
 
 You can be specific and use a datetime (with timezone offset) like:
 
@@ -364,7 +364,7 @@ Though it's possible to block search indexing from a `robots.txt` file, After Da
 - Taxonomy Pages (e.g. Category and Tag listings)
 - Taxonomy Terms Pages (e.g. Pages listing taxonomies)
 
-To customize default blocking configure the `noindex_kinds` setting in the `[params]` section of your `config.toml`. For example, if you want to enable crawling for sections appearing in [Section Menu](#adding-a-section-menu) add the following to your configuration file:
+To customize default blocking configure the `noindex_kinds` setting in the `[params]` section of your `config.toml`. For example, if you want to enable crawling for sections appearing in [Section Menu](#adding-a-section-menu), add the following to your configuration file:
 
 ```
 [params]
@@ -374,13 +374,13 @@ To customize default blocking configure the `noindex_kinds` setting in the `[par
   ]
 ```
 
-To block individual pages from being indexed add `nofollow` to your page's front matter and set the value to `true`, like:
+To block individual pages from being indexed add `noindex` to your page's front matter and set the value to `true`, like:
 
 ```toml
 noindex = true
 ```
 
-And, finally, if you're using Hugo `v0.18` or better, you can also add an `_index.md` file with the `noindex` front matter to control indexing for specific section list layouts:
+And, finally, if you're using Hugo `v0.18` or newer, you can also add an `_index.md` file with the `noindex` front matter to control indexing for specific section list layouts:
 
 ```shell
 ├── content
@@ -414,7 +414,7 @@ See the Hugo docs for additional [configuration options](http://gohugo.io/overvi
 
 Keep your content <abbr title="Don't Repeat Yourself">DRY</abbr> and improve thematic consistency across your site. To help achieve this, Hugo provides [Shortcodes](https://gohugo.io/extras/shortcodes).
 
-Shortcodes are very powerful, and can be used to achieve functionality not otherwise available in the markdown processor. Hugo provides a number of [built-in shortcodes](https://gohugo.io/extras/shortcodes#built-in-shortcodes) you can use on your site. And After Dark provides some as well.
+Shortcodes are very powerful and can be used to achieve functionality not otherwise available in the markdown processor. Hugo provides a number of [built-in shortcodes](https://gohugo.io/extras/shortcodes#built-in-shortcodes) you can use on your site and After Dark provides some as well.
 
 Here's the `blockquote` shortcode provided by After Dark:
 
@@ -439,7 +439,7 @@ Use it in your markdown files like:
 
 Additional theme-provided shortcodes at your disposal:
 
-- `figure` - Similar to the Hugo built-in, but with [Intelligent Lazyloading](#intelligent-lazyloading), an adjusted caption title and smaller caption text.
+- `figure` - Similar to the Hugo built-in, but with [Intelligent Lazy Loading](#intelligent-lazy-loading), an adjusted caption title and smaller caption text.
 
 To create your own custom shortcodes add a `layouts/shortcodes` directory to your site, place your shortcodes within and start using them in your markdown content.
 
@@ -451,7 +451,7 @@ Provide a richer experience when sharing code snippets on your site. After Dark 
 
 ![Syntax Highlighting screenshot](https://raw.githubusercontent.com/vhs/after-dark/d98d68e/images/docs/feat-syntax-highlighting.png "Syntax Highlighting using Atom One Pygments")
 
-**Why not use Highlight.js?** Given After Dark's _Inclusive Design_ goal, use of a JS-based solution would degrade support for <kbd>terminal</kbd> browsers. As an opt-in feature, however, your approach to Syntax Highlighting is at your discretion. Go nuts!
+**Why not use Highlight.js?** Given After Dark's _Inclusive Design_ goal, use of a JS-based solution would degrade support for <kbd>terminal</kbd> browsers. As an opt-in feature however, your approach to Syntax Highlighting is at your discretion. Go nuts!
 
 To set-up syntax highlighting for your After Dark site:
 
@@ -460,7 +460,7 @@ To set-up syntax highlighting for your After Dark site:
 - Then open `./node_modules/atom-one-pygments` and `npm i`.
 - Once dependencies are installed, issue `npm run build` within the module to generate the stylesheets to the module's `./dist` directory.
 
-Then choose either `./dist/light.css` or `dark.css` depending on your [Theme Variant](#theme-variants), and copy the contents of the file into your [Custom CSS](#custom-css) file.
+Then choose either `./dist/light.css` or `dark.css` depending on your [Theme Variant](#theme-variants) and copy the contents of the file into your [Custom CSS](#custom-css) file.
 
 Once configured, syntax highlighting with Pygments can be achieved using the Hugo built-in [`highlight` shortcode](https://gohugo.io/extras/shortcodes#highlight). Reference Hugo's Syntax Highlighting docs for [usage instructions](https://gohugo.io/extras/highlighting/#usage).
 
@@ -468,9 +468,9 @@ Once configured, syntax highlighting with Pygments can be achieved using the Hug
 
 ### Custom CSS
 
-To add your own theme css or override existing CSS without having to change theme files do the following:
+To add your own theme CSS or override existing CSS without having to change theme files do the following:
 
-1. Create a `critical-custom.css.html` in your site's `layouts/partials directory`.
+1. Create a `critical-custom.css.html` in your site's `layouts/partials` directory.
 1. Add your customizations inside a `style` element.
 
 Example customization file:
@@ -493,7 +493,7 @@ Once downloaded, open `node_modules/hack/dist` directory and replace the CSS con
 
     theme_variant = "standard dark-grey"
 
-**Why not use external CSS files?** After Dark is optimized for speed, and, as a result, limits the number of HTTP requests whenever possible. This just so happens to be of those occasions.
+**Why not use external CSS files?** After Dark is optimized for speed and, as a result, limits the number of HTTP requests whenever possible. This just so happens to be of those occasions.
 
 Once the vendor file is updated, open your favorite dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations, making any tweaks necessary to `critical-theme.css.html`.
 
