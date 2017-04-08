@@ -447,22 +447,24 @@ Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/ext
 
 ### Syntax Highlighting
 
-Provide a richer experience when sharing code snippets on your site. After Dark provides opt-in support for code highlighting using the lovely [One Dark](https://github.com/atom/one-dark-syntaxc) and [One Light](https://github.com/atom/one-light-syntax) syntax themes.
+Provide a richer experience when sharing code snippets on your site. After Dark provides opt-in support for code highlighting using the lovely [One Dark](https://github.com/atom/one-dark-syntaxc) and [One Light](https://github.com/atom/one-light-syntax) syntax themes for Pygments.
 
 ![Syntax Highlighting screenshot](https://raw.githubusercontent.com/vhs/after-dark/d98d68e/images/docs/feat-syntax-highlighting.png "Syntax Highlighting using Atom One Pygments")
 
-**Why not use Highlight.js?** Given After Dark's _Inclusive Design_ goal, use of a JS-based solution would degrade support for <kbd>terminal</kbd> browsers. As an opt-in feature, however, your approach to Syntax Highlighting is at your own discretion. Go nuts!
+**Why not use Highlight.js?** Given After Dark's _Inclusive Design_ goal, use of a JS-based solution would degrade support for <kbd>terminal</kbd> browsers. As an opt-in feature, however, your approach to Syntax Highlighting is at your discretion. Go nuts!
 
 To set-up syntax highlighting for your After Dark site:
 
 - Follow Hugo's [Pygments installation](https://gohugo.io/extras/highlighting/#pygments) instructions.
-- Open the `themes/after-dark` folder and run `npm i` (assumes NPM installed)
-- Then open `./node_modules/atom-one-pygments` and `npm i`
-- Once dependencies are installed, issue `npm run build` to generate the stylesheets to the `./dist` directory
+- Open the `themes/after-dark` folder and run `npm i` (assumes NPM installed).
+- Then open `./node_modules/atom-one-pygments` and `npm i`.
+- Once dependencies are installed, issue `npm run build` within the module to generate the stylesheets to the module's `./dist` directory.
 
 Then choose either `./dist/light.css` or `dark.css` depending on your [Theme Variant](#theme-variants), and copy the contents of the file into your [Custom CSS](#custom-css) file.
 
-Once configured, syntax highlighting can be achieved using the Hugo built-in [`highlight` shortcode](https://gohugo.io/extras/shortcodes#highlight). Reference Hugo's Syntax Highlighting docs for [additional usage instructions](https://gohugo.io/extras/highlighting/#usage).
+**Customize:** [Atom One Pygments](https://codeberg.org/vhs/atom-one-pygments) is built as a theme roller, making it possible to modify the look-and-feel of the resulting syntax highlighting. Make it your own. See the [README](https://codeberg.org/vhs/atom-one-pygments/blob/master/README.md) for more details.
+
+Once configured and, optionally customized, syntax highlighting with Pygments can be achieved using the Hugo built-in [`highlight` shortcode](https://gohugo.io/extras/shortcodes#highlight). Reference Hugo's Syntax Highlighting docs for [usage instructions](https://gohugo.io/extras/highlighting/#usage).
 
 ### Custom CSS
 
