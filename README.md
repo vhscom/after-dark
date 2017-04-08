@@ -447,9 +447,11 @@ Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/ext
 
 ### Syntax Highlighting
 
-Provide a richer experience when sharing code snippets on your site. After Dark provides support for code highlighting using the lovely [One Dark](https://github.com/atom/one-dark-syntax) or [One Light](https://github.com/atom/one-light-syntax) syntax themes used in [Atom](https://github.com/atom/atom).
+Provide a richer experience when sharing code snippets on your site. After Dark provides opt-in support for code highlighting using the lovely [One Dark](https://github.com/atom/one-dark-syntaxc) and [One Light](https://github.com/atom/one-light-syntax) syntax themes.
 
-**Why not use Highlight.js?** Because it's slow, doesn't support line numbers or highlighting of individual lines. In addition, JS-based solutions force browsers to do the same work over and over when that work can be done once during site generation.
+![Syntax Highlighting screenshot](https://raw.githubusercontent.com/vhs/after-dark/50c909b/images/docs/feat-syntax-highlighting.png "Syntax Highlighting using Atom One Pygments")
+
+**Why not use Highlight.js?** Given After Dark's _Inclusive Design_ goal, use of a JS-based solution would degrade support for <kbd>terminal</kbd> browsers. As an opt-in feature, however, your approach to Syntax Highlighting is at your own discretion. Go nuts!
 
 To set-up syntax highlighting for your After Dark site:
 
