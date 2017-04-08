@@ -265,7 +265,7 @@ When a page is first loaded, the TOC will be collapsed so it does not clutter up
 
 After Dark leverages Open Graph tags using the *undocumented* [internal template](https://github.com/spf13/hugo/blob/142558719324aa1628541d556ef1fa2d123f1e68/tpl/tplimpl/template_embedded.go#L159-L201) to achieve rich sharing cards for Facebook and other social networks, as shown here:
 
-![Open Graph sharing card screenshot](https://raw.githubusercontent.com/vhs/after-dark/80c3dc1/images/docs/feat-social-awareness.png "Example Open Graph sharing card produced by After Dark")
+![Open Graph sharing card screenshot](https://raw.githubusercontent.com/vhs/after-dark/a647938/images/docs/feat-social-awareness.png "Example Open Graph sharing card produced by After Dark")
 
 To create a social sharing card like the one shown above, specify `author` in `config.toml` and, optionally, override it from your front matter when specifying applicable details for the post or page:
 
