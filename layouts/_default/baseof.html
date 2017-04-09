@@ -5,9 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-    {{ with .Description }}
-      <meta name="description" content="{{ . }}">
-    {{ end }}
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
     {{ $default_noindex_kinds := slice "section" "taxonomy" "taxonomyTerm" }}
     {{ $noindex_kinds := .Site.Params.noindex_kinds | default $default_noindex_kinds }}
     {{ $is_noindex_true := and (isset .Params "noindex") .Params.noindex }}
