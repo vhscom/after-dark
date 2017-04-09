@@ -1,6 +1,6 @@
 <article itemscope itemtype="http://schema.org/CreativeWork">
   <header>
-    <h2 itemprop="headline">
+    <h2 itemprop="name">
       <a href="{{ .Permalink }}">{{ .Title }}</a>
     </h2>
     {{ if eq .Type "post" }}
@@ -8,12 +8,18 @@
     {{ end }}
   </header>
   {{ if .Description }}
-    <blockquote itemprop="about">{{ .Description }}</blockquote>
+    <blockquote itemprop="headline">{{ .Description }}</blockquote>
   {{ end }}
   <div itemprop="description">
     {{ .Summary }}
   </div>
   {{ if .Truncated }}
     <p><a itemprop="url" href="{{ .RelPermalink }}">Read More&nbsp;&raquo;</a></p>
+  {{ end }}
+  <meta itemprop="inLanguage" content="{{ .Site.LanguageCode }}">
+  <meta itemprop="datePublished" content="{{ dateFormat "2006-01-02T15:04:05-07:00" (default .Date (.PublishDate)) }}">
+  <meta itemprop="dateModified" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}">
+  {{ with .Params.images }}
+    <meta itemprop="image" content="{{ index . 0 }}">
   {{ end }}
 </article>
