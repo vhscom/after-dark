@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.2"></a>
+## [1.3.2](https://codeberg.org/vhs/after-dark/compare/v1.3.1...v1.3.2) (2017-04-09)
+
+
+### Bug Fixes
+
+* **layouts:** output meta description when not explicitly set ([9f11bd6](https://codeberg.org/vhs/after-dark/commit/9f11bd6)), closes [#21](https://codeberg.org/vhs/after-dark/issues/21)
+
+
+
 <a name="1.3.1"></a>
 ## [1.3.1](https://codeberg.org/vhs/after-dark/compare/v1.3.0...v1.3.1) (2017-04-08)
 
