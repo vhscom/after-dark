@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+    <meta name="keywords" content="{{ if .Keywords }}{{ delimit .Keywords ", " }}{{ else if and .IsPage .Params.tags }}{{ delimit .Params.tags ", " }}{{ else }}{{ range $term, $val := .Site.Taxonomies.categories }}{{ lower (humanize $term) }}, {{ end }}{{ end }}">
     {{ $default_noindex_kinds := slice "section" "taxonomy" "taxonomyTerm" }}
     {{ $noindex_kinds := .Site.Params.noindex_kinds | default $default_noindex_kinds }}
     {{ $is_noindex_true := and (isset .Params "noindex") .Params.noindex }}
