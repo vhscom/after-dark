@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://codeberg.org/vhs/after-dark/compare/v1.3.2...v1.4.0) (2017-04-10)
+
+
+### Features
+
+* **layouts:** add meta keywords to base template ([4b1f0f1](https://codeberg.org/vhs/after-dark/commit/4b1f0f1)), closes [#20](https://codeberg.org/vhs/after-dark/issues/20)
+
+
+
 <a name="1.3.2"></a>
 ## [1.3.2](https://codeberg.org/vhs/after-dark/compare/v1.3.1...v1.3.2) (2017-04-09)
 
