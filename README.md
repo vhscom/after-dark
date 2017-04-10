@@ -47,12 +47,12 @@
         <td>After Dark is capable of generating <b>~1000 pages per second</b> thanks to <a target="feature" href="https://gohugo.io/">Hugo</a> and is likely to become faster over time.</td>
       </tr>
       <tr>
-        <td><a href="#seo-and-ux">Search Awareness</a></td>
-        <td>Using <a target="feature" href="https://moz.com/learn/seo/schema-structured-data">Schema Structured Data</a> and meta tags, After Dark gives crawlers rich data about the site structure, page and page author. No configuration required.</td>
+        <td><a href="#open-graph">Open Graph</a></td>
+        <td>After Dark provides automatic and configurable <a target="feature" href="http://ogp.me/">Open Graph</a> support, making social shares pop like 37 pieces of flair.</td>
       </tr>
       <tr>
-        <td><a href="#open-graph">Social Awareness</a></td>
-        <td>After Dark provides automatic and configurable <a target="feature" href="http://ogp.me/">Open Graph</a> support, making social shares pop like 37 pieces of flair.</td>
+        <td><a href="#search-optimization">Search Optimization</a></td>
+        <td>Using <a target="feature" href="https://moz.com/learn/seo/schema-structured-data">Schema Structured Data</a> and meta tags, After Dark gives crawlers rich data about the site structure and content. No configuration required.</td>
       </tr>
       <tr>
         <td><a href="#theme-variants">Personalization</a></td>
@@ -292,13 +292,13 @@ images = [
 
 Test how things are looking during development using a combination of the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) and [ngrok](https://ngrok.com/). Also reference the [Open Graph docs](http://ogp.me/) for additional information.
 
-### SEO and UX
+### Search Optimization
 
-After Dark is built with SEO in mind. Aside from Open Graph, Schema Structured Data and SEO meta are applied to give robots what they want, automatically, without any user configuration necessary. This helps ensure your After Dark site will rank well in Search Engine Results Pages (SERPs) and prevent crawlers from indexing undesirable content.
+After Dark is built with SEO in mind. Schema Structured Data and other meta are applied to give robots what they want, automatically, without any configuration necessary.
 
-Fine-tune your SEO settings using the following available options.
+The default set-up helps ensure your After Dark site will rank well in <abbr title="Search Engine Results Pages">SERP</abbr>s and prevent search crawlers from indexing undesirable content. Fine-tune your search settings using the following available options.
 
-### Webmaster Verification
+#### Webmaster Verification
 
 Verify your site with several webmaster tools including Google, Bing, Alexa and Yandex. To allow verification of your site with any or all of these providers simply add the following to your `config.toml` and fill in their respective values:
 
@@ -312,7 +312,7 @@ Verify your site with several webmaster tools including Google, Bing, Alexa and 
 
 **Note:** Claiming your site with Alexa was [retired in May 2016](https://support.alexa.com/hc/en-us/articles/219135887-Claiming-has-been-retired-May-2016). However, Alexa verification has been added as a convenience for existing sites migrating to After Dark.
 
-### Meta Descriptions
+#### Meta Descriptions
 
 Well-crafted page titles help catch the human eye on search results pages and meta descriptions provide a summary of the content and why its relevant for the reader, driving click-throughs.
 
@@ -326,7 +326,7 @@ In addition to appearing in search engines, meta descriptions also appear on ind
 
 If no custom description is provided, After Dark will fallback to the description provided in `config.toml`. Learn more on [how to craft your meta descriptions](https://moz.com/learn/seo/meta-description).
 
-### Modification Dating
+#### Modification Dating
 
 Help user agents know when posts were last modified. To do so add `publishdate` to your page front matter and update `date` anytime you make an update to a post.
 
@@ -348,13 +348,7 @@ publishdate = "2016-11-21"
 
 Review the W3C website for more [information on dates and times](https://www.w3.org/TR/html51/infrastructure.html#dates-and-times) for the Web infrastructure.
 
-### Link Types
-
-For related content split across multiple pages in a sequence After Dark supports use of `prev` and `next` settings in your front matter.
-
-Learn more about [link types](http://devdocs.io/html/link_types).
-
-### Index Blocking
+#### Index Blocking
 
 Just because a page appears in your `sitemap.xml` does not mean you want it to appear in a SERP. Examples of pages which will appear in your `sitemap.xml` that you typically do not want indexed by crawlers include error pages, search pages, legal pages, and pages that simply list summaries of other pages.
 
@@ -393,6 +387,34 @@ And, finally, if you're using Hugo `v0.18` or newer, you can also add an `_index
 ```
 
 To learn more about how crawlers use this feature read [block search indexing with meta tags](https://support.google.com/webmasters/answer/93710).
+
+#### Link Types
+
+For related content split across multiple pages in a sequence After Dark supports use of `prev` and `next` settings in your front matter. Use them to provide semantic relationships between pages in a segmented article or series or [LiveBlogPosting](https://schema.org/LiveBlogPosting).
+
+```toml
+prev = "/series/learn-to-code/part-one/"
+next = "/series/learn-to-code/part-three/"
+```
+
+Link Types are commonly shown at the top of the page in terminal browsers as auxiliary means of navigation and may help crawlers better understand relationships within your content.
+
+Learn more about [link types](http://devdocs.io/html/link_types) and how to [custom taxonomies](https://gohugo.io/taxonomies/overview/).
+
+#### Meta Keywords
+
+Meta keywords offer semantic detail to crawlers regarding the subject matter of your content. Keywords meta are generated automatically for pages given the tags used for that page, and for other pages using the site categories taxonomy. Keywords and key phrases may be customized by setting a `keywords` array in your front matter:
+
+```toml
+keywords = [
+  "web development",
+  "digital marketing",
+  "social media",
+  "link building"
+]
+```
+
+While not considered relevant to some crawlers, keywords can be a useful way to document target search terms for use in <a title="Pay-Per-Click">PPC</abbr> online advertising and provide semantic value to your pages.
 
 ### Markdown Output
 
