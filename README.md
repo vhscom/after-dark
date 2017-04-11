@@ -176,7 +176,7 @@ That's it! Everything else is optional. Read on to learn how to configure specif
 
 ### Section Menu
 
-Theme uses [Section Menu for Lazy Bloggers](https://gohugo.io/extras/menus/#section-menu-for-the-lazy-blogger) to produce global site navigation if enabled.
+After Dark uses Hugo's [Section Menu for Lazy Bloggers](https://gohugo.io/extras/menus/#section-menu-for-the-lazy-blogger) to produce global site navigation if enabled.
 
 To customize the menu, update the settings in `config.toml` like:
 
@@ -247,7 +247,7 @@ related_content_limit = 5
 
 ### Table Of Contents
 
-Help users locate and share information on your site. By providing a <abbr title="Table Of Contents">TOC</abbr>, users will spend less time scrolling to location information in larger documents and are more likely to deep to specific information on a page.
+Help users locate and share information on your site. By providing a <abbr title="Table Of Contents">TOC</abbr>, users will spend less time scrolling to locate information in larger documents and are more likely to deep to specific information on a page.
 
 To automatically generate a TOC for a post based on the [page outline](https://gsnedders.html5.org/outliner/), add the following to your post front matter:
 
