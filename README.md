@@ -40,7 +40,7 @@
       </tr>
       <tr>
         <td>Performance Optimized</td>
-        <td>Page content and styles <b>load in a single request</b> on all pages. External resources, if present, are loaded asynchronously and only when necessary. This keeps pages zippy and affords <b>~1 second page loads over 2G</b> when hosted using a <abbr title="Content Delivery Network">CDN</abbr>.</td>
+        <td>Page content, favicon and styles <b>load in a single request</b> on all pages. External resources, if present, are loaded asynchronously and only when necessary. This keeps pages zippy and affords <b>~1 second page loads over 2G</b> when hosted using a <abbr title="Content Delivery Network">CDN</abbr>.</td>
       </tr>
       <tr>
         <td>Vertical Scaling</td>
@@ -55,8 +55,8 @@
         <td>Using <a target="feature" href="https://moz.com/learn/seo/schema-structured-data">Schema Structured Data</a> and meta tags, After Dark gives crawlers rich data about the site structure and content. No configuration required.</td>
       </tr>
       <tr>
-        <td><a href="#theme-variants">Personalization</a></td>
-        <td>Not completely satisfied with the default look-and-feel? Customize the theme to your liking using one of the available theme variants provided by <a target="feature" href="http://hackcss.com/">hack.css</a>.</td>
+        <td><a href="#personalization">Personalization</a></td>
+        <td>Adjust your CSS using a purpose-built CSS customization file. Choose one of several theme variants made available by<a target="feature" href="http://hackcss.com/">hack.css</a>. Or swap in your own personal favicon if you choose.</td>
       </tr>
       <tr>
         <td><a href="#section-menu">Section Menu</a></td>
@@ -488,7 +488,15 @@ Once configured, syntax highlighting with Pygments can be achieved using the Hug
 
 **Not completely satisfied?** [Atom One Pygments](https://codeberg.org/vhs/atom-one-pygments) is built as a theme roller, making it possible to modify the look-and-feel of the resulting syntax highlighting. Make it your own. See the [README](https://codeberg.org/vhs/atom-one-pygments/blob/master/README.md) for more details.
 
-### Custom CSS
+### Personalization
+
+#### Favicon
+
+After Dark comes preinstalled with a tiny SVG favicon embedded into every page. To customize it create a file named `favicon.html` under `/layouts/partials` within your site and place an [`icon` link](http://devdocs.io/html/link_types#icon) within it.
+
+**Why SVG?** Simple. They have a smaller file size and are more flexible. SVG favicons can be styled with CSS or even animated with JavaScript. Firefox added support for them in Release 41, and Chrome has [an open issue](https://bugs.chromium.org/p/chromium/issues/detail?id=294179) tracking the support request.
+
+#### Custom CSS
 
 To add your own theme CSS or override existing CSS without having to change theme files do the following:
 
@@ -507,7 +515,7 @@ Example customization file:
 
 Your customizations will automatically be added to generated pages, inline in the document `HEAD`. Thanks to [@rsommerard](https://github.com/rsommerard) for making the suggestion.
 
-### Theme Variants
+#### Theme Variants
 
 [`hack.css`](http://hackcss.com/) provides a few variants you may wish to use instead of the After Dark defaults. To download them do an `npm i` from `/themes/after-dark/` (assumes NPM installed).
 
@@ -523,7 +531,7 @@ And, finally, adjust your [Customized CSS](#custom-css), 404 page and `/meta/the
 
 ## Contributing
 
-If you've spotted a bug or would like to make an enhancement suggestion, please [open an issue on GitHub](https://codeberg.org/vhs/after-dark/issues). Build something awesome with After Dark? [Add it to the wiki](https://codeberg.org/vhs/after-dark/wiki) for others to see. For general questions or support, please feel free to reach out to me directly at: [https://vhs.codeberg.page/contact](https://vhs.codeberg.page/contact). Thanks!
+If you've spotted a bug or would like to make an enhancement suggestion, please [open an issue on GitHub](https://codeberg.org/vhs/after-dark/issues). Build something awesome with After Dark? [Add it to the wiki](https://codeberg.org/vhs/after-dark/wiki) for others to see. For general questions or support, please feel free to [reach out directly](https://vhsllc.com/contact).
 
 ## License
 
