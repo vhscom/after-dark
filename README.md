@@ -150,7 +150,7 @@ Finally, include the settings in your site's `config.toml`:
 baseurl = "https://c74ce35e.ngrok.io" # Controls base URL
 languageCode = "en-US" # Controls html lang attribute
 title = "After Dark" # Homepage title and page title suffix
-paginate = 5 # Number of posts to show before paginating
+paginate = 11 # Number of posts to show before paginating
 
 # theme = "after-dark" # Uncomment to use as default theme
 
