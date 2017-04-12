@@ -34,9 +34,9 @@
   a[itemprop="url"]:hover {
     color: #fff;
   }
-  a[target="_blank"]::after {
-    /* svg icon for external links in pop-up window thanks to @Fastidious for the idea */
-    content: " " url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" class=\"i-external\" viewBox=\"0 0 32 32\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"#ff9800\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"9.38%\"><path d=\"M14 9 L3 9 3 29 23 29 23 18 M18 4 L28 4 28 14 M28 4 L14 18\" /></svg>");
+  a[href*="//"]::after {
+    /* data uri svg icon. thanks to @Fastidious for the idea */
+    content: " " url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20class='i-external'%20viewBox='0%200%2032%2032'%20width='14'%20height='14'%20fill='none'%20stroke='%23ff9800'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='9.38%'%3E%3Cpath%20d='M14%209%20L3%209%203%2029%2023%2029%2023%2018%20M18%204%20L28%204%2028%2014%20M28%204%20L14%2018'/%3E%3C/svg%3E");
   }
   html {
     font-size: 13px;
