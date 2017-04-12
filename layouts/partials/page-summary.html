@@ -1,7 +1,7 @@
 <article itemscope itemtype="http://schema.org/CreativeWork">
   <header>
     <h2 itemprop="name">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h2>
     {{ if eq .Type "post" }}
       <p class="muted">{{ partial "post/meta" . }}</p>
