@@ -56,7 +56,7 @@
       </tr>
       <tr>
         <td><a href="#personalization">Personalization</a></td>
-        <td>Adjust CSS using purpose-built [customization file](#custom-css). Choose one of several [theme variants](#theme-variants). Swap in [your own favicon](#favicon). Leverage the [block templates](https://gohugo.io/templates/blocks) to quickly extend new custom layouts. And use [hack.css](http://hackcss.com/dark.html) flexbox grids and CSS components to add style your site.</td>
+        <td>Adjust CSS using purpose-built <a href="#custom-css">customization file</a>. Choose one of several <a href="#theme-variants">theme variants</a>. Swap in <a href="#favicon">your own favicon</a>. Leverage <a target="features" href="https://gohugo.io/templates/blocks">block templates</a> to quickly extend new custom layouts. And use <a target="features" href="http://hackcss.com/dark.html">hack.css</a> flexbox grids and CSS components to add style your site.</td>
       </tr>
       <tr>
         <td><a href="#section-menu">Section Menu</a></td>
