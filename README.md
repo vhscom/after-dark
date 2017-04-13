@@ -1,7 +1,7 @@
 <h1 align="center">After Dark</h1>
 
 <p align="center">
-  <strong>A simple, yet highly configurable responsive dark theme for the <a target="intro" href="https://gohugo.io/">Hugo</a> static site generator.</strong>
+  <strong>A simple, yet highly configurable responsive dark theme for <a target="intro" href="https://gohugo.io/">Hugo</a>.</strong>
 </p>
 
 <img align="center" src="https://raw.githubusercontent.com/vhs/after-dark/master/images/minimal-mac.png" title="After Dark running on a MacBook and iPhone" alt="After Dark theme screenshots">
