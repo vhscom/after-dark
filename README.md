@@ -56,7 +56,7 @@
       </tr>
       <tr>
         <td><a href="#personalization">Personalization</a></td>
-        <td>Adjust your CSS using a purpose-built CSS customization file. Choose one of several theme variants made available by<a target="feature" href="http://hackcss.com/">hack.css</a>. Or swap in your own personal favicon if you choose.</td>
+        <td>Adjust CSS using purpose-built [customization file](#custom-css). Choose one of several [theme variants](#theme-variants). Swap in [your own favicon](#favicon). Leverage the [block templates](https://gohugo.io/templates/blocks) to quickly extend new custom layouts. And use [hack.css](http://hackcss.com/dark.html) flexbox grids and CSS components to add style your site.</td>
       </tr>
       <tr>
         <td><a href="#section-menu">Section Menu</a></td>
@@ -490,11 +490,7 @@ Once configured, syntax highlighting with Pygments can be achieved using the Hug
 
 ### Personalization
 
-#### Favicon
-
-After Dark comes preinstalled with a tiny SVG favicon embedded into every page. To customize it create a file named `favicon.html` under `/layouts/partials` within your site and place an [`icon` link](http://devdocs.io/html/link_types#icon) within it.
-
-**Why SVG?** Simple. They have a smaller file size and are more flexible. SVG favicons can be styled with CSS or even animated with JavaScript. Firefox added support for them in Release 41, and Chrome has [an open issue](https://bugs.chromium.org/p/chromium/issues/detail?id=294179) tracking the support request.
+After Dark uses [hack.css](http://hackcss.com/dark.html) to automatically style your markup, giving you instant access to flexbox grids, light and dark theme variants, and other pre-built components. Use them while creating new [sections](#section-menu) leveraging [block templates](https://gohugo.io/templates/blocks). Additional personalization options listed below.
 
 #### Custom CSS
 
@@ -528,6 +524,12 @@ Once downloaded, open `node_modules/hack/dist` directory and replace the CSS con
 Once the vendor file is updated, open your favorite dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations, making any tweaks necessary to `critical-theme.css.html`.
 
 And, finally, adjust your [Customized CSS](#custom-css), 404 page and `/meta/theme-color` as necessary.
+
+#### Favicon
+
+After Dark comes preinstalled with a tiny SVG favicon embedded into every page. To customize it create a file named `favicon.html` under `/layouts/partials` within your site and place an [`icon` link](http://devdocs.io/html/link_types#icon) within it.
+
+**Why SVG?** Simple. They have a smaller file size and are more flexible. SVG favicons can be styled with CSS or even animated with JavaScript. Firefox added support for them in Release 41, and Chrome has [an open issue](https://bugs.chromium.org/p/chromium/issues/detail?id=294179) tracking the support request.
 
 ## Contributing
 
