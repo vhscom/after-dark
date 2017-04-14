@@ -529,7 +529,7 @@ And, finally, adjust your [Customized CSS](#custom-css), 404 page and `/meta/the
 
 After Dark comes preinstalled with a tiny SVG favicon embedded into every page. To customize it create a file named `favicon.html` under `/layouts/partials` within your site and place an [`icon` link](http://devdocs.io/html/link_types#icon) within it.
 
-**Why SVG?** Simple. They have a smaller file size and are more flexible. SVG favicons can be styled with CSS or even animated with JavaScript. Firefox added support for them in Release 41, and Chrome has [an open issue](https://bugs.chromium.org/p/chromium/issues/detail?id=294179) tracking the support request.
+**Why SVG?** Simple. They have a smaller file size and are more flexible. SVG favicons can be styled with CSS or even animated with JavaScript. Firefox added support for them in Release 41, which you can preview the current icon until [other browsers](http://caniuse.com/#feat=link-icon-svg) fall in line.
 
 ## Contributing
 
