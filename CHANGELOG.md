@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://codeberg.org/vhs/after-dark/compare/v1.4.0...v1.5.0) (2017-04-16)
+
+
+### Bug Fixes
+
+* **links:** style external links in all browsers ([ccef559](https://codeberg.org/vhs/after-dark/commit/ccef559)), closes [#22](https://codeberg.org/vhs/after-dark/issues/22)
+* **partials:** fix markup validation error ([c82fc66](https://codeberg.org/vhs/after-dark/commit/c82fc66))
+
+
+### Features
+
+* **layouts:** add support for hugo 0.20.2 ([eba70c9](https://codeberg.org/vhs/after-dark/commit/eba70c9)), closes [#28](https://codeberg.org/vhs/after-dark/issues/28)
+* **typography:** justify text output and hyphenate ([4775618](https://codeberg.org/vhs/after-dark/commit/4775618))
+
+
+### Performance Improvements
+
+* **favicon:** add svg favicon ([b3b0008](https://codeberg.org/vhs/after-dark/commit/b3b0008))
+* **install:** remove design resources ([6eb145d](https://codeberg.org/vhs/after-dark/commit/6eb145d))
+
+
+### Reverts
+
+* **docs(README:** remove erroneous markdown file): ([925ed3e](https://codeberg.org/vhs/after-dark/commit/925ed3e))
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://codeberg.org/vhs/after-dark/compare/v1.3.2...v1.4.0) (2017-04-10)
 
