@@ -56,7 +56,7 @@
       </tr>
       <tr>
         <td><a href="#personalization">Personalization</a></td>
-        <td>Adjust CSS using purpose-built <a href="#custom-css">customization file</a>. Choose one of several <a href="#theme-variants">theme variants</a>. Swap in <a href="#favicon">your own favicon</a>. Leverage <a target="features" href="https://gohugo.io/templates/blocks">block templates</a> to quickly extend new custom layouts. And use <a target="features" href="http://hackcss.com/dark.html">hack.css</a> flexbox grids and CSS components to add style your site.</td>
+        <td>Adjust CSS using purpose-built <a href="#custom-styles">customization file</a>. Choose one of several <a href="#theme-variants">theme variants</a>. Swap in <a href="#favicon">your own favicon</a>. Leverage <a target="features" href="https://gohugo.io/templates/blocks">block templates</a> to quickly extend new custom layouts. And use <a target="features" href="http://hackcss.com/dark.html">hack.css</a> flexbox grids and CSS components to add style your site.</td>
       </tr>
       <tr>
         <td><a href="#section-menu">Section Menu</a></td>
@@ -482,7 +482,7 @@ To set-up syntax highlighting for your After Dark site:
 - Then open `./node_modules/atom-one-pygments` and `npm i`.
 - Once dependencies are installed, issue `npm run build` within the module to generate the stylesheets to the module's `./dist` directory.
 
-Then choose either `./dist/light.css` or `dark.css` depending on your [Theme Variant](#theme-variants) and copy the contents of the file into your [Custom CSS](#custom-css) file.
+Then choose either `./dist/light.css` or `dark.css` depending on your [Theme Variant](#theme-variants) and copy the contents of the file into your [Custom Styles](#custom-styles) file.
 
 Once configured, syntax highlighting with Pygments can be achieved using the Hugo built-in [`highlight` shortcode](https://gohugo.io/extras/shortcodes#highlight). Reference Hugo's Syntax Highlighting docs for [usage instructions](https://gohugo.io/extras/highlighting/#usage).
 
@@ -492,38 +492,52 @@ Once configured, syntax highlighting with Pygments can be achieved using the Hug
 
 After Dark uses [hack.css](http://hackcss.com/dark.html) to automatically style your markup, giving you instant access to flexbox grids, light and dark theme variants, and other pre-built components. Use them while creating new [sections](#section-menu) leveraging [block templates](https://gohugo.io/templates/blocks). Additional personalization options listed below.
 
-#### Custom CSS
+#### Custom Styles
 
-To add your own theme CSS or override existing CSS without having to change theme files do the following:
+To add your own theme styles or override existing CSS without having to change theme files do the following:
 
-1. Create a `critical-custom.css.html` in your site's `layouts/partials` directory.
-1. Add your customizations inside a `style` element.
+1. Create a `critical-custom.css` in your site's `layouts/partials` directory.
+1. Add your custom styles inside the file.
 
 Example customization file:
 
-```html
-<style media="screen">
-  .hack ul li {
-    margin: 0;
-  }
-</style>
+```css
+/* override theme defaults */
+.muted {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* custom styles */
+figure {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+figure img {
+  max-width: 80%;
+}
+figure a {
+  border-bottom: none !important;
+}
+figure a:hover {
+  background-color: inherit !important;
+}
 ```
 
-Your customizations will automatically be added to generated pages, inline in the document `HEAD`. Thanks to [@rsommerard](https://github.com/rsommerard) for making the suggestion.
+Your customizations will be inlined into the `head` section of each page and, overriding existing styles if specified.
 
 #### Theme Variants
 
 [`hack.css`](http://hackcss.com/) provides a few variants you may wish to use instead of the After Dark defaults. To download them do an `npm i` from `/themes/after-dark/` (assumes NPM installed).
 
-Once downloaded, open `node_modules/hack/dist` directory and replace the CSS contents of `critical-vendor.css.html` with those you wish to use, updating the `theme_variant` setting in the site configuration like:
+Once downloaded, open `node_modules/hack/dist` directory and replace the contents of `critical-vendor.css` with the CSS you wish to use, updating the `theme_variant` setting in the site configuration like:
 
     theme_variant = "standard dark-grey"
 
-**Why not use external CSS files?** After Dark is optimized for speed and, as a result, limits the number of HTTP requests whenever possible. This just so happens to be of those occasions.
+**Why not use external CSS files?** After Dark is optimized for speed and, as a result, limits the number of HTTP requests whenever possible. Concessions for external CSS for HTTP/2 Push State support will be made upon request.
 
-Once the vendor file is updated, open your favorite dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations, making any tweaks necessary to `critical-theme.css.html`.
+Once the vendor file is updated, open your favorite dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations, making any tweaks necessary to `critical-theme.css`.
 
-And, finally, adjust your [Customized CSS](#custom-css), 404 page and `/meta/theme-color` as necessary.
+And, finally, adjust your [Customized Styles](#custom-stylesles), 404 page and `/meta/theme-color` as necessary.
 
 #### Favicon
 
