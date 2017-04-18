@@ -120,7 +120,7 @@
 
 ## Demo & Tutorial
 
-Head to [Hack Cabin](https://hackcabin.com) for a **live example** running on <abbr title="Amazon Web Services">AWS</abbr> and learn more about the [site architecture](https://hackcabin.com/post/initial-commit/). I've also written a [step-by-step guide](http://vhs.codeberg.page/zero-to-http-2) to hosting After Dark on Amazon, which includes a **free year of hosting**. For cloud hosting using a VPS, [Vultr](http://vhs.codeberg.page/2oiL54G) and [DigitalOcean](http://vhs.codeberg.page/2oDN04T) are options.
+Head to [Hack Cabin](https://hackcabin.com) for a **live example** running on <abbr title="Amazon Web Services">AWS</abbr> and learn more about the [site architecture](https://hackcabin.com/post/initial-commit/). I've also written a [step-by-step guide](http://vhs.codeberg.page/zero-to-http-2) to hosting After Dark on Amazon, which includes a **free year of hosting**.
 
 ## Getting Started
 
