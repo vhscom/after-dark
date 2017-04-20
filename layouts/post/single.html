@@ -1,17 +1,19 @@
 {{ define "header" }}
-  {{ partial "menu" . }}
+  {{ partial "menu.html" . }}
 {{ end }}
 {{ define "main" }}
   <article itemscope itemtype="http://schema.org/BlogPosting">
     {{ template "_internal/schema.html" . }}
     <header>
       <h1 itemprop="headline">{{ .Title }}</h1>
-      <p class="muted">{{ partial "post/meta" . }}</p>
+      <p class="muted">
+        {{ partial "post/meta.html" . }}
+      </p>
     </header>
     {{ if .Description }}
       <blockquote itemprop="description">{{ .Description }}</blockquote>
     {{ end }}
-    {{ partial "toc-maybe" . }}
+    {{ partial "toc-maybe.html" . }}
     <div itemprop="articleBody">
       {{ .Content }}
     </div>
@@ -22,11 +24,11 @@
     {{ end }}
     <footer>
       <hr>
-      {{ partial "post/byline" . }}
-      {{ partial "post/related-content" . }}
+      {{ partial "post/byline.html" . }}
+      {{ partial "post/related-content.html" . }}
     </footer>
   </article>
 {{ end }}
 {{ define "footer" }}
-  {{ partial "powered-by" . }}
+  {{ partial "powered-by.html" . }}
 {{ end }}

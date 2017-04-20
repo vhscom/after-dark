@@ -4,7 +4,7 @@
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h2>
     {{ if eq .Type "post" }}
-      <p class="muted">{{ partial "post/meta" . }}</p>
+      <p class="muted">{{ partial "post/meta.html" . }}</p>
     {{ end }}
   </header>
   {{ if .Description }}

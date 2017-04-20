@@ -2,17 +2,17 @@
   {{ .Site.Title }}
 {{- end }}
 {{ define "header" }}
-  {{ partial "menu" . }}
+  {{ partial "menu.html" . }}
 {{ end }}
 {{ define "main" }}
   <header>
     <h1>{{ .Title }}</h1>
   </header>
   {{ range (.Paginate (where .Data.Pages "Type" "post")).Pages }}
-    {{ partial "page-summary" . }}
+    {{ partial "page-summary.html" . }}
   {{ end }}
 {{ end }}
 {{ define "footer" }}
-  {{ partial "pagination" . }}
-  {{ partial "powered-by" . }}
+  {{ partial "pagination.html" . }}
+  {{ partial "powered-by.html" . }}
 {{ end }}
