@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.1"></a>
+## [1.5.1](https://codeberg.org/vhs/after-dark/compare/v1.5.0...v1.5.1) (2017-04-20)
+
+
+### Bug Fixes
+
+* **typography:** stop justifying and hyphenating text on small viewports ([77c6033](https://codeberg.org/vhs/after-dark/commit/77c6033))
+
+
+
 <a name="1.5.0"></a>
 # [1.5.0](https://codeberg.org/vhs/after-dark/compare/v1.4.0...v1.5.0) (2017-04-16)
 
