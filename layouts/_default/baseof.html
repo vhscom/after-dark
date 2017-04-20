@@ -13,12 +13,12 @@
     {{ if or (in $noindex_kinds .Kind) ($is_noindex_true) }}
       <meta name="robots" content="noindex">
     {{ end }}
-    {{ partial "meta/name-author" . }}
+    {{ partial "meta/name-author.html" . }}
     {{ template "_internal/opengraph.html" . }}
-    {{ partial "meta/ogimage-maybe" . }}
-    {{ partial "meta/theme-color" . }}
+    {{ partial "meta/ogimage-maybe.html" . }}
+    {{ partial "meta/theme-color.html" . }}
     {{ if eq .Kind "home" }}
-      {{ partial "site-verification" . }}
+      {{ partial "site-verification.html" . }}
     {{ end }}
     {{ template "_internal/google_analytics_async.html" . }}
     {{ if .RSSLink }}
@@ -31,7 +31,7 @@
     {{ if (isset .Params "next") }}
       <link rel="next" href="{{ .Params.next }}">
     {{ end }}
-    {{ partial "favicon" . }}
+    {{ partial "favicon.html" . }}
     <style>
       {{ partial "critical-vendor.css" | safeCSS }}
       {{ partial "critical-theme.css" | safeCSS }}

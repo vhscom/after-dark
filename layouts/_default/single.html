@@ -2,7 +2,7 @@
   {{ .Title }} | {{ .Site.Title }}
 {{- end }}
 {{ define "header" }}
-  {{ partial "menu" . }}
+  {{ partial "menu.html" . }}
 {{ end }}
 {{ define "main" }}
   <header>
@@ -11,5 +11,5 @@
   {{ .Content }}
 {{ end }}
 {{ define "footer" }}
-  {{ partial "powered-by" . }}
+  {{ partial "powered-by.html" . }}
 {{ end }}

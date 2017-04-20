@@ -1,15 +1,15 @@
 {{ define "header" }}
-  {{ partial "menu" . }}
+  {{ partial "menu.html" . }}
 {{ end }}
 {{ define "main" }}
   <header>
     <h1>{{ .Title }}</h1>
   </header>
   {{ range .Paginator.Pages }}
-    {{ partial "page-summary" . }}
+    {{ partial "page-summary.html" . }}
   {{ end }}
 {{ end }}
 {{ define "footer" }}
-  {{ partial "pagination" . }}
-  {{ partial "powered-by" . }}
+  {{ partial "pagination.html" . }}
+  {{ partial "powered-by.html" . }}
 {{ end }}
