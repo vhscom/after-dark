@@ -63,8 +63,8 @@
         <td>Add and customize your site's global navigation. After Dark uses Hugo's <a target="feature" href="https://gohugo.io/extras/menus#section-menu-for-the-lazy-blogger">Section Menu for "the Lazy Blogger"</a>, making navigation easy to create and predictable to use. Don't want navigation? Simply disable it from your site configuration.</td>
       </tr>
       <tr>
-        <td><a href="#intelligent-lazyloading">Intelligent Lazyloading</a></td>
-        <td>Lazyload your images, iFrames and script embeds. After Dark uses the <a title="feature" href="https://github.com/aFarkas/lazysizes">lazysizes</a> library, a zero-configuration JavaScript library with support for <abbr title="Low Quality Image Placeholders">LQIP</abbr> and responsive images.</td>
+        <td><a href="#intelligent-lazy-loading">Intelligent Lazy Loading</a></td>
+        <td>Lazy load your images, iFrames and script embeds. After Dark uses the <a title="feature" href="https://github.com/aFarkas/lazysizes">lazysizes</a> library, a zero-configuration JavaScript library with support for <abbr title="Low Quality Image Placeholders">LQIP</abbr> and responsive images.</td>
       </tr>
       <tr>
         <td><a href="#related-content">Related Content</a></td>
@@ -138,13 +138,13 @@ Clone After Dark and use it to serve your site:
 hugo serve --theme=after-dark
 ```
 
-Copy custom archetypes to your site:
+Then copy theme-provided archetypes to your site:
 
 ```shell
 cp themes/after-dark/archetypes/* archetypes
 ```
 
-Finally, include the settings in your site's `config.toml`:
+Finally, include these settings in your site's `config.toml`:
 
 ```toml
 baseurl = "https://c74ce35e.ngrok.io" # Controls base URL
@@ -166,9 +166,13 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   hide_author = false # Optional, set true to hide author name on posts
   show_menu = false # Optional, set true to enable section menu
   powered_by = true # Optional, set false to disable credits
-  images = [] # Suggested, controls default Open Graph images
+  images = [
+    "https://source.unsplash.com/category/technology/1600x900"
+  ] # Suggested, controls default Open Graph images
   theme_variant = "" # Optional, for use to overriding default theme
 ```
+
+Create your first post with `hugo new post/hello-world.md`.
 
 That's it! Everything else is optional. Read on to learn how to configure specific features and customize the theme.
 
@@ -288,9 +292,9 @@ images = [
 ]
 ```
 
-**Note:** Image URLs must include the URL scheme and domain as shown above. And, though possible, After Dark does not currently support relative links to images. If you would like to see this feature, please open an Issue against the repo.
+See [Unsplash Source](https://source.unsplash.com/) for image configuration options.
 
-Test how things are looking during development using a combination of the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) and [ngrok](https://ngrok.com/). And reference the [Open Graph docs](http://ogp.me/) for additional information.
+**Note:** While it would be possible, After Dark does not currently support relative links to images. If you would like to see this feature, please [open a new issue](https://codeberg.org/vhs/after-dark/issues/new).
 
 ### Search Optimization
 
