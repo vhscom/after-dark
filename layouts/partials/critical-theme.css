@@ -47,13 +47,13 @@ article [itemprop="description"] {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-p {
-  hyphens: auto;
-  text-align: justify;
-}
 @media screen and (min-width: 768px) {
   html {
     font-size: 1em;
+  }
+  p {
+    hyphens: auto;
+    text-align: justify;
   }
   .container {
     max-width: 50rem;
