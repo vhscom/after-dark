@@ -4,7 +4,9 @@
   <strong>A simple, yet highly configurable responsive dark theme for <a target="intro" href="https://gohugo.io/">Hugo</a>.</strong>
 </p>
 
-<img align="center" src="https://raw.githubusercontent.com/vhs/after-dark/master/images/minimal-mac.png" title="After Dark running on a MacBook and iPhone" alt="After Dark theme screenshots">
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vhs/after-dark/master/images/minimal-mac.png" title="After Dark running on a MacBook and iPhone" alt="After Dark theme screenshots">
+</p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/after-dark"><img src="https://img.shields.io/npm/dm/after-dark.svg" alt="NPM downloads per month"></a>
