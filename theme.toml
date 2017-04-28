@@ -8,7 +8,14 @@ tags = [
   "minimal",
   "responsive",
   "accessible",
-  "vaporwave"
+  "vaporwave",
+  "unported",
+  "blog",
+  "disqus",
+  "syntax highlighting",
+  "technical",
+  "dark",
+  "custom themes"
 ]
 features = [
   "Mobile-optimized",
