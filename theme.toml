@@ -8,7 +8,9 @@ tags = [
   "minimal",
   "responsive",
   "accessible",
-  "unported"
+  "unported",
+  "dark",
+  "themeable"
 ]
 features = [
   "Mobile-optimized",
