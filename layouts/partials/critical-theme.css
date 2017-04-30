@@ -51,7 +51,7 @@ article [itemprop="description"] {
   html {
     font-size: 1em;
   }
-  p {
+  [itemprop="articleBody"] p {
     hyphens: auto;
     text-align: justify;
   }
