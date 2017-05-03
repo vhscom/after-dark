@@ -1,5 +1,5 @@
 +++
-description = "Congratulations! You've just created a post using After Dark."
+description = "Thank you for choosing After Dark."
 draft = true
 toc = false
 categories = ["technology"]
