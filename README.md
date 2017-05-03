@@ -505,7 +505,7 @@ Once downloaded, open `node_modules/hack/dist` directory and replace the content
 
 Once the vendor file is updated, open your favorite dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations, making any tweaks necessary to `critical-theme.css`.
 
-And, finally, adjust your [Customized Styles](#custom-stylesles), 404 page and `/meta/theme-color` as necessary.
+And, finally, adjust your [Customized Styles](#custom-styles), 404 page and `/meta/theme-color` as necessary.
 
 #### Favicon
 
