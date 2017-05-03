@@ -141,9 +141,7 @@ hugo serve --theme=after-dark
 curl https://git.io/v906l | sh
 ```
 
-Script will run `hugo serve` as a backgrounded process. To kill the process get the `PID` with `lsof -n -i4TCP:1337` and then `kill -9`.
-
-Read on to learn how to customize the theme.
+Script will run `hugo serve` as a backgrounded process. To kill the process get the `PID` with `lsof -n -i4TCP:1337` and then `kill -9` followed by the process identifier.
 
 ## Customizing
 
