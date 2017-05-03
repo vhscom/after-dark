@@ -11,7 +11,7 @@ fi
 echo "\nInstalling After Dark..."
 
 # Clone repo
-(cd themes; git clone -q --depth 1 https://codeberg.org/vhs/after-dark || { echo "Sundown didn't arrive."; exit 1; })
+(cd themes; git clone -q --depth 1 https://codeberg.org/vhs/after-dark || { echo "cloning failed :/"; exit 1; })
 
 # Copy archetypes
 cp themes/after-dark/archetypes/* ./archetypes
