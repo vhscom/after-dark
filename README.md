@@ -132,16 +132,18 @@ Head to [Hack Cabin](https://hackcabin.com) for a **live example** running on <a
 brew install hugo
 ```
 
-Install [`elinks`](http://elinks.or.cz/) (optional) and run the install script located in the theme `bin` directory, or simply:
+Install [`elinks`](http://elinks.or.cz/) (optional) and run the install script located in the theme's `bin` directory:
 
 ```shell
 (cd themes; git clone git@github.com:vhs/after-dark.git)
 hugo serve --theme=after-dark
 ```
-curl -sL https://git.io/v906l | sh
+curl https://git.io/v906l | sh
 ```
 
-Read on to learn how to customize After Dark.
+Script will run `hugo serve` as a backgrounded process. To kill the process get the `PID` with `lsof -n -i4TCP:1337` and then `kill -9`.
+
+Read on to learn how to customize the theme.
 
 ## Customizing
 
