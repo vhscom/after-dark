@@ -43,10 +43,13 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   theme_variant = "" # Optional, for use to overriding default theme
 EOF
 
-# Create post
+# Create new post using instructional post archetype
 hugo new post/starry-night.md
+
+# Serve site backgrounded over Docker-friendly loopback
 hugo serve --buildDrafts --port 1337 --bind "0.0.0.0" &
 
+# Pop the site in terminal browser, if installed
 if [[ "elinks" != "" ]]; then
   elinks http://0.0.0.0:1337/
 fi
