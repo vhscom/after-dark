@@ -138,7 +138,7 @@ Install [`elinks`](http://elinks.or.cz/) (optional) and run the install script l
 (cd themes; git clone git@github.com:vhs/after-dark.git)
 hugo serve --theme=after-dark
 ```
-curl https://git.io/v906l | sh
+curl -sL https://git.io/v906l | sh
 ```
 
 Read on to learn how to customize After Dark.
