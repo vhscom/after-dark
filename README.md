@@ -135,7 +135,7 @@ brew install hugo
 Install [`elinks`](http://elinks.or.cz/) (optional) and run the [install script](https://codeberg.org/vhs/after-dark/blob/master/bin/install.sh) located in the theme's `bin` directory:
 
 ```
-curl https://git.io/v906l | sh
+curl -sL https://git.io/v906l | sh
 ```
 
 Script will run `hugo serve` as a backgrounded process. To kill the process get the `PID` with `lsof -n -i4TCP:1337` and then `kill -9` followed by the process identifier.
