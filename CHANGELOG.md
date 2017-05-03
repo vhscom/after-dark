@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.0"></a>
+# [1.6.0](https://codeberg.org/vhs/after-dark/compare/v1.5.2...v1.6.0) (2017-05-03)
+
+
+### Bug Fixes
+
+* **install:** add flags for theme setup script ([01ad1ee](https://codeberg.org/vhs/after-dark/commit/01ad1ee))
+* **layouts:** use relative urls in post byline taxonomy links ([419752d](https://codeberg.org/vhs/after-dark/commit/419752d))
+
+
+### Features
+
+* **install:** simplify installation ([765dcb8](https://codeberg.org/vhs/after-dark/commit/765dcb8))
+
+
+
 <a name="1.5.2"></a>
 ## [1.5.2](https://codeberg.org/vhs/after-dark/compare/v1.5.1...v1.5.2) (2017-04-30)
 
