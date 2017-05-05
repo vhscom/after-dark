@@ -126,13 +126,13 @@ Head to [Hack Cabin](https://hackcabin.com) for a **live example** running on <a
 
 ## Getting Started
 
-[Install Hugo](https://gohugo.io/#action) on your machine and use it to create a new site. Instructions for [Homebrew](https://brew.sh/) on macOS:
+[Install Hugo](https://gohugo.io/#action) on your machine. Instructions for [Homebrew](https://brew.sh/) on macOS:
 
 ```shell
 brew install hugo
 ```
 
-Install [`elinks`](http://elinks.or.cz/) (optional) and run the [install script](https://codeberg.org/vhs/after-dark/blob/master/bin/install.sh) located in the theme's `bin` directory:
+Install [`elinks`](http://elinks.or.cz/) (optional) and then run the [install script](https://codeberg.org/vhs/after-dark/blob/master/bin/install.sh) located in the theme's `bin` directory.
 
 ```shell
 (cd themes; git clone git@github.com:vhs/after-dark.git)
