@@ -138,7 +138,9 @@ Install [`elinks`](http://elinks.or.cz/) (optional) and then run the [install sc
 curl -sL https://git.io/v906l | sh
 ```
 
-Script will run `hugo serve` as a backgrounded process. To kill the process get the `PID` with `lsof -n -i4TCP:1337` and then `kill -9` followed by the process identifier.
+Windows users unable to run the above may use [Cmder](http://cmder.net/) (full) to gain access to a suitable console emulator.
+
+**Note**: Script will run `hugo serve` as a backgrounded process. To kill the process get the `PID` with `lsof -n -i4TCP:1337` and then `kill -9` followed by the process identifier.
 
 ## Customizing
 
