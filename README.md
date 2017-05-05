@@ -138,7 +138,7 @@ Install [`elinks`](http://elinks.or.cz/) (optional) and then run the [install sc
 curl -sL https://git.io/v906l | sh
 ```
 
-Windows users unable to run the above may use [Cmder](http://cmder.net/) (full) to gain access to a suitable console emulator. Be aware of [the risks of `curl | sh`](https://spin.atomicobject.com/2016/12/12/security-spectrum-curl-sh/) before ever running a script in this manner.
+Windows users unable to run the above may use [Cmder](http://cmder.net/) (full) to gain access to a suitable console emulator. Be aware of [the risks of `curl | sh`](https://spin.atomicobject.com/2016/12/12/security-spectrum-curl-sh/) before ever running a script over a network.
 
 **Note**: Script will run `hugo serve` as a backgrounded process. To kill the process get the `PID` with `lsof -n -i4TCP:1337` and then `kill -9` followed by the process identifier.
 
