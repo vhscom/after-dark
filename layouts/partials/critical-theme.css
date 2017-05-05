@@ -51,10 +51,6 @@ article [itemprop="description"] {
   html {
     font-size: 1em;
   }
-  [itemprop="articleBody"] p {
-    hyphens: auto;
-    text-align: justify;
-  }
   .container {
     max-width: 50rem;
   }
