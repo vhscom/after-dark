@@ -1,0 +1,21 @@
+<!-- {{/*
+Basic usage:
+{{< hackcss-card header="title" text="Lorem ipsum dolor sit amet">}}
+{{% hackcss-card header="Bacon Ipsum" %}}
+  _Flank **pancetta** beef tri-tip frankfurter chuck._
+{{% /hackcss-card %}}
+
+Advanced usage:
+{{< hackcss-card header="SUX 3000 (2 left in stock)" >}}
+  <p>Available now for a limited time at the low price of just $1,000,000.</p>
+  {{< hackcss-button type="success" text="Buy Now" isblock="true" />}}
+{{< /hackcss-card >}}
+*/}} -->
+{{ $header := .Get "header" }}
+{{ $body := .Get "text" | default .Inner }}
+<div class="card">
+  <header class="card-header">{{ $header }}</header>
+  <div class="card-content">
+    <div class="inner">{{ $body }}</div>
+  </div>
+</div>
