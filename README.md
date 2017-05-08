@@ -69,6 +69,10 @@
         <td>Lazy load your images, iFrames and script embeds. After Dark uses the <a title="feature" href="https://github.com/aFarkas/lazysizes">lazysizes</a> library, a zero-configuration JavaScript library with support for <abbr title="Low Quality Image Placeholders">LQIP</abbr> and responsive images.</td>
       </tr>
       <tr>
+        <td><a href="#shortcodes">Content Reuse</a></td>
+        <td>Sometimes plan markdown isn't enough to build engaging page content. For this reason After Dark provides a number of built-in shortcodes for for adding things like blockquotes, lazy-loaded figure elements and <a target="feature" href="http://hackcss.com/">hackcss components</a> to your posts and pages, many of which can be mixed and matched to create truly unique experiences.
+      </tr>
+      <tr>
         <td><a href="#related-content">Related Content</a></td>
         <td>Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can <b>increase your site's page views</b>, the time spent on your site and reader loyalty.</td>
       </tr>
