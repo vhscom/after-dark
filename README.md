@@ -134,13 +134,15 @@ brew install hugo
 
 Install [`elinks`](http://elinks.or.cz/) (optional) and then run the [install script](https://codeberg.org/vhs/after-dark/blob/master/bin/install.sh) located in the theme's `bin` directory.
 
+**Tip:** Windows users can use [Cmder](http://cmder.net/) (full) to gain access to a suitable console emulator for running bash scripts.
+
+For installations over the wire, run the following:
+
 ```
 curl -sL https://git.io/v906l | sh
 ```
 
-Windows users unable to run the above may use [Cmder](http://cmder.net/) (full) to gain access to a suitable console emulator. Be aware of [the risks of `curl | sh`](https://spin.atomicobject.com/2016/12/12/security-spectrum-curl-sh/) before ever running a script over a network.
-
-**Note**: Script will run `hugo serve` as a backgrounded process. To kill the process get the `PID` with `lsof -n -i4TCP:1337` and then `kill -9` followed by the process identifier.
+**Note:** Be aware of [the risks of `curl | sh`](https://spin.atomicobject.com/2016/12/12/security-spectrum-curl-sh/) when running scripts over a network.
 
 ## Customizing
 
