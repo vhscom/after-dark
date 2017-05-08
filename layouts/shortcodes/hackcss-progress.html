@@ -4,11 +4,9 @@ Basic usage:
 {{< hackcss-progress value="30" showpercent="true" >}}
 {{< hackcss-progress value="70" showpercent="true" filltext="pemuatan" >}}
 */}} -->
-
 {{ $show_percent := .Get "showpercent" }}
 {{ $fill_text := .Get "filltext" | default "Loading" }}
 {{ $value := .Get "value" }}
-
 {{ if eq $show_percent "true" }}
   <div class="progress-bar progress-bar-show-percent">
     {{ with $value }}
