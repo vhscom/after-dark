@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.7.0"></a>
+# [1.7.0](https://codeberg.org/vhs/after-dark/compare/v1.6.1...v1.7.0) (2017-05-08)
+
+
+### Bug Fixes
+
+* **install:** improve install experience ([4a30955](https://codeberg.org/vhs/after-dark/commit/4a30955))
+
+
+### Features
+
+* **shortcodes:** add hack progress bar component ([dda60f2](https://codeberg.org/vhs/after-dark/commit/dda60f2))
+* **shortcodes:** add hackcss alert shortcode ([6ed1c58](https://codeberg.org/vhs/after-dark/commit/6ed1c58))
+* **shortcodes:** add hackcss alert shortcode ([eebe7a9](https://codeberg.org/vhs/after-dark/commit/eebe7a9))
+* **shortcodes:** add hackcss button group component ([1f90e2d](https://codeberg.org/vhs/after-dark/commit/1f90e2d))
+* **shortcodes:** add hackcss button shortcode ([829cb7d](https://codeberg.org/vhs/after-dark/commit/829cb7d))
+* **shortcodes:** add hackcss card component ([4526c60](https://codeberg.org/vhs/after-dark/commit/4526c60))
+* **shortcodes:** add hackcss loading component ([6f667e8](https://codeberg.org/vhs/after-dark/commit/6f667e8))
+* **shortcodes:** add hackcss progress component ([4e99c75](https://codeberg.org/vhs/after-dark/commit/4e99c75))
+
+
+
 <a name="1.6.1"></a>
 ## [1.6.1](https://codeberg.org/vhs/after-dark/compare/v1.6.0...v1.6.1) (2017-05-05)
 
