@@ -32,9 +32,10 @@ features = [
   "Section Menu",
   "Block Templates",
   "Table of Contents",
-  "Keyboard accessible",
-  "Terminal friendly",
-  "Customizable theme"
+  "Custom Shortcodes",
+  "Keyboard Accessibility",
+  "Inclusive Design",
+  "Theme Variants"
 ]
 min_version = 0.16
 
