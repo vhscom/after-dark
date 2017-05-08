@@ -1,0 +1,19 @@
+<!-- {{/*
+Basic usage:
+{{< hackcss-button text="Default" />}}
+{{< hackcss-button text="Info" type="info" />}}
+{{< hackcss-button text="Default Ghost" isghost="true" />}}
+{{< hackcss-button text="Block Level Button" isblock="true" />}}
+{{< hackcss-button text="Primary Ghost" type="primary" isghost="true" />}}
+
+Inner usage:
+{{< hackcss-button type="error" >}}<b>ABORT</b>{{< /hackcss-button >}}
+{{% hackcss-button type="success" %}}**Purchase**{{% /hackcss-button %}}
+
+Available types: "default", "primary", "success", "info", "warning", "error"
+*/}} -->
+{{ $type := .Get "type" | default "default" }}
+{{ $body := .Get "text" | default .Inner }}
+{{ $isghost := .Get "isghost" }}
+{{ $isblock := .Get "isblock" }}
+<button class="btn btn-{{ $type }} {{ if eq $isghost "true" }}btn-ghost{{ end }} {{ if eq $isblock "true" }}btn-block{{ end }}">{{ $body }}</button>
