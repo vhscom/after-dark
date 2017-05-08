@@ -435,6 +435,15 @@ Additional theme-provided shortcodes at your disposal:
 
 - `figure` - Similar to the Hugo built-in, but with [Intelligent Lazy Loading](#intelligent-lazy-loading), an adjusted caption title and smaller caption text.
 
+Also included are a number of shortcodes for [hackcss components](http://hackcss.com/) which function across After Dark [theme variants](#theme-variants):
+
+- `hackcss-alert` - Provides themed alert boxes. See `hackcss-alert.html` for usage notes.
+- `hackcss-button` - Provides themed buttons. See `hackcss-button.html` for usage notes.
+- `hackcss-buttongroup` - Allows buttons to be grouped together. See `hackcss-buttongroup.html` for usage notes.
+- `hackcss-card` - Provides themed card element. See `hackcss-card.html` for usage notes.
+- `hackcss-progress` - Provides themed progress meter. See `hackcss-progress.html` for usage notes.
+- `hackcss-throbber` - Provides themed loading indicator. See `hackcss-throbber.html` for usage notes.
+
 To create your own custom shortcodes add a `layouts/shortcodes` directory to your site, place your shortcodes within and start using them in your markdown content.
 
 Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/extras/shortcodes#using-a-shortcode).
