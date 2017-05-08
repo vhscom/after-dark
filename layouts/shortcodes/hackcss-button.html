@@ -10,6 +10,11 @@ Inner usage:
 {{< hackcss-button type="error" >}}<b>ABORT</b>{{< /hackcss-button >}}
 {{% hackcss-button type="success" %}}**Purchase**{{% /hackcss-button %}}
 
+With loading indicator:
+{{< hackcss-button >}}
+  Please wait&hellip; {{< hackcss-throbber >}}
+{{< /hackcss-button >}}
+
 Available types: "default", "primary", "success", "info", "warning", "error"
 */}} -->
 {{ $type := .Get "type" | default "default" }}
