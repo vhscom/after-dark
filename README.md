@@ -134,15 +134,14 @@ brew install hugo
 
 Install [`elinks`](http://elinks.or.cz/) (optional) and then run the [install script](https://codeberg.org/vhs/after-dark/blob/master/bin/install.sh) located in the theme's `bin` directory.
 
-**Tip:** Windows users can use [Cmder](http://cmder.net/) (full) to gain access to a suitable console emulator for running bash scripts.
-
-For installations over the wire, run the following:
+Or simply run the following from your console emulator:
 
 ```
 curl -sL https://git.io/v906l | sh
 ```
 
 **Note:** Be aware of [the risks of `curl | sh`](https://spin.atomicobject.com/2016/12/12/security-spectrum-curl-sh/) when running scripts over a network.
+**Tip:** Windows users can use [Cmder](http://cmder.net/) (full) to gain access to a suitable console emulator for running bash scripts.
 
 ## Customizing
 
