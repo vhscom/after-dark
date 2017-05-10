@@ -139,8 +139,9 @@ brew install elinks
 
 Then just paste this into a terminal:
 
-```
+```shell
 curl -s https://raw.githubusercontent.com/vhs/after-dark/master/bin/install.sh | bash
+```
 
 ## Customizing
 
