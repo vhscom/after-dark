@@ -130,22 +130,17 @@ Head to [Hack Cabin](https://hackcabin.com) for a **live example** running on <a
 
 ## Getting Started
 
-[Install Hugo](https://gohugo.io/#action) on your machine. Instructions for [Homebrew](https://brew.sh/) on macOS:
+[Install Hugo](https://gohugo.io/#action) and [elinks](http://elinks.or.cz/) on your machine. Instructions for [Homebrew](https://brew.sh/) on macOS:
 
 ```shell
 brew install hugo
+brew install elinks
 ```
 
-Install [`elinks`](http://elinks.or.cz/) (optional) and then run the [install script](https://codeberg.org/vhs/after-dark/blob/master/bin/install.sh) located in the theme's `bin` directory.
-
-Or simply run the following from your console emulator:
+Then just paste this into a terminal:
 
 ```
-curl -sL https://git.io/v906l | sh
-```
-
-**Note:** Be aware of [the risks of `curl | sh`](https://spin.atomicobject.com/2016/12/12/security-spectrum-curl-sh/) when running scripts over a network.
-**Tip:** Windows users can use [Cmder](http://cmder.net/) (full) to gain access to a suitable console emulator for running bash scripts.
+curl -s https://raw.githubusercontent.com/vhs/after-dark/master/bin/install.sh | bash
 
 ## Customizing
 
