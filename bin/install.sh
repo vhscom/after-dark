@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 SITE_SOURCE_PATH=$(pwd)
 HUGO_CONFIG_PATH="./config.toml"
@@ -14,7 +14,7 @@ else
   hugo new site flying-toasters && cd $_
 fi
 
-echo "\nInstalling After Dark ..."
+printf "\nInstalling After Dark ..."
 
 # Clone repo
 (cd themes; git clone -q --depth 1 https://codeberg.org/vhs/after-dark || { echo "cloning failed :/"; exit 1; })
@@ -49,10 +49,10 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   theme_variant = "" # Optional, for use to overriding default theme
 EOF
 
-echo "\nCreating an example post to get you started ..."
+printf "\nCreating an example post to get you started ..."
 hugo new post/starry-night.md
 
-echo "Serving your After Dark site ..."
+printf "Serving your After Dark site ..."
 
 # Serve site backgrounded over Docker-friendly loopback
 hugo serve --buildDrafts --port 1337 --bind "0.0.0.0" &
@@ -65,9 +65,9 @@ if [[ "elinks" != "" ]]; then
   elinks http://0.0.0.0:1337/
 fi
 
-echo "Installation complete! Your new After Dark site is created in $SITE_SOURCE_PATH."
-echo "\nSite is currently running at http://0.0.0.0:1337/"
-echo "To stop it run \"kill \$(lsof -nt -i4TCP:1337)\"."
-echo "\nThank you for choosing After Dark."
+printf "Installation complete! Your new After Dark site is created in $SITE_SOURCE_PATH."
+printf "\nSite is currently running at http://0.0.0.0:1337/"
+printf "To stop it run \"kill \$(lsof -nt -i4TCP:1337)\"."
+printf "\nThank you for choosing After Dark."
 
 exit 0
