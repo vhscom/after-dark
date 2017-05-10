@@ -14,7 +14,7 @@ else
   hugo new site flying-toasters && cd $_
 fi
 
-printf "\nInstalling After Dark ..."
+printf "\n\nInstalling After Dark ..."
 
 # Clone repo
 (cd themes; git clone -q --depth 1 https://codeberg.org/vhs/after-dark || { echo "cloning failed :/"; exit 1; })
@@ -66,8 +66,8 @@ if [[ "elinks" != "" ]]; then
 fi
 
 printf "Installation complete! Your new After Dark site is created in $SITE_SOURCE_PATH."
-printf "\nSite is currently running at http://0.0.0.0:1337/"
+printf "\n\nSite is currently running at http://0.0.0.0:1337/"
 printf "To stop it run \"kill \$(lsof -nt -i4TCP:1337)\"."
-printf "\nThank you for choosing After Dark."
+printf "\n\nThank you for choosing After Dark."
 
 exit 0
