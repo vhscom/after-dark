@@ -453,8 +453,11 @@ Provide a richer experience when sharing code snippets on your site. After Dark 
 
 ![Syntax Highlighting screenshot](https://raw.githubusercontent.com/vhs/after-dark/d98d68e/images/docs/feat-syntax-highlighting.png "Syntax Highlighting using Atom One Pygments")
 
+<<<<<<< HEAD
 **Why not use Highlight.js?** Given After Dark's _Inclusive Design_ goal, use of a JS-based solution would degrade support for <kbd>terminal</kbd> browsers. As an opt-in feature, however, your approach to Syntax Highlighting is at your discretion. Go nuts!
 
+=======
+>>>>>>> b388714... docs(README): thin out syntax highlighting
 To set-up syntax highlighting for your After Dark site:
 
 - Follow Hugo's [Pygments installation](https://gohugo.io/extras/highlighting/#pygments) instructions.
