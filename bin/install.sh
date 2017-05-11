@@ -67,7 +67,7 @@ fi
 
 printf "Installation complete! Your new After Dark site is created in $SITE_SOURCE_PATH."
 printf "\n\nSite is currently running at http://0.0.0.0:1337/"
-printf "To stop it run \"kill \$(lsof -nt -i4TCP:1337)\"."
+printf "\nTo stop it run \"kill \$(lsof -nt -i4TCP:1337)\"."
 printf "\n\nThank you for choosing After Dark."
 
 exit 0

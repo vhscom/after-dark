@@ -133,8 +133,7 @@ Head to [Hack Cabin](https://hackcabin.com) for a **live example** running on <a
 [Install Hugo](https://gohugo.io/#action) and [elinks](http://elinks.or.cz/) on your machine. Instructions for [Homebrew](https://brew.sh/) on macOS:
 
 ```shell
-brew install hugo
-brew install elinks
+brew install elinks hugo
 ```
 
 Then just paste this into a terminal:
