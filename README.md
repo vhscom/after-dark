@@ -139,7 +139,7 @@ brew install elinks hugo
 Then just paste this into a terminal:
 
 ```shell
-curl -s https://raw.githubusercontent.com/vhs/after-dark/master/bin/install.sh | bash
+curl -s https://cdn.rawgit.com/vhs/after-dark/master/bin/install.sh | sh
 ```
 
 ## Customizing
