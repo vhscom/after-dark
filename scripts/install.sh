@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 SITE_SOURCE_PATH=$(pwd)
 HUGO_CONFIG_PATH="./config.toml"
