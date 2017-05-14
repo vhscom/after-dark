@@ -139,8 +139,10 @@ brew install hugo elinks
 Then just paste this into a terminal and press <kbd>Enter</kbd>:
 
 ```shell
-curl -s https://raw.githubusercontent.com/vhs/after-dark/master/scripts/install.sh | sh
+curl -s https://raw.githubusercontent.com/vhs/after-dark/master/bin/install.sh | sh
 ```
+
+Depending on connection speed, installation should complete within a matter of seconds. When finished you will be prompted with next steps.
 
 ## Customizing
 
