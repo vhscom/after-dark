@@ -12,7 +12,7 @@ else
   hugo new site flying-toasters && cd $_
 fi
 
-echo "Installing After Dark ..."
+echo "\nInstalling After Dark ..."
 
 # Clone repo
 (cd themes; git clone -q --depth 1 https://codeberg.org/vhs/after-dark || { echo "cloning failed :/"; exit 1; })
@@ -63,8 +63,8 @@ if [[ "elinks" != "" ]]; then
   elinks http://0.0.0.0:1337/
 fi
 
-echo "\nInstallation complete! Your new After Dark site is created in $SITE_SOURCE_PATH."
-echo "Site is currently running at http://0.0.0.0:1337/"
+echo "Installation complete! Your new After Dark site is created in $SITE_SOURCE_PATH."
+echo "\nSite is currently running at http://0.0.0.0:1337/"
 echo "To stop it run \"kill \$(lsof -nt -i4TCP:1337)\"."
 echo "\nThank you for choosing After Dark."
 
