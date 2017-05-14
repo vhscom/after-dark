@@ -448,7 +448,7 @@ Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/ext
 
 ### Syntax Highlighting
 
-Provide a richer experience when sharing code snippets on your site. After Dark provides opt-in support for code highlighting using the lovely [One Dark](https://github.com/atom/one-dark-syntaxc) and [One Light](https://github.com/atom/one-light-syntax) syntax themes for Pygments.
+Provide a richer experience when sharing code snippets on your site. After Dark provides opt-in support for code highlighting using the lovely [One Dark](https://github.com/atom/one-dark-syntax) and [One Light](https://github.com/atom/one-light-syntax) syntax themes for Pygments.
 
 ![Syntax Highlighting screenshot](https://raw.githubusercontent.com/vhs/after-dark/d98d68e/images/docs/feat-syntax-highlighting.png "Syntax Highlighting using Atom One Pygments")
 
