@@ -529,7 +529,7 @@ After Dark comes preinstalled with a tiny SVG favicon embedded into every page. 
 
 ## Contributing
 
-If you've spotted a bug or would like to make an enhancement suggestion, please [open an issue on GitHub](https://codeberg.org/vhs/after-dark/issues). Build something awesome with After Dark? [Add it to the wiki](https://codeberg.org/vhs/after-dark/wiki) for others to see. For general questions or support, please feel free to [reach out directly](https://vhsllc.com/contact).
+If you've spotted a bug or would like to make an enhancement suggestion, please [open an issue on GitHub](https://codeberg.org/vhs/after-dark/issues). Build something awesome with After Dark? Have it added to the [After Dark wiki](https://codeberg.org/vhs/after-dark/wiki) for others to see. For general questions or support, please feel free to [reach out directly](https://vhsllc.com/contact).
 
 ## License
 
