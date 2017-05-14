@@ -2,8 +2,6 @@
 
 SITE_SOURCE_PATH=$(pwd)
 HUGO_CONFIG_PATH="./config.toml"
-HUGO_SERVE_PID=""
-ELINKS_PID=""
 
 # Create new site
 if [[ $1 != "" ]]; then
