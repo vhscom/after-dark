@@ -133,10 +133,10 @@ Head to [Hack Cabin](https://hackcabin.com) for a **live example** running on <a
 [Install Hugo](https://gohugo.io/#action) and [elinks](http://elinks.or.cz/) on your machine. Instructions for [Homebrew](https://brew.sh/) on macOS:
 
 ```shell
-brew install elinks hugo
+brew install hugo elinks
 ```
 
-Then just paste this into a terminal:
+Then just paste this into a terminal and press <kbd>Enter</kbd>:
 
 ```shell
 curl -s https://raw.githubusercontent.com/vhs/after-dark/master/scripts/install.sh | sh
