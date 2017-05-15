@@ -130,19 +130,19 @@ Head to [Hack Cabin](https://hackcabin.com) for a **live example** running on <a
 
 ## Getting Started
 
-[Install Hugo](https://gohugo.io/#action) and [elinks](http://elinks.or.cz/) on your machine. Instructions for [Homebrew](https://brew.sh/) on macOS:
+[Install Hugo](https://gohugo.io/#action) and, optionally, [elinks](http://elinks.or.cz/) on your machine. Instructions for installing both using [Homebrew](https://brew.sh/) on macOS:
 
 ```shell
 brew install hugo elinks
 ```
 
-Then just paste this into a terminal and press <kbd>Enter</kbd>:
+Then run the install script located in `bin/install.sh`, or just paste this into a terminal and press <kbd>Enter</kbd>:
 
 ```shell
 curl -s https://raw.githubusercontent.com/vhs/after-dark/master/bin/install.sh | sh
 ```
 
-Depending on connection speed, installation should complete within a matter of seconds. When finished you will be prompted with next steps.
+Depending on your connection speed, installation should complete in a matter of seconds. Once complete, you will have a fully-configured Hugo site running After Dark. View it in a browser for suggested next steps, or start customizing it using the customization settings below.
 
 ## Customizing
 
