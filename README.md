@@ -203,7 +203,7 @@ To activate lazy loading with [lazysizes], add `lazyload` to the `class` attribu
 </iframe>
 ```
 
-To help get you started, After Dark [includes a Shortcode](#shortcodes) for creating lazy-loaded `figure` elements within your markdown content.
+To help get you started, After Dark includes a _Shortcode_ taking advantage of this feature, enabling you to easily create [lazy-loaded `figure` elements](#shortcodes) within your markdown content.
 
 Additional information and examples, including how to set-up and use LQIP (Low-Quality Image Placeholders), are available on the [lazysizes] repository on GitHub.
 
