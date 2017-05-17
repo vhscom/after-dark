@@ -203,6 +203,8 @@ To activate lazyloading with [lazysizes], add `lazyload` to the `class` attribut
 </iframe>
 ```
 
+To help get you started, After Dark [includes a Shortcode](#shortcodes) for creating lazy-loaded `figure` elements within your markdown content.
+
 Additional information and examples, including how to set-up and use LQIP (Low-Quality Image Placeholders), are available on the [lazysizes] repository on GitHub.
 
 ### Related Content
@@ -330,7 +332,9 @@ Though it's possible to block search indexing from a `robots.txt` file, After Da
 - Taxonomy Pages (e.g. Category and Tag listings)
 - Taxonomy Terms Pages (e.g. Pages listing taxonomies)
 
-To customize default blocking configure the `noindex_kinds` setting in the `[params]` section of your `config.toml`. For example, if you want to enable crawling for sections appearing in [Section Menu](#adding-a-section-menu) add the following to your configuration file:
+To customize default blocking configure the `noindex_kinds` setting in the `[params]` section of your `config.toml`.
+
+For example, if you want to enable crawling for sections appearing in [Section Menu](#adding-a-section-menu), add the following to your configuration file:
 
 ```
 [params]
@@ -371,7 +375,7 @@ next = "/series/learn-to-code/part-three/"
 
 Link Types are commonly shown at the top of the page in terminal browsers as auxiliary means of navigation and may help crawlers better understand relationships within your content.
 
-Learn more about [link types](http://devdocs.io/html/link_types) and how to [custom taxonomies](https://gohugo.io/taxonomies/overview/).
+Learn more about [link types](http://devdocs.io/html/link_types) and how to [customize Hugo taxonomies](https://gohugo.io/taxonomies/overview/).
 
 #### Meta Keywords
 
@@ -454,11 +458,6 @@ Provide a richer experience when sharing code snippets on your site. After Dark 
 
 ![Syntax Highlighting screenshot](https://raw.githubusercontent.com/vhs/after-dark/d98d68e/images/docs/feat-syntax-highlighting.png "Syntax Highlighting using Atom One Pygments")
 
-<<<<<<< HEAD
-**Why not use Highlight.js?** Given After Dark's _Inclusive Design_ goal, use of a JS-based solution would degrade support for <kbd>terminal</kbd> browsers. As an opt-in feature, however, your approach to Syntax Highlighting is at your discretion. Go nuts!
-
-=======
->>>>>>> b388714... docs(README): thin out syntax highlighting
 To set-up syntax highlighting for your After Dark site:
 
 - Follow Hugo's [Pygments installation](https://gohugo.io/extras/highlighting/#pygments) instructions.
