@@ -126,7 +126,7 @@
 
 ## Demo & Tutorial
 
-Head to [Hack Cabin](https://hackcabin.com) for a **live example** running on <abbr title="Amazon Web Services">AWS</abbr> and learn more about the [site architecture](https://hackcabin.com/post/initial-commit/). I've also written a [step-by-step guide](http://vhs.codeberg.page/zero-to-http-2) to hosting After Dark on Amazon, which includes a **free year of hosting**.
+Head to [Hack Cabin](https://hackcabin.com) for a **production example** running on <abbr title="Amazon Web Services">AWS</abbr> and to learn more about the [site architecture](https://hackcabin.com/post/initial-commit/). I've also written a [step-by-step guide](https://vhs.codeberg.page/zero-to-http-2) to hosting After Dark based on the way I do it.
 
 ## Getting Started
 
@@ -142,7 +142,9 @@ Then run the install script located in `bin/install.sh`, or just paste this into
 curl -s https://raw.githubusercontent.com/vhs/after-dark/master/bin/install.sh | sh
 ```
 
-Depending on your connection speed, installation should complete in a matter of seconds. Once complete, you will have a fully-configured Hugo site running After Dark. View it in a browser for suggested next steps, or start customizing it using the customization settings below.
+Installation should complete in a matter of seconds.
+
+**Tip:** Windows users needing to run Linux commands use [cmder](http://cmder.net/) or [get Docker](https://docs.docker.com/engine/installation/).
 
 ## Customizing
 
