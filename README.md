@@ -144,8 +144,6 @@ curl -s https://raw.githubusercontent.com/vhs/after-dark/master/bin/install.sh |
 
 Installation should complete in a matter of seconds.
 
-**Tip:** Windows users needing to run Linux commands use [cmder](http://cmder.net/) or [get Docker](https://docs.docker.com/engine/installation/).
-
 ## Customizing
 
 ### Section Menu
