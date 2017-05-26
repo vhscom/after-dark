@@ -5,12 +5,12 @@ SITE_SOURCE_PATH=$(pwd)
 HUGO_CONFIG_PATH="./config.toml"
 
 # Create new site
-if [[ $1 != "" ]]; then
-  SITE_SOURCE_PATH="${SITE_SOURCE_PATH}/$1"
-  hugo new site $1 && cd $_
-else
+if [ -z "$1" ]; then
   SITE_SOURCE_PATH="${SITE_SOURCE_PATH}/flying-toasters"
   hugo new site flying-toasters && cd $_
+else
+  SITE_SOURCE_PATH="${SITE_SOURCE_PATH}/$1"
+  hugo new site $1 && cd $_
 fi
 
 echo "\nInstalling After Dark ..."
