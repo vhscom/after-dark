@@ -1,16 +1,14 @@
 name = "After Dark"
-license = "ISC"
-licenselink = "https://codeberg.org/vhs/after-dark/blob/master/LICENSE.md"
-description = "A simple, yet highly configurable responsive dark theme."
+license = "WTFPL"
+licenselink = "https://codeberg.org/vhs/after-dark/blob/master/COPYING"
+description = "A robust, elegant dark theme for Hugo."
 homepage = "https://vhs.github.io/after-dark/"
 tags = [
-  "personal",
   "minimal",
   "responsive",
   "accessible",
-  "unported",
-  "dark",
-  "themeable"
+  "terminal"
+  "dark"
 ]
 features = [
   "Mobile-optimized",
