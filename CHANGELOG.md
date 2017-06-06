@@ -5,22 +5,9 @@ All notable changes to this project will be documented in this file. See [standa
 <a name="1.7.6"></a>
 ## [1.7.6](https://codeberg.org/vhs/after-dark/compare/v1.7.2...v1.7.6) (2017-06-06)
 
+#### Licensing
 
-
-<a name="1.7.5"></a>
-## [1.7.5](https://codeberg.org/vhs/after-dark/compare/v1.7.2...v1.7.5) (2017-06-06)
-
-
-
-<a name="1.7.4"></a>
-## [1.7.4](https://codeberg.org/vhs/after-dark/compare/v1.7.2...v1.7.4) (2017-06-06)
-
-
-
-<a name="1.7.3"></a>
-## [1.7.3](https://codeberg.org/vhs/after-dark/compare/v1.7.2...v1.7.3) (2017-06-06)
-
-
+Upgraded to The Unlicense, skipping for patch releases.
 
 <a name="1.7.2"></a>
 ## [1.7.2](https://codeberg.org/vhs/after-dark/compare/v1.7.1...v1.7.2) (2017-05-14)
