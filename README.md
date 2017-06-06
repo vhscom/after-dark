@@ -530,9 +530,9 @@ After Dark comes preinstalled with a tiny SVG favicon embedded into every page. 
 
 ## License
 
-Copyright © 2017 VHS <josh@vhs.codeberg.page>
-This work is free. You can redistribute it and/or modify it under the
-terms of the Do What The Fuck You Want To Public License, Version 2,
-as published by Sam Hocevar. See the COPYING file for more details.
+Copyright © 2016-2017 VHS <josh@vhs.codeberg.page>
+<br>This work is free. You can redistribute it and/or modify it under the
+<br>terms of the Do What The Fuck You Want To Public License, Version 2,
+<br>as published by Sam Hocevar. See the COPYING file for more details.
 
 [lazysizes]: https://github.com/aFarkas/lazysizes
