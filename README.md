@@ -1,7 +1,7 @@
 <h1 align="center">After Dark</h1>
 
 <p align="center">
-  <strong>A simple, yet highly configurable responsive dark theme for <a target="intro" href="https://gohugo.io/">Hugo</a>.</strong>
+  <strong>A robust, elegant dark theme for <a target="intro" href="https://gohugo.io/">Hugo</a>.</strong>
 </p>
 
 <p align="center">
@@ -528,12 +528,8 @@ After Dark comes preinstalled with a tiny SVG favicon embedded into every page. 
 
 **Why SVG?** Simple. They have a smaller file size and are more flexible. SVG favicons can be styled with CSS or even animated with JavaScript. Firefox added support for them in Release 41, which you can preview the current icon until [other browsers](http://caniuse.com/#feat=link-icon-svg) fall in line.
 
-## Contributing
-
-If you've spotted a bug or would like to make an enhancement suggestion, please [open an issue on GitHub](https://codeberg.org/vhs/after-dark/issues). Build something awesome with After Dark? Have it added to the [After Dark wiki](https://codeberg.org/vhs/after-dark/wiki) for others to see. For general questions or support, please feel free to [reach out directly](https://vhsllc.com/contact).
-
 ## License
 
-[ISC](https://codeberg.org/vhs/after-dark/blob/master/LICENSE)
+[WTFPL](https://codeberg.org/vhs/after-dark/blob/master/COPYING "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE")
 
 [lazysizes]: https://github.com/aFarkas/lazysizes
