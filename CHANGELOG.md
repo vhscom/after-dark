@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.8.1"></a>
+## [1.8.1](https://codeberg.org/vhs/after-dark/compare/v1.8.0...v1.8.1) (2017-06-07)
+
+
+### Bug Fixes
+
+* **$layouts:** update powered-by to link to new theme site ([c031934](https://codeberg.org/vhs/after-dark/commit/c031934))
+
+
+
 <a name="1.8.0"></a>
 # [1.8.0](https://codeberg.org/vhs/after-dark/compare/v1.7.6...v1.8.0) (2017-06-06)
 
