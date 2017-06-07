@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://www.npmjs.com/package/after-dark"><img src="https://img.shields.io/npm/dm/after-dark.svg?style=flat-square" alt="NPM downloads per month"></a>
   <a href="https://www.npmjs.com/package/after-dark"><img src="https://img.shields.io/npm/v/after-dark.svg?style=flat-square" alt="Latest NPM version"></a>
-  <a href="https://codeberg.org/vhs/after-dark/blob/master/LICENSE"><img src="https://img.shields.io/github/license/vhs/after-dark.svg?style=flat-square" alt="Project license"></a>
+  <a href="https://codeberg.org/vhs/after-dark/blob/master/COPYING"><img src="https://img.shields.io/github/license/vhs/after-dark.svg?style=flat-square" alt="Project license"></a>
 </p>
 
 ## Features
