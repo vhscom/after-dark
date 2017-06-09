@@ -7,7 +7,7 @@ tags = [
   "minimal",
   "responsive",
   "accessible",
-  "terminal"
+  "terminal",
   "dark"
 ]
 features = [
