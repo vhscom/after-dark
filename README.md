@@ -320,7 +320,7 @@ date = "2017-02-02"
 publishdate = "2016-11-21"
 ```
 
-Review the W3C website for more [information on dates and times](https://www.w3.org/TR/html51/infrastructure.html#dates-and-times) for the Web infrastructure.
+In addition to `date` and `publishdate`, it's also possible to set an expiry date. Expired posts will automatically disappear when the site is built, but the content will be retained. To future- or back-date content for expiration, set the `expirydate` field in the front matter.
 
 #### Index Blocking
 
