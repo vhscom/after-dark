@@ -126,7 +126,7 @@
 
 ## Demo & Tutorial
 
-Head to [Hack Cabin](https://hackcabin.com) for a **production example** running on <abbr title="Amazon Web Services">AWS</abbr> and to learn more about the [site architecture](https://hackcabin.com/post/initial-commit/). I've also written a [step-by-step guide](https://vhs.codeberg.page/zero-to-http-2) to hosting After Dark based on the way I do it.
+Head to [Hack Cabin](https://hackcabin.com) for a **production example** running on <abbr title="Amazon Web Services">AWS</abbr> and to learn more about the [site architecture](https://hackcabin.com/post/initial-commit/). I've also written a [step-by-step guide](https://vhs.codeberg.page/zero-to-http-2) to hosting After Dark on AWS. While you're poking around check out some of the [other sites running After Dark](https://codeberg.org/vhs/after-dark/wiki).
 
 ## Getting Started
 
