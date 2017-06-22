@@ -9,6 +9,9 @@
 .muted {
   color: rgba(255, 255, 255, 0.5);
 }
+iframe {
+  border: 0;
+}
 main, footer {
   animation: intro 0.3s both;
   animation-delay: 0.15s;
