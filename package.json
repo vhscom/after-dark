@@ -1,6 +1,6 @@
 {
   "name": "after-dark",
-  "version": "1.8.2",
+  "version": "1.8.3",
   "description": "A simple, yet highly configurable responsive dark theme for the Hugo static site generator.",
   "author": "VHS <josh@vhs.codeberg.page> (https://vhs.codeberg.page/)",
   "keywords": [
