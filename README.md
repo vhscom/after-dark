@@ -241,7 +241,7 @@ After Dark leverages Open Graph tags using the *undocumented* [internal template
 
 ![Open Graph sharing card screenshot](https://raw.githubusercontent.com/vhs/after-dark/a647938/images/docs/feat-social-awareness.png "Example Open Graph sharing card produced by After Dark")
 
-To create a social sharing card like the one shown above, specify `author` in `config.toml` and, optionally, override it from your front matter when specifying applicable details for the post or page:
+To create a social sharing card like the one shown above, specify `author` in `config.toml` and, optionally, override it from your front matter as shown here:
 
 ```toml
 title = "Become a Digital Nomad in Bali: The Lost Guide"
@@ -253,6 +253,8 @@ images = [
   "https://source.unsplash.com/-09QE4q0ezw/2000x1322"
 ]
 ```
+
+**Why use array notation for one image?** [The Open Graph protocol](http://ogp.me) supports [arrays](http://ogp.me/#array) and users may wish to extend Hugo internal templates to do so.
 
 To configure site-wide Open Graph images to use as fallbacks for posts not specifying their own open graph images, add an array of URLs to the `[params]` section in `config.toml`:
 
@@ -506,7 +508,7 @@ figure a:hover {
 }
 ```
 
-Your customizations will be inlined into the `head` section of each page and, overriding existing styles if specified.
+Your customizations will be inlined into the `head` section of each page, overriding existing styles if specified.
 
 #### Theme Variants
 
