@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.8.4"></a>
+## [1.8.4](https://codeberg.org/vhs/after-dark/compare/v1.8.3...v1.8.4) (2017-06-27)
+
+
+### Bug Fixes
+
+* **$layouts:** add support for protocol-relative base urls ([755f446](https://codeberg.org/vhs/after-dark/commit/755f446)), closes [#37](https://codeberg.org/vhs/after-dark/issues/37)
+
+
+
 <a name="1.8.3"></a>
 ## [1.8.3](https://codeberg.org/vhs/after-dark/compare/v1.8.2...v1.8.3) (2017-06-22)
 
