@@ -1,10 +1,21 @@
 #!/usr/bin/env bash
+
+# 
+# The suspicious-looking install script for After Dark.
+# https://themes.gohugo.io/after-dark/
+# 
+# Copyright (c) 2016-2017  VHS <josh@vhs.codeberg.page> (https://vhs.codeberg.page)
+# Licensed under WTFPL. You just DO WHAT THE FUCK YOU WANT TO.
+# 
+
+# Exit early on failure
 set -e
 
+# Make some environment variables
 SITE_SOURCE_PATH=$(pwd)
 HUGO_CONFIG_PATH="./config.toml"
 
-# Create new site
+# Create new After Dark site
 if [ -z "$1" ]; then
   SITE_SOURCE_PATH="${SITE_SOURCE_PATH}/flying-toasters"
   hugo new site flying-toasters && cd $_
@@ -21,8 +32,8 @@ echo "\nInstalling After Dark ..."
 # Copy archetypes
 cp themes/after-dark/archetypes/* ./archetypes
 
-# Tee up config file
-tee $HUGO_CONFIG_PATH > /dev/null <<EOF
+# Add pretty config file with inline documentation
+tee $HUGO_CONFIG_PATH > /dev/null <<TOML
 baseurl = "https://c74ce35e.ngrok.io" # Controls base URL
 languageCode = "en-US" # Controls site language
 title = "After Dark" # Homepage title and page title suffix
@@ -46,9 +57,11 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
     "https://source.unsplash.com/category/technology/1600x900"
   ] # Suggested, controls default Open Graph images
   theme_variant = "" # Optional, for use to overriding default theme
-EOF
+TOML
 
 echo "Creating an example post to get you started ..."
+
+# Create the first post with next steps for user
 hugo new post/starry-night.md
 
 echo "Serving your After Dark site ..."
