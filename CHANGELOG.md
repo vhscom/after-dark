@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://codeberg.org/vhs/after-dark/compare/v1.8.4...v2.0.0) (2017-09-08)
+
+
+### Features
+
+* **$theme:** add support for bpg image format ([49204d0](https://codeberg.org/vhs/after-dark/commit/49204d0))
+
+### Other
+
+* **$build:** BREAKING CHANGE: inline css using readFile template function ([3787d10](https://codeberg.org/vhs/after-dark/commit/3787d10))
+
 <a name="1.8.4"></a>
 ## [1.8.4](https://codeberg.org/vhs/after-dark/compare/v1.8.3...v1.8.4) (2017-06-27)
 
