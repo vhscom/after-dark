@@ -1,7 +1,7 @@
 {
   "name": "after-dark",
   "version": "1.8.4",
-  "description": "A simple, yet highly configurable responsive dark theme for the Hugo static site generator.",
+  "description": "A robust, elegant dark theme for Hugo.",
   "author": "VHS <josh@vhs.codeberg.page> (https://vhs.codeberg.page/)",
   "keywords": [
     "hugo",
@@ -11,19 +11,21 @@
   ],
   "repository": "vhs/after-dark",
   "scripts": {
-    "copy:lazysizes": "cp -i node_modules/lazysizes/lazysizes.min.js static/js",
-    "copy:smoothscroll": "cp -i node_modules/smoothscroll-polyfill/dist/smoothscroll.js static/js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "update:lazysizes": "yarn upgrade lazysizes && cp -i node_modules/lazysizes/lazysizes.min.js static/js",
+    "update:smoothscroll": "yarn upgrade smoothscroll && cp -i node_modules/smoothscroll-polyfill/dist/smoothscroll.js static/js",
+    "update:hackcss": "yarn upgrade hackcss && cat node_modules/hack/dist/hack.css > static/css/critical-vendor.css && cat node_modules/hack/dist/dark.css >> static/css/critical-vendor.css",
+    "test": "while true; do head -n 100 /dev/urandom; sleep 0.1; done | hexdump -C | grep 'ca fe'",
     "release": "standard-version"
   },
   "dependencies": {
     "atom-one-pgyments": "^1.0.0",
-    "hack": "0.7.7",
-    "lazysizes": "^3.0.0-rc4",
+    "hack": "^0.8.0",
+    "lazysizes": "^4.0.0-rc3",
     "smoothscroll-polyfill": "^0.3.4"
   },
   "devDependencies": {
-    "standard-version": "^4.0.0"
+    "standard-version": "^4.0.0",
+    "yarn": "^1.0.0"
   },
-  "license": "ISC"
+  "license": "WTFPL"
 }
