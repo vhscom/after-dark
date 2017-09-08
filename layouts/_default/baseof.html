@@ -41,6 +41,7 @@
     {{ if ge (len $lazylist) 1 }}
       <script async src="/js/lazysizes.min.js"></script>
     {{ end }}
+    <script async src="/js/bpgdec8a.js"></script>
   </head>
   {{ $theme_variant := .Site.Params.theme_variant | default "hack dark" }}
   <body class="{{ $theme_variant }} main container">
