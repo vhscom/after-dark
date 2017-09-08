@@ -42,11 +42,15 @@
       </tr>
       <tr>
         <td>Performance Optimized</td>
-        <td>Page content, favicon and styles <b>load in a single request</b> on all pages. External resources, if present, are loaded asynchronously and only when necessary. This keeps pages zippy and affords <b>~1 second page loads over 2G</b> when hosted using a <abbr title="Content Delivery Network">CDN</abbr>.</td>
+        <td>Page content, favicon and styles <b>load in a single request</b> on all pages. With exception to the BPG image polyfill, all external resources used by the theme are loaded asynchronously and only when necessary. This keeps pages zippy and affords <b>~1 second page loads over 2G</b> when hosted using a <abbr title="Content Delivery Network">CDN</abbr>.</td>
       </tr>
       <tr>
         <td>Vertical Scaling</td>
         <td>After Dark is capable of generating <b>~1000 pages per second</b> thanks to <a target="feature" href="https://gohugo.io/">Hugo</a> and is likely to become faster over time.</td>
+      </tr>
+      <tr>
+        <td>BPG Image Support</td>
+        <td>After Dark supports the <a href="https://bellard.org/bpg/">BPG Image format</a>. Native browser support for BPG is dismal. As a result, a polyfill has been provided to render BPG images. Follow the theme setup instructions to see an example of BPG in action.</td>
       </tr>
       <tr>
         <td><a href="#open-graph">Open Graph</a></td>
