@@ -33,9 +33,9 @@
     {{ end }}
     {{ partial "favicon.html" . }}
     <style>
-      {{ partial "critical-vendor.css" | safeCSS }}
-      {{ partial "critical-theme.css" | safeCSS }}
-      {{ partial "critical-custom.css" | safeCSS }}
+      {{ readFile "themes/after-dark/static/css/critical-vendor.css" | safeCSS }}
+      {{ readFile "themes/after-dark/static/css/critical-theme.css" | safeCSS }}
+      {{ readFile "themes/after-dark/static/css/critical-custom.css" | safeCSS }}
     </style>
     {{ $lazylist := findRE "class=\".*?\\blazyload\\b.*?\"|class=lazyload\b" .Content }}<!-- http://regexr.com/3f9d1 -->
     {{ if ge (len $lazylist) 1 }}
