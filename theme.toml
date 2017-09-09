@@ -4,10 +4,13 @@ licenselink = "https://codeberg.org/vhs/after-dark/blob/master/COPYING"
 description = "A robust, elegant dark theme for Hugo."
 homepage = "https://vhs.github.io/after-dark/"
 tags = [
-  "minimal",
+  "minimalist",
   "responsive",
+  "technical",
   "accessible",
   "terminal",
+  "custom themes",
+  "simple",
   "dark"
 ]
 features = [
@@ -17,7 +20,8 @@ features = [
   "Flexbox Layouts",
   "Google Analytics",
   "Disqus",
-  "Image lazyloading",
+  "BPG Images"
+  "Lazyloading",
   "OpenGraph",
   "Schema Structured Data",
   "Pagination",
@@ -39,4 +43,4 @@ min_version = 0.16
 
 [author]
   name = "VHS"
-  homepage = "https://vhs.codeberg.page"
+  homepage = "https://hackcabin.com"
