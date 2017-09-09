@@ -20,6 +20,6 @@ After Dark supports the `bpg` file format. Here's an example animation rendered 
 
 <img src="/bpg/cinemagraph-6.bpg" alt="BPG file format example">
 
-The above file is `48KB`. It's size is **97% smaller** than the GIF equivalent.
+The above file is `48KB`, **97% smaller** than the equivalent GIF. Seriously.
 
 See the <a href="https://codeberg.org/vhs/after-dark/blob/master/README.md" target="_blank" rel="noopener nofollow">After Dark `README`</a> for more info.
