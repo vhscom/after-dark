@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://codeberg.org/vhs/after-dark/compare/v2.0.0...v2.1.0) (2017-09-09)
+
+
+### Bug Fixes
+
+* **$images:** improve bpg image support ([7681dde](https://codeberg.org/vhs/after-dark/commit/7681dde)), closes [#48](https://codeberg.org/vhs/after-dark/issues/48)
+
+
+### Features
+
+* **$layout:** Add support for external stylesheets ([9abe627](https://codeberg.org/vhs/after-dark/commit/9abe627)), closes [#49](https://codeberg.org/vhs/after-dark/issues/49)
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://codeberg.org/vhs/after-dark/compare/v1.8.4...v2.0.0) (2017-09-08)
 
