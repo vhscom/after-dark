@@ -20,7 +20,7 @@ features = [
   "Flexbox Layouts",
   "Google Analytics",
   "Disqus",
-  "BPG Images"
+  "BPG Image Support",
   "Lazyloading",
   "OpenGraph",
   "Schema Structured Data",
