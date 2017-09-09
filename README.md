@@ -217,7 +217,18 @@ The BPG image format provides [high-fidelity images](http://xooyoozoo.github.io/
 
 **Why haven't I heard of BPG?** Now you have. Please [encourage browser makers](http://caniuse.com/#search=bpg) to push this important image format forward.
 
-Use BPG just like any other image with the `img` element after you've [encoded your image](https://webencoder.libbpg.org/). After Dark will asynchronously download a BPG polyfill and render the image in a `canvas` element.
+After Dark will asynchronously download a BPG polyfill and render the image in a `canvas` element.
+
+Use BPG just like any other image with the `img` element with a `.bpg` image file extension on any [encoded image](https://webencoder.libbpg.org/). 
+
+BPG image support is enabled by default. To disable support for BPG images add the following to your site configuration:
+
+```toml
+[params.seo]
+  disable_bpg = true # Disable BPG image support
+```
+
+Not sold on BPG? Generate a new post with the default `post` archetype or just take a look at the [BPG Image Comparison](http://xooyoozoo.github.io/yolo-octo-bugfixes/#vintage-car&jpg=s&bpg=s). If that doesn't do it, nothing will.
 
 ### Related Content
 
