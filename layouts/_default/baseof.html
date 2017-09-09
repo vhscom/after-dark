@@ -32,11 +32,7 @@
       <link rel="next" href="{{ .Params.next }}">
     {{ end }}
     {{ partial "favicon.html" . }}
-    <style>
-      {{ readFile "themes/after-dark/static/css/critical-vendor.css" | safeCSS }}
-      {{ readFile "themes/after-dark/static/css/critical-theme.css" | safeCSS }}
-      {{ readFile "themes/after-dark/static/css/critical-custom.css" | safeCSS }}
-    </style>
+    {{ partial "global-styles.html" . }}
     {{ $lazylist := findRE "class=\".*?\\blazyload\\b.*?\"|class=lazyload\b" .Content }}<!-- http://regexr.com/3f9d1 -->
     {{ if ge (len $lazylist) 1 }}
       <script async src="/js/lazysizes.min.js"></script>
