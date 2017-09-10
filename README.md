@@ -502,10 +502,13 @@ After Dark uses [hack.css](http://hackcss.com/dark.html) to automatically style 
 
 #### Custom Styles
 
-To add your own theme styles or override existing CSS without having to change theme files do the following:
+To add your own theme styles or override existing CSS without hacking the theme do the following:
 
-1. Create a `critical-custom.css` in your site's `layouts/partials` directory.
-1. Add your custom styles inside the file.
+1. Create a `global-styles.html` file in your site's `layouts/partials` directory.
+1. Copy the contents of `global-styles.html` from `themes/after-dark/layouts/partials` to the new file.
+1. Make a directory called `static/css` and create a file called `critical-custom.css` there.
+1. Update `layouts/partials/global-styles.html` to point your new customization file.
+1. Customize styles in your `critical-custom.html`, modeling from the example below.
 
 Example customization file:
 
@@ -531,27 +534,35 @@ figure a:hover {
 }
 ```
 
-Your customizations will be inlined into the `head` section of each page, overriding existing styles if specified.
+Your style customizations will be inlined into the `head` section of each page, overriding any vendor or theme styles using the same selectors as shown in the above example.
 
 #### Theme Variants
 
-[`hack.css`](http://hackcss.com/) provides a few variants you may wish to use instead of the After Dark defaults. To download them do an `npm i` from `/themes/after-dark/` (assumes NPM installed).
+After Dark uses [`hack.css`](http://hackcss.com/) and hack provides a few theme variants you may wish to use instead of the After Dark defaults.
 
-Once downloaded, open `node_modules/hack/dist` directory and replace the contents of `critical-vendor.css` with the CSS you wish to use, updating the `theme_variant` setting in the site configuration like:
+CSS for theme variants does not ship with After Dark by default. To get it simply run `npm install` from `/themes/after-dark/` (assumes NPM installed) to start the download.
 
-    theme_variant = "standard dark-grey"
+Once complete navigate into `node_modules/hack/dist` and copy the contents of both `hack.css` and whichever variant(s) you want into a new `critical-theme.css` file back in your site's `static` directory.
 
-**Why not use external CSS files?** After Dark is optimized for speed and, as a result, limits the number of HTTP requests whenever possible. Concessions for external CSS for HTTP/2 Push State support will be made upon request.
+From the site also update the `global-styles.css` file in the `layouts/partials` directory so it points to your new CSS file.
 
-Once the vendor file is updated, open your favorite dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations, making any tweaks necessary to `critical-theme.css`.
+Then update the `theme_variant` setting in the site configuration to ensure the After Dark page container has the expected variant.
 
-And, finally, adjust your [Customized Styles](#custom-styles), 404 page and `/meta/theme-color` as necessary.
+Some variant examples include:
+
+    theme_variant = "hack dark-grey"
+    theme_variant = "standard dark-solarized"
+    theme_variant = "standard"
+
+Test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations, making any tweaks necessary to `critical-theme.css`.
+
+Finally, adjust your [Custom Styles](#custom-styles), 404 page and `/meta/theme-color.html` and `manifest.json` (if you've made a <abbr title="Progressive Web App">PWA</abbr>) so everything matches up.
 
 #### Favicon
 
 After Dark comes preinstalled with a tiny SVG favicon embedded into every page. To customize it create a file named `favicon.html` under `/layouts/partials` within your site and place an [`icon` link](http://devdocs.io/html/link_types#icon) within it.
 
-**Why SVG?** Simple. They have a smaller file size and are more flexible. SVG favicons can be styled with CSS or even animated with JavaScript. Firefox added support for them in Release 41, which you can preview the current icon until [other browsers](http://caniuse.com/#feat=link-icon-svg) fall in line.
+**Why SVG?** Though they don't have full [browser support](http://caniuse.com/#feat=link-icon-svg) yet, they're smaller in file size and more flexible. SVG favicons can be styled with CSS or even animated with JavaScript. If you don't want to use an SVG icon you can replace it with something more widely supported.
 
 ## License
 
