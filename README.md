@@ -415,7 +415,7 @@ keywords = [
 ]
 ```
 
-While not considered relevant to some crawlers, keywords can be a useful way to document target search terms for use in <a title="Pay-Per-Click">PPC</abbr> online advertising and provide semantic value to your pages.
+While not considered relevant to some crawlers, keywords can be a useful way to document target search terms for use in <abbr title="Pay-Per-Click">PPC</abbr> online advertising and provide semantic value to your pages.
 
 ### Markdown Output
 
