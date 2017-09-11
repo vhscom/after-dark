@@ -498,13 +498,10 @@ After Dark uses [hack.css](http://hackcss.com/dark.html) to automatically style 
 
 #### Custom Styles
 
-To add your own theme styles or override existing CSS without hacking the theme do the following:
+Customize theme styles without forking using Hugo's inbuilt [Partial Templates](https://gohugo.io/templates/partials/). To get started:
 
-1. Create a `global-styles.html` file in your site's `layouts/partials` directory.
-1. Copy the contents of `global-styles.html` from `themes/after-dark/layouts/partials` to the new file.
-1. Make a directory called `static/css` and create a file called `critical-custom.css` there.
-1. Update `layouts/partials/global-styles.html` to point your new customization file.
-1. Customize styles in your `critical-custom.html`, modeling from the example below.
+1. Create a `critical-custom.css` in your site's `layouts/partials/head` directory. If the directory does not exist yet, simply create it.
+2. Add your custom styles inside the file.
 
 Example customization file:
 
@@ -530,35 +527,31 @@ figure a:hover {
 }
 ```
 
-Your style customizations will be inlined into the `head` section of each page, overriding any vendor or theme styles using the same selectors as shown in the above example.
+Styles are inlined into the `head` of each page. If you would prefer to use external stylesheets override the `partials/global-styles.html` template, modeling from the theme's version of the file, and make any adjustments you see fit.
 
 #### Theme Variants
 
-After Dark uses [`hack.css`](http://hackcss.com/) and hack provides a few theme variants you may wish to use instead of the After Dark defaults.
+[`hack.css`](http://hackcss.com/) provides a few variants you may wish to use instead of the After Dark defaults. To download them do an `npm i` from `/themes/after-dark/` (assumes NPM installed).
 
-CSS for theme variants does not ship with After Dark by default. To get it simply run `npm install` from `/themes/after-dark/` (assumes NPM installed) to start the download.
+Once downloaded, open `node_modules/hack/dist` directory, override `critical-vendor.css` at the site level as described in [Custom Styles](#custom-styles), and finally set the `theme_variant` in the site configuration like:
 
-Once complete navigate into `node_modules/hack/dist` and copy the contents of both `hack.css` and whichever variant(s) you want into a new `critical-theme.css` file back in your site's `static` directory.
+    theme_variant = "hack dark-solarized"
 
-From the site also update the `global-styles.css` file in the `layouts/partials` directory so it points to your new CSS file.
+Some other variations include:
 
-Then update the `theme_variant` setting in the site configuration to ensure the After Dark page container has the expected variant.
-
-Some variant examples include:
-
-    theme_variant = "hack dark-grey"
-    theme_variant = "standard dark-solarized"
     theme_variant = "standard"
+    theme_variant = "hack dark-grey"
+    theme_variant = "standard dark"
 
-Test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations, making any tweaks necessary to `critical-theme.css`.
+Once complete open dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations, overriding and making any tweaks necessary to `critical-theme.css` if necessary.
 
-Finally, adjust your [Custom Styles](#custom-styles), 404 page and `/meta/theme-color.html` and `manifest.json` (if you've made a <abbr title="Progressive Web App">PWA</abbr>) so everything matches up.
+Finally, adjust your [Custom Styles](#custom-styles), 404 page and `/meta/theme-color.html` as necessary. And don't forget to update your `manifest.json` if you've [morphed your site](https://julian.is/article/progressive-web-apps/) into a PWA.
 
 #### Favicon
 
-After Dark comes preinstalled with a tiny SVG favicon embedded into every page. To customize it create a file named `favicon.html` under `/layouts/partials` within your site and place an [`icon` link](http://devdocs.io/html/link_types#icon) within it.
+After Dark ships with a lightweight SVG favicon embedded into every page. To customize or replace it create a file named `favicon.html` under `layouts/partials/head` within your site and place an [`icon` link](http://devdocs.io/html/link_types#icon) within it.
 
-**Why SVG?** Though they don't have full [browser support](http://caniuse.com/#feat=link-icon-svg) yet, they're smaller in file size and more flexible. SVG favicons can be styled with CSS or even animated with JavaScript. If you don't want to use an SVG icon you can replace it with something more widely supported.
+**Why SVG?** Though they don't have perfect [browser support](http://caniuse.com/#feat=link-icon-svg) yet, SVG favicons are smaller in size and more flexible. SVG favicons can be styled with CSS or even animated with JavaScript.
 
 ## License
 
