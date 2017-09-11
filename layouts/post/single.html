@@ -6,9 +6,7 @@
     {{ template "_internal/schema.html" . }}
     <header>
       <h1 itemprop="headline">{{ .Title }}</h1>
-      <p class="muted">
-        {{ partial "post/meta.html" . }}
-      </p>
+      <span class="muted">{{ partial "post/meta.html" . }}</span>
     </header>
     {{ if .Description }}
       <blockquote itemprop="description">{{ .Description }}</blockquote>
