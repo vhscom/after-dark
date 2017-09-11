@@ -1,5 +1,5 @@
 <style>
-  {{ readFile "themes/after-dark/static/css/critical-vendor.css" | safeCSS }}
-  {{ readFile "themes/after-dark/static/css/critical-theme.css" | safeCSS }}
-  {{ readFile "themes/after-dark/static/css/critical-custom.css" | safeCSS }}
+  {{ partial "head/critical-vendor.css" | safeCSS }}
+  {{ partial "head/critical-theme.css" | safeCSS }}
+  {{ partial "head/critical-custom.css" | safeCSS }}
 </style>
