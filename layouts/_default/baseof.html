@@ -18,7 +18,7 @@
     {{ partial "meta/ogimage-maybe.html" . }}
     {{ partial "meta/theme-color.html" . }}
     {{ if eq .Kind "home" }}
-      {{ partial "site-verification.html" . }}
+      {{ partial "head/site-verification.html" . }}
     {{ end }}
     {{ template "_internal/google_analytics_async.html" . }}
     {{ if .RSSLink }}
@@ -31,7 +31,7 @@
     {{ if (isset .Params "next") }}
       <link rel="next" href="{{ .Params.next }}">
     {{ end }}
-    {{ partial "favicon.html" . }}
+    {{ partial "head/favicon.html" . }}
     {{ partial "global-styles.html" . }}
     {{ $lazylist := findRE "class=\".*?\\blazyload\\b.*?\"|class=lazyload\b" .Content }}<!-- http://regexr.com/3f9d1 -->
     {{ if ge (len $lazylist) 1 }}
