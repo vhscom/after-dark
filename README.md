@@ -215,20 +215,16 @@ Additional information and examples, including how to set-up and use LQIP (Low-Q
 
 The BPG image format provides [high-fidelity images](http://xooyoozoo.github.io/yolo-octo-bugfixes/#vintage-car&jpg=s&bpg=s) which look more like PNGs but loads as fast as a JPG. From a compression standpoint, BPG really shines when handling animations. With support for alpha transparency and given its compression, BPG [literally steamrolls](https://bellard.org/bpg/animation.html) the GIF format of yesteryear.
 
-**Why haven't I heard of BPG?** Now you have. Please [encourage browser makers](http://caniuse.com/#search=bpg) to push this important image format forward.
+**Why haven't I heard of BPG?** You have now, and you'll learn about all kinds of cool stuff like this by keeping your eye on [Perf.Rocks](http://perf.rocks/). Please help push BPG forward by encouraging browser makers to improve [current support levels](http://caniuse.com/#search=bpg).
 
-After Dark will asynchronously download a BPG polyfill and render the image in a `canvas` element.
+Use BPG just like any other image with the `img` element with a `.bpg` image file extension on any [encoded image](https://webencoder.libbpg.org/). After Dark will asynchronously download a BPG polyfill and render the image in a `canvas` element.
 
-Use BPG just like any other image with the `img` element with a `.bpg` image file extension on any [encoded image](https://webencoder.libbpg.org/). 
-
-BPG image support is enabled by default. To disable support for BPG images add the following to your site configuration:
+BPG image support is enabled by default in After Dark. To disable support for BPG images add the following to your site configuration:
 
 ```toml
 [params.seo]
   disable_bpg = true # Disable BPG image support
 ```
-
-Not sold on BPG? Generate a new post with the default `post` archetype or just take a look at the [BPG Image Comparison](http://xooyoozoo.github.io/yolo-octo-bugfixes/#vintage-car&jpg=s&bpg=s). If that doesn't do it, nothing will.
 
 ### Related Content
 
