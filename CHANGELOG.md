@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.1.1"></a>
+## [2.1.1](https://codeberg.org/vhs/after-dark/compare/v2.1.0...v2.1.1) (2017-09-11)
+
+
+### Bug Fixes
+
+* **$layouts:** move stylesheets back to partials, reorganize files ([b93b4a7](https://codeberg.org/vhs/after-dark/commit/b93b4a7)), closes [#50](https://codeberg.org/vhs/after-dark/issues/50)
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://codeberg.org/vhs/after-dark/compare/v2.0.0...v2.1.0) (2017-09-09)
 
