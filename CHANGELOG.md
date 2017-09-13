@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.1.0"></a>
+# [3.1.0](https://codeberg.org/vhs/after-dark/compare/v3.0.0...v3.1.0) (2017-09-13)
+
+
+### Features
+
+* **$layouts:** use related content feature introduced in hugo@0.27 ([f0474f4](https://codeberg.org/vhs/after-dark/commit/f0474f4)), closes [#54](https://codeberg.org/vhs/after-dark/issues/54)
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://codeberg.org/vhs/after-dark/compare/v2.1.1...v3.0.0) (2017-09-13)
 
