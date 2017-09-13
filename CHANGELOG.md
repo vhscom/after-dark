@@ -9,15 +9,12 @@ All notable changes to this project will be documented in this file. See [standa
 ### Features
 
 * **$archetypes:** turn archetypes into go templates ([5ed2d9f](https://codeberg.org/vhs/after-dark/commit/5ed2d9f))
-* **$archetypes:** turn archetypes into go templates ([cc53025](https://codeberg.org/vhs/after-dark/commit/cc53025))
-
 
 ### BREAKING CHANGES
 
 * **$archetypes:** Minimum Hugo version set 0.24, 0.16 - 0.23 must modify archetypes
 
 to upgrade add `date` and `title` to custom archetypes. if using a version of hugo prior to 0.24 the custom templates should remove `title` and `date` and not use go templating logic in the archetype files
-* **$archetypes:** Minimum Hugo version set 0.24, 0.16 - 0.23 must modify archetypes
 
 
 
