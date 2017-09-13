@@ -1,5 +1,5 @@
 {{ $num_to_show := .Site.Params.related_content_limit | default 7 }}
-{{ $related := .Site.RegularPages.Related . | $num_to_show }}
+{{ $related := .Site.RegularPages.Related . | first $num_to_show }}
 {{ with $related }}
   <aside>
     <header>Related Content</header>
