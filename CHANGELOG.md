@@ -51,9 +51,11 @@ to upgrade add `date` and `title` to custom archetypes. if using a version of hu
 
 * **$theme:** add support for bpg image format ([49204d0](https://codeberg.org/vhs/after-dark/commit/49204d0))
 
-### Other
+### BREAKING CHANGES
 
-* **$build:** BREAKING CHANGE: inline css using readFile template function ([3787d10](https://codeberg.org/vhs/after-dark/commit/3787d10))
+* **$build:** inline css using readFile template function ([3787d10](https://codeberg.org/vhs/after-dark/commit/3787d10))
+
+to upgrade skip this release and move directly to 2.1.1 or a later release
 
 <a name="1.8.4"></a>
 ## [1.8.4](https://codeberg.org/vhs/after-dark/compare/v1.8.3...v1.8.4) (2017-06-27)
