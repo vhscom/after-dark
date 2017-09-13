@@ -39,7 +39,7 @@ features = [
   "Inclusive Design",
   "Theme Variants"
 ]
-min_version = 0.24
+min_version = 0.27
 
 [author]
   name = "VHS"
