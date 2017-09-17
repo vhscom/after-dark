@@ -21,4 +21,5 @@ Available types: "default", "primary", "success", "info", "warning", "error"
 {{ $body := .Get "text" | default .Inner }}
 {{ $isghost := .Get "isghost" }}
 {{ $isblock := .Get "isblock" }}
-<button class="btn btn-{{ $type }} {{ if eq $isghost "true" }}btn-ghost{{ end }} {{ if eq $isblock "true" }}btn-block{{ end }}">{{ $body }}</button>
+{{ $action := .Get "action" }}
+<button {{ if $action }}formaction="{{ $action | safeURL }}" {{ end }}class="btn btn-{{ $type }}{{ if eq $isghost "true" }} btn-ghost{{ end }}{{ if eq $isblock "true" }} btn-block{{ end }}">{{ $body }}</button>
