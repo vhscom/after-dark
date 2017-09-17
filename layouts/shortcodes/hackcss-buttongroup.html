@@ -6,7 +6,23 @@ Basic usage:
   {{< hackcss-button text="Right" isghost="true" />}}
 {{< /hackcss-buttongroup >}}
 
+{{< hackcss-buttongroup >}}
+  {{< hackcss-button text="Left" action="/go/somewhere" />}}
+{{< /hackcss-buttongroup >}}
+
+Advanced usage:
+{{< hackcss-buttongroup action="#action" >}}
+  {{< hackcss-button text="Left" />}}
+  {{< hackcss-button text="Right" isghost="true" />}}
+{{< /hackcss-buttongroup >}}
+
+{{< hackcss-buttongroup action="#" >}}
+  {{< hackcss-button text="Left" action="#override" />}}
+  {{< hackcss-button text="Right" isghost="true" />}}
+{{< /hackcss-buttongroup >}}
+
 */}} -->
-<div class="btn-group">
+{{ $action := .Get "action" }}
+<form {{if $action }}action="{{ $action | safeURL }}" {{ end }}class="btn-group">
   {{- .Inner -}}
-</div>
+</form>
