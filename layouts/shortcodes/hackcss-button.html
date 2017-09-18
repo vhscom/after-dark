@@ -15,6 +15,14 @@ With loading indicator:
   Please wait&hellip; {{< hackcss-throbber >}}
 {{< /hackcss-button >}}
 
+Inside a ButtonGroup:
+{{< hackcss-buttongroup action="/go/somewhere" >}}
+  {{< hackcss-button text="Default Action" isghost="true" />}}
+  {{< hackcss-button text="Custom Action" action="/go/elsewhere" />}}
+  {{< hackcss-button text="Custom Target" target="_blank" />}}
+  {{< hackcss-button text="Custom Method" method="get" />}}
+{{< /hackcss-buttongroup >}}
+
 Available types: "default", "primary", "success", "info", "warning", "error"
 */}} -->
 {{ $type := .Get "type" | default "default" }}
@@ -22,4 +30,12 @@ Available types: "default", "primary", "success", "info", "warning", "error"
 {{ $isghost := .Get "isghost" }}
 {{ $isblock := .Get "isblock" }}
 {{ $action := .Get "action" }}
-<button {{ if $action }}formaction="{{ $action | safeURL }}" {{ end }}class="btn btn-{{ $type }}{{ if eq $isghost "true" }} btn-ghost{{ end }}{{ if eq $isblock "true" }} btn-block{{ end }}">{{ $body }}</button>
+{{ $target := .Get "target" }}
+{{ $method := .Get "method" }}
+<button
+  {{ if $action }}formaction="{{ $action | safeURL }}" {{ end }}
+  {{ if $target }}formtarget="{{ $target }}" {{ end }}
+  {{ if $method }}formmethod="{{ $method }}" {{ end }}
+  class="btn btn-{{ $type }}{{ if eq $isghost "true" }} btn-ghost{{ end }}
+  {{ if eq $isblock "true" }} btn-block{{ end }}"
+>{{ $body }}</button>
