@@ -29,9 +29,9 @@ Advanced usage:
 {{ $target := .Get "target" }}
 {{ $method := .Get "method" }}
 <form
-  {{ if $action }}action="{{ $action | safeURL }}" {{ end }}
-  {{ if $target }}target="{{ $target | safeURL }}" {{ end }}
-  {{ if $method }}method="{{ $method | safeURL }}" {{ end }}
+  {{ if $action }}action="{{ $action }}" {{ end }}
+  {{ if $target }}target="{{ $target }}" {{ end }}
+  {{ if in (slice "get" "post") $method }}method="{{ $method }}" {{ end }}
   class="btn-group">
   {{- .Inner -}}
 </form>
