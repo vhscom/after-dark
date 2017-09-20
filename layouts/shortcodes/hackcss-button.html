@@ -1,4 +1,6 @@
 <!-- {{/*
+Available types: "default", "primary", "success", "info", "warning", "error"
+
 Basic usage:
 {{< hackcss-button text="Default" />}}
 {{< hackcss-button text="Info" type="info" />}}
@@ -23,7 +25,6 @@ Inside a ButtonGroup:
   {{< hackcss-button text="Custom Method" method="get" />}}
 {{< /hackcss-buttongroup >}}
 
-Available types: "default", "primary", "success", "info", "warning", "error"
 */}} -->
 {{ $type := .Get "type" | default "default" }}
 {{ $body := .Get "text" | default .Inner }}
@@ -32,10 +33,4 @@ Available types: "default", "primary", "success", "info", "warning", "error"
 {{ $action := .Get "action" }}
 {{ $target := .Get "target" }}
 {{ $method := .Get "method" }}
-<button
-  {{ if $action }}formaction="{{ $action }}" {{ end }}
-  {{ if $target }}formtarget="{{ $target }}" {{ end }}
-  {{ if in (slice "get" "post") $method }}formmethod="{{ $method }}" {{ end }}
-  class="btn btn-{{ $type }}{{ if eq $isghost "true" }} btn-ghost{{ end }}
-  {{ if eq $isblock "true" }} btn-block{{ end }}"
->{{ $body }}</button>
+{{ partial "components/button" (dict "type" $type "body" $body "isghost" $isghost "isblock" $isblock "action" $action "target" $target "method" $method) }}

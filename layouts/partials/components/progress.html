@@ -1,0 +1,11 @@
+{{ if eq .show_percent "true" }}
+  <div class="progress-bar progress-bar-show-percent">
+    {{ with .value }}
+      <div class="progress-bar-filled" style="width:{{ . }}%" data-filled="{{ .fill_text }} {{ . }}%"></div>
+    {{ end }}
+  </div>
+{{ else }}
+  <div class="progress-bar">
+    <div class="progress-bar-filled" style="width: {{ .value }}%"></div>
+  </div>
+{{ end }}
