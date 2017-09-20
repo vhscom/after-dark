@@ -8,6 +8,4 @@ Available styles: "success", "info", "warning", "error"
 */}} -->
 {{ $type := .Get "type" }}
 {{ $body := .Get "text" | default .Inner }}
-<div class="alert {{ with $type }}alert-{{ . }}{{ end }}">
-  {{ $body }}
-</div>
+{{ partial "components/alert.html" (dict "type" $type "body" $body) }}

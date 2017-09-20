@@ -1,0 +1,7 @@
+<button
+  {{ if .action }}formaction="{{ .action }}" {{ end }}
+  {{ if .target }}formtarget="{{ .target }}" {{ end }}
+  {{ if in (slice "get" "post") .method }}formmethod="{{ .method }}" {{ end }}
+  class="btn btn-{{ .type }}{{ if eq .isghost "true" }} btn-ghost{{ end }}
+  {{ if eq .isblock "true" }} btn-block{{ end }}"
+>{{ .body }}</button>
