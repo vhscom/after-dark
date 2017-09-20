@@ -13,9 +13,4 @@ Advanced usage:
 */}} -->
 {{ $header := .Get "header" }}
 {{ $body := .Get "text" | default .Inner }}
-<div class="card">
-  <header class="card-header">{{ $header }}</header>
-  <div class="card-content">
-    <div class="inner">{{ $body }}</div>
-  </div>
-</div>
+{{ partial "components/card.html" (dict "header" $header "body" $body)}}
