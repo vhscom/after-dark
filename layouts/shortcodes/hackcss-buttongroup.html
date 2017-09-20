@@ -28,10 +28,5 @@ Advanced usage:
 {{ $action := .Get "action" }}
 {{ $target := .Get "target" }}
 {{ $method := .Get "method" }}
-<form
-  {{ if $action }}action="{{ $action }}" {{ end }}
-  {{ if $target }}target="{{ $target }}" {{ end }}
-  {{ if in (slice "get" "post") $method }}method="{{ $method }}" {{ end }}
-  class="btn-group">
-  {{- .Inner -}}
-</form>
+{{ $body := .Inner }}
+{{ partial "components/buttongroup.html" (dict "action" $action "target" $target "method" $method "body" $body)}}
