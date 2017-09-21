@@ -1,5 +1,5 @@
 <form
-  {{ if .action }}action="{{ .action }}" {{ end }}
+  {{ if .action }}action="{{ .action | safeURL }}" {{ end }}
   {{ if .target }}target="{{ .target }}" {{ end }}
   {{ if in (slice "get" "post") .method }}method="{{ .method }}" {{ end }}
   class="btn-group">
