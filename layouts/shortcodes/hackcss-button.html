@@ -26,8 +26,8 @@ Inside a ButtonGroup:
 {{< /hackcss-buttongroup >}}
 
 */}} -->
-{{ $type := .Get "type" | default "default" }}
-{{ $body := .Get "text" | default .Inner }}
+{{ $type := .Get "type" }}
+{{ $body := .Get "body" | default .Inner }}
 {{ $isghost := .Get "isghost" }}
 {{ $isblock := .Get "isblock" }}
 {{ $action := .Get "action" }}
