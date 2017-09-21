@@ -28,5 +28,5 @@ Advanced usage:
 {{ $action := .Get "action" }}
 {{ $target := .Get "target" }}
 {{ $method := .Get "method" }}
-{{ $body := .Inner }}
+{{ $body := .Get "body" | default .Inner }}
 {{ partial "components/buttongroup.html" (dict "action" $action "target" $target "method" $method "body" $body)}}
