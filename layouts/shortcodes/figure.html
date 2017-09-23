@@ -1,23 +1,37 @@
 <!--{{/*
-  Similar to the Hugo built-in, but with After Dark Intelligent Lazyloading,
-  an adjusted caption title and smaller caption text.
+Like the Hugo built-in, but easier to grok with After Dark Intelligent
+Lazyloading, low-quality image placeholders, smaller caption text and
+a few other goodies.
+
+Internal usage reference:
+https://gohugo.io/content-management/shortcodes/#figure
 */}}-->
-<figure {{ with .Get "class" }}class="{{ . }}"{{ end }}>
-  {{ with .Get "link" }}<a href="{{ . }}">{{ end }}
-    {{ if .Get "lqipsrc" }}
-      <img class="lazyload blur-up" src="{{ .Get "lqipsrc" }}" data-src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{ . }}{{ else }}{{ .Get "caption" }}{{ end }}"{{ end }} />
+{{ $src := .Get "src" }}
+{{ $lqipsrc := .Get "lqipsrc" }}
+{{ $caption := .Get "caption" }}
+{{ $link := .Get "link" }}
+{{ $linktarget := .Get "linktarget" }}
+{{ $attr := .Get "attr" }}
+{{ $attrlink := .Get "attrlink" }}
+{{ $alt := .Get "alt" }}
+{{ $title := .Get "title" }}
+{{ $class := .Get "class" }}
+<figure{{ with $class }} class="{{ . }}"{{ end }}>
+  {{ with $link }}<a href="{{ . }}"{{ if $linktarget }} target="{{ $linktarget }}"{{ end }}{{ if eq $linktarget "_blank" }} rel="external noopener noreferrer"{{ end }}>{{ end }}
+    {{ if $lqipsrc }}
+      <img class="lazyload blur-up" src="{{ $lqipsrc }}" data-src="{{ $src }}" {{ if or $alt $caption }}alt="{{ with $alt }}{{ . }}{{ else }}{{ $caption }}{{ end }}"{{ end }} />
     {{ else }}
-      <img class="lazyload" data-src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{ . }}{{ else }}{{ .Get "caption" }}{{ end }}"{{ end }} />
+      <img class="lazyload" data-src="{{ $src }}" {{ if or $alt $caption }}alt="{{ with $alt }}{{ . }}{{ else }}{{ $caption }}{{ end }}"{{ end }} />
     {{ end }}
-  {{ if .Get "link" }}</a>{{ end }}
-  {{ if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
+  {{ if $link }}</a>{{ end }}
+  {{ if or (or $title $caption) $attr }}
   <figcaption>{{ if isset .Params "title" }}
-    <header><b>{{ .Get "title" }}</b></header>{{ end }}
-    {{ if or (.Get "caption") (.Get "attr")}}
-    <small>{{ .Get "caption" }}
-    {{ with .Get "attrlink" }}<a href="{{ . }}"> {{ end }}
-      {{ .Get "attr" }}
-    {{ if .Get "attrlink"}}</a> {{ end }}
+    <header><b>{{ $title }}</b></header>{{ end }}
+    {{ if or $caption $attr }}
+    <small>{{ $caption }}
+    {{ with $attrlink }}<a href="{{ . }}"> {{ end }}
+      {{ $attr }}
+    {{ if $attrlink }}</a> {{ end }}
     </small>{{ end }}
   </figcaption>
   {{ end }}
