@@ -34,7 +34,7 @@ cp themes/after-dark/archetypes/* ./archetypes
 
 # Add pretty config file with inline documentation
 tee $HUGO_CONFIG_PATH > /dev/null <<TOML
-baseurl = "https://c74ce35e.ngrok.io" # Controls base URL
+baseurl = "https://c74ce35e.ngrok.io/" # Controls base URL
 languageCode = "en-US" # Controls site language
 title = "After Dark" # Homepage title and page title suffix
 paginate = 11 # Number of posts to show before paginating
@@ -54,7 +54,7 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   show_menu = false # Optional, set true to enable section menu
   powered_by = true # Optional, set false to disable credits
   images = [
-    "https://source.unsplash.com/category/technology/1600x900"
+    "https://source.unsplash.com/category/technology/2000x1322"
   ] # Suggested, controls default Open Graph images
   theme_variant = "" # Optional, for use to overriding default theme
 TOML
