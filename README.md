@@ -66,7 +66,7 @@
       </tr>
       <tr>
         <td><a href="#personalization">Personalization</a></td>
-        <td>Adjust CSS using purpose-built <a href="#custom-styles">customization file</a>. Choose one of several <a href="#theme-variants">theme variants</a>. Swap in <a href="#favicon">your own favicon</a>. Leverage <a target="features" href="https://gohugo.io/templates/blocks">block templates</a> to quickly extend new custom layouts. And use <a target="features" href="http://hackcss.com/dark.html">hack.css</a> flexbox grids and CSS components to add style your site.</td>
+        <td>Adjust CSS using purpose-built <a href="#custom-styles">customization file</a>. Choose one of several <a href="#theme-variants">theme variants</a>. Swap in <a href="#favicon">your own favicon</a>. Leverage <a target="features" href="https://gohugo.io/templates/blocks">block templates</a> to quickly extend new custom layouts. And use <a target="features" href="https://hackcss.egoist.moe/dark.html">hack.css</a> flexbox grids and CSS components to add style your site.</td>
       </tr>
       <tr>
         <td><a href="#section-menu">Section Menu</a></td>
@@ -74,7 +74,7 @@
       </tr>
       <tr>
         <td><a href="#content-reuse">Content Reuse</a></td>
-        <td>Sometimes plan markdown isn't enough to build engaging page content. For this reason After Dark provides a number of customizable partials and shortcodes for adding things like blockquotes, figure elements and <a target="feature" href="http://hackcss.com/">hackcss components</a> to your posts, pages and layouts. Mix and match to create truly unique experiences.</td>
+        <td>Sometimes plan markdown isn't enough to build engaging page content. For this reason After Dark provides a number of customizable partials and shortcodes for adding things like blockquotes, figure elements and <a target="feature" href="https://hackcss.egoist.moe/">hackcss components</a> to your posts, pages and layouts. Mix and match to create truly unique experiences.</td>
       </tr>
       <tr>
         <td><a href="#related-content">Related Content</a></td>
@@ -458,7 +458,7 @@ Additional theme-provided shortcodes at your disposal:
 
 - `figure` - Similar to the Hugo built-in, but with [Intelligent Lazy Loading](#intelligent-lazy-loading), an adjusted caption title and smaller caption text.
 
-Also included are a number of shortcodes for [hackcss components](http://hackcss.com/). These shortcodes function across After Dark [theme variants](#theme-variants) and were created as partials, enabling reuse in both your content as well as your [personalized layouts](#personalization):
+Also included are a number of shortcodes for [hackcss components](https://hackcss.egoist.moe/). These shortcodes function across After Dark [theme variants](#theme-variants) and were created as partials, enabling reuse in both your content as well as your [personalized layouts](#personalization):
 
 - `hackcss-alert` - Provides themed alert boxes. See `hackcss-alert.html` for usage notes.
 - `hackcss-button` - Provides themed buttons. See `hackcss-button.html` for usage notes.
@@ -492,7 +492,7 @@ Once configured, syntax highlighting with Pygments can be achieved using the Hug
 
 ### Personalization
 
-After Dark uses [hack.css](http://hackcss.com/dark.html) to automatically style your markup, giving you instant access to flexbox grids, light and dark theme variants, and other pre-built components. Use them while creating new [sections](#section-menu) leveraging [block templates](https://gohugo.io/templates/blocks). Additional personalization options listed below.
+After Dark uses [hack.css](https://hackcss.egoist.moe/dark.html) to automatically style your markup, giving you instant access to flexbox grids, light and dark theme variants, and other pre-built components. Use them while creating new [sections](#section-menu) leveraging [block templates](https://gohugo.io/templates/blocks). Additional personalization options listed below.
 
 #### Custom Styles
 
@@ -529,21 +529,19 @@ Styles are inlined into the `head` of each page. If you would prefer to use exte
 
 #### Theme Variants
 
-[`hack.css`](http://hackcss.com/) provides a few variants you may wish to use instead of the After Dark defaults. To download them do an `npm i` from `/themes/after-dark/` (assumes NPM installed).
+[`hack.css`](https://hackcss.egoist.moe/) provides a few variants you may wish to use instead of the After Dark defaults. To download them do an `npm install` from `/themes/after-dark/` (assumes NodeJS installed).
 
-Once downloaded, open `node_modules/hack/dist` directory, override `critical-vendor.css` at the site level as described in [Custom Styles](#custom-styles), and finally set the `theme_variant` in the site configuration like:
+Once downloaded, open `./node_modules/hack/dist` copy the styles you wish to use into a `critical-vendor.css` [template override](https://gohugo.io/themes/customizing/#override-template-files) and apply the variant by setting `theme_variant` in your site config to one of:
 
-    theme_variant = "hack dark-solarized"
+```toml
+theme_variant = "standard"
+theme_variant = "hack dark-grey"
+theme_variant = "hack solarized-dark"
+```
 
-Some other variations include:
+Once applied, open dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations—overriding and making tweaks to `critical-theme.css` if necessary using [template overrides](https://gohugo.io/themes/customizing/#override-template-files).
 
-    theme_variant = "standard"
-    theme_variant = "hack dark-grey"
-    theme_variant = "standard dark"
-
-Once complete open dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations, overriding and making any tweaks necessary to `critical-theme.css` if necessary.
-
-Finally, adjust your [Custom Styles](#custom-styles), 404 page and `/meta/theme-color.html` as necessary. And don't forget to update your `manifest.json` if you've [morphed your site](https://julian.is/article/progressive-web-apps/) into a PWA.
+Finally, override and adjust the 404 page, `theme-color.html` and any [Custom Styles](#custom-styles) you've created.
 
 #### Favicon
 
