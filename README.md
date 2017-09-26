@@ -531,17 +531,13 @@ Styles are inlined into the `head` of each page. If you would prefer to use exte
 
 [`hack.css`](https://hackcss.egoist.moe/) provides a few variants you may wish to use instead of the After Dark defaults. To download them do an `npm install` from `/themes/after-dark/` (assumes NodeJS installed).
 
-Once downloaded, open `./node_modules/hack/dist` copy the styles you wish to use into a `critical-vendor.css` [template override](https://gohugo.io/themes/customizing/#override-template-files) and apply the variant by setting `theme_variant` in your site config to one of:
+Once downloaded, open `./node_modules/hack/dist`, copy the styles you wish to use into a `critical-vendor.css` [template override](https://gohugo.io/themes/customizing/#override-template-files) and apply the variant by setting `theme_variant` in your site config to one of:
 
-```toml
-theme_variant = "standard"
-theme_variant = "hack dark-grey"
-theme_variant = "hack solarized-dark"
-```
+    "standard"
+    "hack dark-grey"
+    "hack solarized-dark"
 
-Once applied, open dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations—overriding and making tweaks to `critical-theme.css` if necessary using [template overrides](https://gohugo.io/themes/customizing/#override-template-files).
-
-Finally, override and adjust the 404 page, `theme-color.html` and any [Custom Styles](#custom-styles) you've created.
+Once variant applied, open your browser's dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations—overriding and making any desired changes to your [overridden](https://gohugo.io/themes/customizing/#override-template-files) `critical-theme.css`, 404 page, `theme-color.html` and [Custom Styles](#custom-styles).
 
 #### Favicon
 
