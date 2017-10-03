@@ -1,3 +1,11 @@
+<!--{{/*
+Create block and pull quotations with citations and citation links.
+
+Basic usage:
+{{< blockquote cite="https://bitly.is/2mkxskj" citelink="https://bitly.is/2mkxskj" >}}
+  <p>When you create your own Branded Short Domain, you can expect to see up to a 34% increase in CTR when compared to standard bit.ly links.</p>
+{{< /blockquote >}}
+*/}}-->
 <blockquote {{ with .Get "class" }}class="{{ . }}"{{ end }} {{ with .Get "citelink" }}cite="{{ . }}"{{ end }}>
   {{ .Inner }}
   {{ with .Get "citelink" }}
