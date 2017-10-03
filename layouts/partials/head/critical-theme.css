@@ -16,6 +16,12 @@ main, footer {
   animation: intro 0.3s both;
   animation-delay: 0.15s;
 }
+blockquote cite {
+  display: block;
+}
+blockquote cite::before {
+   content: "\2014";
+}
 :target {
   color: #fff;
 }
