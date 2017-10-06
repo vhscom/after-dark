@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.2.0"></a>
+# [3.2.0](https://codeberg.org/vhs/after-dark/compare/v3.1.1...v3.2.0) (2017-10-06)
+
+
+### Bug Fixes
+
+* **$shortcodes:** fix issue with external link appearance ([afcc8e6](https://codeberg.org/vhs/after-dark/commit/afcc8e6))
+
+
+### Features
+
+* **$layout:** add base element to base layout ([bf25c67](https://codeberg.org/vhs/after-dark/commit/bf25c67)), closes [#60](https://codeberg.org/vhs/after-dark/issues/60)
+* **$shortcode:** style cite element inside block quotation ([65a4278](https://codeberg.org/vhs/after-dark/commit/65a4278))
+* **$shortcodes:** add frame targeting to custom figure shortcode ([a66b076](https://codeberg.org/vhs/after-dark/commit/a66b076))
+* **$shortcodes:** enable target and method control for button/buttongroup ([f705d19](https://codeberg.org/vhs/after-dark/commit/f705d19)), closes [#56](https://codeberg.org/vhs/after-dark/issues/56)
+* **$shortcodes:** make button shortcode clickable ([1bc643f](https://codeberg.org/vhs/after-dark/commit/1bc643f)), closes [#40](https://codeberg.org/vhs/after-dark/issues/40)
+
+
+### Reverts
+
+* **$layout:** add base element to base layout ([769e2d9](https://codeberg.org/vhs/after-dark/commit/769e2d9))
+
+
+
 <a name="3.1.1"></a>
 ## [3.1.1](https://codeberg.org/vhs/after-dark/compare/v3.1.0...v3.1.1) (2017-09-13)
 
