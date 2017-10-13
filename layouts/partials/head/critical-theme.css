@@ -1,3 +1,6 @@
+:root {
+  --screen-size-small: 30em; /* breakpoint reference only */
+}
 @keyframes intro {
   0% {
     opacity: 0;
@@ -15,6 +18,15 @@ iframe {
 main, footer {
   animation: intro 0.3s both;
   animation-delay: 0.15s;
+}
+footer time[datetime$="M"]:before {
+  content: "\2013\0020";
+}
+@media only screen
+  and ( max-width: 30em ) {
+  footer time[datetime$="M"] {
+    display: none;
+  }
 }
 blockquote cite {
   display: block;
