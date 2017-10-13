@@ -5,7 +5,8 @@
     <header>Related Content</header>
     <ul>
       {{ range . }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> &ndash; {{ .ReadingTime }} minutes
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <time datetime="{{ .ReadingTime }}M">{{ .ReadingTime }} minutes</time>
       {{ end }}
     </ul>
   </aside>
