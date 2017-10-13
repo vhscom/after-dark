@@ -238,6 +238,8 @@ By default After Dark will display up to 7 items by title along with their readi
 related_content_limit = 5
 ```
 
+Learn more about [Related Content in Hugo](https://gohugo.io/content-management/related/), including configuration options you may wish to add to your site.
+
 ### Table Of Contents
 
 Help users locate and share information on your site. By providing a <abbr title="Table Of Contents">TOC</abbr>, users will spend less time scrolling to locate information in larger documents and are more likely to deep to specific information on a page.
