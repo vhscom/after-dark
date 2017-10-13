@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.3.0"></a>
+# [3.3.0](https://codeberg.org/vhs/after-dark/compare/v3.2.0...v3.3.0) (2017-10-13)
+
+
+### Features
+
+* **$layouts:** hide related content reading time on small screen ([480d57a](https://codeberg.org/vhs/after-dark/commit/480d57a))
+* **$partials:** add pubdate structured data to post byline ([a3bcb0c](https://codeberg.org/vhs/after-dark/commit/a3bcb0c))
+
+
+
 <a name="3.2.0"></a>
 # [3.2.0](https://codeberg.org/vhs/after-dark/compare/v3.1.1...v3.2.0) (2017-10-06)
 
