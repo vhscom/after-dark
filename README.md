@@ -130,7 +130,7 @@
 
 ## Demo & Tutorial
 
-Head to [Hack Cabin](https://hackcabin.com) for a **production example** of which the [site architecture](https://hackcabin.com/post/initial-commit/) can be recreated using a [step-by-step guide](https://vhs.codeberg.page/zero-to-http-2). And while you're looking at examples check out [a few others](https://codeberg.org/vhs/after-dark/wiki) for inspiration.
+Head to [Hack Cabin](https://hackcabin.com) for a **production example** of which the [site architecture](https://hackcabin.com/post/initial-commit/) can be recreated using a [step-by-step guide](https://vhs.codeberg.page/zero-to-http-2). And while you're looking at example sites, check out [a few others](https://codeberg.org/vhs/after-dark/wiki) for even more inspiration.
 
 ## Getting Started
 
