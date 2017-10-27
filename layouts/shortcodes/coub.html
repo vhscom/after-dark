@@ -1,0 +1,32 @@
+<!--{{/*
+Coub - GIFs with sound using lazy-loaded, responsive iFrame embed
+
+Basic usage:
+{{< coub bwdx6 >}}
+{{< coub id="bwdx6" >}}
+
+Start animation in HD with click for sound:
+{{< coub id="bwdx6" muted="true" autostart="true" >}}
+
+Start animation with sound after click:
+{{< coub id="bwdx6" muted="false" autostart="false" >}}
+
+Start in low-definition:
+{{< coub id="bwdx6" original_size="false" start_with_hd="false" >}}
+
+*/}}-->
+{{ $class := .Get "class" }}
+{{ $id := .Get "id" }}
+{{ $muted := .Get "muted" | default "false" }}
+{{ $autostart := .Get "autostart" | default "false" }}
+{{ $original_size := .Get "original_size" | default "true" }}
+{{ $start_with_hd := .Get "start_with_hd" | default "true" }}
+{{ if .IsNamedParams }}
+  <div class="responsive-iframe{{ with $class }} {{ . }}{{ end }}">
+    <iframe class="lazyload" src="//coub.com/embed/{{ $id }}?muted={{ $muted }}&autostart={{ $autostart }}&originalSize={{ $original_size }}&startWithHD={{ $start_with_hd }}" allowfullscreen="true" frameborder="0"></iframe>
+  </div>
+{{ else }}
+  <div class="responsive-iframe">
+    <iframe class="lazyload" src="//coub.com/embed/{{ .Get 0 }}?muted=false&autostart=false&originalSize=true&startWithHD=true" allowfullscreen="true" frameborder="0"></iframe>
+  </div>
+{{ end }}
