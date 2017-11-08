@@ -458,6 +458,7 @@ Use it in your page or post markdown files like:
 
 Additional theme-provided shortcodes at your disposal:
 
+- `privacytube` – It's YouTube. But without cookies and UI cruft.
 - `coub` - GIFs with sound. Think of it like YouTube for video loops.
 - `figure` - Similar to the Hugo built-in, but with [Intelligent Lazy Loading](#intelligent-lazy-loading), an adjusted caption title and smaller caption text.
 
