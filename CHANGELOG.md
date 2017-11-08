@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.5.0"></a>
+# [3.5.0](https://codeberg.org/vhs/after-dark/compare/v3.4.0...v3.5.0) (2017-11-08)
+
+
+### Features
+
+* **$shortcodes:** add youtube without cookies ([613e545](https://codeberg.org/vhs/after-dark/commit/613e545)), closes [#62](https://codeberg.org/vhs/after-dark/issues/62)
+
+
+
 <a name="3.4.0"></a>
 # [3.4.0](https://codeberg.org/vhs/after-dark/compare/v3.3.0...v3.4.0) (2017-10-27)
 
