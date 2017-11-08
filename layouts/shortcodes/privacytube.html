@@ -1,0 +1,8 @@
+{{/*
+Does the YouTube thing, only without cookies and all the branding.
+Usage: {{< privacytube 8ttTf8N7Bwg >}}
+*/}}
+{{ $vid := .Get 0 }}
+{{ if $vid }}
+  {{ partial "components/privacytube.html" (dict "vid" $vid) }}
+{{ end }}
