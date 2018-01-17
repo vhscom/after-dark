@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.5.1"></a>
+## [3.5.1](https://codeberg.org/vhs/after-dark/compare/v3.5.0...v3.5.1) (2018-01-17)
+
+
+### Bug Fixes
+
+* **$style:** fix a whitespace issue near the readmore link ([dee3530](https://codeberg.org/vhs/after-dark/commit/dee3530)), closes [#70](https://codeberg.org/vhs/after-dark/issues/70)
+
+
+
 <a name="3.5.0"></a>
 # [3.5.0](https://codeberg.org/vhs/after-dark/compare/v3.4.0...v3.5.0) (2017-11-08)
 
