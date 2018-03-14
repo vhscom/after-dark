@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-# 
+#
 # The suspicious-looking install script for After Dark.
 # https://themes.gohugo.io/after-dark/
-# 
+#
 # Copyright (c) 2016-2017  VHS <josh@vhs.codeberg.page> (https://vhs.codeberg.page)
 # Licensed under WTFPL. You just DO WHAT THE FUCK YOU WANT TO.
-# 
+#
 
 # Exit early on failure
 set -e
@@ -24,7 +24,7 @@ else
   hugo new site $1 && cd $_
 fi
 
-echo "\nInstalling After Dark ..."
+echo "Installing After Dark ..."
 
 # Clone repo
 (cd themes; git clone -q --depth 1 https://codeberg.org/vhs/after-dark || { echo "cloning failed :/"; exit 1; })
@@ -77,9 +77,10 @@ if [[ "elinks" != "" ]]; then
   elinks http://0.0.0.0:1337/
 fi
 
-echo "Installation complete! Your new After Dark site is created in $SITE_SOURCE_PATH."
-echo "\nSite is currently running at http://0.0.0.0:1337/"
+echo "Installation complete!"
+echo "Your new After Dark site is created in $SITE_SOURCE_PATH."
+echo "Site is currently running at http://0.0.0.0:1337/"
 echo "To stop it run \"kill \$(lsof -nt -i4TCP:1337)\"."
-echo "\nThank you for choosing After Dark."
+echo "Thank you for choosing After Dark."
 
 exit 0
