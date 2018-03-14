@@ -1,7 +1,7 @@
 <h1 align="center">After Dark</h1>
 
 <p align="center">
-  <strong>A robust, elegant dark theme for <a target="intro" href="https://gohugo.io/">Hugo</a>.</strong>
+  <strong>A retro dark theme for <a target="intro" href="https://gohugo.io/">Hugo</a>.</strong>
 </p>
 
 <p align="center">
