@@ -18,10 +18,10 @@ Archetypes are located in the `archetypes` directory in the source of your site.
 <!--more-->
 This information appears below the [Summary Split](https://gohugo.io/content-management/summaries/).
 
-After Dark supports the `bpg` file format. Here's an example animation rendered using BPG:
+After Dark supports the `bpg` image format without any additional configuration necessary. Here's an example BPG image animation:
 
 <img src="/bpg/cinemagraph-6.bpg" alt="BPG file format example">
 
-The above file is `48KB`, **97% smaller** than the equivalent GIF. Seriously.
+BPG compresses the above animation to `48KB`, about **97% smaller** than what would be possible with GIF. In addition to animation BPG handles still images as well. Head to the [side-by-side comparisons](http://xooyoozoo.github.io/yolo-octo-bugfixes/#vallee-de-colca&jpg=s&bpg=s) to see BPG stacked up against JPEG. Create your own BPG images using the [BPG web encoder](https://webencoder.libbpg.org/) for use on your After Dark site.
 
 See the <a href="https://codeberg.org/vhs/after-dark/blob/master/README.md" target="_blank" rel="noopener nofollow">After Dark `README`</a> for more info.
