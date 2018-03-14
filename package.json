@@ -1,12 +1,12 @@
 {
   "name": "after-dark",
   "version": "3.5.1",
-  "description": "A robust, elegant dark theme for Hugo.",
-  "author": "VHS <josh@vhs.codeberg.page> (https://vhs.codeberg.page/)",
+  "description": "A retro dark theme for Hugo.",
+  "author": "VHS <vhs@pm.me> (https://vhs.codeberg.page/)",
   "keywords": [
     "hugo",
-    "vaporwave",
-    "jamstack",
+    "dark",
+    "blog",
     "theme"
   ],
   "repository": "vhs/after-dark",
@@ -19,13 +19,12 @@
   },
   "dependencies": {
     "atom-one-pgyments": "^1.0.0",
-    "hack": "^0.8.0",
-    "lazysizes": "^4.0.0-rc3",
-    "smoothscroll-polyfill": "^0.3.4"
+    "hack": "^0.8.1",
+    "lazysizes": "^4.0.1",
+    "smoothscroll-polyfill": "^0.4.3"
   },
   "devDependencies": {
-    "standard-version": "^4.0.0",
-    "yarn": "^1.0.0"
+    "standard-version": "^4.0.0"
   },
   "license": "WTFPL"
 }
