@@ -4,7 +4,7 @@
 # The suspicious-looking install script for After Dark.
 # https://themes.gohugo.io/after-dark/
 #
-# Copyright (c) 2016-2017  VHS <josh@vhs.codeberg.page> (https://vhs.codeberg.page)
+# Copyright (c) 2016-2017  VHS <jhabas@pm.me> (https://vhs.codeberg.page)
 # Licensed under WTFPL. You just DO WHAT THE FUCK YOU WANT TO.
 #
 
