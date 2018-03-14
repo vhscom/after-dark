@@ -551,7 +551,7 @@ After Dark ships with a lightweight SVG favicon embedded into every page. To cus
 
 ## License
 
-Copyright © 2016-2017 VHS <josh@vhs.codeberg.page>
+Copyright © 2016-2017 VHS <jhabas@pm.me> (https://vhs.codeberg.page)
 <br>This work is free. You can redistribute it and/or modify it under the
 <br>terms of the Do What The Fuck You Want To Public License, Version 2,
 <br>as published by Sam Hocevar. See the COPYING file for more details.
