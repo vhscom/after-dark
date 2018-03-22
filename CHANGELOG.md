@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.6.0"></a>
+# [3.6.0](https://codeberg.org/vhs/after-dark/compare/v3.5.1...v3.6.0) (2018-03-22)
+
+
+### Bug Fixes
+
+* **$style:** add more whitespace on list pages and darken muted text ([646e98b](https://codeberg.org/vhs/after-dark/commit/646e98b))
+
+
+### Features
+
+* **$layouts:** add twitter cards ([6562e80](https://codeberg.org/vhs/after-dark/commit/6562e80)), closes [#76](https://codeberg.org/vhs/after-dark/issues/76)
+
+
+
 <a name="3.5.1"></a>
 ## [3.5.1](https://codeberg.org/vhs/after-dark/compare/v3.5.0...v3.5.1) (2018-01-17)
 
