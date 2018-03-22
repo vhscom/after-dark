@@ -101,8 +101,8 @@
         <td>Surface recently updated content to users and crawlers, allowing them to understand when a post or page was was last modified. Recently updated posts will be flagged as modified and visually lifted upwards in chronological listings.</td>
       </tr>
       <tr>
-        <td><a href="#syntax-highlighting">Syntax Highlighting</a></td>
-        <td>Share code snippets with style. After Dark provides <b>opt-in syntax highlighting</b> with support for line numbers and highlighted lines.</td>
+        <td><a href="#syntax-highlighting">Custom Syntax Highlighting</a></td>
+        <td>Share code snippets with style. After Dark provides <b>custom syntax highlighting</b> with support for both Pygments and Chroma.</td>
       </tr>
       <tr>
         <td>Taxonomy Pages</td>
@@ -487,20 +487,20 @@ Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/con
 
 ### Syntax Highlighting
 
-Provide a richer experience when sharing code snippets on your site. After Dark provides opt-in support for code highlighting using the lovely [One Dark](https://github.com/atom/one-dark-syntax) and [One Light](https://github.com/atom/one-light-syntax) syntax themes for Pygments.
+Provide a richer experience when sharing code snippets on your site. After Dark provides support for code highlighting using the lovely [One Dark](https://github.com/atom/one-dark-syntax) and [One Light](https://github.com/atom/one-light-syntax) syntax themes for Pygments and Chroma.
 
-![Syntax Highlighting screenshot](https://raw.githubusercontent.com/vhs/after-dark/d98d68e/images/docs/feat-syntax-highlighting.png "Syntax Highlighting using Atom One Pygments")
+![Syntax Highlighting screenshot](https://raw.githubusercontent.com/vhs/after-dark/d98d68e/images/docs/feat-syntax-highlighting.png "Syntax Highlighting using Atom One Pygments and Chroma")
 
 To set-up syntax highlighting for your After Dark site:
 
-- Follow Hugo's [Pygments installation](https://gohugo.io/extras/highlighting/#pygments) instructions.
+- Follow Hugo's [Syntax Highlighting](https://gohugo.io/content-management/syntax-highlighting/) instructions.
 - Open the `themes/after-dark` folder and run `npm i` (assumes NPM installed).
 - Then open `./node_modules/atom-one-pygments` and `npm i`.
 - Once dependencies are installed, issue `npm run build` within the module to generate the stylesheets to the module's `./dist` directory.
 
 Then choose either `./dist/light.css` or `dark.css` depending on your [Theme Variant](#theme-variants) and copy the contents of the file into your [Custom Styles](#custom-styles) file.
 
-Once configured, syntax highlighting with Pygments can be achieved using the Hugo built-in [`highlight` shortcode](https://gohugo.io/extras/shortcodes#highlight). Reference Hugo's Syntax Highlighting docs for [usage instructions](https://gohugo.io/extras/highlighting/#usage).
+Once configured, syntax highlighting can be achieved using the Hugo built-in [`highlight` shortcode](https://gohugo.io/extras/shortcodes#highlight). Reference Hugo's [Syntax Highlighting docs](https://gohugo.io/content-management/syntax-highlighting/) for usage instructions.
 
 **Not completely satisfied?** [Atom One Pygments](https://codeberg.org/vhs/atom-one-pygments) is built as a theme roller, making it possible to modify the look-and-feel of the resulting syntax highlighting. Make it your own. See the [README](https://codeberg.org/vhs/atom-one-pygments/blob/master/README.md) for more details.
 
