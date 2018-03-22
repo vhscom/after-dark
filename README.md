@@ -57,7 +57,7 @@
         <td>After Dark supports the <a href="https://bellard.org/bpg/">BPG Image format</a>. Native browser support for BPG is dismal. As a result, a polyfill has been provided to render BPG images.</td>
       </tr>
       <tr>
-        <td><a href="#open-graph">Open Graph</a></td>
+        <td><a href="#open-graph-and-twitter-cards">Open Graph and Twitter Cards</a></td>
         <td>After Dark provides automatic and configurable <a target="feature" href="http://ogp.me/">Open Graph</a> support, making social shares pop like 37 pieces of flair.</td>
       </tr>
       <tr>
@@ -256,7 +256,11 @@ After Dark uses the HTML5 [`details`](http://devdocs.io/html/element/details) an
 
 When a page is first loaded, the TOC will be collapsed so it does not clutter up the page. Once expanded, selecting an item in the TOC will smooth scroll to that section within the document, highlight the section header and updating the browser's location bar for deep linking and back-button support.
 
-### Open Graph
+### Open Graph and Twitter Cards
+
+Increase user engagement when sharing links on social media.
+
+## Open Graph
 
 After Dark leverages Open Graph tags using the *undocumented* [internal template](https://github.com/spf13/hugo/blob/142558719324aa1628541d556ef1fa2d123f1e68/tpl/tplimpl/template_embedded.go#L159-L201) to achieve rich sharing cards for Facebook and other social networks, as shown here:
 
@@ -267,7 +271,7 @@ To create a social sharing card like the one shown above, specify `author` in `c
 ```toml
 title = "Become a Digital Nomad in Bali: The Lost Guide"
 description = "Everything you need to know to become a Digital Nomad in Bali."
-author = "After Dark"
+author = "Bali Bebas!"
 date = "2017-02-02T11:57:24+08:00"
 publishdate = "2017-01-28T02:31:22+08:00"
 images = [
@@ -288,6 +292,12 @@ images = [
 See [Unsplash Source](https://source.unsplash.com/) for image configuration options.
 
 **Note:** While it would be possible, After Dark does not currently support relative links to images. If you would like to see this feature, please [open a new issue](https://codeberg.org/vhs/after-dark/issues/new).
+
+## Twitter Cards
+
+Optimize tweets with Twitter Cards. After Dark leverages the Hugo [internal template](https://gohugo.io/templates/internal/#the-internal-templates) for Twitter to provide large preview images in addition to associating shares with the site creator.
+
+See the Hugo documentation for usage guidelines.
 
 ### Search Optimization
 

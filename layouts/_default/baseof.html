@@ -15,6 +15,7 @@
     {{ end }}
     {{ partial "meta/name-author.html" . }}
     {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
     {{ partial "meta/ogimage-maybe.html" . }}
     {{ partial "meta/theme-color.html" . }}
     {{ if eq .Kind "home" }}
