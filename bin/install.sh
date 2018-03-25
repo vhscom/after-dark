@@ -34,10 +34,8 @@ cp themes/after-dark/archetypes/* ./archetypes
 
 # Ignore generated files from source control
 touch .gitignore
-echo "
-public
-resources
-" >> .gitignore
+echo "public
+resources" >> .gitignore
 
 # Add pretty config file with inline documentation
 tee $HUGO_CONFIG_PATH > /dev/null <<TOML
