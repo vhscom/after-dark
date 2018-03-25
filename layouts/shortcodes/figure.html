@@ -1,7 +1,5 @@
 <!--{{/*
-Like the Hugo built-in, but easier to grok with After Dark Intelligent
-Lazyloading, low-quality image placeholders, smaller caption text and
-a few other goodies.
+Like the Hugo built-in, but easier to grok with Lazy Loading and LQIP support.
 
 Basic usage:
 {{< figure src="https://i.supload.com/r1gXlwuXiZ.png" link="https://supload.com/r1gXlwuXiZ" caption="Ethereum value explosion in 2017. You do the math." >}}
@@ -39,14 +37,3 @@ https://gohugo.io/content-management/shortcodes/#figure
   </figcaption>
   {{ end }}
 </figure>
-<style media="screen">
-  .blur-up {
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
-    transition: filter 400ms, -webkit-filter 400ms;
-  }
-  .blur-up.lazyloaded {
-    -webkit-filter: blur(0);
-    filter: blur(0);
-  }
-</style>
