@@ -443,7 +443,7 @@ An example page bundle might look like:
 ```
 ├── secure-your-digital-life
 │   ├── images
-│   │   └── florian-klauer-119557_2000x1322.jpeg
+│   │   └── florian-klauer-119557-unsplash.jpg
 │   └── index.md
 ```
 
@@ -451,7 +451,7 @@ With the following front matter specified in `index.md`:
 
 ```
 [[resources]]
-  src = "images/florian-klauer-119557_2000x1322.jpeg"
+  src = "images/florian-klauer-119557-unsplash.jpg"
   name = "header"
 ```
 
