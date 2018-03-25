@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.7.0"></a>
+# [3.7.0](https://codeberg.org/vhs/after-dark/compare/v3.6.0...v3.7.0) (2018-03-25)
+
+
+### Features
+
+* **$layouts:** add post images ([06457bc](https://codeberg.org/vhs/after-dark/commit/06457bc))
+
+
+
 <a name="3.6.0"></a>
 # [3.6.0](https://codeberg.org/vhs/after-dark/compare/v3.5.1...v3.6.0) (2018-03-22)
 
