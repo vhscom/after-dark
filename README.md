@@ -66,7 +66,7 @@
       </tr>
       <tr>
         <td><a href="#post-images">Post Images</a></td>
-        <td>Increase the visual appeal of your posts by providing a captivating image above your content. After Dark enables configuration-driven responsive post images which are lazy-loaded, responsive and automatically cropped for a consistent look-and-feel across your site.</td>
+        <td>Increase the visual appeal of your posts by providing a captivating image above your content. After Dark enables configuration-driven post images which are lazy-loaded, responsive and automatically cropped for a consistent look-and-feel across your site.</td>
       </tr>
       <tr>
         <td><a href="#personalization">Personalization</a></td>
