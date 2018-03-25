@@ -441,10 +441,11 @@ Using post images requires some opinion with regard to the structure of your con
 An example page bundle might look like:
 
 ```
-├── secure-your-digital-life
-│   ├── images
-│   │   └── florian-klauer-119557-unsplash.jpg
-│   └── index.md
+└── post
+    └── secure-your-digital-life
+        ├── images
+        │   └── florian-klauer-119557-unsplash.jpg
+        └── index.md
 ```
 
 With the following front matter specified in `index.md`:
