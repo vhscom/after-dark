@@ -49,7 +49,7 @@
         <td>After Dark is capable of generating <b>~1000 pages per second</b> thanks to <a target="feature" href="https://gohugo.io/">Hugo</a> and is likely to become faster over time.</td>
       </tr>
       <tr>
-        <td><a href="#intelligent-lazy-loading">Intelligent Lazy Loading</a></td>
+        <td><a href="#lazy-loading">Lazy Loading</a></td>
         <td>Lazily load your images, iFrames and script embeds. After Dark uses the <a title="feature" href="https://github.com/aFarkas/lazysizes">lazysizes</a> library, a zero-configuration JavaScript library with support for <abbr title="Low Quality Image Placeholders">LQIP</abbr> and responsive images.</td>
       </tr>
       <tr>
@@ -57,12 +57,16 @@
         <td>After Dark supports the <a href="https://bellard.org/bpg/">BPG Image format</a>. Native browser support for BPG is dismal. As a result, a polyfill has been provided to render BPG images.</td>
       </tr>
       <tr>
-        <td><a href="#social-engagement">Social Engatement</a></td>
+        <td><a href="#social-engagement">Social Engagement</a></td>
         <td>After Dark provides automatic and configurable <a target="feature" href="http://ogp.me/">Open Graph</a> support and Twitter Cards, making social shares pop like 37 pieces of flair.</td>
       </tr>
       <tr>
         <td><a href="#search-optimization">Search Optimization</a></td>
         <td>Using <a target="feature" href="https://moz.com/learn/seo/schema-structured-data">Schema Structured Data</a> and meta tags, After Dark gives crawlers rich data about the site structure and content. No configuration required.</td>
+      </tr>
+      <tr>
+        <td><a href="#post-images">Post Images</a></td>
+        <td>Increase the visual appeal of your posts by providing a captivating image above your content. After Dark enables configuration-driven responsive post images which are lazy-loaded, responsive and automatically cropped for a consistent look-and-feel across your site.</td>
       </tr>
       <tr>
         <td><a href="#personalization">Personalization</a></td>
@@ -176,11 +180,9 @@ menu = "main"
 weight = 3
 ```
 
-### Intelligent Lazy Loading
+### Lazy Loading
 
-Lazy loading prioritizes when and how images and more are downloaded, improving perceived performance and reducing page load times. When activated, lazy loading will start working automatically. No JavaScript configuration is necessary.
-
-**What makes it _Intelligent_?** If no lazy loaded content is detected on a page when the site is generated, the feature will not be activated and no additional downloads will occur.
+Lazy loading prioritizes when and how images and more are downloaded, improving perceived performance and reducing page load times. Lazy loading will start working automatically. No configuration is necessary.
 
 To activate lazy loading with [lazysizes], add `lazyload` to the `class` attribute of your images/iframes in conjunction with a `data-src` and/or `data-srcset` attribute:
 
@@ -207,7 +209,7 @@ To activate lazy loading with [lazysizes], add `lazyload` to the `class` attribu
 </iframe>
 ```
 
-To help get you started, After Dark includes a _Shortcode_ taking advantage of this feature, enabling you to easily create [lazy-loaded `figure` elements](#content-reuse) within your markdown content.
+After Dark includes a _Shortcode_ taking advantage of this feature, enabling you to easily create [lazy-loaded `figure` elements](#content-reuse) within your markdown content.
 
 Additional information and examples, including how to set-up and use LQIP (Low-Quality Image Placeholders), are available on the [lazysizes] repository on GitHub.
 
@@ -425,6 +427,36 @@ keywords = [
 
 While not considered relevant to some crawlers, keywords can be a useful way to document target search terms for use in <abbr title="Pay-Per-Click">PPC</abbr> online advertising and provide semantic value to your pages.
 
+### Post Images
+
+Bring your words to life with post images. Post images appear above post content and leverage Hugo's inbuilt [Image Processing](https://gohugo.io/content-management/image-processing/) to enable automatic cropping and image positioning.
+
+Because post images are often one of the first things users often see when visiting your site After Dark take some extra steps to load them in a performant manner. Techniques used include <abbr title="Low-Quality Image Placeholders">LQIP</abbr>, [Lazy Loading](#lazy-loading) and responsive images using the `srcset` and `sizes` attributes.
+
+Using post images requires some opinion with regard to the structure of your content. To create a post with a post image you must:
+
+1. Create a [Page Bundle](https://gohugo.io/content-management/page-bundles/) grouping your desired image together with your post content.
+2. Specify the [Resources Metadata](https://gohugo.io/content-management/page-resources/#resources-metadata-toml-example) in the post front matter and set the `name` property to `"header"`.
+
+An example page bundle might look like:
+
+```
+├── secure-your-digital-life
+│   ├── images
+│   │   └── florian-klauer-119557_2000x1322.jpeg
+│   └── index.md
+```
+
+With the following front matter specified in `index.md`:
+
+```
+[[resources]]
+  src = "images/florian-klauer-119557_2000x1322.jpeg"
+  name = "header"
+```
+
+That's it! After Dark does the rest.
+
 ### Markdown Output
 
 Gain more control over markdown conversion to HTML. By modifying the markdown processor settings you can take advantage of [Blackfriday](https://github.com/russross/blackfriday) features not enabled by default.
@@ -470,7 +502,7 @@ Additional theme-provided shortcodes at your disposal:
 
 - `privacytube` – It's YouTube. But without cookies and UI cruft.
 - `coub` - GIFs with sound. Think of it like YouTube for video loops.
-- `figure` - Similar to the Hugo built-in, but with [Intelligent Lazy Loading](#intelligent-lazy-loading), an adjusted caption title and smaller caption text.
+- `figure` - Similar to the Hugo built-in, but with [Lazy Loading](#lazy-loading), an adjusted caption title and smaller caption text.
 
 Also included are a number of shortcodes for [hackcss components](https://hackcss.egoist.moe/). These shortcodes function across After Dark [theme variants](#theme-variants) and were created as partials, enabling reuse in both your content as well as your [personalized layouts](#personalization):
 
