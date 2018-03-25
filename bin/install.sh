@@ -32,6 +32,13 @@ echo "Installing After Dark ..."
 # Copy archetypes
 cp themes/after-dark/archetypes/* ./archetypes
 
+# Ignore generated files from source control
+touch .gitignore
+echo "
+public
+resources
+" >> .gitignore
+
 # Add pretty config file with inline documentation
 tee $HUGO_CONFIG_PATH > /dev/null <<TOML
 baseurl = "https://c74ce35e.ngrok.io/" # Controls base URL
