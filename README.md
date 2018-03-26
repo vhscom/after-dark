@@ -291,6 +291,14 @@ images = [
 ]
 ```
 
+Or, if using [Page Bundle](https://gohugo.io/content-management/page-bundles/), specify the relative path to an image resource for the page:
+
+```toml
+images = [
+  "/post/post-title/images/lana-abie-581813-unsplash.jpg"
+]
+```
+
 See [Unsplash Source](https://source.unsplash.com/) for image configuration options.
 
 **Note:** While it would be possible, After Dark does not currently support relative links to images. If you would like to see this feature, please [open a new issue](https://codeberg.org/vhs/after-dark/issues/new).
