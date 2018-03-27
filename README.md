@@ -439,7 +439,7 @@ While not considered relevant to some crawlers, keywords can be a useful way to 
 
 Bring your words to life with post images. Post images appear above post content and leverage Hugo's inbuilt [Image Processing](https://gohugo.io/content-management/image-processing/) to enable automatic cropping and image positioning.
 
-Because post images are often one of the first things users see when visiting your site After Dark take some extra steps to load them in a performant manner. Techniques used include [Low-Quality Image Placeholders](https://www.afasterweb.com/2016/08/31/low-quality-blur-in/), [Lazy Loading](#lazy-loading) and responsive images using the `srcset` and `sizes` attributes.
+Because post images are often one of the first things users see when visiting your site After Dark takes some extra steps to load them in a performant manner. Techniques used to speed up image loading include [Low-Quality Image Placeholders](https://www.afasterweb.com/2016/08/31/low-quality-blur-in/), [Lazy Loading](#lazy-loading) and responsive images using the `srcset` and `sizes` attributes.
 
 Using post images requires some opinion with regard to the structure of your content. To create a post with a post image you must:
 
