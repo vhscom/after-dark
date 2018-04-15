@@ -70,7 +70,7 @@
       </tr>
       <tr>
         <td><a href="#fuzzy-search">Fuzzy Search</a></td>
-        <td>After Dark ships with an in-browser search app built with [Vue](https://vuejs.org/), [Fuse](http://fusejs.io/) and [Mark](https://markjs.io). Use it to quickly find content anywhere your site.</td>
+        <td>After Dark ships with an in-browser search app built with <a target="features" href="https://vuejs.org/">Vue</a>, <a target="features" href="http://fusejs.io/">Fuse</a> and <a target="features" href="https://markjs.io">Mark</a>. Use it to quickly find content anywhere your site.</td>
       </tr>
       <tr>
         <td><a href="#personalization">Personalization</a></td>
