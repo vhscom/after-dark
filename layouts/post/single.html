@@ -12,8 +12,7 @@
       {{ if .Description }}
         <blockquote itemprop="description">{{ .Description }}</blockquote>
       {{ end }}
-      {{ $image := .Resources.GetMatch "header" }}
-      {{ if $image }}
+      {{ if .Resources.GetMatch "header" }}
         {{ $image600 := (.Resources.GetMatch "header").Fill "600x338 q60 Center" }}
         {{ $image900 := (.Resources.GetMatch "header").Fill "900x506 q70 Center" }}
         {{ $image1200 := (.Resources.GetMatch "header").Fill "1200x675 q80 Center" }}
