@@ -492,7 +492,7 @@ noindex = true
 
 Then simply navigate to the `/search/` URL on your site and let the fun begin.
 
-**Tip:** Consider enabling the After Dark [section menu](#section-menu) feature if you haven't done so already to add search visibility for your users.
+**Tip:** Consider enabling the After Dark [section menu](#section-menu) to expose the search section to users.
 
 While deep link searches are supported, please note Fuzzy Search will only return results for [Regular Pages](https://gohugo.io/variables/site/#site-variables-list) and intentionally omits any page tagged for [index blocking](#index-blocking).
 
