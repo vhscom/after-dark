@@ -18,7 +18,8 @@
   -webkit-filter: blur(0);
   filter: blur(0);
 }
-.muted {
+.muted,
+.hack .help-block {
   color: #e0e0e070;
 }
 .hack .readmore {
@@ -92,6 +93,12 @@ html {
 }
 .hack pre {
   font-size: 17px;
+}
+.hack .form input,
+.hack .form textarea,
+.hack .form button,
+.hack .form label {
+  font-size: 1rem;
 }
 article [itemprop="description"] {
   margin-bottom: 20px;
