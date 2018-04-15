@@ -482,7 +482,7 @@ Find content site-wide in the blink of an eye. JavaScript fuzzy search is at you
 
 With `_index.md` like:
 
-```toml
+```
 +++
 title = "Search"
 layout = "search"
