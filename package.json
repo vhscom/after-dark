@@ -2,7 +2,7 @@
   "name": "after-dark",
   "version": "3.7.0",
   "description": "A retro dark theme for Hugo.",
-  "author": "VHS <vhs@pm.me> (https://vhs.codeberg.page/)",
+  "author": "VHS <vhsdev@tutanota.com> (https://vhs.codeberg.page/)",
   "keywords": [
     "hugo",
     "dark",
@@ -12,7 +12,11 @@
   "repository": "vhs/after-dark",
   "scripts": {
     "update:lazysizes": "npm up lazysizes && cp -i node_modules/lazysizes/lazysizes.min.js static/js",
+    "update:lodash:custom": "./node_modules/.bin/lodash include=debounce -p -o static/js/lodash.custom.min.js",
     "update:smoothscroll": "npm up smoothscroll && cp -i node_modules/smoothscroll-polyfill/dist/smoothscroll.js static/js",
+    "update:fuse": "npm up fuse.js && cp -i node_modules/fuse.js/dist/fuse.min.js static/js",
+    "update:vue": "npm up vue && cp -i node_modules/vue/dist/vue.min.js static/js",
+    "update:mark": "npm up mark.js && cp -i node_modules/mark.js/dist/mark.min.js static/js",
     "update:hackcss": "npm up hackcss && cat node_modules/hack/dist/hack.css > static/css/critical-vendor.css && cat node_modules/hack/dist/dark.css >> static/css/critical-vendor.css",
     "test": "while true; do head -n 100 /dev/urandom; sleep 0.1; done | hexdump -C | grep 'ca fe'",
     "release": "standard-version"
@@ -21,9 +25,13 @@
     "atom-one-pgyments": "^1.0.0",
     "hack": "^0.8.1",
     "lazysizes": "^4.0.1",
-    "smoothscroll-polyfill": "^0.4.3"
+    "smoothscroll-polyfill": "^0.4.3",
+    "fuse.js": "^3.2.0",
+    "mark.js": "^8.11.1",
+    "vue": "^2.5.16"
   },
   "devDependencies": {
+    "lodash-cli": "^4.17.5",
     "standard-version": "^4.0.0"
   },
   "license": "WTFPL"
