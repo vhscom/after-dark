@@ -42,10 +42,10 @@
       </tr>
       <tr>
         <td>Performance Optimized</td>
-        <td>Page content, favicon and styles <b>load in a single request</b> on all pages. With exception to the BPG image polyfill, all external resources used by the theme are loaded asynchronously and only when necessary. This keeps pages zippy and affords <b>~1 second page loads over 2G</b> when hosted using a <abbr title="Content Delivery Network">CDN</abbr>.</td>
+        <td>Page content, favicon and styles <b>load in a single request</b> on all pages. Resources loaded asynchronously whenver possible. Responsive images with LQIP out of the box. Users should see a <b>~1 second page loads over 2G</b> when hosted using a <abbr title="Content Delivery Network">CDN</abbr>.</td>
       </tr>
       <tr>
-        <td>Vertical Scaling</td>
+        <td>Designed to Scale</td>
         <td>After Dark is capable of generating <b>~1000 pages per second</b> thanks to <a target="feature" href="https://gohugo.io/">Hugo</a> and is likely to become faster over time.</td>
       </tr>
       <tr>
@@ -69,6 +69,10 @@
         <td>Increase the visual appeal of your posts by providing a captivating image above your content. After Dark enables configuration-driven post images which are lazy-loaded, responsive and automatically cropped for a consistent look-and-feel across your site.</td>
       </tr>
       <tr>
+        <td><a href="#fuzzy-search">Fuzzy Search</a></td>
+        <td>After Dark ships with an in-browser search app built with [Vue](https://vuejs.org/), [Fuse](http://fusejs.io/) and [Mark](https://markjs.io). Use it to quickly find content anywhere your site.</td>
+      </tr>
+      <tr>
         <td><a href="#personalization">Personalization</a></td>
         <td>Adjust CSS using purpose-built <a href="#custom-styles">customization file</a>. Choose one of several <a href="#theme-variants">theme variants</a>. Swap in <a href="#favicon">your own favicon</a>. Leverage <a target="features" href="https://gohugo.io/templates/blocks">block templates</a> to quickly extend new custom layouts. And use <a target="features" href="https://hackcss.egoist.moe/dark.html">hack.css</a> flexbox grids and CSS components to add style your site.</td>
       </tr>
@@ -78,7 +82,7 @@
       </tr>
       <tr>
         <td><a href="#content-reuse">Content Reuse</a></td>
-        <td>Sometimes plan markdown isn't enough to build engaging page content. For this reason After Dark provides a number of customizable partials and shortcodes for adding things like blockquotes, figure elements, GIFs with sound and <a target="feature" href="https://hackcss.egoist.moe/">hackcss components</a> to your posts, pages and layouts. Mix and match to create truly unique experiences.</td>
+        <td>Sometimes plan markdown isn't enough to build engaging page content. For this reason After Dark provides a number of reusable code snippets and shortcodes for adding things blockquotes, figure elements, coubs, videos, <a target="feature" href="https://hackcss.egoist.moe/">hackcss components</a> and more to your pages and posts. Use them to create completely custom layouts or simply spice up an old page.</td>
       </tr>
       <tr>
         <td><a href="#related-content">Related Content</a></td>
@@ -465,6 +469,34 @@ With the following front matter specified in `index.md`:
 ```
 
 That's it! After Dark does the rest.
+
+### Fuzzy Search
+
+Find content site-wide in the blink of an eye. JavaScript fuzzy search is at your fingertips. To use it simply create a section called `search` using the After Dark search layout like so:
+
+```
+└── content
+    └── search
+        └── _index.md
+```
+
+With `_index.md` like:
+
+```toml
++++
+title = "Search"
+layout = "search"
+noindex = true
++++
+```
+
+Then simply navigate to the `/search/` URL on your site and let the fun begin.
+
+**Tip:** Consider enabling the After Dark [section menu](#section-menu) feature if you haven't done so already to add search visibility for your users.
+
+While deep link searches are supported, please note Fuzzy Search will only return results for [Regular Pages](https://gohugo.io/variables/site/#site-variables-list) and intentionally omits any page tagged for [index blocking](#index-blocking).
+
+In other words it's easy to find stuff. But only if you want it to be found.
 
 ### Markdown Output
 
