@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.8.2"></a>
+## [3.8.2](https://codeberg.org/vhs/after-dark/compare/v3.8.1...v3.8.2) (2018-04-16)
+
+
+### Bug Fixes
+
+* **$layouts:** disable ua input styling safari mobile ([f7c81f4](https://codeberg.org/vhs/after-dark/commit/f7c81f4))
+* **$layouts:** prevent auto-zoom on safari mobile ([81c3f39](https://codeberg.org/vhs/after-dark/commit/81c3f39))
+
+
+
 <a name="3.8.1"></a>
 ## [3.8.1](https://codeberg.org/vhs/after-dark/compare/v3.8.0...v3.8.1) (2018-04-15)
 
