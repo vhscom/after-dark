@@ -490,13 +490,11 @@ noindex = true
 +++
 ```
 
-Then simply navigate to the `/search/` URL on your site and let the fun begin.
+Then navigate to the `/search/` path on your site and let the fun begin.
 
 **Tip:** Consider enabling the After Dark [section menu](#section-menu) to expose the search section to users.
 
-While deep link searches are supported, please note Fuzzy Search will only return results for [Regular Pages](https://gohugo.io/variables/site/#site-variables-list) and intentionally omits any page tagged for [index blocking](#index-blocking).
-
-In other words it's easy to find stuff. But only if you want it to be found.
+While deep link searches are supported, please note Fuzzy Search will only return results for [Regular Pages](https://gohugo.io/variables/site/#site-variables-list) and intentionally omits any page tagged for [index blocking](#index-blocking). In other words it's easy to find stuff. But only if you want it to be found.
 
 ### Markdown Output
 
