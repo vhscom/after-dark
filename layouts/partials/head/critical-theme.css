@@ -70,6 +70,13 @@ blockquote cite::before {
 .main {
   padding: 20px 10px;
 }
+input.form-control {
+  border-radius: 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+}
 nav a.active {
   background-color: #ff2e88;
   color: #fff;
