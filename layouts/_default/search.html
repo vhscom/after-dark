@@ -15,7 +15,8 @@
       </noscript>
       <form v-on:submit.prevent class="form" action="{{ "search" | absURL }}">
         <fieldset class="form-group">
-          <input @keyup.enter="submit" v-model="query" autofocus id="query" name="s" type="search" class="form-control" maxlength="32" autocomplete="off" tabindex="0">
+          <input @keyup.enter="submit" v-model="query" id="query" name="s" type="search" class="form-control" maxlength="32" autocomplete="off">
+          <div class="help-block">Press <kbd>s</kbd> to focus search input anytime.</div>
         </fieldset>
       </form>
     </section>
@@ -48,7 +49,6 @@
       ).replace(/\+/g, ' ')
 
       const queryParam = 's'
-      const snippetSize = 60
       const selectors = {
         appContainer: '#search-app',
         resultContainer: '#search-results',
@@ -69,8 +69,9 @@
         ]
       }
 
-      const searchInput = document.querySelector(selectors.searchInput)
-      const searchQuery = searchInput.value = getQueryByParam(queryParam)
+      const getSearchInput = () => document.querySelector(selectors.searchInput)
+      const focusSearchInput = () => getSearchInput().focus()
+      const searchQuery = getSearchInput().value = getQueryByParam(queryParam)
 
       const fuse = new Fuse([], fuseOpts)
       window.fetch('/index.json').then(response => {
@@ -108,6 +109,10 @@
           window.onpopstate = (evt) => {
             this.query = evt.state.query
           }
+          document.onkeyup = function (evt) {
+            if (evt.key === 's') focusSearchInput()
+          }
+          focusSearchInput()
         },
         watch: {
           query () {

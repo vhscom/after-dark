@@ -80,6 +80,9 @@ input.form-control {
 input.form-control {
   font-size: initial;
 }
+.hack .help-block {
+  font-size: 1rem;
+}
 nav a.active {
   background-color: #ff2e88;
   color: #fff;
