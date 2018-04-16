@@ -77,6 +77,9 @@ input.form-control {
   -moz-appearance: none;
   -ms-appearance: none;
 }
+input.form-control {
+  font-size: initial;
+}
 nav a.active {
   background-color: #ff2e88;
   color: #fff;
