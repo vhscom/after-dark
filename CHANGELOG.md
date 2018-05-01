@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.8.4"></a>
+## [3.8.4](https://codeberg.org/vhs/after-dark/compare/v3.8.3...v3.8.4) (2018-05-01)
+
+
+### Bug Fixes
+
+* **$layouts:** prevent js error on search form submit ([0dce741](https://codeberg.org/vhs/after-dark/commit/0dce741)), closes [#94](https://codeberg.org/vhs/after-dark/issues/94)
+
+
+
 <a name="3.8.3"></a>
 ## [3.8.3](https://codeberg.org/vhs/after-dark/compare/v3.8.2...v3.8.3) (2018-04-16)
 
