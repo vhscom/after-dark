@@ -15,7 +15,7 @@
       </noscript>
       <form v-on:submit.prevent class="form" action="{{ "search" | absURL }}">
         <fieldset class="form-group">
-          <input @keyup.enter="submit" v-model="query" id="query" name="s" type="search" class="form-control" maxlength="32" autocomplete="off">
+          <input v-model="query" id="query" name="s" type="search" class="form-control" maxlength="32" autocomplete="off">
           <div class="help-block">Press <kbd>s</kbd> to focus search input anytime.</div>
         </fieldset>
       </form>
