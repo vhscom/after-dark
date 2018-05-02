@@ -4,10 +4,14 @@ licenselink = "https://codeberg.org/vhs/after-dark/blob/master/COPYING"
 description = "A retro dark theme for Hugo."
 homepage = "https://vhs.github.io/after-dark/"
 tags = [
+  "personal",
+  "simple",
   "minimal",
   "responsive",
   "accessible",
-  "dark"
+  "search",
+  "dark",
+  "blog"
 ]
 features = [
   "Mobile-optimized",
