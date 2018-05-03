@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.9.0"></a>
+# [3.9.0](https://codeberg.org/vhs/after-dark/compare/v3.8.4...v3.9.0) (2018-05-03)
+
+
+### Features
+
+* **$layouts:** allow customization of referrer policy and add privacy-focused default ([5759a30](https://codeberg.org/vhs/after-dark/commit/5759a30)), closes [#96](https://codeberg.org/vhs/after-dark/issues/96)
+
+
+
 <a name="3.8.4"></a>
 ## [3.8.4](https://codeberg.org/vhs/after-dark/compare/v3.8.3...v3.8.4) (2018-05-01)
 
