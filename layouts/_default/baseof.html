@@ -21,6 +21,7 @@
     {{ if eq .Kind "home" }}
       {{ partial "head/site-verification.html" . }}
     {{ end }}
+    {{ partial "meta/http-referrer.html" . }}
     {{ template "_internal/google_analytics_async.html" . }}
     {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
