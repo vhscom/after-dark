@@ -511,7 +511,17 @@ noindex = true
 +++
 ```
 
-Then navigate to the `/search/` path on your site and let the fun begin.
+Then tell Hugo to output an `index.json` file along with your site when building by adding the following to the config:
+
+```
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS", "JSON"]
+```
+
+**Note:** If you don't see `index.json` in your `public` folder after building try running a `hugo --gc` to cajole the generator into creating the JSON file.
+
+After that navigate to the `/search/` path on your site and let the fun begin.
 
 **Tip:** Consider enabling the After Dark [section menu](#section-menu) to expose the search section to users.
 
