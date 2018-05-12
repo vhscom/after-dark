@@ -8,30 +8,32 @@
   <header>
     <h1>{{ .Title }}</h1>
   </header>
+  <noscript>
+    Aw-shucks! Search requires use of JavaScript to function properly.
+  </noscript>
   <div id="search-app">
-    <section>
-      <noscript>
-        Aw-shucks! Search requires use of JavaScript to function properly.
-      </noscript>
-      <form v-on:submit.prevent class="form" action="{{ "search" | absURL }}">
-        <fieldset class="form-group">
-          <input v-model="query" id="query" name="s" type="search" class="form-control" maxlength="32" autocomplete="off">
-          <div class="help-block">Press <kbd>s</kbd> to focus search input anytime.</div>
-        </fieldset>
-      </form>
-    </section>
-    <section v-if="results.length">
-      <p><i>Showing results for “{ resultsForSearch }”.</i></p>
-      <div id="search-results">
-        <article v-for="result in results" itemscope itemtype="http://schema.org/CreativeWork">
-          <header itemprop="name">
-            <h2 itemprop="name"><a :href="result.item.url">{ result.item.title }</a></h2>
-          </header>
-          <div v-html=result.item.summary itemprop="description"></div>
-          <nav class="readmore"><a itemprop="url" :href="result.item.url">Read More&nbsp;&raquo;</a></nav>
-        </article>
-      </div>
-    </section>
+    <div v-cloak>
+      <section>
+        <form v-on:submit.prevent class="form" action="{{ "search" | absURL }}">
+          <fieldset class="form-group">
+            <input v-model="query" id="query" name="s" type="search" class="form-control" maxlength="32" autocomplete="off">
+            <div class="help-block">Press <kbd>s</kbd> to focus search input anytime.</div>
+          </fieldset>
+        </form>
+      </section>
+      <section v-if="results.length">
+        <p><i>Showing results for “{ resultsForSearch }”.</i></p>
+        <div id="search-results">
+          <article v-for="result in results" itemscope itemtype="http://schema.org/CreativeWork">
+            <header itemprop="name">
+              <h2 itemprop="name"><a :href="result.item.url">{ result.item.title }</a></h2>
+            </header>
+            <div v-html=result.item.summary itemprop="description"></div>
+            <nav class="readmore"><a itemprop="url" :href="result.item.url">Read More&nbsp;&raquo;</a></nav>
+          </article>
+        </div>
+      </section>
+    </div>
   </div>
 {{ end }}
 {{ define "footer" }}
