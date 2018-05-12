@@ -129,3 +129,6 @@ article header img {
     max-width: 50rem;
   }
 }
+[v-cloak] {
+  display: none;
+}
