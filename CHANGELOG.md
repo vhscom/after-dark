@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.9.1"></a>
+## [3.9.1](https://codeberg.org/vhs/after-dark/compare/v3.9.0...v3.9.1) (2018-05-13)
+
+
+### Bug Fixes
+
+* **$layouts:** hide search app when noscript ([c3bcff0](https://codeberg.org/vhs/after-dark/commit/c3bcff0))
+
+
+
 <a name="3.9.0"></a>
 # [3.9.0](https://codeberg.org/vhs/after-dark/compare/v3.8.4...v3.9.0) (2018-05-03)
 
