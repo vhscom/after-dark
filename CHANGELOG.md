@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.9.2"></a>
+## [3.9.2](https://codeberg.org/vhs/after-dark/compare/v3.9.1...v3.9.2) (2018-06-09)
+
+
+### Bug Fixes
+
+* **$layouts:** resolve search layout header display ([9eee69c](https://codeberg.org/vhs/after-dark/commit/9eee69c)), closes [#104](https://codeberg.org/vhs/after-dark/issues/104)
+
+
+
 <a name="3.9.1"></a>
 ## [3.9.1](https://codeberg.org/vhs/after-dark/compare/v3.9.0...v3.9.1) (2018-05-13)
 
