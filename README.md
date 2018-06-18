@@ -58,7 +58,7 @@
       </tr>
       <tr>
         <td><a href="#social-engagement">Social Engagement</a></td>
-        <td>After Dark provides automatic and configurable <a target="feature" href="http://ogp.me/">Open Graph</a> support and Twitter Cards, making social shares pop like 37 pieces of flair.</td>
+        <td>After Dark provides automatic and configurable <a target="feature" href="http://ogp.me/">Open Graph</a> support, Twitter Cards and Telegram Instant View making social shares pop like 37 pieces of flair.</td>
       </tr>
       <tr>
         <td><a href="#search-optimization">Search Optimization</a></td>
@@ -270,7 +270,7 @@ Increase user engagement when sharing links on social media.
 
 After Dark leverages Open Graph tags using the *undocumented* [internal template](https://github.com/spf13/hugo/blob/142558719324aa1628541d556ef1fa2d123f1e68/tpl/tplimpl/template_embedded.go#L159-L201) to achieve rich sharing cards for Facebook and other social networks, as shown here:
 
-![Open Graph sharing card screenshot](https://raw.githubusercontent.com/vhs/after-dark/a647938/images/docs/feat-social-awareness.png "Example Open Graph sharing card produced by After Dark")
+![Open Graph sharing card screenshot](images/docs/feat-social-awareness.png "Example Open Graph sharing card produced by After Dark")
 
 To create a social sharing card like the one shown above, specify `author` in `config.toml` and, optionally, override it from your front matter as shown here:
 
@@ -311,7 +311,42 @@ See [Unsplash Source](https://source.unsplash.com/) for image configuration opti
 
 Optimize tweets with Twitter Cards. After Dark leverages the Hugo [internal template](https://gohugo.io/templates/internal/#the-internal-templates) for Twitter to provide large preview images in addition to associating shares with the site creator.
 
-See the Hugo documentation for usage guidelines.
+See the Hugo [Internal Templates documentation](https://gohugo.io/templates/internal/#the-internal-templates) for more information.
+
+#### Telegram Instant View
+
+Improve the experience for Telegram users by providing an [Instant View](https://instantview.telegram.org/) (IV). After Dark makes easy.
+
+![Open Graph sharing card screenshot](images/docs/feat-instant-view.png "Example Telegram Instant View for After Dark")
+
+To create an IV for your site simply [create your own](https://instantview.telegram.org/my/) Instant View template modeling from the example template below.
+
+```
+# enable for items in the post section
+?path: /post/.+
+
+# define required elements
+title: //*[@itemprop="headline"]
+body: //*[@itemprop="articleBody"]
+
+# if cover exists, define images
+?exists: //head/meta[@property="og:image"]/@content
+cover: //head/meta[@property="og:image"]/@content
+image_url: $cover/self::img/@src
+
+# author and post date extracted automatically
+```
+
+Additionally, if your site has a telegram channel, you can specify it by setting the following in your site config:
+
+````toml
+[params.seo]
+  telegram_channel = "channelname" # omit the `@`
+```
+
+Specifying a channel name allows Telegram users to join your channel with a single click from within an Instant View.
+
+See the [Telegram IV docs](https://instantview.telegram.org/docs) for additional information.
 
 ### Search Optimization
 
@@ -591,7 +626,7 @@ Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/con
 
 Provide a richer experience when sharing code snippets on your site. After Dark provides support for code highlighting using the lovely [One Dark](https://github.com/atom/one-dark-syntax) and [One Light](https://github.com/atom/one-light-syntax) syntax themes for Pygments and Chroma.
 
-![Syntax Highlighting screenshot](https://raw.githubusercontent.com/vhs/after-dark/d98d68e/images/docs/feat-syntax-highlighting.png "Syntax Highlighting using Atom One Pygments and Chroma")
+![Syntax Highlighting screenshot](images/docs/feat-syntax-highlighting.png "Syntax Highlighting using Atom One Pygments and Chroma")
 
 To set-up syntax highlighting for your After Dark site:
 
