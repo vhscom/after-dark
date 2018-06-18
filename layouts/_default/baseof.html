@@ -17,6 +17,7 @@
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
     {{ partial "meta/ogimage-maybe.html" . }}
+    {{ partial "meta/telegram-channel-maybe.html" . }}
     {{ partial "meta/theme-color.html" . }}
     {{ if eq .Kind "home" }}
       {{ partial "head/site-verification.html" . }}
