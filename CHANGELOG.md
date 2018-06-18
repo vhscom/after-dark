@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.10.0"></a>
+# [3.10.0](https://codeberg.org/vhs/after-dark/compare/v3.9.1...v3.10.0) (2018-06-18)
+
+
+### Bug Fixes
+
+* **$layouts:** resolve search layout header display ([9eee69c](https://codeberg.org/vhs/after-dark/commit/9eee69c)), closes [#104](https://codeberg.org/vhs/after-dark/issues/104)
+
+
+### Features
+
+* **$layout:** add telegram iv support ([4d520f9](https://codeberg.org/vhs/after-dark/commit/4d520f9)), closes [#113](https://codeberg.org/vhs/after-dark/issues/113)
+
+
+
 <a name="3.9.2"></a>
 ## [3.9.2](https://codeberg.org/vhs/after-dark/compare/v3.9.1...v3.9.2) (2018-06-09)
 
