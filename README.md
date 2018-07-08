@@ -5,13 +5,13 @@
 </p>
 
 <p align="center">
-  <img src="images/minimal-mac.png" title="After Dark running on a MacBook and iPhone" alt="After Dark theme screenshots">
+  <img src="https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/minimal-mac.png" title="After Dark running on a MacBook and iPhone" alt="After Dark theme screenshots">
 </p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/after-dark"><img src="https://img.shields.io/npm/dm/after-dark.svg?style=flat-square" alt="NPM downloads per month"></a>
   <a href="https://www.npmjs.com/package/after-dark"><img src="https://img.shields.io/npm/v/after-dark.svg?style=flat-square" alt="Latest NPM version"></a>
-  <a href="https://codeberg.org/vhs/after-dark/blob/master/COPYING"><img src="https://img.shields.io/github/license/vhs/after-dark.svg?style=flat-square" alt="Project license"></a>
+  <a href="https://codeberg.org/vhs/after-dark/src/branch/master/COPYING"><img src="https://img.shields.io/badge/license-BTC-green.svg?longCache=true&style=flat-square" alt="Project license"></a>
 </p>
 
 ## Features
@@ -34,7 +34,7 @@
       </tr>
       <tr>
         <td>Semantic Versioning</td>
-        <td>Predictable changes enable theme users stay up-to-date with what's happening. After Dark uses <a target="feature" href="http://semver.org/">Semantic Versioning</a> and maintains a <a target="feature" href="https://codeberg.org/vhs/after-dark/blob/master/CHANGELOG.md">CHANGELOG</a> for easy consumption.</td>
+        <td>Predictable changes enable theme users stay up-to-date with what's happening. After Dark uses <a target="feature" href="http://semver.org/">Semantic Versioning</a> and maintains a <a target="feature" href="https://codeberg.org/vhs/after-dark/src/branch/master/CHANGELOG.md">CHANGELOG</a> for easy consumption.</td>
       </tr>
       <tr>
         <td>Inclusive Design</td>
@@ -138,7 +138,7 @@
 
 ## Demo & Tutorial
 
-Head to [Hack Cabin](https://hackcabin.com) for a **production example** of which the [site architecture](https://hackcabin.com/post/initial-commit/) can be recreated using a [step-by-step guide](https://vhs.codeberg.page/zero-to-http-2). And while you're looking at example sites, check out [a few others](https://codeberg.org/vhs/after-dark/wiki) for even more inspiration.
+Head to [Hack Cabin](https://hackcabin.com) for a **production example** of which the [site architecture](https://hackcabin.com/post/initial-commit/) can be recreated using a [step-by-step guide](https://vhs.codeberg.page/zero-to-http-2). And while you're looking at example sites, check out [a few others](https://codeberg.org/vhs/after-dark/wiki/) for even more inspiration.
 
 ## Getting Started
 
@@ -270,7 +270,7 @@ Increase user engagement when sharing links on social media.
 
 After Dark leverages Open Graph tags using the *undocumented* [internal template](https://github.com/spf13/hugo/blob/142558719324aa1628541d556ef1fa2d123f1e68/tpl/tplimpl/template_embedded.go#L159-L201) to achieve rich sharing cards for Facebook and other social networks, as shown here:
 
-![Open Graph sharing card screenshot](images/docs/feat-social-awareness.png "Example Open Graph sharing card produced by After Dark")
+![Open Graph sharing card screenshot](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/feat-social-awareness.png "Example Open Graph sharing card produced by After Dark")
 
 To create a social sharing card like the one shown above, specify `author` in `config.toml` and, optionally, override it from your front matter as shown here:
 
@@ -317,7 +317,7 @@ See the Hugo [Internal Templates documentation](https://gohugo.io/templates/inte
 
 Improve the experience for Telegram users by providing an [Instant View](https://instantview.telegram.org/) (IV). After Dark makes easy.
 
-![Open Graph sharing card screenshot](images/docs/feat-instant-view.png "Example Telegram Instant View for After Dark")
+![Open Graph sharing card screenshot](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/feat-instant-view.png "Example Telegram Instant View for After Dark")
 
 To create an IV for your site simply [create your own](https://instantview.telegram.org/my/) Instant View template modeling from the example template below.
 
@@ -339,7 +339,7 @@ image_url: $cover/self::img/@src
 
 Additionally, if your site has a telegram channel, you can specify it by setting the following in your site config:
 
-````toml
+```toml
 [params.seo]
   telegram_channel = "channelname" # omit the `@`
 ```
@@ -626,7 +626,7 @@ Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/con
 
 Provide a richer experience when sharing code snippets on your site. After Dark provides support for code highlighting using the lovely [One Dark](https://github.com/atom/one-dark-syntax) and [One Light](https://github.com/atom/one-light-syntax) syntax themes for Pygments and Chroma.
 
-![Syntax Highlighting screenshot](images/docs/feat-syntax-highlighting.png "Syntax Highlighting using Atom One Pygments and Chroma")
+![Syntax Highlighting screenshot](https://codeberg.org/vhs/after-dark/src/branch/master/images/docs/feat-syntax-highlighting.png "Syntax Highlighting using Atom One Pygments and Chroma")
 
 To set-up syntax highlighting for your After Dark site:
 
@@ -698,9 +698,10 @@ After Dark ships with a lightweight SVG favicon embedded into every page. To cus
 
 ## License
 
-Copyright 2016-2018 VHS <jhabas@tutanota.com> (https://vhs.codeberg.page)
-<br>This work is free. You can redistribute it and/or modify it under the
-<br>terms of the Do What The Fuck You Want To Public License, Version 2,
-<br>as published by Sam Hocevar. See the COPYING file for more details.
+Copyright (c) 2016-2018, 13AMDq9isKtQTxMQG4w7Yo7cEhqKAqQ4Lz
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
 
 [lazysizes]: https://github.com/aFarkas/lazysizes
