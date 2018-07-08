@@ -24,4 +24,4 @@ After Dark supports the `bpg` image format without any additional configuration 
 
 BPG compresses the above animation to `48KB`, about **97% smaller** than what would be possible with GIF. In addition to animation BPG handles still images as well. Head to the [side-by-side comparisons](http://xooyoozoo.github.io/yolo-octo-bugfixes/#vallee-de-colca&jpg=s&bpg=s) to see BPG stacked up against JPEG. Create your own BPG images using the [BPG web encoder](https://webencoder.libbpg.org/) for use on your After Dark site.
 
-See the <a href="https://codeberg.org/vhs/after-dark/blob/master/README.md" target="_blank" rel="noopener nofollow">After Dark `README`</a> for more info.
+See the <a href="https://codeberg.org/vhs/after-dark/src/branch/master/README.md" target="_blank" rel="noopener">After Dark `README`</a> for more info.

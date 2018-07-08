@@ -1,8 +1,8 @@
 name = "After Dark"
-license = "WTFPL"
-licenselink = "https://codeberg.org/vhs/after-dark/blob/master/COPYING"
+license = "BTC"
+licenselink = "https://codeberg.org/vhs/after-dark/src/branch/master/COPYING"
 description = "A retro dark theme for Hugo."
-homepage = "https://vhs.github.io/after-dark/"
+homepage = "https://codeberg.org/vhs/after-dark/"
 tags = [
   "personal",
   "simple",
@@ -46,4 +46,4 @@ min_version = 0.27
 
 [author]
   name = "VHS"
-  homepage = "https://hackcabin.com"
+  homepage = "https://vhs.codeberg.page"
