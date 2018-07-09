@@ -1,12 +1,12 @@
 # After Dark
 
-A retro dark theme for <a target="intro" href="https://gohugo.io/">Hugo</a>.
+> A retro dark theme for <a target="intro" href="https://gohugo.io/">Hugo</a>.
 
 ![Screenshots of After Dark running on a MacBook and iPhone](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/minimal-mac.png)
 
 [![NPM downloads per month](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
-[![BTC Licensed](https://img.shields.io/badge/license-BTC-orange.svg?longCache=true&style=flat-square)](https://codeberg.org/vhs/after-dark/src/branch/master/COPYING)
+[![WTFPL Licensed](https://img.shields.io/badge/license-WTFPL-blue.svg?style=flat-square)](https://codeberg.org/vhs/after-dark/src/branch/master/COPYING)
 
 ## Features
 
@@ -26,7 +26,7 @@ Feature | Summary
 [Analytics](https://gohugo.io/templates/internal/#google-analytics) | Understand and action on user behavior by enabling Google Analytics. After Dark uses the [async tracking snippet](https://developers.google.com/analytics/devguides/collection/analyticsjs/) to boost performance.
 [Comments](https://gohugo.io/templates/internal/#disqus) | Improve search rankings and allow users to comment on articles with [Disqus](https://disqus.com/) commenting.
 [Modification Dating](#modification-dating) | Surface recently updated content to users and crawlers, allowing them to understand when a post or page was was last modified. Recently updated posts will be flagged as modified and visually lifted upwards in chronological listings.
-[Syntax Highlighting](#syntax-highlighting) | Share code snippets with style. After Dark provides custom syntax highlighting with support for both Pygments and Chroma.
+[Syntax Highlighting](#syntax-highlighting) | Share code snippets with style. After Dark provides Atom One [Light](https://atom.io/themes/one-light-syntax) and [Dark](https://atom.io/themes/one-dark-syntax) syntax highlighting for l33t code sharing.
 [Taxonomy Pages](https://gohugo.io/content-management/taxonomies) | Help users discover taxonomic content. After Dark automatically generates taxonomy and taxonomy terms pages and links to them in post bylines.
 [Error Page](https://hackcabin.com/post/after-dark-error-page-redesign/) | Decrease bounce rate when URL errors occur. After Dark provides an engaging 404 page with animated background.
 Pagination | Pagination can be hard. After Dark makes it easy with simple list pagination with page indicators.
@@ -521,22 +521,13 @@ Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/con
 
 ### Syntax Highlighting
 
-Provide a richer experience when sharing code snippets on your site. After Dark provides support for code highlighting using the lovely [One Dark](https://github.com/atom/one-dark-syntax) and [One Light](https://github.com/atom/one-light-syntax) syntax themes for Pygments and Chroma.
+Provide a richer experience when sharing code snippets on your site. After Dark provides a [hackable code highlighter](https://codeberg.org/vhs/atom-one-chroma) using the lovely [One Dark](https://atom.io/themes/one-dark-syntax) and [One Light](https://atom.io/themes/one-light-syntax) syntax themes.
 
-![Syntax Highlighting screenshot](https://codeberg.org/vhs/after-dark/src/branch/master/images/docs/feat-syntax-highlighting.png "Syntax Highlighting using Atom One Pygments and Chroma")
+![Syntax Highlighting screenshot](https://codeberg.org/vhs/after-dark/src/branch/master/images/docs/feat-syntax-highlighting.png "Syntax Highlighting with Atom One")
 
-To set-up syntax highlighting for your After Dark site:
+To set-up syntax highlighting for your After Dark site copy the contents of [`light.css`](https://cdn.jsdelivr.net/npm/atom-one-chroma/dist/light.css) or [`dark.css`](https://cdn.jsdelivr.net/npm/atom-one-chroma/dist/dark.css) into your [Custom Styles](#custom-styles) file and rebuild your site. Once configured, simply use Hugo built-in [`highlight` shortcode](https://gohugo.io/extras/shortcodes#highlight) to highlight your code.
 
-- Follow Hugo's [Syntax Highlighting](https://gohugo.io/content-management/syntax-highlighting/) instructions.
-- Open the `themes/after-dark` folder and run `npm i` (assumes NPM installed).
-- Then open `./node_modules/atom-one-pygments` and `npm i`.
-- Once dependencies are installed, issue `npm run build` within the module to generate the stylesheets to the module's `./dist` directory.
-
-Then choose either `./dist/light.css` or `dark.css` depending on your [Theme Variant](#theme-variants) and copy the contents of the file into your [Custom Styles](#custom-styles) file.
-
-Once configured, syntax highlighting can be achieved using the Hugo built-in [`highlight` shortcode](https://gohugo.io/extras/shortcodes#highlight). Reference Hugo's [Syntax Highlighting docs](https://gohugo.io/content-management/syntax-highlighting/) for usage instructions.
-
-**Not completely satisfied?** [Atom One Pygments](https://codeberg.org/vhs/atom-one-pygments) is built as a theme roller, making it possible to modify the look-and-feel of the resulting syntax highlighting. Make it your own. See the [README](https://codeberg.org/vhs/atom-one-pygments/blob/master/README.md) for more details.
+Reference Hugo's [Syntax Highlighting docs](https://gohugo.io/content-management/syntax-highlighting/) for usage instructions and additional configuration options.
 
 ### Personalization
 
@@ -595,10 +586,10 @@ After Dark ships with a lightweight SVG favicon embedded into every page. To cus
 
 ## License
 
-Copyright (c) 2016-2018, 13AMDq9isKtQTxMQG4w7Yo7cEhqKAqQ4Lz
+Copyright (C) 2016–2018 VHS <vhsdev@tutanota.com>
 
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted, provided that the above
-copyright notice and this permission notice appear in all copies.
+This work is free. You can redistribute it and/or modify it under the
+terms of the Do What The Fuck You Want To Public License, Version 2,
+as published by Sam Hocevar. See the COPYING file for more details.
 
 [lazysizes]: https://github.com/aFarkas/lazysizes
