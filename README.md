@@ -1,140 +1,37 @@
-<h1 align="center">After Dark</h1>
+# After Dark
 
-<p align="center">
-  <strong>A retro dark theme for <a target="intro" href="https://gohugo.io/">Hugo</a>.</strong>
-</p>
+A retro dark theme for <a target="intro" href="https://gohugo.io/">Hugo</a>.
 
-<p align="center">
-  <img src="https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/minimal-mac.png" title="After Dark running on a MacBook and iPhone" alt="After Dark theme screenshots">
-</p>
+![Screenshots of After Dark running on a MacBook and iPhone](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/minimal-mac.png)
 
-<p align="center">
-  <a href="https://www.npmjs.com/package/after-dark"><img src="https://img.shields.io/npm/dm/after-dark.svg?style=flat-square" alt="NPM downloads per month"></a>
-  <a href="https://www.npmjs.com/package/after-dark"><img src="https://img.shields.io/npm/v/after-dark.svg?style=flat-square" alt="Latest NPM version"></a>
-  <a href="https://codeberg.org/vhs/after-dark/src/branch/master/COPYING"><img src="https://img.shields.io/badge/license-BTC-green.svg?longCache=true&style=flat-square" alt="Project license"></a>
-</p>
+[![NPM downloads per month](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
+[![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
+[![BTC Licensed](https://img.shields.io/badge/license-BTC-orange.svg?longCache=true&style=flat-square)](https://codeberg.org/vhs/after-dark/src/branch/master/COPYING)
 
 ## Features
 
-<details>
-  <summary style="margin-bottom:1em">
-    View the full list of features
-  </summary>
-  <table>
-    <thead>
-      <tr>
-        <th>Feature</th>
-        <th>Summary</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Deceptive Simplicity</td>
-        <td>After Dark is a <a target="feature" href="http://themes.gohugo.io/">Hugo theme</a>, making it a suitable starting point for <b>novice and advanced developers</b> alike. It advances using the "Code for today, not for tomorrow" philosophy of <abbr title="eXtreme Programming">XP</abbr> and includes only what's necessary to create and run your site &ndash; nothing more.</td>
-      </tr>
-      <tr>
-        <td>Semantic Versioning</td>
-        <td>Predictable changes enable theme users stay up-to-date with what's happening. After Dark uses <a target="feature" href="http://semver.org/">Semantic Versioning</a> and maintains a <a target="feature" href="https://codeberg.org/vhs/after-dark/src/branch/master/CHANGELOG.md">CHANGELOG</a> for easy consumption.</td>
-      </tr>
-      <tr>
-        <td>Inclusive Design</td>
-        <td>Optimized for mobile, tablet, desktop and <kbd>terminal</kbd> browsers.</td>
-      </tr>
-      <tr>
-        <td>Performance Optimized</td>
-        <td>Page content, favicon and styles <b>load in a single request</b> on all pages. Resources loaded asynchronously whenver possible. Responsive images with LQIP out of the box. Users should see a <b>~1 second page loads over 2G</b> when hosted using a <abbr title="Content Delivery Network">CDN</abbr>.</td>
-      </tr>
-      <tr>
-        <td>Designed to Scale</td>
-        <td>After Dark is capable of generating <b>~1000 pages per second</b> thanks to <a target="feature" href="https://gohugo.io/">Hugo</a> and is likely to become faster over time.</td>
-      </tr>
-      <tr>
-        <td><a href="#lazy-loading">Lazy Loading</a></td>
-        <td>Lazily load your images, iFrames and script embeds. After Dark uses the <a title="feature" href="https://github.com/aFarkas/lazysizes">lazysizes</a> library, a zero-configuration JavaScript library with support for <abbr title="Low Quality Image Placeholders">LQIP</abbr> and responsive images.</td>
-      </tr>
-      <tr>
-        <td><a href="#bpg-image-support">BPG Image Support</a></td>
-        <td>After Dark supports the <a href="https://bellard.org/bpg/">BPG Image format</a>. Native browser support for BPG is dismal. As a result, a polyfill has been provided to render BPG images.</td>
-      </tr>
-      <tr>
-        <td><a href="#social-engagement">Social Engagement</a></td>
-        <td>After Dark provides automatic and configurable <a target="feature" href="http://ogp.me/">Open Graph</a> support, Twitter Cards and Telegram Instant View making social shares pop like 37 pieces of flair.</td>
-      </tr>
-      <tr>
-        <td><a href="#search-optimization">Search Optimization</a></td>
-        <td>Using <a target="feature" href="https://moz.com/learn/seo/schema-structured-data">Schema Structured Data</a> and meta tags, After Dark gives crawlers rich data about the site structure and content. No configuration required.</td>
-      </tr>
-      <tr>
-        <td><a href="#post-images">Post Images</a></td>
-        <td>Increase the visual appeal of your posts by providing a captivating image above your content. After Dark enables configuration-driven post images which are lazy-loaded, responsive and automatically cropped for a consistent look-and-feel across your site.</td>
-      </tr>
-      <tr>
-        <td><a href="#fuzzy-search">Fuzzy Search</a></td>
-        <td>After Dark ships with an in-browser search app built with <a target="features" href="https://vuejs.org/">Vue</a>, <a target="features" href="http://fusejs.io/">Fuse</a> and <a target="features" href="https://markjs.io">Mark</a>. Use it to quickly find content anywhere your site.</td>
-      </tr>
-      <tr>
-        <td><a href="#personalization">Personalization</a></td>
-        <td>Adjust CSS using purpose-built <a href="#custom-styles">customization file</a>. Choose one of several <a href="#theme-variants">theme variants</a>. Swap in <a href="#favicon">your own favicon</a>. Leverage <a target="features" href="https://gohugo.io/templates/blocks">block templates</a> to quickly extend new custom layouts. And use <a target="features" href="https://hackcss.egoist.moe/dark.html">hack.css</a> flexbox grids and CSS components to add style your site.</td>
-      </tr>
-      <tr>
-        <td><a href="#section-menu">Section Menu</a></td>
-        <td>Add and customize your site's global navigation. After Dark uses Hugo's <a target="feature" href="https://gohugo.io/extras/menus#section-menu-for-the-lazy-blogger">Section Menu for "the Lazy Blogger"</a>, making navigation easy to create and predictable to use. Don't want navigation? Simply disable it from your site configuration.</td>
-      </tr>
-      <tr>
-        <td><a href="#content-reuse">Content Reuse</a></td>
-        <td>Sometimes plan markdown isn't enough to build engaging page content. For this reason After Dark provides a number of reusable code snippets and shortcodes for adding things blockquotes, figure elements, coubs, videos, <a target="feature" href="https://hackcss.egoist.moe/">hackcss components</a> and more to your pages and posts. Use them to create completely custom layouts or simply spice up an old page.</td>
-      </tr>
-      <tr>
-        <td><a href="#related-content">Related Content</a></td>
-        <td>Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can <b>increase your site's page views</b>, the time spent on your site and reader loyalty.</td>
-      </tr>
-      <tr>
-        <td><a href="#table-of-contents">Table Of Contents</a></td>
-        <td>Help users locate and share information on your site. By providing a <abbr title="Table Of Contents">TOC</abbr>, users will spend less time scrolling to locate information in larger documents and are more likely to <i>deep link</i> to specific information on a page.</td>
-      </tr>
-      <tr>
-        <td>Analytics</td>
-        <td>Understand and action on user behavior by enabling Google Analytics. After Dark uses the <a target="feature" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/">async tracking snippet</a> to boost performance and allow script preloading.</td>
-      </tr>
-      <tr>
-        <td>User Generated Content</td>
-        <td>Improve search rankings and provide interactivity to users with <abbr title="User Generated Content">UGC</abbr>. Enable <a target="feature" href="https://disqus.com/">Disqus</a> commenting to get started.</td>
-      </tr>
-      <tr>
-        <td>Reading Time</td>
-        <td>Set user expectations up-front. After Dark provides <b>estimated reading time</b> for each post near the top of the page. This feature is automatic and assumes a reading speed of 200-250 words per minute.</td>
-      </tr>
-      <tr>
-        <td><a href="#modification-dating">Modification Dating</a></td>
-        <td>Surface recently updated content to users and crawlers, allowing them to understand when a post or page was was last modified. Recently updated posts will be flagged as modified and visually lifted upwards in chronological listings.</td>
-      </tr>
-      <tr>
-        <td><a href="#syntax-highlighting">Custom Syntax Highlighting</a></td>
-        <td>Share code snippets with style. After Dark provides <b>custom syntax highlighting</b> with support for both Pygments and Chroma.</td>
-      </tr>
-      <tr>
-        <td>Taxonomy Pages</td>
-        <td>Help users discover taxonomic content. After Dark automatically generates <b>taxonomy and taxonomy terms pages</b> and links to them in post bylines.</td>
-      </tr>
-      <tr>
-        <td>Post Bylines</td>
-        <td>Rich post bylines include optional author name, word count, links to taxonomy pages and metadata for search engines.</td>
-      </tr>
-      <tr>
-        <td>Pagination</td>
-        <td>Pagination can be hard. After Dark makes it easy with simple list pagination with page indication.</td>
-      </tr>
-      <tr>
-        <td>Animated Error Page</td>
-        <td>Decrease bounce rate when URL errors occur. After Dark provides an <a target="feature" href="https://hackcabin.com/post/after-dark-error-page-redesign/">engaging 404 page</a> with animated background.</td>
-      </tr>
-      <tr>
-        <td>Accessibility</td>
-        <td>After Dark uses semantic HTML5 markup to provide a better experience for aural readers and facilitates <b>navigation via keyboard</b> only.</td>
-      </tr>
-    </tbody>
-  </table>
-</details>
+Feature | Summary
+--------|--------
+[Lazy Loading](#lazy-loading) | Lazily load your images, iFrames and script embeds. After Dark ships with [lazysizes](https://github.com/aFarkas/lazysizes), a zero-configuration JavaScript library with LQIP support, responsive images and more.
+[BPG Image Support](#bpg-image-support) | Improve image fidelity and decrease size. Automatically [BPG Image](https://bellard.org/bpg/) support via polyfill.
+[Social Engagement](#social-engagement) | After Dark provides automatic and configurable [Open Graph](http://ogp.me/) support, Twitter Cards and Telegram Instant View template to make social shares pop like 37 pieces of flair.
+[Search Optimization](#search-optimization) | Using [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and meta tags, After Dark gives crawlers rich data about the site structure and content. No configuration required.
+[Post Images](#post-images) | Increase visual appeal of posts. After Dark enables configuration-driven post images which are lazy-loaded, responsive and automatically cropped for a consistent look-and-feel across your site.
+[Fuzzy Search](#fuzzy-search) | After Dark ships with an in-browser search app built with [Vue](https://vuejs.org/), [Fuse](http://fusejs.io/) and [Mark](https://markjs.io). Use it to quickly find content anywhere your site.
+[Personalization](#personalization) | Adjust CSS using purpose-built [customization file](#custom-styles). Choose one of several [theme variants](#theme-variants). Swap in [your own favicon](#favicon). Leverage [block templates](https://gohugo.io/templates/blocks) to quickly extend new custom layouts. And use [hack.css](https://hackcss.egoist.moe/dark.html) flexbox grids and CSS components to add style your site.
+[Section Menu](#section-menu) | Add and customize your site's global navigation. After Dark uses Hugo's [Section Menu for "the Lazy Blogger"](https://gohugo.io/extras/menus#section-menu-for-the-lazy-blogger), making navigation easy to create and predictable to use. Don't want navigation? Simply disable it from your site configuration.
+[Content Reuse](#content-reuse) | Sometimes plan markdown isn't enough to build engaging page content. For this reason After Dark provides a number of reusable code snippets and shortcodes for adding things blockquotes, figure elements, coubs, videos, <a target="feature" href="https://hackcss.egoist.moe/">hackcss components</a> and more to your pages and posts. Use them to create completely custom layouts or simply spice up an old page.
+[Related Content](#related-content) | Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can increase your site's page views, the time spent on your site and reader loyalty.
+[Table of Contents](#table-of-contents) | Help users locate and share information in long posts. By providing a Table of Contents, users will spend less time scrolling to locate information in larger documents and are more likely to deep link to specific information on a page.
+[Analytics](https://gohugo.io/templates/internal/#google-analytics) | Understand and action on user behavior by enabling Google Analytics. After Dark uses the [async tracking snippet](https://developers.google.com/analytics/devguides/collection/analyticsjs/) to boost performance.
+[Comments](https://gohugo.io/templates/internal/#disqus) | Improve search rankings and allow users to comment on articles with [Disqus](https://disqus.com/) commenting.
+[Modification Dating](#modification-dating) | Surface recently updated content to users and crawlers, allowing them to understand when a post or page was was last modified. Recently updated posts will be flagged as modified and visually lifted upwards in chronological listings.
+[Syntax Highlighting](#syntax-highlighting) | Share code snippets with style. After Dark provides custom syntax highlighting with support for both Pygments and Chroma.
+[Taxonomy Pages](https://gohugo.io/content-management/taxonomies) | Help users discover taxonomic content. After Dark automatically generates taxonomy and taxonomy terms pages and links to them in post bylines.
+[Error Page](https://hackcabin.com/post/after-dark-error-page-redesign/) | Decrease bounce rate when URL errors occur. After Dark provides an engaging 404 page with animated background.
+Pagination | Pagination can be hard. After Dark makes it easy with simple list pagination with page indicators.
+Reading Time | Set user expectations up-front. After Dark provides estimated reading time for each post near the top of the page. This feature is automatic and assumes a reading speed of 200-250 words per minute.
+Post Bylines | Rich post bylines include optional author name, word count, links to taxonomy pages and metadata for search engines.
 
 ## Demo & Tutorial
 
@@ -151,7 +48,7 @@ brew install hugo elinks
 Then run the install script located in `bin/install.sh`, or just paste this into a terminal and press <kbd>Enter</kbd>:
 
 ```shell
-curl -s https://raw.githubusercontent.com/vhs/after-dark/master/bin/install.sh | sh
+curl -s https://codeberg.org/vhs/after-dark/raw/branch/master/bin/install.sh | sh
 ```
 
 Installation should complete in a matter of seconds.
