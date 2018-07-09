@@ -2,14 +2,17 @@
   "name": "after-dark",
   "version": "3.10.0",
   "description": "A retro dark theme for Hugo.",
-  "author": "VHS <vhsdev@tutanota.com> (https://vhs.codeberg.page/)",
+  "author": "VHS <vhsdev@tutanota.com>",
   "keywords": [
     "hugo",
     "dark",
     "blog",
     "theme"
   ],
-  "repository": "vhs/after-dark",
+  "repository": {
+    "type": "git",
+    "url": "https://codeberg.org/vhs/after-dark.git"
+  },
   "scripts": {
     "update:lazysizes": "npm up lazysizes && cp -i node_modules/lazysizes/lazysizes.min.js static/js",
     "update:lodash:custom": "./node_modules/.bin/lodash include=debounce -p -o static/js/lodash.custom.min.js",
@@ -22,7 +25,7 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "atom-one-pgyments": "^1.0.0",
+    "atom-one-chroma": "^2.0.0",
     "hack": "^0.8.1",
     "lazysizes": "^4.0.1",
     "smoothscroll-polyfill": "^0.4.3",
@@ -32,7 +35,7 @@
   },
   "devDependencies": {
     "lodash-cli": "^4.17.5",
-    "standard-version": "^4.0.0"
+    "standard-version": "^4.4.0"
   },
-  "license": "BTC"
+  "license": "WTFPL"
 }
