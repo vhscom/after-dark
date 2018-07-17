@@ -1,0 +1,26 @@
+version: "3"
+services:
+  fathom:
+    image: usefathom/fathom:latest
+    restart: always
+    environment:
+      - "FATHOM_DATABASE_DRIVER=postgres"
+      - "FATHOM_DATABASE_NAME=fathom"
+      - "FATHOM_DATABASE_USER=fathom"
+      - "FATHOM_DATABASE_PASSWORD=unsafe"
+      - "FATHOM_DATABASE_HOST=postgres"
+      - "FATHOM_DATABASE_SSLMODE=disable"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:latest
+    restart: always
+    environment:
+      - "POSTGRES_USER=fathom"
+      - "POSTGRES_PASSWORD=unsafe"
+      - "POSTGRES_DB=fathom"
+    volumes:
+      - /opt/postgres:/var/lib/postgresql/data

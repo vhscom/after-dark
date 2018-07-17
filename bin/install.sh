@@ -46,7 +46,10 @@ languageCode = "en-US" # Controls site language
 title = "After Dark" # Homepage title and page title suffix
 paginate = 11 # Number of posts to show before paginating
 
-theme = "after-dark" # Set default theme
+# Controls default theme and theme components
+theme = [
+  "after-dark"
+]
 
 enableRobotsTXT = true # Suggested, enable robots.txt file
 googleAnalytics = "" # Optional, add tracking Id for analytics
