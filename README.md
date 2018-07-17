@@ -14,6 +14,7 @@
 
 Feature | Summary
 --------|--------
+[Module System](#module-system) | Extend After Dark with prebuilt modules to add additional functionality to your site.
 [Lazy Loading](#lazy-loading) | Lazily load your images, iFrames and script embeds. After Dark ships with [lazysizes](https://github.com/aFarkas/lazysizes), a zero-configuration JavaScript library with LQIP support, responsive images and more.
 [BPG Image Support](#bpg-image-support) | Improve image fidelity and decrease size. Automatically [BPG Image](https://bellard.org/bpg/) support via polyfill.
 [Social Engagement](#social-engagement) | After Dark provides automatic and configurable [Open Graph](http://ogp.me/) support, Twitter Cards and Telegram Instant View template to make social shares pop like 37 pieces of flair.
@@ -25,7 +26,6 @@ Feature | Summary
 [Related Content](#related-content) | Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can increase your site's page views, the time spent on your site and reader loyalty.
 [Table of Contents](#table-of-contents) | Help users locate and share information in long posts. By providing a Table of Contents, users will spend less time scrolling to locate information in larger documents and are more likely to deep link to specific information on a page.
 [Section Menu](#section-menu) | Add and customize your site's global navigation. After Dark uses Hugo's [Section Menu for "the Lazy Blogger"](https://gohugo.io/extras/menus#section-menu-for-the-lazy-blogger), making navigation easy to create and predictable to use.
-[Analytics](https://gohugo.io/templates/internal/#google-analytics) | Understand and action on user behavior by enabling Google Analytics. After Dark uses the [async tracking snippet](https://developers.google.com/analytics/devguides/collection/analyticsjs/) to boost performance.
 [Comments](https://gohugo.io/templates/internal/#disqus) | Improve search rankings and allow users to comment on articles with [Disqus](https://disqus.com/) commenting.
 [Modification Dating](#modification-dating) | Surface recently updated content to users and crawlers, allowing them to understand when a post or page was was last modified. Recently updated posts will be flagged as modified and visually lifted upwards in chronological listings.
 [Syntax Highlighting](#syntax-highlighting) | Share code snippets with style. After Dark provides Atom One [Light](https://atom.io/themes/one-light-syntax) and [Dark](https://atom.io/themes/one-dark-syntax) syntax highlighting for 1337 code sharing.
@@ -56,6 +56,14 @@ curl -s https://codeberg.org/vhs/after-dark/raw/branch/master/bin/install.sh | s
 Installation should complete in a matter of seconds.
 
 ## Customizing
+
+### Module System
+
+After Dark uses Hugo's [Theme Components](https://gohugo.io/themes/theme-components/) functionality to provide add-on modules for the theme. These are entirely optional and are not required for basic functionality. A summary of available modules and links to their repositories can be found in the following table.
+
+Module Name | Description
+------------|--------
+[Voyeur](https://codeberg.org/vhs/voyeur) | Simple, trustworthy website analytics
 
 ### Section Menu
 
@@ -591,5 +599,7 @@ Copyright (C) 2016–2018 VHS <vhsdev@tutanota.com>
 This work is free. You can redistribute it and/or modify it under the
 terms of the Do What The Fuck You Want To Public License, Version 2,
 as published by Sam Hocevar. See the COPYING file for more details.
+
+After Dark comes with ABSOLUTELY NO WARRANTY, to the extent permitted by applicable law.
 
 [lazysizes]: https://github.com/aFarkas/lazysizes

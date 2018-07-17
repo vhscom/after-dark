@@ -23,7 +23,11 @@
       {{ partial "head/site-verification.html" . }}
     {{ end }}
     {{ partial "meta/http-referrer.html" . }}
-    {{ template "_internal/google_analytics_async.html" . }}
+    {{ with .Site.Params.modules }}
+      {{ with .voyeur }}
+        {{ partial "modules/voyeur/index.html" . }}
+      {{ end }}
+    {{ end }}
     {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
     {{ end }}
