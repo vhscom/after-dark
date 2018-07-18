@@ -18,15 +18,15 @@ Feature | Summary
 [Search Optimization](#search-optimization) | Using [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and meta tags, After Dark gives crawlers rich data about the site structure and content. No configuration required.
 [Post Images](#post-images) | Increase visual appeal of posts. After Dark enables configuration-driven post images which are lazy-loaded, responsive and automatically cropped for a consistent look-and-feel across your site.
 [Fuzzy Search](#fuzzy-search) | After Dark ships with an in-browser search app built with [Vue](https://vuejs.org/), [Fuse](http://fusejs.io/) and [Mark](https://markjs.io). Use it to quickly find crawlable content anywhere your site.
-[Personalization](#personalization) | Adjust CSS using purpose-built [customization file](#custom-styles). Choose one of several [theme variants](#theme-variants). Swap in [your own favicon](#favicon). Leverage [block templates](https://gohugo.io/templates/blocks) to quickly extend new custom layouts. And use [hack.css](https://hackcss.egoist.moe/dark.html) flexbox grids and CSS components to add style your site.
-[Section Menu](#section-menu) | Add and customize your site's global navigation. After Dark uses Hugo's [Section Menu for "the Lazy Blogger"](https://gohugo.io/extras/menus#section-menu-for-the-lazy-blogger), making navigation easy to create and predictable to use. Don't want navigation? Simply disable it from your site configuration.
+[Personalization](#personalization) | Easily choose between one of several [theme variants](#theme-variants). Tweak CSS using the purpose-built [customization file](#custom-styles). Swap in [your own favicon](#favicon). Leverage [block templates](https://gohugo.io/templates/blocks) to quickly extend new custom layouts. And use [hack.css](https://hackcss.egoist.moe/dark.html) flexbox grids and CSS components to add style your site.
 [Content Reuse](#content-reuse) | Sometimes plan markdown isn't enough to build engaging page content. For this reason After Dark provides a number of reusable code snippets and shortcodes for adding things blockquotes, figure elements, coubs, videos, <a target="feature" href="https://hackcss.egoist.moe/">hackcss components</a> and more to your pages and posts. Use them to create completely custom layouts or simply spice up an old page.
 [Related Content](#related-content) | Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can increase your site's page views, the time spent on your site and reader loyalty.
 [Table of Contents](#table-of-contents) | Help users locate and share information in long posts. By providing a Table of Contents, users will spend less time scrolling to locate information in larger documents and are more likely to deep link to specific information on a page.
+[Section Menu](#section-menu) | Add and customize your site's global navigation. After Dark uses Hugo's [Section Menu for "the Lazy Blogger"](https://gohugo.io/extras/menus#section-menu-for-the-lazy-blogger), making navigation easy to create and predictable to use.
 [Analytics](https://gohugo.io/templates/internal/#google-analytics) | Understand and action on user behavior by enabling Google Analytics. After Dark uses the [async tracking snippet](https://developers.google.com/analytics/devguides/collection/analyticsjs/) to boost performance.
 [Comments](https://gohugo.io/templates/internal/#disqus) | Improve search rankings and allow users to comment on articles with [Disqus](https://disqus.com/) commenting.
 [Modification Dating](#modification-dating) | Surface recently updated content to users and crawlers, allowing them to understand when a post or page was was last modified. Recently updated posts will be flagged as modified and visually lifted upwards in chronological listings.
-[Syntax Highlighting](#syntax-highlighting) | Share code snippets with style. After Dark provides Atom One [Light](https://atom.io/themes/one-light-syntax) and [Dark](https://atom.io/themes/one-dark-syntax) syntax highlighting for l33t code sharing.
+[Syntax Highlighting](#syntax-highlighting) | Share code snippets with style. After Dark provides Atom One [Light](https://atom.io/themes/one-light-syntax) and [Dark](https://atom.io/themes/one-dark-syntax) syntax highlighting for 1337 code sharing.
 [Taxonomy Pages](https://gohugo.io/content-management/taxonomies) | Help users discover taxonomic content. After Dark automatically generates taxonomy and taxonomy terms pages and links to them in post bylines.
 [Error Page](https://hackcabin.com/post/after-dark-error-page-redesign/) | Decrease bounce rate when URL errors occur. After Dark provides an engaging 404 page with animated background.
 Pagination | Pagination can be hard. After Dark makes it easy with simple list pagination with page indicators.
@@ -533,21 +533,31 @@ Reference Hugo's [Syntax Highlighting docs](https://gohugo.io/content-management
 
 After Dark uses [hack.css](https://hackcss.egoist.moe/dark.html) to automatically style your markup, giving you instant access to flexbox grids, light and dark theme variants, and other pre-built components. Use them while creating new [sections](#section-menu) leveraging [block templates](https://gohugo.io/templates/blocks). Additional personalization options listed below.
 
+#### Theme Variants
+
+Choose between one of several theme variants. [`hack.css`](https://hackcss.egoist.moe/) provides two display modes and three color palettes. Mix and match directly from your `config.toml`:
+
+```
+[params.hackcss]
+  disabled = false
+  mode = "standard"
+  palette = "dark-grey"
+```
+
+Once updated take a look at the 404 page, `theme-color.html` partial, and add any [Custom Styles](#custom-styles) you desire.
+
 #### Custom Styles
 
 Customize theme styles without forking using Hugo's inbuilt [Partial Templates](https://gohugo.io/templates/partials/). To get started:
 
-1. Create a `critical-custom.css` in your site's `layouts/partials/head` directory. If the directory does not exist yet, simply create it.
+1. Create a file named `custom.css` in your site's `assets/css` directory. If the directory does not exist yet, simply create it.
 2. Add your custom styles inside the file.
 
-Example customization file:
+**Note:** After Dark ships with some example customizations. If you would like to keep these copy the styles from the theme's `custom.css` file into your site's `custom.css` after creating it.
+
+Example customizations:
 
 ```css
-/* override theme defaults */
-.muted {
-  color: rgba(255, 255, 255, 0.5);
-}
-/* custom styles */
 figure {
   margin-left: auto;
   margin-right: auto;
@@ -564,19 +574,7 @@ figure a:hover {
 }
 ```
 
-Styles are inlined into the `head` of each page. If you would prefer to use external stylesheets override the `partials/global-styles.html` template, modeling from the theme's version of the file, and make any adjustments you see fit.
-
-#### Theme Variants
-
-[`hack.css`](https://hackcss.egoist.moe/) provides a few variants you may wish to use instead of the After Dark defaults. To download them do an `npm install` from `/themes/after-dark/` (assumes NodeJS installed).
-
-Once downloaded, open `./node_modules/hack/dist`, copy the styles you wish to use into a `critical-vendor.css` [template override](https://gohugo.io/themes/customizing/#override-template-files) and apply the variant by setting `theme_variant` in your site config to one of:
-
-    "standard"
-    "hack dark-grey"
-    "hack solarized-dark"
-
-Once variant applied, open your browser's dev tools and test the changes by previewing your site on mobile, tablet and desktop at different display resolutions and orientations—overriding and making any desired changes to your [overridden](https://gohugo.io/themes/customizing/#override-template-files) `critical-theme.css`, 404 page, `theme-color.html` and [Custom Styles](#custom-styles).
+Styles are inlined into the `head` of each page. If you with to link to an external stylesheet, override the `partials/global-styles.html` template, modeling from the theme's version of the file, and make any adjustments you see fit.
 
 #### Favicon
 
