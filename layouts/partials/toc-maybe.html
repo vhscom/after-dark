@@ -11,10 +11,13 @@
         el.onclick = null;
       };
       document.querySelectorAll('#TableOfContents a').forEach(link => {
-        link.addEventListener('click', () => {
+        link.addEventListener('click', (evt) => {
+          evt.preventDefault();
+          const selector = link.href.slice(link.href.indexOf('#'));
           document.querySelector(
-            link.href.slice(link.href.indexOf('#'))
+            selector
           ).scrollIntoView({ behavior: 'smooth' });
+          window.history.pushState({}, "", selector);
         });
       });
     })(window, document);
