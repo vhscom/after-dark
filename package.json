@@ -26,11 +26,11 @@
   },
   "dependencies": {
     "atom-one-chroma": "^2.0.0",
+    "fuse.js": "^3.2.1",
     "hack": "^0.8.1",
-    "lazysizes": "^4.0.1",
-    "smoothscroll-polyfill": "^0.4.3",
-    "fuse.js": "^3.2.0",
+    "lazysizes": "^4.0.4",
     "mark.js": "^8.11.1",
+    "smoothscroll-polyfill": "^0.4.3",
     "vue": "^2.5.16"
   },
   "devDependencies": {
