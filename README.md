@@ -2,11 +2,11 @@
 
 > A retro dark theme for <a target="intro" href="https://gohugo.io/">Hugo</a>.
 
-![Screenshots of After Dark running on a MacBook and iPhone](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/minimal-mac.png)
-
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![NPM downloads per month](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![WTFPL licensed](https://img.shields.io/npm/l/after-dark.svg?style=flat-square&longCache=true)](https://codeberg.org/vhs/after-dark/src/branch/master/COPYING)
+
+![Screenshots of After Dark running on a MacBook and iPhone](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/minimal-mac.png)
 
 ## Features
 
