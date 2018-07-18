@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.0.2"></a>
+## 4.0.2 (2018-07-18)
+
+
+### Bug Fixes
+
+* **install:** update default open graph image ([aaaf64e](https://codeberg.org/vhs/after-dark/commits/aaaf64e))
+* **layouts:** output urls relative to baseurl ([2d278dd](https://codeberg.org/vhs/after-dark/commits/2d278dd)), closes [#4](https://codeberg.org/vhs/after-dark/issues/4)
+* **layouts:** restore smooth scrolling to toc links ([89a9c8d](https://codeberg.org/vhs/after-dark/commits/89a9c8d))
+
+
+
 <a name="4.0.1"></a>
 ## [4.0.1](https://codeberg.org/vhs/after-dark/compare/v4.0.0...v4.0.1) (2018-07-18)
 
