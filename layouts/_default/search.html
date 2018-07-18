@@ -36,10 +36,10 @@
 {{ end }}
 {{ define "footer" }}
   {{ partial "powered-by.html" . }}
-  <script src="/js/vue.min.js"></script>
-  <script src="/js/lodash.custom.min.js"></script>
-  <script src="/js/fuse.min.js"></script>
-  <script src="/js/mark.min.js"></script>
+  <script src={{ "/js/vue.min.js" | relURL }}></script>
+  <script src={{ "/js/lodash.custom.min.js" | relURL }}></script>
+  <script src={{ "/js/fuse.min.js" | relURL }}></script>
+  <script src={{ "/js/mark.min.js" | relURL }}></script>
   <script>
     (function (window, document, undefined) {
       "use strict"
