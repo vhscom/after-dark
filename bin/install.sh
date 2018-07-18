@@ -63,7 +63,11 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   images = [
     "https://source.unsplash.com/collection/983219/2000x1322"
   ] # Suggested, controls default Open Graph images
-  theme_variant = "" # Optional, for use to overriding default theme
+
+[params.hackcss]
+  disabled = false # Optional, set `true` to disable hackcss
+  mode = "hack" # Optional, choose from `standard` or `hack` display modes
+  palette = "dark" # Optional, choose `dark`, `dark-grey` or `solarized-dark`
 TOML
 
 echo "Creating an example post to get you started ..."
