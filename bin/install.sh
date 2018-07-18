@@ -61,7 +61,7 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   show_menu = false # Optional, set true to enable section menu
   powered_by = true # Optional, set false to disable credits
   images = [
-    "https://source.unsplash.com/category/technology/2000x1322"
+    "https://source.unsplash.com/collection/983219/2000x1322"
   ] # Suggested, controls default Open Graph images
   theme_variant = "" # Optional, for use to overriding default theme
 TOML
