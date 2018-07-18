@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.0.1"></a>
+## [4.0.1](https://codeberg.org/vhs/after-dark/compare/v4.0.0...v4.0.1) (2018-07-18)
+
+
+### Bug Fixes
+
+* **hugo:** require 0.44 at minimum ([78a09c8](https://codeberg.org/vhs/after-dark/commits/78a09c8))
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://codeberg.org/vhs/after-dark/compare/v3.10.1...v4.0.0) (2018-07-09)
 
