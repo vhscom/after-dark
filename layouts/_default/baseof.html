@@ -38,8 +38,10 @@
     {{ partial "global-styles.html" . }}
     {{ partial "async-scripts.html" . }}
   </head>
-  {{ $theme_variant := .Site.Params.theme_variant | default "hack dark" }}
-  <body class="{{ $theme_variant }} main container">
+  {{ $hackcss_disabled := .Site.Params.hackcss.disabled | default false }}
+  {{ $hackcss_mode := .Site.Params.hackcss.mode | default "hack" }}
+  {{ $hackcss_palette := .Site.Params.hackcss.palette | default "dark" }}
+  <body class="{{ if ne $hackcss_disabled true }}{{ $hackcss_mode }} {{ $hackcss_palette }} main container{{ end }}">
     <header>{{ block "header" . }}{{ end }}</header>
     <main>{{ block "main" . }}{{ end }}</main>
     <footer>{{ block "footer" . }}{{ end }}</footer>
