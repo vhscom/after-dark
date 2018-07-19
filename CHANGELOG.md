@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://codeberg.org/vhs/after-dark/compare/v4.0.2...v4.1.0) (2018-07-19)
+
+
+### Features
+
+* select theme variant directly from site config ([aa82f5d](https://codeberg.org/vhs/after-dark/commits/aa82f5d)), closes [#6](https://codeberg.org/vhs/after-dark/issues/6)
+
+
+### BREAKING CHANGES
+
+* hugo 0.43 and above required. css override file locations have changed
+
+
+
 <a name="4.0.2"></a>
 ## 4.0.2 (2018-07-18)
 
