@@ -523,7 +523,7 @@ Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/con
 
 Provide a richer experience when sharing code snippets on your site. After Dark provides a [hackable code highlighter](https://codeberg.org/vhs/atom-one-chroma) using the lovely [One Dark](https://atom.io/themes/one-dark-syntax) and [One Light](https://atom.io/themes/one-light-syntax) syntax themes.
 
-![Syntax Highlighting screenshot](https://codeberg.org/vhs/after-dark/src/branch/master/images/docs/feat-syntax-highlighting.png "Syntax Highlighting with Atom One")
+![Syntax Highlighting screenshot](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/feat-syntax-highlighting.png "Syntax Highlighting with Atom One")
 
 To set-up syntax highlighting for your After Dark site copy the contents of [`light.css`](https://cdn.jsdelivr.net/npm/atom-one-chroma/dist/light.css) or [`dark.css`](https://cdn.jsdelivr.net/npm/atom-one-chroma/dist/dark.css) into your [Custom Styles](#custom-styles) file and rebuild your site. Once configured, simply use Hugo built-in [`highlight` shortcode](https://gohugo.io/extras/shortcodes#highlight) to highlight your code.
 
