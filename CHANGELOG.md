@@ -8,7 +8,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* select theme variant directly from site config ([aa82f5d](https://codeberg.org/vhs/after-dark/commits/aa82f5d)), closes [#6](https://codeberg.org/vhs/after-dark/issues/6)
+* select theme variant directly from site config ([aa82f5d](https://codeberg.org/vhs/after-dark/commit/aa82f5d)), closes [#6](https://codeberg.org/vhs/after-dark/issues/6)
 
 
 ### BREAKING CHANGES
@@ -23,9 +23,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* **install:** update default open graph image ([aaaf64e](https://codeberg.org/vhs/after-dark/commits/aaaf64e))
-* **layouts:** output urls relative to baseurl ([2d278dd](https://codeberg.org/vhs/after-dark/commits/2d278dd)), closes [#4](https://codeberg.org/vhs/after-dark/issues/4)
-* **layouts:** restore smooth scrolling to toc links ([89a9c8d](https://codeberg.org/vhs/after-dark/commits/89a9c8d))
+* **install:** update default open graph image ([aaaf64e](https://codeberg.org/vhs/after-dark/commit/aaaf64e))
+* **layouts:** output urls relative to baseurl ([2d278dd](https://codeberg.org/vhs/after-dark/commit/2d278dd)), closes [#4](https://codeberg.org/vhs/after-dark/issues/4)
+* **layouts:** restore smooth scrolling to toc links ([89a9c8d](https://codeberg.org/vhs/after-dark/commit/89a9c8d))
 
 
 
