@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.0.0"></a>
+# [5.0.0](https://codeberg.org/vhs/after-dark/compare/v4.1.0...v5.0.0) (2018-07-21)
+
+
+### Features
+
+* **modules:** add analytics module ([9334f15](https://codeberg.org/vhs/after-dark/commits/9334f15)), closes [#1](https://codeberg.org/vhs/after-dark/issues/1)
+
+
+### BREAKING CHANGES
+
+* **modules:** google analytics no longer supported
+
+
+
 <a name="4.1.0"></a>
 # [4.1.0](https://codeberg.org/vhs/after-dark/compare/v4.0.2...v4.1.0) (2018-07-19)
 
