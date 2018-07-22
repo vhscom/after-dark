@@ -1,0 +1,5 @@
+{{ with .Site.Params.modules }}
+  {{ with .voyeur }}
+    {{ partial "modules/voyeur/index.html" . }}
+  {{ end }}
+{{ end }}
