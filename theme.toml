@@ -1,7 +1,7 @@
 name = "After Dark"
 license = "WTFPL"
 licenselink = "https://codeberg.org/vhs/after-dark/src/branch/master/COPYING"
-description = "A retro dark theme for Hugo."
+description = "A deceptively simple dark theme for Hugo."
 homepage = "https://codeberg.org/vhs/after-dark/"
 tags = [
   "personal",
