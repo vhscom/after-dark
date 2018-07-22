@@ -23,11 +23,7 @@
       {{ partial "head/site-verification.html" . }}
     {{ end }}
     {{ partial "meta/http-referrer.html" . }}
-    {{ with .Site.Params.modules }}
-      {{ with .voyeur }}
-        {{ partial "modules/voyeur/index.html" . }}
-      {{ end }}
-    {{ end }}
+    {{ partial "modules.html" . }}
     {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
     {{ end }}
