@@ -15,7 +15,7 @@ Before you continue, please take a moment to configure your archetypes.
 
 Archetypes are located in the `archetypes` directory in the source of your site. To learn more about archetypes, visit [Archetypes](https://gohugo.io/content-management/archetypes/) on the Hugo website. And when you're ready, check out the [Customizing](https://vhs.github.io/after-dark/#customizing) section of the After Dark documentation for additional options.
 
-To see this message again run hugo with the `--buildDrafts` flag.
+To see this message again run `hugo serve` with the `--buildDrafts` flag. For help run `hugo --help`.
 
 <!--more-->
 This information appears below the [Summary Split](https://gohugo.io/content-management/summaries/).
