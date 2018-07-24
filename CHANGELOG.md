@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.1.0"></a>
+# [5.1.0](https://codeberg.org/vhs/after-dark/compare/v5.0.0...v5.1.0) (2018-07-24)
+
+
+### Features
+
+* **modules:** add fractal forest module for bpg image format support ([8aa35b2](https://codeberg.org/vhs/after-dark/commits/8aa35b2)), closes [#8](https://codeberg.org/vhs/after-dark/issues/8)
+
+
+
 <a name="5.0.0"></a>
 # [5.0.0](https://codeberg.org/vhs/after-dark/compare/v4.1.0...v5.0.0) (2018-07-21)
 
