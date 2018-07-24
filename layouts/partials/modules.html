@@ -1,4 +1,7 @@
 {{ with .Site.Params.modules }}
+  {{ with .fractal_forest }}
+    {{ partial "modules/fractal-forest/index.html" . }}
+  {{ end }}
   {{ with .voyeur }}
     {{ partial "modules/voyeur/index.html" . }}
   {{ end }}
