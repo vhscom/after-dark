@@ -28,8 +28,9 @@ fi
 
 echo "Installing After Dark ..."
 
-# Clone repo
-(cd themes; git clone -q --depth 1 https://codeberg.org/vhs/after-dark || { echo "cloning failed :/"; exit 1; })
+# Clone theme and bpg image format module
+git clone -q --depth 1 https://codeberg.org/vhs/after-dark themes/after-dark || { echo "failed to clone theme"; exit 1; }
+git clone -q --depth 1 https://codeberg.org/vhs/fractal-forest themes/fractal-forest || { echo "failed to theme module"; exit 1; }
 
 # Copy archetypes
 cp themes/after-dark/archetypes/* ./archetypes
@@ -48,6 +49,7 @@ paginate = 11 # Number of posts to show before paginating
 
 # Controls default theme and theme components
 theme = [
+  "fractal-forest",
   "after-dark"
 ]
 
@@ -60,7 +62,7 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 [params]
   description = "" # Suggested, controls default description meta
   author = "" # Optional, controls author name display on posts
-  hide_author = false # Optional, set true to hide author name on posts
+  hide_author = true # Optional, set true to hide author name on posts
   show_menu = false # Optional, set true to enable section menu
   powered_by = true # Optional, set false to disable credits
   images = [
@@ -71,6 +73,9 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   disabled = false # Optional, set `true` to disable hackcss
   mode = "hack" # Optional, choose from `standard` or `hack` display modes
   palette = "dark" # Optional, choose `dark`, `dark-grey` or `solarized-dark`
+
+[params.modules.fractal_forest]
+  decoders = ["bpgdec8a"]
 TOML
 
 echo "Creating an example post to get you started ..."
@@ -83,10 +88,10 @@ echo "Serving your After Dark site ..."
 # Serve site backgrounded over Docker-friendly loopback
 hugo serve --buildDrafts --port 1337 --bind "0.0.0.0" &
 
-# Wait a second for Hugo server to fire up
+# Wait for Hugo to start
 sleep 1
 
-# Pop the site in terminal browser, if installed
+# Open site in elinks, if installed
 if [[ "elinks" != "" ]]; then
   elinks http://0.0.0.0:1337/
 fi
