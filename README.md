@@ -57,12 +57,12 @@ Installation should complete in a matter of seconds.
 
 ### Module System
 
-After Dark uses Hugo's [Theme Components](https://gohugo.io/themes/theme-components/) functionality to provide add-on modules for the theme. These are entirely optional and are not required for basic functionality. A summary of available modules and links to their repositories can be found in the following table.
+After Dark uses Hugo [Theme Components](https://gohugo.io/themes/theme-components/) to provide optional add-on modules. Each module is packaged as an NPM module for convenience. A summary of available modules can be found in the following table.
 
-Module Name | Description
-------------|--------
-[Fractal Forest] | Better Portable Graphics
-[Voyeur] | Simple, trustworthy website analytics
+Module Name | Latest Version | Description
+---|---|---
+[Fractal Forest] | [![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://codeberg.org/vhs/fractal-forest/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400)](https://codeberg.org/vhs/fractal-forest.git) | Better Portable Graphics
+[Voyeur] | [![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://codeberg.org/vhs/voyeur/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400)](https://codeberg.org/vhs/voyeur.git) | Simple, trustworthy website analytics
 
 ### Section Menu
 
