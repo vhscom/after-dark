@@ -1,0 +1,141 @@
+#!/bin/bash
+set -e
+
+function create_site() {
+   # Exit with error if hugo is not installed
+   if ! hash hugo 2>/dev/null ; then
+     echo "Error: After Dark requires Hugo version 0.44 or greater" >&2; exit 1
+   fi
+
+   # Exit with error if not minimum required hugo version
+   local re='v(0\d*\.(([4-9][4-9]|[5-9]))|[1-9]).*'
+   if ! [[ $(hugo version) =~ $re ]] ; then
+      echo "Error: After Dark requires Hugo version 0.44 or greater" >&2; exit 1
+   fi
+
+   # Create new hugo site at specified location
+   echo "Creating a new Hugo site ..."
+   if [ "$CONTINUE" = "y" ] ; then
+      hugo new site --force $SITE_DIR 1>/dev/null
+   else
+      hugo new site $SITE_DIR 1>/dev/null
+   fi
+   cd "$SITE_DIR"
+}
+
+function download_theme() {
+   # Download latest version of After Dark theme
+   echo "Downloading the latest version of After Dark theme ..."
+   local v=$(wget -O - https://codeberg.org/vhs/after-dark/raw/branch/master/package.json 2>&1 /dev/null | grep -o '"version"\s*:\s*.*",' | tr -d 'version": ,')
+   local t=$(mktemp)
+   wget https://codeberg.org/vhs/after-dark/archive/v${v}.tar.gz -qO "$t"
+   tar -xzf "$t" -C themes
+   rm "$t"
+   echo "Theme version $v downloaded to $SITE_DIR/themes/after-dark"
+}
+
+function download_module() {
+   # Download latest version of Fractal Forest for After Dark theme
+   echo "Downloading Better Portable Graphics module for After Dark theme ..."
+   local v=$(wget -O - https://codeberg.org/vhs/fractal-forest/raw/branch/master/package.json 2>&1 /dev/null | grep -o '"version"\s*:\s*.*",' | tr -d 'version": ,')
+   local t=$(mktemp)
+   wget https://codeberg.org/vhs/fractal-forest/archive/v${v}.tar.gz -qO "$t"
+   tar -xzf "$t" -C themes
+   rm "$t"
+   echo "Module version $v downloaded to $SITE_DIR/themes/fractal-forest"
+}
+
+function configure_theme() {
+   # Provide basic configuration and ignore generated files
+   echo "Configuring basic After Dark theme settings ..."
+   tee "config.toml" > /dev/null <<TOML
+baseurl = "https://c74ce35e.ngrok.io/" # Controls base URL
+languageCode = "en-US" # Controls site language
+title = "After Dark" # Homepage title and page title suffix
+paginate = 11 # Number of posts to show before paginating
+
+# Controls default theme and theme components
+theme = [
+  "fractal-forest",
+  "after-dark"
+]
+
+enableRobotsTXT = true # Suggested, enable robots.txt file
+googleAnalytics = "" # Optional, add tracking Id for analytics
+disqusShortname = "" # Optional, add Disqus shortname for comments
+SectionPagesMenu = "main" # Enable menu system for lazy bloggers
+footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
+
+[params]
+  description = "" # Suggested, controls default description meta
+  author = "" # Optional, controls author name display on posts
+  hide_author = true # Optional, set true to hide author name on posts
+  show_menu = false # Optional, set true to enable section menu
+  powered_by = true # Optional, set false to disable credits
+  images = [
+    "https://source.unsplash.com/collection/983219/2000x1322"
+  ] # Suggested, controls default Open Graph images
+
+[params.hackcss]
+  disabled = false # Optional, set true to disable hackcss
+  mode = "hack" # Optional, choose from standard or hack display modes
+  palette = "dark" # Optional, choose from dark, dark-grey and solarized-dark
+
+[params.modules.fractal_forest]
+  enabled = true # Optional, set false to disable module
+  decoders = ["bpgdec8a"] # Optional, 8-bit javascript decoder with animation
+TOML
+
+   echo "public" > .gitignore
+   echo "resources" >> .gitignore
+}
+
+function create_example_post() {
+   echo "Creating an example post to get you started ..."
+   hugo new post/starry-night.md 1>/dev/null
+}
+
+function serve_site_maybe() {
+   if hash elinks 2>/dev/null ; then
+      echo "Opening your new After Dark site in elinks ..."
+      hugo serve --buildDrafts --port 1337 --bind "0.0.0.0" 1>/dev/null &
+      sleep 1
+      elinks http://0.0.0.0:1337/
+   fi
+}
+
+function create_site_dir() {
+   local path=${1}
+   if [[ "$path" == "" ]] ; then
+      SITE_DIR="flying-toasters"
+   else
+      SITE_DIR="$path"
+   fi;
+
+   SITE_DIR_ABS="$PWD/$SITE_DIR"
+   if [ -d "$SITE_DIR" ] ; then
+      read -p "Warning: $SITE_DIR_ABS already exists. Do you want to continue [y/N]? " CONTINUE
+      if [ "$CONTINUE" != "y" ] ; then exit 0 ; fi
+   fi;
+
+   if [ ! -e "$SITE_DIR" ] ; then
+      echo "Creating directory $SITE_DIR_ABS"
+      mkdir -p "$SITE_DIR"
+      chmod 755 "$SITE_DIR"
+   fi;
+}
+
+echo "Welcome to the After Dark quick installer. Press CTRL-C at any time to abort."
+
+create_site_dir ${1}
+create_site
+download_theme
+download_module
+configure_theme
+create_example_post
+serve_site_maybe
+
+echo "Installation completed successfully!"
+echo "Your new site was created in $SITE_DIR_ABS."
+echo "Run 'cd $SITE_DIR && hugo serve --buildDrafts' to serve it."
+echo "Thank you for choosing After Dark."

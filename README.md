@@ -39,16 +39,16 @@ Post Bylines | Rich post bylines include optional author name, word count, links
 
 ## Getting Started
 
-First [Install Hugo](https://gohugo.io/#action) and, optionally, [elinks](http://elinks.or.cz/) on your machine. Instructions for installing both using [Homebrew](https://brew.sh/) on macOS:
+First [Install Hugo](https://gohugo.io/getting-started/installing) and, optionally, [elinks](http://elinks.or.cz/) on your machine. Instructions for installing both using [Homebrew](https://brew.sh/) on macOS:
 
 ```shell
 brew install hugo elinks
 ```
 
-Then run the install script located in `bin/install.sh`, or just paste this into a terminal and press <kbd>Enter</kbd>:
+Then run the install script located in `bin/install`, or just paste this into a terminal and press <kbd>Enter</kbd>:
 
 ```shell
-curl -s https://codeberg.org/vhs/after-dark/raw/branch/master/bin/install.sh | sh
+curl -s https://codeberg.org/vhs/after-dark/raw/branch/master/bin/install| bash
 ```
 
 Installation should complete in a matter of seconds.
