@@ -36,7 +36,7 @@ function download_theme() {
 
 function download_module() {
    # Download latest version of Fractal Forest for After Dark theme
-   echo "Downloading Better Portable Graphics module for After Dark theme ..."
+   echo "Downloading Fractal Forest module for After Dark theme ..."
    local v=$(wget -O - https://codeberg.org/vhs/fractal-forest/raw/branch/master/package.json 2>&1 /dev/null | grep -o '"version"\s*:\s*.*",' | tr -d 'version": ,')
    local t=$(mktemp)
    wget https://codeberg.org/vhs/fractal-forest/archive/v${v}.tar.gz -qO "$t"
@@ -85,9 +85,6 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   enabled = true # Optional, set false to disable module
   decoders = ["bpgdec8a"] # Optional, 8-bit javascript decoder with animation
 TOML
-
-   echo "public" > .gitignore
-   echo "resources" >> .gitignore
 }
 
 function create_example_post() {
