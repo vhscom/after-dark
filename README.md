@@ -48,7 +48,7 @@ brew install hugo elinks
 Then run the install script located in `bin/install`, or just paste this into a terminal and press <kbd>Enter</kbd>:
 
 ```shell
-curl -s https://codeberg.org/vhs/after-dark/raw/branch/master/bin/install| bash
+curl -s https://codeberg.org/vhs/after-dark/raw/branch/master/bin/install | bash
 ```
 
 Installation should complete in a matter of seconds.
