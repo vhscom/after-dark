@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.2.0"></a>
+# [5.2.0](https://codeberg.org/vhs/after-dark/compare/v5.1.0...v5.2.0) (2018-07-26)
+
+
+### Features
+
+* **install:** streamline installation ([abf92fe](https://codeberg.org/vhs/after-dark/commits/abf92fe)), closes [#2](https://codeberg.org/vhs/after-dark/issues/2)
+
+
+
 <a name="5.1.0"></a>
 # [5.1.0](https://codeberg.org/vhs/after-dark/compare/v5.0.0...v5.1.0) (2018-07-24)
 
