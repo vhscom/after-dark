@@ -8,6 +8,10 @@
 [![Telegram chat](https://img.shields.io/badge/chat-telegram-32AFED.svg?style=flat-square)](https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg)
 [![WTFPL licensed](https://img.shields.io/npm/l/after-dark.svg?style=flat-square&longCache=true)](https://codeberg.org/vhs/after-dark/src/branch/master/COPYING)
 
+## Demo & Tutorial
+
+Head to [Hack Cabin](https://hackcabin.com) for a **production example** of which the [site architecture](https://hackcabin.com/post/initial-commit/) can be recreated using a [step-by-step guide](https://vhs.codeberg.page/zero-to-http-2). And while you're looking at example sites, check out [a few others](https://codeberg.org/vhs/after-dark/wiki/) for even more inspiration.
+
 ## Features
 
 Feature | Summary
@@ -32,10 +36,6 @@ Feature | Summary
 Pagination | Pagination can be hard. After Dark makes it easy with simple list pagination with page indicators.
 Reading Time | Set user expectations up-front. After Dark provides estimated reading time for each post near the top of the page. This feature is automatic and assumes a reading speed of 200-250 words per minute.
 Post Bylines | Rich post bylines include optional author name, word count, links to taxonomy pages and metadata for search engines.
-
-## Demo & Tutorial
-
-Head to [Hack Cabin](https://hackcabin.com) for a **production example** of which the [site architecture](https://hackcabin.com/post/initial-commit/) can be recreated using a [step-by-step guide](https://vhs.codeberg.page/zero-to-http-2). And while you're looking at example sites, check out [a few others](https://codeberg.org/vhs/after-dark/wiki/) for even more inspiration.
 
 ## Getting Started
 
