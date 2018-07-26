@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.2.1"></a>
+## [5.2.1](https://codeberg.org/vhs/after-dark/compare/v5.2.0...v5.2.1) (2018-07-26)
+
+
+### Bug Fixes
+
+* **install:** remove git cruft & supply actual module name ([a0097a0](https://codeberg.org/vhs/after-dark/commits/a0097a0))
+
+
+
 <a name="5.2.0"></a>
 # [5.2.0](https://codeberg.org/vhs/after-dark/compare/v5.1.0...v5.2.0) (2018-07-26)
 
