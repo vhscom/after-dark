@@ -574,16 +574,20 @@ Once updated take a look at the 404 page, `theme-color.html` partial, and add an
 
 #### Custom Styles
 
-Customize theme styles without forking using Hugo's inbuilt [Partial Templates](https://gohugo.io/templates/partials/). To get started:
+Easily add and customize styles without modifying the theme simply by overriding styles in your site. To get started:
 
 1. Create a file named `custom.css` in your site's `assets/css` directory. If the directory does not exist yet, simply create it.
-2. Add your custom styles inside the file.
+2. Add your custom styles inside the file and rebuild your site.
 
-**Note:** After Dark ships with some example customizations. If you would like to keep these copy the styles from the theme's `custom.css` file into your site's `custom.css` after creating it.
+**Note:** After Dark ships with some example customizations. If you would like to keep these, copy the styles from the theme's version of `custom.css` into your site-level `custom.css` file after creating it.
 
 Example customizations:
 
 ```css
+canvas {
+  margin: auto;
+  display: block;
+}
 figure {
   margin-left: auto;
   margin-right: auto;
@@ -600,7 +604,7 @@ figure a:hover {
 }
 ```
 
-Styles are inlined into the `head` of each page. If you with to link to an external stylesheet, override the `partials/global-styles.html` template, modeling from the theme's version of the file, and make any adjustments you see fit.
+Custom styles will be automatically be concatenated into a `style` element in the document `head` along with theme and vendor styles. See the [Asset Bundling](https://gohugo.io/hugo-pipes/bundling/) section of the [Hugo Pipes](https://gohugo.io/hugo-pipes/) documentation for a better understanding of how this works.
 
 #### Favicon
 
