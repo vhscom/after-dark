@@ -8,7 +8,23 @@
 [![Telegram chat](https://img.shields.io/badge/chat-telegram-32AFED.svg?style=flat-square)](https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg)
 [![WTFPL licensed](https://img.shields.io/npm/l/after-dark.svg?style=flat-square&longCache=true)](https://codeberg.org/vhs/after-dark/src/branch/master/COPYING)
 
+## Principia
+
+> People can't live with change if there's not a changeless core inside them. —Stephen R. Covey, The 7 Habits of Highly Effective People
+
+Features are great, but not if they arise without reason. Let the following principles serve as a guide for change in After Dark.
+
+Principle | Description
+---|---
+Deceptive Simplicity | After Dark is [just a theme](https://themes.gohugo.io/after-dark/), making it a suitable starting point for novice and advanced users alike. It advances using the “Code for today and not for tomorrow” philosophy of <abbr title="eXtreme Programming">XP</abbr> and includes only what's necessary to create and run a site, nothing more.
+Performance Optimized | Page content, favicon, required scripts and styles load in a single request on all pages. Ancillary resources are then loaded asynchronously in an unobtrusive manner, resulting in a ~1 second initial page load over 2G when edge caching.
+Inclusive Design | After Dark is designed to function optimally on mobile, tablet, desktop as well as terminal browsers such as [elinks]. This design approach typically results in reasonable accessibility and will help reduce the need for site maintenance over time.
+Semantic Versioning | Predictable changes help you keep up-to-date on what's changing. After Dark uses [Semantic Versioning](http://semver.org/) and keeps a [CHANGELOG](https://keepachangelog.com/en/1.0.0/) to enable theme users better decide when to upgrade, if at all.
+Scalable Core | After Dark is capable of generating ~1000 pages per second and will operate reasonably quickly even when run on constrained hardware thanks to its only hard software dependency: [Hugo](https://gohugo.io/).
+
 ## Features
+
+The following table summarizes various theme features considered important enough to differentiate After Dark from other Hugo themes.
 
 Feature | Summary
 --------|--------
@@ -39,7 +55,7 @@ Head to [Hack Cabin](https://hackcabin.com) for a **production example** of whic
 
 ## Getting Started
 
-First [Install Hugo](https://gohugo.io/getting-started/installing) and, optionally, [elinks](http://elinks.or.cz/) on your machine. Instructions for installing both using [Homebrew](https://brew.sh/) on macOS:
+First [Install Hugo](https://gohugo.io/getting-started/installing) and, optionally, [elinks] on your machine. Instructions for installing both using [Homebrew](https://brew.sh/) on macOS:
 
 ```shell
 brew install hugo elinks
@@ -600,5 +616,6 @@ terms of the Do What The Fuck You Want To Public License, Version 2,
 as published by Sam Hocevar. See the COPYING file for more details.
 
 [lazysizes]: https://github.com/aFarkas/lazysizes
+[elinks]: http://elinks.or.cz/
 [Fractal Forest]: https://codeberg.org/vhs/fractal-forest
 [Voyeur]: https://codeberg.org/vhs/voyeur
