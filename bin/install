@@ -107,19 +107,19 @@ function create_site_dir() {
       SITE_DIR="flying-toasters"
    else
       SITE_DIR="$path"
-   fi;
+   fi
 
    SITE_DIR_ABS="$PWD/$SITE_DIR"
    if [ -d "$SITE_DIR" ] ; then
       read -p "Warning: $SITE_DIR_ABS already exists. Do you want to continue [y/N]? " CONTINUE
       if [ "$CONTINUE" != "y" ] ; then exit 0 ; fi
-   fi;
+   fi
 
    if [ ! -e "$SITE_DIR" ] ; then
       echo "Creating directory $SITE_DIR_ABS"
       mkdir -p "$SITE_DIR"
       chmod 755 "$SITE_DIR"
-   fi;
+   fi
 }
 
 echo "Welcome to the After Dark quick installer. Press CTRL-C at any time to abort."
