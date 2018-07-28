@@ -12,7 +12,7 @@
 
 ## Demo & Tutorial
 
-Visit [Hack Cabin](https://hackcabin.com) for a production example of which can be recreated using a [step-by-step guide](https://vhs.codeberg.page/zero-to-http-2).
+Visit [Hack Cabin](https://hackcabin.com) for a production example of which the [site architecture](https://hackcabin.com/post/initial-commit/#site-architecture) can be recreated using a [step-by-step guide](https://vhs.codeberg.page/zero-to-http-2).
 
 ## Principia
 
