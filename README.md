@@ -16,9 +16,7 @@ Visit [Hack Cabin](https://hackcabin.com) for a production example of which can 
 
 ## Principia
 
-> People can't live with change if there's not a changeless core inside them. —Stephen R. Covey, The 7 Habits of Highly Effective People
-
-Features are great, but not if they arise without reason. Let the following principles serve as a guide for change in After Dark.
+Features are great, especially when they're there for a reason. Let the following principles serve as a guide for change in the theme.
 
 Principle | Description
 ---|---
