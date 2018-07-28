@@ -20,7 +20,7 @@ Features are great, especially when they're there for a reason. Let the followin
 
 Principle | Description
 ---|---
-Deceptive Simplicity | After Dark is [just a theme](https://themes.gohugo.io/after-dark/), making it a suitable starting point for novice and advanced users alike. Start peeling back the layers, however, and there's more than meets the eye.
+Deceptive Simplicity | After Dark is [just a theme](https://themes.gohugo.io/after-dark/), making it a suitable starting point for beginners. Peel back the layers and discover functionality complex enough to level-up even seasoned programmers.
 Privacy Focused | Your data is your property. After Dark regards it as private and will make every attempt possible to help you safeguard it from unexpected leakage or use without your knowledge or express consent. Both for you and for your end-users.
 Performance Optimized | Page content, favicon, required scripts and styles load in a single request on all pages. Ancillary resources are then loaded asynchronously in an unobtrusive manner, resulting in a ~1 second initial page load over 2G when edge caching.
 Inclusive Design | After Dark is designed to function optimally on mobile, tablet, desktop as well as terminal browsers such as [elinks]. This design approach typically results in reasonable accessibility and will help reduce the need for site maintenance over time.
