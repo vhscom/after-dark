@@ -20,12 +20,12 @@ Features are great, but not if they arise without reason. Let the following prin
 
 Principle | Description
 ---|---
-Deceptive Simplicity | After Dark is [just a theme](https://themes.gohugo.io/after-dark/), making it a suitable starting point for novice and advanced users alike. It advances using the “Code for today and not for tomorrow” philosophy of <abbr title="eXtreme Programming">XP</abbr> and includes only what's necessary to create and run a site, nothing more.
+Deceptive Simplicity | After Dark is [just a theme](https://themes.gohugo.io/after-dark/), making it a suitable starting point for novice and advanced users alike. Start peeling back the layers, however, and there's more than meets the eye.
 Privacy Focused | Your data is your property. After Dark regards it as private and will make every attempt possible to help you safeguard it from unexpected leakage or use without your knowledge or express consent. Both for you and for your end-users.
 Performance Optimized | Page content, favicon, required scripts and styles load in a single request on all pages. Ancillary resources are then loaded asynchronously in an unobtrusive manner, resulting in a ~1 second initial page load over 2G when edge caching.
 Inclusive Design | After Dark is designed to function optimally on mobile, tablet, desktop as well as terminal browsers such as [elinks]. This design approach typically results in reasonable accessibility and will help reduce the need for site maintenance over time.
-Semantic Versioning | Predictable changes help you keep up-to-date on what's changing. After Dark uses [Semantic Versioning](http://semver.org/) and keeps a [CHANGELOG](https://keepachangelog.com/en/1.0.0/) to enable theme users better decide when to upgrade, if at all.
-Scalable Core | After Dark is capable of generating ~1000 pages per second and will operate reasonably quickly even when run on constrained hardware thanks to its only hard software dependency: [Hugo](https://gohugo.io/).
+Semantic Versioning | Predictable changes help you stay up-to-date with what's new. After Dark strives to use [Semantic Versioning](https://semver.org/) and keeps a [human-readable log](https://keepachangelog.com/) of all changes.
+Scalable to the Core | After Dark is capable of generating ~1000 pages per second and will operate reasonably quickly even when run on constrained hardware thanks to its only hard software dependency: [Hugo](https://gohugo.io/).
 
 ## Features
 
@@ -34,6 +34,7 @@ The following table summarizes various theme features considered important enoug
 Feature | Summary
 --------|--------
 [Module System](#module-system) | Extend After Dark with prebuilt modules to add additional functionality to your site.
+[Quick Installer](#getting-started) | No more copying config from a `README` file. No `git` installation necessary. After Dark provides a cross-platform quick installer. One command will install, configure, run and preview the theme so you can focus on the interesting stuff.
 [Lazy Loading](#lazy-loading) | Lazily load your images, iFrames and script embeds. After Dark ships with [lazysizes](https://github.com/aFarkas/lazysizes), a zero-configuration JavaScript library with LQIP support, responsive images and more.
 [BPG Image Support](#bpg-image-support) | Improve image fidelity and decrease size. Automatically [BPG Image](https://bellard.org/bpg/) support via polyfill.
 [Social Engagement](#social-engagement) | After Dark provides automatic and configurable [Open Graph](http://ogp.me/) support, Twitter Cards and Telegram Instant View template to make social shares pop like 37 pieces of flair.
@@ -44,8 +45,6 @@ Feature | Summary
 [Content Reuse](#content-reuse) | Sometimes plan markdown isn't enough to build engaging page content. For this reason After Dark provides a number of reusable code snippets and shortcodes for adding things blockquotes, figure elements, coubs, videos, <a target="feature" href="https://hackcss.egoist.moe/">hackcss components</a> and more to your pages and posts. Use them to create completely custom layouts or simply spice up an old page.
 [Related Content](#related-content) | Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can increase your site's page views, the time spent on your site and reader loyalty.
 [Table of Contents](#table-of-contents) | Help users locate and share information in long posts. By providing a Table of Contents, users will spend less time scrolling to locate information in larger documents and are more likely to deep link to specific information on a page.
-[Section Menu](#section-menu) | Add and customize your site's global navigation. After Dark uses Hugo's [Section Menu for "the Lazy Blogger"](https://gohugo.io/extras/menus#section-menu-for-the-lazy-blogger), making navigation easy to create and predictable to use.
-[Comments](https://gohugo.io/templates/internal/#disqus) | Improve search rankings and allow users to comment on articles with [Disqus](https://disqus.com/) commenting.
 [Modification Dating](#modification-dating) | Surface recently updated content to users and crawlers, allowing them to understand when a post or page was was last modified. Recently updated posts will be flagged as modified and visually lifted upwards in chronological listings.
 [Syntax Highlighting](#syntax-highlighting) | Share code snippets with style. After Dark provides Atom One [Light](https://atom.io/themes/one-light-syntax) and [Dark](https://atom.io/themes/one-dark-syntax) syntax highlighting for 1337 code sharing.
 [Taxonomy Pages](https://gohugo.io/content-management/taxonomies) | Help users discover taxonomic content. After Dark automatically generates taxonomy and taxonomy terms pages and links to them in post bylines.
