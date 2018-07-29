@@ -8,7 +8,7 @@
 [![Telegram chat](https://img.shields.io/badge/chat-telegram-32AFED.svg?style=flat-square)][1]
 [![WTFPL licensed](https://img.shields.io/npm/l/after-dark.svg?style=flat-square&longCache=true)](https://codeberg.org/vhs/after-dark/src/branch/master/COPYING)
 
-![After Dark screenshots](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/minimal-mac-fs8.png)
+![After Dark screenshots](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/minimal-mac.png)
 
 ## Demo & Tutorial
 
