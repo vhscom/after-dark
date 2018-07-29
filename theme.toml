@@ -5,17 +5,15 @@ description = "A deceptively simple hacker theme for Hugo."
 homepage = "https://codeberg.org/vhs/after-dark/"
 tags = [
   "personal",
-  "simple",
   "minimal",
   "responsive",
   "accessible",
-  "search",
-  "dark",
-  "light",
-  "blog"
+  "search"
 ]
 features = [
+  "Quick Installer",
   "Module System",
+  "Theme Variants",
   "Lazy Loading",
   "Social Engagement",
   "Search Optimization",
@@ -25,14 +23,12 @@ features = [
   "Content Reuse",
   "Related Content",
   "Table of Contents",
-  "Section Menu",
-  "Comments",
   "Modification Dating",
   "Syntax Highlighting",
   "Taxonomy Pages",
   "Error Page",
   "Pagination",
-  "Reading time",
+  "Reading Time",
   "Post Bylines"
 ]
 min_version = 0.44
