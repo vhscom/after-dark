@@ -1,13 +1,15 @@
 {
   "name": "after-dark",
   "version": "5.2.1",
-  "description": "A deceptively simple dark theme for Hugo.",
+  "description": "A deceptively simple hacker theme for Hugo.",
   "author": "VHS <vhsdev@tutanota.com>",
   "keywords": [
+    "docker",
     "hugo",
-    "dark",
-    "blog",
-    "theme"
+    "css",
+    "html",
+    "vuejs",
+    "bash"
   ],
   "repository": {
     "type": "git",
