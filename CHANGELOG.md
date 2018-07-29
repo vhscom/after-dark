@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.2.2"></a>
+## [5.2.2](https://codeberg.org/vhs/after-dark/compare/v5.2.1...v5.2.2) (2018-07-29)
+
+
+### Bug Fixes
+
+* **theme:** enable white theme variant ([3f8f000](https://codeberg.org/vhs/after-dark/commits/3f8f000))
+
+
+
 <a name="5.2.1"></a>
 ## [5.2.1](https://codeberg.org/vhs/after-dark/compare/v5.2.0...v5.2.1) (2018-07-26)
 
