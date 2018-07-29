@@ -40,7 +40,7 @@
   </head>
   {{ $hackcss_disabled := .Site.Params.hackcss.disabled | default false }}
   {{ $hackcss_mode := .Site.Params.hackcss.mode | default "hack" }}
-  {{ $hackcss_palette := .Site.Params.hackcss.palette }}
+  {{ $hackcss_palette := .Site.Params.hackcss.palette | default "dark" }}
   <body class="{{ if ne $hackcss_disabled true }}{{ $hackcss_mode }} {{ $hackcss_palette }} main container{{ end }}">
     <header>{{ block "header" . }}{{ end }}</header>
     <main>{{ block "main" . }}{{ end }}</main>
