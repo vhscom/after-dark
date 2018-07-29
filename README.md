@@ -5,7 +5,7 @@
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![NPM downloads per month](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Minimum Hugo version](https://img.shields.io/badge/hugo->%3D%200.44-FF4088.svg?style=flat-square)](https://gohugo.io)
-[![Telegram chat](https://img.shields.io/badge/chat-telegram-32AFED.svg?style=flat-square)](https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg)
+[![Telegram chat](https://img.shields.io/badge/chat-telegram-32AFED.svg?style=flat-square)][1]
 [![WTFPL licensed](https://img.shields.io/npm/l/after-dark.svg?style=flat-square&longCache=true)](https://codeberg.org/vhs/after-dark/src/branch/master/COPYING)
 
 ![After Dark screenshots](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/minimal-mac-fs8.png)
@@ -16,27 +16,26 @@ Visit [Hack Cabin](https://hackcabin.com) for a production example of which the 
 
 ## Principia
 
-Features are great, especially when they're there for a reason. Let the following principles serve as a guide for change in the theme.
+The following principles serve as a guide for change in the theme.
 
 Principle | Description
 ---|---
-Deceptive Simplicity | After Dark is [just a theme](https://themes.gohugo.io/after-dark/), making it a suitable starting point for beginners. Peel back the layers and discover functionality complex enough to level-up even seasoned programmers.
-Privacy Focused | Your data is your property. After Dark regards it as private and will make every attempt possible to help you safeguard it from unexpected leakage or use without your knowledge or express consent. Both for you and for your end-users.
-Performance Optimized | Page content, favicon, required scripts and styles load in a single request on all pages. Ancillary resources are then loaded asynchronously in an unobtrusive manner, resulting in a ~1 second initial page load over 2G when edge caching.
-Inclusive Design | After Dark is designed to function optimally on mobile, tablet, desktop as well as terminal browsers such as [elinks]. This design approach typically results in reasonable accessibility and will help reduce the need for site maintenance over time.
-Semantic Versioning | Predictable changes help you stay up-to-date with what's new. After Dark strives to use [Semantic Versioning](https://semver.org/) and keeps a [human-readable log](https://keepachangelog.com/) of all changes.
-Scalable to the Core | After Dark is capable of generating ~1000 pages per second and will operate reasonably quickly even when run on constrained hardware thanks to its only hard software dependency: [Hugo](https://gohugo.io/).
+Deceptive Simplicity | After Dark is [just a theme](https://themes.gohugo.io/after-dark/), making it a suitable starting point for beginners. Start peeling back the layers and discover advanced functionality designed to make even complex tasks look easy.
+Privacy Conscious | Your data is your property. After Dark regards it as private and will take reasonable steps to help you safeguard it. Both for you and for your end-users, often without the need for special knowledge or additional set-up.
+Mobile Friendly | Page content, favicon, required scripts and styles load in a single request on all pages. Ancillary resources are then loaded asynchronously in an unobtrusive manner, resulting in a ~1 second initial page load over 2G when edge caching.
+Inclusive Design | After Dark is designed to function optimally on mobile, tablet, desktop as well as terminal browsers. This approach typically results in better-than-average accessibility and will help reduce the amount of site maintenance required over time.
+Semantic Versioning | Predictable changes help you stay up-to-date with what's new and help make informed decisions on when to update, if at all. After Dark uses [Semantic Versioning](https://semver.org/) and keeps a [human-readable log](https://keepachangelog.com/) of all changes.
+Scalable Core | After Dark is capable of generating thousands of pages per second and will operate reasonably well even on constrained hardware thanks to [Hugo](https://gohugo.io/), making it a suitable starting point for everything from the casual blog to a full-blown data aggregator.
 
 ## Features
 
-The following table summarizes various theme features considered important enough to differentiate After Dark from other Hugo themes.
+The following table summarizes key features which differentiate After Dark from other Hugo themes.
 
 Feature | Summary
 --------|--------
-[Module System](#module-system) | Extend After Dark with prebuilt modules to add additional functionality to your site.
-[Quick Installer](#getting-started) | No more copying config from a `README` file. No `git` installation necessary. After Dark provides a cross-platform quick installer. One command will install, configure, run and preview the theme so you can focus on the interesting stuff.
-[Lazy Loading](#lazy-loading) | Lazily load your images, iFrames and script embeds. After Dark ships with [lazysizes](https://github.com/aFarkas/lazysizes), a zero-configuration JavaScript library with LQIP support, responsive images and more.
-[BPG Image Support](#bpg-image-support) | Improve image fidelity and decrease size. Automatically [BPG Image](https://bellard.org/bpg/) support via polyfill.
+[Quick Installer](#getting-started) | After Dark provides a cross-platform quick installer. One command is all you need to start creating a website with Hugo and After Dark.
+[Module System](#module-system) | Add additional functionality to your site using [Hugo Theme Components](https://gohugo.io/themes/theme-components/). After Dark includes a module system and a number of custom-built modules specifically designed to enhance your site.
+[Lazy Loading](#lazy-loading) | Decrease page load time and improve user experience on slower connections. After Dark includes [lazysizes](https://github.com/aFarkas/lazysizes), a zero-configuration JavaScript library, for frictionless lazy-loading of images, scripts, iFrames and more.
 [Social Engagement](#social-engagement) | After Dark provides automatic and configurable [Open Graph](http://ogp.me/) support, Twitter Cards and Telegram Instant View template to make social shares pop like 37 pieces of flair.
 [Search Optimization](#search-optimization) | Using [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and meta tags, After Dark gives crawlers rich data about the site structure and content. No configuration required.
 [Post Images](#post-images) | Increase visual appeal of posts. After Dark enables configuration-driven post images which are lazy-loaded, responsive and automatically cropped for a consistent look-and-feel across your site.
@@ -61,7 +60,7 @@ First [Install Hugo](https://gohugo.io/getting-started/installing) and, optional
 brew install hugo elinks
 ```
 
-Then run the install script located in `bin/install`, or just paste this into a terminal and press <kbd>Enter</kbd>:
+Then run the cross-platform install script located in `bin/install`, or just paste this into a terminal and press <kbd>Enter</kbd>:
 
 ```shell
 curl -s https://codeberg.org/vhs/after-dark/raw/branch/master/bin/install | bash
@@ -73,7 +72,7 @@ Installation should complete in a matter of seconds.
 
 ### Module System
 
-After Dark uses Hugo [Theme Components](https://gohugo.io/themes/theme-components/) to provide optional add-on modules. Each module is packaged as an NPM module for convenience. A summary of available modules can be found in the following table.
+After Dark uses Hugo [Theme Components](https://gohugo.io/themes/theme-components/) to provide optional add-on modules. Each module is packaged using NPM for convenience. A summary of available modules can be found in the following table. Got an idea for a new module? Drop into the [Telegram chatroom][1] and let it be known.
 
 Module Name | Latest Version | Description
 ---|---|---
@@ -138,21 +137,6 @@ To activate lazy loading with [lazysizes], add `lazyload` to the `class` attribu
 After Dark includes a _Shortcode_ taking advantage of this feature, enabling you to easily create [lazy-loaded `figure` elements](#content-reuse) within your markdown content.
 
 Additional information and examples, including how to set-up and use LQIP (Low-Quality Image Placeholders), are available on the [lazysizes] repository on GitHub.
-
-### BPG Image Support
-
-The BPG image format provides [high-fidelity images](http://xooyoozoo.github.io/yolo-octo-bugfixes/#vintage-car&jpg=s&bpg=s) which look more like PNGs but loads as fast as a JPG. From a compression standpoint, BPG really shines when handling animations. With support for alpha transparency and given its compression, BPG [literally steamrolls](https://bellard.org/bpg/animation.html) the GIF format of yesteryear.
-
-**Why haven't I heard of BPG?** You have now, and you'll learn about all kinds of cool stuff like this by keeping your eye on [Perf.Rocks](http://perf.rocks/). Please help push BPG forward by encouraging browser makers to improve [current support levels](http://caniuse.com/#search=bpg).
-
-Use BPG just like any other image with the `img` element with a `.bpg` image file extension on any [encoded image](https://webencoder.libbpg.org/). After Dark will asynchronously download a BPG polyfill and render the image in a `canvas` element.
-
-BPG image support is enabled by default in After Dark. To disable support for BPG images add the following to your site configuration:
-
-```toml
-[params.seo]
-  disable_bpg = true # Disable BPG image support
-```
 
 ### Related Content
 
@@ -619,6 +603,7 @@ This work is free. You can redistribute it and/or modify it under the
 terms of the Do What The Fuck You Want To Public License, Version 2,
 as published by Sam Hocevar. See the COPYING file for more details.
 
+[1]: https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg
 [lazysizes]: https://github.com/aFarkas/lazysizes
 [elinks]: http://elinks.or.cz/
 [Fractal Forest]: https://codeberg.org/vhs/fractal-forest
