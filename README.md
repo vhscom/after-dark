@@ -1,6 +1,6 @@
 # After Dark
 
-> A deceptively simple dark theme for [Hugo](https://gohugo.io/).
+> A deceptively simple hacker theme for [Hugo](https://gohugo.io/).
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![NPM downloads per month](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
@@ -22,12 +22,13 @@ Feature | Summary
 --------|--------
 [Quick Installer](#getting-started) | After Dark provides a cross-platform quick installer. One command is all you need to start creating a website with Hugo and After Dark.
 [Module System](#module-system) | Add additional functionality to your site using [Hugo Theme Components](https://gohugo.io/themes/theme-components/). After Dark includes a module system and a number of custom-built modules specifically designed to enhance your site.
+[Theme Variants](#theme-variants) | Choose from one of four color pallets and two different display modes for 8 unique looks. Toggle between them anytime directly from your site configuration.
 [Lazy Loading](#lazy-loading) | Decrease page load time and improve user experience on slower connections. After Dark includes [lazysizes](https://github.com/aFarkas/lazysizes), a zero-configuration JavaScript library, for frictionless lazy-loading of images, scripts, iFrames and more.
 [Social Engagement](#social-engagement) | After Dark provides automatic and configurable [Open Graph](http://ogp.me/) support, Twitter Cards and Telegram Instant View template to make social shares pop like 37 pieces of flair.
 [Search Optimization](#search-optimization) | Using [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and meta tags, After Dark gives crawlers rich data about the site structure and content. No configuration required.
 [Post Images](#post-images) | Increase visual appeal of posts. After Dark enables configuration-driven post images which are lazy-loaded, responsive and automatically cropped for a consistent look-and-feel across your site.
 [Fuzzy Search](#fuzzy-search) | After Dark ships with an in-browser search app built with [Vue](https://vuejs.org/), [Fuse](http://fusejs.io/) and [Mark](https://markjs.io). Use it to quickly find crawlable content anywhere your site.
-[Personalization](#personalization) | Easily choose between one of several [theme variants](#theme-variants). Tweak CSS using the purpose-built [customization file](#custom-styles). Swap in [your own favicon](#favicon). Leverage [block templates](https://gohugo.io/templates/blocks) to quickly extend new custom layouts. And use [hack.css](https://hackcss.egoist.moe/dark.html) flexbox grids and CSS components to add style your site.
+[Personalization](#personalization) | Tweak CSS using the purpose-built [customization file](#custom-styles). Swap in [your own favicon](#favicon). Leverage [block templates](https://gohugo.io/templates/blocks) to quickly extend new custom layouts. And use [hack.css](https://hackcss.egoist.moe/dark.html) flexbox grids and CSS components to add style your site.
 [Content Reuse](#content-reuse) | Sometimes plan markdown isn't enough to build engaging page content. For this reason After Dark provides a number of reusable code snippets and shortcodes for adding things blockquotes, figure elements, coubs, videos, <a target="feature" href="https://hackcss.egoist.moe/">hackcss components</a> and more to your pages and posts. Use them to create completely custom layouts or simply spice up an old page.
 [Related Content](#related-content) | Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can increase your site's page views, the time spent on your site and reader loyalty.
 [Table of Contents](#table-of-contents) | Help users locate and share information in long posts. By providing a Table of Contents, users will spend less time scrolling to locate information in larger documents and are more likely to deep link to specific information on a page.
@@ -531,16 +532,25 @@ After Dark uses [hack.css](https://hackcss.egoist.moe/dark.html) to automaticall
 
 #### Theme Variants
 
-Choose between one of several theme variants. [`hack.css`](https://hackcss.egoist.moe/) provides two display modes and three color palettes. Mix and match directly from your `config.toml`:
+Choose between one of several theme variants. [`hack.css`](https://hackcss.egoist.moe/) provides two display modes and four different color palettes. Mix and match directly from your `config.toml`:
 
-```
+```toml
 [params.hackcss]
-  disabled = false
-  mode = "standard"
-  palette = "dark-grey"
+  mode = "standard" # White background with high-contrast text
 ```
 
-Once updated take a look at the 404 page, `theme-color.html` partial, and add any [Custom Styles](#custom-styles) you desire.
+```toml
+[params.hackcss]
+  mode = "hack" # Hack display mode
+  palette = "dark-grey" # Dark grey background
+```
+
+```toml
+[params.hackcss]
+  disabled = true # Disable hackcss for easier debugging
+```
+
+Once updated adjust the 404 page, `theme-color.html` partial, and add any [Custom Styles](#custom-styles) you desire.
 
 #### Custom Styles
 

@@ -16,7 +16,10 @@ a[itemprop="url"] {
 a[itemprop="url"]:hover {
   color: #fff;
 }
-.muted,
+.muted, .help-block {
+  opacity: 0.70;
+}
+.hack .muted,
 .hack .help-block {
-  color: #e0e0e070;
+  color: #e0e0e0;
 }
