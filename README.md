@@ -14,19 +14,6 @@
 
 Visit [Hack Cabin](https://hackcabin.com) for a production example of which the [site architecture](https://hackcabin.com/post/initial-commit/#site-architecture) can be recreated using a [step-by-step guide](https://vhs.codeberg.page/zero-to-http-2).
 
-## Principia
-
-The following principles serve as a guide for change in the theme.
-
-Principle | Description
----|---
-Deceptive Simplicity | After Dark is [just a theme](https://themes.gohugo.io/after-dark/), making it a suitable starting point for beginners. Start peeling back the layers and discover advanced functionality designed to make even complex tasks look easy.
-Privacy Conscious | Your data is your property. After Dark regards it as private and will take reasonable steps to help you safeguard it. Both for you and for your end-users, often without the need for special knowledge or additional set-up.
-Mobile Friendly | Page content, favicon, required scripts and styles load in a single request on all pages. Ancillary resources are then loaded asynchronously in an unobtrusive manner, resulting in a ~1 second initial page load over 2G when edge caching.
-Inclusive Design | After Dark is designed to function optimally on mobile, tablet, desktop as well as terminal browsers. This approach typically results in better-than-average accessibility and will help reduce the amount of site maintenance required over time.
-Semantic Versioning | Predictable changes help you stay up-to-date with what's new and help make informed decisions on when to update, if at all. After Dark uses [Semantic Versioning](https://semver.org/) and keeps a [human-readable log](https://keepachangelog.com/) of all changes.
-Scalable Core | After Dark is capable of generating thousands of pages per second and will operate reasonably well even on constrained hardware thanks to [Hugo](https://gohugo.io/), making it a suitable starting point for everything from the casual blog to a full-blown data aggregator.
-
 ## Features
 
 The following table summarizes key features which differentiate After Dark from other Hugo themes.
