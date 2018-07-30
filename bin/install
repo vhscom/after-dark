@@ -1,51 +1,65 @@
-#!/bin/bash
+#!/bin/sh
 set -e
 
-function create_site() {
+validate_hugo () {
    # Exit with error if hugo is not installed
    if ! hash hugo 2>/dev/null ; then
      echo "Error: After Dark requires Hugo version 0.44 or greater" >&2; exit 1
    fi
 
    # Exit with error if not minimum required hugo version
-   local re='v(0\d*\.(([4-9][4-9]|[5-9]))|[1-9]).*'
-   if ! [[ $(hugo version) =~ $re ]] ; then
+   re="v(0\d*\.(([4-9][4-9]|[5-9]))|[1-9]).*"
+   if ! hugo version | grep -qE "$re" ; then
       echo "Error: After Dark requires Hugo version 0.44 or greater" >&2; exit 1
    fi
-
-   # Create new hugo site at specified location
-   echo "Creating a new Hugo site ..."
-   if [ "$CONTINUE" = "y" ] ; then
-      hugo new site --force $SITE_DIR 1>/dev/null
-   else
-      hugo new site $SITE_DIR 1>/dev/null
-   fi
-   cd "$SITE_DIR"
 }
 
-function download_theme() {
+create_site_dir () {
+   path=${1}
+   if [ "$path" = "" ] ; then
+      SITE_DIR="flying-toasters"
+   else
+      SITE_DIR="$path"
+   fi
+
+   SITE_DIR_ABS="$PWD/$SITE_DIR"
+
+   if [ ! -e "$SITE_DIR" ] ; then
+      echo "Creating directory $SITE_DIR_ABS"
+      mkdir -p "$SITE_DIR"
+   fi
+}
+
+create_site () {
+   # Create new hugo site at specified location
+   echo "Creating a new Hugo site ..."
+   hugo new site "$SITE_DIR" 1>/dev/null
+   cd "$SITE_DIR" || exit 1
+}
+
+download_theme () {
    # Download latest version of After Dark theme
    echo "Downloading the latest version of After Dark theme ..."
-   local v=$(wget -O - https://codeberg.org/vhs/after-dark/raw/branch/master/package.json 2>&1 /dev/null | grep -o '"version"\s*:\s*.*",' | tr -d 'version": ,')
-   local t=$(mktemp)
-   wget https://codeberg.org/vhs/after-dark/archive/v${v}.tar.gz -qO "$t"
+   v=$(wget -O - https://codeberg.org/vhs/after-dark/raw/branch/master/package.json 2>&1 /dev/null | grep -o '"version"\s*:\s*.*",' | tr -d 'version": ,')
+   t=$(mktemp)
+   wget https://codeberg.org/vhs/after-dark/archive/v"$v".tar.gz -qO "$t"
    tar -xzf "$t" -C themes
    rm "$t"
    echo "Theme version $v downloaded to $SITE_DIR/themes/after-dark"
 }
 
-function download_module() {
+download_module () {
    # Download latest version of Fractal Forest for After Dark theme
    echo "Downloading Fractal Forest module for After Dark theme ..."
-   local v=$(wget -O - https://codeberg.org/vhs/fractal-forest/raw/branch/master/package.json 2>&1 /dev/null | grep -o '"version"\s*:\s*.*",' | tr -d 'version": ,')
-   local t=$(mktemp)
-   wget https://codeberg.org/vhs/fractal-forest/archive/v${v}.tar.gz -qO "$t"
+   v=$(wget -O - https://codeberg.org/vhs/fractal-forest/raw/branch/master/package.json 2>&1 /dev/null | grep -o '"version"\s*:\s*.*",' | tr -d 'version": ,')
+   t=$(mktemp)
+   wget https://codeberg.org/vhs/fractal-forest/archive/v"$v".tar.gz -qO "$t"
    tar -xzf "$t" -C themes
    rm "$t"
    echo "Module version $v downloaded to $SITE_DIR/themes/fractal-forest"
 }
 
-function configure_theme() {
+configure_theme () {
    # Provide basic configuration and ignore generated files
    echo "Configuring basic After Dark theme settings ..."
    tee "config.toml" > /dev/null <<TOML
@@ -87,12 +101,12 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 TOML
 }
 
-function create_example_post() {
+create_example_post() {
    echo "Creating an example post to get you started ..."
    hugo new post/starry-night.md 1>/dev/null
 }
 
-function serve_site_maybe() {
+serve_site_maybe() {
    if hash elinks 2>/dev/null ; then
       echo "Opening your new After Dark site in elinks ..."
       hugo serve --buildDrafts --port 1337 --bind "0.0.0.0" 1>/dev/null &
@@ -101,30 +115,10 @@ function serve_site_maybe() {
    fi
 }
 
-function create_site_dir() {
-   local path=${1}
-   if [[ "$path" == "" ]] ; then
-      SITE_DIR="flying-toasters"
-   else
-      SITE_DIR="$path"
-   fi
-
-   SITE_DIR_ABS="$PWD/$SITE_DIR"
-   if [ -d "$SITE_DIR" ] ; then
-      read -p "Warning: $SITE_DIR_ABS already exists. Do you want to continue [y/N]? " CONTINUE
-      if [ "$CONTINUE" != "y" ] ; then exit 0 ; fi
-   fi
-
-   if [ ! -e "$SITE_DIR" ] ; then
-      echo "Creating directory $SITE_DIR_ABS"
-      mkdir -p "$SITE_DIR"
-      chmod 755 "$SITE_DIR"
-   fi
-}
-
 echo "Welcome to the After Dark quick installer. Press CTRL-C at any time to abort."
 
-create_site_dir ${1}
+validate_hugo
+create_site_dir "$1"
 create_site
 download_theme
 download_module
