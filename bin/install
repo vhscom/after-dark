@@ -101,12 +101,12 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 TOML
 }
 
-create_example_post() {
+create_example_post () {
    echo "Creating an example post to get you started ..."
    hugo new post/starry-night.md 1>/dev/null
 }
 
-serve_site_maybe() {
+serve_site_maybe () {
    if hash elinks 2>/dev/null ; then
       echo "Opening your new After Dark site in elinks ..."
       hugo serve --buildDrafts --port 1337 --bind "0.0.0.0" 1>/dev/null &
