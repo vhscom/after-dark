@@ -52,7 +52,7 @@ configure_theme () {
    # Provide basic configuration and ignore generated files
    echo "Configuring basic After Dark theme settings ..."
    tee "config.toml" > /dev/null <<TOML
-baseurl = "https://c74ce35e.ngrok.io/" # Controls base URL
+baseurl = "https://domain.example/" # Controls base URL sitewide
 languageCode = "en-US" # Controls site language
 title = "After Dark" # Homepage title and page title suffix
 paginate = 11 # Number of posts to show before paginating
