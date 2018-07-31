@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.2.6"></a>
+## [5.2.6](https://codeberg.org/vhs/after-dark/compare/v5.2.5...v5.2.6) (2018-07-31)
+
+
+### Bug Fixes
+
+* **install:** support both gnu and bsd grep ([35defb7](https://codeberg.org/vhs/after-dark/commits/35defb7))
+
+
+
 <a name="5.2.5"></a>
 ## [5.2.5](https://codeberg.org/vhs/after-dark/compare/v5.2.3...v5.2.5) (2018-07-31)
 
