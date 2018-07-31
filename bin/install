@@ -104,6 +104,7 @@ serve_site_maybe () {
       echo "Opening your new After Dark site in elinks ..."
       hugo serve --buildDrafts --port 1337 --bind "0.0.0.0" 1>/dev/null &
       sleep 1 && elinks http://0.0.0.0:1337/
+      kill $(ps aux | awk '/[h]ugo.*1337/ {print $2}')
    fi
 }
 
