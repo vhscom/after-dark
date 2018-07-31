@@ -16,7 +16,7 @@ validate_hugo () {
 
 create_site_dir () {
    SITE_DIR="flying-toasters"
-   if [ "$1" != "" ]; then
+   if [ "$1" != "" ] ; then
       SITE_DIR="$1"
    fi
 
@@ -34,18 +34,22 @@ create_site () {
 
 download_theme () {
    echo "Downloading the latest version of After Dark theme ..."
-   v=$(wget -qO - https://registry.npmjs.org/after-dark/latest | grep -oE '"version":(\d*?,|.*?[^\\]",)' | tr -d 'version": ,')
+   meta=$(wget -qO - https://registry.npmjs.org/after-dark/latest)
+   grep --version | grep "BSD grep" 1>/dev/null && vers=$(echo "$meta" | grep -oE '"version":(\d*?,|.*?[^\\]",)' | tr -d 'version": ,')
+   grep --version | grep "GNU grep" 1>/dev/null && vers=$(echo "$meta" | grep -oP '"version":(\d*?,|.*?[^\\]",)' | tr -d 'version": ,')
    mkdir -p themes/after-dark
-   wget -qO - https://registry.npmjs.org/after-dark/-/after-dark-"$v".tgz | tar --strip-components=1 -xz -C themes/after-dark
-   echo "Theme version $v downloaded to $SITE_DIR/themes/after-dark"
+   wget -qO - https://registry.npmjs.org/after-dark/-/after-dark-"$vers".tgz | tar --strip-components=1 -xz -C themes/after-dark
+   echo "Theme version $vers downloaded to $SITE_DIR/themes/after-dark"
 }
 
 download_module () {
    echo "Downloading example module for After Dark theme ..."
-   v=$(wget -qO - https://registry.npmjs.org/"$1"/latest | grep -oE '"version":(\d*?,|.*?[^\\]",)' | tr -d 'version": ,')
+   meta=$(wget -qO - https://registry.npmjs.org/"$1"/latest)
+   grep --version | grep "BSD grep" 1>/dev/null && vers=$(echo "$meta" | grep -oE '"version":(\d*?,|.*?[^\\]",)' | tr -d 'version": ,')
+   grep --version | grep "GNU grep" 1>/dev/null && vers=$(echo "$meta" | grep -oP '"version":(\d*?,|.*?[^\\]",)' | tr -d 'version": ,')
    mkdir -p themes/"$1"
-   wget -qO - https://registry.npmjs.org/"$1"/-/"$1"-"$v".tgz | tar --strip-components=1 -xz -C themes/"$1"
-   echo "Module version $v downloaded to $SITE_DIR/themes/$1"
+   wget -qO - https://registry.npmjs.org/"$1"/-/"$1"-"$vers".tgz | tar --strip-components=1 -xz -C themes/"$1"
+   echo "Module version $vers downloaded to $SITE_DIR/themes/$1"
 }
 
 configure_theme () {
