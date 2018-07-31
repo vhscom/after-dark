@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.2.5"></a>
+## [5.2.5](https://codeberg.org/vhs/after-dark/compare/v5.2.3...v5.2.5) (2018-07-31)
+
+
+### Bug Fixes
+
+* **install:** install packages from npm ([65c4e99](https://codeberg.org/vhs/after-dark/commits/65c4e99))
+* **install:** standardize install script ([aca07cc](https://codeberg.org/vhs/after-dark/commits/aca07cc)), closes [#19](https://codeberg.org/vhs/after-dark/issues/19)
+* **install:** update example base url ([da73a2f](https://codeberg.org/vhs/after-dark/commits/da73a2f))
+* **install:** use latest version from npm dist tags ([7afe7b9](https://codeberg.org/vhs/after-dark/commits/7afe7b9))
+
+
+
 <a name="5.2.4"></a>
 ## [5.2.4](https://codeberg.org/vhs/after-dark/compare/v5.2.3...v5.2.4) (2018-07-31)
 
