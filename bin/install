@@ -8,55 +8,44 @@ validate_hugo () {
    fi
 
    # Exit with error if not minimum required hugo version
-   re="v(0\d*\.(([4-9][4-9]|[5-9]))|[1-9]).*"
+   re="v(0\d*\.([4-9][4-9]|[5-9])|[1-9]).*"
    if ! hugo version | grep -qE "$re" ; then
       echo "Error: After Dark requires Hugo version 0.44 or greater" >&2; exit 1
    fi
 }
 
 create_site_dir () {
-   path=${1}
-   if [ "$path" = "" ] ; then
-      SITE_DIR="flying-toasters"
-   else
-      SITE_DIR="$path"
+   SITE_DIR="flying-toasters"
+   if [ "$1" != "" ]; then
+      SITE_DIR="$1"
    fi
 
    SITE_DIR_ABS="$PWD/$SITE_DIR"
 
-   if [ ! -e "$SITE_DIR" ] ; then
-      echo "Creating directory $SITE_DIR_ABS"
-      mkdir -p "$SITE_DIR"
-   fi
+   echo "Creating directory $SITE_DIR_ABS"
+   mkdir -p "$SITE_DIR"
 }
 
 create_site () {
-   # Create new hugo site at specified location
    echo "Creating a new Hugo site ..."
    hugo new site "$SITE_DIR" 1>/dev/null
    cd "$SITE_DIR" || exit 1
 }
 
 download_theme () {
-   # Download latest version of After Dark theme
    echo "Downloading the latest version of After Dark theme ..."
-   v=$(wget -O - https://codeberg.org/vhs/after-dark/raw/branch/master/package.json 2>&1 /dev/null | grep -o '"version"\s*:\s*.*",' | tr -d 'version": ,')
-   t=$(mktemp)
-   wget https://codeberg.org/vhs/after-dark/archive/v"$v".tar.gz -qO "$t"
-   tar -xzf "$t" -C themes
-   rm "$t"
+   v=$(wget -O - https://cdn.jsdelivr.net/npm/after-dark@latest/package.json 2>&1 /dev/null | grep -o '"version"\s*:\s*.*",' | tr -d 'version": ,')
+   mkdir -p themes/after-dark
+   wget -qO - https://registry.npmjs.org/after-dark/-/after-dark-"$v".tgz | tar --strip-components=1 -xz -C themes/after-dark
    echo "Theme version $v downloaded to $SITE_DIR/themes/after-dark"
 }
 
 download_module () {
-   # Download latest version of Fractal Forest for After Dark theme
-   echo "Downloading Fractal Forest module for After Dark theme ..."
-   v=$(wget -O - https://codeberg.org/vhs/fractal-forest/raw/branch/master/package.json 2>&1 /dev/null | grep -o '"version"\s*:\s*.*",' | tr -d 'version": ,')
-   t=$(mktemp)
-   wget https://codeberg.org/vhs/fractal-forest/archive/v"$v".tar.gz -qO "$t"
-   tar -xzf "$t" -C themes
-   rm "$t"
-   echo "Module version $v downloaded to $SITE_DIR/themes/fractal-forest"
+   echo "Downloading example module for After Dark theme ..."
+   v=$(wget -O - https://cdn.jsdelivr.net/npm/"$1"@latest/package.json 2>&1 /dev/null | grep -o '"version"\s*:\s*.*",' | tr -d 'version": ,')
+   mkdir -p themes/"$1"
+   wget -qO - https://registry.npmjs.org/"$1"/-/"$1"-"$v".tgz | tar --strip-components=1 -xz -C themes/"$1"
+   echo "Module version $v downloaded to $SITE_DIR/themes/$1"
 }
 
 configure_theme () {
@@ -110,8 +99,7 @@ serve_site_maybe () {
    if hash elinks 2>/dev/null ; then
       echo "Opening your new After Dark site in elinks ..."
       hugo serve --buildDrafts --port 1337 --bind "0.0.0.0" 1>/dev/null &
-      sleep 1
-      elinks http://0.0.0.0:1337/
+      sleep 1 && elinks http://0.0.0.0:1337/
    fi
 }
 
@@ -121,7 +109,7 @@ validate_hugo
 create_site_dir "$1"
 create_site
 download_theme
-download_module
+download_module "fractal-forest"
 configure_theme
 create_example_post
 serve_site_maybe
