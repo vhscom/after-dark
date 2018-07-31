@@ -34,7 +34,7 @@ create_site () {
 
 download_theme () {
    echo "Downloading the latest version of After Dark theme ..."
-   v=$(wget -O - https://cdn.jsdelivr.net/npm/after-dark@latest/package.json 2>&1 /dev/null | grep -o '"version"\s*:\s*.*",' | tr -d 'version": ,')
+   v=$(wget -qO - https://registry.npmjs.org/after-dark/latest | grep -oE '"version":(\d*?,|.*?[^\\]",)' | tr -d 'version": ,')
    mkdir -p themes/after-dark
    wget -qO - https://registry.npmjs.org/after-dark/-/after-dark-"$v".tgz | tar --strip-components=1 -xz -C themes/after-dark
    echo "Theme version $v downloaded to $SITE_DIR/themes/after-dark"
@@ -42,7 +42,7 @@ download_theme () {
 
 download_module () {
    echo "Downloading example module for After Dark theme ..."
-   v=$(wget -O - https://cdn.jsdelivr.net/npm/"$1"@latest/package.json 2>&1 /dev/null | grep -o '"version"\s*:\s*.*",' | tr -d 'version": ,')
+   v=$(wget -qO - https://registry.npmjs.org/"$1"/latest | grep -oE '"version":(\d*?,|.*?[^\\]",)' | tr -d 'version": ,')
    mkdir -p themes/"$1"
    wget -qO - https://registry.npmjs.org/"$1"/-/"$1"-"$v".tgz | tar --strip-components=1 -xz -C themes/"$1"
    echo "Module version $v downloaded to $SITE_DIR/themes/$1"
