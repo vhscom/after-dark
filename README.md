@@ -51,10 +51,10 @@ brew install hugo elinks
 Then run the quick install script located in `bin/install`, or just paste this into a terminal and press <kbd>Enter</kbd>:
 
 ```shell
-curl -s https://codeberg.org/vhs/after-dark/raw/branch/master/bin/install | sh
+wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/master/bin/install | sh
 ```
 
-Installation should complete in a matter of seconds, [even on Android](https://codeberg.org/vhs/after-dark/src/branch/master/images/docs/feat-quick-installer.mp4). If running Windoze, get [`cmder`](https://github.com/cmderdev/cmder) before attempting to do anything useful.
+Installation should complete in a matter of seconds.
 
 ## Customizing
 
