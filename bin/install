@@ -104,7 +104,6 @@ serve_site_maybe () {
       echo "Opening your new After Dark site in elinks ..."
       hugo serve --buildDrafts --port 1337 --bind "0.0.0.0" 1>/dev/null &
       sleep 1 && elinks http://0.0.0.0:1337/
-      kill $(ps aux | awk '/[h]ugo.*1337/ {print $2}')
    fi
 }
 
@@ -123,3 +122,6 @@ echo "Installation completed successfully!"
 echo "Your new site was created in $SITE_DIR_ABS."
 echo "Run 'cd $SITE_DIR && hugo serve --buildDrafts' to serve it."
 echo "Thank you for choosing After Dark."
+
+# Stop web server if it's still running backgrounded
+kill $(ps aux | awk '/[h]ugo.*1337/ {print $2}') 2>/dev/null
