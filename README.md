@@ -62,7 +62,7 @@ After installation use the [`hugo new`](https://gohugo.io/commands/hugo_new/) co
 cd flying-toasters && ./themes/after-dark/bin/preview
 ```
 
-Preview starts a hugo server and connects to [Serveo](https://serveo.net) using an SSH tunnel to expose your local server to the internet. You must have an ssh server such as `dropbear` or similar installed for this to work.
+Preview starts a hugo server and connects to [Serveo](https://serveo.net) using an SSH tunnel to expose your local server to the internet. You must have an ssh server such as [dropbear](https://matt.ucc.asn.au/dropbear/dropbear.html) or similar installed for this to work.
 
 ## Customizing
 
