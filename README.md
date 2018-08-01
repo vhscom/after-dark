@@ -20,7 +20,7 @@ The following table summarizes key features which differentiate After Dark from 
 
 Feature | Summary
 --------|--------
-[Quick Installer](#getting-started) | After Dark provides a cross-platform quick installer. One command is all you need to start creating a website.
+[Quick Installer](#getting-started) | After Dark provides a cross-platform quick installer. One command is all you need to start creating a website. Just don't expect it to write your content too.
 [Module System](#module-system) | Add additional functionality to your site using [Hugo Theme Components](https://gohugo.io/themes/theme-components/). After Dark includes a module system and a number of custom-built modules specifically designed to enhance your site.
 [Theme Variants](#theme-variants) | Choose from one of three dark color pallets and two different display modes. Toggle between them anytime directly from your site configuration.
 [Lazy Loading](#lazy-loading) | Decrease page load time and improve user experience on slower connections. After Dark includes [lazysizes](https://github.com/aFarkas/lazysizes), a zero-configuration JavaScript library, for frictionless lazy-loading of images, scripts, iFrames and more.
