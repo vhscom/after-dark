@@ -56,13 +56,13 @@ wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/master/bin/install | s
 
 Installation should complete in a matter of seconds. If you have `elinks` installed it will open automatically with a local preview of your site.
 
-After installation use the [`hugo new`](https://gohugo.io/commands/hugo_new/) command to create content and [`hugo server`](https://gohugo.io/commands/hugo_server/) to see your content locally. To view your content online run the included preview script:
+After installation use the [`hugo new`](https://gohugo.io/commands/hugo_new/) command to create content and [`hugo server`](https://gohugo.io/commands/hugo_server/) to see your content locally. To view your content online run the included preview script from your site directory:
 
 ```sh
-$ ./themes/after-dark/bin/preview
+cd flying-toasters && ./themes/after-dark/bin/preview
 ```
 
-The script starts a hugo server and connects to [Serveo](https://serveo.net) using an SSH tunnel to expose your local server to the internet. You must have an ssh server such as `dropbear` or similar installed for this to work.
+Preview starts a hugo server and connects to [Serveo](https://serveo.net) using an SSH tunnel to expose your local server to the internet. You must have an ssh server such as `dropbear` or similar installed for this to work.
 
 ## Customizing
 
