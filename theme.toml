@@ -22,7 +22,7 @@ features = [
   "Post Images",
   "Fuzzy Search",
   "Personalization",
-  "Content Reuse",
+  "Snippets",
   "Related Content",
   "Table of Contents",
   "Modification Dating",

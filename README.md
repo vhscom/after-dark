@@ -29,7 +29,7 @@ Feature | Summary
 [Post Images](#post-images) | Increase visual appeal of posts. After Dark enables configuration-driven post images which are lazy-loaded, responsive and automatically cropped for a consistent look-and-feel across your site.
 [Fuzzy Search](#fuzzy-search) | After Dark ships with an in-browser search app built with [Vue](https://vuejs.org/), [Fuse](http://fusejs.io/) and [Mark](https://markjs.io). Use it to quickly find crawlable content anywhere your site.
 [Personalization](#personalization) | Tweak CSS using the purpose-built [customization file](#custom-styles). Swap in [your own favicon](#favicon). Leverage [block templates](https://gohugo.io/templates/blocks) to quickly extend new custom layouts. And use [hack.css](https://hackcss.egoist.moe/dark.html) flexbox grids and CSS components to add style your site.
-[Content Reuse](#content-reuse) | Sometimes plan markdown isn't enough to build engaging page content. For this reason After Dark provides a number of reusable code snippets and shortcodes for adding things blockquotes, figure elements, coubs, videos, <a target="feature" href="https://hackcss.egoist.moe/">hackcss components</a> and more to your pages and posts. Use them to create completely custom layouts or simply spice up an old page.
+[Snippets](#snippets) | After Dark provides a number of reusable code snippets for adding things like tweets, [coubs](https://coub.com), blockquotes, figures, [hackcss components](https://hackcss.egoist.moe/) and more. Use them to create completely custom layouts or simply spice up an existing document.
 [Related Content](#related-content) | Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can increase your site's page views, the time spent on your site and reader loyalty.
 [Table of Contents](#table-of-contents) | Help users locate and share information in long posts. By providing a Table of Contents, users will spend less time scrolling to locate information in larger documents and are more likely to deep link to specific information on a page.
 [Modification Dating](#modification-dating) | Surface recently updated content to users and crawlers, allowing them to understand when a post or page was was last modified. Recently updated posts will be flagged as modified and visually lifted upwards in chronological listings.
@@ -130,7 +130,7 @@ To activate lazy loading with [lazysizes], add `lazyload` to the `class` attribu
 </iframe>
 ```
 
-After Dark includes a _Shortcode_ taking advantage of this feature, enabling you to easily create [lazy-loaded `figure` elements](#content-reuse) within your markdown content.
+After Dark includes a _Shortcode_ taking advantage of this feature, enabling you to easily create [lazy-loaded `figure` elements](#snippets) within your markdown content.
 
 Additional information and examples, including how to set-up and use LQIP (Low-Quality Image Placeholders), are available on the [lazysizes] repository on GitHub.
 
@@ -480,11 +480,11 @@ Overrides to theme markdown processing defaults are available from page front ma
 
 See the Hugo docs for additional [configuration options](http://gohugo.io/overview/configuration/#configure-blackfriday-rendering).
 
-### Content Reuse
+### Snippets
 
-Keep your content <abbr title="Don't Repeat Yourself">DRY</abbr> and improve thematic consistency across your site. After Dark provides a number [Shortcodes](https://gohugo.io/extras/shortcodes) and composable components to help you keep your content and layouts easy to maintain.
+Snippets are reusable bits of code you can sprinkle across your site to reduce repetition and improve consistency. After Dark provides a number of snippets in the form of [hackcss components](https://hackcss.egoist.moe/) and [Hugo Shortcodes](https://gohugo.io/extras/shortcodes) to help make your site easier to maintain.
 
-Take for example After Dark's `blockquote` shortcode:
+Take for example the After Dark `blockquote` shortcode:
 
 ```html
 <blockquote {{ with .Get "class" }}class="{{ . }}"{{ end }} {{ with .Get "citelink" }}cite="{{ . }}"{{ end }}>
@@ -497,7 +497,7 @@ Take for example After Dark's `blockquote` shortcode:
 </blockquote>
 ```
 
-Use it in your page or post markdown files like:
+Rather than repeating the HTML to create a blockquote in your content simply call the shortcode from your markdown files like so:
 
 ```html
 {{< blockquote cite="Bitly" citelink="https://bitly.is/2mkxskj" >}}
@@ -505,13 +505,7 @@ Use it in your page or post markdown files like:
 {{< /blockquote >}}
 ```
 
-Additional theme-provided shortcodes at your disposal:
-
-- `privacytube` – It's YouTube. But without cookies and UI cruft.
-- `coub` - GIFs with sound. Think of it like YouTube for video loops.
-- `figure` - Similar to the Hugo built-in, but with [Lazy Loading](#lazy-loading), an adjusted caption title and smaller caption text.
-
-Also included are a number of shortcodes for [hackcss components](https://hackcss.egoist.moe/). These shortcodes function across After Dark [theme variants](#theme-variants) and were created as partials, enabling reuse in both your content as well as your [personalized layouts](#personalization):
+Included are a number of shortcodes for hackcss components designed to work across all [theme variants](#theme-variants):
 
 - `hackcss-alert` - Provides themed alert boxes. See `hackcss-alert.html` for usage notes.
 - `hackcss-button` - Provides themed buttons. See `hackcss-button.html` for usage notes.
@@ -519,6 +513,14 @@ Also included are a number of shortcodes for [hackcss components](https://hackcs
 - `hackcss-card` - Provides themed card element. See `hackcss-card.html` for usage notes.
 - `hackcss-progress` - Provides themed progress meter. See `hackcss-progress.html` for usage notes.
 - `hackcss-throbber` - Provides themed loading indicator. See `hackcss-throbber.html` for usage notes.
+
+Because Hugo doesn't support the use of shortcodes outside of markdown files the After Dark hackcss components were created using partial _components_, enabling reuse in both your content as well as your [personalized layouts](#personalization).
+
+Additional theme-provided shortcodes at your disposal:
+
+- `privacytube` – It's YouTube. But without cookies and UI cruft.
+- `coub` - GIFs with sound. Think of it like YouTube for video loops.
+- `figure` - Similar to the Hugo built-in, but with [Lazy Loading](#lazy-loading), an adjusted caption title and smaller caption text.
 
 To create your own custom shortcodes add a `layouts/shortcodes` directory to your site, place your shortcodes within and start using them in your markdown content. To create or override provided components add a `layouts/partials/components` directory to your site and reference the theme-provided files as you hack away.
 
