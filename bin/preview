@@ -1,8 +1,6 @@
 #!/bin/sh
 set -e
 
-trap 'kill -- -$$' 0 # Send SIGTERM to child/sub processes on EXIT
-
 HUGO_BIND_ADDR=0.0.0.0
 HUGO_PORT=1337
 if [ "$1" != "" ] ; then
@@ -12,6 +10,7 @@ fi
 if [ "$(lsof -nt -i4TCP:$HUGO_PORT)" != "" ] ; then
    echo "Error: Hugo is already running on port $HUGO_PORT" >&2; exit 1
 else
+   trap 'kill -- -$$' 0 # Send SIGTERM to child/sub processes on EXIT
    hugo server --quiet --disableLiveReload --port "$HUGO_PORT" --bind "$HUGO_BIND_ADDR" &
    ssh -R 80:localhost:"$HUGO_PORT" serveo.net
 fi
