@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.3.1"></a>
+## [5.3.1](https://codeberg.org/vhs/after-dark/compare/v5.3.0...v5.3.1) (2018-08-01)
+
+
+### Bug Fixes
+
+* **layouts:** show sarcastic message when no pages exist ([e5ce3b9](https://codeberg.org/vhs/after-dark/commits/e5ce3b9))
+
+
+
 <a name="5.3.0"></a>
 # [5.3.0](https://codeberg.org/vhs/after-dark/compare/v5.2.6...v5.3.0) (2018-08-01)
 
