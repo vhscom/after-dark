@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.3.0"></a>
+# [5.3.0](https://codeberg.org/vhs/after-dark/compare/v5.2.6...v5.3.0) (2018-08-01)
+
+
+### Bug Fixes
+
+* **install:** kill hugo server always ([abadfbf](https://codeberg.org/vhs/after-dark/commits/abadfbf))
+* **install:** move kill command to eof ([a87a381](https://codeberg.org/vhs/after-dark/commits/a87a381))
+
+
+### Features
+
+* **bin:** add script to preview site online over https ([51baf0c](https://codeberg.org/vhs/after-dark/commits/51baf0c)), closes [#21](https://codeberg.org/vhs/after-dark/issues/21)
+
+
+
 <a name="5.2.6"></a>
 ## [5.2.6](https://codeberg.org/vhs/after-dark/compare/v5.2.5...v5.2.6) (2018-07-31)
 
