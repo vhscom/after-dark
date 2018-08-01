@@ -96,7 +96,7 @@ TOML
 
 create_example_post () {
    echo "Creating an example post to get you started ..."
-   hugo new post/starry-night.md 1>/dev/null
+   hugo new post/coming-soon.md 1>/dev/null
 }
 
 serve_site_maybe () {
