@@ -16,7 +16,7 @@ Visit [Hack Cabin](https://hackcabin.com) for a production example of which the 
 
 ## Features
 
-The following table summarizes key features which differentiate After Dark from other Hugo themes.
+All notable features will be listed here.
 
 Feature | Summary
 --------|--------
@@ -36,8 +36,6 @@ Feature | Summary
 [Syntax Highlighting](#syntax-highlighting) | Share code snippets with style. After Dark provides Atom One [Light](https://atom.io/themes/one-light-syntax) and [Dark](https://atom.io/themes/one-dark-syntax) syntax highlighting for 1337 code sharing.
 [Taxonomy Pages](https://gohugo.io/content-management/taxonomies) | Help users discover taxonomic content. After Dark automatically generates taxonomy and taxonomy terms pages and links to them in post bylines.
 [Error Page](https://hackcabin.com/post/after-dark-error-page-redesign/) | Decrease bounce rate when URL errors occur. After Dark provides an engaging 404 page with animated background.
-Pagination | Pagination can be hard. After Dark makes it easy with simple list pagination with page indicators.
-Reading Time | Set user expectations up-front. After Dark provides estimated reading time for each post near the top of the page. This feature is automatic and assumes a reading speed of 200-250 words per minute.
 Post Bylines | Rich post bylines include optional author name, word count, links to taxonomy pages and metadata for search engines.
 
 ## Getting Started

@@ -29,8 +29,6 @@ features = [
   "Syntax Highlighting",
   "Taxonomy Pages",
   "Error Page",
-  "Pagination",
-  "Reading Time",
   "Post Bylines"
 ]
 min_version = 0.44
