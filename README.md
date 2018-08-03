@@ -77,7 +77,7 @@ Module Name | Latest Version | Description
 
 After Dark uses Hugo's [Section Menu for Lazy Bloggers](https://gohugo.io/templates/menu-templates/#section-menu-for-lazy-bloggers) to produce global site navigation, if enabled.
 
-To customize the section menu add settings in `config.toml` like:
+To customize the section menu add and adjust settings in `config.toml` like:
 
 ```toml
 [[menu.main]]
@@ -92,11 +92,18 @@ To customize the section menu add settings in `config.toml` like:
   url = "/post/"
 ```
 
-Or update the menu using front matter from your pages:
+Alternatively, you may update the menu from your content front matter like:
 
 ```toml
 menu = "main"
 weight = 3
+```
+
+Finally, the menu can be disabled from site config anytime:
+
+```toml
+[params]
+  show_menu = false
 ```
 
 See Hugo's [Menu docs](https://gohugo.io/content-management/menus/) for more information.
