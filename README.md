@@ -16,7 +16,7 @@ Visit [Hack Cabin](https://hackcabin.com) for a production example of which the 
 
 ## Features
 
-All notable features will be listed here.
+The following table outlines key features which differentiate After Dark for other themes.
 
 Feature | Summary
 --------|--------
