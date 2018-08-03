@@ -536,20 +536,22 @@ Reference Hugo's [Syntax Highlighting docs](https://gohugo.io/content-management
 
 ### Personalization
 
-After Dark uses [hack.css](https://hackcss.egoist.moe/dark.html) to automatically style your markup, giving you instant access to flexbox grids, light and dark theme variants, and other pre-built components. Use them while creating new [sections](#section-menu) leveraging [block templates](https://gohugo.io/templates/blocks). Additional personalization options listed below.
+After Dark uses [hack.css](https://hackcss.egoist.moe/dark.html) to automatically style your markup, giving you instant access to flexbox grids, several dark theme variants, and other pre-built components. Use them while creating new [sections](#section-menu) leveraging [block templates](https://gohugo.io/templates/blocks). Additional personalization options listed below.
 
 #### Theme Variants
 
-Choose between one of several theme variants. [`hack.css`](https://hackcss.egoist.moe/) provides two display modes and four different color palettes. Mix and match directly from your `config.toml`:
+Customize the look and feel of your site using theme variants. After Dark provides three dark color palettes and two display modes. Toggle between them anytime directly from your site configuration.
+
+The default theme variant uses the `dark` color palette with the `hack` display mode. To modify it add the following to your site configuration and choose one of the available options:
 
 ```toml
 [params.hackcss]
-  disabled = true # Disable hackcss for easier debugging
-  mode = "standard" # White background with high-contrast text
-  palette = "dark-grey" # Dark grey background
+  disabled = false # Optional, set true to disable hackcss styles
+  mode = "hack" # Optional, choose from 'hack' and 'standard'
+  palette = "dark" # Optional, choose from 'dark', 'dark-grey' and 'solarized-dark'
 ```
 
-Once updated adjust the 404 page, `theme-color.html` partial, and add any [Custom Styles](#custom-styles) you desire.
+Once updated review the included 404 page and `theme-color.html` partial and tweak your site using [Custom Styles](#custom-styles) and, if you desire even more control, [site-level overrides](https://gohugo.io/templates/lookup-order/).
 
 #### Custom Styles
 
@@ -558,15 +560,9 @@ Easily add and customize styles without modifying the theme simply by overriding
 1. Create a file named `custom.css` in your site's `assets/css` directory. If the directory does not exist yet, simply create it.
 2. Add your custom styles inside the file and rebuild your site.
 
-**Note:** After Dark ships with some example customizations. If you would like to keep these, copy the styles from the theme's version of `custom.css` into your site-level `custom.css` file after creating it.
-
-Example customizations:
+For example, to center figure elements, constrain the width and adjust their link styles add the following to your `custom.css`:
 
 ```css
-canvas {
-  margin: auto;
-  display: block;
-}
 figure {
   margin-left: auto;
   margin-right: auto;
@@ -582,6 +578,8 @@ figure a:hover {
   background-color: inherit !important;
 }
 ```
+
+**Note:** After Dark ships with some example customizations. If you would like to keep these, copy the styles from the theme's version of `custom.css` into your site-level `custom.css` file after creating it.
 
 Custom styles will be automatically be concatenated into a `style` element in the document `head` along with theme and vendor styles. See the [Asset Bundling](https://gohugo.io/hugo-pipes/bundling/) section of the [Hugo Pipes](https://gohugo.io/hugo-pipes/) documentation for a better understanding of how this works.
 
