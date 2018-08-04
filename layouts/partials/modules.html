@@ -2,6 +2,9 @@
   {{ with .fractal_forest }}
     {{ partial "modules/fractal-forest/index.html" . }}
   {{ end }}
+  {{ with .hall_of_mirrors }}
+    {{ partial "modules/hall-of-mirrors/index.html" (dict "settings" . "page" $.Page) }}
+  {{ end }}
   {{ with .voyeur }}
     {{ partial "modules/voyeur/index.html" . }}
   {{ end }}
