@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.4.0"></a>
+# [5.4.0](https://codeberg.org/vhs/after-dark/compare/v5.3.1...v5.4.0) (2018-08-04)
+
+
+### Features
+
+* **modules:** add hall of mirrors ([882c32d](https://codeberg.org/vhs/after-dark/commits/882c32d)), closes [#24](https://codeberg.org/vhs/after-dark/issues/24)
+
+
+
 <a name="5.3.1"></a>
 ## [5.3.1](https://codeberg.org/vhs/after-dark/compare/v5.3.0...v5.3.1) (2018-08-01)
 
