@@ -612,3 +612,4 @@ as published by Sam Hocevar. See the COPYING file for more details.
 [elinks]: http://elinks.or.cz/
 [Fractal Forest]: https://codeberg.org/vhs/fractal-forest
 [Voyeur]: https://codeberg.org/vhs/voyeur
+[Hall of Mirrors]: https://codeberg.org/vhs/hall-of-mirrors
