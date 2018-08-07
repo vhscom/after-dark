@@ -112,7 +112,7 @@
             this.query = evt.state.query
           }
           document.onkeyup = function (evt) {
-            if (evt.key === 's') focusSearchInput()
+            evt.key === 's' && focusSearchInput()
           }
           focusSearchInput()
         },
