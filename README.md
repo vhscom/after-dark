@@ -20,7 +20,7 @@ The following table outlines key features which differentiate After Dark for oth
 
 Feature | Summary
 --------|--------
-[Quick Installer](#getting-started) | After Dark provides a cross-platform quick installer. One command is all you need to start creating a website. Just don't expect it to write your content too.
+[Quick Installer](#getting-started) | After Dark provides a cross-platform quick installer. One command is all you need to start creating a website anywhere you can access a terminal.
 [Module System](#module-system) | Add additional functionality to your site using [Hugo Theme Components](https://gohugo.io/themes/theme-components/). After Dark includes a module system and a number of custom-built modules specifically designed to enhance your site.
 [Theme Variants](#theme-variants) | Choose from one of three dark color pallets and two different display modes. Toggle between them anytime directly from your site configuration.
 [Lazy Loading](#lazy-loading) | Decrease page load time and improve user experience on slower connections. After Dark includes [lazysizes](https://github.com/aFarkas/lazysizes), a zero-configuration JavaScript library, for low-friction lazy-loading of images, scripts, iFrames and more.
@@ -52,7 +52,7 @@ Then run the quick install script located in `bin/install`, or just paste this i
 wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/master/bin/install | sh
 ```
 
-Installation should complete in a matter of seconds. If you have `elinks` installed it will open automatically with a local preview of your site.
+Installation should complete in a matter of seconds. If you have `elinks` installed your site will open automatically for [terminal browsing](https://codeberg.org/vhs/after-dark/src/branch/master/images/docs/feat-terminal-browsing-fs8.png).
 
 After installation use the [`hugo new`](https://gohugo.io/commands/hugo_new/) command to create content and [`hugo server`](https://gohugo.io/commands/hugo_server/) to see your content locally. To view your content online run the included preview script from your site directory:
 
@@ -68,11 +68,11 @@ Preview starts a hugo server and connects to [Serveo](https://serveo.net) using 
 
 After Dark uses Hugo [Theme Components](https://gohugo.io/themes/theme-components/) to provide optional add-on modules. Each module is packaged using NPM for convenience. A summary of available modules can be found in the following table. Got an idea for a new module? Drop into the [Telegram chatroom][1] and let it be known.
 
-Module Name | Latest Version | Description
----|---|---
-[Fractal Forest] | [![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://codeberg.org/vhs/fractal-forest/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400)](https://codeberg.org/vhs/fractal-forest.git) | Better Portable Graphics
-[Voyeur] | [![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://codeberg.org/vhs/voyeur/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400)](https://codeberg.org/vhs/voyeur.git) | Simple, trustworthy website analytics
-[Hall of Mirrors] | [![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://codeberg.org/vhs/hall-of-mirrors/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400)](https://codeberg.org/vhs/hall-of-mirrors.git) | PhotoSwipe Image Gallery
+Module Name | Difficulty | Latest Version | Description
+---|---|---|---
+[Fractal Forest] | Easy | [![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://codeberg.org/vhs/fractal-forest/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400)](https://codeberg.org/vhs/fractal-forest.git) | Better Portable Graphics (Preinstalled)
+[Voyeur] | Medium | [![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://codeberg.org/vhs/voyeur/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400)](https://codeberg.org/vhs/voyeur.git) | Fathom Analytics
+[Hall of Mirrors] | Easy | [![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://codeberg.org/vhs/hall-of-mirrors/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400)](https://codeberg.org/vhs/hall-of-mirrors.git) | PhotoSwipe Image Gallery
 
 ### Section Menu
 
@@ -93,7 +93,7 @@ To customize the section menu add and adjust settings in `config.toml` like:
   url = "/post/"
 ```
 
-Alternatively, you may update the menu from your content front matter like:
+Alternatively, update the menu from your content front matter like:
 
 ```toml
 menu = "main"
@@ -205,7 +205,7 @@ images = [
 ]
 ```
 
-Or, if using [Page Bundle](https://gohugo.io/content-management/page-bundles/), specify the relative path to an image resource for the page:
+Or, if using [Page Bundles](https://gohugo.io/content-management/page-bundles/), specify the relative path to an image resource for the page:
 
 ```toml
 images = [
@@ -213,9 +213,9 @@ images = [
 ]
 ```
 
-See [Unsplash Source](https://source.unsplash.com/) for image configuration options.
+Images stored in bundles can be grouped together with content (i.e. `/post-title/images/*`) or kept together in a [headless bundle](https://gohugo.io/content-management/page-bundles/#headless-bundle) (e.g. `content/uploads`) and reused anywhere on your site.
 
-**Note:** While it would be possible, After Dark does not currently support relative links to images. If you would like to see this feature, please [open a new issue](https://codeberg.org/vhs/after-dark/issues/new).
+See [Unsplash Source](https://source.unsplash.com/) for image configuration options for images sourced externally or copied from Unsplash.
 
 #### Twitter Cards
 
