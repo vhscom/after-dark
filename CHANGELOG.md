@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.5.0"></a>
+# [5.5.0](https://codeberg.org/vhs/after-dark/compare/v5.4.0...v5.5.0) (2018-08-10)
+
+
+### Bug Fixes
+
+* **assets:** stop treating all permalinks as external ([d5e8e33](https://codeberg.org/vhs/after-dark/commits/d5e8e33))
+
+
+### Features
+
+* **layout,install:** add automatic syntax highlighting ([3eed5dd](https://codeberg.org/vhs/after-dark/commits/3eed5dd))
+
+
+
 <a name="5.4.0"></a>
 # [5.4.0](https://codeberg.org/vhs/after-dark/compare/v5.3.1...v5.4.0) (2018-08-04)
 
