@@ -16,33 +16,33 @@ After Dark is a blog theme for the [Hugo](https://gohugo.io/) static site genera
 
 ## Demo & Tutorial
 
-Visit [Hack Cabin](https://hackcabin.com) for a production example of which the [site architecture](https://hackcabin.com/post/initial-commit/#site-architecture) can be recreated using a [step-by-step guide](https://vhs.codeberg.page/zero-to-http-2).
+Visit [Hack Cabin](https://hackcabin.com) for a live example which can be recreated using a [step-by-step guide](https://vhs.codeberg.page/zero-to-http-2).
 
 ## Features
 
-The following table outlines some key theme features with links to more detailed information.
+Summary of features with links to more detailed information.
 
 Feature | Summary
 --------|--------
-[Quick Installer](#getting-started) | One command is all you need to start creating a websiteCode .
-[Module System](#module-system) | Increase functionality with add-on modules designed to compliment your site.
-[Display Variants](#display-variants) | Customize the look with one of six display variations.
+[Quick Installer](#getting-started) | One command is all you need to start creating a website.
+[Module System](#module-system) | Add functionality with prebuilt modules designed to compliment your site.
+[Display Variants](#display-variants) | Customize the look-and-feel with one of six included display variations.
 [Fuzzy Search](#fuzzy-search) | Find indexable content anywhere on your site. No registration required.
 [Code Highlighter](#code-highlighter) | Instantly highlight code in over 160 languages without requiring JavaScript.
 [Post Images](#post-images) | Add graphics to your posts without touching an image editor.
 [Lazy Loading](#lazy-loading) | Boost page speed and save resources by deferring assets you define.
-[Social Flair](#social-flair) | Brag about your site and look good doing it on Twitter, Telegram and more.
-[SEO](#search-optimization) | Give crawlers rich information about your site structure and content.
+[Social Engagement](#social-engagement) | Brag about your site and look good doing it on Twitter, Telegram and more.
+[Search Optimization](#search-optimization) | Give crawlers rich information about your site structure and content.
 [Modification Dating](#modification-dating) | Recently updated content is flagged and made more discoverable to readers.
 [Index Blocking](#index-blocking) | Control what web crawlers see when they visit your site without using robots.txt.
-[Referrer Policy](#referrer-policy) | Help protect your visitors from nosy neighbors.
+[Referrer Policy](#referrer-policy) | Help protect your visitors from nosy neighbors with a simple, site-wide policy.
 [Snippets](#snippets) | Add tweets, coubs, videos and more without learning APIs or even HTML.
 [Related Content](#related-content) | Display links to relevant content below blog posts, automatically.
-[Table of Contents](#table-of-contents) | Create collapsable content summaries with smooth scroll links.
+[Table of Contents](#table-of-contents) | Create a collapsable content summary with smooth scroll links to content.
 
 ## Getting Started
 
-First [Install Hugo](https://gohugo.io/getting-started/installing) and, optionally, [elinks] on your machine. Instructions for installing both using [Homebrew](https://brew.sh/) on macOS:
+[Install Hugo](https://gohugo.io/getting-started/installing) and, optionally, [elinks] on your machine. Instructions for installing both using [Homebrew](https://brew.sh/) on macOS:
 
 ```shell
 brew install hugo elinks
@@ -54,15 +54,17 @@ Then run the quick install script located in `bin/install`, or just paste this i
 wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/master/bin/install | sh
 ```
 
-Installation should complete in a matter of seconds. If you have `elinks` installed your site will open automatically for [terminal browsing](https://codeberg.org/vhs/after-dark/src/branch/master/images/docs/feat-terminal-browsing-fs8.png).
+Installation should complete in a matter of seconds. If you have `elinks` installed your site will open automatically in a terminal browser.
 
-After installation use the [`hugo new`](https://gohugo.io/commands/hugo_new/) command to create content and [`hugo server`](https://gohugo.io/commands/hugo_server/) to see your content locally. To view your content online run the included preview script from your site directory:
+Use [`hugo new`](https://gohugo.io/commands/hugo_new/) to create content. For example, to create a new post enter `hugo new post/post-title.md`. Then run [`hugo server`](https://gohugo.io/commands/hugo_server/) to see your content locally and watch for changes during editing.
+
+To view your content online run the included `bin/preview` script from your site directory:
 
 ```sh
 cd flying-toasters && ./themes/after-dark/bin/preview
 ```
 
-Preview starts a hugo server and connects to [Serveo](https://serveo.net) using an SSH tunnel to expose your local server to the internet. You must have an ssh server such as [dropbear](https://matt.ucc.asn.au/dropbear/dropbear.html) or similar installed for this to work.
+Preview starts a hugo server and connects it to [Serveo](https://serveo.net) using an SSH tunnel to expose your local server to the internet with end-to-end encryption. You must have an ssh server such as [dropbear](https://matt.ucc.asn.au/dropbear/dropbear.html) or [openssh](https://www.openssh.com) installed for this to work.
 
 ## Customizing
 
@@ -260,7 +262,7 @@ After Dark uses the HTML5 [`details`](http://devdocs.io/html/element/details) an
 
 When a page is first loaded, the TOC will be collapsed so it does not clutter up the page. Once expanded, selecting an item in the TOC will smooth scroll to that section within the document, highlight the section header and updating the browser's location bar for deep linking and back-button support.
 
-### Social Flair
+### Social Engagement
 
 Increase engagement when sharing links to your site on social media.
 
