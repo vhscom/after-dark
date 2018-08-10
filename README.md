@@ -10,33 +10,35 @@
 
 ![After Dark screenshots](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/minimal-mac.png)
 
+## About
+
+After Dark is a blog theme for the [Hugo](https://gohugo.io/) static site generator. The theme makes use of emerging web development and design trends while maintaining the aesthetic and design minimalism of hobbiest websites created during the mid- to late-1990's. It is built to be quick and efficient to serve as many users as possible using the least amount of code possible with as little maintenance as possible. Welcome to After Dark.
+
 ## Demo & Tutorial
 
 Visit [Hack Cabin](https://hackcabin.com) for a production example of which the [site architecture](https://hackcabin.com/post/initial-commit/#site-architecture) can be recreated using a [step-by-step guide](https://vhs.codeberg.page/zero-to-http-2).
 
 ## Features
 
-The following table outlines key features which differentiate After Dark for other themes.
+The following table outlines some key theme features with links to more detailed information.
 
 Feature | Summary
 --------|--------
-[Quick Installer](#getting-started) | After Dark provides a cross-platform quick installer. One command is all you need to start creating a website.
-[Module System](#module-system) | Add more functionality to your site. After Dark includes a module system and a number of custom-built modules designed to compliment the theme.
-[Theme Variants](#theme-variants) | Choose from one of three dark color pallets and two different display modes. Toggle between them anytime directly from your site configuration.
-[Fuzzy Search](#fuzzy-search) | Find crawlable content anywhere on your site. After Dark includes a custom search app built with [Vue](https://vuejs.org/), [Fuse](http://fusejs.io/) and [Mark](https://markjs.io). No registration necessary.
-[Syntax Highlighting](#syntax-highlighting) | Share code with style. After Dark automatically highlights code written more than 160 languages and doesn't require any JavaScript to do it.
-[Post Images](#post-images) | Easily add performance-optimized, responsive post images without fiddling around with an image editor or touching a single line of code.
-[Lazy Loading](#lazy-loading) | Decrease page load time and improve user experience on slower connections. After Dark includes [lazysizes](https://github.com/aFarkas/lazysizes) for dead simple lazy-loading of images, scripts, iFrames and more.
-[Social Engagement](#social-engagement) | After Dark provides automatic and configurable [Open Graph](http://ogp.me/) support, Twitter Cards and Telegram Instant View template to make social shares pop like 37 pieces of flair.
-[Search Optimization](#search-optimization) | Using [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and meta tags, After Dark gives crawlers rich data about the site structure and content. No configuration required.
-[Personalization](#personalization) | Tweak CSS using the purpose-built [customization file](#custom-styles). Swap in [your own favicon](#favicon). Leverage [block templates](https://gohugo.io/templates/blocks) to quickly extend new custom layouts. And use [hack.css](https://hackcss.egoist.moe/dark.html) flexbox grids and CSS components to add style your site.
-[Code Snippets](#code-snippets) | After Dark provides a number of reusable code snippets for adding things like tweets, [coubs](https://coub.com), blockquotes, figures, [hackcss components](https://hackcss.egoist.moe/) and more. Use them to create completely custom layouts or simply spice up an existing document.
-[Related Content](#related-content) | Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can increase your site's page views, the time spent on your site and reader loyalty.
-[Table of Contents](#table-of-contents) | Help users locate and share information in long posts. By providing a Table of Contents, users will spend less time scrolling to locate information in larger documents and are more likely to deep link to specific information on a page.
-[Modification Dating](#modification-dating) | Surface recently updated content to users and crawlers, allowing them to understand when a post or page was was last modified. Recently updated posts will be flagged as modified and visually lifted upwards in chronological listings.
-[Taxonomy Pages](https://gohugo.io/content-management/taxonomies) | Help users discover taxonomic content. After Dark automatically generates taxonomy and taxonomy terms pages and links to them in post bylines.
-[Error Page](https://hackcabin.com/post/after-dark-error-page-redesign/) | Decrease bounce rate when URL errors occur. After Dark provides an engaging 404 page with animated background.
-Post Bylines | Rich post bylines include optional author name, word count, links to taxonomy pages and metadata for search engines.
+[Quick Installer](#getting-started) | One command is all you need to start creating a websiteCode .
+[Module System](#module-system) | Increase functionality with add-on modules designed to compliment your site.
+[Display Variants](#display-variants) | Customize the look with one of six display variations.
+[Fuzzy Search](#fuzzy-search) | Find indexable content anywhere on your site. No registration required.
+[Code Highlighter](#code-highlighter) | Instantly highlight code in over 160 languages without requiring JavaScript.
+[Post Images](#post-images) | Add graphics to your posts without touching an image editor.
+[Lazy Loading](#lazy-loading) | Boost page speed and save resources by deferring assets you define.
+[Social Flair](#social-flair) | Brag about your site and look good doing it on Twitter, Telegram and more.
+[SEO](#search-optimization) | Give crawlers rich information about your site structure and content.
+[Modification Dating](#modification-dating) | Recently updated content is flagged and made more discoverable to readers.
+[Index Blocking](#index-blocking) | Control what web crawlers see when they visit your site without using robots.txt.
+[Referrer Policy](#referrer-policy) | Help protect your visitors from nosy neighbors.
+[Snippets](#snippets) | Add tweets, coubs, videos and more without learning APIs or even HTML.
+[Related Content](#related-content) | Display links to relevant content below blog posts, automatically.
+[Table of Contents](#table-of-contents) | Create collapsable content summaries with smooth scroll links.
 
 ## Getting Started
 
@@ -109,11 +111,11 @@ Finally, the menu can be disabled from site config anytime:
 
 See Hugo's [Menu docs](https://gohugo.io/content-management/menus/) for more information.
 
-### Syntax Highlighting
+### Code Highlighter
 
-After Dark automatically highlights code written in more than 160 languages using a customized version of [One Dark Syntax](https://atom.io/themes/one-dark-syntax) with full color display support in terminal browsers.
+After Dark automatically highlights code written in more than 160 languages using a customized version of [One Dark Syntax](https://atom.io/themes/one-dark-syntax) with support for terminal browsers.
 
-To activate the syntax highlighter simply use the [`highlight` shortcode](https://gohugo.io/content-management/syntax-highlighting/#highlight-shortcode) or indicate the [highlighting language](https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages) with a fenced code block from within your page content, e.g. ```` ```rust ````
+To activate the code highlighter simply use the [`highlight` shortcode](https://gohugo.io/content-management/syntax-highlighting/#highlight-shortcode) or indicate the [highlighting language](https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages) with a fenced code block from within your page content, e.g. ```` ```rust ````
 
 ![Syntax Highlighting screenshot](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/feat-syntax-highlighting-fs8.png "Example JavaScript highlighting with line numbers.")
 
@@ -128,7 +130,9 @@ Reference the Hugo [Syntax Highlighting](https://gohugo.io/content-management/sy
 
 ### Fuzzy Search
 
-Find content site-wide in the blink of an eye. JavaScript fuzzy search is at your fingertips. To use it simply create a section called `search` using the After Dark search layout like so:
+If a web crawler can find it, so can you. Search for indexable content site-wide using the inbuilt search app built with [Vue](https://vuejs.org/), [Fuse](http://fusejs.io/) and [Mark](https://markjs.io). Searches are fuzzy and typos encouraged.
+
+To use it simply create a section called `search` using the After Dark search layout like so:
 
 ```
 └── content
@@ -256,9 +260,9 @@ After Dark uses the HTML5 [`details`](http://devdocs.io/html/element/details) an
 
 When a page is first loaded, the TOC will be collapsed so it does not clutter up the page. Once expanded, selecting an item in the TOC will smooth scroll to that section within the document, highlight the section header and updating the browser's location bar for deep linking and back-button support.
 
-### Social Engagement
+### Social Flair
 
-Increase user engagement when sharing links on social media.
+Increase engagement when sharing links to your site on social media.
 
 #### Open Graph
 
@@ -505,7 +509,7 @@ Overrides to theme markdown processing defaults are available from page front ma
 
 See the Hugo docs for additional [configuration options](http://gohugo.io/overview/configuration/#configure-blackfriday-rendering).
 
-### Code Snippets
+### Snippets
 
 Snippets are reusable bits of code you can sprinkle across your site to reduce repetition and improve consistency. After Dark provides a number of snippets in the form of [hackcss components](https://hackcss.egoist.moe/) and [Hugo Shortcodes](https://gohugo.io/extras/shortcodes) to help make your site easier to maintain.
 
@@ -530,7 +534,7 @@ Rather than repeating the HTML to create a blockquote in your content simply cal
 {{< /blockquote >}}
 ```
 
-Included are a number of shortcodes for hackcss components designed to work across all [theme variants](#theme-variants):
+Included are a number of shortcodes for hackcss components designed to work across all theme [variants](#variants):
 
 - `hackcss-alert` - Provides themed alert boxes. See `hackcss-alert.html` for usage notes.
 - `hackcss-button` - Provides themed buttons. See `hackcss-button.html` for usage notes.
@@ -553,11 +557,11 @@ Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/con
 
 ### Personalization
 
-After Dark uses [hack.css](https://hackcss.egoist.moe/dark.html) to automatically style your markup, giving you instant access to flexbox grids, several dark theme variants, and other pre-built components. Use them while creating new [sections](#section-menu) leveraging [block templates](https://gohugo.io/templates/blocks). Additional personalization options listed below.
+After Dark uses [hack.css](https://hackcss.egoist.moe/dark.html) to automatically style your markup, giving you instant access to flexbox grids, several display variants, and other pre-built components. Use them while creating new [sections](#section-menu) leveraging [block templates](https://gohugo.io/templates/blocks). Additional personalization options listed below.
 
-#### Theme Variants
+#### Display Variants
 
-Customize the look and feel of your site using theme variants. After Dark provides three dark color palettes and two display modes. Toggle between them anytime directly from your site configuration.
+Customize the look-and-feel of your site with variants. After Dark provides three dark color palettes and two display modes. Toggle between them anytime directly from your site configuration.
 
 The default theme variant uses the `dark` color palette with the `hack` display mode. To modify it add the following to your site configuration and choose one of the available options:
 
