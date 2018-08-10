@@ -68,7 +68,11 @@ theme = [
 ]
 
 enableRobotsTXT = true # Suggested, enable robots.txt file
-disqusShortname = "" # Optional, add Disqus shortname for comments
+disqusShortname = "" # Deprecated, add Disqus shortname for comments
+
+pygmentsCodefences = true # Suggested, highlight fenced code blocks
+pygmentsUseClasses = true # Required for custom syntax highlighting
+
 SectionPagesMenu = "main" # Enable menu system for lazy bloggers
 footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 
