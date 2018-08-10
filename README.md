@@ -20,20 +20,20 @@ The following table outlines key features which differentiate After Dark for oth
 
 Feature | Summary
 --------|--------
-[Quick Installer](#getting-started) | After Dark provides a cross-platform quick installer. One command is all you need to start creating a website anywhere you can access a terminal.
-[Module System](#module-system) | Add additional functionality to your site using [Hugo Theme Components](https://gohugo.io/themes/theme-components/). After Dark includes a module system and a number of custom-built modules specifically designed to enhance your site.
+[Quick Installer](#getting-started) | After Dark provides a cross-platform quick installer. One command is all you need to start creating a website.
+[Module System](#module-system) | Add more functionality to your site. After Dark includes a module system and a number of custom-built modules designed to compliment the theme.
 [Theme Variants](#theme-variants) | Choose from one of three dark color pallets and two different display modes. Toggle between them anytime directly from your site configuration.
-[Lazy Loading](#lazy-loading) | Decrease page load time and improve user experience on slower connections. After Dark includes [lazysizes](https://github.com/aFarkas/lazysizes), a zero-configuration JavaScript library, for low-friction lazy-loading of images, scripts, iFrames and more.
+[Fuzzy Search](#fuzzy-search) | Find crawlable content anywhere on your site. After Dark includes a custom search app built with [Vue](https://vuejs.org/), [Fuse](http://fusejs.io/) and [Mark](https://markjs.io). No registration necessary.
+[Syntax Highlighting](#syntax-highlighting) | Share code with style. After Dark automatically highlights code written more than 160 languages and doesn't require any JavaScript to do it.
+[Post Images](#post-images) | Easily add performance-optimized, responsive post images without fiddling around with an image editor or touching a single line of code.
+[Lazy Loading](#lazy-loading) | Decrease page load time and improve user experience on slower connections. After Dark includes [lazysizes](https://github.com/aFarkas/lazysizes) for dead simple lazy-loading of images, scripts, iFrames and more.
 [Social Engagement](#social-engagement) | After Dark provides automatic and configurable [Open Graph](http://ogp.me/) support, Twitter Cards and Telegram Instant View template to make social shares pop like 37 pieces of flair.
 [Search Optimization](#search-optimization) | Using [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and meta tags, After Dark gives crawlers rich data about the site structure and content. No configuration required.
-[Post Images](#post-images) | Increase visual appeal of posts. After Dark enables configuration-driven post images which are lazy-loaded, responsive and automatically cropped for a consistent look-and-feel across your site.
-[Fuzzy Search](#fuzzy-search) | After Dark ships with an in-browser search app built with [Vue](https://vuejs.org/), [Fuse](http://fusejs.io/) and [Mark](https://markjs.io). Use it to quickly find crawlable content anywhere your site.
 [Personalization](#personalization) | Tweak CSS using the purpose-built [customization file](#custom-styles). Swap in [your own favicon](#favicon). Leverage [block templates](https://gohugo.io/templates/blocks) to quickly extend new custom layouts. And use [hack.css](https://hackcss.egoist.moe/dark.html) flexbox grids and CSS components to add style your site.
-[Snippets](#snippets) | After Dark provides a number of reusable code snippets for adding things like tweets, [coubs](https://coub.com), blockquotes, figures, [hackcss components](https://hackcss.egoist.moe/) and more. Use them to create completely custom layouts or simply spice up an existing document.
+[Code Snippets](#code-snippets) | After Dark provides a number of reusable code snippets for adding things like tweets, [coubs](https://coub.com), blockquotes, figures, [hackcss components](https://hackcss.egoist.moe/) and more. Use them to create completely custom layouts or simply spice up an existing document.
 [Related Content](#related-content) | Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can increase your site's page views, the time spent on your site and reader loyalty.
 [Table of Contents](#table-of-contents) | Help users locate and share information in long posts. By providing a Table of Contents, users will spend less time scrolling to locate information in larger documents and are more likely to deep link to specific information on a page.
 [Modification Dating](#modification-dating) | Surface recently updated content to users and crawlers, allowing them to understand when a post or page was was last modified. Recently updated posts will be flagged as modified and visually lifted upwards in chronological listings.
-[Syntax Highlighting](#syntax-highlighting) | Share code snippets with style. After Dark provides Atom One [Light](https://atom.io/themes/one-light-syntax) and [Dark](https://atom.io/themes/one-dark-syntax) syntax highlighting for 1337 code sharing.
 [Taxonomy Pages](https://gohugo.io/content-management/taxonomies) | Help users discover taxonomic content. After Dark automatically generates taxonomy and taxonomy terms pages and links to them in post bylines.
 [Error Page](https://hackcabin.com/post/after-dark-error-page-redesign/) | Decrease bounce rate when URL errors occur. After Dark provides an engaging 404 page with animated background.
 Post Bylines | Rich post bylines include optional author name, word count, links to taxonomy pages and metadata for search engines.
@@ -109,6 +109,90 @@ Finally, the menu can be disabled from site config anytime:
 
 See Hugo's [Menu docs](https://gohugo.io/content-management/menus/) for more information.
 
+### Syntax Highlighting
+
+After Dark automatically highlights code written in more than 160 languages using a customized version of [One Dark Syntax](https://atom.io/themes/one-dark-syntax) with full color display support in terminal browsers.
+
+To activate the syntax highlighter simply use the [`highlight` shortcode](https://gohugo.io/content-management/syntax-highlighting/#highlight-shortcode) or indicate the [highlighting language](https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages) with a fenced code block from within your page content, e.g. ```` ```rust ````
+
+![Syntax Highlighting screenshot](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/feat-syntax-highlighting-fs8.png "Example JavaScript highlighting with line numbers.")
+
+If you'd prefer a lighter background color create a file called `syntax.css` in your site `static/css` folder and drop in the contents of one of the following:
+
+- [`dark.css`](https://cdn.jsdelivr.net/npm/atom-one-chroma/dist/dark.css) `#282c34` colored background
+- [`light.css`](https://cdn.jsdelivr.net/npm/atom-one-chroma/dist/light.css) `#fafafa` colored background
+
+Alternatively, roll your own syntax using the [syntax roller](https://codeberg.org/vhs/atom-one-chroma) purpose-built for use with After Dark.
+
+Reference the Hugo [Syntax Highlighting](https://gohugo.io/content-management/syntax-highlighting/) docs for additional information.
+
+### Fuzzy Search
+
+Find content site-wide in the blink of an eye. JavaScript fuzzy search is at your fingertips. To use it simply create a section called `search` using the After Dark search layout like so:
+
+```
+└── content
+    └── search
+        └── _index.md
+```
+
+With `_index.md` like:
+
+```
++++
+title = "Search"
+layout = "search"
+noindex = true
++++
+```
+
+Then tell Hugo to output an `index.json` file along with your site when building by adding the following to the config:
+
+```
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS", "JSON"]
+```
+
+**Note:** If you don't see `index.json` in your `public` folder after building try running a `hugo --gc` to cajole the generator into creating the JSON file.
+
+After that navigate to the `/search/` path on your site and let the fun begin.
+
+**Tip:** Consider enabling the After Dark [section menu](#section-menu) to expose the search section to users.
+
+While deep link searches are supported, please note Fuzzy Search will only return results for [Regular Pages](https://gohugo.io/variables/site/#site-variables-list) and intentionally omits any page tagged for [index blocking](#index-blocking). In other words it's easy to find stuff. But only if you want it to be found.
+
+### Post Images
+
+Bring your words to life with post images. Post images appear above post content and leverage Hugo's inbuilt [Image Processing](https://gohugo.io/content-management/image-processing/) to enable automatic cropping and image positioning.
+
+Because post images are often one of the first things users see when visiting your site After Dark takes some extra steps to load them in a performant manner. Techniques used to speed up image loading include [Low-Quality Image Placeholders](https://www.afasterweb.com/2016/08/31/low-quality-blur-in/), [Lazy Loading](#lazy-loading) and responsive images using the `srcset` and `sizes` attributes.
+
+Using post images requires some opinion with regard to the structure of your content. To create a post with a post image you must:
+
+1. Create a [Page Bundle](https://gohugo.io/content-management/page-bundles/) grouping your desired image together with your post content.
+2. Specify the [Resources Metadata](https://gohugo.io/content-management/page-resources/#resources-metadata-toml-example) in the post front matter and set the `name` property to `"header"`.
+
+An example page bundle might look like:
+
+```
+└── post
+    └── secure-your-digital-life
+        ├── images
+        │   └── florian-klauer-119557-unsplash.jpg
+        └── index.md
+```
+
+With the following front matter specified in `index.md`:
+
+```
+[[resources]]
+  src = "images/florian-klauer-119557-unsplash.jpg"
+  name = "header"
+```
+
+That's it! After Dark does the rest.
+
 ### Lazy Loading
 
 Lazy loading prioritizes when and how images and more are downloaded, improving perceived performance and reducing page load times. Lazy loading will start working automatically. No configuration is necessary.
@@ -138,7 +222,7 @@ To activate lazyloading with [lazysizes], add `lazyload` to the `class` attribut
 </iframe>
 ```
 
-After Dark includes a _Shortcode_ taking advantage of this feature, enabling you to easily create [lazy-loaded `figure` elements](#snippets) within your markdown content.
+After Dark includes a _Shortcode_ taking advantage of this feature, enabling you to easily create [lazy-loaded `figure` elements](#code-snippets) within your markdown content.
 
 Additional information and examples, including how to set-up and use LQIP (Low-Quality Image Placeholders), are available on the [lazysizes] repository on GitHub.
 
@@ -225,13 +309,13 @@ See the Hugo [Internal Templates documentation](https://gohugo.io/templates/inte
 
 #### Telegram Instant View
 
-Improve the experience for Telegram users by providing an [Instant View](https://instantview.telegram.org/) (IV). After Dark makes easy.
+Improve the experience for Telegram users by providing an [Instant View](https://instantview.telegram.org/). After Dark makes easy.
 
 ![Open Graph sharing card screenshot](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/feat-instant-view-fs8.png "Example Telegram Instant View for After Dark")
 
-To create an IV for your site simply [create your own](https://instantview.telegram.org/my/) Instant View template modeling from the example template below.
+To create an Instant View for your site simply [create your own](https://instantview.telegram.org/my/) IV template modeling from the example here:
 
-```
+```yaml
 # enable for items in the post section
 ?path: /post/.+
 
@@ -405,73 +489,6 @@ keywords = [
 
 While not considered relevant to some crawlers, keywords can be a useful way to document target search terms for use in <abbr title="Pay-Per-Click">PPC</abbr> online advertising and provide semantic value to your pages.
 
-### Post Images
-
-Bring your words to life with post images. Post images appear above post content and leverage Hugo's inbuilt [Image Processing](https://gohugo.io/content-management/image-processing/) to enable automatic cropping and image positioning.
-
-Because post images are often one of the first things users see when visiting your site After Dark takes some extra steps to load them in a performant manner. Techniques used to speed up image loading include [Low-Quality Image Placeholders](https://www.afasterweb.com/2016/08/31/low-quality-blur-in/), [Lazy Loading](#lazy-loading) and responsive images using the `srcset` and `sizes` attributes.
-
-Using post images requires some opinion with regard to the structure of your content. To create a post with a post image you must:
-
-1. Create a [Page Bundle](https://gohugo.io/content-management/page-bundles/) grouping your desired image together with your post content.
-2. Specify the [Resources Metadata](https://gohugo.io/content-management/page-resources/#resources-metadata-toml-example) in the post front matter and set the `name` property to `"header"`.
-
-An example page bundle might look like:
-
-```
-└── post
-    └── secure-your-digital-life
-        ├── images
-        │   └── florian-klauer-119557-unsplash.jpg
-        └── index.md
-```
-
-With the following front matter specified in `index.md`:
-
-```
-[[resources]]
-  src = "images/florian-klauer-119557-unsplash.jpg"
-  name = "header"
-```
-
-That's it! After Dark does the rest.
-
-### Fuzzy Search
-
-Find content site-wide in the blink of an eye. JavaScript fuzzy search is at your fingertips. To use it simply create a section called `search` using the After Dark search layout like so:
-
-```
-└── content
-    └── search
-        └── _index.md
-```
-
-With `_index.md` like:
-
-```
-+++
-title = "Search"
-layout = "search"
-noindex = true
-+++
-```
-
-Then tell Hugo to output an `index.json` file along with your site when building by adding the following to the config:
-
-```
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-  section = ["HTML", "RSS", "JSON"]
-```
-
-**Note:** If you don't see `index.json` in your `public` folder after building try running a `hugo --gc` to cajole the generator into creating the JSON file.
-
-After that navigate to the `/search/` path on your site and let the fun begin.
-
-**Tip:** Consider enabling the After Dark [section menu](#section-menu) to expose the search section to users.
-
-While deep link searches are supported, please note Fuzzy Search will only return results for [Regular Pages](https://gohugo.io/variables/site/#site-variables-list) and intentionally omits any page tagged for [index blocking](#index-blocking). In other words it's easy to find stuff. But only if you want it to be found.
-
 ### Markdown Output
 
 Gain more control over markdown conversion to HTML. By modifying the markdown processor settings you can take advantage of [Blackfriday](https://github.com/russross/blackfriday) features not enabled by default.
@@ -488,7 +505,7 @@ Overrides to theme markdown processing defaults are available from page front ma
 
 See the Hugo docs for additional [configuration options](http://gohugo.io/overview/configuration/#configure-blackfriday-rendering).
 
-### Snippets
+### Code Snippets
 
 Snippets are reusable bits of code you can sprinkle across your site to reduce repetition and improve consistency. After Dark provides a number of snippets in the form of [hackcss components](https://hackcss.egoist.moe/) and [Hugo Shortcodes](https://gohugo.io/extras/shortcodes) to help make your site easier to maintain.
 
@@ -533,16 +550,6 @@ Additional theme-provided shortcodes at your disposal:
 To create your own custom shortcodes add a `layouts/shortcodes` directory to your site, place your shortcodes within and start using them in your markdown content. To create or override provided components add a `layouts/partials/components` directory to your site and reference the theme-provided files as you hack away.
 
 Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/content-management/shortcodes/#using-a-shortcode) and see the inline documentation within each shortcode for example usage instructions.
-
-### Syntax Highlighting
-
-Provide a richer experience when sharing code snippets on your site. After Dark provides a [hackable code highlighter](https://codeberg.org/vhs/atom-one-chroma) using the lovely [One Dark](https://atom.io/themes/one-dark-syntax) and [One Light](https://atom.io/themes/one-light-syntax) syntax themes.
-
-![Syntax Highlighting screenshot](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/feat-syntax-highlighting-fs8.png "Syntax Highlighting with Atom One")
-
-To set-up syntax highlighting for your After Dark site copy the contents of [`light.css`](https://cdn.jsdelivr.net/npm/atom-one-chroma/dist/light.css) or [`dark.css`](https://cdn.jsdelivr.net/npm/atom-one-chroma/dist/dark.css) into your [Custom Styles](#custom-styles) file and rebuild your site. Once configured, simply use Hugo built-in [`highlight` shortcode](https://gohugo.io/extras/shortcodes#highlight) to highlight your code.
-
-Reference Hugo's [Syntax Highlighting docs](https://gohugo.io/content-management/syntax-highlighting/) for usage instructions and additional configuration options.
 
 ### Personalization
 
