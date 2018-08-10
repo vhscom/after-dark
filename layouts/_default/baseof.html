@@ -37,6 +37,13 @@
     {{ partial "head/favicon.html" . }}
     {{ partial "global-styles.html" . }}
     {{ partial "async-scripts.html" . }}
+    {{ $highlights := findRE "class\\s*?=\\s*?\".*?\\bhighlight\\b.*?\"|class\\s*?=\\s*?highlight\\b" .Content }}
+    {{ if ge (len $highlights) 1 }}
+      <script>fetchInject([{{ "/css/syntax.css" | relURL }}])</script>
+      <noscript>
+        <link href={{ "/css/syntax.css" | relURL }} rel="stylesheet">
+      </noscript>
+    {{ end }}
   </head>
   {{ $hackcss_disabled := .Site.Params.hackcss.disabled | default false }}
   {{ $hackcss_mode := .Site.Params.hackcss.mode | default "hack" }}
