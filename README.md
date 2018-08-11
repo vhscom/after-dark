@@ -54,7 +54,7 @@ Then run the quick install script located in `bin/install`, or just paste this i
 wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/master/bin/install | sh
 ```
 
-Installation should complete in a matter of seconds. If you have `elinks` installed your site will open automatically in a terminal browser.
+Installation should complete in a matter of seconds. If you have `elinks` installed your site will open automatically in a [terminal browser](images/docs/feat-quick-installer.gif).
 
 Use [`hugo new`](https://gohugo.io/commands/hugo_new/) to create content. For example, to create a new post enter `hugo new post/post-title.md`. Then run [`hugo server`](https://gohugo.io/commands/hugo_server/) to see your content locally and watch for changes during editing.
 
