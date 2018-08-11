@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.5.1"></a>
+## [5.5.1](https://codeberg.org/vhs/after-dark/compare/v5.5.0...v5.5.1) (2018-08-11)
+
+
+### Bug Fixes
+
+* **install:** restore android support ([d3b2ab0](https://codeberg.org/vhs/after-dark/commits/d3b2ab0)), closes [#25](https://codeberg.org/vhs/after-dark/issues/25)
+
+
+
 <a name="5.5.0"></a>
 # [5.5.0](https://codeberg.org/vhs/after-dark/compare/v5.4.0...v5.5.0) (2018-08-10)
 
