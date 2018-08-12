@@ -20,7 +20,7 @@ After Dark is a minimalist dark theme and website starter kit created for use wi
 
 - **Extensible:** Using a combination of layout composition and inheritance After Dark may be used to create a large variety of page layouts and experiences without requiring theme modification. The theme comes preinstalled with an example layout for blog postings and an in-browser search app with full offline support. Styles included are fully customizable and may be disabled at any time for complete design freedom.
 
-After Dark enjoys a community-maintained [port](https://www.getgutenberg.io/themes/after-dark/) for [Gutenberg](https://www.getgutenberg.io) for those who'd prefer to experiment with an alternative to Hugo.
+After Dark enjoys a community-maintained [port for Gutenberg](https://www.getgutenberg.io/themes/after-dark/) for those who desire to experiment with an alternative to Hugo.
 
 ## Demo & Tutorial
 
