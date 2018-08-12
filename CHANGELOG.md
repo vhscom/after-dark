@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.0.0"></a>
+# [6.0.0](https://codeberg.org/vhs/after-dark/compare/v5.5.1...v6.0.0) (2018-08-12)
+
+
+### Bug Fixes
+
+* **shortcodes:** remove privacytube and coub shortcodes ([ada8286](https://codeberg.org/vhs/after-dark/commits/ada8286)), closes [#35](https://codeberg.org/vhs/after-dark/issues/35)
+
+
+### BREAKING CHANGES
+
+* **shortcodes:** shortcodes removed must now be copied to the theme, if used
+
+
+
 <a name="5.5.1"></a>
 ## [5.5.1](https://codeberg.org/vhs/after-dark/compare/v5.5.0...v5.5.1) (2018-08-11)
 
