@@ -556,8 +556,6 @@ Because Hugo doesn't support the use of shortcodes outside of markdown files the
 
 Additional theme-provided shortcodes at your disposal:
 
-- `privacytube` – It's YouTube. But without cookies and UI cruft.
-- `coub` - GIFs with sound. Think of it like YouTube for video loops.
 - `figure` - Similar to the Hugo built-in, but with [Lazy Loading](#lazy-loading), an adjusted caption title and smaller caption text.
 
 To create your own custom shortcodes add a `layouts/shortcodes` directory to your site, place your shortcodes within and start using them in your markdown content. To create or override provided components add a `layouts/partials/components` directory to your site and reference the theme-provided files as you hack away.
