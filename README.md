@@ -139,9 +139,9 @@ Reference the Hugo [Syntax Highlighting](https://gohugo.io/content-management/sy
 
 ### Fuzzy Search
 
-If a web crawler can find it, so can you. Search for indexable content site-wide using the inbuilt search app built with [Vue](https://vuejs.org/), [Fuse](http://fusejs.io/) and [Mark](https://markjs.io). Searches are fuzzy and typos encouraged.
+If a web crawler can find it, so can you. Search for indexable content site-wide using the inbuilt JavaScript search app built with [Vue](https://vuejs.org/), [Fuse](http://fusejs.io/) and [Mark](https://markjs.io). Searches are fuzzy and typos are forgiven.
 
-To use it simply create a section called `search` using the After Dark search layout like so:
+To begin using fuzzy search simply create a section called `search` using the After Dark search layout like so:
 
 ```
 └── content
@@ -149,9 +149,9 @@ To use it simply create a section called `search` using the After Dark search la
         └── _index.md
 ```
 
-With `_index.md` like:
+With an `_index.md` using the search layout:
 
-```
+```toml
 +++
 title = "Search"
 layout = "search"
@@ -159,21 +159,21 @@ noindex = true
 +++
 ```
 
-Then tell Hugo to output an `index.json` file along with your site when building by adding the following to the config:
+Then tell Hugo to output an `index.json` file along with your site when building by adding the following to your `config.toml`:
 
-```
+```toml
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   section = ["HTML", "RSS", "JSON"]
 ```
 
-**Note:** If you don't see `index.json` in your `public` folder after building try running a `hugo --gc` to cajole the generator into creating the JSON file.
+The above configuration tells Hugo to create an `index.json` file in addition to `index.xml` and `index.html` when building your site. The JSON file will be consumed by the search app when the layout is used and will update automatically whenever your site is built.
 
-After that navigate to the `/search/` path on your site and let the fun begin.
+**Tip:** While updating the config consider enabling the After Dark [section menu](#section-menu) to expose search to users.
 
-**Tip:** Consider enabling the After Dark [section menu](#section-menu) to expose the search section to users.
+Finally, go ahead and serve your site, and navigate to the `/search/` path to begin using fuzzy search. Notice how the page URL updates when queries are entered and search terms highlighted in results. Try refreshing the page then copying the URL and opening it in a new window. Notice how the search query and results are persisted across page loads.
 
-While deep link searches are supported, please note Fuzzy Search will only return results for [Regular Pages](https://gohugo.io/variables/site/#site-variables-list) and intentionally omits any page tagged for [index blocking](#index-blocking). In other words it's easy to find stuff. But only if you want it to be found.
+Fuzzy Search will only return results for [Regular Pages](https://gohugo.io/variables/site/#site-variables-list) and intentionally omits pages tagged for [index blocking](#index-blocking). Anything you see in search results is also indexable to well-behaved web crawlers and anything you can't search is not.
 
 ### Post Images
 
