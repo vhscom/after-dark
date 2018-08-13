@@ -34,7 +34,9 @@ Feature | Summary
 --------|--------
 [Quick Installer](#getting-started) | One command is all you need to start creating a website with After Dark.
 [Module System](#module-system) | Add functionality with prebuilt modules designed to compliment your site.
+[Section Menu](#section-menu) | Display an accessible site-wide navigation with links to content sections.
 [Display Variants](#display-variants) | Customize look-and-feel with one of six included display variations.
+[Custom Styles](#custom-styles) | Add to, override or disable theme styles for complete design control.
 [Fuzzy Search](#fuzzy-search) | Find and share indexable content anywhere on your site. No registration required.
 [Code Highlighter](#code-highlighter) | Highlight code in over 160 languages without requiring JavaScript.
 [Post Images](#post-images) | Add graphics to your posts without touching an image editor.
@@ -47,7 +49,8 @@ Feature | Summary
 [Snippets](#snippets) | Adjust layouts, add form components and more without repeating yourself.
 [Related Content](#related-content) | Display links to relevant content below blog posts automatically.
 [Table of Contents](#table-of-contents) | Create collapsable content summaries with deep link and smooth-scroll support.
-[Section Menu](#section-menu) | Display an accessible site-wide navigation with links to content sections.
+[SVG Favicon](#svg-favicon) | So small you didn't even know it was there.
+[404 Page](#404-page) | Entertain users into staying when they experience linkrot on your site.
 
 ## Getting Started
 
@@ -520,9 +523,9 @@ See the Hugo docs for additional [configuration options](http://gohugo.io/overvi
 
 ### Snippets
 
-Snippets are reusable bits of code you can sprinkle across your site to reduce repetition and improve consistency. After Dark provides a number of snippets in the form of [hackcss components](https://hackcss.egoist.moe/) and [Hugo Shortcodes](https://gohugo.io/extras/shortcodes) to help make your site easier to maintain.
+Snippets are reusable bits of code you can sprinkle across your site to reduce repetition and improve consistency. After Dark provides several snippets to help you stay consistent and make your site easier to customize and maintain.
 
-Take for example the After Dark `blockquote` shortcode:
+Take for example the included After Dark `blockquote` shortcode:
 
 ```html
 <blockquote {{ with .Get "class" }}class="{{ . }}"{{ end }} {{ with .Get "citelink" }}cite="{{ . }}"{{ end }}>
@@ -535,7 +538,7 @@ Take for example the After Dark `blockquote` shortcode:
 </blockquote>
 ```
 
-Rather than repeating the HTML to create a blockquote in your content simply call the shortcode from your markdown files like so:
+Rather than repeat [`blockquote`](https://devdocs.io/html/element/blockquote) HTML in your content simply call the included shortcode within from your markdown files:
 
 ```html
 {{< blockquote cite="Bitly" citelink="https://bitly.is/2mkxskj" >}}
@@ -543,20 +546,24 @@ Rather than repeating the HTML to create a blockquote in your content simply cal
 {{< /blockquote >}}
 ```
 
-Included are a number of shortcodes for hackcss components designed to work across all theme [variants](#variants):
+And the HTML will be provided for you consistently, every time.
 
-- `hackcss-alert` - Provides themed alert boxes. See `hackcss-alert.html` for usage notes.
-- `hackcss-button` - Provides themed buttons. See `hackcss-button.html` for usage notes.
-- `hackcss-buttongroup` - Allows buttons to be grouped together. See `hackcss-buttongroup.html` for usage notes.
-- `hackcss-card` - Provides themed card element. See `hackcss-card.html` for usage notes.
-- `hackcss-progress` - Provides themed progress meter. See `hackcss-progress.html` for usage notes.
-- `hackcss-throbber` - Provides themed loading indicator. See `hackcss-throbber.html` for usage notes.
+For [hackcss] components the following are made available:
 
-Because Hugo doesn't support the use of shortcodes outside of markdown files the After Dark hackcss components were created using partial _components_, enabling reuse in both your content as well as your [personalized layouts](#personalization).
+- [`hackcss-alert`](layouts/shortcodes/hackcss-alert.html) - Provides themed alert boxes. See file for usage notes.
+- [`hackcss-button`](layouts/shortcodes/hackcss-button.html) - Provides themed buttons. See file for usage notes.
+- [`hackcss-buttongroup`](layouts/shortcodes/hackcss-buttongroup.html) - Allows buttons to be grouped together. See file for usage notes.
+- [`hackcss-card`](layouts/shortcodes/hackcss-card.html) - Provides themed card element. See file for usage notes.
+- [`hackcss-progress`](layouts/shortcodes/hackcss-progress.html) - Provides themed progress meter. See file for usage notes.
+- [`hackcss-throbber`](layouts/shortcodes/hackcss-throbber.html) - Provides themed loading indicator. See file for usage notes.
+
+The above shortcodes are special in that they're created using a _component_ [partial abstraction](layouts/partials/components
+New File
+) enabling snippet reuse in both content and layout.
 
 Additional theme-provided shortcodes at your disposal:
 
-- `figure` - Similar to the Hugo built-in, but with [Lazy Loading](#lazy-loading), an adjusted caption title and smaller caption text.
+- [`figure`](layouts/shortcodes/figure.html) - Similar to the [Hugo built-in](https://gohugo.io/extras/shortcodes) but overridden to support image [Lazy Loading](#lazy-loading), and an adjusted caption with smaller text.
 
 To create your own custom shortcodes add a `layouts/shortcodes` directory to your site, place your shortcodes within and start using them in your markdown content. To create or override provided components add a `layouts/partials/components` directory to your site and reference the theme-provided files as you hack away.
 
@@ -564,7 +571,7 @@ Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/con
 
 ### Personalization
 
-After Dark uses [hack.css](https://hackcss.egoist.moe/dark.html) to automatically style your markup, giving you instant access to flexbox grids, several display variants, and other pre-built components. Use them while creating new [sections](#section-menu) leveraging [block templates](https://gohugo.io/templates/blocks). Additional personalization options listed below.
+After Dark provides several options to give you more freedom and control over your site's look-and-feel. Read on to learn more.
 
 #### Display Variants
 
@@ -579,16 +586,23 @@ The default theme variant uses the `dark` color palette with the `hack` display 
   palette = "dark" # Optional, choose from 'dark', 'dark-grey' and 'solarized-dark'
 ```
 
-Once updated review the included 404 page and `theme-color.html` partial and tweak your site using [Custom Styles](#custom-styles) and, if you desire even more control, [site-level overrides](https://gohugo.io/templates/lookup-order/).
+Once updated review the included [404 Page](#404-page), override the [`theme-color.html` partial](layouts/partials/meta/theme-color.html) and tweak your [Custom Styles](#custom-styles) to suit your personal taste.
 
 #### Custom Styles
 
-Easily add and customize styles without modifying the theme simply by overriding styles in your site. To get started:
+Add to or override existing styles without modifying theme source.
 
-1. Create a file named `custom.css` in your site's `assets/css` directory. If the directory does not exist yet, simply create it.
-2. Add your custom styles inside the file and rebuild your site.
+To add your own custom styles:
 
-For example, to center figure elements, constrain the width and adjust their link styles add the following to your `custom.css`:
+1. Create a file named `custom.css` in your site's `assets/css` directory. If `assets/css` does not exist yet, simply create it:
+
+    ```sh
+    cd flying-toasters && mkdir -p assets/css
+    ```
+
+2. Then add your own custom styles to `custom.css`.
+
+For example, to adjust the treatment of output from the included [`figure` shortcode](https://codeberg.org/vhs/after-dark#snippets) add the following to your `custom.css`:
 
 ```css
 figure {
@@ -600,22 +614,34 @@ figure img {
   max-width: 80%;
 }
 figure a {
-  border-bottom: none !important;
+  border-bottom: none;
 }
 figure a:hover {
-  background-color: inherit !important;
+  background-color: inherit;
 }
 ```
 
-**Note:** After Dark ships with some example customizations. If you would like to keep these, copy the styles from the theme's version of `custom.css` into your site-level `custom.css` file after creating it.
+The above will center figures on the page, constrain their width to 80% of the available layout space and remove any link underlines.
 
-Custom styles will be automatically be concatenated into a `style` element in the document `head` along with theme and vendor styles. See the [Asset Bundling](https://gohugo.io/hugo-pipes/bundling/) section of the [Hugo Pipes](https://gohugo.io/hugo-pipes/) documentation for a better understanding of how this works.
+**Heads up:** After Dark ships with some example color customizations in [its own `custom.css`](assets/css/custom.css) file. If you wish to keep these in your site, copy the styles within into your site-level `custom.css` file after creating it.
 
-#### Favicon
+With `hugo serve` running, changes to your site `custom.css` will trigger an automatic rebuild and a live reload in any open browsers with JavaScript support.
 
-After Dark ships with a lightweight SVG favicon embedded into every page. To customize or replace it create a file named `favicon.html` under `layouts/partials/head` within your site and place an [`icon` link](http://devdocs.io/html/link_types#icon) within it.
+**How does this work?** Custom styles are concatenated into a `style` element in the document `head` along with theme and vendor styles. [Specificity](https://devdocs.io/css/specificity) in this file trumps what is output at the theme or vendor levels, so no `!important` hacks are strictly necessary to override anything. See the [Asset Bundling](https://gohugo.io/hugo-pipes/bundling/) Hugo docs for a better understanding of file concatenation using [Hugo Pipes](https://gohugo.io/hugo-pipes/).
 
-**Why SVG?** Though they don't have perfect [browser support](http://caniuse.com/#feat=link-icon-svg) yet, SVG favicons are smaller in size and more flexible. SVG favicons can be styled with CSS or even animated with JavaScript.
+Finally, if you wish to disable all theme styles, simply disable the [Display Variant](#display-variants) after creating your `custom.css`.
+
+#### SVG Favicon
+
+After Dark ships with a featherweight SVG favicon embedded into every page. To customize or replace it create a file named `favicon.html` under `layouts/partials/head` within your site and place an [`icon` link](http://devdocs.io/html/link_types#icon) within it as illustrated in the included [`favicon.html` partial](layouts/partials/head/favicon.html).
+
+**Why SVG?** Though they don't enjoy broad support [yet](http://caniuse.com/#feat=link-icon-svg) they should. SVG favicons are so lightweight they can be embedded in every page. And unlike traditional graphics, SVGs can be styled with CSS and even animated with JavaScript.
+
+#### 404 Page
+
+Linkrot can be embarrassing. If you forget to set your [page aliases](https://gohugo.io/content-management/urls/#aliases) when moving content aournd, or simply fat-finger a <kbd>CTRL+V</kbd> when sharing a link, don't send your users packing. After Dark includes a 404 page. Use it to encourage users to stick around when resources can't be located by redirecting users to `domain.example/404.html` where `domain.example` is your `baseURL` or `localhost:1313` if running locally with `hugo serve`.
+
+To customize the provided 404 page create a `404.html` in your site `layouts` directory and let [Hugo's Lookup Order](https://gohugo.io/templates/lookup-order/) do the rest.
 
 ## License
 
@@ -628,6 +654,7 @@ as published by Sam Hocevar. See the COPYING file for more details.
 [1]: https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg
 [lazysizes]: https://github.com/aFarkas/lazysizes
 [elinks]: http://elinks.or.cz/
+[hackcss]: https://hackcss.egoist.moe/dark.html
 [Fractal Forest]: https://codeberg.org/vhs/fractal-forest
 [Voyeur]: https://codeberg.org/vhs/voyeur
 [Hall of Mirrors]: https://codeberg.org/vhs/hall-of-mirrors
