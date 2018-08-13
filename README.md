@@ -634,7 +634,7 @@ Finally, if you wish to disable all theme styles, disable the [Display Variant](
 
 Use [`theme-color` meta extension](https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color) in the `<head>` of your pages to suggest the color that browsers and OSes should use if they customize the display of individual pages in their UIs with varying colors.
 
-If left unchanged, accent color is set automatically to background color of the [Display Variant](#display-variants). To customize the accent color add a CSS variable called `--theme-color` to your [Custom Styles](#custom-styles):
+If left unchanged, accent color is set automatically to background color of the [Display Variant](#display-variants). To customize the accent color add a CSS variable called `--accent-color` to your [Custom Styles](#custom-styles):
 
 ```css
 :root {
