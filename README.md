@@ -37,7 +37,7 @@ Feature | Summary
 [Section Menu](#section-menu) | Display an accessible site-wide navigation with links to content sections.
 [Display Variants](#display-variants) | Customize look-and-feel with one of six included display variations.
 [Custom Styles](#custom-styles) | Add to, override or disable theme styles for complete design control.
-[Accent Color](#theme-color) | Tell supporting browsers and OSes how they should style the UI surrounding your content.
+[Accent Color](#accent-color) | Tell supporting browsers and OSes how they should style the UI surrounding your content.
 [SVG Favicon](#svg-favicon) | Help push browser standards forward by decorating your site with an SVG favicon.
 [Fuzzy Search](#fuzzy-search) | Find and share indexable content anywhere on your site. No registration required.
 [Code Highlighter](#code-highlighter) | Highlight code in over 160 languages without requiring JavaScript.
