@@ -14,7 +14,9 @@
     {{ .Summary }}
   </div>
   {{ if .Truncated }}
-    <nav class="readmore"><a itemprop="url" href="{{ .RelPermalink }}">Read More&nbsp;&raquo;</a></nav>
+    <nav class="readmore"><p>
+      <a itemprop="url" href="{{ .RelPermalink }}">Read More&nbsp;&raquo;</a>
+    </p></nav>
   {{ end }}
   <meta itemprop="inLanguage" content="{{ .Site.LanguageCode }}">
   <meta itemprop="datePublished" content="{{ dateFormat "2006-01-02T15:04:05-07:00" (default .Date (.PublishDate)) }}">
