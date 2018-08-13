@@ -1,7 +1,11 @@
 {{ $custom := resources.Get "css/custom.css" }}
-
 {{ if eq .Site.Params.hackcss.disabled true }}
-  <style>{{ (slice $custom | resources.Concat "styles.css").Content | safeCSS }}</style>
+  {{ with (slice $custom | resources.Concat "styles.css").Content }}
+    {{ if gt (len .) 0 }}
+      <style>{{ . | safeCSS }}</style>
+      {{ partial "meta/theme-color.html" . }}
+    {{ end }}
+  {{ end }}
 {{ else }}
   {{ $hack := resources.Get "css/vendor/hack/hack.css" }}
   {{ $standard := resources.Get "css/vendor/hack/standard.css" }}
@@ -11,21 +15,39 @@
   {{ $theme := resources.Get "css/theme.css" | minify }}
   {{ if eq .Site.Params.hackcss.palette "dark-grey" }}
     {{ if eq .Site.Params.hackcss.mode "standard" }}
-      <style>{{ (slice $hack $standard $darkgrey $theme $custom | resources.Concat "styles.css").Content | safeCSS }}</style>
+      {{ with (slice $hack $standard $darkgrey $theme $custom | resources.Concat "styles.css").Content }}
+        <style>{{ . | safeCSS }}</style>
+        {{ partial "meta/theme-color.html" . }}
+      {{ end }}
     {{ else }}
-      <style>{{ (slice $hack $darkgrey $theme $custom | resources.Concat "styles.css").Content | safeCSS }}</style>
+      {{ with (slice $hack $darkgrey $theme $custom | resources.Concat "styles.css").Content }}
+        <style>{{ . | safeCSS }}</style>
+        {{ partial "meta/theme-color.html" . }}
+      {{ end }}
     {{ end }}
   {{ else if eq .Site.Params.hackcss.palette "solarized-dark" }}
     {{ if eq .Site.Params.hackcss.mode "standard" }}
-      <style>{{ (slice $hack $standard $solarizeddark $theme $custom | resources.Concat "styles.css").Content | safeCSS }}</style>
+      {{ with (slice $hack $standard $solarizeddark $theme $custom | resources.Concat "styles.css").Content }}
+        <style>{{ . | safeCSS }}</style>
+        {{ partial "meta/theme-color.html" . }}
+      {{ end }}
     {{ else }}
-      <style>{{ (slice $hack $solarizeddark $theme $custom | resources.Concat "styles.css").Content | safeCSS }}</style>
+      {{ with (slice $hack $solarizeddark $theme $custom | resources.Concat "styles.css").Content }}
+        <style>{{ . | safeCSS }}</style>
+        {{ partial "meta/theme-color.html" . }}
+      {{ end }}
     {{ end }}
   {{ else }}
     {{ if eq .Site.Params.hackcss.mode "standard" }}
-      <style>{{ (slice $hack $standard $dark $theme $custom | resources.Concat "styles.css").Content | safeCSS }}</style>
+      {{ with (slice $hack $standard $dark $theme $custom | resources.Concat "styles.css").Content }}
+        <style>{{ . | safeCSS }}</style>
+        {{ partial "meta/theme-color.html" . }}
+      {{ end }}
     {{ else }}
-      <style>{{ (slice $hack $dark $theme $custom | resources.Concat "styles.css").Content | safeCSS }}</style>
+      {{ with (slice $hack $dark $theme $custom | resources.Concat "styles.css").Content }}
+        <style>{{ . | safeCSS }}</style>
+        {{ partial "meta/theme-color.html" . }}
+      {{ end }}
     {{ end }}
   {{ end }}
 {{ end }}

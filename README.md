@@ -20,7 +20,7 @@ After Dark is a minimalist dark theme and website starter kit created for use wi
 
 - **Extensible:** Using a combination of layout composition and inheritance After Dark may be used to create a large variety of page layouts and experiences without requiring theme modification. The theme comes preinstalled with an example layout for blog postings and an in-browser search app with full offline support. Styles included are fully customizable and may be disabled at any time for complete design freedom.
 
-After Dark enjoys a community-maintained [port for Gutenberg](https://www.getgutenberg.io/themes/after-dark/) for those who desire to experiment with an alternative to Hugo.
+After Dark enjoys a community-maintained [port for Gutenberg](https://www.getgutenberg.io/themes/after-dark/) for those who'd like to experiment with an alternative to Hugo.
 
 ## Demo & Tutorial
 
@@ -37,6 +37,8 @@ Feature | Summary
 [Section Menu](#section-menu) | Display an accessible site-wide navigation with links to content sections.
 [Display Variants](#display-variants) | Customize look-and-feel with one of six included display variations.
 [Custom Styles](#custom-styles) | Add to, override or disable theme styles for complete design control.
+[Accent Color](#theme-color) | Tell supporting browsers and OSes how they should style the UI surrounding your content.
+[SVG Favicon](#svg-favicon) | Help push browser standards forward by decorating your site with an SVG favicon.
 [Fuzzy Search](#fuzzy-search) | Find and share indexable content anywhere on your site. No registration required.
 [Code Highlighter](#code-highlighter) | Highlight code in over 160 languages without requiring JavaScript.
 [Post Images](#post-images) | Add graphics to your posts without touching an image editor.
@@ -44,12 +46,11 @@ Feature | Summary
 [Social Engagement](#social-engagement) | Share links to your site with optimal experience on Twitter, Telegram and more.
 [Search Optimization](#search-optimization) | Give crawlers rich information about your site structure and content.
 [Modification Dating](#modification-dating) | Recently updated content is flagged and made more discoverable to readers.
-[Index Blocking](#index-blocking) | Control what web crawlers see when they visit your site without using robots.txt.
+[Index Blocking](#index-blocking) | Hide pages from search engines without modifying robots.txt.
 [Referrer Policy](#referrer-policy) | Help protect your visitors from nosy neighbors with a simple site-wide policy.
 [Snippets](#snippets) | Adjust layouts, add form components and more without repeating yourself.
 [Related Content](#related-content) | Display links to relevant content below blog posts automatically.
 [Table of Contents](#table-of-contents) | Create collapsable content summaries with deep link and smooth-scroll support.
-[SVG Favicon](#svg-favicon) | So small you didn't even know it was there.
 [404 Page](#404-page) | Entertain users into staying when they experience linkrot on your site.
 
 ## Getting Started
@@ -127,7 +128,7 @@ See Hugo's [Menu docs](https://gohugo.io/content-management/menus/) for more inf
 
 ### Code Highlighter
 
-After Dark automatically highlights code written in more than 160 languages using a customized version of [One Dark Syntax](https://atom.io/themes/one-dark-syntax) with support for terminal browsers. To activate the code highlighter use the [`highlight` shortcode](https://gohugo.io/content-management/syntax-highlighting/#highlight-shortcode) or simply indicate the [highlighting language](https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages) with a fenced code block from within your page content, e.g. ```` ```js ````
+After Dark automatically highlights code written in more than 160 languages using a customized version of [One Dark Syntax](https://atom.io/themes/one-dark-syntax) with support for terminal browsers. To activate the code highlighter use the [`highlight` shortcode](https://gohugo.io/content-management/syntax-highlighting/#highlight-shortcode) or indicate the [highlighting language](https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages) with a fenced code block from within your page content, e.g. ```` ```js ````
 
 ![Syntax Highlighting screenshot](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/feat-syntax-highlighting-fs8.png "Example JavaScript highlighting with line numbers.")
 
@@ -144,7 +145,7 @@ Reference the Hugo [Syntax Highlighting](https://gohugo.io/content-management/sy
 
 If a web crawler can find it, so can you. Search for indexable content site-wide using the inbuilt JavaScript search app built with [Vue](https://vuejs.org/), [Fuse](http://fusejs.io/) and [Mark](https://markjs.io). Searches are fuzzy and typos are forgiven.
 
-To begin using fuzzy search simply create a section called `search` using the After Dark search layout like so:
+To begin using fuzzy search create a section called `search` using the After Dark search layout like so:
 
 ```
 └── content
@@ -329,7 +330,7 @@ Improve the experience for Telegram users by providing an [Instant View](https:/
 
 ![Open Graph sharing card screenshot](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/feat-instant-view-fs8.png "Example Telegram Instant View for After Dark")
 
-To create an Instant View for your site simply [create your own](https://instantview.telegram.org/my/) IV template modeling from the example here:
+To create an Instant View for your site [create your own](https://instantview.telegram.org/my/) IV template modeling from the example here:
 
 ```yaml
 # enable for items in the post section
@@ -366,7 +367,7 @@ The default set-up helps ensure your After Dark site will rank well in <abbr tit
 
 #### Webmaster Verification
 
-Verify your site with several webmaster tools including Google, Bing, Alexa and Yandex. To allow verification of your site with any or all of these providers simply add the following to your `config.toml` and fill in their respective values:
+Verify your site with several webmaster tools including Google, Bing, Alexa and Yandex. To allow verification of your site with any or all of these providers add the following to your `config.toml` and fill in their respective values:
 
 ```toml
 [params.seo.webmaster_verifications]
@@ -416,7 +417,7 @@ In addition to `date` and `publishdate`, it's also possible to set an expiry dat
 
 #### Index Blocking
 
-Just because a page appears in your `sitemap.xml` does not mean you want it to appear in a SERP. Examples of pages which will appear in your `sitemap.xml` that you typically do not want indexed by crawlers include error pages, search pages, legal pages, and pages that simply list summaries of other pages.
+Just because a page appears in your `sitemap.xml` does not mean you want it to appear in a SERP. Examples of pages which will appear in your `sitemap.xml` that you typically do not want indexed by crawlers include error pages, search pages, legal pages, and pages which list summaries of other pages.
 
 Though it's possible to block search indexing from a `robots.txt` file, After Dark makes it possible to block page indexing using Hugo configuration as well. By default the following page types will be blocked:
 
@@ -523,7 +524,7 @@ See the Hugo docs for additional [configuration options](http://gohugo.io/overvi
 
 ### Snippets
 
-Snippets are reusable bits of code you can sprinkle across your site to reduce repetition and improve consistency. After Dark provides several snippets to help you stay consistent and make your site easier to customize and maintain.
+Snippets are reusable bits of code you can sprinkle across your site to reduce repetition and improve consistency. After Dark provides several snippets to help make your site easier to customize and maintain.
 
 Take for example the included After Dark `blockquote` shortcode:
 
@@ -538,7 +539,7 @@ Take for example the included After Dark `blockquote` shortcode:
 </blockquote>
 ```
 
-Rather than repeat [`blockquote`](https://devdocs.io/html/element/blockquote) HTML in your content simply call the included shortcode within from your markdown files:
+Rather than repeat [`blockquote`](https://devdocs.io/html/element/blockquote) HTML in your content call the included shortcode within from your markdown files:
 
 ```html
 {{< blockquote cite="Bitly" citelink="https://bitly.is/2mkxskj" >}}
@@ -575,9 +576,9 @@ After Dark provides several options to give you more freedom and control over yo
 
 #### Display Variants
 
-Customize the look-and-feel of your site with variants. After Dark provides three dark color palettes and two display modes. Toggle between them anytime directly from your site configuration.
+Customize the look-and-feel of your site with display variants. After Dark provides three dark color palettes and two display modes. Toggle between them anytime directly from your site configuration.
 
-The default theme variant uses the `dark` color palette with the `hack` display mode. To modify it add the following to your site configuration and choose one of the available options:
+The default display variant uses the `dark` color palette with the `hack` display mode. To modify it add the following to your site configuration and choose one of the available options:
 
 ```toml
 [params.hackcss]
@@ -586,7 +587,7 @@ The default theme variant uses the `dark` color palette with the `hack` display 
   palette = "dark" # Optional, choose from 'dark', 'dark-grey' and 'solarized-dark'
 ```
 
-Once updated review the included [404 Page](#404-page), override the [`theme-color.html` partial](layouts/partials/meta/theme-color.html) and tweak your [Custom Styles](#custom-styles) to suit your personal taste.
+Once updated review the [404 Page](#404-page), [Accent Color](#accent-color) and tweak your [Custom Styles](#custom-styles) to suit your personal taste.
 
 #### Custom Styles
 
@@ -594,52 +595,66 @@ Add to or override existing styles without modifying theme source.
 
 To add your own custom styles:
 
-1. Create a file named `custom.css` in your site's `assets/css` directory. If `assets/css` does not exist yet, simply create it:
+1. Create a file named `custom.css` in your site's `assets/css` directory. If it doesn't exist yet, simply create it:
 
     ```sh
-    cd flying-toasters && mkdir -p assets/css
+    mkdir -p assets/css && touch "$_"/custom.css
     ```
 
-2. Then add your own custom styles to `custom.css`.
+2. Then add any custom styles to `custom.css`. For example, to adjust the treatment of output from the included [`figure` shortcode](https://codeberg.org/vhs/after-dark#snippets) add the following to your `custom.css`:
 
-For example, to adjust the treatment of output from the included [`figure` shortcode](https://codeberg.org/vhs/after-dark#snippets) add the following to your `custom.css`:
+    ```css
+    figure {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    figure img {
+      max-width: 80%;
+    }
+    figure a {
+      border-bottom: none;
+    }
+    figure a:hover {
+      background-color: inherit;
+    }
+    ```
 
-```css
-figure {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-figure img {
-  max-width: 80%;
-}
-figure a {
-  border-bottom: none;
-}
-figure a:hover {
-  background-color: inherit;
-}
-```
+    The above will center figures on the page, constrain their width to 80% of the available layout space and remove any link underlines.
 
-The above will center figures on the page, constrain their width to 80% of the available layout space and remove any link underlines.
-
-**Heads up:** After Dark ships with some example color customizations in [its own `custom.css`](assets/css/custom.css) file. If you wish to keep these in your site, copy the styles within into your site-level `custom.css` file after creating it.
+**Heads up:** After Dark ships with some example customizations in [its own `custom.css`](assets/css/custom.css) file. If you wish to keep these in your site, copy the styles within into your site-level `custom.css` file after creating it.
 
 With `hugo serve` running, changes to your site `custom.css` will trigger an automatic rebuild and a live reload in any open browsers with JavaScript support.
 
 **How does this work?** Custom styles are concatenated into a `style` element in the document `head` along with theme and vendor styles. [Specificity](https://devdocs.io/css/specificity) in this file trumps what is output at the theme or vendor levels, so no `!important` hacks are strictly necessary to override anything. See the [Asset Bundling](https://gohugo.io/hugo-pipes/bundling/) Hugo docs for a better understanding of file concatenation using [Hugo Pipes](https://gohugo.io/hugo-pipes/).
 
-Finally, if you wish to disable all theme styles, simply disable the [Display Variant](#display-variants) after creating your `custom.css`.
+Finally, if you wish to disable all theme styles, disable the [Display Variant](#display-variants) after creating your `custom.css`.
+
+#### Accent Color
+
+Use [`theme-color` meta extension](https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color) in the `<head>` of your pages to suggest the color that browsers and OSes should use if they customize the display of individual pages in their UIs with varying colors.
+
+If left unchanged, accent color is set automatically to background color of the [Display Variant](#display-variants). To customize the accent color add a CSS variable called `--theme-color` to your [Custom Styles](#custom-styles):
+
+```css
+:root {
+  --accent-color: rgba(1e2, .5e1, .5e0, +.25e2%); // functional syntax with floats value
+}
+```
+
+You may then start adding and [Using CSS variables](https://devdocs.io/css/using_css_variables) within your `custom.css` anywhere accent colors or other variables are desired.
 
 #### SVG Favicon
 
-After Dark ships with a featherweight SVG favicon embedded into every page. To customize or replace it create a file named `favicon.html` under `layouts/partials/head` within your site and place an [`icon` link](http://devdocs.io/html/link_types#icon) within it as illustrated in the included [`favicon.html` partial](layouts/partials/head/favicon.html).
+After Dark ships with a 224B SVG favicon embedded into every page.
 
-**Why SVG?** Though they don't enjoy broad support [yet](http://caniuse.com/#feat=link-icon-svg) they should. SVG favicons are so lightweight they can be embedded in every page. And unlike traditional graphics, SVGs can be styled with CSS and even animated with JavaScript.
+**Why SVG?** Though they don't enjoy broad support [yet](http://caniuse.com/#feat=link-icon-svg) they should. SVG favicons are extremely lightweight. And unlike traditional graphics, SVGs can be styled with CSS and even animated with JavaScript.
+
+To customize the favicon create a `favicon.html` under `layouts/partials/head` within your site and place an [`icon` link](http://devdocs.io/html/link_types#icon) within it as illustrated in the included [`favicon.html` partial](layouts/partials/head/favicon.html). If you're planning to optimize for specific [platform experiences](https://github.com/h5bp/html5-boilerplate/blob/6.1.0/dist/doc/extend.md#web-apps) this override file is a good place to add any additional tags required.
 
 #### 404 Page
 
-Linkrot can be embarrassing. If you forget to set your [page aliases](https://gohugo.io/content-management/urls/#aliases) when moving content aournd, or simply fat-finger a <kbd>CTRL+V</kbd> when sharing a link, don't send your users packing. After Dark includes a 404 page. Use it to encourage users to stick around when resources can't be located by redirecting users to `domain.example/404.html` where `domain.example` is your `baseURL` or `localhost:1313` if running locally with `hugo serve`.
+Linkrot can be embarrassing. If you forget to set your [page aliases](https://gohugo.io/content-management/urls/#aliases) when moving content around, or sipmly fat-finger a <kbd>CTRL+V</kbd> when sharing a link, don't send your users packing. After Dark includes a 404 page. Use it to encourage users to stick around when resources can't be located by redirecting users to `domain.example/404.html` where `domain.example` is your `baseURL` or `localhost:1313` if running locally with `hugo serve`.
 
 To customize the provided 404 page create a `404.html` in your site `layouts` directory and let [Hugo's Lookup Order](https://gohugo.io/templates/lookup-order/) do the rest.
 
