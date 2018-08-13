@@ -15,21 +15,23 @@ tags = [
 features = [
   "Quick Installer",
   "Module System",
+  "Section Menu"
   "Theme Variants",
+  "Custom Styles",
+  "Fuzzy Search",
+  "Code Highlighter",
+  "Post Images",
   "Lazy Loading",
   "Social Engagement",
   "Search Optimization",
-  "Post Images",
-  "Fuzzy Search",
-  "Personalization",
+  "Modification Dating",
+  "Index Blocking",
+  "Referrer Policy",
   "Snippets",
   "Related Content",
   "Table of Contents",
-  "Modification Dating",
-  "Syntax Highlighting",
-  "Taxonomy Pages",
-  "Error Page",
-  "Post Bylines"
+  "SVG Favicon",
+  "404 Page"
 ]
 min_version = 0.44
 
