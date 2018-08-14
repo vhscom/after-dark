@@ -1,4 +1,4 @@
-{{ $cssvar := "--accent-color:\\s*([^!;}]*).*" }}
+{{ $cssvar := "--trim-color:\\s*([^!;}]*).*" }}
 {{ $hackbg := "pre{background-color:([^!;}]*).*" }}
 {{ with index (findRE $cssvar . 1) 0 }}
   <meta name="theme-color" content={{ strings.TrimRight " " (. | replaceRE $cssvar "$1") }}>
