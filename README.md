@@ -12,7 +12,7 @@
 
 ## About
 
-After Dark is a minimalist dark theme and website starter kit for use with the popular [Hugo](https://gohugo.io/) static content generator. It is an original work inspired by a memory of the joys of learning to code for the Web made to feel reminiscent of hobbiest websites created during the mid- to late-1990's. It is built to be approachable, extensible and fast. Welcome to After Dark.
+After Dark is a minimalist dark theme and website starter kit for use with the popular [Hugo](https://gohugo.io/) static content generator. It is an original work inspired by a memory of the joys of learning to code for the Web and made to feel reminiscent of hobbiest websites created during the mid- to late-1990's. It is designed for extensibility, portability and speed.
 
 ## Demo & Tutorial
 
