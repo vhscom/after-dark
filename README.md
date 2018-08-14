@@ -32,7 +32,7 @@ Feature | Summary
 [Section Menu](#section-menu) | Display an accessible site-wide navigation with links to content sections.
 [Display Variants](#display-variants) | Customize look-and-feel with one of six included display variations.
 [Custom Styles](#custom-styles) | Add to, override or disable theme styles for complete design control.
-[Accent Color](#accent-color) | Tell supporting browsers and OSes how they should style the UI surrounding your content.
+[Trim Color](#trim-color) | Tell supporting browsers and OS's how they should style the UI surrounding your content.
 [SVG Favicon](#svg-favicon) | Help push browser standards forward by decorating your site with an SVG favicon.
 [Fuzzy Search](#fuzzy-search) | Find and share indexable content anywhere on your site. No registration required.
 [Code Highlighter](#code-highlighter) | Highlight code in over 160 languages without requiring JavaScript.
@@ -583,7 +583,7 @@ The default display variant uses the `dark` color palette with the `hack` displa
   palette = "dark" # Optional, choose from 'dark', 'dark-grey' and 'solarized-dark'
 ```
 
-Once updated review the [404 Page](#404-page), [Accent Color](#accent-color) and tweak your [Custom Styles](#custom-styles) to suit your personal taste.
+Once updated review the [404 Page](#404-page), [Trim Color](#trim-color) and tweak your [Custom Styles](#custom-styles) to suit your personal taste.
 
 #### Custom Styles
 
@@ -626,19 +626,19 @@ With `hugo serve` running, changes to your site `custom.css` will trigger an aut
 
 Finally, if you wish to disable all theme styles, disable the [Display Variant](#display-variants) after creating your `custom.css`.
 
-#### Accent Color
+#### Trim Color
 
-Use [`theme-color` meta extension](https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color) in the `<head>` of your pages to suggest the color that browsers and OSes should use if they customize the display of individual pages in their UIs with varying colors.
+Uses the [`theme-color` meta extension](https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color) in the `<head>` of your pages to suggest the color that browsers and OS's should use if they customize the display of individual pages in their UIs with varying colors.
 
-If left unchanged, accent color is set automatically to background color of the [Display Variant](#display-variants). To customize the accent color add a CSS variable called `--accent-color` to your [Custom Styles](#custom-styles):
+If left unchanged, color is set automatically to background color of the [Display Variant](#display-variants). To customize the trim color add a CSS variable called `--trim-color` to your [Custom Styles](#custom-styles):
 
 ```css
 :root {
-  --accent-color: rgba(1e2, .5e1, .5e0, +.25e2%); // functional syntax with floats value
+  --trim-color: rgba(1e2, .5e1, .5e0, +.25e2%); // functional syntax with floats value
 }
 ```
 
-You may then start adding and [Using CSS variables](https://devdocs.io/css/using_css_variables) within your `custom.css` anywhere accent colors or other variables are desired.
+You may then start adding and [Using CSS variables](https://devdocs.io/css/using_css_variables) within your `custom.css` anywhere colors or other variables are desired.
 
 #### SVG Favicon
 
