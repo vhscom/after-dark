@@ -32,7 +32,7 @@ Feature | Summary
 [Section Menu](#section-menu) | Display an accessible site-wide navigation with links to content sections.
 [Display Variants](#display-variants) | Customize look-and-feel with one of six included display variations.
 [Custom Styles](#custom-styles) | Add to, override or disable theme styles for complete design control.
-[Trim Color](#trim-color) | Tell supporting browsers and OS's how they should style the UI surrounding your content.
+[Trim Color](#trim-color) | Tell supporting browsers and OSs how they should style the UI surrounding your content.
 [SVG Favicon](#svg-favicon) | Help push browser standards forward by decorating your site with an SVG favicon.
 [Fuzzy Search](#fuzzy-search) | Find and share indexable content anywhere on your site. No registration required.
 [Code Highlighter](#code-highlighter) | Highlight code in over 160 languages without requiring JavaScript.
@@ -628,7 +628,7 @@ Finally, if you wish to disable all theme styles, disable the [Display Variant](
 
 #### Trim Color
 
-Uses the [`theme-color` meta extension](https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color) in the `<head>` of your pages to suggest the color that browsers and OS's should use if they customize the display of individual pages in their UIs with varying colors.
+Uses the [`theme-color` meta extension](https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color) in the `<head>` of your pages to suggest the color that browsers and OSs should use if they customize the display of individual pages in their UIs with varying colors.
 
 If left unchanged, color is set automatically to background color of the [Display Variant](#display-variants). To customize the trim color add a CSS variable called `--trim-color` to your [Custom Styles](#custom-styles):
 
