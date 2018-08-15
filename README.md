@@ -520,32 +520,55 @@ See the Hugo docs for additional [configuration options](http://gohugo.io/overvi
 
 ### Snippets
 
-Snippets are reusable bits of code you can sprinkle across your site to reduce repetition and improve consistency. After Dark provides several snippets to help make your site easier to customize and maintain.
+Snippets are reusable bits of code you can sprinkle across your site to reduce repetition and improve consistency. They are composed of [partials](https://gohugo.io/templates/partials) and [shortcodes](https://gohugo.io/content-management/shortcodes). After Dark provides a number of snippets to help make your site easier to customize and maintain.
 
-Take for example the included After Dark `blockquote` shortcode:
+Take for example the included `buttongroup` snippet for creating a set of [hackcss]-styled buttons, which we'll look at in detail here.
 
-```html
-<blockquote {{ with .Get "class" }}class="{{ . }}"{{ end }} {{ with .Get "citelink" }}cite="{{ . }}"{{ end }}>
-  {{ .Inner }}
-  {{ with .Get "citelink" }}
-    <cite><a target="_blank" href="{{ . }}">{{ $.Get "cite" }}</a></cite>
-  {{ else }}
-    <cite>{{ .Get "cite" }}</cite>
-  {{ end }}
-</blockquote>
-```
-
-Rather than repeat [`blockquote`](https://devdocs.io/html/element/blockquote) HTML in your content call the included shortcode within from your markdown files:
+First the `buttongroup` partial:
 
 ```html
-{{< blockquote cite="Bitly" citelink="https://bitly.is/2mkxskj" >}}
-  <p>When you create your own Branded Short Domain, you can expect to see up to a 34% increase in CTR when compared to standard bit.ly links.</p>
-{{< /blockquote >}}
+<form
+  {{ if .action }}action="{{ .action | safeURL }}" {{ end }}
+  {{ if .target }}target="{{ .target }}" {{ end }}
+  {{ if in (slice "get" "post") .method }}method="{{ .method }}" {{ end }}
+  class="btn-group">
+  {{ .body }}
+</form>
 ```
 
-And the HTML will be provided for you consistently, every time.
+Now the `buttongroup` shortcode:
 
-For [hackcss] components the following are made available:
+```html
+{{ $action := .Get "action" }}
+{{ $target := .Get "target" }}
+{{ $method := .Get "method" }}
+{{ $body := .Get "body" | default .Inner }}
+{{ partial "components/buttongroup.html" (dict "action" $action "target" $target "method" $method "body" $body)}}
+```
+
+Notice how the shortcode serves primarily to call the partial, which contains all of the markup and presentation logic. This delegation of responsibility is what enables snippets to be shared between layout (via partial) and content (via shortcode). Now let's see how to actually use it.
+
+To use the `buttongroup` snippet via markdown content use the shortcode form:
+
+```html
+{{< hackcss-buttongroup >}}
+  {{< hackcss-button text="Left" />}}
+  {{< hackcss-button text="Middle" type="info" />}}
+  {{< hackcss-button text="Right" isghost="true" />}}
+{{< /hackcss-buttongroup >}}
+```
+
+This creates a styled button group from your content with three buttons and places them inside a form using the default `form` action.
+
+To use the `buttongroup` in layout use the partial form:
+
+```html
+{{ partial "components/buttongroup.html" (dict "body" (partial "components/button.html" (dict "type" "success" "body" "Submit" "action" .RelPermalink))) }}
+```
+
+This creates a button group from your layout with a single button and specifies the desired `form` action.
+
+After Dark includes the following snippets designed to take advantage of  [hackcss components][hackcss] available in the theme:
 
 - [`hackcss-alert`](layouts/shortcodes/hackcss-alert.html) - Provides themed alert boxes. See file for usage notes.
 - [`hackcss-button`](layouts/shortcodes/hackcss-button.html) - Provides themed buttons. See file for usage notes.
@@ -554,17 +577,12 @@ For [hackcss] components the following are made available:
 - [`hackcss-progress`](layouts/shortcodes/hackcss-progress.html) - Provides themed progress meter. See file for usage notes.
 - [`hackcss-throbber`](layouts/shortcodes/hackcss-throbber.html) - Provides themed loading indicator. See file for usage notes.
 
-The above shortcodes are special in that they're created using a _component_ [partial abstraction](layouts/partials/components
-New File
-) enabling snippet reuse in both content and layout.
+If you'd like to try your hand at creating a snippet look at the above examples then try abstracting the following custom shortcodes included:
 
-Additional theme-provided shortcodes at your disposal:
+- [`blockquote`](layouts/shortcodes/blockquote.html) – Provides a styled blockquote with optional citation link. See file for usage notes.
+- [`figure`](layouts/shortcodes/figure.html) – Overrides Hugo [built-in shortcode](https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes) to provide a [lazy-loaded](#lazy-loading) figure element with small caption text.
 
-- [`figure`](layouts/shortcodes/figure.html) - Similar to the [Hugo built-in](https://gohugo.io/extras/shortcodes) but overridden to support image [Lazy Loading](#lazy-loading), and an adjusted caption with smaller text.
-
-To create your own custom shortcodes add a `layouts/shortcodes` directory to your site, place your shortcodes within and start using them in your markdown content. To create or override provided components add a `layouts/partials/components` directory to your site and reference the theme-provided files as you hack away.
-
-Reference the Hugo docs for [shortcode usage instructions](https://gohugo.io/content-management/shortcodes/#using-a-shortcode) and see the inline documentation within each shortcode for example usage instructions.
+Reference the Hugo docs for additional help using [shortcode](https://gohugo.io/templates/shortcode-templates/) and [partial](https://gohugo.io/templates/partials/) templates.
 
 ### Personalization
 
