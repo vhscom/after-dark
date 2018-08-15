@@ -1,6 +1,6 @@
 # After Dark
 
-> A deceptively simple dark theme for [Hugo](https://gohugo.io/).
+> A deceptively simple dark theme for [Hugo].
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![NPM downloads per month](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
@@ -12,7 +12,7 @@
 
 ## About
 
-After Dark is a minimalist dark theme and website starter kit for use with the popular [Hugo](https://gohugo.io/) static content generator. It is an original work inspired by a memory of the joys of learning to code for the Web and made to feel reminiscent of hobbiest websites created during the mid- to late-1990's. It is designed for extensibility, portability and speed.
+After Dark is a minimalist dark theme and website starter kit for the [Hugo] static site generator. The theme makes use of modern web development and design trends while preserving the aesthetic and simplicity of hobbiest websites created during the mid- to late-1990’s. It includes an offline search app, cross-platform quick installer as well as a set of optional plug-in modules to enhance your website as it grows. Use it online or off to create anything from a microblog to a full-text content search engine.
 
 ## Demo & Tutorial
 
@@ -685,6 +685,7 @@ terms of the Do What The Fuck You Want To Public License, Version 2,
 as published by Sam Hocevar. See the COPYING file for more details.
 
 [1]: https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg
+[Hugo]: https://gohugo.io/
 [lazysizes]: https://github.com/aFarkas/lazysizes
 [elinks]: http://elinks.or.cz/
 [hackcss]: https://hackcss.egoist.moe/dark.html
