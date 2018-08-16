@@ -12,7 +12,7 @@
 
 ## About
 
-After Dark is a minimalist dark theme and website starter kit for the [Hugo] static site generator. The theme makes use of modern web development and design trends while preserving the aesthetic and simplicity of hobbiest websites created during the mid- to late-1990’s. It includes an offline search app, cross-platform quick installer as well as a set of optional plug-in modules to enhance your website as it grows. Use it online or off to create anything from a microblog to a full-text content search engine.
+After Dark is a minimalist dark theme and website starter kit for the [Hugo] static site generator. The theme makes use of modern web development and design trends while preserving the aesthetic and simplicity of hobbiest websites created during the mid- to late-1990’s. It includes an offline search app, cross-platform quick installer as well as a set of optional plug-in modules to enhance your website as it grows. Use it online or off to create anything from a microblog to a full-text document search engine.
 
 ## Demo & Tutorial
 
@@ -51,7 +51,7 @@ Feature | Summary
 
 ## Getting Started
 
-After Dark requires a single dependency to operate. Before running the installation script please [install Hugo](https://gohugo.io/getting-started/installing) and, optionally, the [elinks] terminal browser, on your system. Instructions for installing both using [Homebrew](https://brew.sh/) on macOS:
+After Dark requires a single dependency to operate. Before installing please [install Hugo](https://gohugo.io/getting-started/installing), and optionally, the [elinks] text browser, on your system. Instructions for installing both using [Homebrew](https://brew.sh/) on macOS:
 
 ```shell
 brew install hugo elinks
@@ -63,17 +63,13 @@ Then run the quick installer located in `bin/install`, or just paste this into a
 wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/master/bin/install | sh
 ```
 
-The quick installer will download the theme and any [preinstalled modules](#module-system) and should complete in a matter of seconds. If you have `elinks` installed your new site [will open automatically](https://codeberg.org/vhs/after-dark/src/branch/master/images/docs/feat-quick-installer.gif) with a local preview and next steps.
+Installation should complete in a matter of seconds. If you have `elinks` installed your new site [will open automatically](https://codeberg.org/vhs/after-dark/src/branch/master/images/docs/feat-quick-installer.gif) with a local preview and next steps.
 
----
+To preview your site online using [Serveo](https://serveo.net) install an ssh server such as [dropbear](https://matt.ucc.asn.au/dropbear/dropbear.html) or [openssh](https://www.openssh.com), start [`hugo server`](https://gohugo.io/commands/hugo_server/) then run the following:
 
-To preview your site online at any time run the included `bin/preview` script from your After Dark installation directory:
-
-```sh
-cd flying-toasters && ./themes/after-dark/bin/preview
 ```
-
-Preview starts a [`hugo server`](https://gohugo.io/commands/hugo_server/) and connects it to [Serveo](https://serveo.net) to expose your website to the Internet using end-to-end encryption. You must have an ssh server such as [dropbear](https://matt.ucc.asn.au/dropbear/dropbear.html) or [openssh](https://www.openssh.com) installed on your system for the preview script to function.
+ssh -R 80:localhost:1313 serveo.net
+```
 
 ## Customizing
 
