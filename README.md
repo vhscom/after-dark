@@ -664,7 +664,7 @@ To customize the favicon create a `favicon.html` under `layouts/partials/head` w
 
 #### 404 Page
 
-Linkrot can be embarrassing. If you forget to set your [page aliases](https://gohugo.io/content-management/urls/#aliases) when moving content around, or sipmly fat-finger a <kbd>CTRL+V</kbd> when sharing a link, don't send your users packing. After Dark includes a 404 page. Use it to encourage users to stick around when resources can't be located by redirecting users to `domain.example/404.html` where `domain.example` is your `baseURL` or `localhost:1313` if running locally with `hugo serve`.
+Linkrot can be embarrassing. If you forget to set your [page aliases](https://gohugo.io/content-management/urls/#aliases) or sipmly fat-finger a URL, don't send your users packing. After Dark includes an engaging 404 page which links back to your homepage. Use it to encourage users to stick around when resources can't be located by redirecting them to `404.html` when a page can't be found.
 
 To customize the provided 404 page create a `404.html` in your site `layouts` directory and let [Hugo's Lookup Order](https://gohugo.io/templates/lookup-order/) do the rest.
 
