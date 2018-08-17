@@ -1,0 +1,11 @@
+<form
+  {{ with .action }}action="{{ . | safeURL }}" {{ end }}
+  {{ with .enctype }}enctype="{{ . }}" {{ end }}
+  {{ with .target }}target="{{ . }}" {{ end }}
+  {{ with .accept_charset }}accept-charset="{{ . }}" {{ end }}
+  {{ if eq .novalidate "true" }}novalidate {{ end }}
+  {{ if in (slice "on" "off") .autocomplete }}autocomplete="{{ .autocomplete }}" {{ end }}
+  {{ if in (slice "get" "post") .method }}method="{{ .method }}" {{ end }}
+  class="form{{ if in (slice "success" "error" "warning") .state }} form-{{ .state | safeHTMLAttr }}{{ end }}{{ with .class }} {{ . }}{{ end }}">
+  {{ .body }}
+</form>

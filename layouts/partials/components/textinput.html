@@ -1,0 +1,24 @@
+{{ $permitted_attrs := (slice "id" "name" "class" "autocomplete" "autofocus" "disabled" "form" "formaction" "formmethod" "formnovalidate" "formtarget" "height" "max" "maxlength" "min" "minlength" "multiple" "pattern" "placeholder" "readonly" "required" "size" "spellcheck" "step" "tabindex" "type" "value" "width") }}
+{{ $possible_types := (slice "email" "hidden" "number" "password" "search" "tel" "text" "url") }}
+<input
+  {{ range $name, $value := .attrs }}
+    {{ if in $permitted_attrs $name }}
+      {{ if eq $name "type" }}
+        {{ if in $possible_types $value }}
+          type="{{ $value }}"
+        {{ end }}
+      {{ else if in (slice "disabled" "readonly" "required") $name }}
+        {{ if eq $value "true" }}{{ $name }}{{ end }}
+      {{ else if and (eq $name "class") $value }}
+        class="form-control {{ $value }}"
+      {{ else if and (eq $name "pattern") $value }}
+        pattern="{{ $value | safeHTMLAttr }}"
+      {{ else if $value }}
+        {{ $name | safeHTMLAttr }}="{{ $value }}"
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ if ne (in .attrs "class") true }}
+    class="form-control"
+  {{ end }}
+>
