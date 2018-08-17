@@ -1,0 +1,24 @@
+<!-- {{/*
+Permitted attributes: "for", "form", "text"
+
+Explicit label association (preferred):
+{{< hackcss-label for="query" text="Enter search query:" />}}
+{{< hackcss-textinput type="search" id="query" >}}
+
+Implicit label association with markup:
+{{< hackcss-label >}}
+  mau kemana?<sup><a href="#kemana">§</a></sup>
+  {{< hackcss-textinput placeholder="di ingres" >}}
+{{< /hackcss-label >}}
+
+Inside form group for default label styling:
+{{< hackcss-formgroup >}}
+  {{< hackcss-label for="fullname" text="Name:" />}}
+  {{< hackcss-textinput id="fullname" >}}
+{{< /hackcss-formgroup >}}
+
+*/}} -->
+{{ $for := .Get "for" }}
+{{ $form := .Get "form" }}
+{{ $body := .Get "text" | default .Inner }}
+{{ partial "components/label.html" (dict "for" $for "form" $form "body" $body) }}

@@ -1,0 +1,8 @@
+<fieldset
+  {{ with .form }}form="{{ . }}" {{ end }}
+  {{ with .name }}name="{{ . }}" {{ end }}
+  {{ if eq .disabled "true" }}disabled {{ end }}
+  class="form-group{{ if eq .hastextarea "true" }} form-textarea{{ end }}{{ if in (slice "success" "error" "warning") .state }} form-{{ .state }}{{ end }}{{ with .class }} {{ . }}{{ end }}">
+  {{ with .legend }}<legend>{{ . }}</legend>{{ end }}
+  {{ .body }}
+</fieldset>

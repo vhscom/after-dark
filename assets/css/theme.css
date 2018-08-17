@@ -68,7 +68,8 @@ input.form-control {
   -moz-appearance: none;
   -ms-appearance: none;
 }
-input.form-control {
+input.form-control,
+textarea.form-control {
   font-size: initial;
 }
 .hack .help-block {

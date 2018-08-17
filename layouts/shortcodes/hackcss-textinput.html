@@ -1,0 +1,60 @@
+<!-- {{/*
+HTML attributes: "id", "name", "class", "autocomplete", "autofocus", "disabled", "form", "formaction", "formmethod", "formtarget", "height", "max", "maxlength", "min", "minlength", "multiple", "pattern", "placeholder", "readonly", "required", "size", "spellcheck", "step", "tabindex", "type", "value", "width"
+Possible types: "email", "hidden", "number", "password", "search", "tel", "text", "url"
+
+Basic usage:
+{{< hackcss-textinput >}}
+{{< hackcss-textinput type="password" >}}
+{{< hackcss-textinput type="email" placeholder="name@domain.example" >}}
+{{< hackcss-textinput disabled="true" >}}
+
+With control label and search input targeting form owner:
+{{< hackcss-formgroup >}}
+  {{< hackcss-label for="query" text="Enter search query:" />}}
+  {{< hackcss-textinput type="search" id="query" form="search" >}}
+{{< /hackcss-formgroup >}}
+
+Required with placeholder text and custom regex validation:
+{{< hackcss-form autocomplete="disabled" >}}
+  {{< hackcss-textinput
+      placeholder="associate-20"
+      name="AssociateTag"
+      pattern="^\b\w*\b-20$" >}}
+{{< /hackcss-form >}}
+
+Inside form group with warning label and help block:
+{{< hackcss-formgroup state="warning" >}}
+  {{< hackcss-label for="key64" text="64-bit PGP key:" />}}
+  {{< hackcss-textinput type="text" id="key64" >}}
+  {{< hackcss-helpblock text="In this format: BB73 67EE 9A70 A631" />}}
+{{< /hackcss-formgroup >}}
+
+*/}} -->
+{{ $id := .Get "id" }}
+{{ $name := .Get "name" }}
+{{ $class := .Get "class" }}
+{{ $autocomplete := .Get "autocomplete" }}
+{{ $autofocus := .Get "autofocus" }}
+{{ $disabled := .Get "disabled" }}
+{{ $form := .Get "form" }}
+{{ $formaction := .Get "formaction" }}
+{{ $formmethod := .Get "formmethod" }}
+{{ $formtarget := .Get "formtarget" }}
+{{ $height := .Get "height" }}
+{{ $max := .Get "max" }}
+{{ $maxlength := .Get "maxlength" }}
+{{ $min := .Get "min" }}
+{{ $minlength := .Get "minlength" }}
+{{ $multiple := .Get "multiple" }}
+{{ $pattern := .Get "pattern" }}
+{{ $placeholder := .Get "placeholder" }}
+{{ $readonly := .Get "readonly" }}
+{{ $required := .Get "required" }}
+{{ $size := .Get "size" }}
+{{ $spellcheck := .Get "spellcheck" }}
+{{ $step := .Get "step" }}
+{{ $tabindex := .Get "tabindex" }}
+{{ $type := .Get "type" }}
+{{ $value := .Get "value" }}
+{{ $width := .Get "width" }}
+{{ partial "components/textinput.html" (dict "attrs" (dict "id" $id "name" $name "class" $class "autocomplete" $autocomplete "autofocus" $autofocus "disabled" $disabled "form" $form "formaction" $formaction "formmethod" $formmethod "formtarget" $formtarget "height" $height "max" $max "maxlength" $maxlength "min" $min "minlength" $minlength "multiple" $multiple "pattern" $pattern "placeholder" $placeholder "readonly" $readonly "required" $required "size" $size "spellcheck" $spellcheck "step" $step "tabindex" $tabindex "type" $type "value" $value "width" $width)) }}
