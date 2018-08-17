@@ -1,8 +1,11 @@
 <!-- {{/*
+Custom attributes: "showpercent", "value", "filltext" [default: "Loading"]
+
 Basic usage:
 {{< hackcss-progress value="40" >}}
 {{< hackcss-progress value="30" showpercent="true" >}}
 {{< hackcss-progress value="70" showpercent="true" filltext="pemuatan" >}}
+
 */}} -->
 {{ $show_percent := .Get "showpercent" }}
 {{ $fill_text := .Get "filltext" | default "Loading" }}

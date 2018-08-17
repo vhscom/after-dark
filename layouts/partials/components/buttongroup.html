@@ -1,7 +1,3 @@
-<form
-  {{ if .action }}action="{{ .action | safeURL }}" {{ end }}
-  {{ if .target }}target="{{ .target }}" {{ end }}
-  {{ if in (slice "get" "post") .method }}method="{{ .method }}" {{ end }}
-  class="btn-group">
+<div class="btn-group{{ if eq .formactions "true" }} form-actions{{ end }}{{ with .class }} {{ . }}{{ end }}">
   {{ .body }}
-</form>
+</div>

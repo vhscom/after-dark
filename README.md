@@ -32,7 +32,7 @@ Feature | Summary
 [Section Menu](#section-menu) | Display an accessible site-wide navigation with links to content sections.
 [Display Variants](#display-variants) | Customize look-and-feel with one of six included display variations.
 [Custom Styles](#custom-styles) | Add to, override or disable theme styles for complete design control.
-[Trim Color](#trim-color) | Defines the default trim color and sometimes affects how a browser or OS displays the site.
+[Trim Color](#trim-color) | Define how user agents should display the border around your site.
 [SVG Favicon](#svg-favicon) | Help push browser standards forward by decorating your site with an SVG favicon.
 [Fuzzy Search](#fuzzy-search) | Find and share indexable content anywhere on your site. No registration required.
 [Code Highlighter](#code-highlighter) | Highlight code in over 160 languages without requiring JavaScript.
@@ -43,7 +43,7 @@ Feature | Summary
 [Modification Dating](#modification-dating) | Recently updated content is flagged and made more discoverable to readers.
 [Index Blocking](#index-blocking) | Hide pages from search engines without modifying robots.txt.
 [Referrer Policy](#referrer-policy) | Help protect your visitors from nosy neighbors with a simple site-wide policy.
-[Snippets](#snippets) | Adjust layouts, add form components and more without repeating yourself.
+[Snippets](#snippets) | Display alerts, cards, progress indicators and easily build great-looking forms.
 [Related Content](#related-content) | Display links to relevant content below blog posts automatically.
 [Table of Contents](#table-of-contents) | Create collapsable content summaries with deep link and smooth-scroll support.
 [404 Page](#404-page) | Entertain users into staying when they experience linkrot on your site.
@@ -516,35 +516,30 @@ See the Hugo docs for additional [configuration options](http://gohugo.io/overvi
 
 ### Snippets
 
-Snippets are reusable bits of code you can sprinkle across your site to reduce repetition and improve consistency. They are composed of [partials](https://gohugo.io/templates/partials) and [shortcodes](https://gohugo.io/content-management/shortcodes). After Dark provides a number of snippets to help make your site easier to customize and maintain.
+Snippets are reusable bits of code you can add to your site to reduce repetition and improve consistency. They are composed of [partials](https://gohugo.io/templates/partials) and [shortcodes](https://gohugo.io/content-management/shortcodes). After Dark provides a number of snippets to help make your site easier to customize and maintain.
 
 Take for example the included `buttongroup` snippet for creating a set of [hackcss]-styled buttons, which we'll look at in detail here.
 
 First the `buttongroup` partial:
 
 ```html
-<form
-  {{ if .action }}action="{{ .action | safeURL }}" {{ end }}
-  {{ if .target }}target="{{ .target }}" {{ end }}
-  {{ if in (slice "get" "post") .method }}method="{{ .method }}" {{ end }}
-  class="btn-group">
+<div class="btn-group{{ if eq .formactions "true" }} form-actions{{ end }}{{ with .class }} {{ . }}{{ end }}">
   {{ .body }}
-</form>
+</div>
 ```
 
 Now the `buttongroup` shortcode:
 
 ```html
-{{ $action := .Get "action" }}
-{{ $target := .Get "target" }}
-{{ $method := .Get "method" }}
-{{ $body := .Get "body" | default .Inner }}
-{{ partial "components/buttongroup.html" (dict "action" $action "target" $target "method" $method "body" $body)}}
+{{ $formactions := .Get "formactions" }}
+{{ $class := .Get "class" }}
+{{ $body := .Inner }}
+{{ partial "components/buttongroup.html" (dict "formactions" $formactions "class" $class "body" $body) }}
 ```
 
-Notice how the shortcode serves primarily to call the partial, which contains all of the markup and presentation logic. This delegation of responsibility is what enables snippets to be shared between layout (via partial) and content (via shortcode). Now let's see how to actually use it.
+Notice how the shortcode serves primarily to call the partial, which contains all of the markup and presentation logic. This delegation of responsibility enables code to be shared between layout (via partial) and content (via shortcode) without duplication. Now let's see how to actually use it.
 
-To use the `buttongroup` snippet via markdown content use the shortcode form:
+To use the `buttongroup` snippet in markdown content use the shortcode form:
 
 ```html
 {{< hackcss-buttongroup >}}
@@ -554,7 +549,7 @@ To use the `buttongroup` snippet via markdown content use the shortcode form:
 {{< /hackcss-buttongroup >}}
 ```
 
-This creates a styled button group from your content with three buttons and places them inside a form using the default `form` action.
+This creates a styled button group with three adjoining buttons.
 
 To use the `buttongroup` in layout use the partial form:
 
@@ -562,21 +557,31 @@ To use the `buttongroup` in layout use the partial form:
 {{ partial "components/buttongroup.html" (dict "body" (partial "components/button.html" (dict "type" "success" "body" "Submit" "action" .RelPermalink))) }}
 ```
 
-This creates a button group from your layout with a single button and specifies the desired `form` action.
+This creates a button group with a single button specifying a custom action.
 
-After Dark includes the following snippets designed to take advantage of  [hackcss components][hackcss] available in the theme:
+After Dark includes the following snippets designed to take advantage of a number of pre-styled and customizable [hackcss components][hackcss] available in the theme:
 
-- [`hackcss-alert`](layouts/shortcodes/hackcss-alert.html) - Provides themed alert boxes. See file for usage notes.
-- [`hackcss-button`](layouts/shortcodes/hackcss-button.html) - Provides themed buttons. See file for usage notes.
-- [`hackcss-buttongroup`](layouts/shortcodes/hackcss-buttongroup.html) - Allows buttons to be grouped together. See file for usage notes.
-- [`hackcss-card`](layouts/shortcodes/hackcss-card.html) - Provides themed card element. See file for usage notes.
-- [`hackcss-progress`](layouts/shortcodes/hackcss-progress.html) - Provides themed progress meter. See file for usage notes.
-- [`hackcss-throbber`](layouts/shortcodes/hackcss-throbber.html) - Provides themed loading indicator. See file for usage notes.
+- [`hackcss-alert`](layouts/shortcodes/hackcss-alert.html) - Show various alert boxes. See file for usage notes.
+- [`hackcss-button`](layouts/shortcodes/hackcss-button.html) - Add buttons inside and out of forms. See file for usage notes.
+- [`hackcss-buttongroup`](layouts/shortcodes/hackcss-buttongroup.html) - Group buttons together visually. See file for usage notes.
+- [`hackcss-card`](layouts/shortcodes/hackcss-card.html) - Display a card with title. See file for usage notes.
+- [`hackcss-form`](layouts/shortcodes/hackcss-form.html) - Enables powerful form-building applications. See file for usage notes.
+- [`hackcss-formgroup`](layouts/shortcodes/hackcss-formgroup.html) - Groups together form controls. See file for usage notes.
+- [`hackcss-helpblock`](layouts/shortcodes/hackcss-helpblock.html) - Display help text in your forms. See file for usage notes.
+- [`hackcss-label`](layouts/shortcodes/hackcss-label.html) - Add labels to form controls. See file for usage notes.
+- [`hackcss-progress`](layouts/shortcodes/hackcss-progress.html) - Display a progress meter. See file for usage notes.
+- [`hackcss-textarea`](layouts/shortcodes/hackcss-textarea.html) - Provide an area to enter longer text. See file for usage notes.
+- [`hackcss-textinput`](layouts/shortcodes/hackcss-textinput.html) - Accept any kind of text input. See file for usage notes.
+- [`hackcss-throbber`](layouts/shortcodes/hackcss-throbber.html) - Show an animated spinner. See file for usage notes.
 
-If you'd like to try your hand at creating a snippet look at the above examples then try abstracting the following custom shortcodes included:
+Combine snippets to build great-looking forms anywhere on your site:
+
+![Form snippets screenshot](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/feat-snippets-fs8.png "Example form created using snippet shortcodes.")
+
+Or try your hand at creating your own snippets for the following additional shortcodes included with After Dark:
 
 - [`blockquote`](layouts/shortcodes/blockquote.html) – Provides a styled blockquote with optional citation link. See file for usage notes.
-- [`figure`](layouts/shortcodes/figure.html) – Overrides Hugo [built-in shortcode](https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes) to provide a [lazy-loaded](#lazy-loading) figure element with small caption text.
+- [`figure`](layouts/shortcodes/figure.html) – Overrides Hugo [built-in shortcode](https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes) to provide a [lazy-loaded](#lazy-loading) figure element with small caption text. See file for usage notes.
 
 Reference the Hugo docs for additional help using [shortcode](https://gohugo.io/templates/shortcode-templates/) and [partial](https://gohugo.io/templates/partials/) templates.
 

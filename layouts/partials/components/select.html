@@ -1,0 +1,5 @@
+<select{{ with .id }} id="{{ . }}"{{ end }} class="form-control">
+  {{ range .options }}
+    <option>{{ . }}</option>
+  {{ end }}
+</select>

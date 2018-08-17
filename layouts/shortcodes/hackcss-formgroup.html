@@ -1,0 +1,35 @@
+<!-- {{/*
+HTML attributes: "disabled", "form", "name", "class", "legend", "body"
+Custom attributes: "hastextarea", "state"
+
+Possible states: "success", "warning", "error"
+
+Basic example:
+{{< hackcss-formgroup >}}
+  {{< hackcss-label for="query" text="Query:" />}}
+  {{< hackcss-textinput id="query" type="search" >}}
+{{< /hackcss-formgroup >}}
+
+With text area:
+{{< hackcss-formgroup hastextarea="true" >}}
+  {{< hackcss-label for="message" text="Message:" >}}
+  {{< hackcss-textarea id="message" rows="10" >}}
+{{< /hackcss-formgroup >}}
+
+With legend and helper text:
+{{< hackcss-formgroup legend="Personal Information" >}}
+  {{< hackcss-label for="phone" text="Phone Number:" />}}
+  {{< hackcss-textinput id="phone" type="tel" value="+86 180 800 8000" >}}
+  {{< hackcss-helpblock text="In this format: +86 xxx xxx xxxxx" />}}
+{{< /hackcss-formgroup >}}
+
+*/}} -->
+{{ $hastextarea := .Get "hastextarea" }}
+{{ $state := .Get "state" }}
+{{ $disabled := .Get "disabled" }}
+{{ $form := .Get "form" }}
+{{ $name := .Get "name" }}
+{{ $class := .Get "class" }}
+{{ $legend := .Get "legend" }}
+{{ $body := .Get "body" | default .Inner }}
+{{ partial "components/formgroup.html" (dict "hastextarea" $hastextarea "state" $state "class" $class "disabled" $disabled "form" $form "name" $name "legend" $legend "body" $body) }}
