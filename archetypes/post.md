@@ -11,9 +11,37 @@ images = [
 ] # overrides the site-wide open graph image
 +++
 
-Before you continue please take a moment to configure your archetypes. Archetypes are located in the `archetypes` directory of your site. To learn more about archetypes visit the [Archetypes](https://gohugo.io/content-management/archetypes/) page on the Hugo website. Click `Read more` to continue.
+{{< hackcss-form action="/post/coming-soon/" >}}
+  {{< hackcss-formgroup >}}
+    {{< hackcss-label for="pgp" text="64-bit PGP key:" />}}
+    {{< hackcss-textinput type="text" name="pgp" pattern="^(?:[A-Za-z0-9+/]{4}\s){3}(?:[A-Za-z0-9+/]{4})$" >}}
+    {{< hackcss-helpblock text="Submit with value: BB73 67EE 9A70 A631" />}}
+  {{< /hackcss-formgroup >}}
+{{< /hackcss-form >}}
+
+<script>
+  (function () {
+    'use strict';
+    const fs = document.querySelector('fieldset');
+    const hb = fs.querySelector('.help-block');
+    const validate = search => {
+      if (!search.includes('BB73+67EE+9A70+A631')) return dance();
+      fs.classList.add('form-success');
+      fs.disabled = true;
+      fs.querySelector('input').value = 'BB73 67EE 9A70 A631';
+      hb.remove();
+    }
+    const dance = () => hb.innerHTML = `<marquee>${hb.innerHTML}</marquee>`;
+    (document.location.search.length)
+      ? validate(document.location.search)
+      : null;
+  })();
+</script>
 
 <!--more-->
+
+Before you continue please take a moment to configure your archetypes. Archetypes are located in the `archetypes` directory of your site. To learn more about archetypes visit the [Archetypes](https://gohugo.io/content-management/archetypes/) page on the Hugo website. Click `Read more` to continue.
+
 This information appears below the [Summary Split](https://gohugo.io/content-management/summaries/).
 
 After Dark ships with a custom module system and provides a number of prebuilt modules. Shown here, an animation made possible by the `Fractal Forest` module:
