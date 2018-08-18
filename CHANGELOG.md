@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.2.0"></a>
+# [6.2.0](https://codeberg.org/vhs/after-dark/compare/v6.1.1...v6.2.0) (2018-08-18)
+
+
+### Bug Fixes
+
+* **bin:** remove preview script ([5ac1c12](https://codeberg.org/vhs/after-dark/commits/5ac1c12)), closes [#38](https://codeberg.org/vhs/after-dark/issues/38)
+* **layouts:** stop outputting trim color if none present ([fe58bed](https://codeberg.org/vhs/after-dark/commits/fe58bed))
+
+
+### Features
+
+* **layouts:** provide form builder snippets ([c49d086](https://codeberg.org/vhs/after-dark/commits/c49d086))
+
+
+
 <a name="6.1.1"></a>
 ## [6.1.1](https://codeberg.org/vhs/after-dark/compare/v6.1.0...v6.1.1) (2018-08-14)
 
