@@ -680,6 +680,10 @@ This work is free. You can redistribute it and/or modify it under the
 terms of the Do What The Fuck You Want To Public License, Version 2,
 as published by Sam Hocevar. See the COPYING file for more details.
 
+## Acknowledgements
+
+Thanks to Steve Francia for creating Hugo and Bjørn Erik Pedersen for continuing Steve's work. Thanks to エゴイスト for creating hackcss. Thanks to Dan Klammer for the SVG icons. And thanks to Simon Fremaux for the animated background used on the 404 page.
+
 [1]: https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg
 [Hugo]: https://gohugo.io/
 [lazysizes]: https://github.com/aFarkas/lazysizes
