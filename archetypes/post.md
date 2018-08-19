@@ -83,7 +83,7 @@ images = [
 
 <!--more-->
 
-Before you continue please take a moment to configure your archetypes. Archetypes are located in the `archetypes` directory of your site. To learn more about archetypes visit the [Archetypes](https://gohugo.io/content-management/archetypes/) page on the Hugo website. Click `Read more` to continue.
+Before you continue please take a moment to configure your archetypes. Archetypes are located in the `archetypes` directory of your site. To learn more about archetypes visit the [Archetypes](https://gohugo.io/content-management/archetypes/) page on the Hugo website.
 
 After Dark ships with a custom module system and provides a number of prebuilt modules. Shown here, an animation made possible by the `Fractal Forest` module:
 
