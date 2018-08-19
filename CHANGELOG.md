@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.3.0"></a>
+# [6.3.0](https://codeberg.org/vhs/after-dark/compare/v6.2.0...v6.3.0) (2018-08-19)
+
+
+### Bug Fixes
+
+* **snippets:** add name attribute to form ([078ee4d](https://codeberg.org/vhs/after-dark/commits/078ee4d))
+
+
+### Features
+
+* **install:** add installation challenge ([9b6106c](https://codeberg.org/vhs/after-dark/commits/9b6106c))
+
+
+
 <a name="6.2.0"></a>
 # [6.2.0](https://codeberg.org/vhs/after-dark/compare/v6.1.1...v6.2.0) (2018-08-18)
 
