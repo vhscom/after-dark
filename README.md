@@ -12,17 +12,18 @@
 
 ## About
 
-After Dark is a minimalist dark theme and website starter kit for the [Hugo] static site generator. The theme makes use of modern web development and design trends while preserving the aesthetic and simplicity of hobbiest websites created during the mid- to late-1990’s. It includes an offline search app, cross-platform quick installer as well as a set of optional plug-in modules to enhance your website as it grows. Use it online or off to create anything from a microblog to a full-text document search engine.
+After Dark is a blog theme and website starter kit for the Hugo static site generator. It is an original work intended to make use of modern trends in web development while preserving the design aesthetic and simplicity of hobbiest websites created during the mid- to late-1990’s. The theme includes an inbuilt search engine, POSIX-compliant quick installer and optional plug-in modules to enhance sites as they grow. Use it online or off to create anything from an indie microblog to a visually stunning photojournal to capture life's most precious moments.
+
 
 ## Demo & Tutorial
 
-Visit [Hack Cabin](https://hackcabin.com) for a production example. Learn to recreate the production site architecture with a [step-by-step guide](https://vhs.codeberg.page/zero-to-http-2).
+Visit [Hack Cabin](https://hackcabin.com) for a customized production example. Learn to recreate the production site architecture with a [step-by-step guide](https://vhs.codeberg.page/zero-to-http-2).
 
 ## Features
 
-Expand the overview to learn more about what's included, or skip ahead to [getting started](#getting-started).
+Learn more about what's included or [skip ahead](#getting-started) to get started.
 
-<details>
+<details open>
 <summary>Feature Overview</summary>
 
 Feature | Summary
