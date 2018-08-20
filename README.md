@@ -12,7 +12,7 @@
 
 ## About
 
-After Dark is an blog theme and website starter kit for the Hugo static site generator. It is an original work designed to preserve the aesthetic and simplicity of hobbiest websites created during the mid- to late-1990’s. The theme includes an inbuilt search engine, POSIX-compliant quick installer and optional plug-in modules to add additional features. Use After Dark online or off to create anything from an indie microblog to a visually stunning photojournal.
+After Dark is a blog theme for the Hugo static site generator. It is an original work designed to preserve the aesthetic and simplicity of hobbiest websites created during the mid- to late-1990’s. The theme includes an inbuilt search engine, POSIX-compliant quick installer and optional plug-in modules to add functionality. Use it online or off to create anything from an indie microblog to a visually stunning photojournal.
 
 ## Demo
 
@@ -20,7 +20,7 @@ Visit [Hack Cabin](https://hackcabin.com) for a live example [you can recreate](
 
 ## Features
 
-Learn more about what's included or [jump ahead](#getting-started) to get started.
+See what's included or [jump ahead](#getting-started) to get started.
 
 <details open>
 <summary>Feature Overview</summary>
@@ -51,21 +51,21 @@ Table of Contents | Create collapsable content summaries with deep link and smoo
 
 ## Getting Started
 
-Satisfy the requirements, run the quick installer and then go live in an instant.
+Satisfy the requirements, run the quick installer and go live in an instant.
 
 ### Requirements
 
-After Dark requires Hugo `0.44` or later to operate. Before running the quick installer please [install Hugo](https://gohugo.io/getting-started/installing).
+After Dark requires Hugo `0.44` or later. Before running the quick installer please [install Hugo](https://gohugo.io/getting-started/installing).
 
 ### Quick Installer
 
-Then run the quick installer located at [`bin/install`](https://codeberg.org/vhs/after-dark/src/branch/master/bin/install), or just paste this into a terminal and press <kbd>Return</kbd>:
+Then run the quick installer located at [`bin/install`](https://codeberg.org/vhs/after-dark/src/branch/master/bin/install), or just paste this into a terminal and press <kbd>Enter</kbd>:
 
 ```shell
 wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/master/bin/install | sh
 ```
 
-Installation should complete in a matter of seconds at which point you may go live or view the online help for additional configuration options.
+Installation should complete in a matter of seconds and includes documentation to get you started.
 
 ### Go Live
 
@@ -75,7 +75,7 @@ View your site online with [Serveo] using end-to-end encryption:
 ssh -R 80:localhost:1313 serveo.net
 ```
 
-You may install [dropbear] or [openssh] if you need an ssh server.
+No sign-ups required. Install [dropbear] or [openssh] if you need an ssh server.
 
 ## Adaptations
 
@@ -91,7 +91,7 @@ as published by Sam Hocevar. See the COPYING file for more details.
 
 ## Acknowledgements
 
-Thanks to Steve Francia for creating Hugo and Bjørn Erik Pedersen for continuing Steve's work. Thanks to エゴイスト for creating hackcss. Thanks to Dan Klammer for the SVG icons. And thanks to Simon Fremaux for groovy 404 page background animation.
+Thanks to Steve Francia for creating Hugo and Bjørn Erik Pedersen for continuing Steve's work. Thanks to エゴイスト for creating hackcss. Thanks to Dan Klammer for the SVG icons. And thanks to Simon Fremaux for the groovy 404 page background animation.
 
 [1]: https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg
 [Hugo]: https://gohugo.io/
