@@ -14,6 +14,7 @@ tags = [
 ]
 features = [
   "Quick Installer",
+  "Online Help",
   "Module System",
   "Section Menu"
   "Theme Variants",
