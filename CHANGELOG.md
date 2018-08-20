@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.4.0"></a>
+# [6.4.0](https://codeberg.org/vhs/after-dark/compare/v6.3.0...v6.4.0) (2018-08-20)
+
+
+### Bug Fixes
+
+* **install:** remove useful snippets content ([c224977](https://codeberg.org/vhs/after-dark/commits/c224977))
+
+
+### Features
+
+* **install:** provide welcome post with online help ([c8f729a](https://codeberg.org/vhs/after-dark/commits/c8f729a))
+
+
+
 <a name="6.3.0"></a>
 # [6.3.0](https://codeberg.org/vhs/after-dark/compare/v6.2.0...v6.3.0) (2018-08-19)
 
