@@ -3,7 +3,7 @@
 > A deceptively simple dark theme for [Hugo].
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
-[![Weekly downloads](https://img.shields.io/npm/dw/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
+[![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Minimum Hugo version](https://img.shields.io/badge/hugo->%3D%200.44-FF4088.svg?style=flat-square)](https://gohugo.io)
 [![Telegram chat](https://img.shields.io/badge/chat-telegram-32AFED.svg?style=flat-square)][1]
 [![WTFPL licensed](https://img.shields.io/npm/l/after-dark.svg?style=flat-square&longCache=true)](https://codeberg.org/vhs/after-dark/src/branch/master/COPYING)
@@ -28,6 +28,7 @@ See what's included or [jump ahead](#getting-started) to get started.
 Feature | Summary
 --------|--------
 Quick Installer | One command is all you need to get started with After Dark.
+Online Help | Learn to use the theme with convenient help from within your site.
 Module System | Add functionality with prebuilt modules designed to compliment your site.
 Section Menu | Display an accessible site-wide navigation with links to content sections.
 Display Variants | Customize look-and-feel with one of six included display variations.
