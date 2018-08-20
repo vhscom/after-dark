@@ -21,38 +21,35 @@ create_site_dir () {
    fi
 
    SITE_DIR_ABS="$PWD/$SITE_DIR"
-
-   echo "Creating directory $SITE_DIR_ABS"
    mkdir -p "$SITE_DIR"
 }
 
 create_site () {
-   echo "Creating a new Hugo site ..."
+   echo "Creating a new Hugo site in $SITE_DIR ..."
    hugo new site "$SITE_DIR" 1>/dev/null
    cd "$SITE_DIR" || exit 1
 }
 
 download_theme () {
-   echo "Downloading the latest version of the After Dark theme ..."
+   echo "Downloading the latest version of After Dark ..."
    meta=$(wget -qO - https://registry.npmjs.org/after-dark/latest)
    vers=$(echo "$meta" | egrep -o "\"version\".*[^,]*," | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '" ')
    mkdir -p themes/after-dark
    wget -qO - https://registry.npmjs.org/after-dark/-/after-dark-"$vers".tgz | tar --strip-components=1 -xz -C themes/after-dark
-   echo "Theme version $vers downloaded to $SITE_DIR/themes/after-dark"
+   echo "Version $vers downloaded to $SITE_DIR/themes/after-dark"
 }
 
 download_module () {
    [ -z "$1" ] && { echo "Error: Attempt to download undefined module" >&2; exit 1; }
-   echo "Downloading $1 module for After Dark theme ..."
+   echo "Downloading $1 module for After Dark ..."
    meta=$(wget -qO - https://registry.npmjs.org/"$1"/latest)
    vers=$(echo "$meta" | egrep -o "\"version\".*[^,]*," | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '" ')
    mkdir -p themes/"$1"
    wget -qO - https://registry.npmjs.org/"$1"/-/"$1"-"$vers".tgz | tar --strip-components=1 -xz -C themes/"$1"
-   echo "Module version $vers downloaded to $SITE_DIR/themes/$1"
+   echo "Version $vers downloaded to $SITE_DIR/themes/$1"
 }
 
 configure_theme () {
-   # Provide basic configuration and ignore generated files
    echo "Configuring basic After Dark theme settings ..."
    tee "config.toml" > /dev/null <<TOML
 baseurl = "https://domain.example/" # Controls base URL sitewide
@@ -103,7 +100,7 @@ create_example_post () {
 }
 
 serve_site_locally () {
-   echo "Serving your site at http://0.0.0.0:1313/"
+   echo "Serving your content locally ..."
    hugo serve --buildExpired --port 1313 --bind "0.0.0.0" 1>/dev/null &
 }
 
@@ -120,12 +117,9 @@ create_example_post
 serve_site_locally
 
 echo "Installation completed successfully!"
-echo "Your new site was created in $SITE_DIR_ABS."
+echo "Site created in $SITE_DIR_ABS"
 echo "Navigate to http://0.0.0.0:1313/ to view it now."
 echo "Run 'kill $(ps aux | awk '/[h]ugo.*1313/ {print $2}')' to stop it."
 echo "Run 'cd $SITE_DIR && hugo serve --buildDrafts' to start it again."
 echo "Run 'hugo serve --buildExpired' to view the online help."
 echo "Thank you for choosing After Dark."
-
-# Stop web server if it's still running backgrounded
-# kill $(ps aux | awk '/[h]ugo.*1313/ {print $2}') 2>/dev/null
