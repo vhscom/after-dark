@@ -537,50 +537,7 @@ See the Hugo docs for additional [configuration options](http://gohugo.io/overvi
 
 # Snippets
 
-Snippets are reusable bits of code you can add to your site to reduce repetition and improve consistency. They are composed of [partials](https://gohugo.io/templates/partials) and [shortcodes](https://gohugo.io/content-management/shortcodes). After Dark provides a number of snippets to help make your site easier to customize and maintain.
-
-Take for example the included `buttongroup` snippet for creating a set of [hackcss]-styled buttons, which we'll look at in detail here.
-
-First the `buttongroup` partial:
-
-```go-html-template
-<div class="btn-group{{ if eq .formactions "true" }} form-actions{{ end }}{{ with .class }} {{ . }}{{ end }}">
-  {{ .body }}
-</div>
-```
-
-Now the `buttongroup` shortcode:
-
-```go-html-template
-{{ $formactions := .Get "formactions" }}
-{{ $class := .Get "class" }}
-{{ $body := .Inner }}
-{{ partial "components/buttongroup.html" (dict "formactions" $formactions "class" $class "body" $body) }}
-```
-
-Notice how the shortcode serves primarily to call the partial, which contains all of the markup and presentation logic. This delegation of responsibility enables code to be shared between layout (via partial) and content (via shortcode) without duplication. Now let's see how to actually use it.
-
-To use the `buttongroup` snippet in markdown content use the shortcode form:
-
-```html
-{{</* hackcss-buttongroup */>}}
-  {{</* hackcss-button text="Left" /*/>}}
-  {{</* hackcss-button text="Middle" type="info" /*/>}}
-  {{</* hackcss-button text="Right" isghost="true" /*/>}}
-{{</* /hackcss-buttongroup */>}}
-```
-
-This creates a styled button group with three adjoining buttons.
-
-To use the `buttongroup` in layout use the partial form:
-
-```go-html-template
-{{ partial "components/buttongroup.html" (dict "body" (partial "components/button.html" (dict "type" "success" "body" "Submit" "action" .RelPermalink))) }}
-```
-
-This creates a button group with a single button specifying a custom action.
-
-After Dark includes the following snippets designed to take advantage of a number of pre-styled and customizable [hackcss components][hackcss] available in the theme:
+Snippets are reusable bits of code you can add to your site to reduce repetition and improve consistency. They are composed of [partials](https://gohugo.io/templates/partials) and [shortcodes](https://gohugo.io/content-management/shortcodes). After Dark includes the following snippets designed to take advantage of a number of pre-styled and customizable [hackcss components][hackcss] available in the theme:
 
 - `hackcss-alert` - Show various alert boxes.
 - `hackcss-button` - Add buttons inside and out of forms.
