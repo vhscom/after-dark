@@ -92,7 +92,7 @@ as published by Sam Hocevar. See the COPYING file for more details.
 
 ## Acknowledgements
 
-Thanks to Steve Francia for creating Hugo and Bjørn Erik Pedersen for continuing Steve's work. Thanks to エゴイスト for creating hackcss. Thanks to Dan Klammer for the SVG icons. And thanks to Simon Fremaux for the groovy 404 page background animation.
+Thanks to Steve Francia for creating Hugo. Thanks to エゴイスト for creating hackcss. Thanks to Dan Klammer for the SVG icons. And thanks to Simon Fremaux for the groovy 404 page background animation.
 
 [1]: https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg
 [Hugo]: https://gohugo.io/
