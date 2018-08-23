@@ -1,5 +1,7 @@
 <!-- {{/*
-Permitted attributes: "type", "text", "isghost", "isblock", "action", "onclick", "tabindex", "target", "method"
+HTML attributes: "id", "action", "onclick", "tabindex", "target", "method"
+Custom attributes: "type", "text", "isghost", "isblock"
+
 Available types: [default], "primary", "success", "info", "warning", "error"
 
 Basic usage:
@@ -20,7 +22,7 @@ With loading indicator:
 
 Inside a button group:
 {{< hackcss-buttongroup >}}
-  {{< hackcss-button text="Default Action" isghost="true" />}}
+  {{< hackcss-button id="" text="Default Action" isghost="true" />}}
   {{< hackcss-button text="Custom Action" action="/go/elsewhere" />}}
   {{< hackcss-button text="Custom Target" target="_blank" tabindex="-1" />}}
   {{< hackcss-button text="Custom Method" method="get" />}}
@@ -31,6 +33,7 @@ Inside a button group:
 {{ $body := .Get "text" | default .Inner }}
 {{ $isghost := .Get "isghost" }}
 {{ $isblock := .Get "isblock" }}
+{{ $id := .Get "id" }}
 {{ $action := .Get "action" }}
 {{ $onclick := .Get "onclick" }}
 {{ $tabindex := .Get "tabindex" }}

@@ -1,4 +1,5 @@
 <button
+  {{ with .id }}id="{{ . | urlize }}" {{ end }}
   {{ with .action }}formaction="{{ . | safeURL }}" {{ end }}
   {{ with .target }}formtarget="{{ . }}" {{ end }}
   {{ with .tabindex }}tabindex="{{ . }}" {{ end }}
