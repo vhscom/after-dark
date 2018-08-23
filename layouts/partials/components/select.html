@@ -1,4 +1,4 @@
-<select{{ with .id }} id="{{ . }}"{{ end }} class="form-control">
+<select{{ with .id }} id="{{ . | urlize }}"{{ end }} class="form-control">
   {{ range .options }}
     <option>{{ . }}</option>
   {{ end }}
