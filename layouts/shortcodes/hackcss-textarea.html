@@ -42,3 +42,9 @@ Inside disabled form group With error label and placeholder:
 {{ $tabindex := .Get "tabindex" | default nil }}
 {{ $body := .Get "text" | default nil }}
 {{ partial "components/textarea.html" (dict "body" $body "attrs" (dict "id" $id "name" $name "class" $class "autocomplete" $autocomplete "autofocus" $autofocus "cols" $cols "disabled" $disabled "form" $form "maxlength" $maxlength "minlength" $minlength "name" $name "placeholder" $placeholder "readonly" $readonly "required" $required "rows" $rows "spellcheck" $spellcheck "wrap" $wrap "tabindex" $tabindex)) }}
+{{ if eq "false" $autocomplete }}
+  <p>{{ partial "components/alert.html" (dict "type" "error" "body" (errorf "Invalid autocomplete value for textarea. Did you mean \"off\" instead of %q?" $autocomplete)) }}</p>
+{{ end }}
+{{ if eq "false" $wrap }}
+  <p>{{ partial "components/alert.html" (dict "type" "error" "body" (errorf "Invalid wrap value for textarea. Did you mean \"off\" instead of %q?" $wrap)) }}</p>
+{{ end }}
