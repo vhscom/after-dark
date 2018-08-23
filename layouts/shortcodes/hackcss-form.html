@@ -1,7 +1,6 @@
 <!-- {{/*
 HTML attributes: "name", "accept-charset", "action", "enctype", "target", "novalidate", "method", "class", "autocomplete"
 
-Available states: [default], "success", "error", "warning"
 Possible methods: "get", "post"
 Possible autocompletes: "on", "off"
 
@@ -37,3 +36,6 @@ Specify allowed encodings:
 {{ $class := .Get "class" }}
 {{ $body := .Inner }}
 {{ partial "components/form.html" (dict "name" $name "accept_charset" $accept_charset "action" $action "enctype" $enctype "target" $target "novalidate" $novalidate "method" $method "class" $class "body" $body) }}
+{{ if eq "false" $autocomplete }}
+  <p>{{ partial "components/alert.html" (dict "type" "error" "body" (errorf "Invalid autocomplete value for form. Did you mean \"off\" instead of %q?" $autocomplete)) }}</p>
+{{ end }}
