@@ -15,7 +15,7 @@ toc = true
     {{< hackcss-textinput
         required="true"
         autofocus="true"
-        autocomplete="false"
+        autocomplete="off"
         value="BB73 67EE 9A70 A631"
         type="text" id="pgp" name="pgp"
         pattern="^(?:[A-Za-z0-9+/]{4}\s){3}(?:[A-Za-z0-9+/]{4})$" >}}
