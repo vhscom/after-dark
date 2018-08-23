@@ -25,7 +25,7 @@ create_site_dir () {
 }
 
 create_site () {
-   echo "Creating a new Hugo site in $SITE_DIR ..."
+   echo "Creating a new Hugo site ..."
    hugo new site "$SITE_DIR" 1>/dev/null
    cd "$SITE_DIR" || exit 1
 }
@@ -89,19 +89,19 @@ TOML
 }
 
 create_archetypes () {
-   echo "Establishing archetypes for new content ..."
+   echo "Updating default content archetype ..."
    rm -f archetypes/default.md
-   cp themes/after-dark/archetypes/*.md archetypes
+   cp themes/after-dark/archetypes/default.md archetypes
 }
 
 create_example_post () {
-   echo "Creating an example post to get you started ..."
+   echo "Generating help documentation ..."
    hugo new post/welcome.md --kind help 1>/dev/null
 }
 
 serve_site_locally () {
-   echo "Serving your content locally ..."
-   hugo serve --buildExpired --port 1313 --bind "0.0.0.0" 1>/dev/null &
+   echo "Starting help documentation ..."
+   hugo serve --buildExpired --disableLiveReload --port 1414 1>/dev/null &
 }
 
 echo "Welcome to the After Dark quick installer. Press CTRL-C at any time to abort."
@@ -116,10 +116,13 @@ configure_theme
 create_example_post
 serve_site_locally
 
-echo "Installation completed successfully!"
+YELLOW='\033[0;33m'
+NC='\033[0m'
+
+echo "Installation successful!"
 echo "Site created in $SITE_DIR_ABS"
-echo "Navigate to http://0.0.0.0:1313/ to view it now."
-echo "Run 'kill $(ps aux | awk '/[h]ugo.*1313/ {print $2}')' to stop it."
-echo "Run 'cd $SITE_DIR && hugo serve --buildDrafts' to start it again."
-echo "Run 'hugo serve --buildExpired' to view the online help."
+echo "Help started at http://localhost:1414/"
+echo "To stop it run \"kill \$(lsof -nt -i4TCP:1414)\"."
+printf "${YELLOW}Run \"cd $SITE_DIR && hugo serve\" to start your site.${NC}\n"
+echo "To start help later run \"hugo serve --buildExpired\"."
 echo "Thank you for choosing After Dark."
