@@ -88,19 +88,19 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 TOML
 }
 
-create_archetypes () {
-   echo "Updating default content archetype ..."
+update_archetypes () {
+   echo "Updating site default content archetype ..."
    rm -f archetypes/default.md
    cp themes/after-dark/archetypes/default.md archetypes
 }
 
-create_example_post () {
+generate_help_docs () {
    echo "Generating help documentation ..."
    hugo new post/welcome.md --kind help 1>/dev/null
 }
 
-serve_site_locally () {
-   echo "Starting help documentation ..."
+serve_help_docs () {
+   echo "Starting help server ..."
    hugo serve --buildExpired --disableLiveReload --port 1414 1>/dev/null &
 }
 
@@ -110,19 +110,19 @@ validate_hugo
 create_site_dir "$1"
 create_site
 download_theme
-create_archetypes
+update_archetypes
 download_module "fractal-forest"
 configure_theme
-create_example_post
-serve_site_locally
+generate_help_docs
+serve_help_docs
 
 YELLOW='\033[0;33m'
 NC='\033[0m'
 
 echo "Installation successful!"
 echo "Site created in $SITE_DIR_ABS"
-echo "Help started at http://localhost:1414/"
-echo "To stop it run \"kill \$(lsof -nt -i4TCP:1414)\"."
+echo "Help server started at http://localhost:1414/"
+echo "To stop it run \"kill \$(ps aux | awk '/[h]ugo.*1414/ {print \$2}')\"."
 printf "${YELLOW}Run \"cd $SITE_DIR && hugo serve\" to start your site.${NC}\n"
 echo "To start help later run \"hugo serve --buildExpired\"."
 echo "Thank you for choosing After Dark."
