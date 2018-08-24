@@ -51,7 +51,6 @@ download_module () {
 
 configure_theme () {
    echo "Configuring basic After Dark theme settings ..."
-   mkdir data/theme && echo -E "$THEME_META" > data/theme/latest.json
    tee "config.toml" > /dev/null <<TOML
 baseurl = "https://domain.example/" # Controls base URL sitewide
 languageCode = "en-US" # Controls site language
