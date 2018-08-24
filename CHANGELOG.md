@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.5.2"></a>
+## [6.5.2](https://codeberg.org/vhs/after-dark/compare/v6.5.1...v6.5.2) (2018-08-24)
+
+
+### Bug Fixes
+
+* **install:** wait 1 second before serving help for docs to expire ([8e9e312](https://codeberg.org/vhs/after-dark/commits/8e9e312))
+
+
+
 <a name="6.5.1"></a>
 ## [6.5.1](https://codeberg.org/vhs/after-dark/compare/v6.5.0...v6.5.1) (2018-08-24)
 
