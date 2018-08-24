@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.5.1"></a>
+## [6.5.1](https://codeberg.org/vhs/after-dark/compare/v6.5.0...v6.5.1) (2018-08-24)
+
+
+### Bug Fixes
+
+* **install:** remove unexpected line in theme config ([a5eb197](https://codeberg.org/vhs/after-dark/commits/a5eb197))
+
+
+
 <a name="6.5.0"></a>
 # [6.5.0](https://codeberg.org/vhs/after-dark/compare/v6.4.1...v6.5.0) (2018-08-24)
 
