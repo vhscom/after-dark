@@ -32,8 +32,8 @@ create_site () {
 
 download_theme () {
    echo "Downloading the latest version of After Dark ..."
-   meta=$(wget -qO - https://registry.npmjs.org/after-dark/latest)
-   vers=$(echo "$meta" | egrep -o "\"version\".*[^,]*," | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '" ')
+   THEME_META=$(wget -qO - https://registry.npmjs.org/after-dark/latest)
+   vers=$(echo "$THEME_META" | egrep -o "\"version\".*[^,]*," | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '" ')
    mkdir -p themes/after-dark
    wget -qO - https://registry.npmjs.org/after-dark/-/after-dark-"$vers".tgz | tar --strip-components=1 -xz -C themes/after-dark
    echo "Version $vers downloaded to $SITE_DIR/themes/after-dark"
@@ -51,6 +51,7 @@ download_module () {
 
 configure_theme () {
    echo "Configuring basic After Dark theme settings ..."
+   mkdir data/theme && echo -E "$THEME_META" > data/theme/latest.json
    tee "config.toml" > /dev/null <<TOML
 baseurl = "https://domain.example/" # Controls base URL sitewide
 languageCode = "en-US" # Controls site language
@@ -96,7 +97,8 @@ update_archetypes () {
 
 generate_help_docs () {
    echo "Generating help documentation ..."
-   hugo new post/welcome.md --kind help 1>/dev/null
+   mkdir data/theme && echo "$THEME_META" | tr '\r\n' ' ' > data/theme/latest.json
+   hugo new help/index.md --kind help 1>/dev/null
 }
 
 serve_help_docs () {

@@ -1,0 +1,65 @@
+{{ $scratch := newScratch }}
+{{ range where .Site.RegularPages "Type" "help" }}
+  {{ $scratch.Set "sha512" .Params.installation.sha512 }}
+{{ end }}
+{{ if $scratch.Get "sha512" }}
+  <script>
+    (function (window, document, undefined) {
+      "use strict";
+      const sha512 = '{{ $scratch.Get "sha512" }}';
+      const confirm = fragment => {
+        document.body.insertBefore(fragment, document.body.firstChild);
+        const form = document.forms.validate;
+        form.sha512.type = 'password';
+        form.sha512.value = sha512;
+        form.validation.classList.add('form-success');
+        form.validation.disabled = true;
+        const message = "Signature verified. Valid installation detected."
+        form.querySelector('.help-block').innerHTML = message;
+      };
+      const validate = (search, form) => {
+        search.includes(encodeURIComponent(sha512)) ? confirm(form) : challenge(form);
+      };
+      const challenge = fragment => {
+        const body = document.body;
+        if (body.firstChild === document.forms.validate) return;
+        while (body.firstChild) body.removeChild(body.firstChild);
+        body.insertBefore(fragment, body.firstChild);
+        const form = document.forms.validate;
+        form.sha512.value = sha512;
+        const check = () => {
+          const classes = form.validation.classList;
+          if (form.checkValidity()) {
+            classes.add('form-success');
+            classes.remove('form-warning');
+          } else {
+            classes.add('form-warning');
+            classes.remove('form-success');
+          }
+        };
+        form.oninput = check;
+        document.location.pathname !== '/' && (() => {
+          form.validation.classList.add('form-error');
+          document.title = "Invalid | {{ .Site.Title }}";
+          const help = form.querySelector('.help-block');
+          help.innerHTML = help.innerText = "Signature invalid. Please try again.";
+          const alert = document.createElement('div');
+          alert.classList.add('alert');
+          alert.classList.add('alert-warning');
+          alert.innerHTML = '<strong>WARNING</strong> Bad digest detected. Installation may be corrupt.';
+          document.body.appendChild(alert);
+        })();
+      };
+      const initialize = () => {
+        const fragment = document.createDocumentFragment();
+        fragment.appendChild(document.forms.validate);
+        (document.location.search.replace('?sha512=','').length)
+          ? validate(location.search, fragment)
+          : challenge(fragment);
+      };
+      document.onreadystatechange = () => {
+        document.readyState === 'interactive' && initialize();
+      };
+    })(window, document);
+  </script>
+{{ end }}

@@ -1,87 +1,39 @@
 +++
-title = "{{ replace .TranslationBaseName "-" " " | title }}"
-date = {{ .Date }}
+title = "Help {{ .Site.Data.theme.latest.version }}"
+date = {{ .Date }} # TODO: Remove?
 expirydate = {{ .Date }}
-description = "Thank you for choosing After Dark. Please customize your installation."
 noindex = true
 toc = true
+type = "help"
+layout = "help"
+[installation]
+  sha512 = "{{ strings.TrimLeft "sha512-" .Site.Data.theme.latest.dist.integrity }}"
 +++
 
-{{< hackcss-form name="validate" action="/post/welcome/" >}}
+{{< hackcss-form name="validate" action="/help/" >}}
   {{< hackcss-formgroup name="validation" >}}
-    {{< hackcss-label for="pgp" >}}
-      64-bit <abbr title="Pretty Good Privacy">PGP</abbr> key:
+    {{< hackcss-label for="sha512" >}}
+      <abbr title="Secure Hash Algorithm">SHA-512</abbr> Digest:
     {{< /hackcss-label >}}
     {{< hackcss-textinput
         required="true"
         autofocus="true"
         autocomplete="off"
-        value="BB73 67EE 9A70 A631"
-        type="text" id="pgp" name="pgp"
-        pattern="^(?:[A-Za-z0-9+/]{4}\s){3}(?:[A-Za-z0-9+/]{4})$" >}}
+        type="text" id="sha512" name="sha512"
+        pattern="^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$" >}}
     {{< hackcss-helpblock >}}
-      Submit with key to verify installation.
+      Submit with digest to validate installation.
     {{< /hackcss-helpblock >}}
   {{< /hackcss-formgroup >}}
 {{< /hackcss-form >}}
 
-<script>
-  (function (window, document, undefined) {
-    "use strict";
-    const key = 'BB73 67EE 9A70 A631';
-    const confirm = fragment => {
-      document.body.insertBefore(fragment, document.body.firstChild);
-      const form = document.forms.validate;
-      form.pgp.value = key;
-      form.validation.classList.add('form-success');
-      form.validation.disabled = true;
-      const message = "Key verified. Valid installation detected."
-      form.querySelector('.help-block').innerHTML = message;
-    };
-    const validate = (search, form) => {
-      search.includes(key.replace(/\s/g,'+')) ? confirm(form) : challenge(form);
-    };
-    const challenge = fragment => {
-      const body = document.body;
-      if (body.firstChild === document.forms.validate) return;
-      while (body.firstChild) body.removeChild(body.firstChild);
-      body.insertBefore(fragment, body.firstChild);
-      const form = document.forms.validate;
-      const check = () => {
-        const classes = form.validation.classList;
-        if (form.checkValidity()) {
-          classes.add('form-success');
-          classes.remove('form-warning');
-        } else {
-          classes.add('form-warning');
-          classes.remove('form-success');
-        }
-      };
-      form.oninput = check;
-      document.location.pathname !== '/' && (() => {
-        form.validation.classList.add('form-error');
-        document.title = "Please try again…";
-        const help = form.querySelector('.help-block');
-        help.innerHTML = help.innerHTML.replace(
-          'key', `<mark><b>${key}</b></mark>`
-        );
-        help.innerHTML = help.innerHTML.replace(' installation', '');
-      })();
-    };
-    const initialize = () => {
-      const fragment = document.createDocumentFragment();
-      fragment.appendChild(document.forms.validate);
-      (document.location.search.replace('?pgp=','').length)
-        ? validate(location.search, fragment)
-        : challenge(fragment);
-    };
-    document.onreadystatechange = () => {
-      document.readyState === 'interactive' && initialize();
-    };
-  })(window, document);
-</script>
-
 <!--more-->
+
+Welcome to the Online Help for After Dark. Here you will find instructions for configuring your site. Use the [Table of Contents](#TableOfContents) to quickly jump to any section.
+
+If you're unable to find what you're looking for, or just need a helping hand, please join the private telegram chatroom and ask for help. Active chatroom link can be found at the top of the `README` in the latest version of the theme.
+
+To return to this documentation at anytime use `hugo serve --buildExpired`.
 
 # Module System
 
