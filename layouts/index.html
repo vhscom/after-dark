@@ -8,7 +8,7 @@
   <header>
     <h1>{{ .Title }}</h1>
   </header>
-  {{ range (.Paginate (where .Data.Pages "Type" "post")).Pages }}
+  {{ range (.Paginate (where .Data.Pages "Type" "in" (slice "post" "help"))).Pages }}
     {{ partial "page-summary.html" . }}
   {{ end }}
 {{ end }}

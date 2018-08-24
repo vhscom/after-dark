@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "Starting help server ..."
+hugo serve --buildExpired --disableLiveReload --port 1414 1>/dev/null &
+echo "Help server started at http://localhost:1414/"
+echo "To stop it run \"kill \$(ps aux | awk '/[h]ugo.*1414/ {print \$2}')\"."
