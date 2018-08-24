@@ -102,6 +102,7 @@ generate_help_docs () {
 
 serve_help_docs () {
    echo "Starting help server ..."
+   sleep 1
    hugo serve --buildExpired --disableLiveReload --port 1414 1>/dev/null &
 }
 
@@ -125,5 +126,5 @@ echo "Site created in $SITE_DIR_ABS"
 echo "Help server started at http://localhost:1414/"
 echo "To stop it run \"kill \$(ps aux | awk '/[h]ugo.*1414/ {print \$2}')\"."
 printf "${YELLOW}Run \"cd $SITE_DIR && hugo serve\" to start your site.${NC}\n"
-echo "To start help later run \"hugo serve --buildExpired\"."
+echo "To start help later run \"hugo serve --buildExpired --disableLiveReload --port 1414\"."
 echo "Thank you for choosing After Dark."
