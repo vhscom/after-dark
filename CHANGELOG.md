@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.5.0"></a>
+# [6.5.0](https://codeberg.org/vhs/after-dark/compare/v6.4.1...v6.5.0) (2018-08-24)
+
+
+### Bug Fixes
+
+* **install:** stop copying all archetypes to site ([210412b](https://codeberg.org/vhs/after-dark/commits/210412b)), closes [#45](https://codeberg.org/vhs/after-dark/issues/45)
+
+
+### Features
+
+* **install:** faux install validation using npm sha512 digest ([5a8dec0](https://codeberg.org/vhs/after-dark/commits/5a8dec0)), closes [#33](https://codeberg.org/vhs/after-dark/issues/33)
+* **snippets:** alert user on invalid autocomplete value ([1105e20](https://codeberg.org/vhs/after-dark/commits/1105e20)), closes [#46](https://codeberg.org/vhs/after-dark/issues/46)
+
+
+
 <a name="6.4.1"></a>
 ## [6.4.1](https://codeberg.org/vhs/after-dark/compare/v6.4.0...v6.4.1) (2018-08-22)
 
