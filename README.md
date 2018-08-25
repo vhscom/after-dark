@@ -13,7 +13,7 @@
 
 ## About
 
-[After Dark](https://vhs.codeberg.page/after-dark) is a blog theme for the Hugo static site generator. It is an original work designed to preserve the aesthetic and simplicity of hobbiest websites created during the mid- to late-1990’s. The theme includes an inbuilt search engine, POSIX-compliant quick installer and optional plug-in modules to add functionality. Use it online or off to create anything from an indie microblog to a visually stunning photojournal.
+After Dark is a Hugo theme designed for Web syndication. It is an original work created to preserve the aesthetic and design simplicity of hobbiest websites created during the mid- to late-1990’s. The theme includes an inbuilt search engine, POSIX-compliant quick installer, online help and optional plug-in modules to add functionality. Use it online or off to create anything from an indie microblog to a visually stunning photojournal.
 
 ## Demo
 
