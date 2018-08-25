@@ -7,7 +7,7 @@
     (function (window, document, undefined) {
       const el = document.querySelector('details summary');
       el.onclick = () => {
-        (function(l,o,a,d,e,r){e=o.createElement(a),r=o.getElementsByTagName(a)[0];e.async=1;e.src=d;r.parentNode.insertBefore(e,r)})(window,document,'script','{{ "/js/smoothscroll.js" | relURL | safeJS }}');
+        fetchInject([{{ "/js/smoothscroll.js" | relURL }}]);
         el.onclick = null;
       };
       document.querySelectorAll('#TableOfContents a').forEach(link => {
