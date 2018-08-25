@@ -23,6 +23,7 @@ layout = "help"
         pattern="^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$" >}}
     {{< hackcss-helpblock >}}
       Submit with digest to validate installation.
+      <noscript>JavaScript must be enabled for proper validation.</noscript>
     {{< /hackcss-helpblock >}}
   {{< /hackcss-formgroup >}}
 {{< /hackcss-form >}}
@@ -33,7 +34,7 @@ Welcome to the Online Help for After Dark. Here you will find instructions for c
 
 If you're unable to find what you're looking for, or just need a helping hand, please join the private telegram chatroom and ask for help. Active chatroom link can be found at the top of the `README` in the latest version of the theme.
 
-To return to this documentation at anytime use `hugo serve --buildExpired`.
+To return to this documentation later run `./themes/after-dark/bin/help`.
 
 # Module System
 

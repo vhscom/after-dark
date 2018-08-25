@@ -1,5 +1,10 @@
 #!/bin/sh
-echo "Starting help server ..."
+echo "Updating help documentation ..."
+kill $(ps aux | awk '/[h]ugo.*1414/ {print $2}') 2>/dev/null
+rm content/help/index.md 2>/dev/null
+hugo new help/index.md --kind help 1>/dev/null
+echo "Restarting help server ..."
 hugo serve --buildExpired --disableLiveReload --port 1414 1>/dev/null &
 echo "Help server started at http://localhost:1414/"
 echo "To stop it run \"kill \$(ps aux | awk '/[h]ugo.*1414/ {print \$2}')\"."
+echo "To update and start it again run \"./themes/after-dark/bin/help\"."
