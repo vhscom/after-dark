@@ -1,24 +1,24 @@
 {{ $scratch := newScratch }}
 {{ range where .Site.RegularPages "Type" "help" }}
-  {{ $scratch.Set "sha512" .Params.installation.sha512 }}
+  {{ $scratch.Set "integrity" .Params.integrity }}
 {{ end }}
-{{ if $scratch.Get "sha512" }}
+{{ if $scratch.Get "integrity" }}
   <script>
     (function (window, document, undefined) {
       "use strict";
-      const sha512 = '{{ $scratch.Get "sha512" }}';
+      const digest = '{{ $scratch.Get "integrity" }}';
       const confirm = fragment => {
         document.body.insertBefore(fragment, document.body.firstChild);
         const form = document.forms.validate;
-        form.sha512.type = 'password';
-        form.sha512.value = sha512;
-        form.validation.classList.add('form-success');
-        form.validation.disabled = true;
+        form.digest.type = 'password';
+        form.digest.value = digest;
+        form.integrity.classList.add('form-success');
+        form.integrity.disabled = true;
         const message = "Signature verified. Valid installation detected."
         form.querySelector('.help-block').innerHTML = message;
       };
       const validate = (search, form) => {
-        search.includes(encodeURIComponent(sha512)) ? confirm(form) : challenge(form);
+        search.includes(encodeURIComponent(digest)) ? confirm(form) : challenge(form);
       };
       const challenge = fragment => {
         const body = document.body;
@@ -26,9 +26,9 @@
         while (body.firstChild) body.removeChild(body.firstChild);
         body.insertBefore(fragment, body.firstChild);
         const form = document.forms.validate;
-        form.sha512.value = sha512;
+        form.digest.value = digest;
         const check = () => {
-          const classes = form.validation.classList;
+          const classes = form.integrity.classList;
           if (form.checkValidity()) {
             classes.add('form-success');
             classes.remove('form-warning');
@@ -39,7 +39,7 @@
         };
         form.oninput = check;
         document.location.pathname !== '/' && (() => {
-          form.validation.classList.add('form-error');
+          form.integrity.classList.add('form-error');
           document.title = "Help | {{ .Site.Title }}";
           const help = form.querySelector('.help-block');
           help.innerHTML = help.innerText = "Signature invalid. Please try again.";
@@ -53,7 +53,7 @@
       const initialize = () => {
         const fragment = document.createDocumentFragment();
         fragment.appendChild(document.forms.validate);
-        (document.location.search.replace('?sha512=','').length)
+        (document.location.search.replace('?digest=','').length)
           ? validate(location.search, fragment)
           : challenge(fragment);
       };
