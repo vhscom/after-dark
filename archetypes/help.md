@@ -1,25 +1,23 @@
 +++
 title = "Help {{ .Site.Data.theme.latest.version }}"
-date = {{ .Date }} # TODO: Remove?
 expirydate = {{ .Date }}
 noindex = true
 toc = true
 type = "help"
 layout = "help"
-[installation]
-  sha512 = "{{ strings.TrimLeft "sha512-" .Site.Data.theme.latest.dist.integrity }}"
+integrity = "{{ strings.TrimLeft "sha512-" .Site.Data.theme.latest.dist.integrity }}"
 +++
 
 {{< hackcss-form name="validate" action="/help/" >}}
-  {{< hackcss-formgroup name="validation" >}}
-    {{< hackcss-label for="sha512" >}}
+  {{< hackcss-formgroup name="integrity" >}}
+    {{< hackcss-label for="digest" >}}
       <abbr title="Secure Hash Algorithm">SHA-512</abbr> Digest:
     {{< /hackcss-label >}}
     {{< hackcss-textinput
         required="true"
         autofocus="true"
         autocomplete="off"
-        type="text" id="sha512" name="sha512"
+        type="text" id="digest" name="digest"
         pattern="^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$" >}}
     {{< hackcss-helpblock >}}
       Submit with digest to validate installation.
