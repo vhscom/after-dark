@@ -52,7 +52,7 @@ download_module () {
 configure_theme () {
    echo "Configuring basic After Dark theme settings ..."
    tee "config.toml" > /dev/null <<TOML
-baseurl = "https://domain.example/" # Controls base URL sitewide
+baseurl = "https://donate.vhs.codeberg.page" # Controls base URL sitewide
 languageCode = "en-US" # Controls site language
 title = "After Dark" # Homepage title and page title suffix
 paginate = 11 # Number of posts to show before paginating
@@ -77,7 +77,7 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   author = "" # Optional, controls author name display on posts
   hide_author = true # Optional, set true to hide author name on posts
   show_menu = false # Optional, set true to enable section menu
-  powered_by = true # Optional, set false to disable credits
+  powered_by = true # Optional, set false to disable footer credits
   images = [
     "https://source.unsplash.com/collection/983219/2000x1322"
   ] # Suggested, controls default Open Graph images
