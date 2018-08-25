@@ -95,11 +95,11 @@ article header img {
   width: 100%;
   border-radius: 3px;
 }
-article img {
-  max-width: 100%;
-}
 table td, table th {
   line-height: inherit;
+}
+img {
+  max-width: 100%;
 }
 @media screen and (min-width: 768px) {
   html {
