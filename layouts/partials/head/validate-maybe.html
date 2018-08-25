@@ -40,13 +40,13 @@
         form.oninput = check;
         document.location.pathname !== '/' && (() => {
           form.validation.classList.add('form-error');
-          document.title = "Invalid | {{ .Site.Title }}";
+          document.title = "Help | {{ .Site.Title }}";
           const help = form.querySelector('.help-block');
           help.innerHTML = help.innerText = "Signature invalid. Please try again.";
           const alert = document.createElement('div');
           alert.classList.add('alert');
           alert.classList.add('alert-warning');
-          alert.innerHTML = '<strong>WARNING</strong> Bad digest detected. Installation may be corrupt.';
+          alert.innerHTML = '<strong>WARNING</strong> Invalid digest. Help may be unavailable.';
           document.body.appendChild(alert);
         })();
       };
