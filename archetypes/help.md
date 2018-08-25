@@ -488,7 +488,13 @@ See the Hugo docs for additional [configuration options](http://gohugo.io/overvi
 
 # Snippets
 
-Snippets are reusable bits of code you can add to your site to reduce repetition and improve consistency. They are composed of [partials](https://gohugo.io/templates/partials) and [shortcodes](https://gohugo.io/content-management/shortcodes). After Dark includes the following snippets designed to take advantage of a number of pre-styled and customizable [hackcss components][hackcss] available in the theme:
+Snippets are reusable bits of code you can add to your site to reduce repetition and improve consistency. They are composed of [partials](https://gohugo.io/templates/partials) and [shortcodes](https://gohugo.io/content-management/shortcodes) and may be combined together to produce powerful results.
+
+The following core snippets are supplied by the theme:
+
+- `external` - Create styled links in layout or markdown.
+
+After Dark also includes snippets to take advantage of [hackcss components][hackcss]:
 
 - `hackcss-alert` - Show various alert boxes.
 - `hackcss-button` - Add buttons inside and out of forms.
@@ -503,7 +509,7 @@ Snippets are reusable bits of code you can add to your site to reduce repetition
 - `hackcss-textinput` - Accept any kind of text input.
 - `hackcss-throbber` - Show an animated spinner.
 
-Each snippet includes extensive inline documentation and examples, and can be found in the `layouts/shortcodes` directory of the theme.
+Each snippet includes extensive inline documentation. Docs are located in the shortcode files in the `layouts/shortcodes` directory of the theme.
 
 Combine snippets to build great-looking forms anywhere on your site:
 
