@@ -91,7 +91,7 @@ See Hugo's [Menu docs](https://gohugo.io/content-management/menus/) for more inf
 
 After Dark automatically highlights code written in more than 160 languages using a customized version of [One Dark Syntax](https://atom.io/themes/one-dark-syntax) with support for terminal browsers. To activate the code highlighter use the [`highlight` shortcode](https://gohugo.io/content-management/syntax-highlighting/#highlight-shortcode) or indicate the [highlighting language](https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages) with a fenced code block from within your page content, e.g. ```` ```js ````
 
-![Syntax Highlighting screenshot](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/feat-syntax-highlighting-fs8.png "Example JavaScript highlighting with line numbers.")
+![Syntax Highlighting screenshot](data:image/png;base64,{{ readFile "themes/after-dark/images/docs/feat-syntax-highlighting-fs8.png" | base64Encode }} "Example JavaScript highlighting with line numbers.")
 
 If you'd prefer a lighter background create a file called `syntax.css` in your site `static/css` folder and drop in the contents of one of the following:
 
@@ -242,7 +242,7 @@ Increase engagement when sharing links to your site on social media.
 
 After Dark uses the `opengraph` Hugo [internal template](https://gohugo.io/templates/internal/#the-internal-templates) to achieve rich sharing cards for Facebook and other social networks, as shown here:
 
-![Open Graph sharing card screenshot](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/feat-social-awareness-fs8.png "Example Open Graph sharing card produced by After Dark")
+![Open Graph sharing card screenshot](data:image/png;base64,{{ readFile "themes/after-dark/images/docs/feat-social-awareness-fs8.png" | base64Encode }} "Example Open Graph sharing card produced by After Dark")
 
 To create a social sharing card like the one shown above, specify `author` in `config.toml` and, optionally, override it from your front matter as shown here:
 
@@ -289,7 +289,7 @@ See the Hugo [Internal Templates documentation](https://gohugo.io/templates/inte
 
 Improve experience for Telegram users by providing an [Instant View](https://instantview.telegram.org/) for your site. After Dark makes easy.
 
-![Open Graph sharing card screenshot](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/feat-instant-view-fs8.png "Example Telegram Instant View for After Dark")
+![Open Graph sharing card screenshot](data:image/png;base64,{{ readFile "themes/after-dark/images/docs/feat-instant-view-fs8.png" | base64Encode }} "Example Telegram Instant View for After Dark")
 
 To create an Instant View for your site [create your own](https://instantview.telegram.org/my/) IV template modeling from the example here:
 
@@ -513,7 +513,7 @@ Each snippet includes extensive inline documentation. Docs are located in the sh
 
 Combine snippets to build great-looking forms anywhere on your site:
 
-![Form snippets screenshot](https://codeberg.org/vhs/after-dark/raw/branch/master/images/docs/feat-snippets-fs8.png "Example form created using snippet shortcodes.")
+![Form snippets screenshot](data:image/png;base64,{{ readFile "themes/after-dark/images/docs/feat-snippets-fs8.png" | base64Encode }} "Example form created using snippet shortcodes.")
 
 Or try your hand at creating your own snippets for the following additional shortcodes included with After Dark:
 
