@@ -13,7 +13,7 @@
 
 ## About
 
-After Dark is a Hugo theme designed for Web syndication. It is an original work created to preserve the aesthetic and design simplicity of hobbiest websites created during the mid- to late-1990’s. The theme includes an inbuilt search engine, POSIX-compliant quick installer, online help and optional plug-in modules to add functionality. Use it online or off to create anything from an indie microblog to a visually stunning photojournal.
+After Dark is a Hugo theme designed to facilitate content distribution. It is an original work created to preserve the aesthetic and simplicity of hobbiest websites created during the mid- to late-1990’s. The theme includes an inbuilt search engine, portable quick installer, online help and optional plug-in modules to enhance functionality. Use it online or off to create anything from an indie microblog to a visually stunning photojournal.
 
 ## Demo
 
@@ -32,8 +32,8 @@ Quick Installer | One command is all you need to get started with After Dark.
 Online Help | Learn to use the theme with convenient help from within your site.
 Module System | Add functionality with prebuilt modules designed to compliment your site.
 Section Menu | Display an accessible site-wide navigation with links to content sections.
-Display Variants | Customize look-and-feel with one of six included display variations.
-Custom Styles | Add to, override or disable theme styles for complete design control.
+Display Variants | Customize look-and-feel with one of eight included display variations.
+Custom Styles | Add to, adjust or disable theme styles for complete design control.
 Trim Color | Define how user agents should display the border around your site.
 SVG Favicon | Help push browser standards forward by decorating your site with an SVG favicon.
 Fuzzy Search | Find and share indexable content anywhere on your site. No registration required.
@@ -61,23 +61,23 @@ After Dark requires Hugo `0.44` or later. Before running the quick installer ple
 
 ### Quick Installer
 
-Then run the quick installer located at [`bin/install`](https://codeberg.org/vhs/after-dark/src/branch/master/bin/install), or just paste this into a terminal and press <kbd>Enter</kbd>:
+Then run the quick installer located at [`bin/install`](https://codeberg.org/vhs/after-dark/src/branch/master/bin/install), or just paste this into a POSIX terminal and press <kbd>Enter</kbd>:
 
 ```shell
 wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/master/bin/install | sh
 ```
 
-Installation should complete in a matter of seconds and includes documentation to get you started.
+Installation should complete in a matter of seconds resulting in a functional offline website ready to go live.
 
 ### Go Live
 
-View your site online with [Serveo] using end-to-end encryption:
+Serve your site online with end-to-end encryption using [Serveo], no sign-up required:
 
 ```
-ssh -R 80:localhost:1313 serveo.net
+hugo serve --disableLiveReload & ssh -R 80:localhost:1313 serveo.net
 ```
 
-No sign-ups required. Install [dropbear] or [openssh] if you need an ssh server.
+Once started press `g` for traffic inspection, or quit to go offline and use `fg` to return to `hugo`. Install [dropbear] or [openssh] if you need `ssh`.
 
 ## Adaptations
 
