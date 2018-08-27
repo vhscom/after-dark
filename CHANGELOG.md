@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.7.4"></a>
+## [6.7.4](https://codeberg.org/vhs/after-dark/compare/v6.7.3...v6.7.4) (2018-08-27)
+
+
+### Bug Fixes
+
+* **scripts:** remove help before generating on upgrade ([56b7543](https://codeberg.org/vhs/after-dark/commits/56b7543))
+
+
+
 <a name="6.7.3"></a>
 ## [6.7.3](https://codeberg.org/vhs/after-dark/compare/v6.7.2...v6.7.3) (2018-08-27)
 
