@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.7.0"></a>
+# [6.7.0](https://codeberg.org/vhs/after-dark/compare/v6.6.4...v6.7.0) (2018-08-27)
+
+
+### Bug Fixes
+
+* **scripts:** update install to place theme metadata in theme data folder ([66168a1](https://codeberg.org/vhs/after-dark/commits/66168a1)), closes [#59](https://codeberg.org/vhs/after-dark/issues/59)
+
+
+### Features
+
+* **scripts:** add theme upgrade script ([6415250](https://codeberg.org/vhs/after-dark/commits/6415250)), closes [#59](https://codeberg.org/vhs/after-dark/issues/59)
+* **scripts:** support custom content dirs in config file ([adf90bc](https://codeberg.org/vhs/after-dark/commits/adf90bc)), closes [#59](https://codeberg.org/vhs/after-dark/issues/59)
+
+
+
 <a name="6.6.4"></a>
 ## [6.6.4](https://codeberg.org/vhs/after-dark/compare/v6.6.3...v6.6.4) (2018-08-27)
 
