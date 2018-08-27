@@ -28,9 +28,9 @@ integrity = "{{ strings.TrimLeft "sha512-" .Site.Data.npm.latest.dist.integrity 
 
 <!--more-->
 
-Welcome to the Online Help for After Dark. Here you will find instructions for configuring your site. Use the [Table of Contents](#TableOfContents) to quickly jump to any section.
+Welcome to the Online Help for After Dark. Here you will find instructions for configuring your site. Use the `Table of Contents` to jump ahead to any section.
 
-If you're unable to find what you're looking for, or just need a helping hand, please join the private telegram chatroom and ask for help. Active chatroom link can be found at the top of the `README` in the latest version of the theme.
+If you can't find what you're looking for, or just need a helping hand, please join the private telegram chatroom and ask for help. Active chatroom link can be found at the top of the `README` in the latest version of the theme.
 
 To return to this documentation later run `./themes/after-dark/bin/help`.
 
