@@ -13,7 +13,7 @@
 
 ## About
 
-After Dark is a Hugo theme designed to facilitate content distribution. It is an original work created to preserve the aesthetic and simplicity of hobbiest websites created during the mid- to late-1990’s. The theme includes an inbuilt search engine, portable quick installer, online help and optional plug-in modules to enhance functionality. Use it online or off to create anything from an indie microblog to a visually stunning photojournal.
+After Dark is a Hugo theme for bloggers, journalists and technology enthusiasts. It is an original work created to preserve the aesthetic and simplicity of hobbiest websites created during the mid- to late-1990’s. The theme includes an inbuilt search engine, portable quick installer, online help and optional plug-in modules to enhance functionality. Use it online or off to create anything from an indie microblog to a visually stunning photojournal.
 
 ## Demo
 
@@ -53,7 +53,7 @@ Table of Contents | Create collapsable content summaries with deep link and smoo
 
 ## Getting Started
 
-Satisfy the requirements, run the quick installer and go live in an instant.
+Satisfy the requirements, run the quick installer and go live with a single command.
 
 ### Requirements
 
