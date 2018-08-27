@@ -81,7 +81,7 @@ Once started press `g` for traffic inspection, or quit to go offline and use `fg
 
 ## Upgrading
 
-To check for theme updates and automatically upgrade to the latest version simply run `./theme/after-dark/bin/upgrade` from your site directory. This feature requires you install After Dark starting with `v6.7.1`. If you installed from an earlier version simply follow the steps [listed here](https://codeberg.org/vhs/after-dark/commit/6415250769c9c78338893f98b5ab9b77968053f7).
+To check for theme updates and automatically upgrade to the latest version simply run `./theme/after-dark/bin/upgrade` from your site directory. This feature requires you install After Dark starting with `v6.7.2`. If you installed from an earlier version simply follow the steps [listed here](https://codeberg.org/vhs/after-dark/commit/6415250769c9c78338893f98b5ab9b77968053f7).
 
 ## License
 
