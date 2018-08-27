@@ -23,7 +23,7 @@ upgrade () {
          wget -qO - https://registry.npmjs.org/"$1"/-/"$1"-"$latest_vers".tgz | tar --strip-components=1 -xz -C themes/"$1"
          echo "Version $latest_vers downloaded to ./themes/$1"
          [ "$1" = "after-dark" ] && generate_help_docs
-         echo "Upgrade complete! Please see CHANGELOG.md for breaking changes."
+         echo "Upgrade complete! Please see CHANGELOG.md for changes."
       fi
    fi
 }
