@@ -48,7 +48,7 @@ Referrer Policy | Help protect your visitors from nosy neighbors with a simple s
 Snippets | Display alerts, cards, progress indicators and easily build great-looking forms.
 Related Content | Display links to relevant content below blog posts automatically.
 Table of Contents | Create collapsable content summaries with deep link and smooth-scroll support.
-404 Page | Entertain users into staying when they experience linkrot on your site.
+Error Page | Entertain users when errors occur by giving them a glimpse inside the machine.
 </details>
 
 ## Getting Started

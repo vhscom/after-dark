@@ -1,4 +1,4 @@
-{{ if and (isset .Params "toc") .Params.toc  }}
+{{ if and (isset .Params "toc") .Params.toc }}
   <details>
     <summary>Table of Contents</summary>
     {{ .TableOfContents }}
@@ -9,17 +9,17 @@
       el.onclick = () => {
         fetchInject([{{ "/js/smoothscroll.js" | relURL }}]);
         el.onclick = null;
-      };
-      document.querySelectorAll('#TableOfContents a').forEach(link => {
-        link.addEventListener('click', (evt) => {
-          evt.preventDefault();
-          const selector = link.href.slice(link.href.indexOf('#'));
-          document.querySelector(
-            selector
-          ).scrollIntoView({ behavior: 'smooth' });
-          window.history.pushState({}, "", selector);
+        document.querySelectorAll('#TableOfContents a').forEach(link => {
+          link.addEventListener('click', evt => {
+            evt.preventDefault();
+            const selector = link.href.slice(link.href.indexOf('#'));
+            document.querySelector(
+              selector
+            ).scrollIntoView({ behavior: 'smooth' });
+            window.history.pushState({}, "", selector);
+          });
         });
-      });
+      };
     })(window, document);
   </script>
 {{ end }}
