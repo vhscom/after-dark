@@ -23,7 +23,7 @@ Visit [Hack Cabin](https://hackcabin.com) for a live example [you can recreate](
 
 See what's included or [jump ahead](#getting-started) to get started.
 
-<details open>
+<details>
 <summary>Feature Overview</summary>
 
 Feature | Summary
