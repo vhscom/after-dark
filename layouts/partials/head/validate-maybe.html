@@ -14,7 +14,7 @@
         form.digest.value = digest;
         form.integrity.classList.add('form-success');
         form.integrity.disabled = true;
-        const message = "Signature verified. Valid installation detected."
+        const message = "Digest verified. Valid installation detected."
         form.querySelector('.help-block').innerHTML = message;
       };
       const validate = (search, form) => {
