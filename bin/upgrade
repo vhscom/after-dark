@@ -1,0 +1,31 @@
+#!/bin/sh
+set -e
+
+generate_help_docs () {
+   echo "Generating help documentation ..."
+   meta_path=themes/after-dark/data/npm
+   mkdir -p "$path" && echo "$LATEST_META" | tr '\r\n' ' ' > "$meta_path"/latest.json
+   hugo new help/index.md --kind help 1>/dev/null
+}
+
+upgrade () {
+   current_meta=themes/"$1"/data/npm/latest.json
+   current_vers=`sed -n 's/.*"version":"\([^"]*\).*/\1/p' <<< "$current_meta"`
+   if ! [ -f "$current_meta" ] ; then
+      echo "Error: Unable to locate metadata for $1. Cannot proceed with upgrade." >&2; exit 1
+   else
+      LATEST_META=$(wget -qO - https://registry.npmjs.org/"$1"/latest)
+      latest_vers=`sed -n 's/.*"version":"\([^"]*\).*/\1/p' <<< "$meta"`
+      if [ "$current_vers" = "$latest_vers" ] ; then
+         echo "Did not upgrade $1. Already using latest version." >&1; exit 0
+      else
+         rm -rf themes/"$1"
+         wget -qO - https://registry.npmjs.org/"$1"/-/"$1"-"$latest_vers".tgz | tar --strip-components=1 -xz -C themes/"$1"
+         echo "Version $latest_vers downloaded to ./themes/$1"
+         [ "$1" = "after-dark" ] && generate_help_docs
+         echo "Upgrade complete! Please see CHANGELOG.md for breaking changes."
+      fi
+   fi
+}
+
+upgrade "after-dark"

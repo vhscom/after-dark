@@ -5,7 +5,10 @@ All notable changes to this project will be documented in this file. See [standa
 <a name="6.6.4"></a>
 ## [6.6.4](https://codeberg.org/vhs/after-dark/compare/v6.6.3...v6.6.4) (2018-08-27)
 
+### Security
 
+* **build:** enclose release tag sha512 in delimeters
+([543d32d](https://codeberg.org/vhs/after-dark/commit/543d32d))
 
 <a name="6.6.3"></a>
 ## [6.6.3](https://codeberg.org/vhs/after-dark/compare/v6.6.1...v6.6.3) (2018-08-27)
