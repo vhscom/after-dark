@@ -3,6 +3,7 @@ set -e
 
 CONFIG_FILE=config.toml
 CONTENT_DIR=`sed -n 's/contentDir[=:]"\([^"]*\)".*/\1/p' <<< "$(cat $CONFIG_FILE | tr -d ' ')"`
+[ -z $CONTENT_DIR ] && CONTENT_DIR=content
 
 generate_help_docs () {
    echo "Generating help documentation ..."
