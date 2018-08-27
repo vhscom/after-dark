@@ -96,7 +96,8 @@ update_archetypes () {
 
 generate_help_docs () {
    echo "Generating help documentation ..."
-   mkdir data/theme && echo "$THEME_META" | tr '\r\n' ' ' > data/theme/latest.json
+   path=themes/after-dark/data/npm
+   mkdir -p "$path" && echo "$THEME_META" | tr '\r\n' ' ' > "$path"/latest.json
    hugo new help/index.md --kind help 1>/dev/null
 }
 
