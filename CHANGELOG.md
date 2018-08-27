@@ -5,12 +5,18 @@ All notable changes to this project will be documented in this file. See [standa
 <a name="6.6.3"></a>
 ## [6.6.3](https://codeberg.org/vhs/after-dark/compare/v6.6.1...v6.6.3) (2018-08-27)
 
+### Security
 
+* **build:** append sha512 to release tag and self-sign
+([112f616](https://codeberg.org/vhs/after-dark/commits/112f616))
 
 <a name="6.6.2"></a>
 ## [6.6.2](https://codeberg.org/vhs/after-dark/compare/v6.6.1...v6.6.2) (2018-08-26)
 
+### Security
 
+* **build:** add sha512 digest to git tags and gpg sign them
+([35457ab](https://codeberg.org/vhs/after-dark/commits/35457ab))
 
 <a name="6.6.1"></a>
 ## [6.6.1](https://codeberg.org/vhs/after-dark/compare/v6.6.0...v6.6.1) (2018-08-26)
