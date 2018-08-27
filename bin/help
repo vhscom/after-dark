@@ -1,5 +1,4 @@
 #!/bin/sh
-set -e
 
 CONFIG_FILE=config.toml
 CONTENT_DIR=`sed -n 's/contentDir[=:]"\([^"]*\)".*/\1/p' <<< "$(cat $CONFIG_FILE | tr -d ' ')"`
@@ -7,7 +6,7 @@ CONTENT_DIR=`sed -n 's/contentDir[=:]"\([^"]*\)".*/\1/p' <<< "$(cat $CONFIG_FILE
 
 echo "Updating help documentation ..."
 kill $(ps aux | awk '/[h]ugo.*1414/ {print $2}') 2>/dev/null
-rm "$CONTENT_DIR"/help/index.md 2>/dev/null
+[ -f "$CONTENT_DIR"/help/index.md ] && rm "$CONTENT_DIR"/help/index.md
 hugo new help/index.md --kind help 1>/dev/null
 echo "Restarting help server ..."
 hugo serve --buildExpired --disableLiveReload --port 1414 1>/dev/null &
