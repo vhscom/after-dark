@@ -24,6 +24,7 @@ upgrade () {
       if [ "$current_vers" = "$latest_vers" ] ; then
          echo "Did not upgrade $1. Already using latest version." >&1; exit 0
       else
+         echo "Starting upgrade from $current_vers to $latest_vers ..."
          rm -rf themes/"$1"/*
          wget -qO - https://registry.npmjs.org/"$1"/-/"$1"-"$latest_vers".tgz | tar --strip-components=1 -xz -C themes/"$1"
          echo "Version $latest_vers downloaded to themes/$1"
