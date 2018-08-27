@@ -3,6 +3,7 @@ set -e
 
 CONFIG_FILE=config.toml
 CONTENT_DIR=`sed -n 's/contentDir[=:]"\([^"]*\)".*/\1/p' <<< "$(cat $CONFIG_FILE | tr -d ' ')"`
+[ -z $CONTENT_DIR ] && CONTENT_DIR=content
 
 echo "Updating help documentation ..."
 kill $(ps aux | awk '/[h]ugo.*1414/ {print $2}') 2>/dev/null
