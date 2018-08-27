@@ -79,9 +79,9 @@ hugo serve --disableLiveReload & ssh -R 80:localhost:1313 serveo.net
 
 Once started press `g` for traffic inspection, or quit to go offline and use `fg` to return to `hugo`. Install [dropbear] or [openssh] if you need `ssh`.
 
-## Adaptations
+## Upgrading
 
-After Dark enjoys a community-maintained [port for Gutenberg](https://www.getgutenberg.io/themes/after-dark/) for those who'd like to experiment with an alternative to Hugo.
+To check for theme updates and automatically upgrade to the latest version simply run `./theme/after-dark/bin/upgrade` from your site directory. This feature requires you install After Dark starting with `v6.7.0`. If you installed from an earlier version simply follow the steps [listed here](https://codeberg.org/vhs/after-dark/commit/6415250769c9c78338893f98b5ab9b77968053f7).
 
 ## License
 
@@ -93,7 +93,7 @@ as published by Sam Hocevar. See the COPYING file for more details.
 
 ## Acknowledgements
 
-Thanks to Steve Francia for creating Hugo. Thanks to エゴイスト for creating hackcss. Thanks to Dan Klammer for the SVG icons. And thanks to Simon Fremaux for the groovy 404 page background animation.
+Thanks to Steve Francia for creating Hugo. Thanks to エゴイスト for creating hackcss. Thanks to Dan Klammer for the SVG icons. Thanks to Simon Fremaux for the groovy 404 background animation. And thanks to Vincent Prouillet for creating an After Dark [port for Gutenberg](https://www.getgutenberg.io/themes/after-dark/).
 
 [1]: https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg
 [Hugo]: https://gohugo.io/
