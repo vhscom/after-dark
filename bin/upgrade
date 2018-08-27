@@ -1,10 +1,14 @@
 #!/bin/sh
 set -e
 
+CONFIG_FILE=config.toml
+CONTENT_DIR=`sed -n 's/contentDir[=:]"\([^"]*\)".*/\1/p' <<< "$(cat $CONFIG_FILE | tr -d ' ')"`
+
 generate_help_docs () {
    echo "Generating help documentation ..."
    meta_path=themes/after-dark/data/npm
    mkdir -p "$meta_path" && echo "$LATEST_META" | tr '\r\n' ' ' > "$meta_path"/latest.json
+   rm "$CONTENT_DIR"/help/index.md 2>/dev/null
    hugo new help/index.md --kind help 1>/dev/null
 }
 
