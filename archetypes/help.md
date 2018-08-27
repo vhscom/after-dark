@@ -1,11 +1,11 @@
 +++
-title = "Help {{ .Site.Data.theme.latest.version }}"
+title = "Help {{ .Site.Data.npm.latest.version }}"
 expirydate = {{ .Date }}
 noindex = true
 toc = true
 type = "help"
 layout = "help"
-integrity = "{{ strings.TrimLeft "sha512-" .Site.Data.theme.latest.dist.integrity }}"
+integrity = "{{ strings.TrimLeft "sha512-" .Site.Data.npm.latest.dist.integrity }}"
 +++
 
 {{< hackcss-form name="validate" action="/help/" >}}
