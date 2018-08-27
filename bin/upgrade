@@ -4,7 +4,7 @@ set -e
 generate_help_docs () {
    echo "Generating help documentation ..."
    meta_path=themes/after-dark/data/npm
-   mkdir -p "$path" && echo "$LATEST_META" | tr '\r\n' ' ' > "$meta_path"/latest.json
+   mkdir -p "$meta_path" && echo "$LATEST_META" | tr '\r\n' ' ' > "$meta_path"/latest.json
    hugo new help/index.md --kind help 1>/dev/null
 }
 
@@ -21,7 +21,7 @@ upgrade () {
       else
          rm -rf themes/"$1"/*
          wget -qO - https://registry.npmjs.org/"$1"/-/"$1"-"$latest_vers".tgz | tar --strip-components=1 -xz -C themes/"$1"
-         echo "Version $latest_vers downloaded to ./themes/$1"
+         echo "Version $latest_vers downloaded to themes/$1"
          [ "$1" = "after-dark" ] && generate_help_docs
          echo "Upgrade complete! Please see CHANGELOG.md for changes."
       fi
