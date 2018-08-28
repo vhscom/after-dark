@@ -1,9 +1,6 @@
 {{ define "title" -}}
   {{ .Title }} | {{ .Site.Title }}
 {{- end }}
-{{ define "header" }}
-  {{ partial "menu.html" . }}
-{{ end }}
 {{ define "main" }}
   {{ partial "toc-maybe.html" . }}
   {{ .Content }}
