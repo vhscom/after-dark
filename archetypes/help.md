@@ -40,9 +40,9 @@ After Dark includes a custom module system and provides a number of prebuilt mod
 
 Module Name | Version | Description
 ---|---|---
-[Fractal Forest] | ![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://codeberg.org/vhs/fractal-forest/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400) | Better Portable Graphics (Preinstalled)
-[Voyeur] | ![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://codeberg.org/vhs/voyeur/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400) | Fathom Analytics
-[Hall of Mirrors] | ![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://codeberg.org/vhs/hall-of-mirrors/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400) | PhotoSwipe Image Gallery
+[Fractal Forest] | ![Latest version](https://img.shields.io/badge/dynamic/json.svg?url=https://codeberg.org/vhs/fractal-forest/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400) | Better Portable Graphics (Preinstalled)
+[Voyeur] | ![Latest version](https://img.shields.io/badge/dynamic/json.svg?url=https://codeberg.org/vhs/voyeur/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400) | Fathom Analytics
+[Hall of Mirrors] | ![Latest version](https://img.shields.io/badge/dynamic/json.svg?url=https://codeberg.org/vhs/hall-of-mirrors/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400) | PhotoSwipe Image Gallery
 
 Shown here, an animation made possible with the `Fractal Forest` module:
 
