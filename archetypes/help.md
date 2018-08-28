@@ -492,7 +492,8 @@ Snippets are reusable bits of code you can add to your site to reduce repetition
 
 The following core snippets are supplied by the theme:
 
-- `external` - Create styled links in layout or markdown.
+- `external` - Create styled anchor links.
+- `navmenu` - Displays a navigation menu.
 
 After Dark also includes snippets to take advantage of [hackcss components][hackcss]:
 
