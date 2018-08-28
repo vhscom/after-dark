@@ -35,7 +35,7 @@ Section Menu | Display an accessible site-wide navigation with links to content 
 Display Variants | Customize look-and-feel with one of eight included display variations.
 Custom Styles | Add to, adjust or disable theme styles for complete design control.
 Trim Color | Define how user agents should display the border around your site.
-SVG Favicon | Help push browser standards forward by decorating your site with an SVG favicon.
+SVG Favicon | Push browser standards forward by decorating your site with an SVG favicon.
 Fuzzy Search | Find and share indexable content anywhere on your site. No registration required.
 Code Highlighter | Highlight code in over 160 languages without requiring JavaScript.
 Post Images | Add graphics to your posts without touching an image editor.
