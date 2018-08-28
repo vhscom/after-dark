@@ -31,7 +31,7 @@ Feature | Summary
 Quick Installer | One command is all you need to get started with After Dark.
 Online Help | Learn to use the theme with convenient help from within your site.
 Module System | Add functionality with prebuilt modules designed to compliment your site.
-Section Menu | Display an accessible site-wide navigation with links to content sections.
+Section Menu | Display a contextual site-wide navigation with links to content.
 Display Variants | Customize look-and-feel with one of eight included display variations.
 Custom Styles | Add to, adjust or disable theme styles for complete design control.
 Trim Color | Define how user agents should display the border around your site.
