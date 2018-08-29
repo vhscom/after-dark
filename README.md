@@ -32,7 +32,7 @@ Quick Installer | One command is all you need to get started with After Dark.
 Online Help | Learn to use the theme with convenient help from within your site.
 Module System | Add functionality with prebuilt modules designed to compliment your site.
 Section Menu | Display a contextual site-wide navigation with links to content.
-Display Variants | Customize look-and-feel with one of eight display variations.
+Display Variants | Customize look-and-feel with one of eight included display variations.
 Custom Styles | Add to, adjust or disable theme styles for complete design control.
 Trim Color | Define the color used to display borders around your site.
 SVG Favicon | Push browser standards forward by decorating your site with an SVG favicon.
