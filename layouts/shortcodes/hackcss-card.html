@@ -1,6 +1,6 @@
 <!-- {{/*
 Basic usage:
-{{< hackcss-card header="title" text="Lorem ipsum dolor sit amet">}}
+{{< hackcss-card header="title" text="Lorem ipsum dolor sit amet" />}}
 {{% hackcss-card header="Bacon Ipsum" %}}
   _Flank **pancetta** beef tri-tip frankfurter chuck._
 {{% /hackcss-card %}}
@@ -13,4 +13,4 @@ Advanced usage:
 */}} -->
 {{ $header := .Get "header" }}
 {{ $body := .Get "text" | default .Inner }}
-{{ partial "components/card.html" (dict "header" $header "body" $body)}}
+{{ partial "components/card.html" (dict "header" $header "body" $body) }}
