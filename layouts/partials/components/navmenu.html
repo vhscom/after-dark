@@ -1,6 +1,0 @@
-<nav itemscope itemtype="http://schema.org/SiteNavigationElement">
-  {{ range (index .menus .name) }}
-    {{ $is_active := or ($.page.IsMenuCurrent $.name .) ($.page.HasMenuCurrent $.name .) }}
-    <a itemprop="url" {{ if $is_active }}class="active"{{ end }} href="{{ .URL }}"><span itemprop="name">{{ .Name }}</span></a>
-  {{- end }}
-</nav>
