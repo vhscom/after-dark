@@ -54,6 +54,9 @@ blockquote cite::before {
 :target {
   color: #fff;
 }
+:disabled {
+  cursor: not-allowed;
+}
 /* hack.css overrides and enhancements */
 .hack li ul {
   margin: 0;
