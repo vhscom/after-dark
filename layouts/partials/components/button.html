@@ -4,6 +4,7 @@
   {{ with .target }}formtarget="{{ . }}" {{ end }}
   {{ with .tabindex }}tabindex="{{ . }}" {{ end }}
   {{ with .onclick }}onclick={{ . | safeJS }} {{ end }}
+  {{ if in (slice "true" "disabled") .disabled }}disabled {{ end }}
   {{ if in (slice "get" "post") .method }}formmethod="{{ .method }}" {{ end }}
   class="btn btn-{{ .type | default "default" }}{{ if eq .isghost "true" }} btn-ghost{{ end }}
   {{- if eq .isblock "true" }} btn-block{{ end }}"
