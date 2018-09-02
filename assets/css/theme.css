@@ -57,6 +57,9 @@ blockquote cite::before {
 :disabled {
   cursor: not-allowed;
 }
+#search-app [v-cloak] {
+  display: none;
+}
 /* hack.css overrides and enhancements */
 .hack li ul {
   margin: 0;
@@ -112,7 +115,4 @@ img {
   .container {
     max-width: 50rem;
   }
-}
-[v-cloak] {
-  display: none;
 }
