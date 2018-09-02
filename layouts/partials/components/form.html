@@ -1,4 +1,5 @@
 <form
+  {{ with .id }}id="{{ . }}" {{ end }}
   {{ with .name }}name="{{ . }}" {{ end }}
   {{ with .action }}action="{{ . | safeURL }}" {{ end }}
   {{ with .enctype }}enctype="{{ . }}" {{ end }}
