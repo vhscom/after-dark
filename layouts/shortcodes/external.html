@@ -1,5 +1,5 @@
 <!-- {{/*
-HTML attributes: href [default: "#"], class, referrerpolicy, target [default: "_blank"], rel [default: "external noopener"]
+HTML attributes: href [default: "#"], class, referrerpolicy, target [default: "_blank"], type, rel [default: "external noopener"]
 Custom attributes: text [default: Inner], body [default: href], itemtype
 
 Basic usage:
@@ -37,10 +37,11 @@ Combined with button shortcode opening in same window with search query:
 {{ $class := .Get "class" }}
 {{ $referrerpolicy := .Get "referrerpolicy" }}
 {{ $target := .Get "target" }}
+{{ $type := .Get "type" }}
 {{ $rel := .Get "rel" }}
 {{ $itemtype := .Get "itemtype" }}
 {{ if .IsNamedParams }}
-  {{ partial "facets/external.html" (dict "href" $href "body" $body "class" $class "referrerpolicy" $referrerpolicy "target" $target "rel" $rel "itemtype" $itemtype "suppress_external" (and .Inner (eq (len (findRE "external" $rel)) 0))) -}}
+  {{ partial "facets/external.html" (dict "href" $href "body" $body "class" $class "referrerpolicy" $referrerpolicy "target" $target "type" $type "rel" $rel "itemtype" $itemtype "suppress_external" (and .Inner (eq (len (findRE "external" $rel)) 0))) -}}
 {{ else }}
   {{ partial "facets/external.html" (dict "href" (.Get 0)) -}}
 {{ end -}}
