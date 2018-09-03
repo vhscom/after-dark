@@ -1,6 +1,6 @@
 <!-- {{/*
-HTML attributes: href [default: "#"], class, referrerpolicy, target [default: "_blank"], type, rel [default: "external noopener"]
-Custom attributes: text [default: Inner], body [default: href], itemtype
+HTML attributes: "href" [default: "#"], "class", "referrerpolicy", "target" [default: "_blank"], "type", "rel" [default: "external noopener"]
+Custom attributes: "text" [default: Inner], "itemtype"
 
 Basic usage:
 {{< external "https://vhs.codeberg.page/after-dark" />}}
@@ -21,12 +21,12 @@ With site-wide Referrer Policy overridden:
 {{< external referrerpolicy="unsafe-url" href="http://goo.gl" />}}
 
 With markdown image and link styling removed:
-{{% external href="https://source.unsplash.com/collection/983219/2160x1440" %}}
+{{% external rel="noopener" href="https://source.unsplash.com/collection/983219/2160x1440" %}}
   ![Example image](https://source.unsplash.com/collection/983219/1080x720 "Click to view enlaged")
 {{% /external %}}
 
 Combined with button shortcode opening in same window with search query:
-{{< external target="_self" href="?s=query" >}}
+{{< external rel="search" target="_self" href="?s=query" >}}
   {{< hackcss-button text="Default" />}}
 {{< /external >}}
 
