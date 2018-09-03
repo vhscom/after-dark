@@ -1,5 +1,5 @@
 <!-- {{/*
-HTML attributes: "id", "action", "onclick", "tabindex", "target", "method", "disabled"
+HTML attributes: "id", "action", "value", "onclick", "tabindex", "target", "method", "disabled"
 Custom attributes: "type", "text", "isghost", "isblock"
 
 Available types: [default], "primary", "success", "info", "warning", "error"
@@ -35,9 +35,10 @@ Inside a button group:
 {{ $isblock := .Get "isblock" }}
 {{ $id := .Get "id" }}
 {{ $action := .Get "action" }}
+{{ $value := .Get "value" }}
 {{ $onclick := .Get "onclick" }}
 {{ $disabled := .Get "disabled" }}
 {{ $tabindex := .Get "tabindex" }}
 {{ $target := .Get "target" }}
 {{ $method := .Get "method" }}
-{{ partial "components/button.html" (dict "type" $type "body" $body "isghost" $isghost "isblock" $isblock "action" $action "onclick" $onclick "disabled" $disabled "tabindex" $tabindex "target" $target "method" $method) }}
+{{ partial "components/button.html" (dict "type" $type "body" $body "isghost" $isghost "isblock" $isblock "action" $action "value" $value "onclick" $onclick "disabled" $disabled "tabindex" $tabindex "target" $target "method" $method) }}
