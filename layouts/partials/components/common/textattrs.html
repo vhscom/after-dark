@@ -12,7 +12,7 @@
         {{ end }}
       {{ else }}
         {{ if eq $name "id" }}
-          {{ $name }}="{{ $value | urlize }}"
+          {{ $name }}="{{- $value | urlize -}}"
         {{ else }}
           {{ $name }}="{{ $value }}"
         {{ end }}
