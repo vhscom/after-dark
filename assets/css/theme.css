@@ -49,7 +49,7 @@ blockquote cite {
   display: block;
 }
 blockquote cite::before {
-   content: "\2014";
+   content: "\2014\00A0";
 }
 :target {
   color: #fff;
