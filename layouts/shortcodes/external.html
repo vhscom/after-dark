@@ -42,9 +42,9 @@ Combined with button shortcode opening in same window with search query:
 {{ $rel := .Get "rel" }}
 {{ $itemtype := .Get "itemtype" }}
 {{ if .IsNamedParams }}
-  {{ partial "facets/external.html" (dict "href" $href "body" $body "class" $class "referrerpolicy" $referrerpolicy "target" $target "type" $type "title" $title "rel" $rel "itemtype" $itemtype "suppress_external" (and .Inner (eq (len (findRE "external" $rel)) 0))) -}}
+  {{ partial "shortcode/external.html" (dict "href" $href "body" $body "class" $class "referrerpolicy" $referrerpolicy "target" $target "type" $type "title" $title "rel" $rel "itemtype" $itemtype "suppress_external" (and .Inner (eq (len (findRE "external" $rel)) 0))) -}}
 {{ else }}
-  {{ partial "facets/external.html" (dict "href" (.Get 0)) -}}
+  {{ partial "shortcode/external.html" (dict "href" (.Get 0)) -}}
 {{ end -}}
 {{- if or (and .IsNamedParams (eq $href nil)) (and (eq .IsNamedParams false) (eq (.Get 0) nil)) }}
   <p>{{ partial "components/alert.html" (dict "type" "error" "body" (errorf "Invalid use of external shortcode. Please provide an external link.")) }}</p>
