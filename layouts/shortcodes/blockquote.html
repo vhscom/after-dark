@@ -1,16 +1,23 @@
 <!--{{/*
-Create block and pull quotations with citations and citation links.
+Create pull quotes with citations and optional citation links.
 
 Basic usage:
 {{< blockquote cite="https://bitly.is/2mkxskj" citelink="https://bitly.is/2mkxskj" >}}
-  <p>When you create your own Branded Short Domain, you can expect to see up to a 34% increase in CTR when compared to standard bit.ly links.</p>
+  When you create your own Branded Short Domain, you can expect to see up to a 34% increase in CTR when compared to standard bit.ly links.
 {{< /blockquote >}}
 */}}-->
-<blockquote {{ with .Get "class" }}class="{{ . }}"{{ end }} {{ with .Get "citelink" }}cite="{{ . }}"{{ end }}>
-  {{ .Inner }}
-  {{ with .Get "citelink" }}
-    <cite><a target="_blank" href="{{ . }}">{{ $.Get "cite" }}</a></cite>
+
+{{ $body := .Get "text" | default .Inner }}
+{{ $class := .Get "class" }}
+{{ $citelink := .Get "citelink" }}
+{{ $cite := .Get "cite" }}
+<blockquote{{ with $class }} class="{{ . }}"{{ end }}{{ with $citelink }} cite="{{ . }}"{{ end }}>
+  <p>{{- $body | plainify -}}</p>
+  {{ if $citelink }}
+    <cite>{{ partial "shortcode/external.html" (dict "href" $citelink "body" $cite) }}</cite>
+  {{ else if $cite }}
+    <cite>{{ $cite }}</cite>
   {{ else }}
-    <cite>{{ .Get "cite" }}</cite>
+    <cite>N.N.</cite>
   {{ end }}
 </blockquote>
