@@ -64,6 +64,9 @@ blockquote cite::before {
 .hack li ul {
   margin: 0;
 }
+.hack ol li {
+  padding-left: 27px;
+}
 .main {
   padding: 20px 10px;
 }
