@@ -93,6 +93,12 @@ html {
 .hack .form label {
   font-size: 1rem;
 }
+.hack figure a {
+  border-bottom: none;
+}
+.hack figure a:hover {
+  background-color: inherit;
+}
 article [itemprop="description"] {
   margin-bottom: 20px;
   margin-top: 20px;
