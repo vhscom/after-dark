@@ -5,7 +5,9 @@ All notable changes to this project will be documented in this file. See [standa
 <a name="6.7.9"></a>
 ## [6.7.9](https://codeberg.org/vhs/after-dark/compare/v6.7.8...v6.7.9) (2018-09-07)
 
+### Bug Fixes
 
+* **styles:** prevent jumping scrollbar in windows ([9d2beec](https://codeberg.org/vhs/after-dark/commit/9d2beec93c72b6145507f850689eae3a64cf22f0)), closes #72 (thanks @tkalpakidis)
 
 <a name="6.7.8"></a>
 ## [6.7.8](https://codeberg.org/vhs/after-dark/compare/v6.7.7...v6.7.8) (2018-08-30)
