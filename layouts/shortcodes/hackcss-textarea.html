@@ -1,27 +1,3 @@
-<!-- {{/*
-HTML attributes: "id", "name", "class", "autocomplete", "autofocus", "cols", "disabled", "form", "maxlength", "minlength", "name", "placeholder", "readonly", "required", "rows", "spellcheck", "wrap", "tabindex"
-Custom attributes: "text"
-
-Possible autocompletes: [none], "on", "off"
-Possible wraps: [none], "hard", "soft", "off"
-Possible spellchecks: [none], "true", "default", "false"
-
-Read-only with prefilled text:
-{{< hackcss-textarea readonly="true" text="Only this and nothing more." >}}
-
-With spellcheck disabled:
-{{< hackcss-textarea spellcheck="false" >}}
-
-With 16 columns and hard wrapping enabled:
-{{< hackcss-textarea cols="16" wrap="hard" >}}
-
-Inside disabled form group With error label and placeholder:
-{{< hackcss-formgroup hastextarea="true" disabled="true" state="error" >}}
-  {{< hackcss-label for="message" text="Message:" />}}
-  {{< hackcss-textarea id="message" placeholder="Guestbook offline…" rows="10" >}}
-{{< /hackcss-formgroup >}}
-
-*/}} -->
 {{ $id := .Get "id" | default nil }}
 {{ $name := .Get "name" | default nil }}
 {{ $class := .Get "class" | default nil }}

@@ -1,35 +1,3 @@
-<!-- {{/*
-HTML attributes: "id", "name", "class", "autocomplete", "autofocus", "disabled", "form", "formaction", "formmethod", "formtarget", "height", "max", "maxlength", "min", "minlength", "multiple", "pattern", "placeholder", "readonly", "required", "size", "spellcheck", "step", "tabindex", "type", "value", "width"
-Possible types: "email", "hidden", "number", "password", "search", "tel", "text", "url"
-
-Basic usage:
-{{< hackcss-textinput >}}
-{{< hackcss-textinput type="password" >}}
-{{< hackcss-textinput type="email" placeholder="name@domain.example" >}}
-{{< hackcss-textinput disabled="true" >}}
-
-With control label and search input targeting form owner:
-{{< hackcss-formgroup >}}
-  {{< hackcss-label for="query" text="Enter search query:" />}}
-  {{< hackcss-textinput type="search" id="query" form="search" >}}
-{{< /hackcss-formgroup >}}
-
-Required with placeholder text and custom regex validation:
-{{< hackcss-form autocomplete="disabled" >}}
-  {{< hackcss-textinput
-      placeholder="associate-20"
-      name="AssociateTag"
-      pattern="^\b\w*\b-20$" >}}
-{{< /hackcss-form >}}
-
-Inside form group with warning label and help block:
-{{< hackcss-formgroup state="warning" >}}
-  {{< hackcss-label for="key64" text="64-bit PGP key:" />}}
-  {{< hackcss-textinput type="text" id="key64" >}}
-  {{< hackcss-helpblock text="In this format: BB73 67EE 9A70 A631" />}}
-{{< /hackcss-formgroup >}}
-
-*/}} -->
 {{ $id := .Get "id" | default nil }}
 {{ $name := .Get "name" | default nil }}
 {{ $class := .Get "class" | default nil }}

@@ -1,37 +1,3 @@
-<!-- {{/*
-HTML attributes: "class"
-Custom attributes: "formactions"
-
-Outside form with a single button:
-{{< hackcss-buttongroup >}}
-  {{< hackcss-button text="Print" action="javascript:window.print()" />}}
-{{< /hackcss-buttongroup >}}
-
-With three buttons, one ghosted and one of type info
-{{< hackcss-buttongroup >}}
-  {{< hackcss-button text="Left" />}}
-  {{< hackcss-button text="Middle" type="info" />}}
-  {{< hackcss-button text="Right" isghost="true" />}}
-{{< /hackcss-buttongroup >}}
-
-With self-targeted button and custom class names:
-{{< hackcss-buttongroup class="targetself" >}}
-  {{< hackcss-button text="Left" target="_self" />}}
-  {{< hackcss-button text="Right" isghost="true" />}}
-{{< /hackcss-buttongroup >}}
-
-Inside a form with a default action, target and hidden inputs:
-{{< hackcss-form action="/do/something" target="_blank" >}}
-  {{< hackcss-textinput type="hiddden" name="AssociateTag" value="vhs-20" >}}
-  {{< hackcss-textinput type="hidden" name="ASIN.1" value="B0736PV196" >}}
-  {{< hackcss-textinput type="hidden" name="Quantity.1" value="2" >}}
-  {{< hackcss-buttongroup formactions="true" >}}
-    {{< hackcss-button text="Print" action="javascript:window.print()" />}}
-    {{< hackcss-button text="Purchase" isghost="true" />}}
-  {{< /hackcss-buttongroup >}}
-{{< /hackcss-form >}}
-
-*/}} -->
 {{ $formactions := .Get "formactions" }}
 {{ $class := .Get "class" }}
 {{ $body := .Inner }}
