@@ -1,13 +1,3 @@
-<!-- {{/*
-Custom attributes: "type", "text" [default: Inner]
-Possible types: "success", "info", "warning", "error"
-
-Basic Usage:
-{{< hackcss-alert type="info" text="Alert Text" />}}
-{{< hackcss-alert >}}Inner block of text{{< /hackcss-alert >}}
-{{% hackcss-alert %}}**Note:** Markdown available{{% /hackcss-alert %}}
-
-*/}} -->
 {{ $type := .Get "type" }}
 {{ $body := .Get "text" | default .Inner }}
 {{ partial "components/alert.html" (dict "type" $type "body" $body) }}

@@ -1,12 +1,3 @@
-<!--{{/*
-Create pull quotes with citations and optional citation links.
-
-Basic usage:
-{{< blockquote cite="https://bitly.is/2mkxskj" citelink="https://bitly.is/2mkxskj" >}}
-  When you create your own Branded Short Domain, you can expect to see up to a 34% increase in CTR when compared to standard bit.ly links.
-{{< /blockquote >}}
-*/}}-->
-
 {{ $body := .Get "text" | default .Inner }}
 {{ $class := .Get "class" }}
 {{ $citelink := .Get "citelink" }}

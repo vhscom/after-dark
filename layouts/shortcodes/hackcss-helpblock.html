@@ -1,23 +1,3 @@
-<!-- {{/*
-HTML attributes: "class"
-Custom attributes: "text" [default: Inner]
-
-Basic usage:
-{{< hackcss-helpblock text="You need help. Seriously." />}}
-
-With markdown formatting:
-{{% hackcss-helpblock %}}**Pay attention!**{{% /hackcss-helpblock %}}
-
-Affixed above and below input control:
-{{< hackcss-formgroup >}}
-  {{< hackcss-helpblock >}}
-    <em>Enter a secure password below:</em>
-  {{< /hackcss-helpblock >}}
-  {{< hackcss-textinput type="password" >}}
-  {{< hackcss-helpblock text="Min. 27 chars" />}}
-{{< /hackcss-formgroup >}}
-
-*/}} -->
 {{ $class := .Get "class" }}
 {{ $body := .Get "text" | default .Inner }}
 {{ partial "components/helpblock.html" (dict "class" $class "body" $body) }}

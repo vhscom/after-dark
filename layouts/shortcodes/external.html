@@ -1,37 +1,3 @@
-<!-- {{/*
-HTML attributes: "href" [default: "#"], "class", "referrerpolicy", "target" [default: "_blank"], "type", "title", "rel" [default: "external noopener"]
-Custom attributes: "text" [default: Inner], "itemtype"
-
-Basic usage:
-{{< external "https://vhs.codeberg.page/after-dark" />}}
-{{< external text="After Dark" href="//vhs.codeberg.page/after-dark" />}}
-{{< external class="muted" href="//vhs.codeberg.page/after-dark" />}}
-{{< external "gopher://gopher.quux.org:70" />}}
-
-With external link styling removed:
-{{< external rel="noopener" href="https://keybase.io/vhs" />}}
-
-With internal link opening in a new window:
-{{< external href="crypto-anarchist-manifesto.pdf" text="Manifesto" />}}
-
-With structured data type:
-{{< external itemtype="significantLink" href="https://vhs.codeberg.page" />}}
-
-With site-wide Referrer Policy overridden:
-{{< external referrerpolicy="unsafe-url" href="http://goo.gl" />}}
-
-With markdown image and link styling removed:
-{{% external rel="noopener" href="https://source.unsplash.com/collection/983219/2160x1440" %}}
-  ![Example image](https://source.unsplash.com/collection/983219/1080x720 "Click to view enlaged")
-{{% /external %}}
-
-Combined with button shortcode opening in same window with search query:
-{{< external rel="search" target="_self" href="?s=query" >}}
-  {{< hackcss-button text="Default" />}}
-{{< /external >}}
-
-*/}} -->
-
 {{ $href := .Get "href" | default nil }}
 {{ $body := .Get "text" | default .Inner }}
 {{ $class := .Get "class" }}
