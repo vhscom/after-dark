@@ -1,30 +1,3 @@
-<!-- {{/*
-HTML attributes: "id", "name", "accept-charset", "action", "enctype", "target", "novalidate", "method", "class", "autocomplete"
-
-Possible methods: "get", "post"
-Possible autocompletes: "on", "off"
-
-Basic usage:
-{{< hackcss-form >}}
-  {{< hackcss-textinput >}}
-{{< /hackcss-form >}}
-
-Named targeting self with text input and autocomplete disabled:
-{{< hackcss-form name="search" autocomplete="disabled" >}}
-  {{< hackcss-textinput name="query" >}}
-{{< /hackcss-form >}}
-
-Hidden with blank target, no validation and custom post action:
-{{< hackcss-form novalidate="true" method="post" action="/do/something" target="_blank" >}}
-  {{< hackcss-textinput type="hidden" name="throttle" value="80" >}}
-{{< /hackcss-form >}}
-
-Specify allowed encodings:
-{{< hackcss-form acceptcharset="UTF-8 ISO-8859-1" >}}
-  {{< hackcss-textinput value="☻" >}}
-{{< /hackcss-form >}}
-
-*/}} -->
 {{ $accept_charset := .Get "acceptcharset" }}
 {{ $id := .Get "id" }}
 {{ $name := .Get "name" }}

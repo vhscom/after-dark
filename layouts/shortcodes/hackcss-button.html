@@ -1,34 +1,3 @@
-<!-- {{/*
-HTML attributes: "id", "action", "value", "onclick", "tabindex", "target", "method", "disabled"
-Custom attributes: "type", "text", "isghost", "isblock"
-
-Available types: [default], "primary", "success", "info", "warning", "error"
-
-Basic usage:
-{{< hackcss-button text="Default" />}}
-{{< hackcss-button text="Info" type="info" />}}
-{{< hackcss-button text="Default Ghost" isghost="true" />}}
-{{< hackcss-button text="Block Level Button" isblock="true" />}}
-{{< hackcss-button text="Primary Ghost" type="primary" isghost="true" />}}
-
-Inner usage:
-{{< hackcss-button type="error" >}}<b>ABORT</b>{{< /hackcss-button >}}
-{{% hackcss-button type="success" %}}**Purchase**{{% /hackcss-button %}}
-
-With loading indicator:
-{{< hackcss-button >}}
-  Please wait&hellip; {{< hackcss-throbber >}}
-{{< /hackcss-button >}}
-
-Inside a button group:
-{{< hackcss-buttongroup >}}
-  {{< hackcss-button id="" text="Default Action" isghost="true" />}}
-  {{< hackcss-button text="Custom Action" action="/go/elsewhere" />}}
-  {{< hackcss-button text="Custom Target" target="_blank" tabindex="-1" />}}
-  {{< hackcss-button text="Custom Method" method="get" />}}
-{{< /hackcss-buttongroup >}}
-
-*/}} -->
 {{ $type := .Get "type" }}
 {{ $body := .Get "text" | default .Inner }}
 {{ $isghost := .Get "isghost" }}
