@@ -1,16 +1,18 @@
 {
   "name": "after-dark",
   "version": "6.7.9",
-  "description": "A deceptively simple dark theme for Hugo.",
+  "description": "Hypermedia authoring system for Hugo.",
   "author": "VHS <vhsdev@tutanota.com>",
   "keywords": [
-    "docker",
     "hugo",
-    "css",
-    "html",
-    "vuejs",
-    "bash"
+    "hackcss",
+    "lazysizes",
+    "lodash",
+    "vue",
+    "fuse.js",
+    "mark.js"
   ],
+  "homepage": "https://vhs.codeberg.page/after-dark",
   "repository": {
     "type": "git",
     "url": "https://codeberg.org/vhs/after-dark.git"
