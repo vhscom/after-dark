@@ -16,8 +16,10 @@
       <section>
         <form v-on:submit.prevent class="form" action="{{ "search" | absURL }}">
           <fieldset class="form-group">
-            <input v-model="query" id="query" name="s" type="search" class="form-control" maxlength="32" autocomplete="off">
-            <div class="help-block">Press <kbd>s</kbd> to focus search input anytime.</div>
+            <input v-model="query" id="query" name="s" type="search" class="form-control" maxlength="32" autocomplete="off"{{ with .Params.form.input.placeholder }} placeholder="{{ . }}"{{ end }}{{ if eq .Params.form.input.disabled true }} disabled{{ end }}>
+            {{ with .Params.form.helpblock }}
+              <div class="help-block">{{ . | safeHTML }}</div>
+            {{ end }}
           </fieldset>
         </form>
       </section>
