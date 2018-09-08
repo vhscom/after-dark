@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.8.0"></a>
+# [6.8.0](https://codeberg.org/vhs/after-dark/compare/v6.7.9...v6.8.0) (2018-09-08)
+
+
+### Bug Fixes
+
+* **components:** correct help block class attr behavior ([8336029](https://codeberg.org/vhs/after-dark/commits/8336029))
+* **help:** rename 404 to error page ([2191740](https://codeberg.org/vhs/after-dark/commits/2191740))
+* **layouts:** remove navmenu from help layout ([4934a0c](https://codeberg.org/vhs/after-dark/commits/4934a0c))
+* **partials:** make button onclick handler work as expected ([9998957](https://codeberg.org/vhs/after-dark/commits/9998957))
+* **shortcodes:** remove insignificant spaces after external links ([1190b94](https://codeberg.org/vhs/after-dark/commits/1190b94))
+* **shortcodes:** remove standard link treatment from figures ([abade6f](https://codeberg.org/vhs/after-dark/commits/abade6f))
+* **styles:** leftpad orderd lists ([579404e](https://codeberg.org/vhs/after-dark/commits/579404e))
+
+
+### Features
+
+* **layouts/search:** and placeholder and allow basic customization ([e4df3a5](https://codeberg.org/vhs/after-dark/commits/e4df3a5))
+* **shortcodes:** add form attr to button ([f04ea28](https://codeberg.org/vhs/after-dark/commits/f04ea28))
+* **shortcodes:** add id attribute for forms ([10f1024](https://codeberg.org/vhs/after-dark/commits/10f1024))
+* **shortcodes:** add navmenu navigational aid ([aa46ed3](https://codeberg.org/vhs/after-dark/commits/aa46ed3))
+* **shortcodes:** add title attr to external ([ce451e4](https://codeberg.org/vhs/after-dark/commits/ce451e4))
+* **shortcodes:** add type attribute for external links ([d80b1f3](https://codeberg.org/vhs/after-dark/commits/d80b1f3))
+* **shortcodes:** add value attr to button ([fbf744e](https://codeberg.org/vhs/after-dark/commits/fbf744e))
+* **shortcodes:** allow anonymous blockquotes ([3ad1f04](https://codeberg.org/vhs/after-dark/commits/3ad1f04))
+* **shortcodes:** allow button disablement ([f145780](https://codeberg.org/vhs/after-dark/commits/f145780)), closes [#65](https://codeberg.org/vhs/after-dark/issues/65)
+* **shortcodes:** trim whitespace in id attributes ([523b2a1](https://codeberg.org/vhs/after-dark/commits/523b2a1))
+
+
+### Performance Improvements
+
+* **search:** increase specificity of v-cloak declaration ([35eed67](https://codeberg.org/vhs/after-dark/commits/35eed67))
+
+
+
 <a name="6.7.9"></a>
 ## [6.7.9](https://codeberg.org/vhs/after-dark/compare/v6.7.8...v6.7.9) (2018-09-07)
 
