@@ -1,7 +1,7 @@
 +++
 title = "{{ replace .TranslationBaseName "-" " " | title }}"
 date = {{ .Date }}
-description = "This text was generated using the default post archetype."
+description = "This text was generated using the After Dark post archetype."
 draft = false # run 'hugo serve --buildDrafts' to generate draft content
 toc = false
 categories = ["hacking"]
@@ -11,44 +11,46 @@ images = [
 ] # overrides site-wide open graph image
 +++
 
-Before you continue please take a moment to customize your `post` archetype. Your post archetype is located in the following file relative to your site: `archetypes/post.md`.
+Welcome to After Dark. Before continuing please adjust your `post` archetype. Archetypes are located in the `archetypes` directory of your site.
 
-If the file does not exist yet, create it by copying from the After Dark default:
+If the file does not exist yet, copy it from the After Dark post archetype:
 
 ```sh
+$ cd flying-toasters
 $ cp themes/after-dark/archetypes/post.md archetypes/
 ```
 
-Once copied, edit your new `post.md` to remove the text you see here then use it go generate a new post for your site:
+Once created, edit `post.md` from your `archetypes` directory to remove the content below the {{< external href="https://gohugo.io/content-management/front-matter/" text="Front Matter" />}} and try generating a new post to serve:
 
 ```
 $ hugo new post/the-darkness-is-spreading.md
+$ hugo serve
 ```
 
-Use archetypes to establish sensible defaults when generating content for your {{< external rel="help" target="help" href="http://localhost:1414/feature/custom-layouts" text="Custom Layouts" />}}.
-
-Visit {{< external target="help" href="https://gohugo.io/content-management/archetypes/" text="Archetypes in Hugo" />}} to learn more about them.
+Archetypes help establish defaults for your {{< external rel="help" target="_self" href="http://localhost:1414/feature/custom-layouts" text="Custom Layouts" />}} and other content types. To learn more about them visit {{< external href="https://gohugo.io/content-management/archetypes/" text="Archetypes in Hugo" />}}.
 
 <!--more-->
 
+---
+
 {{< hackcss-alert type="info" >}}
-This text appears below the {{< external target="help" href="https://gohugo.io/content-management/summaries/" text="Summary Split" />}}.
+<strong>Note:</strong> This text appears below the {{< external href="https://gohugo.io/content-management/summaries/" text="Summary Split" />}}.
 {{< /hackcss-alert >}}
 
-After Dark ships with a {{< external rel="help" target="help" href="http://localhost:1414/feature/module-system" text="Module System" />}} and provides several {{< external rel="help" href="https://vhs.codeberg.page/after-dark/module/" text="prebuilt modules" />}} designed to enhance your site.
-
-Shown here, an animation made possible with the {{< external rel="help" target="help" href="http://localhost:1414/module/fractal-forest" text="Fractal Forest" />}} module:
+After Dark features a {{< external rel="help" target="_self" href="http://localhost:1414/feature/module-system" text="Module System" />}} and provides a number of optional add-on modules specifically designed to enhance your site. For example, here's a `canvas` animation made possible using the {{< external rel="help" target="_self" href="http://localhost:1414/module/fractal-forest" text="Fractal Forest" />}} module:
 
 ![BPG animation example](/bpg/cinemagraph-6.bpg)
 
-Fractal Forest gives After Dark the ability to render images encoded using Fabrice Bellard's {{< external href="https://bellard.org/bpg/" target="help" text="BPG Image format" />}} and comes preinstalled for sites created using the {{< external rel="help" target="help" href="https://vhs.codeberg.page/after-dark/feature/quick-installer" text="Quick Installer" />}}.
+Fractal Forest uses Fabrice Bellard's {{< external href="https://bellard.org/bpg/" text="BPG Image format" />}} and gives After Dark the ability to render BPG-encoded images such as the above animation, which is ~98% smaller in filesize than its GIF counterpart.
 
-To learn more about Fractal Forest and other modules available, in addition to the many features available in After Dark please spend some time reviewing the {{< external rel="help" target="help" href="https://localhost:1414/feature/online-help" text="Online Help" />}} documentation before you continue.
+If you do not see the above animation, you may install the module yourself or simply reinstall After Dark using the provided {{< external rel="help" target="_self" href="https://vhs.codeberg.page/after-dark/feature/quick-installer" text="Quick Installer" />}}.
 
-If help is not running, start it with the following command:
+To learn about other modules and features please spend some time reviewing the {{< external rel="help" target="_self" href="https://localhost:1414/feature/online-help" text="Online Help" />}} linked here and also made available at {{< external  href="https://vhs.codeberg.page/after-dark" />}}.
+
+If online help is not running, you may start it with the following command:
 
 ```sh
-./themes/after-dark/bin/help
+$ ./themes/after-dark/bin/help
 ```
 
 Thank you for choosing After Dark.
