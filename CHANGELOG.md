@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.9.4"></a>
+## [6.9.4](https://codeberg.org/vhs/after-dark/compare/v6.9.3...v6.9.4) (2018-09-12)
+
+
+### Bug Fixes
+
+* **archetypes:** close tag body on last external shortcode ([aa97ed3](https://codeberg.org/vhs/after-dark/commits/aa97ed3))
+
+
+
 <a name="6.9.3"></a>
 ## [6.9.3](https://codeberg.org/vhs/after-dark/compare/v6.9.2...v6.9.3) (2018-09-12)
 
