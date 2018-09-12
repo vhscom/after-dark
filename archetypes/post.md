@@ -43,7 +43,7 @@ Shown here, an animation made possible with the {{< external rel="help" target="
 
 Fractal Forest gives After Dark the ability to render images encoded using Fabrice Bellard's {{< external href="https://bellard.org/bpg/" target="help" text="BPG Image format" />}} and comes preinstalled for sites created using the {{< external rel="help" target="help" href="https://vhs.codeberg.page/after-dark/feature/quick-installer" text="Quick Installer" />}}.
 
-To learn more about Fractal Forest and other modules available, in addition to the many features available in After Dark please spend some time reviewing the {{< external rel="help" target="help" href="https://localhost:1414/feature/online-help" text="Online Help" documentation before you continue.
+To learn more about Fractal Forest and other modules available, in addition to the many features available in After Dark please spend some time reviewing the {{< external rel="help" target="help" href="https://localhost:1414/feature/online-help" text="Online Help" />}} documentation before you continue.
 
 If help is not running, start it with the following command:
 
