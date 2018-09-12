@@ -2,7 +2,7 @@
 title = "{{ replace .TranslationBaseName "-" " " | title }}"
 date = {{ .Date }}
 description = "This text was generated using the default post archetype."
-draft = true
+draft = false # run 'hugo serve --buildDrafts' to generate draft content
 toc = false
 categories = ["hacking"]
 tags = ["after", "dark"]
