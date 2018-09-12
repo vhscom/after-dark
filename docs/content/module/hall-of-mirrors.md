@@ -7,4 +7,12 @@ tags = ["images", "graphics", "engagement"]
 features = ["related content", "snippets", "section menu"]
 +++
 
-View Source — {{< external "https://codeberg.org/vhs/hall-of-mirrors" />}}
+PhotoSwipe Homepage — {{< external "http://photoswipe.com" />}}<br>
+Module Source — {{< external "https://codeberg.org/vhs/hall-of-mirrors" />}}
+
+## Module Demo
+
+<video controls preload="auto" width="100%">
+  <source src="https://vhs.keybase.pub/after-dark-hall-of-mirrors-demo.mp4" type="video/mp4">
+  <p>Your browser doesn't support HTML5 video. Here is a <a href="https://vhs.keybase.pub/after-dark-hall-of-mirrors-demo.mp4">link to the video</a> instead.</p>
+</video>
