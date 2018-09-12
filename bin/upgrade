@@ -1,7 +1,13 @@
 #!/bin/sh
 set -e
 
+stop_help_server () {
+   echo "Stopping any running help server ..."
+   kill $(ps aux | awk '/[h]ugo.*1414/ {print $2}') 2>/dev/null
+}
+
 generate_help_docs () {
+   stop_help_server
    echo "Generating help documentation ..."
    THEME_PATH=themes/after-dark
    meta_path="$THEME_PATH"/data/npm
