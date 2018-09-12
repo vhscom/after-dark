@@ -12,10 +12,10 @@ todo = [
 Add visual appeal to your posts with post images. Post images appear above post content and leverage {{< external href="https://gohugo.io/content-management/image-processing/" text="Hugo Image Processing" />}} and [Lazy Loading](../lazy-loading) to provide fully automatic, lazy-loaded responsive images with <abbr title="Low-Quality Image Placeholders">LQIP</abbr> and built-in art direction.
 
 {{< figure
-  src="https://source.unsplash.com/Y-w15LfHO8w/5184x3456"
-  lqipsrc="https://source.unsplash.com/Y-w15LfHO8w/1080x720"
-  caption="Be Creative"
-  attr="AK¥N Cakiner"
+  src="https://source.unsplash.com/Y-w15LfHO8w/1200x900"
+  lqipsrc="https://source.unsplash.com/Y-w15LfHO8w/800x600"
+  caption="Be Creative. Photo:"
+  attr="AK¥N Cakiner on Unsplash"
   attrlink="https://unsplash.com/@akin"
 >}}
 

@@ -4,7 +4,7 @@ description = "Complete the included form to validate the release."
 noindex = true
 +++
 
-{{< hackcss-form name="validate" action="/validate" >}}
+{{< hackcss-form name="validate" action="/validate/" >}}
   {{< hackcss-formgroup name="integrity" >}}
     {{< hackcss-label for="digest" >}}
       <abbr title="Secure Hash Algorithm">SHA-512</abbr> Digest:

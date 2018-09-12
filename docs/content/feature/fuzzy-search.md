@@ -10,7 +10,7 @@ todo = ["link to page layout"]
 If a search engine can find it, so can you. Quickly locate indexable content site-wide with fuzzy search. No registration necessary.
 
 {{< hackcss-card header="Interactive Example" >}}
-  <iframe scrolling="no" title="Error Page Example" width="100%" height="300" src="/search?s=uzzy%20searvh"></iframe>
+  <iframe scrolling="no" title="Error Page Example" width="100%" height="300" src="/search/?s=uzzy%20searvh"></iframe>
 {{< /hackcss-card >}}
 
 Adjust it from `_index.md` in the site `content/search` directory:
