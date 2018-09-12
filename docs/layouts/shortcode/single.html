@@ -1,0 +1,49 @@
+{{ define "title" -}}
+  {{ .Title }} | {{ .Site.Title }}
+{{- end }}
+{{ define "header" }}
+  {{ partial "menu.html" . }}
+{{ end }}
+{{ define "main" }}
+  <header>
+    <h1>{{ .Title }}</h1>
+    {{ if .Description }}
+      <blockquote itemprop="description">{{ .Description }}</blockquote>
+    {{ end }}
+  </header>
+  {{/* TODO: Allow schema specification by type */}}
+  {{/* {{ template "_internal/schema.html" . }} */}}
+  <style>
+    dt, dd { display: inline; margin-left: 0; }
+  </style>
+  {{ with .Params.html_attributes }}
+    <div><dt><b>HTML attributes:</b> {{ delimit (apply (apply (sort .) "partial" "definition-data.html" ".") "chomp" ".") ", " }}</div>
+  {{ else }}
+    <div><dt><b>HTML attributes:</b> <dd>None available</div>
+  {{ end }}
+  </table>
+  {{ with .Params.custom_attributes }}
+    <div><dt><b>Custom attributes:</b> {{ delimit (apply (apply (sort .) "partial" "definition-data.html" ".") "chomp" ".") ", " }}</div>
+  {{ else }}
+    <div><dt><b>Custom attributes:</b>  <dd>None available</div>
+  {{ end }}
+  {{ .Content }}
+  <footer>
+    <hr>
+    <p>
+      Published
+      {{ with .Params.categories }}
+        in <span itemprop="articleSection">{{ delimit (apply (apply (sort .) "partial" "category-link.html" ".") "chomp" ".") ", " " and " }}</span>
+      {{ end }}
+      {{ with .Params.snippets_used }}
+        using {{ delimit (apply (apply (sort .) "partial" "shortcode-link.html" ".") "chomp" ".") ", " " and " }} shortcodes.
+      {{ else }}
+        and used alone.
+      {{ end }}
+    </p>
+    {{ partial "post/related-content.html" . }}
+  </footer>
+{{ end }}
+{{ define "footer" }}
+  {{ partial "powered-by.html" . }}
+{{ end }}

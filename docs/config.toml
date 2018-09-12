@@ -1,0 +1,65 @@
+baseurl = "https://vhs.codeberg.page/after-dark/" # Controls base URL sitewide
+languageCode = "en-US" # Controls site language
+title = "After Dark" # Homepage title and page title suffix
+paginate = 32 # Number of items to show before paginating
+
+# Controls default theme and theme components
+theme = [
+  "after-dark"
+]
+
+enableRobotsTXT = true # Suggested, enable robots.txt file
+disqusShortname = "" # Deprecated, add Disqus shortname for comments
+
+pygmentsCodefences = true # Suggested, highlight fenced code blocks
+pygmentsUseClasses = true # Required for custom syntax highlighting
+
+sectionPagesMenu = "main" # Enable menu system for lazy bloggers
+footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
+
+[params]
+  description = "After Dark is a complete hypermedia authoring system for the Hugo Static Site Generator." # Suggested, controls default description meta
+  author = "VHS" # Optional, controls author name display on posts
+  hide_author = true # Optional, set true to hide author name on posts
+  show_menu = true # Optional, set true to enable section menu
+  powered_by = true # Optional, set false to disable credits
+  images = [
+    "https://source.unsplash.com/collection/983219/2000x1322"
+  ] # Suggested, controls default Open Graph images
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS", "JSON"]
+
+[params.seo.webmaster_verifications]
+  yandex = "4006a8813cbb9fdb" # https://webmaster.yandex.com/
+
+[[menu.main]]
+  name = "Overview"
+  weight = 1
+  identifier = "home"
+  url = "/"
+
+[[menu.main]]
+  name = "Features"
+  weight = 2
+  identifier = "feature"
+  url = "/feature/"
+
+[[menu.main]]
+  name = "Modules"
+  weight = 3
+  identifier = "module"
+  url = "/module/"
+
+[[menu.main]]
+  name = "Shortcodes"
+  weight = 4
+  identifier = "shortcode"
+  url = "/shortcode/"
+
+[[menu.main]]
+  name = "Search"
+  weight = 5
+  identifier = "search"
+  url = "/search/"

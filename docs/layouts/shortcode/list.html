@@ -1,0 +1,25 @@
+{{ define "header" }}
+  {{ partial "menu.html" . }}
+{{ end }}
+{{ define "main" }}
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <p>Easily add images, alerts, blockquotes and build great-looking web forms. Select a Shortcode below to get started.</p>
+  <table>
+    <tr>
+      <th>{{ .Title | singularize }}</th>
+      <th>Summary</th>
+    </tr>
+    {{ range .Paginator.Pages }}
+      <tr>
+        <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+        <td>{{ .Description }}</td>
+      </tr>
+    {{ end }}
+  </table>
+{{ end }}
+{{ define "footer" }}
+  {{ partial "pagination.html" . }}
+  {{ partial "powered-by.html" . }}
+{{ end }}

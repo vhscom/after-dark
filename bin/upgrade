@@ -1,19 +1,15 @@
 #!/bin/sh
 set -e
 
-CONFIG_FILE=config.toml
-CONTENT_DIR=`sed -n 's/contentDir[=:]"\([^"]*\)".*/\1/p' <<< "$(cat $CONFIG_FILE | tr -d ' ')"`
-[ -z $CONTENT_DIR ] && CONTENT_DIR=content
-
 generate_help_docs () {
    echo "Generating help documentation ..."
-   meta_path=themes/after-dark/data/npm
+   THEME_PATH=themes/after-dark
+   meta_path="$THEME_PATH"/data/npm
    mkdir -p "$meta_path" && echo "$LATEST_META" | tr '\r\n' ' ' > "$meta_path"/latest.json
-   [ -f "$CONTENT_DIR"/help/index.md ] && rm "$CONTENT_DIR"/help/index.md
-   hugo new help/index.md --kind help 1>/dev/null
+   cd "$THEME_PATH"/docs && hugo new validate.md --kind validate 1>/dev/null
 }
 
-upgrade () {
+update_module () {
    meta_file=themes/"$1"/data/npm/latest.json
    current_vers=`sed -n 's/.*"version":"\([^"]*\).*/\1/p' < "$meta_file"`
    if ! [ -f "$meta_file" ] ; then
@@ -34,4 +30,4 @@ upgrade () {
    fi
 }
 
-upgrade "after-dark"
+update_module "after-dark"
