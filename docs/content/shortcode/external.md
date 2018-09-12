@@ -72,11 +72,11 @@ With markdown image and link styling removed:
 With interactive [Button](../button) to run a [Fuzzy Search](/feature/fuzzy-search):
 
 ```html
-{{</* external rel="search" target="_self" href="/search?s=button" >}}
+{{</* external rel="search" target="_self" href="/search/?s=button" >}}
   {{< hackcss-button type="primary" text="Search" />}}
 {{< /external */>}}
 ```
 
-{{< external rel="search" target="_self" href="/search?s=button" >}}
+{{< external rel="search" target="_self" href="/search/?s=button" >}}
   {{< hackcss-button type="primary" text="Search" />}}
 {{< /external >}}
