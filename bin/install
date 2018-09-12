@@ -32,8 +32,8 @@ create_site () {
 
 download_theme () {
    echo "Downloading the latest version of After Dark ..."
-   THEME_META=$(wget -qO - https://registry.npmjs.org/after-dark/latest)
-   vers=$(echo "$THEME_META" | egrep -o "\"version\".*[^,]*," | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '" ')
+   LATEST_META=$(wget -qO - https://registry.npmjs.org/after-dark/latest)
+   vers=$(echo "$LATEST_META" | egrep -o "\"version\".*[^,]*," | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '" ')
    mkdir -p themes/after-dark
    wget -qO - https://registry.npmjs.org/after-dark/-/after-dark-"$vers".tgz | tar --strip-components=1 -xz -C themes/after-dark
    echo "Version $vers downloaded to $SITE_DIR/themes/after-dark"
@@ -89,22 +89,27 @@ TOML
 }
 
 update_archetypes () {
-   echo "Updating site default content archetype ..."
+   echo "Updating the default content archetype ..."
    rm -f archetypes/default.md
    cp themes/after-dark/archetypes/default.md archetypes
 }
 
+create_welcome_post () {
+   echo "Creating a helpful welcome post ..."
+   hugo new post/welcome.md
+}
+
 generate_help_docs () {
    echo "Generating help documentation ..."
-   meta_path=themes/after-dark/data/npm
-   mkdir -p "$meta_path" && echo "$THEME_META" | tr '\r\n' ' ' > "$meta_path"/latest.json
-   hugo new help/index.md --kind help 1>/dev/null
+   THEME_PATH=themes/after-dark
+   meta_path="$THEME_PATH"/data/npm
+   mkdir -p "$meta_path" && echo "$LATEST_META" | tr '\r\n' ' ' > "$meta_path"/latest.json
+   cd "$THEME_PATH"/docs && hugo new validate.md --kind validate 1>/dev/null
 }
 
 serve_help_docs () {
    echo "Starting help server ..."
-   sleep 1
-   hugo serve --buildExpired --disableLiveReload --port 1414 1>/dev/null &
+   hugo serve --disableLiveReload --port 1414 1>/dev/null &
 }
 
 echo "Welcome to the After Dark quick installer. Press CTRL-C at any time to abort."
@@ -116,6 +121,7 @@ download_theme
 update_archetypes
 download_module "fractal-forest"
 configure_theme
+create_welcome_post
 generate_help_docs
 serve_help_docs
 
@@ -126,6 +132,6 @@ printf "${YELLOW}Installation successful!${NC}\n"
 echo "Site created in $SITE_DIR_ABS"
 echo "Help server started at http://localhost:1414/"
 echo "To stop it run \"kill \$(ps aux | awk '/[h]ugo.*1414/ {print \$2}')\"."
-echo "To update and start it again run \"./themes/after-dark/bin/help\"."
+echo "To start it again run \"./themes/after-dark/bin/help\"."
 echo "Run \"cd $SITE_DIR && hugo serve\" to start your site."
 echo "Thank you for choosing After Dark."

@@ -1,0 +1,27 @@
+{{ define "header" }}
+  {{ partial "menu.html" . }}
+{{ end }}
+{{ define "main" }}
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <p>After Dark uses a <a href="/feature/module-system">Module System</a> to provide the following prebuilt modules specifically designed to compliment your site:</p>
+  <table>
+    <tr>
+      <th>{{ .Title | singularize }}</th>
+      <th>Latest</th>
+      <th>Summary</th>
+    </tr>
+    {{ range .Paginator.Pages }}
+      <tr>
+        <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+        <td>{{ with .Params.slug }}{{ partial "module-latest.html" (dict "slug" .) }}{{ else }}N/A{{ end }}</td>
+        <td>{{ .Description }}</td>
+      </tr>
+    {{ end }}
+  </table>
+{{ end }}
+{{ define "footer" }}
+  {{ partial "pagination.html" . }}
+  {{ partial "powered-by.html" . }}
+{{ end }}

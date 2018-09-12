@@ -1,0 +1,5 @@
+.DS_Store
+.env
+public
+resources
+content/validate.md

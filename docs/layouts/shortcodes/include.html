@@ -1,0 +1,22 @@
+<!-- {{/*
+Named attributes: "type", "file"
+Positional params: 0 {file}
+
+With base64-encoded inline image in markdown:
+![Theme screenshots](data:image/png;base64,{{< include type="image" file="themes/after-dark/images/docs/minimal-mac.png" >}})
+
+Combined with highlight shortcode for syntax highlighting:
+{{< highlight shell "linenos=inline" >}}
+{{< include "themes/after-dark/bin/install" >}}
+{{< /highlight >}}
+
+*/}} -->
+
+{{- $type := .Get "type" }}
+{{- $file := .Get "file" }}
+{{- if and .IsNamedParams }}
+  {{- if eq $type "image" }}{{ readFile $file | base64Encode }}{{ end -}}
+  {{- if eq $type "source" }}{{ readFile $file | safeHTML }}{{ end -}}
+{{ else }}
+  {{- readFile (.Get 0) | safeHTML -}}
+{{ end -}}
