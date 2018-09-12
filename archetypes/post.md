@@ -43,9 +43,9 @@ After Dark features a {{< external rel="help" target="_self" href="http://localh
 
 Fractal Forest uses Fabrice Bellard's {{< external href="https://bellard.org/bpg/" text="BPG Image format" />}} and gives After Dark the ability to render BPG-encoded images such as the above animation, which is ~98% smaller in filesize than its GIF counterpart.
 
-If you do not see the above animation, you may install the module yourself or simply reinstall After Dark using the provided {{< external rel="help" target="_self" href="https://vhs.codeberg.page/after-dark/feature/quick-installer" text="Quick Installer" />}}.
+If you do not see the above animation, you may install the module yourself or simply reinstall After Dark using the provided {{< external rel="help" target="_self" href="http://localhost:1414/feature/quick-installer" text="Quick Installer" />}}.
 
-To learn about other modules and features please spend some time reviewing the {{< external rel="help" target="_self" href="https://localhost:1414/feature/online-help" text="Online Help" />}} linked here and also made available at {{< external  href="https://vhs.codeberg.page/after-dark" />}}.
+To learn about other modules and features please spend some time reviewing the {{< external rel="help" target="_self" href="http://localhost:1414/feature/online-help" text="Online Help" />}} linked here and also made available at {{< external href="https://vhs.codeberg.page/after-dark" />}}.
 
 If online help is not running, you may start it with the following command:
 
