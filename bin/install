@@ -104,7 +104,8 @@ generate_help_docs () {
    THEME_PATH=themes/after-dark
    meta_path="$THEME_PATH"/data/npm
    mkdir -p "$meta_path" && echo "$LATEST_META" | tr '\r\n' ' ' > "$meta_path"/latest.json
-   cd "$THEME_PATH"/docs && hugo new validate.md --kind validate 1>/dev/null
+   cd "$THEME_PATH"/docs && mkdir themes && ln -s ../.. "$THEME_PATH"
+   hugo new validate.md --kind validate 1>/dev/null
 }
 
 serve_help_docs () {
