@@ -19,13 +19,29 @@
     border-bottom: none;
     background-color: inherit;
   }
-  .hack .logo {
-    margin: 1em 0 3em;
-    filter: drop-shadow(0px -10px 35px #ff2e88) brightness(150%);
+  .shaded {
+    --filter: drop-shadow(0px -25px 45px #ff2e88) brightness(1) drop-shadow(0px -55px 35px #ff2e88) brightness(1) drop-shadow(0px -35px 155px #ff9800) brightness(4);
+    filter: var(--filter);
+    opacity: 0;
   }
-  .hack section.hero {
-    margin-left: -1em;
-    margin-right: -1em;
+  .license {
+    filter: drop-shadow(0px -10px 35px #ff2e88) brightness(2);
+  }
+  .animated {
+    animation: reveal 2s both;
+  }
+  @keyframes reveal {
+    from {
+      filter: var(--filter);
+    }
+    to {
+      filter: drop-shadow(0px -20px 45px #ff2e88) brightness(.1) drop-shadow(0px 0px 5px #ff2e88) brightness(.7) drop-shadow(0px -20px 135px #ff2e88) brightness(2);
+      opacity: 1;
+    }
+  }
+  .hack section.hero figure {
+    margin: 0;
+    min-height: 266px;
   }
   @media screen and (min-width: 768px) {
     .hero img {
@@ -33,13 +49,10 @@
     }
   }
   .hack p.leading {
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
     font-size: 1.1rem;
     line-height: 1.6;
   }
   .hack .grid {
-    margin: 3.5em;
     justify-content: center;
   }
   .hack header {
@@ -47,7 +60,7 @@
   }
   .hack header h1 {
     margin-top: 0;
-    padding-top: 1em;
+    /* padding-top: 1em; */
   }
   .hack header h1:after {
     content: none;
@@ -62,7 +75,8 @@
   .hack h1 sup::before {
     content: " ";
   }
-  .hack section {
+  .hack section,
+  .hack header {
     margin-bottom: 3em;
   }
   .hack section h2 {
