@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.9.7"></a>
+## [6.9.7](https://codeberg.org/vhs/after-dark/compare/v6.9.6...v6.9.7) (2018-09-14)
+
+
+### Bug Fixes
+
+* **layouts/partials:** move navmenu snippet into theme ([e432e5c](https://codeberg.org/vhs/after-dark/commits/e432e5c)), closes [#78](https://codeberg.org/vhs/after-dark/issues/78)
+
+
+
 <a name="6.9.6"></a>
 ## [6.9.6](https://codeberg.org/vhs/after-dark/compare/v6.9.5...v6.9.6) (2018-09-12)
 
