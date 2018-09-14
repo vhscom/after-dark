@@ -39,6 +39,9 @@ main, footer {
 footer time[datetime$="M"]:before {
   content: "\2013\0020";
 }
+body > footer p.muted {
+  margin-bottom: 0;
+}
 @media only screen
   and ( max-width: 30em ) {
   footer time[datetime$="M"] {

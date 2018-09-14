@@ -1,7 +1,7 @@
 baseurl = "https://vhs.codeberg.page/after-dark/" # Controls base URL sitewide
 languageCode = "en-US" # Controls site language
 title = "After Dark" # Homepage title and page title suffix
-paginate = 32 # Number of items to show before paginating
+paginate = 33 # Number of items to show before paginating
 
 # Controls default theme and theme components
 theme = [
@@ -18,7 +18,7 @@ sectionPagesMenu = "main" # Enable menu system for lazy bloggers
 footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 
 [params]
-  description = "After Dark is a complete hypermedia authoring system for the Hugo Static Site Generator." # Suggested, controls default description meta
+  description = "After Dark is a robust hypermedia authoring system for the Hugo Static Site Generator." # Suggested, controls default description meta
   author = "VHS" # Optional, controls author name display on posts
   hide_author = true # Optional, set true to hide author name on posts
   show_menu = true # Optional, set true to enable section menu
