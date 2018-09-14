@@ -6,13 +6,13 @@ tags = ["color", "style", "graphics", "branding"]
 features = ["code highlighter", "snippets", "related content"]
 +++
 
-After Dark ships with a 169B SVG favicon embedded into every page:
+After Dark ships with an 169B optimized[^1] SVG favicon embedded into every page:
 
 {{< highlight html >}}
 {{< include "themes/after-dark/layouts/partials/head/favicon.html" >}}
 {{< /highlight >}}
 
-The default favicon is a black-colored oblique triangle in the shape of a tepee. The center of the triangle uses negative space to give the illusion of a second equilateral triangle in the shape of a pyramid, or open fire, contained within.
+The favicon is a black-colored oblique triangle in the shape of a tepee. The center of the triangle uses negative space to give the illusion of a second equilateral triangle in the shape of a pyramid, or open fire, contained within.
 
 The color of the icon can be modified by changing the `fill` attribute:
 
@@ -80,3 +80,5 @@ If optimizing for platform experiences do so from within `favicon.html`:
 {{< /highlight >}}
 
 See the {{< external href="https://github.com/h5bp/html5-boilerplate/blob/6.1.0/dist/doc/extend.md#web-apps" text="H5BP Wiki" />}} for platform-specific requirements and {{< external href="https://gohugo.io/documentation/" text="Hugo Documentation" />}} for help with templating functions and variables.
+
+[^1]: See [Optimizing SVGs in data URIs](https://codepen.io/tigt/post/optimizing-svgs-in-data-uris) for help optimizing your own SVGs.
