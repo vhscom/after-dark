@@ -3,26 +3,33 @@ title = "After Dark"
 description = "After Dark is a complete hypermedia authoring system for the Hugo Static Site Generator."
 +++
 
-<svg class="logo" width="96" viewBox="0 0 46 45" xmlns="http://www.w3.org/2000/svg"><title>After Dark</title><path d="M.708 45L23 .416 45.292 45H.708zM35 38L23 19 11 38h24z" class="logo" fill="#000"/></svg>
+<section class="grid">
+  <div class="cell -12of12">
+    <svg class="shaded animated" viewBox="0 0 46 45" width="92" height="90" xmlns="http://www.w3.org/2000/svg">
+      <title>After Dark</title>
+      <path d="M.708 45L23 .416 45.292 45H.708zM35 38L23 19 11 38h24z" fill="#000"/>
+    </svg>
+  </div>
+</section>
 
-<p class="leading">After Dark is a complete hypermedia authoring system for the {{< external text="Hugo Static Site Generator" href="https://gohugo.io" />}} designed for the creation of engaging websites that are easy to build, fully customizable and secure by design.</p>
+<section class="grid">
+  <div class="cell -12of12">
+    <p class="leading">After Dark is a complete hypermedia authoring system for the {{< external text="Hugo Static Site Generator" href="https://gohugo.io" />}} designed for the creation of engaging websites that are easy to build, fully customizable and secure by design.</p>
+  </div>
+</section>
 
-<!-- <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-  <path d="M30 10 L16 26 2 10 Z" />
-</svg>
 <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
   <path d="M30 10 L16 26 2 10 Z" />
 </svg>
 <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
   <path d="M30 10 L16 26 2 10 Z" />
-</svg> -->
+</svg>
+<svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="M30 10 L16 26 2 10 Z" />
+</svg>
 
 <section class="hero">
-  {{< figure
-    src="minimal-mac_1600x1200-fs8.png"
-    lqipsrc="minimal-mac_800x600-fs8.png"
-    alt="After Dark Screenshots"
-  >}}
+  {{< figure alt="After Dark screenshots" src="minimal-mac_1600x1200-fs8.png" lqipsrc="minimal-mac_800x600-fs8.png" >}}
 </section>
 
 <section>
@@ -110,5 +117,11 @@ description = "After Dark is a complete hypermedia authoring system for the Hugo
     {{< /external >}}
   </div>
 </div>
+
+<section class="grid license" style="margin-top: 3em">
+  <div class="cell -12of12">
+    <img width="96" src="wtfpl.svg">
+  </div>
+</section>
 
 [1]: https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg
