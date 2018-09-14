@@ -2,7 +2,7 @@
 title = "Figure"
 description = "Present lazy-loaded images with LQIP support."
 categories = ["experience"]
-tags = ["images", "graphics"]
+tags = ["performance", "images", "graphics"]
 html_attributes = ["class", "alt", "src"]
 custom_attributes = ["lqipsrc", "caption", "link", "linktarget", "attr", "attrlink", "title"]
 snippets_used = ["code highlighter"]

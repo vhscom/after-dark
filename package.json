@@ -1,7 +1,7 @@
 {
   "name": "after-dark",
   "version": "6.10.0",
-  "description": "Hypermedia authoring system for Hugo.",
+  "description": "A robust hypermedia authoring system for Hugo.",
   "author": "VHS <vhsdev@tutanota.com>",
   "keywords": [
     "hugo",

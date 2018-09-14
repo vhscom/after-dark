@@ -3,7 +3,7 @@ title = "Code Highlighter"
 description = "Highlight code written in more than 160 languages."
 categories = ["Experience"]
 tags = ["color", "style", "syntax"]
-features = ["snippets", "related content"]
+features = ["snippets", "related content", "jit requests"]
 +++
 
 After Dark uses a customized version of {{< external href="https://atom.io/themes/one-dark-syntax" text="One Dark Syntax" />}} to produce print-friendly code highlighting for more than 160 languages.

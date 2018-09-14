@@ -4,6 +4,11 @@
 {{ define "header" }}
   {{ partial "menu.html" . }}
   <style>
+  :root {
+    --vertical-rhythm: 5rem;
+    --logo-animation-filter-start: drop-shadow(0px -25px 45px #ff2e88) brightness(1) drop-shadow(0px -55px 35px #ff2e88) brightness(1) drop-shadow(0px -35px 155px #ff9800) brightness(4);
+    --logo-animation-filter-end: drop-shadow(0px -20px 45px #ff2e88) brightness(.1) drop-shadow(0px 0px 5px #ff2e88) brightness(.7) drop-shadow(0px -20px 135px #ff2e88) brightness(2);
+  }
   main, footer, header {
     text-align: center;
   }
@@ -15,80 +20,97 @@
       flex: 1;
     }
   }
-  [class="grid"] a {
-    border-bottom: none;
-    background-color: inherit;
-  }
   .shaded {
-    --filter: drop-shadow(0px -25px 45px #ff2e88) brightness(1) drop-shadow(0px -55px 35px #ff2e88) brightness(1) drop-shadow(0px -35px 155px #ff9800) brightness(4);
-    filter: var(--filter);
+    filter: var(--logo-animation-filter-start);
     opacity: 0;
-  }
-  .license {
-    filter: drop-shadow(0px -10px 35px #ff2e88) brightness(2);
   }
   .animated {
     animation: reveal 2s both;
   }
   @keyframes reveal {
     from {
-      filter: var(--filter);
+      filter: var(--logo-animation-filter-start);
     }
     to {
-      filter: drop-shadow(0px -20px 45px #ff2e88) brightness(.1) drop-shadow(0px 0px 5px #ff2e88) brightness(.7) drop-shadow(0px -20px 135px #ff2e88) brightness(2);
+      filter: var(--logo-animation-filter-end);
       opacity: 1;
     }
   }
+  .hack section.logo {
+    margin-top: 3.5rem;
+  }
+  .hack section.hero {
+    margin-top: -1rem;
+    margin-bottom: -4rem;
+  }
   .hack section.hero figure {
     margin: 0;
+    line-height: 0;
     min-height: 266px;
   }
   @media screen and (min-width: 768px) {
-    .hero img {
+    .hack section.hero figure img {
       margin: -3em 0 -20px;
     }
   }
-  .hack p.leading {
+  .hack section.tagline p {
+    margin: 0;
     font-size: 1.1rem;
     line-height: 1.6;
   }
   .hack .grid {
     justify-content: center;
   }
-  .hack header {
-    text-align: center;
-  }
-  .hack header h1 {
-    margin-top: 0;
-    /* padding-top: 1em; */
-  }
   .hack header h1:after {
     content: none;
   }
-  .hack h1 {
+  .hack header h1 {
+    padding: 0;
     font-size: 3em;
     display: inline-block;
   }
-  .hack h1 sup {
+  .hack header h1 sup {
     font-size: 1rem;
   }
-  .hack h1 sup::before {
+  .hack header h1 sup::before {
     content: " ";
   }
-  .hack section,
-  .hack header {
-    margin-bottom: 3em;
+  .hack header h1 {
+    margin-top: 3rem;
+  }
+  .hack section {
+    margin: var(--vertical-rhythm) 0;
+  }
+  .hack section.cta {
+    margin-top: 6rem;
+  }
+  .hack section.cta a {
+    border-bottom: none;
+    background-color: inherit;
+    color: #ff9800;
+    display: inline-block;
+  }
+  .hack section.cta a:hover {
+    color: #fff;
+  }
+  .hack section.cta a small {
+    display: block;
+  }
+  .hack section.license {
+    display: block;
+    margin: 3rem;
+  }
+  .hack section.license a {
+    border-bottom: none;
+    background-color: inherit;
+    filter: var(--logo-animation-filter-end);
   }
   .hack section h2 {
+    margin-top: .8rem;
     font-size: 1.2em;
-    margin-top: 0.5em;
   }
   .hack section h2:before {
     content: "";
-  }
-  .hack section a {
-    border-bottom: none;
-    background-color: inherit;
   }
   </style>
 {{ end }}
