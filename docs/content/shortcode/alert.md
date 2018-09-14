@@ -38,7 +38,7 @@ Typed with plain and formatted text:
 
 ```html
 {{</* hackcss-alert type="success" text="Success Text" /*/>}}
-{{</* hackcss-alert type="info" >}}~~Info~~ Text{{< /hackcss-alert */>}}
+{{</* hackcss-alert type="info" >}}<s>Info</s> ~~Text~~{{< /hackcss-alert */>}}
 {{%/* hackcss-alert type="warning" %}}~~Warning~~ Text{{% /hackcss-alert */%}}
 {{</* hackcss-alert type="error" >}}
   <strong>Error</strong> Text
@@ -46,7 +46,7 @@ Typed with plain and formatted text:
 ```
 
 {{< hackcss-alert type="success" text="Success Text" />}}
-{{< hackcss-alert type="info" >}}~~Info~~ Text{{< /hackcss-alert >}}
+{{< hackcss-alert type="info" >}}<s>Info</s> ~~Text~~{{< /hackcss-alert >}}
 {{% hackcss-alert type="warning" %}}~~Warning~~ Text{{% /hackcss-alert %}}
 {{< hackcss-alert type="error" >}}
   <strong>Error</strong> Text
