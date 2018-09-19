@@ -1,6 +1,6 @@
 +++
 title = "After Dark"
-description = "After Dark is a robust hypermedia authoring system for the Hugo Static Site Generator."
+description = "After Dark is a complete hypermedia authoring system for the Hugo Static Site Generator."
 +++
 
 <section class="grid logo">
@@ -14,7 +14,7 @@ description = "After Dark is a robust hypermedia authoring system for the Hugo S
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is a robust hypermedia authoring system using {{< external text="Hugo Static Site Generator" href="https://gohugo.io" />}} for creating immersive websites that are incredibly fast, easy to customize and securely designed.</p>
+    <p>After Dark is a complete hypermedia authoring system using {{< external text="Hugo Static Site Generator" href="https://gohugo.io" />}} for creating immersive websites that are incredibly fast, easy to customize and securely designed.</p>
   </div>
 </section>
 
