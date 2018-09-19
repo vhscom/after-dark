@@ -18,7 +18,7 @@ sectionPagesMenu = "main" # Enable menu system for lazy bloggers
 footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 
 [params]
-  description = "After Dark is a robust hypermedia authoring system for the Hugo Static Site Generator." # Suggested, controls default description meta
+  description = "After Dark is a complete hypermedia authoring system for the Hugo Static Site Generator." # Suggested, controls default description meta
   author = "VHS" # Optional, controls author name display on posts
   hide_author = true # Optional, set true to hide author name on posts
   show_menu = true # Optional, set true to enable section menu
