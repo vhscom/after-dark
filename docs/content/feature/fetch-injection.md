@@ -6,7 +6,7 @@ tags = ["performance", "styles"]
 features = ["snippets", "related content"]
 +++
 
-After Dark uses {{< external rel="external help" href="https://codeberg.org/vhs/vhs/fetch-inject" text="Fetch Inject" />}} library to load and execute external scripts and styles faster than native browsers are capable of doing it themselves.
+After Dark uses {{< external rel="external help" href="https://codeberg.org/vhs/vhs/fetch-inject" text="Fetch Inject" />}} library to load and execute external scripts and styles faster than browsers are natively capable of themselves.
 
 <table>
   <thead>
@@ -26,7 +26,7 @@ After Dark uses {{< external rel="external help" href="https://codeberg.org/vhs/
   </tbody>
 </table>
 
-{{< external href="https://hackcabin.com/post/managing-async-dependencies-javascript/" text="Fetch Injection" />}} was conceptualized and first developed specifically for After Dark to make it possible to deep-link to full-sized [Image Gallery](/modules/hall-of-mirrors) images near-instantly and carries with it a number of other performance applications.
+{{< external href="https://hackcabin.com/post/managing-async-dependencies-javascript/" text="Fetch Injection" />}} was conceptualized and first developed specifically for After Dark to make it possible to deep-link to full-sized [Image Gallery](/module/hall-of-mirrors) images near-instantly and carries with it a number of other performance applications.
 
 Use Fetch Inject in your [Custom Layouts](../custom-layouts) to load scripts and styles from your site `static` directory or include cross-origin resources:
 
