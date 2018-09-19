@@ -14,7 +14,7 @@ Take the [Code Highlighter](../code-highlighter) stylesheet for example:
 {{< include "themes/after-dark/static/css/syntax.css" >}}
 {{< /highlight >}}
 
-The above highlighted code is, itself, highlighted using a JIT request. Confirm by viewing the network requests for this page and observe the `fetch` requests:
+The stylesheet code shown above is itself highlighted using a JIT request. Confirm by viewing the network requests for this page and observe the `fetch` request for the `syntax.css` file as depicted here:
 
 ```sh
 jit-requests (document)
@@ -22,8 +22,8 @@ jit-requests (document)
 ├── syntax.css (fetch)
 ```
 
-Rather than blocking the page with an external request [Fetch Injection](../fetch-injection) is used to load them on-the-fly while the base layout takes care to ensure they're only on pages which actually need them.
+Using [Fetch Injection](../fetch-injection) a JIT request is issued to begin downloading the highlighter stylesheet on-the-fly in parallel with other resources and the base layout takes care to ensure the CSS is only requested on pages that need it.
 
-Another example can be seen in the [Table Of Contents](../table-of-contents) whereby a {{< external href="https://devdocs.io/css/scroll-behavior" text="scroll-behavior" />}} polyfill is loaded but not until user shows intent to use the feature.
+Another example of a JIT request can be seen in the [Table Of Contents](../table-of-contents) whereby a `scroll-behavior` polyfill is loaded asynchronyously and only once the user shows intent to use the feature, otherwise hidden under a disclosure.
 
-Study these patterns and try building your own in your own [Custom Layouts](../custom-layouts).
+Create your own JIT requests using [Custom Layout](../custom-layouts) and [Fetch Injection](../fetch-injection).

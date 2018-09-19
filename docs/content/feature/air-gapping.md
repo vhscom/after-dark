@@ -13,7 +13,7 @@ Unless running the [Quick Installer](../quick-installer) After Dark does not req
 - Run your site behind a NAT or firewall blocking all outbound requests.
 - Review the [Online Help](../online-help) docs during a flight on Virgin Galactic.
 - Report local news from West Timor without tipping off the authorities.
-- Create a [PhotoSwipe Gallery](modules/hall-of-mirrors) while trekking the Mount Nimbus via ferrata.
+- Create a [PhotoSwipe Gallery](module/hall-of-mirrors) while trekking the Mount Nimbus via ferrata.
 - Document the Syrian Civil War without revealing activity to ISPs.
 
 By default After Dark makes no outbound requests **except** when viewing non-essential [Online Help](../online-help) and where appropriate to cover related functionality.

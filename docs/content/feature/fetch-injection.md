@@ -3,10 +3,12 @@ title = "Fetch Injection"
 description = "Load external scripts and styles with incredible speed."
 categories = ["experience"]
 tags = ["performance", "styles"]
-features = ["snippets", "related content"]
+features = ["snippets", "related content", "code highlighter"]
 +++
 
-After Dark uses {{< external rel="external help" href="https://codeberg.org/vhs/vhs/fetch-inject" text="Fetch Inject" />}} library to load and execute external scripts and styles faster than browsers are natively capable of themselves.
+After Dark uses the {{< external rel="external help" href="https://codeberg.org/vhs/vhs/fetch-inject" text="Fetch Inject" />}} library to load and execute external scripts and styles faster than browsers are natively capable of themselves.
+
+{{< external href="https://hackcabin.com/post/managing-async-dependencies-javascript/" text="Fetch Injection" />}} was conceptualized and first developed specifically for After Dark to make it possible to deep-link to full-sized [PhotoSwipe  Gallery](/module/hall-of-mirrors) images near-instantly and some other useful performance applications:
 
 <table>
   <thead>
@@ -26,8 +28,6 @@ After Dark uses {{< external rel="external help" href="https://codeberg.org/vhs/
   </tbody>
 </table>
 
-{{< external href="https://hackcabin.com/post/managing-async-dependencies-javascript/" text="Fetch Injection" />}} was conceptualized and first developed specifically for After Dark to make it possible to deep-link to full-sized [Image Gallery](/module/hall-of-mirrors) images near-instantly and carries with it a number of other performance applications.
-
 Use Fetch Inject in your [Custom Layouts](../custom-layouts) to load scripts and styles from your site `static` directory or include cross-origin resources:
 
 {{< highlight html "linenos=inline" >}}
@@ -38,4 +38,4 @@ Use Fetch Inject in your [Custom Layouts](../custom-layouts) to load scripts and
 </script>
 {{< /highlight >}}
 
-Fetch Inject is non-blocking, has 0 dependencies and is already included for use on all pages within After Dark. See the {{< external rel="external help" href="https://codeberg.org/vhs/vhs/fetch-inject" text="Fetch Inject" />}} `README` for use cases.
+Fetch Inject is non-blocking, has 0 dependencies and is already included for use on all pages within After Dark. See {{< external rel="external help" href="https://codeberg.org/vhs/vhs/fetch-inject" text="Fetch Inject" />}} for additional use cases.
