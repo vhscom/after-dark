@@ -22,9 +22,9 @@ $ cp themes/after-dark/archetypes/post.md archetypes/
 
 Once created, edit `post.md` from your `archetypes` directory to remove the content below the {{< external href="https://gohugo.io/content-management/front-matter/" text="Front Matter" />}} and try generating a new post to serve:
 
-```
-$ hugo new post/the-darkness-is-spreading.md
-$ hugo serve
+```sh
+$ hugo new post/once-upon-midnight-dreary.md
+$ hugo serve --navigateToChanged
 ```
 
 Archetypes help establish defaults for your {{< external rel="help" target="_self" href="http://localhost:1414/feature/custom-layouts" text="Custom Layouts" />}} and other content types. To learn more about them visit {{< external href="https://gohugo.io/content-management/archetypes/" text="Archetypes in Hugo" />}}.
