@@ -11,46 +11,90 @@ images = [
 ] # overrides site-wide open graph image
 +++
 
-Welcome to After Dark. Before continuing please adjust your `post` archetype. Archetypes are located in the `archetypes` directory of your site.
+Before continuing please create a post archetype. Archetypes are located within markdown files in the `archetypes` directory of your site:
 
-If the file does not exist yet, copy it from the After Dark post archetype:
+```sh
+└── flying-toasters
+    ├── archetypes
+    │   ├── default.md
+    │   └── post.md
+    ├── content
+```
+
+If `post.md` does not exist yet, copy it from the After Dark default:
 
 ```sh
 $ cd flying-toasters
 $ cp themes/after-dark/archetypes/post.md archetypes/
 ```
 
-Once created, edit `post.md` from your `archetypes` directory to remove the content below the {{< external href="https://gohugo.io/content-management/front-matter/" text="Front Matter" />}} and try generating a new post to serve:
+Make some changes to `post.md` then use `hugo` to generate a new post:
 
 ```sh
+$ nano archetypes/post.md
 $ hugo new post/once-upon-midnight-dreary.md
-$ hugo serve --navigateToChanged
+$ hugo serve --buildDrafts --navigateToChanged
 ```
 
-Archetypes help establish defaults for your {{< external rel="help" target="_self" href="http://localhost:1414/feature/custom-layouts" text="Custom Layouts" />}} and other content types. To learn more about them visit {{< external href="https://gohugo.io/content-management/archetypes/" text="Archetypes in Hugo" />}}.
+You have now created a post using {{< external href="https://gohugo.io/content-management/archetypes/" text="Archetypes in Hugo" />}}. Archetypes establish defaults for new content like posts. Create new archetypes when creating [Custom Layouts](http://localhost:1414/feature/custom-layouts) to help maintain consistency within your content.
 
 <!--more-->
 
 ---
 
 {{< hackcss-alert type="info" >}}
-<strong>Note:</strong> This text appears below the {{< external href="https://gohugo.io/content-management/summaries/" text="Summary Split" />}}.
+<strong>Note:</strong> This {{< external rel="help" target="_self" href="http://localhost:1414/shortcode/alert/" text="Alert" />}} appears below the {{< external href="https://gohugo.io/content-management/summaries/" text="Hugo Summary Split" />}}.
 {{< /hackcss-alert >}}
 
-After Dark features a {{< external rel="help" target="_self" href="http://localhost:1414/feature/module-system" text="Module System" />}} and provides a number of optional add-on modules specifically designed to enhance your site. For example, here's a `canvas` animation made possible using the {{< external rel="help" target="_self" href="http://localhost:1414/module/fractal-forest" text="Fractal Forest" />}} module:
+In addition to alerts After Dark includes a number of other [Shortcodes](http://localhost:1414/shortcode/) and other useful [Features](http://localhost:1414/feature/) such as its [Module System](http://localhost:1414/feature/module-system/).
+
+Module System gives After Dark sites the ability to add enhanced functionality using [Modules](http://localhost:1414/module/) like this one, which uses the [Fractal Forest](http://localhost:1414/module/fractal-forest/) module to decode and render a BPG image animation otherwise not possible in most browsers:
 
 ![BPG animation example](/bpg/cinemagraph-6.bpg)
 
-Fractal Forest uses Fabrice Bellard's {{< external href="https://bellard.org/bpg/" text="BPG Image format" />}} and gives After Dark the ability to render BPG-encoded images such as the above animation, which is ~98% smaller in filesize than its GIF counterpart.
+If you do not see the above animation, you may install the [Fractal Forest](http://localhost:1414/module/fractal-forest/) module yourself or reinstall After Dark using the [Quick Installer](http://localhost:1414/feature/quick-installer/) for instant setup.
 
-If you do not see the above animation, you may install the module yourself or simply reinstall After Dark using the provided {{< external rel="help" target="_self" href="http://localhost:1414/feature/quick-installer" text="Quick Installer" />}}.
+Review the [Online Help](http://localhost:1414/) to learn about other useful features such as the [Section Menus](http://localhost:1414/feature/section-menu) navigational aid, responsive [Post Images](http://localhost:1414/feature/post-images/"), offline [Fuzzy Search](http://localhost:1414/feature/fuzzy-search/) and more.
 
-To learn about other modules and features please spend some time reviewing the {{< external rel="help" target="_self" href="http://localhost:1414/feature/online-help" text="Online Help" />}} linked here and also made available at {{< external href="https://vhs.codeberg.page/after-dark" />}}.
-
-If online help is not running, you may start it with the following command:
+If Online Help isn't running, start with the following:
 
 ```sh
+$ cd flying-toasters
 $ ./themes/after-dark/bin/help
+```
+
+---
+
+Here're some cheat sheets for you to reference as you get started.
+
+After Dark Scripts:
+
+```sh
+cd flying-toasters/themes/after-dark
+./bin/upgrade # check for updates and upgrade
+./bin/help # start online help docs
+./bin/install # run the quick installer
+cd ../../..
+```
+
+Hugo Commands:
+
+```sh
+hugo # build site with default settings
+hugo --minify # build with minified sources (hugo 0.45 and above)
+hugo --config config.prod.toml # build with custom config
+hugo --templateMetrics # generate template metrics
+hugo new about.md # generate page content
+hugo new post/coming-soon.md # generate new post content
+hugo serve # serve locally with default settings
+hugo serve --buildDrafts --navigateToChanged # serve with drafts for editing
+hugo serve --buildExpired # serve locally showing expired content
+hugo serve --disableLiveReload # serve locally w/live reload disabled
+hugo list drafts # list draft content
+hugo list expired # list expired content
+hugo list future # list future  content
+hugo [serve] --debug # build or serve hugo with debug info
+hugo [command] --help
 ```
 
 Thank you for choosing After Dark.
