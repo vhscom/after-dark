@@ -5,6 +5,7 @@ paginate = 33 # Number of items to show before paginating
 
 # Controls default theme and theme components
 theme = [
+  "hall-of-mirrors",
   "after-dark"
 ]
 
