@@ -96,7 +96,7 @@ update_archetypes () {
 
 create_welcome_post () {
    echo "Creating a helpful welcome post ..."
-   hugo new post/welcome.md
+   hugo new post/welcome-to-after-dark.md
 }
 
 generate_help_docs () {
@@ -108,9 +108,14 @@ generate_help_docs () {
    hugo new validate.md --kind validate 1>/dev/null
 }
 
-serve_help_docs () {
+serve_help () {
    echo "Starting help server ..."
    hugo serve --disableLiveReload --port 1414 1>/dev/null &
+}
+
+serve_site () {
+   echo "Starting site server ..."
+   hugo serve --buildDrafts --navigateToChanged 1>/dev/null &
 }
 
 echo "Welcome to the After Dark quick installer. Press CTRL-C at any time to abort."
@@ -124,15 +129,16 @@ download_module "fractal-forest"
 configure_theme
 create_welcome_post
 generate_help_docs
-serve_help_docs
+serve_help
+serve_site
 
 YELLOW='\033[0;33m'
 NC='\033[0m'
 
 printf "${YELLOW}Installation successful!${NC}\n"
 echo "Site created in $SITE_DIR_ABS"
+echo "Site server started at http://localhost:1313/"
+echo "To stop it run \"kill \$(ps aux | awk '/[h]ugo.*1313/ {print \$2}')\"."
 echo "Help server started at http://localhost:1414/"
-echo "To stop it run \"kill \$(ps aux | awk '/[h]ugo.*1414/ {print \$2}')\"."
-echo "To start it again run \"./themes/after-dark/bin/help\"."
-echo "Run \"cd $SITE_DIR && hugo serve --buildDrafts\" to start your site."
+echo "To stop and restart it run \"./themes/after-dark/bin/help\"."
 echo "Thank you for choosing After Dark."
