@@ -2,7 +2,7 @@
 title = "Module System"
 description = "Enhance functionality with prebuilt add-on modules."
 categories = ["experience"]
-tags = ["imaging", "graphics", "analytics", "installation"]
+tags = ["module", "imaging", "graphics", "analytics", "installation"]
 features = ["module system", "related content"]
 +++
 

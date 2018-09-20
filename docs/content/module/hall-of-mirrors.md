@@ -7,12 +7,43 @@ tags = ["images", "graphics", "engagement"]
 features = ["related content", "snippets", "section menu"]
 +++
 
-PhotoSwipe Homepage — {{< external "http://photoswipe.com" />}}<br>
-Module Source — {{< external "https://codeberg.org/vhs/hall-of-mirrors" />}}
+**PhotoSwipe Homepage:** {{< external "http://photoswipe.com" />}}<br>
+**Module Source:** {{< external "https://codeberg.org/vhs/hall-of-mirrors" />}}
 
-{{< hackcss-card header="Prerecorded Demo" >}}
+## Demo
+
+{{< hackcss-alert >}}
   <video controls preload="auto" width="100%">
     <source src="https://vhs.keybase.pub/after-dark-hall-of-mirrors-demo.mp4" type="video/mp4">
     <p>Your browser doesn't support HTML5 video. Here is a <a href="https://vhs.keybase.pub/after-dark-hall-of-mirrors-demo.mp4">link to the video</a> instead.</p>
   </video>
-{{< /hackcss-card >}}
+{{< /hackcss-alert >}}
+
+## Installation
+
+Choose a module download source:
+
+- {{< external "https://www.npmjs.com/package/hall-of-mirrors" />}}
+- {{< external "https://www.jsdelivr.com/package/npm/hall-of-mirrors" />}}
+- {{< external "https://codeberg.org/vhs/hall-of-mirrors" />}}
+
+Extract module contents into site `themes` directory:
+
+```sh
+├── static
+└── themes
+    ├── after-dark
+    └── hall-of-mirrors
+```
+
+Specify module in site config:
+
+{{< highlight toml "linenos=inline,linenostart=6" >}}
+# Controls default theme and theme components
+theme = [
+  "hall-of-mirrors", # sequence before "after-dark"
+  "after-dark"
+]
+{{< /highlight >}}
+
+See {{< external href="https://codeberg.org/vhs/hall-of-mirrors/src/branch/master/README.md" text="README.md" />}} to confirm you're using the minimum required version of After Dark; and module setup, configuration and usage instructions. If you need help you may {{< external href="https://codeberg.org/vhs/hall-of-mirrors/issues" text="Submit an Issue" />}} with your question.
