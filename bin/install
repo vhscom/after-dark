@@ -96,7 +96,12 @@ update_archetypes () {
 
 create_welcome_post () {
    echo "Creating a helpful welcome post ..."
-   hugo new post/welcome-to-after-dark.md
+   hugo new post/welcome-to-after-dark.md 1>/dev/null
+}
+
+serve_site () {
+   echo "Starting site server ..."
+   hugo serve --buildDrafts --navigateToChanged 1>/dev/null &
 }
 
 generate_help_docs () {
@@ -113,11 +118,6 @@ serve_help () {
    hugo serve --disableLiveReload --port 1414 1>/dev/null &
 }
 
-serve_site () {
-   echo "Starting site server ..."
-   hugo serve --buildDrafts --navigateToChanged 1>/dev/null &
-}
-
 echo "Welcome to the After Dark quick installer. Press CTRL-C at any time to abort."
 
 validate_hugo
@@ -128,9 +128,9 @@ update_archetypes
 download_module "fractal-forest"
 configure_theme
 create_welcome_post
+serve_site
 generate_help_docs
 serve_help
-serve_site
 
 YELLOW='\033[0;33m'
 NC='\033[0m'
