@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.11.0"></a>
+# [6.11.0](https://codeberg.org/vhs/after-dark/compare/v6.10.1...v6.11.0) (2018-09-21)
+
+
+### Features
+
+* **onboarding:** streamline installation ([8a1cfee](https://codeberg.org/vhs/after-dark/commits/8a1cfee))
+
+
+
 <a name="6.10.1"></a>
 ## [6.10.1](https://codeberg.org/vhs/after-dark/compare/v6.10.0...v6.10.1) (2018-09-19)
 
