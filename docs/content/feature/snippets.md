@@ -8,7 +8,7 @@ features = ["related content", "code highlighter", "snippets"]
 
 Snippets are template abstractions enabling you to reuse the same markup and logic used to create [Shortcodes](/shortcode) in your [Custom Layouts](../custom-layouts).
 
-Take for example the included [Button Group](/shortcode/button-group) shortcode used for creating a set of [hackcss][1]-styled buttons, which we'll look at in detail here.
+Take for example the included [Button Group](/shortcode/button-group) shortcode used for creating a set of styled buttons, which we'll look at in detail here.
 
 First the partial:
 
@@ -46,6 +46,4 @@ Which creates a styled button group with three buttons as shown here:
 
 To reuse in layout mirror the `partial` call used inside the shortcode.
 
-All [Shortcodes](/shortcode) implementing [hackcss][1] components are built using the snippets template abstraction enabling each of them to be reused in [Custom Layouts](../custom-layouts).
-
-[1]: https://hackcss.egoist.moe
+All [Shortcodes](/shortcode) implementing {{< external href="https://hackcss.egoist.moe" text="hackcss" />}} components are built using the snippets template abstraction enabling each of them to be reused in [Custom Layouts](../custom-layouts).
