@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.11.1"></a>
+## [6.11.1](https://codeberg.org/vhs/after-dark/compare/v6.11.0...v6.11.1) (2018-09-22)
+
+
+### Bug Fixes
+
+* **onboarding:** add explicit site port setting in install script ([64fefb2](https://codeberg.org/vhs/after-dark/commits/64fefb2))
+* **onboarding:** serve site not help when starting site from installer ([384895b](https://codeberg.org/vhs/after-dark/commits/384895b))
+
+
+
 <a name="6.11.0"></a>
 # [6.11.0](https://codeberg.org/vhs/after-dark/compare/v6.10.1...v6.11.0) (2018-09-21)
 
