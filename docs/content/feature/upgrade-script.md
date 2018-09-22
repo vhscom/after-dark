@@ -6,10 +6,6 @@ tags = ["updating", "installation", "scripts"]
 features = ["code highlighter", "related content"]
 +++
 
-{{< hackcss-alert type="info" >}}
-<strong>Note:</strong> Use of the upgrade script requires After Dark version 6.7.5 or better. If you're running an earlier version please follow {{< external href="https://codeberg.org/vhs/after-dark/commit/6415250769c9c78338893f98b5ab9b77968053f7" text="these steps" />}} first.
-{{< /hackcss-alert >}}
-
 To check for updates and automatically upgrade to the latest version simply run the upgrade script from your site directory:
 
 ```sh
@@ -33,4 +29,14 @@ Generating help documentation ...<br>
 Upgrade complete! Please see CHANGELOG.md for changes.</samp>
 {{< /hackcss-alert >}}
 
-Upon upgrade the [Release Hash](../release-hashes) will change for accurate [Release Validation](/validate).
+If current version can't be detected the script will prompt you:
+
+{{< hackcss-alert >}}
+<samp>Cannot detect version. Upgrade after-dark anyway (y/n)? y<br>
+Starting upgrade from 6.7.6 to 6.8.0 ...<br>
+Version 6.8.0 downloaded to themes/after-dark<br>
+Generating help documentation ...<br>
+Upgrade complete! Please see CHANGELOG.md for changes.</samp>
+{{< /hackcss-alert >}}
+
+Upon upgrade the [Release Hash](../release-hashes) will update for proper [Release Validation](/validate).
