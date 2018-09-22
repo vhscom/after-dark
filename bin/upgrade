@@ -1,5 +1,4 @@
 #!/bin/sh
-set -e
 
 stop_help_server () {
    echo "Stopping any running help server ..."
@@ -36,5 +35,7 @@ update_module () {
       fi
    fi
 }
+
+set -e
 
 update_module "after-dark"
