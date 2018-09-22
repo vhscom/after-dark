@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.12.0"></a>
+# [6.12.0](https://codeberg.org/vhs/after-dark/compare/v6.11.2...v6.12.0) (2018-09-22)
+
+
+### Features
+
+* **scripts/upgrade:** prompt for update if metadata cannot be found ([b3a62ff](https://codeberg.org/vhs/after-dark/commits/b3a62ff))
+
+
+
 <a name="6.11.2"></a>
 ## [6.11.2](https://codeberg.org/vhs/after-dark/compare/v6.11.1...v6.11.2) (2018-09-22)
 
