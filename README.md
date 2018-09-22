@@ -6,34 +6,24 @@
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Minimum Hugo version](https://img.shields.io/badge/hugo->%3D%200.44-FF4088.svg?style=flat-square)](https://gohugo.io)
 [![WTFPL licensed](https://img.shields.io/npm/l/after-dark.svg?style=flat-square&longCache=true)](https://codeberg.org/vhs/after-dark/src/branch/master/COPYING)
+[![Keybase profile](https://img.shields.io/badge/pm-keybase-4c8eff.svg?style=flat-square&longCache=true)](https://keybase.io/vhs)
+[![Telegram chat](https://img.shields.io/badge/chat-telegram-32AFED.svg?style=flat-square&longCache=true)](https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg)
 
 ![After Dark screenshots](https://vhs.codeberg.page/after-dark/minimal-mac_1600x1200-fs8.png)
 
 ## Demo
 
-View a [live demo](https://vhs.codeberg.page/after-dark) and check out some [example sites](/vhs/after-dark/wiki#example-sites).
+View a [live demo](https://vhs.codeberg.page/after-dark) and check out some [example sites](/vhs/after-dark/wiki#example-sites) to see what others are doing.
 
 ## Features
 
-- Create lazy-loading responsive images and galleries with low-quality image placeholders and special effects all without touching an image editor.
-- Load entire pages in less than a half-second without relying on complex build systems or browser sniffing and may the schwartz be with you.
-- Choose from one of eight styleable theme skins or disable theming entirely and use custom layouts and CSS to take complete design control.
-- Locate indexed content anywhere on your site in the blink of an eye, even without an Internet connection. No registration required.
-- From PGP-signed cryptographic release hashes to ephemeral hosting options with end-to-end encryption security is tight as a drum, sir.
-
-Please visit the online demo for a [full list](https://vhs.codeberg.page/after-dark/feature/) of features.
+Visit the online demo for a [full list](https://vhs.codeberg.page/after-dark/feature/) of features.
 
 ## Getting Started
 
-Install Hugo, run the quick installer and go live with a single command.
+### Installation
 
-### Requirements
-
-After Dark requires Hugo `0.44` or later. Please [install Hugo](https://gohugo.io/getting-started/installing) before continuing.
-
-### Quick Installer
-
-Then run the [Quick Installer](https://vhs.codeberg.page/after-dark/feature/quick-installer/) located at [`bin/install`](https://codeberg.org/vhs/after-dark/src/branch/master/bin/install), or just paste this into a terminal and press <kbd>Enter</kbd>:
+[Install Hugo](https://gohugo.io/getting-started/installing) then run the [Quick Installer](https://vhs.codeberg.page/after-dark/feature/quick-installer/) and you're done:
 
 ```shell
 wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
@@ -43,19 +33,13 @@ wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
 
 Installation should complete in a matter of seconds.
 
-### Go Live
+### Help
 
-What hosting company? Serve your site online with end-to-end encryption using [Serveo], no registration required:
+Complete [Online Help](https://vhs.codeberg.page/after-dark/feature/online-help/) documentation included with installation.
 
-```
-hugo serve --disableLiveReload & ssh -R 80:localhost:1313 serveo.net
-```
+### Upgrading
 
-Once started press `g` for traffic inspection, or quit to go offline and use `fg` to return to `hugo`. Install [dropbear] or [openssh] if you need `ssh`.
-
-## Upgrading
-
-To check for updates and upgrade to the latest version run the [Upgrade Script](https://vhs.codeberg.page/after-dark/feature/upgrade-script/).
+Run the [Upgrade Script](https://vhs.codeberg.page/after-dark/feature/upgrade-script/) to check for updates and upgrade to the latest version.
 
 ## License
 
