@@ -1,5 +1,4 @@
 #!/bin/sh
-set -e
 
 validate_hugo () {
    # Exit with error if hugo is not installed
@@ -117,6 +116,8 @@ serve_help () {
    echo "Starting help server ..."
    hugo serve --disableLiveReload --port 1414 1>/dev/null &
 }
+
+set -e
 
 echo "Welcome to the After Dark quick installer. Press CTRL-C at any time to abort."
 
