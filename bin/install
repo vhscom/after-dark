@@ -96,12 +96,12 @@ update_archetypes () {
 
 create_welcome_post () {
    echo "Creating a helpful welcome post ..."
-   hugo new post/welcome-to-after-dark.md 1>/dev/null
+   hugo new post/welcome.md 1>/dev/null
 }
 
 serve_site () {
    echo "Starting site server ..."
-   hugo serve --buildDrafts --navigateToChanged 1>/dev/null &
+   hugo serve --buildDrafts --navigateToChanged --port 1313 1>/dev/null &
 }
 
 generate_help_docs () {
