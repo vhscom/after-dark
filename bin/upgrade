@@ -1,8 +1,8 @@
 #!/bin/sh
 
 stop_help_server () {
-   echo "Stopping any running help server ..."
-   kill $(ps aux | awk '/[h]ugo.*1414/ {print $2}') 2>/dev/null
+   echo "Stopping help server if running ..."
+   kill $(ps aux | awk '/[h]ugo.*1414/ {print $2}') 2>/dev/null || true
 }
 
 generate_help_docs () {
