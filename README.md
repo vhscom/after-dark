@@ -1,6 +1,6 @@
 # After Dark
 
-> After Dark is more than just a theme for [Hugo](https://gohugo.io) theme. It's a complete hypermedia authoring system for creating immersive websites that are incredibly fast, easy to customize and securely designed. Use the quick installer and you'll be up-and-running in seconds.
+> After Dark is more than just a [Hugo](https://gohugo.io) theme. It's a complete hypermedia authoring system for creating immersive websites that are incredibly fast, easy to customize and securely designed. Use the quick installer and you'll be up-and-running in seconds.
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
