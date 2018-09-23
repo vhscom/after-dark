@@ -83,7 +83,7 @@ description = "After Dark is a complete hypermedia authoring system for the Hugo
   <nav><p>
     <a href="/feature/fuzzy-search">Fuzzy Search</a> |
     <a href="/shortcode/form">Form Controls</a> |
-    <a href="/search/?uzzy%20erch">Try It Now</a>
+    <a href="/search/?s=lay%20load">Try It Now</a>
   </p></nav>
 </section>
 
