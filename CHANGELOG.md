@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.12.4"></a>
+## [6.12.4](https://codeberg.org/vhs/after-dark/compare/v6.12.3...v6.12.4) (2018-09-23)
+
+
+### Bug Fixes
+
+* **help/home:** add missing query string param to search link ([5b842f4](https://codeberg.org/vhs/after-dark/commits/5b842f4))
+
+
+
 <a name="6.12.3"></a>
 ## [6.12.3](https://codeberg.org/vhs/after-dark/compare/v6.12.2...v6.12.3) (2018-09-22)
 
