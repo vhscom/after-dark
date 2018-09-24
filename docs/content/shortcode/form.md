@@ -23,7 +23,7 @@ With auto-focused [Text Input](../text-input) requesting a new email address:
 With [Text Input](../text-input) and [Label](../label) inside [Form Group](../form-group) running [Fuzzy Search](/feature/fuzzy-search) in new window:
 
 ```html
-{{</* hackcss-form id="search" action="/search" target="_blank" */>}}
+{{</* hackcss-form id="search" action="/search/" target="_blank" */>}}
 {{</* hackcss-formgroup >}}
   {{< hackcss-label for="query" text="Search query:" />}}
   {{< hackcss-textinput id="query" type="search" name="s" form="search" >}}
