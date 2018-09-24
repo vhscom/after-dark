@@ -28,7 +28,7 @@ description = "After Dark is a complete hypermedia authoring system for the Hugo
   <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M30 10 L16 26 2 10 Z" />
   </svg>
-  {{< figure alt="After Dark screenshots" src="minimal-mac_1600x1200-fs8.png" lqipsrc="minimal-mac_800x600-fs8.png" >}}
+  {{< figure alt="After Dark screenshots" src="/images/minimal-mac_1600x1200-fs8.png" lqipsrc="/images/minimal-mac_800x600-fs8.png" >}}
 </section>
 
 <section>
@@ -139,7 +139,7 @@ description = "After Dark is a complete hypermedia authoring system for the Hugo
 <section class="grid license">
   <div class="cell -12of12">
     {{< external rel="noopener license" href="https://choosealicense.com/licenses/wtfpl/" >}}
-      <img width="48" src="wtfpl.svg">
+      <img width="48" src="/images/wtfpl.svg">
     {{< /external >}}
   </div>
 </section>

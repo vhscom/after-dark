@@ -54,7 +54,7 @@ Resulting in the following `content` tree structure:
 ├── layouts
 ```
 
-If already serving your site the Audiobooks section and page will immediately using the default block templates. To customize from default add a `list.html` and `single.html` to a `layouts/audiobook` directory in your site.
+If already serving your site the Audiobooks section and page will appear immediately using the default block templates. To customize from default add a `list.html` and `single.html` to a `layouts/audiobook` directory in your site.
 
 If the files don't exist yet, copy them from theme defaults:
 
@@ -75,4 +75,4 @@ Resulting in the following `layouts` tree structure:
 ├── static
 ```
 
-From there adjust the new `list.html` and `single.html` layouts, and leverage [Custom Styles](../custom-styles) and {{< external href="https://gohugo.io/content-management/archetypes/" text="Hugo Archetypes" />}} to achieve the desired result.
+From there adjust the new `list.html` and `single.html` layouts, and leverage [Custom Styles](../custom-styles) and reference {{< external href="https://gohugo.io/templates/" text="Hugo Templates" />}} to achieve the desired result.
