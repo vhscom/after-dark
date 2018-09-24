@@ -1,6 +1,6 @@
 #
 # Hugo Dockerfile for After Dark.
-# View the theme at <https://themes.gohugo.io/after-dark/>.
+# View the theme at <https://vhs.codeberg.page/after-dark/>.
 #
 # Copyright (C) 2018 VHS <vhsdev@tutanota.com>
 #

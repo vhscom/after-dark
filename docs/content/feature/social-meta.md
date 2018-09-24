@@ -8,7 +8,7 @@ features = ["code highlighter", "snippets", "related content"]
 
 After Dark provides {{< external text="Open Graph Protocol" href="http://opengraphprotocol.org" />}} and {{< external href="https://developer.twitter.com/en/docs/tweets/optimize-with-cards" text="Twitter Cards" />}} metadata in pages to achieve rich sharing cards on Facebook, Twitter and more:
 
-![Open Graph sharing card screenshot](data:image/png;base64,{{< include type="image" file="themes/after-dark/images/docs/feat-social-awareness-fs8.png" >}} "Example Open Graph sharing card produced by After Dark")
+![Open Graph sharing card screenshot](/images/instant-view-fs8.png "Example Open Graph sharing card produced by After Dark")
 
 Adjust `author` in {{< external href="https://gohugo.io/getting-started/configuration/" text="Site Configuration" />}} to specify name shown, if any:
 
