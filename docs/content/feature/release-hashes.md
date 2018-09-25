@@ -2,7 +2,7 @@
 title = "Release Hashes"
 description = "Verify you are using genuine After Dark software."
 categories = ["security"]
-tags = ["privacy", "security", "cryptography", "npm", "git"]
+tags = ["validate", "privacy", "security", "cryptography", "npm", "git"]
 features = ["code highlighter", "related content"]
 +++
 
