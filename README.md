@@ -21,9 +21,11 @@ Visit the online demo for a [full list](https://vhs.codeberg.page/after-dark/fea
 
 ## Getting Started
 
+Please [Install Hugo](https://gohugo.io/getting-started/installing) before getting started.
+
 ### Installation
 
-[Install Hugo](https://gohugo.io/getting-started/installing) then run the [Quick Installer](https://vhs.codeberg.page/after-dark/feature/quick-installer/) and you're done:
+Simply run the [Quick Installer](https://vhs.codeberg.page/after-dark/feature/quick-installer/) to start a new website:
 
 ```shell
 wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
@@ -31,19 +33,19 @@ wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
 
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 
-Installation should complete in a matter of seconds.
+Installation will download and install After Dark, and should complete in a matter of seconds.
 
-### Help
+### Verifying
 
-Complete [Online Help](https://vhs.codeberg.page/after-dark/feature/online-help/) documentation included with installation.
+Run the [Release Validator](https://vhs.codeberg.page/after-dark/validate/) to verify your running a PGP-signed release.
 
 ### Upgrading
 
 Run the [Upgrade Script](https://vhs.codeberg.page/after-dark/feature/upgrade-script/) to check for updates and upgrade to the latest version.
 
-### Verification
+### Help
 
-Run the [Release Validator](https://vhs.codeberg.page/after-dark/validate/) to verify your running a PGP-signed release.
+Full [Online Help](https://vhs.codeberg.page/after-dark/feature/online-help/) documentation included with installation and available for offline use.
 
 ## License
 
