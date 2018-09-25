@@ -9,15 +9,11 @@
 [![Telegram chat](https://img.shields.io/badge/chat-telegram-32AFED.svg?style=flat-square&longCache=true)](https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg)
 [![Keybase profile](https://img.shields.io/badge/pm-keybase-4c8eff.svg?style=flat-square&longCache=true)](https://keybase.io/vhs)
 
-![After Dark screenshots](https://vhs.codeberg.page/after-dark/images/minimal-mac_1600x1200-fs8.png)
-
-## Demo
-
-View a [live demo](https://vhs.codeberg.page/after-dark) and check out some [example sites](/vhs/after-dark/wiki#example-sites) to see what others are doing.
+![After Dark screenshots for desktop and mobile](https://vhs.codeberg.page/after-dark/images/minimal-mac_1600x1200-fs8.png "After Dark with default and Dark Grey skin settings in Hack and Standard modes on Desktop and Mobile browsers showing a lazy-loaded responsive post image.")
 
 ## Features
 
-Visit the online demo for a [full list](https://vhs.codeberg.page/after-dark/feature/) of features.
+Visit the [online demo](https://vhs.codeberg.page/after-dark) for a [full list](https://vhs.codeberg.page/after-dark/feature/) of features.
 
 ## Getting Started
 
