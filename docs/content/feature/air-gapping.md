@@ -8,15 +8,14 @@ features = ["related content"]
 
 Unless running the [Quick Installer](../quick-installer) After Dark does not require an Internet connection to function. Leverage this feature in creative ways:
 
-- Keep a personal journal while couchsurfing through Southeast Asia.
-- Develop your content using {{< external href="https://termux.com" text="Termux" />}} on Android in airplane mode.
-- Run your site behind a NAT or firewall blocking all outbound requests.
 - Review the [Online Help](../online-help) docs during a flight on Virgin Galactic.
+- Keep a personal journal while couchsurfing through Southeast Asia.
+- Create an [Image Gallery](/module/hall-of-mirrors) while trekking the Mount Nimbus via ferrata.
+- Run your site behind a NAT or firewall blocking all outbound requests.
+- Develop your content using {{< external href="https://termux.com" text="Termux" />}} on Android in airplane mode.
 - Report local news from West Timor without tipping off the authorities.
-- Create a [PhotoSwipe Gallery](module/hall-of-mirrors) while trekking the Mount Nimbus via ferrata.
-- Document the Syrian Civil War without revealing activity to ISPs.
 
-By default After Dark makes no outbound requests **except** when viewing non-essential [Online Help](../online-help) and where appropriate to cover related functionality.
+By default After Dark makes no outbound requests **except** when viewing certain [Online Help](../online-help) documentation to cover related functionality.
 
 ## Ephemeral hosting with end-to-end encryption
 
