@@ -44,18 +44,25 @@ Given the following `static` folder contents:
 └── themes
 ```
 
-You can dynamically load the entire Bootstrap 4 library including with Web Fonts on-the-fly:
+You can load Bootstrap (w/Font Awesome) and show how long ago it finished:
 
 {{< highlight html "linenos=inline" >}}
 <script>
-  fetchInject(['/js/bootstrap.min.js'],
-    fetchInject([
-      'jquery.slim.min.js',
-      'tether.min.js',
-      'font-awesome.min.css'
-    ])
+  fetchInject([
+    'https://cdn.jsdelivr.net/lodash/latest/lodash.min.js',
+    'https://cdn.jsdelivr.net/momentjs/latest/moment.min.js'
   ])
+  .then(() => {
+    const start = moment();
+    fetchInject(['/js/bootstrap.min.js'],
+      fetchInject([
+        'jquery.slim.min.js',
+        'tether.min.js',
+        'font-awesome.min.css'
+      ])
+    ).then(console.log(`Bootstrap Loaded: ${_.capitalize(start.toNow())}.`));
+  });
 </script>
 {{< /highlight >}}
 
-Fetch Inject is non-blocking, has 0 dependencies and is included on all pages within After Dark by default. See {{< external rel="external help" href="https://codeberg.org/vhs/vhs/fetch-inject" text="Fetch Inject" />}} for additional use cases.
+Fetch Inject is 555 bytes compressed, non-blocking and included by default in [Custom Layouts](../custom-layouts). Visit the {{< external href="https://codepen.io/vhs/pen/MpVeOE?editors=0012" text="CodePen Playground" />}} to try it out.
