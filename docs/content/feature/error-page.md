@@ -6,7 +6,7 @@ tags = ["engagement", "retention", "branding"]
 features = ["error page", "snippets", "code highlighter", "related content", "index blocking"]
 +++
 
-After Dark includes an animated 404 error page you can display when other pages cannot be found. The error page contains a full-screen background animation and "404" link with Ginsu treatment. Following the link navigates to the homepage.
+After Dark includes an [animated error page](/404.html) you can display when other pages cannot be found. The error page contains a full-screen background animation and "404" link with Ginsu treatment. Following the link navigates to the homepage.
 
 {{< hackcss-card header="Interactive Example" >}}
   <iframe title="Error Page Example" width="100%" height="300" src="/404.html"></iframe>
