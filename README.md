@@ -41,6 +41,10 @@ Complete [Online Help](https://vhs.codeberg.page/after-dark/feature/online-help/
 
 Run the [Upgrade Script](https://vhs.codeberg.page/after-dark/feature/upgrade-script/) to check for updates and upgrade to the latest version.
 
+### Verification
+
+Run the [Release Validator](https://vhs.codeberg.page/after-dark/validate/) to verify your running a PGP-signed release.
+
 ## License
 
 Copyright (C) 2016–2018 VHS <vhsdev@tutanota.com>
