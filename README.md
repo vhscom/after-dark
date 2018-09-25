@@ -9,7 +9,7 @@
 [![Telegram chat](https://img.shields.io/badge/chat-telegram-32AFED.svg?style=flat-square&longCache=true)](https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg)
 [![Keybase profile](https://img.shields.io/badge/pm-keybase-4c8eff.svg?style=flat-square&longCache=true)](https://keybase.io/vhs)
 
-![After Dark screenshots](https://vhs.codeberg.page/after-dark/minimal-mac_1600x1200-fs8.png)
+![After Dark screenshots](https://vhs.codeberg.page/after-dark/images/minimal-mac_1600x1200-fs8.png)
 
 ## Demo
 
