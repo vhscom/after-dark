@@ -90,6 +90,10 @@
     color: #ff9800;
     display: inline-block;
   }
+  .hack a[href="#mining-footnote"],
+  .hack a[href="#feature-mining"] {
+    border-bottom: none;
+  }
   .hack section.cta a:hover {
     color: #fff;
   }
@@ -120,6 +124,4 @@
   </header>
   {{ .Content }}
 {{ end }}
-{{ define "footer" }}
-  {{ partial "powered-by.html" . }}
-{{ end }}
+{{ define "footer" }}{{ end }}

@@ -31,12 +31,12 @@ description = "After Dark is a complete hypermedia authoring system for the Hugo
   {{< figure alt="After Dark screenshots" src="/images/minimal-mac_1600x1200-fs8.png" lqipsrc="/images/minimal-mac_800x600-fs8.png" >}}
 </section>
 
-<section>
-  <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+<section class="feature">
+  <svg id="feature-graphics" id="i-photo" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M20 24 L12 16 2 26 2 2 30 2 30 24 M16 20 L22 14 30 22 30 30 2 30 2 24" />
     <circle cx="10" cy="9" r="3" />
   </svg>
-  <h2 id="feature-imaging">Unreal Graphics</h2>
+  <h2>Unreal Graphics</h2>
   <p>Create lazy-loading responsive images and galleries with low-quality image placeholders and special effects all without touching an image editor.</p>
   <nav><p>
     <a href="/shortcode/figure">Figures</a> |
@@ -46,11 +46,11 @@ description = "After Dark is a complete hypermedia authoring system for the Hugo
   </p></nav>
 </section>
 
-<section class="speed">
-  <svg id="feature-speed" class="i-lightning" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+<section id="feature-speed" class="feature">
+  <svg id="i-lightning" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
   </svg>
-  <h2 id="feature-imaging">Ludicrous Speed</h2>
+  <h2>Ludicrous Speed</h2>
   <p>Load entire pages in less than a half-second without relying on complex build systems or browser sniffing and may the schwartz be with you.</p>
   <nav><p>
     <a href="/feature/fetch-injection">Fetch Inject</a> |
@@ -59,11 +59,11 @@ description = "After Dark is a complete hypermedia authoring system for the Hugo
   </p></nav>
 </section>
 
-<section>
-  <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+<section id="feature-customize" class="feature">
+  <svg id="i-compose" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M27 15 L27 30 2 30 2 5 17 5 M30 6 L26 2 9 19 7 25 13 23 Z M22 6 L26 10 Z M9 19 L13 23 Z" />
   </svg>
-  <h2 id="feature-customize">Fully Customizable</h2>
+  <h2>Fully Customizable</h2>
   <p>Choose from one of eight styleable theme skins or disable theming entirely and use custom layouts and CSS to take complete design control.</p>
   <nav><p>
     <a href="/feature/display-variants">Skins</a> |
@@ -73,12 +73,12 @@ description = "After Dark is a complete hypermedia authoring system for the Hugo
   </p></nav>
 </section>
 
-<section>
-  <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+<section id="feature-search" class="feature">
+  <svg id="i-search" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <circle cx="14" cy="14" r="12" />
     <path d="M23 23 L30 30"  />
   </svg>
-  <h2 id="feature-search">Offline Search</h2>
+  <h2>Offline Search</h2>
   <p>Locate indexed content anywhere on your site in the blink of an eye, even without an Internet connection. No registration required.</p>
   <nav><p>
     <a href="/feature/fuzzy-search">Fuzzy Search</a> |
@@ -87,12 +87,26 @@ description = "After Dark is a complete hypermedia authoring system for the Hugo
   </p></nav>
 </section>
 
-<section>
-  <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+<section id="feature-mining" class="feature">
+  <svg id="i-creditcard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M2 7 L2 25 30 25 30 7 Z M5 18 L9 18 M5 21 L11 21" />
+    <path d="M2 11 L2 13 30 13 30 11 Z" fill="currentColor" />
+  </svg>
+  <h2 style="margin-bottom:0.2rem">Web Mining</h2>
+  <small><i class="muted" style="color:fuchsia">(Available October 5, 2018)</i></small>
+  <p>Monetize your site with shared block rewards in one of more than 40 mining pools and take home up to 200% more per hash when compared to Coinhive.<a href="#mining-footnote"><sup>†</sup></a></p>
+  <nav><p>
+    <a href="/module/toxic-swamp#pools" class="muted" style="cursor:not-allowed;" onclick="return false">Available Pools</a> |
+    <a href="/module/toxic-swamp" class="muted" style="cursor:not-allowed;" onclick="return false">Configure Miner</a>
+  </p></nav>
+</section>
+
+<section id="feature-security" class="feature">
+  <svg id="i-lock" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M5 15 L5 30 27 30 27 15 Z M9 15 C9 9 9 5 16 5 23 5 23 9 23 15 M16 20 L16 23" />
     <circle cx="16" cy="24" r="1" />
   </svg>
-  <h2 id="feature-security">Securely Designed</h2>
+  <h2>Securely Designed</h2>
   <p>From PGP-signed cryptographic release hashes to ephemeral hosting options with end-to-end encryption security is tight as a drum, sir.</p>
   <nav><p>
     <a href="/feature/release-hashes">PGP Signed</a> |
@@ -144,4 +158,4 @@ description = "After Dark is a complete hypermedia authoring system for the Hugo
   </div>
 </section>
 
-[1]: https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg
+<small class="muted" id="mining-footnote"><sup>†</sup> Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared to 0% with {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}}. Excludes optional 5% developer donation and typical pool withdrawal fees. <a href="#feature-mining">↩</a></small>
