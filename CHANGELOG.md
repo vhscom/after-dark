@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.12.7"></a>
+## [6.12.7](https://codeberg.org/vhs/after-dark/compare/v6.12.6...v6.12.7) (2018-09-26)
+
+
+
 <a name="6.12.6"></a>
 ## [6.12.6](https://codeberg.org/vhs/after-dark/compare/v6.12.5...v6.12.6) (2018-09-25)
 
