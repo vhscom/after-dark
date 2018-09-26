@@ -75,4 +75,8 @@ Resulting in the following `layouts` tree structure:
 ├── static
 ```
 
-From there adjust the new `list.html` and `single.html` layouts, and leverage [Custom Styles](../custom-styles) and reference {{< external href="https://gohugo.io/templates/" text="Hugo Templates" />}} to achieve the desired result.
+Adjust `list.html` and `single.html` layouts and use [Custom Styles](../custom-styles) to achieve the desired result. Reference the following resources for help:
+
+- {{< external "https://gohugo.io/templates/" />}} for templating functions and logic
+- {{< external "devdocs.io" />}} for a comprehensive HTML and CSS reference
+- {{< external "https://inclusive-components.design" />}} for design pattern ideas
