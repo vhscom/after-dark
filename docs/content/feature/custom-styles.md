@@ -30,3 +30,7 @@ $ cp themes/after-dark/assets/css/custom.css assets/css
 ```
 
 Then open the file and begin editing, or remove it to restore default styles.
+
+{{< hackcss-alert type="info" >}}
+  <strong>Tip:</strong> Choose from thousands of predefined color palettes on {{< external "https://coolors.co/" />}}.
+{{< /hackcss-alert >}}
