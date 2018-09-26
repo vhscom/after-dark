@@ -119,7 +119,7 @@ description = "After Dark is a complete hypermedia authoring system for the Hugo
     {{< /external >}}
   </div>
   <div class="cell -2of12">
-    {{< external rel="noopener" itemtype="significantLink" href="https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg" >}}
+    {{< external rel="noopener" itemtype="significantLink" href="https://t.me/vhs" >}}
       <svg id="telegram" aria-labelledby="telegram-label" class="i-send" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <path d="M2 16 L30 2 16 30 12 20 Z M30 2 L12 20" />
       </svg>
