@@ -81,11 +81,10 @@ input.form-control {
   -ms-appearance: none;
 }
 input.form-control,
-textarea.form-control {
+textarea.form-control,
+select.form-control,
+.help-block {
   font-size: initial;
-}
-.hack .help-block {
-  font-size: 1rem;
 }
 html {
   font-size: 13px;
@@ -99,10 +98,12 @@ html {
 .hack .form label {
   font-size: 1rem;
 }
-.hack .alert .highlight:first-of-type .chroma {
+.hack .alert .highlight:first-of-type .chroma,
+.hack .card .highlight:first-of-type .chroma {
   margin-top: unset;
 }
-.hack .alert .highlight:last-of-type .chroma {
+.hack .alert .highlight:last-of-type .chroma,
+.hack .card .highlight:last-of-type .chroma {
   margin-bottom: unset;
 }
 .hack figure a {

@@ -1,8 +1,8 @@
 +++
 title = "Fractal Forest"
 slug = "fractal-forest"
-description = "BPG image format support (preinstalled)."
-categories = ["experience"]
+description = "BPG Image Format (Preinstalled)."
+categories = ["addon"]
 tags = ["module", "images", "graphics", "installation", "performance"]
 features = ["related content", "snippets", "section menu"]
 +++

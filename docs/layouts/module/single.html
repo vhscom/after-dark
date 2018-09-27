@@ -11,7 +11,9 @@
       <blockquote itemprop="description">{{ .Description }}</blockquote>
     {{ end }}
   </header>
-  {{ partial "module-latest.html" (dict "slug" .Params.slug) }}
+  {{ with .Params.slug }}
+    {{ partial "module-latest.html" (dict "slug" .) }}
+  {{ end }}
   {{/* TODO: Allow schema specification by type */}}
   {{/* {{ template "_internal/schema.html" . }} */}}
   {{ .Content }}

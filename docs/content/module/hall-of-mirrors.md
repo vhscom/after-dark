@@ -1,9 +1,9 @@
 +++
 title = "Hall of Mirrors"
 slug = "hall-of-mirrors"
-description = "Responsive PhotoSwipe image galleries."
-categories = ["experience"]
-tags = ["images", "graphics", "engagement"]
+description = "Easy PhotoSwipe Image Galleries."
+categories = ["addon"]
+tags = ["module", "images", "graphics", "engagement"]
 features = ["related content", "snippets", "section menu"]
 +++
 
