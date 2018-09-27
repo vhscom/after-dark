@@ -10,10 +10,11 @@ Unless running the [Quick Installer](../quick-installer) After Dark does not req
 
 - Review the [Online Help](../online-help) docs during a flight on Virgin Galactic.
 - Keep a personal journal while couchsurfing through Southeast Asia.
-- Create an [Image Gallery](/module/hall-of-mirrors) while trekking the Mount Nimbus via ferrata.
+- Securely generate configuration for the [Web Mining](/module/toxic-swamp#config-generator) add-on module.
 - Run your site behind a NAT or firewall blocking all outbound requests.
 - Develop your content using {{< external href="https://termux.com" text="Termux" />}} on Android in airplane mode.
-- Report local news from West Timor without tipping off the authorities.
+- Report news from Timor Barat without tipping off authorities.
+- Create an [Image Gallery](/module/hall-of-mirrors) while trekking the Mount Nimbus via ferrata.
 
 By default After Dark makes no outbound requests **except** when viewing certain [Online Help](../online-help) documentation to cover related functionality.
 

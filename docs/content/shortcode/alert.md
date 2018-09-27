@@ -3,7 +3,7 @@ title = "Alert"
 description = "Display contextual alert messages and dialogs."
 categories = ["experience"]
 tags = ["alert", "dialog", "message", "advertisement"]
-html_attributes = []
+html_attributes = ['class']
 custom_attributes = ["type", "text"]
 snippets_used = ["alert", "card", "external", "button", "button group", "progress"]
 +++

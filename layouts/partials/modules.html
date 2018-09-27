@@ -1,11 +1,16 @@
-{{ with .Site.Params.modules }}
-  {{ with .fractal_forest }}
+{{ $defaults := .Site.Params.defaults.modules }}
+{{ $modules := .Site.Params.modules }}
+{{ if (or $modules $defaults) }}
+  {{ with $modules.fractal_forest }}
     {{ partial "modules/fractal-forest/index.html" . }}
   {{ end }}
-  {{ with .hall_of_mirrors }}
+  {{ with $modules.hall_of_mirrors }}
     {{ partial "modules/hall-of-mirrors/index.html" (dict "settings" . "page" $.Page) }}
   {{ end }}
-  {{ with .voyeur }}
+  {{ with (default $modules.toxic_swamp $defaults.toxic_swamp) }}
+    {{ partial "modules/toxic-swamp/index.html" (dict "settings" . "data" $.Site.Data) }}
+  {{ end }}
+  {{ with $modules.voyeur }}
     {{ partial "modules/voyeur/index.html" . }}
   {{ end }}
 {{ end }}

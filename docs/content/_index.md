@@ -112,12 +112,11 @@ description = "After Dark is a Web content management system for Hugo."
     <path d="M2 11 L2 13 30 13 30 11 Z" fill="currentColor" />
   </svg>
   <h2 style="margin-bottom:0.2rem">Web Mining</h2>
-  <small><i class="muted" style="color:fuchsia">(Available October 5, 2018)</i></small>
-  <p>Incentivize yourself to stay up-to-date and responsibly reward creativity throughout the entire Web content lifecycle, from start to finish.</p>
+  <small><i style="color:lime">(Now in Beta!)</i></small>
+  <p>Incentivize yourself to stay up-to-date and reward your creative endeavors throughout the entire Web content lifecycle, start to finish.</p>
   <nav><p>
-    <a href="/module/toxic-swamp" class="muted" style="cursor:not-allowed;" onclick="return false">Get Started</a> |
-    <a href="/module/toxic-swamp#config-generator" class="muted" style="cursor:not-allowed;" onclick="return false">Configure Miner</a> |
-    <a href="/module/toxic-swamp#pools" class="muted" style="cursor:not-allowed;" onclick="return false">Available Pools</a>
+    <a href="/module/toxic-swamp">Get Started</a> |
+    <a href="/module/toxic-swamp#config-generator">Configure Miner</a>
   </p></nav>
 </section>
 

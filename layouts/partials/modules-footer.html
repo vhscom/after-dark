@@ -1,0 +1,7 @@
+{{ $defaults := .Site.Params.defaults.modules }}
+{{ $modules := .Site.Params.modules }}
+{{ if (or $modules $defaults) }}
+  {{ with (default $modules.toxic_swamp $defaults.toxic_swamp) }}
+    {{ partial "modules/toxic-swamp/toolbar.html" (dict) }}
+  {{ end }}
+{{ end }}
