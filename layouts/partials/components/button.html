@@ -1,5 +1,6 @@
 <button
   {{ with .id }}id="{{ . | urlize }}" {{ end }}
+  {{ with .name }}name="{{ . | safeURL }}" {{ end }}
   {{ with .action }}formaction="{{ . | safeURL }}" {{ end }}
   {{ with .form }}form="{{ . }}" {{ end }}
   {{ with .value }}value="{{ . | safeHTMLAttr }}" {{ end }}

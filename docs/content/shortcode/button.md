@@ -3,7 +3,7 @@ title = "Button"
 description = "Add colorful buttons to forms and pages."
 categories = ["experience"]
 tags = ["controls"]
-html_attributes = ["id", "value", "onclick", "tabindex", "target", "disabled", "form"]
+html_attributes = ["id", "value", "name", "onclick", "tabindex", "target", "disabled", "form"]
 custom_attributes = ["type", "text", "isghost", "isblock", "action", "method"]
 snippets_used = ["button", "button group", "throbber", "form", "external"]
 +++
