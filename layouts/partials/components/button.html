@@ -10,5 +10,6 @@
   {{ if in (slice "true" "disabled") .disabled }}disabled {{ end }}
   {{ if in (slice "get" "post") .method }}formmethod="{{ .method }}" {{ end }}
   class="btn btn-{{ .type | default "default" }}{{ if eq .isghost "true" }} btn-ghost{{ end }}
-  {{- if eq .isblock "true" }} btn-block{{ end }}"
+  {{- if eq .isblock "true" }} btn-block{{ end }}
+  {{- with .class }} {{ . }}{{ end }}"
 >{{ .body }}</button>
