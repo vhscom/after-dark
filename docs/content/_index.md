@@ -1,6 +1,6 @@
 +++
 title = "After Dark"
-description = "After Dark is a complete hypermedia authoring system for the Hugo Static Site Generator."
+description = "After Dark is a Web content management system for Hugo."
 +++
 
 <section class="grid logo">
@@ -14,7 +14,7 @@ description = "After Dark is a complete hypermedia authoring system for the Hugo
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is a complete hypermedia authoring system using {{< external text="Hugo Static Site Generator" href="https://gohugo.io" />}} for creating immersive websites that are incredibly fast, easy to customize and securely designed.</p>
+    <p>After Dark is a low-tech, extensible Web content management system designed to create immersive websites that are incredibly fast, easy to customize, securely designed & reward the creative process.</p>
   </div>
 </section>
 
@@ -30,6 +30,42 @@ description = "After Dark is a complete hypermedia authoring system for the Hugo
   </svg>
   {{< figure alt="After Dark screenshots" src="/images/minimal-mac_1600x1200-fs8.png" lqipsrc="/images/minimal-mac_800x600-fs8.png" >}}
 </section>
+
+<table class="capabilities">
+  <legend>Capabilities:</legend>
+  <tr>
+    <th><a href="#feature-mining">Reward System</a></th>
+    <th><a href="./feature/display-variants">Theme Skins</a></th>
+    <th><a href="./shortcode">Form Controls</th>
+    <th><a href="./feature/online-help">Help Manual</a></th>
+  </tr>
+  <tr>
+    <td>
+      <svg class="i-clock" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <circle cx="16" cy="16" r="14" />
+        <path d="M16 8 L16 16 20 20" />
+      </svg>
+    </td>
+    <td>
+      <svg class="i-checkmark" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <path d="M2 20 L12 28 30 4" />
+      </svg>
+    </td>
+    <td>
+      <!-- <svg class="i-close" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <path d="M2 30 L30 2 M30 30 L2 2" />
+      </svg> -->
+      <svg class="i-checkmark" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <path d="M2 20 L12 28 30 4" />
+      </svg>
+    </td>
+    <td>
+      <svg class="i-checkmark" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <path d="M2 20 L12 28 30 4" />
+      </svg>
+    </td>
+  </tr>
+</table>
 
 <section class="feature">
   <svg id="feature-graphics" id="i-photo" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
