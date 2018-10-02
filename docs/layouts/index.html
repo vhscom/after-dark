@@ -124,4 +124,6 @@
   </header>
   {{ .Content }}
 {{ end }}
-{{ define "footer" }}{{ end }}
+{{ define "footer" }}
+  {{ partial "powered-by.html" . }}
+{{ end }}

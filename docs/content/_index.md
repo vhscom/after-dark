@@ -94,10 +94,11 @@ description = "After Dark is a complete hypermedia authoring system for the Hugo
   </svg>
   <h2 style="margin-bottom:0.2rem">Web Mining</h2>
   <small><i class="muted" style="color:fuchsia">(Available October 5, 2018)</i></small>
-  <p>Monetize your site with shared block rewards in one of more than 40 mining pools and take home up to 200% more per hash when compared to Coinhive.<a href="#mining-footnote"><sup>†</sup></a></p>
+  <p>Incentivize yourself to stay up-to-date and responsibly reward creativity throughout the entire Web content lifecycle, from start to finish.</p>
   <nav><p>
-    <a href="/module/toxic-swamp#pools" class="muted" style="cursor:not-allowed;" onclick="return false">Available Pools</a> |
-    <a href="/module/toxic-swamp" class="muted" style="cursor:not-allowed;" onclick="return false">Configure Miner</a>
+    <a href="/module/toxic-swamp" class="muted" style="cursor:not-allowed;" onclick="return false">Get Started</a> |
+    <a href="/module/toxic-swamp#config-generator" class="muted" style="cursor:not-allowed;" onclick="return false">Configure Miner</a> |
+    <a href="/module/toxic-swamp#pools" class="muted" style="cursor:not-allowed;" onclick="return false">Available Pools</a>
   </p></nav>
 </section>
 
@@ -157,5 +158,3 @@ description = "After Dark is a complete hypermedia authoring system for the Hugo
     {{< /external >}}
   </div>
 </section>
-
-<small class="muted" id="mining-footnote"><sup>†</sup> Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared to 0% with {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}}. Excludes optional 5% developer donation and typical pool withdrawal fees. <a href="#feature-mining">↩</a></small>
