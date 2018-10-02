@@ -43,6 +43,8 @@ To see the CSS used to display the highlighter highlighting highlighted:
 {{< include type="source" file="themes/after-dark/static/css/syntax.css" >}}
 {{< /highlight >}}
 
+Not feeling the colors? No problem. Use the `hugo gen chromastyles` command to {{< external href="https://gohugo.io/content-management/syntax-highlighting/#generate-syntax-highlighter-css" text="generate your own" />}} `syntax.css` stylesheet from the {{< external href="https://help.farbox.com/pygments.html" text="style gallery" />}} and customize it using the general-purpose {{< external href="https://codeberg.org/vhs/atom-one-chroma" text="Atom One Chroma" />}} syntax theme-roller.
+
 And if you're really enterprising why not create some executable ASCII art representing the name of the game you implemented in the language used:
 
 ```brainfuck
