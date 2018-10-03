@@ -4,20 +4,30 @@
 {{ define "main" }}
   <header>
     <h1>{{ .Title }}</h1>
-  </header>
-  <p>Easily add images, alerts, blockquotes and build great-looking web forms. Select a Shortcode below to get started.</p>
-  <table>
-    <tr>
-      <th>{{ .Title | singularize }}</th>
-      <th>Summary</th>
-    </tr>
-    {{ range .Paginator.Pages }}
-      <tr>
-        <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-        <td>{{ .Description }}</td>
-      </tr>
+    {{ if .Description }}
+      <blockquote itemprop="description">{{ .Description }}</blockquote>
     {{ end }}
+  </header>
+  <table>
+    <legend>Add lazy-loaded images, alerts, blockquotes and design great-looking web forms directly from within your content. Dozens of examples provided below:</legend>
+    <thead>
+      <tr>
+        <th scope="col">{{ .Title | singularize }}</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <nav>
+        {{ range .Paginator.Pages }}
+          <tr>
+            <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+            <td>{{ .Description }}</td>
+          </tr>
+        {{ end }}
+      </nav>
+    </tbody>
   </table>
+  <p>In addition to the above you may {{ partial "shortcode/external.html" (dict "href" "https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes" "body" "Use Hugo's Built-in Shortcodes") }} as well.</p>
 {{ end }}
 {{ define "footer" }}
   {{ partial "pagination.html" . }}

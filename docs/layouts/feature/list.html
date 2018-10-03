@@ -4,19 +4,28 @@
 {{ define "main" }}
   <header>
     <h1>{{ .Title }}</h1>
-  </header>
-  <p>Explore the many features available to you in After Dark or run the <a href="./quick-installer">Quick Installer</a> to download the theme and use the <a href="./online-help">Online Help</a> try them yourself.</p>
-  <table>
-    <tr>
-      <th>{{ .Title | singularize }}</th>
-      <th>Summary</th>
-    </tr>
-    {{ range .Paginator.Pages }}
-      <tr>
-        <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-        <td>{{ .Description }}</td>
-      </tr>
+    {{ if .Description }}
+      <blockquote itemprop="description">{{ .Description }}</blockquote>
     {{ end }}
+  </header>
+  <table>
+    <legend>Choose a feature to learn more or run the <a href="./quick-installer">Quick Installer</a> to download and install After Dark and use the <a href="./online-help">Online Help</a> try any of these yourself:</legend>
+    <thead>
+      <tr>
+        <th scope="col">{{ .Title | singularize }}</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <nav>
+        {{ range .Paginator.Pages }}
+          <tr>
+            <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+            <td>{{ .Description }}</td>
+          </tr>
+        {{ end }}
+      </nav>
+    </tbody>
   </table>
 {{ end }}
 {{ define "footer" }}
