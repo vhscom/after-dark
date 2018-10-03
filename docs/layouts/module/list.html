@@ -4,21 +4,30 @@
 {{ define "main" }}
   <header>
     <h1>{{ .Title }}</h1>
-  </header>
-  <p>After Dark uses a <a href="/feature/module-system">Module System</a> to provide the following prebuilt modules specifically designed to compliment your site:</p>
-  <table>
-    <tr>
-      <th>{{ .Title | singularize }}</th>
-      <th>Latest</th>
-      <th>Summary</th>
-    </tr>
-    {{ range .Paginator.Pages }}
-      <tr>
-        <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-        <td>{{ with .Params.slug }}{{ partial "module-latest.html" (dict "slug" .) }}{{ else }}N/A{{ end }}</td>
-        <td>{{ .Description }}</td>
-      </tr>
+    {{ if .Description }}
+      <blockquote itemprop="description">{{ .Description }}</blockquote>
     {{ end }}
+  </header>
+  <table>
+    <legend>After Dark uses a <a href="/feature/module-system">Module System</a> to provide the following prebuilt modules specifically designed to compliment your site:</legend>
+    <thead>
+      <tr>
+        <th scope="col">{{ .Title | singularize }}</th>
+        <th scope="col">Latest</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <nav>
+        {{ range .Paginator.Pages }}
+          <tr>
+            <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+            <td>{{ with .Params.slug }}{{ partial "module-latest.html" (dict "slug" .) }}{{ else }}N/A{{ end }}</td>
+            <td>{{ .Description }}</td>
+          </tr>
+        {{ end }}
+      </nav>
+    </tbody>
   </table>
 {{ end }}
 {{ define "footer" }}

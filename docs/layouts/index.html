@@ -36,31 +36,6 @@
       opacity: 1;
     }
   }
-  .hack section.logo {
-    margin-top: 3.5rem;
-  }
-  .hack section.hero {
-    margin-top: -1rem;
-    margin-bottom: 0;
-  }
-  .hack section.hero figure {
-    margin: 0;
-    line-height: 0;
-    min-height: 266px;
-  }
-  .hack table.capabilities th a {
-    border-bottom: none;
-  }
-  @media screen and (min-width: 768px) {
-    .hack section.hero figure img {
-      margin: -3em 0 -2em;
-    }
-  }
-  .hack section.tagline p {
-    margin: 0;
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
   .hack .grid {
     justify-content: center;
   }
@@ -84,36 +59,63 @@
   .hack section {
     margin: var(--vertical-rhythm) 0;
   }
-  .hack section.cta {
+  .hack section h2,
+  .hack aside h2 {
+    margin-top: .8rem;
+    font-size: 1.2em;
+  }
+  .hack section h2:before,
+  .hack aside h2:before {
+    content: "";
+  }
+  .hack section.logo {
+    margin-top: 3.5rem;
+  }
+  .hack section.hero {
+    margin-top: -1rem;
+    margin-bottom: 0;
+  }
+  .hack section.hero figure {
+    margin: 0;
+    line-height: 0;
+    min-height: 266px;
+  }
+  @media screen and (min-width: 768px) {
+    .hack section.hero figure img {
+      margin: -3em 0 -2em;
+    }
+  }
+  .hack section.tagline p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  .hack footer section.cta {
     margin-top: 6rem;
   }
-  .hack section.cta a {
+  .hack footer section.cta a {
     border-bottom: none;
     background-color: inherit;
     color: #ff9800;
     display: inline-block;
   }
-  .hack section.cta a:hover {
+  .hack footer section.cta a:hover {
     color: #fff;
   }
-  .hack section.cta a small {
+  .hack footer section.cta a small {
     display: block;
   }
-  .hack section.license {
+  .hack footer section.license {
     display: block;
     margin: 3rem;
   }
-  .hack section.license a {
+  .hack footer section.license a {
     border-bottom: none;
     background-color: inherit;
     filter: var(--logo-animation-filter-end);
   }
-  .hack section h2 {
-    margin-top: .8rem;
-    font-size: 1.2em;
-  }
-  .hack section h2:before {
-    content: "";
+  .dark table tbody td:first-child {
+    color: inherit;
   }
   </style>
 {{ end }}
