@@ -14,7 +14,7 @@ description = "After Dark is a Web content management system for Hugo."
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is a low-tech, extensible Web content management system designed to create immersive websites that are incredibly fast, easy to customize, securely designed & reward the creative process.</p>
+    <p>After Dark is a low-tech, extensible Web content management system designed for creating incredibly fast websites that are easy to customize, securely designed & reward creativity.</p>
   </div>
 </section>
 
@@ -31,42 +31,25 @@ description = "After Dark is a Web content management system for Hugo."
   {{< figure alt="After Dark screenshots" src="/images/minimal-mac_1600x1200-fs8.png" lqipsrc="/images/minimal-mac_800x600-fs8.png" >}}
 </section>
 
-<table class="capabilities">
-  <legend>Capabilities:</legend>
-  <tr>
-    <th><a href="#feature-mining">Reward System</a></th>
-    <th><a href="./feature/display-variants">Theme Skins</a></th>
-    <th><a href="./shortcode">Form Controls</th>
-    <th><a href="./feature/online-help">Help Manual</a></th>
-  </tr>
-  <tr>
-    <td>
-      <svg class="i-clock" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-        <circle cx="16" cy="16" r="14" />
-        <path d="M16 8 L16 16 20 20" />
-      </svg>
-    </td>
-    <td>
-      <svg class="i-checkmark" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-        <path d="M2 20 L12 28 30 4" />
-      </svg>
-    </td>
-    <td>
-      <!-- <svg class="i-close" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-        <path d="M2 30 L30 2 M30 30 L2 2" />
-      </svg> -->
-      <svg class="i-checkmark" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-        <path d="M2 20 L12 28 30 4" />
-      </svg>
-    </td>
-    <td>
-      <svg class="i-checkmark" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-        <path d="M2 20 L12 28 30 4" />
-      </svg>
-    </td>
-  </tr>
-</table>
-
+<aside class="capabilities">
+  <svg id="i-options" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M28 6 L4 6 M28 16 L4 16 M28 26 L4 26 M24 3 L24 9 M8 13 L8 19 M20 23 L20 29" />
+  </svg>
+  <h2>Unprecedented Capability</h2>
+  <table>
+    <legend>After Dark was designed to eliminate boilerplate through the careful construction of capabilities you won't find anywhere else:</legend>
+    <tr>
+      <th scope="col" width="33%"><a href="./feature/">Features</a></th>
+      <th scope="col" width="33%"><a href="./module/">Modules</a></th>
+      <th scope="col" width="33%"><a href="./shortcode/">Shortcodes</th>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>3</td>
+      <td>23</td>
+    </tr>
+  </table>
+</aside>
 <section class="feature">
   <svg id="feature-graphics" id="i-photo" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M20 24 L12 16 2 26 2 2 30 2 30 24 M16 20 L22 14 30 22 30 30 2 30 2 24" />
@@ -87,7 +70,7 @@ description = "After Dark is a Web content management system for Hugo."
     <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
   </svg>
   <h2>Ludicrous Speed</h2>
-  <p>Load entire pages in less than a half-second without relying on complex build systems or browser sniffing and may the schwartz be with you.</p>
+  <p>Load entire pages in less than &frac15; of a second without relying on complex build systems or browser sniffing and may the schwartz be with you.</p>
   <nav><p>
     <a href="/feature/fetch-injection">Fetch Inject</a> |
     <a href="/feature/lazy-loading">Lazy Load</a> |
@@ -152,45 +135,47 @@ description = "After Dark is a Web content management system for Hugo."
   </p></nav>
 </section>
 
-<section class="grid cta">
-  <div class="cell -2of12">
-    {{< external rel="prefetch" target="_self" itemtype="significantLink" href="https://codeberg.org/vhs/after-dark/activity" >}}
-      <svg id="activity" aria-labelledby="activity-label" class="i-activity" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-        <path d="M4 16 L11 16 14 29 18 3 21 16 28 16" />
-      </svg>
-      <small role="tooltip" id="activity-label">Activity</small>
-    {{< /external >}}
-  </div>
-  <div class="cell -2of12">
-    {{< external rel="prefetch" target="_self" itemtype="significantLink" href="https://codeberg.org/vhs/after-dark/" >}}
-      <svg id="source" aria-labelledby="source-label" class="i-code" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-        <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
-      </svg>
-      <small role="tooltip" id="source-label">Source</small>
-    {{< /external >}}
-  </div>
-  <div class="cell -2of12">
-    {{< external rel="noopener" itemtype="significantLink" href="https://t.me/vhs" >}}
-      <svg id="telegram" aria-labelledby="telegram-label" class="i-send" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-        <path d="M2 16 L30 2 16 30 12 20 Z M30 2 L12 20" />
-      </svg>
-      <small role="tooltip" id="telegram-label">Telegram</small>
-    {{< /external >}}
-  </div>
-  <div class="cell -2of12">
-    {{< external title="Download" rel="prefetch" target="_self" itemtype="significantLink" href="https://codeberg.org/vhs/after-dark/#getting-started" >}}
-      <svg id="download" aria-labelledby="download-label" class="i-download" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-        <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30" />
-      </svg>
-      <small role="tooltip" id="download-label">Download</small>
-    {{< /external >}}
-  </div>
-</section>
+<footer>
+  <section class="grid cta">
+    <div class="cell -2of12">
+      {{< external rel="prefetch" target="_self" itemtype="significantLink" href="https://codeberg.org/vhs/after-dark/activity" >}}
+        <svg id="activity" aria-labelledby="activity-label" class="i-activity" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M4 16 L11 16 14 29 18 3 21 16 28 16" />
+        </svg>
+        <small role="tooltip" id="activity-label">Activity</small>
+      {{< /external >}}
+    </div>
+    <div class="cell -2of12">
+      {{< external rel="prefetch" target="_self" itemtype="significantLink" href="https://codeberg.org/vhs/after-dark/" >}}
+        <svg id="source" aria-labelledby="source-label" class="i-code" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
+        </svg>
+        <small role="tooltip" id="source-label">Source</small>
+      {{< /external >}}
+    </div>
+    <div class="cell -2of12">
+      {{< external rel="noopener" itemtype="significantLink" href="https://t.me/vhs" >}}
+        <svg id="telegram" aria-labelledby="telegram-label" class="i-send" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M2 16 L30 2 16 30 12 20 Z M30 2 L12 20" />
+        </svg>
+        <small role="tooltip" id="telegram-label">Telegram</small>
+      {{< /external >}}
+    </div>
+    <div class="cell -2of12">
+      {{< external title="Download" rel="prefetch" target="_self" itemtype="significantLink" href="https://codeberg.org/vhs/after-dark/#getting-started" >}}
+        <svg id="download" aria-labelledby="download-label" class="i-download" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30" />
+        </svg>
+        <small role="tooltip" id="download-label">Download</small>
+      {{< /external >}}
+    </div>
+  </section>
 
-<section class="grid license">
-  <div class="cell -12of12">
-    {{< external rel="noopener license" href="https://choosealicense.com/licenses/wtfpl/" >}}
-      <img width="48" src="/images/wtfpl.svg">
-    {{< /external >}}
-  </div>
-</section>
+  <section class="grid license">
+    <div class="cell -12of12">
+      {{< external rel="noopener license" href="https://choosealicense.com/licenses/wtfpl/" >}}
+        <img width="48" src="/images/wtfpl.svg" alt="WTFPL logo" title="After Dark is gratis under WTFPL license.">
+      {{< /external >}}
+    </div>
+  </section>
+</footer>
