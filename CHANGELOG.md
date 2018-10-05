@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.13.0"></a>
+# [6.13.0](https://codeberg.org/vhs/after-dark/compare/v6.12.7...v6.13.0) (2018-10-05)
+
+
+### Bug Fixes
+
+* **layouts/partials:** add main menu display condition ([a8fb1cb](https://codeberg.org/vhs/after-dark/commits/a8fb1cb)), closes [#78](https://codeberg.org/vhs/after-dark/issues/78)
+* **shortcodes/button:** allow name attribute & pass id as expected ([7aca084](https://codeberg.org/vhs/after-dark/commits/7aca084))
+
+
+### Features
+
+* **module/toxic-swamp:** integrate module beta ([8f0bc30](https://codeberg.org/vhs/after-dark/commits/8f0bc30))
+* **shortcodes/button:** add custom class support ([eb8f2db](https://codeberg.org/vhs/after-dark/commits/eb8f2db))
+
+
+
 <a name="6.12.7"></a>
 ## [6.12.7](https://codeberg.org/vhs/after-dark/compare/v6.12.6...v6.12.7) (2018-09-26)
 
