@@ -37,7 +37,7 @@ description = "After Dark is a Web content management system for Hugo."
   </svg>
   <h2>Unprecedented Capability</h2>
   <table>
-    <legend>After Dark was designed to eliminate boilerplate through the careful construction of capabilities you won't find anywhere else:</legend>
+    <legend>After Dark {{< external href="https://medium.com/@vhs/webpack-is-your-achilles-heel-d3cd80821a4f" text="ditches the bundler" />}} and through careful construction provides capabilities you won't find anywhere else:</legend>
     <tr>
       <th scope="col" width="33%"><a href="./feature/">Features</a></th>
       <th scope="col" width="33%"><a href="./module/">Modules</a></th>
@@ -45,7 +45,7 @@ description = "After Dark is a Web content management system for Hugo."
     </tr>
     <tr>
       <td>33</td>
-      <td>3</td>
+      <td>4</td>
       <td>23</td>
     </tr>
   </table>
