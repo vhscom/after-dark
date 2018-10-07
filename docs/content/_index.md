@@ -14,7 +14,7 @@ description = "After Dark is a Web content management system for Hugo."
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is a low-tech, extensible Web content management system designed for creating incredibly fast websites that are easy to customize, securely designed & reward creativity.</p>
+    <p>After Dark is a low-tech, extensible Web content management system designed to create incredibly fast websites that are rewarding to build, easy to maintain and securely designed.</p>
   </div>
 </section>
 
@@ -37,7 +37,7 @@ description = "After Dark is a Web content management system for Hugo."
   </svg>
   <h2>Unprecedented Capability</h2>
   <table>
-    <legend>After Dark {{< external href="https://medium.com/@vhs/webpack-is-your-achilles-heel-d3cd80821a4f" text="ditches the bundler" />}} and through careful construction provides capabilities you won't find anywhere else:</legend>
+    <legend>Ditch the bundler and reprogram the way you think about building for the Web with a unique set of publishing capabilities you won't find elsewhere:</legend>
     <tr>
       <th scope="col" width="33%"><a href="./feature/">Features</a></th>
       <th scope="col" width="33%"><a href="./module/">Modules</a></th>
@@ -113,10 +113,10 @@ description = "After Dark is a Web content management system for Hugo."
   </svg>
   <h2 style="margin-bottom:0.2rem">Web Mining</h2>
   <small><i style="color:lime">(Now in Beta!)</i></small>
-  <p>Incentivize yourself to stay up-to-date and reward your creative endeavors throughout the entire Web content lifecycle, start to finish.</p>
+  <p>Earn incentives for remaining up-to-date and reward {{< external href="http://ryuc.info/common/creativity_perspective/truly_creative_endeavor.htm" text="creative endeavors" />}} throughout the entire Web content lifecycle, start to finish.</p>
   <nav><p>
-    <a href="/module/toxic-swamp">Get Started</a> |
-    <a href="/module/toxic-swamp#config-generator">Configure Miner</a>
+    <a href="/module/toxic-swamp">Learn How</a> |
+    <a href="/module/toxic-swamp#config-generator">Generate Config</a>
   </p></nav>
 </section>
 
