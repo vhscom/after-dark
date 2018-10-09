@@ -40,7 +40,7 @@
     {{ if ge (len $highlights) 1 }}
       <script>fetchInject([{{ "/css/syntax.css" | relURL }}])</script>
       <noscript>
-        <link href={{ "/css/syntax.css" | relURL }} rel="stylesheet">
+        <link href="{{ "/css/syntax.css" | relURL }}" rel="stylesheet">
       </noscript>
     {{ end }}
   </head>
