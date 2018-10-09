@@ -10,20 +10,21 @@ snippets_used = ["external", "button"]
 
 Basic usage:
 
-```
-{{</* external "https://vhs.codeberg.page/after-dark" /*/>}}
-{{</* external "gopher://gopher.quux.org:70" /*/>}}
-```
 ```html
-{{</* external text="After Dark" href="//vhs.codeberg.page/after-dark" /*/>}}
-{{</* external class="muted" href="//vhs.codeberg.page/after-dark" /*/>}}
+{{</* external text="After Dark" href="https://vhs.codeberg.page/after-dark" /*/>}}
+{{</* external href="https://vhs.codeberg.page/after-dark" /*/>}}
 ```
 
-{{< external "https://vhs.codeberg.page/after-dark" />}}
-{{< external text="After Dark" href="//vhs.codeberg.page/after-dark" />}}
+{{< external text="After Dark" href="https://vhs.codeberg.page/after-dark" />}}
+{{< external href="https://vhs.codeberg.page/after-dark" />}}
 
-{{< external class="muted" href="//vhs.codeberg.page/after-dark" />}}
-{{< external "gopher://gopher.quux.org:70" />}}
+```
+{{</* external "https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install" /*/>}}
+{{</* external "wss://fs1.vhs.codeberg.page:80" /*/>}}
+```
+
+{{< external "https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install" />}}
+{{< external href="wss://fs1.vhs.codeberg.page:80" />}}
 
 With external link styling removed:
 
