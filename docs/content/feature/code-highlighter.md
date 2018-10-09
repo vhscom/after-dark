@@ -29,7 +29,7 @@ Resulting in the following highlighted code:
 </div>
 ```
 
-Or combine with the {{% external href="https://gohugo.io/content-management/syntax-highlighting/#highlight-shortcode" %}}`highlight` shortcode{{% /external %}} and `include` [Snippet](../page-snippets):
+Or combine with the {{% external href="https://gohugo.io/content-management/syntax-highlighting/#highlight-shortcode" %}}`highlight` shortcode{{% /external %}} and `include` [Snippet](../snippets):
 
 ```html
 {{</* highlight css */>}}
