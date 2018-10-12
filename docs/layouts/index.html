@@ -4,119 +4,120 @@
 {{ define "header" }}
   {{ partial "menu.html" . }}
   <style>
-  :root {
-    --vertical-rhythm: 5rem;
-    --logo-animation-filter-start: drop-shadow(0px -25px 45px #ff2e88) brightness(1) drop-shadow(0px -55px 35px #ff2e88) brightness(1) drop-shadow(0px -35px 155px #ff9800) brightness(4);
-    --logo-animation-filter-end: drop-shadow(0px -20px 45px #ff2e88) brightness(.1) drop-shadow(0px 0px 5px #ff2e88) brightness(.7) drop-shadow(0px -20px 135px #ff2e88) brightness(2);
-  }
-  main, footer, header {
-    text-align: center;
-  }
-  @media screen and (max-width: 768px) {
-    .grid {
-      flex-direction: row;
+    :root {
+      --vertical-rhythm: 5rem;
+      --logo-animation-filter-start: drop-shadow(0px -25px 45px #ff2e88) brightness(1) drop-shadow(0px -55px 35px #ff2e88) brightness(1) drop-shadow(0px -35px 155px #ff9800) brightness(4);
+      --logo-animation-filter-end: drop-shadow(0px -20px 45px #ff2e88) brightness(.1) drop-shadow(0px 0px 5px #ff2e88) brightness(.7) drop-shadow(0px -20px 135px #ff2e88) brightness(2);
     }
-    .cell {
-      flex: 1;
+    main, footer, header {
+      text-align: center;
     }
-  }
-  .shaded {
-    filter: var(--logo-animation-filter-start);
-    opacity: 0;
-  }
-  .animated {
-    animation: reveal 2s both;
-  }
-  @keyframes reveal {
-    from {
+    nav[itemtype*="SiteNavigationElement"] {
+      visibility: hidden;
+    }
+    @media screen and (max-width: 768px) {
+      .grid {
+        flex-direction: row;
+      }
+      .cell {
+        flex: 1;
+      }
+    }
+    .shaded {
       filter: var(--logo-animation-filter-start);
+      opacity: 0;
     }
-    to {
+    .animated {
+      animation: reveal 2s both;
+    }
+    @keyframes reveal {
+      from {
+        filter: var(--logo-animation-filter-start);
+      }
+      to {
+        filter: var(--logo-animation-filter-end);
+        opacity: 1;
+      }
+    }
+    .hack .grid {
+      justify-content: center;
+    }
+    .hack header h1:after {
+      content: none;
+    }
+    .hack header h1 {
+      padding: 0;
+      margin-top: 3rem;
+      font-size: 3em;
+      display: inline-block;
+    }
+    .hack header h1 sup {
+      font-size: 1rem;
+    }
+    .hack header h1 sup::before {
+      content: " ";
+    }
+    .hack section {
+      margin: var(--vertical-rhythm) 0;
+    }
+    .hack section h2,
+    .hack aside h2 {
+      margin-top: .8rem;
+      font-size: 1.2em;
+    }
+    .hack section h2:before,
+    .hack aside h2:before {
+      content: "";
+    }
+    .hack section.logo {
+      margin-top: 3.5rem;
+    }
+    .hack section.hero {
+      margin-top: -1rem;
+      margin-bottom: 0;
+    }
+    .hack section.hero figure {
+      margin: 0;
+      line-height: 0;
+      min-height: 266px;
+    }
+    @media screen and (min-width: 768px) {
+      .hack section.hero figure img {
+        margin: -3em 0 -2em;
+      }
+    }
+    .hack section.tagline p {
+      margin: 0;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .hack footer section.cta {
+      margin-top: 6rem;
+    }
+    .hack footer section.cta a {
+      border-bottom: none;
+      background-color: inherit;
+      color: #ff9800;
+      display: inline-block;
+    }
+    .hack footer section.cta a:hover {
+      color: #fff;
+    }
+    .hack footer section.cta a small {
+      display: block;
+    }
+    .hack footer section.license {
+      display: block;
+      margin: 3rem;
+    }
+    .hack footer section.license a {
+      border-bottom: none;
+      background-color: inherit;
       filter: var(--logo-animation-filter-end);
-      opacity: 1;
     }
-  }
-  .hack .grid {
-    justify-content: center;
-  }
-  .hack header h1:after {
-    content: none;
-  }
-  .hack header h1 {
-    padding: 0;
-    font-size: 3em;
-    display: inline-block;
-  }
-  .hack header h1 sup {
-    font-size: 1rem;
-  }
-  .hack header h1 sup::before {
-    content: " ";
-  }
-  .hack header h1 {
-    margin-top: 3rem;
-  }
-  .hack section {
-    margin: var(--vertical-rhythm) 0;
-  }
-  .hack section h2,
-  .hack aside h2 {
-    margin-top: .8rem;
-    font-size: 1.2em;
-  }
-  .hack section h2:before,
-  .hack aside h2:before {
-    content: "";
-  }
-  .hack section.logo {
-    margin-top: 3.5rem;
-  }
-  .hack section.hero {
-    margin-top: -1rem;
-    margin-bottom: 0;
-  }
-  .hack section.hero figure {
-    margin: 0;
-    line-height: 0;
-    min-height: 266px;
-  }
-  @media screen and (min-width: 768px) {
-    .hack section.hero figure img {
-      margin: -3em 0 -2em;
+    .dark table tbody td:first-child {
+      color: inherit;
     }
-  }
-  .hack section.tagline p {
-    margin: 0;
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  .hack footer section.cta {
-    margin-top: 6rem;
-  }
-  .hack footer section.cta a {
-    border-bottom: none;
-    background-color: inherit;
-    color: #ff9800;
-    display: inline-block;
-  }
-  .hack footer section.cta a:hover {
-    color: #fff;
-  }
-  .hack footer section.cta a small {
-    display: block;
-  }
-  .hack footer section.license {
-    display: block;
-    margin: 3rem;
-  }
-  .hack footer section.license a {
-    border-bottom: none;
-    background-color: inherit;
-    filter: var(--logo-animation-filter-end);
-  }
-  .dark table tbody td:first-child {
-    color: inherit;
-  }
   </style>
 {{ end }}
 {{ define "main" }}

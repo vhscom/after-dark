@@ -1,0 +1,34 @@
+{{ define "header" }}
+  {{ partial "menu.html" . }}
+{{ end }}
+{{ define "main" }}
+  <header>
+    <h1>{{ .Title }}</h1>
+    {{ if .Description }}
+      <blockquote itemprop="description">{{ .Description }}</blockquote>
+    {{ end }}
+  </header>
+  <table>
+    <legend>Extras are companion software packages you may find valuable to augment your workflow. Unlike <a href="/ module/">Modules</a> and <a href="/shortcode/">Shortcodes</a> extras are ancillary to your website.</legend>
+    <thead>
+      <tr>
+        <th scope="col">{{ .Title | singularize }}</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <nav>
+        {{ range .Paginator.Pages }}
+          <tr>
+            <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+            <td>{{ .Description }}</td>
+          </tr>
+        {{ end }}
+      </nav>
+    </tbody>
+  </table>
+{{ end }}
+{{ define "footer" }}
+  {{ partial "pagination.html" . }}
+  {{ partial "powered-by.html" . }}
+{{ end }}

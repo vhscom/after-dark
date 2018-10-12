@@ -59,7 +59,13 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   url = "/shortcode/"
 
 [[menu.main]]
-  name = "Search"
+  name = "Extras"
   weight = 5
+  identifier = "extra"
+  url = "/extra/"
+
+[[menu.main]]
+  name = "Search"
+  weight = 6
   identifier = "search"
   url = "/search/"
