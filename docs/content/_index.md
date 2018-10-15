@@ -1,6 +1,6 @@
 +++
 title = "After Dark"
-description = "After Dark is a low-tech, extensible Web content management system for Hugo. Start your next website in seconds."
+description = "After Dark is an extensible flat-file CMS built on Hugo designed to create incredibly fast static websites."
 +++
 
 <section class="grid logo">
@@ -14,7 +14,7 @@ description = "After Dark is a low-tech, extensible Web content management syste
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is a low-tech, extensible Web content management system designed to create ridiculously fast static websites which are easy to learn, rewarding to build, simple to maintain and securely designed.</p>
+    <p>After Dark is an extensible flat-file CMS built on Hugo designed to create incredibly fast static websites which are easy to learn, rewarding to build, simple to maintain and securely designed.</p>
   </div>
 </section>
 
@@ -31,77 +31,34 @@ description = "After Dark is a low-tech, extensible Web content management syste
   {{< figure alt="After Dark screenshots" src="/images/minimal-mac_1600x1200-fs8.png" lqipsrc="/images/minimal-mac_800x600-fs8.png" >}}
 </section>
 
-<aside class="capabilities">
+<section class="capabilities">
   <svg id="i-options" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M28 6 L4 6 M28 16 L4 16 M28 26 L4 26 M24 3 L24 9 M8 13 L8 19 M20 23 L20 29" />
   </svg>
   <h2>Highly Capable</h2>
   <table>
-    <legend>Reprogram the way you think about building websites with a unique set of publishing capabilities you won't find anywhere else:</legend>
+    <legend>Realize new efficiencies in your content publishing workflow with a unique set of capabilities you won't find anywhere else:</legend>
     <tr>
-      <th scope="col" width="25%"><a href="./feature/">Features</a></th>
-      <th scope="col" width="25%"><a href="./module/">Modules</a></th>
-      <th scope="col" width="25%"><a href="./shortcode/">Shortcodes</th>
-      <th scope="col" width="25%"><a href="./extra/">Extras</th>
+      <th scope="col" width="25%">Features</th>
+      <th scope="col" width="25%">Modules</th>
+      <th scope="col" width="25%">Shortcodes</th>
+      <th scope="col" width="25%">Extras</th>
     </tr>
     <tr>
-      <td>33</td>
-      <td>4</td>
-      <td>23</td>
-      <td>1</td>
+      <td><a href="./feature/">33</a></td>
+      <td><a href="./module/">4</a></td>
+      <td><a href="./shortcode/">23</a></td>
+      <td><a href="./extra/">1</a></td>
     </tr>
   </table>
-</aside>
-
-<section id="feature-mining" class="feature">
-  <svg id="i-creditcard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M2 7 L2 25 30 25 30 7 Z M5 18 L9 18 M5 21 L11 21" />
-    <path d="M2 11 L2 13 30 13 30 11 Z" fill="currentColor" />
-  </svg>
-  <h2 style="margin-bottom:0.2rem">Web Mining</h2>
-  <small><i style="color:lime">(Now in Beta!)</i></small>
-  <p>Earn incentives for remaining up-to-date and reward {{< external href="http://ryuc.info/common/creativity_perspective/truly_creative_endeavor.htm" text="creative endeavors" />}} throughout the entire Web content lifecycle, start to finish.</p>
-  <nav><p>
-    <a href="/module/toxic-swamp">Learn How</a> |
-    <a href="/module/toxic-swamp#config-generator">Generate Config</a>
-  </p></nav>
-</section>
-
-<section class="feature">
-  <svg id="feature-graphics" id="i-photo" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M20 24 L12 16 2 26 2 2 30 2 30 24 M16 20 L22 14 30 22 30 30 2 30 2 24" />
-    <circle cx="10" cy="9" r="3" />
-  </svg>
-  <h2>Unreal Graphics</h2>
-  <p>Create lazy-loading responsive images and galleries with low-quality image placeholders and special effects all without touching an image editor.</p>
-  <nav><p>
-    <a href="/shortcode/figure">Figures</a> |
-    <a href="/feature/post-images">Post Images</a> |
-    <a href="/module/hall-of-mirrors">Galleries</a> |
-    <a href="/module/fractal-forest">BPG</a>
-  </p></nav>
-</section>
-
-<section id="feature-search" class="feature">
-  <svg id="i-search" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <circle cx="14" cy="14" r="12" />
-    <path d="M23 23 L30 30"  />
-  </svg>
-  <h2>Offline Search</h2>
-  <p>Locate indexed content anywhere on your site in the blink of an eye, even without an Internet connection. No registration required.</p>
-  <nav><p>
-    <a href="/feature/fuzzy-search">Fuzzy Search</a> |
-    <a href="/shortcode/form">Form Controls</a> |
-    <a href="/search/?s=lay%20load">Try It Now</a>
-  </p></nav>
 </section>
 
 <section id="feature-speed" class="feature">
   <svg id="i-lightning" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
   </svg>
-  <h2>Ludicrous Speed</h2>
-  <p>Load entire pages in less than &frac15; of a second without relying on complex build systems or browser sniffing and may the schwartz be with you.</p>
+  <h2>Incredibly Fast</h2>
+  <p>Display page content in less than a half second without relying on complex build systems and generate entire websites in the blink of an eye.</p>
   <nav><p>
     <a href="/feature/fetch-injection">Fetch Inject</a> |
     <a href="/feature/lazy-loading">Lazy Load</a> |
@@ -120,6 +77,49 @@ description = "After Dark is a low-tech, extensible Web content management syste
     <a href="/feature/custom-layouts">Layouts</a> |
     <a href="/feature/custom-styles">Styles</a> |
     <a href="/feature/svg-favicon">Favicons</a>
+  </p></nav>
+</section>
+
+<section id="feature-search" class="feature">
+  <svg id="i-search" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <circle cx="14" cy="14" r="12" />
+    <path d="M23 23 L30 30"  />
+  </svg>
+  <h2>Offline Search</h2>
+  <p>Locate indexed content anywhere on your site in the blink of an eye, even without an Internet connection. No registration required.</p>
+  <nav><p>
+    <a href="/feature/fuzzy-search">Fuzzy Search</a> |
+    <a href="/shortcode/form">Form Controls</a> |
+    <a href="/search/?s=lay%20load">Try It Now</a>
+  </p></nav>
+</section>
+
+<section class="feature">
+  <svg id="feature-graphics" id="i-photo" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M20 24 L12 16 2 26 2 2 30 2 30 24 M16 20 L22 14 30 22 30 30 2 30 2 24" />
+    <circle cx="10" cy="9" r="3" />
+  </svg>
+  <h2>Unreal Graphics</h2>
+  <p>Create lazy-loading responsive images and galleries with low-quality image placeholders and special effects all without touching an image editor.</p>
+  <nav><p>
+    <a href="/shortcode/figure">Figures</a> |
+    <a href="/feature/post-images">Post Images</a> |
+    <a href="/module/hall-of-mirrors">Galleries</a> |
+    <a href="/module/fractal-forest">BPG</a>
+  </p></nav>
+</section>
+
+<section id="feature-mining" class="feature">
+  <svg id="i-creditcard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M2 7 L2 25 30 25 30 7 Z M5 18 L9 18 M5 21 L11 21" />
+    <path d="M2 11 L2 13 30 13 30 11 Z" fill="currentColor" />
+  </svg>
+  <h2 style="margin-bottom:0.2rem">Web Mining</h2>
+  <small><i style="color:lime">(Now in Beta!)</i></small>
+  <p>Earn generous incentives for remaining up-to-date and reward creativity throughout the entire Web content lifecycle, start to finish.</p>
+  <nav><p>
+    <a href="/module/toxic-swamp">Learn How</a> |
+    <a href="/module/toxic-swamp#config-generator">Generate Config</a>
   </p></nav>
 </section>
 

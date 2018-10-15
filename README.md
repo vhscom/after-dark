@@ -1,6 +1,6 @@
 # After Dark
 
-> After Dark is a low-tech, extensible Web content management system for Hugo. Run the [Quick Installer](#installation) and give it a try. You'll be up and running in seconds.
+> After Dark is an extensible flat-file CMS built on Hugo designed to create incredibly fast static websites which are easy to learn, rewarding to build, simple to maintain and securely designed.
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
@@ -13,35 +13,45 @@
 
 ## Features
 
-Visit the [online demo](https://vhs.codeberg.page/after-dark) for a [full list](https://vhs.codeberg.page/after-dark/feature/) including offline [Fuzzy Search](https://vhs.codeberg.page/after-dark/feature/fuzzy-search/) and responsive [PhotoSwipe Image Galleries](https://vhs.codeberg.page/after-dark/module/hall-of-mirrors/).
+A few highlights:
+
+- Display page content in less than a half second
+- Choose from one of eight styleable theme skins
+- Quickly locate indexable content with fuzzy search
+- Create lazy-loading responsive images and galleries
+- Earn generous incentives for remaining up-to-date
+
+Visit [vhs.codeberg.page/after-dark](https://vhs.codeberg.page/after-dark) for a complete list.
 
 ## Getting Started
 
-Please [Install Hugo](https://gohugo.io/getting-started/installing) before getting started.
+[Install Hugo](https://gohugo.io/getting-started/installing) before getting started.
 
 ### Installation
 
-Simply run the [Quick Installer](https://vhs.codeberg.page/after-dark/feature/quick-installer/) to start a new website:
+Then run the [Quick Installer](https://vhs.codeberg.page/after-dark/feature/quick-installer/) to start a new site:
 
 ```shell
 wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
 ```
 
-[![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
+Installation will download and install After Dark and should complete in 15 to 20 seconds depending on connection speed:
 
-Installation will download and install After Dark, and should complete in a matter of seconds.
+<a href="https://asciinema.org/a/E1Ds7jbjhTel52PvMqZzuGsWE" target="_blank"><img src="https://asciinema.org/a/E1Ds7jbjhTel52PvMqZzuGsWE.png" alt="Quick Installer screenshot"></a>
 
-### Verifying
-
-Run the [Release Validator](https://vhs.codeberg.page/after-dark/validate/) to verify your running a PGP-signed release.
+If you'd prefer to install manually download one of the available [releases](https://codeberg.org/vhs/after-dark/releases) to the themes directory of an existing hugo site and then serve the site with `hugo serve --theme after-dark`. An example site is included in the `/docs` directory as a reference.
 
 ### Upgrading
 
-Run the [Upgrade Script](https://vhs.codeberg.page/after-dark/feature/upgrade-script/) to check for updates and upgrade to the latest version.
+Simply run the [Upgrade Script](https://vhs.codeberg.page/after-dark/feature/upgrade-script/) anytime to check for updates and automatically upgrade to the latest version.
+
+### Verifying
+
+If installed or upgraded via script you may use the [Release Validator](https://vhs.codeberg.page/after-dark/validate/) to verify you're running a PGP-signed and SHA-verified release.
 
 ### Help
 
-Full [Online Help](https://vhs.codeberg.page/after-dark/feature/online-help/) documentation included with installation and available for offline use.
+Complete [Online Help](https://vhs.codeberg.page/after-dark/feature/online-help/) documentation included with installation.
 
 ## License
 
@@ -54,7 +64,3 @@ as published by Sam Hocevar. See the COPYING file for more details.
 ## Acknowledgements
 
 Thanks to Steve Francia for creating Hugo, エゴイスト for creating hackcss, Dan Klammer for the SVG icons, Simon Fremaux for the groovy 404 background animation and Vincent Prouillet for [porting After Dark to Gutenberg](https://www.getgutenberg.io/themes/after-dark/).
-
-[Serveo]: https://serveo.net
-[dropbear]: https://matt.ucc.asn.au/dropbear/dropbear.html
-[openssh]: https://www.openssh.com
