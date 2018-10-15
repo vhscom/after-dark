@@ -1,14 +1,16 @@
 +++
 title = "Webmaster Tools"
-description = "Submit your site to Google, Yandex, Bing and more."
+description = "Test and submit your site with popular search engines."
 categories = ["search"]
 tags = ["SEO", "robots", "metadata"]
 features = ["code highlighter", "related content", "snippets"]
 +++
 
-Use homepage `meta` to verify your site with Google, Bing, Alexa and Yandex. All verifications are optional and [some not required](#submit-manually) to get your site listed.
+## Webmaster verification
 
-To verify with any of the available providers add the following to your {{< external href="https://gohugo.io/getting-started/configuration/" text="Site Configuration" />}} and fill in the value given to you by the provider:
+Use homepage `meta` to verify your site with Google, Bing, Alexa and Yandex. All verifications are optional and some providers allow you to [submit manually](#submit-manually).
+
+To verify with `meta` add the following to your {{< external href="https://gohugo.io/getting-started/configuration/" text="Site Configuration" />}} and fill in the value provided to you by the search engine webmaster console or similar:
 
 ```toml
 [params.seo.webmaster_verifications]
@@ -22,11 +24,11 @@ To verify with any of the available providers add the following to your {{< exte
 <strong>Note:</strong> Claiming your site with Alexa {{< external text="was retired" href="https://support.alexa.com/hc/en-us/articles/219135887-Claiming-has-been-retired-May-2016" />}} in May 2016.
 {{< /hackcss-alert >}}
 
-Remove verifications you don't need or no longer use.
+You may later remove verifications you no longer need or decide not to use.
 
-## Submit manually
+### Submit manually
 
-Manually submit your Sitemap for search indexing.
+Manually submit your Sitemap for search indexing:
 
 {{< hackcss-form target="_blank" action="https://www.google.com/webmasters/tools/ping" >}}
   {{< hackcss-formgroup >}}
@@ -40,3 +42,17 @@ Manually submit your Sitemap for search indexing.
     {{< hackcss-textinput id="bing" name="siteMap" placeholder="https://domain.example/sitemap.xml" >}}
   {{< /hackcss-formgroup >}}
 {{< /hackcss-form >}}
+
+## Test Structured Data
+
+To test with Yandex use their {{< external href="https://webmaster.yandex.com/tools/microtest" text="Structured data validator" />}} testing tool. For Google submit the form below with the URL you wish to test:
+
+{{< hackcss-form target="_blank" action="https://search.google.com/structured-data/testing-tool" >}}
+  {{< hackcss-formgroup >}}
+    {{< hackcss-textinput type="hidden" name="hl" value="en" >}}
+    {{< hackcss-label for="google" text="Test URL:" />}}
+    {{< hackcss-textinput id="google" name="url" placeholder="https://domain.example/post/" >}}
+  {{< /hackcss-formgroup >}}
+{{< /hackcss-form >}}
+
+For more information on structured data please consult the search engines.
