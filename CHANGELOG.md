@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.13.2"></a>
+## [6.13.2](https://codeberg.org/vhs/after-dark/compare/v6.13.1...v6.13.2) (2018-10-15)
+
+
+### Bug Fixes
+
+* **shortcode/navmenu:** improve microdata semantics & add test tool to docs ([4913934](https://codeberg.org/vhs/after-dark/commits/4913934)), closes [#100](https://codeberg.org/vhs/after-dark/issues/100)
+
+
+
 <a name="6.13.1"></a>
 ## [6.13.1](https://codeberg.org/vhs/after-dark/compare/v6.13.0...v6.13.1) (2018-10-12)
 
