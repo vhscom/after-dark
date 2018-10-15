@@ -1,7 +1,7 @@
 {
   "name": "after-dark",
   "version": "6.13.1",
-  "description": "A low-tech, extensible Web content management system for Hugo.",
+  "description": "After Dark is an extensible flat-file CMS built on Hugo designed to create incredibly fast static websites.",
   "author": "VHS <vhsdev@tutanota.com>",
   "keywords": [
     "hugo",

@@ -47,7 +47,7 @@
     }
     .hack header h1 {
       padding: 0;
-      margin-top: 3rem;
+      margin: 1rem;
       font-size: 3em;
       display: inline-block;
     }
@@ -57,16 +57,14 @@
     .hack header h1 sup::before {
       content: " ";
     }
-    .hack section {
+    .hack section:not(.capabilities) {
       margin: var(--vertical-rhythm) 0;
     }
-    .hack section h2,
-    .hack aside h2 {
+    .hack section h2 {
       margin-top: .8rem;
       font-size: 1.2em;
     }
-    .hack section h2:before,
-    .hack aside h2:before {
+    .hack section h2:before {
       content: "";
     }
     .hack section.logo {
@@ -90,6 +88,9 @@
       margin: 0;
       font-size: 1.1rem;
       line-height: 1.6;
+    }
+    .hack section.capabilities table a {
+      display: block;
     }
     .hack footer section.cta {
       margin-top: 6rem;
