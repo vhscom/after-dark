@@ -13,8 +13,14 @@ Schema Property | Frontmatter Value
 author?         | `author`
 datePublished   | `publishdate` or `date`
 articleSection  | `[categories]`
-wordCount       | `wordcount`
 
-Consider adding your own structured data when creating [Custom Layouts](../custom-layouts) for improved page semantics and better SEO.
+Consider adding structured data when creating [Custom Layouts](../custom-layouts) for improved page semantics and better SEO.
 
-Learn more about {{< external href="https://moz.com/learn/seo/schema-structured-data" text="Schema Structured Data on Moz" />}}.
+Learn more about structured data using the following resources:
+
+- {{< external href="https://www.w3.org/TR/microdata/" text="HTML Microdata on W3C" />}}
+- {{< external href="https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata" text="Microdata on MDN" />}}
+- {{< external href="https://moz.com/learn/seo/schema-structured-data" text="Schema Structured Data on Moz" />}}
+
+
+Use [Webmaster Tools](../webmaster-tools/) to validate structured data. This can be done from a development machine using [ephemeral hosting](http://localhost:1313/feature/air-gapping/#ephemeral-hosting-with-end-to-end-encryption).
