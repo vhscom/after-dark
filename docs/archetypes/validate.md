@@ -30,7 +30,7 @@ noindex = true
 <script>
   (function (window, document, undefined) {
     "use strict";
-    const digest = '{{ strings.TrimLeft "sha512-" .Site.Data.npm.latest.dist.integrity }}';
+    const digest = '{{ strings.TrimPrefix "sha512-" .Site.Data.npm.latest.dist.integrity }}';
     const confirm = form => {
       form.digest.readOnly = true;
       form.digest.value = digest;
