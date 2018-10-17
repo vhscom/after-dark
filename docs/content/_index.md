@@ -37,7 +37,7 @@ description = "After Dark is an extensible flat-file CMS built on Hugo designed 
   </svg>
   <h2>Highly Capable</h2>
   <table>
-    <legend>Realize new efficiencies in your content publishing workflow with a unique set of capabilities you won't find anywhere else:</legend>
+    <legend>Realize new efficiencies in your publishing workflow using a unique set of capabilities you won't find anywhere else:</legend>
     <tr>
       <th scope="col" width="25%">Features</th>
       <th scope="col" width="25%">Modules</th>
@@ -57,8 +57,8 @@ description = "After Dark is an extensible flat-file CMS built on Hugo designed 
   <svg id="i-lightning" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
   </svg>
-  <h2>Incredibly Fast</h2>
-  <p>Display page content in less than a half second without relying on complex build systems and generate entire websites in the blink of an eye.</p>
+  <h2>Crazy Fast</h2>
+  <p>Display content in less than a half second without relying on complex build systems and generate entire websites with hummingbird speed.</p>
   <nav><p>
     <a href="/feature/fetch-injection">Fetch Inject</a> |
     <a href="/feature/lazy-loading">Lazy Load</a> |
