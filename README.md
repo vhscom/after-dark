@@ -13,7 +13,6 @@
 
 Here are a few highlights of what's included:
 
-- Realize new efficiencies in your publishing workflow otherwise not possible.
 - Create lazy-loading responsive images and galleries without touching an image editor.
 - Load entire pages in less than half a second without relying on complex build systems.
 - Locate indexable content anywhere on your site even without an Internet connection.
