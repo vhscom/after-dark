@@ -1,6 +1,9 @@
 +++
 title = "After Dark"
 description = "After Dark is an extensible flat-file CMS built on Hugo designed to create incredibly fast static websites."
+images = [
+  "https://vhs.codeberg.page/after-dark/images/screenshots/example-landing-page-fs8.png"
+]
 +++
 
 <section class="grid logo">
