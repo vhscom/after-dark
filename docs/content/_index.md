@@ -35,62 +35,35 @@ description = "After Dark is an extensible flat-file CMS built on Hugo designed 
   <svg id="i-options" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M28 6 L4 6 M28 16 L4 16 M28 26 L4 26 M24 3 L24 9 M8 13 L8 19 M20 23 L20 29" />
   </svg>
-  <h2>Highly Capable</h2>
+  <h2>Beyond Compare</h2>
   <table>
-    <legend>Realize new efficiencies in your publishing workflow using a unique set of capabilities you won't find anywhere else:</legend>
+    <legend>Realize new efficiencies in your publishing workflow with a unique set of capabilities you won't find anywhere else:</legend>
     <tr>
       <th scope="col" width="25%">Features</th>
-      <th scope="col" width="25%">Modules</th>
       <th scope="col" width="25%">Shortcodes</th>
+      <th scope="col" width="25%">Modules</th>
       <th scope="col" width="25%">Extras</th>
     </tr>
     <tr>
       <td><a href="./feature/">33</a></td>
-      <td><a href="./module/">4</a></td>
       <td><a href="./shortcode/">23</a></td>
+      <td><a href="./module/">4</a></td>
       <td><a href="./extra/">1</a></td>
     </tr>
   </table>
 </section>
 
-<section id="feature-speed" class="feature">
-  <svg id="i-lightning" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
+<section id="feature-mining" class="feature">
+  <svg id="i-creditcard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M2 7 L2 25 30 25 30 7 Z M5 18 L9 18 M5 21 L11 21" />
+    <path d="M2 11 L2 13 30 13 30 11 Z" fill="currentColor" />
   </svg>
-  <h2>Crazy Fast</h2>
-  <p>Display content in less than a half second without relying on complex build systems and generate entire websites with hummingbird speed.</p>
+  <h2 style="margin-bottom:0.2rem">Web Mining</h2>
+  <small><i style="color:lime">(Now in Beta!)</i></small>
+  <p>Earn incentives for staying up-to-date and reward your creativity throughout the entire content publishing lifecycle, start to finish.</p>
   <nav><p>
-    <a href="/feature/fetch-injection">Fetch Inject</a> |
-    <a href="/feature/lazy-loading">Lazy Load</a> |
-    <a href="/feature/jit-requests">JIT Requests</a>
-  </p></nav>
-</section>
-
-<section id="feature-customize" class="feature">
-  <svg id="i-compose" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M27 15 L27 30 2 30 2 5 17 5 M30 6 L26 2 9 19 7 25 13 23 Z M22 6 L26 10 Z M9 19 L13 23 Z" />
-  </svg>
-  <h2>Fully Customizable</h2>
-  <p>Choose from one of eight styleable theme skins or disable theming entirely and use custom layouts and CSS to take complete design control.</p>
-  <nav><p>
-    <a href="/feature/display-variants">Skins</a> |
-    <a href="/feature/custom-layouts">Layouts</a> |
-    <a href="/feature/custom-styles">Styles</a> |
-    <a href="/feature/svg-favicon">Favicons</a>
-  </p></nav>
-</section>
-
-<section id="feature-search" class="feature">
-  <svg id="i-search" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <circle cx="14" cy="14" r="12" />
-    <path d="M23 23 L30 30"  />
-  </svg>
-  <h2>Offline Search</h2>
-  <p>Locate indexed content anywhere on your site in the blink of an eye, even without an Internet connection. No registration required.</p>
-  <nav><p>
-    <a href="/feature/fuzzy-search">Fuzzy Search</a> |
-    <a href="/shortcode/form">Form Controls</a> |
-    <a href="/search/?s=lay%20load">Try It Now</a>
+    <a href="/module/toxic-swamp">Get Started</a> |
+    <a href="/module/toxic-swamp#config-generator">Generate Config</a>
   </p></nav>
 </section>
 
@@ -109,17 +82,44 @@ description = "After Dark is an extensible flat-file CMS built on Hugo designed 
   </p></nav>
 </section>
 
-<section id="feature-mining" class="feature">
-  <svg id="i-creditcard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M2 7 L2 25 30 25 30 7 Z M5 18 L9 18 M5 21 L11 21" />
-    <path d="M2 11 L2 13 30 13 30 11 Z" fill="currentColor" />
+<section id="feature-speed" class="feature">
+  <svg id="i-lightning" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
   </svg>
-  <h2 style="margin-bottom:0.2rem">Web Mining</h2>
-  <small><i style="color:lime">(Now in Beta!)</i></small>
-  <p>Earn generous incentives for remaining up-to-date and reward creativity throughout the entire Web content lifecycle, start to finish.</p>
+  <h2>Ludicrous Speed</h2>
+  <p>Load entire pages in less than half a second without relying on complex build systems and generate entire websites with hummingbird speed.</p>
   <nav><p>
-    <a href="/module/toxic-swamp">Learn How</a> |
-    <a href="/module/toxic-swamp#config-generator">Generate Config</a>
+    <a href="/feature/fetch-injection">Fetch Inject</a> |
+    <a href="/feature/lazy-loading">Lazy Load</a> |
+    <a href="/feature/jit-requests">JIT Requests</a>
+  </p></nav>
+</section>
+
+<section id="feature-customize" class="feature">
+  <svg id="i-compose" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M27 15 L27 30 2 30 2 5 17 5 M30 6 L26 2 9 19 7 25 13 23 Z M22 6 L26 10 Z M9 19 L13 23 Z" />
+  </svg>
+  <h2>Fully Customizable</h2>
+  <p>Toggle between 1 of 8 skin styles or disable them entirely and use custom layouts and styles to take complete design control.</p>
+  <nav><p>
+    <a href="/feature/display-variants">Skins</a> |
+    <a href="/feature/custom-layouts">Layouts</a> |
+    <a href="/feature/custom-styles">Styles</a> |
+    <a href="/feature/svg-favicon">Favicons</a>
+  </p></nav>
+</section>
+
+<section id="feature-search" class="feature">
+  <svg id="i-search" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <circle cx="14" cy="14" r="12" />
+    <path d="M23 23 L30 30"  />
+  </svg>
+  <h2>Offline Search</h2>
+  <p>Locate indexable content anywhere on your site in the blink of an eye, even without an Internet connection. No registration required.</p>
+  <nav><p>
+    <a href="/feature/fuzzy-search">Fuzzy Search</a> |
+    <a href="/shortcode/form">Form Controls</a> |
+    <a href="/search/?s=lay%20load">Try It Now</a>
   </p></nav>
 </section>
 
@@ -129,11 +129,10 @@ description = "After Dark is an extensible flat-file CMS built on Hugo designed 
     <circle cx="16" cy="24" r="1" />
   </svg>
   <h2>Securely Designed</h2>
-  <p>From PGP-signed cryptographic release hashes to ephemeral hosting options with end-to-end encryption security is tight as a drum, sir.</p>
+  <p>Validate the integrity of your codebase using secure cryptographic release hashes and upgrade your site in seconds with a single command.</p>
   <nav><p>
-    <a href="/feature/release-hashes">PGP Signed</a> |
-    <a href="/module/voyeur">Fathom Analytics</a> |
-    <a href="/feature/air-gapping">Air Gapping</a>
+    <a href="/feature/release-hashes">Release Hashes</a> |
+    <a href="/feature/upgrade-script">Upgrade Script</a>
   </p></nav>
 </section>
 
