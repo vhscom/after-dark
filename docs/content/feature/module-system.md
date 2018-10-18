@@ -1,6 +1,6 @@
 +++
 title = "Module System"
-description = "Enhance functionality with prebuilt add-on modules."
+description = "Enhance functionality with prebuilt addon modules."
 categories = ["experience"]
 tags = ["module", "imaging", "graphics", "analytics", "installation"]
 features = ["module system", "related content"]
