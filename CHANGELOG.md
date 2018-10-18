@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.13.3"></a>
+## [6.13.3](https://codeberg.org/vhs/after-dark/compare/v6.13.2...v6.13.3) (2018-10-18)
+
+
+### Bug Fixes
+
+* **archetypes/validate:** swap string method for sha trim behavior ([70e2c47](https://codeberg.org/vhs/after-dark/commits/70e2c47)), closes [#90](https://codeberg.org/vhs/after-dark/issues/90)
+* **assets/css:** unset ua default figure element margin ([46326bf](https://codeberg.org/vhs/after-dark/commits/46326bf))
+
+
+
 <a name="6.13.2"></a>
 ## [6.13.2](https://codeberg.org/vhs/after-dark/compare/v6.13.1...v6.13.2) (2018-10-15)
 
