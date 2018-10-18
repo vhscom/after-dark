@@ -106,6 +106,9 @@ html {
 .hack .card .highlight:last-of-type .chroma {
   margin-bottom: unset;
 }
+.hack figure {
+  margin: unset;
+}
 .hack figure a {
   border-bottom: none;
 }
