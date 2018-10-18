@@ -9,19 +9,71 @@
 [![Telegram chat](https://img.shields.io/badge/chat-telegram-32AFED.svg?style=flat-square&longCache=true)](https://t.me/vhs)
 [![Keybase profile](https://img.shields.io/badge/pm-keybase-4c8eff.svg?style=flat-square&longCache=true)](https://keybase.io/vhs)
 
-![After Dark screenshots for desktop and mobile](https://vhs.codeberg.page/after-dark/images/minimal-mac_1600x1200-fs8.png "After Dark with default and Dark Grey skin settings in Hack and Standard modes on Desktop and Mobile browsers showing a lazy-loaded responsive post image.")
-
 ## Features
 
-A few highlights:
+Here are a few highlights of what's included:
 
-- Display page content in less than a half second
-- Choose from one of eight styleable theme skins
-- Quickly locate indexable content with fuzzy search
-- Create lazy-loading responsive images and galleries
-- Earn generous incentives for remaining up-to-date
+- Realize new efficiencies in your publishing workflow otherwise not possible.
+- Create lazy-loading responsive images and galleries without touching an image editor.
+- Load entire pages in less than half a second without relying on complex build systems.
+- Locate indexable content anywhere on your site even without an Internet connection.
+- Toggle between 1 of 8 customizable skin styles or disable entirely and roll your own.
+- Earn incentives for staying up-to-date and reward your creativity as you work.
+- Validate the integrity of your codebase using secure cryptographic release hashes.
 
-Visit [vhs.codeberg.page/after-dark](https://vhs.codeberg.page/after-dark) for a complete list.
+Visit [vhs.codeberg.page/after-dark](https://vhs.codeberg.page/after-dark) for demo, docs and more detail.
+
+## Screenshots
+
+<table role="presentation">
+  <tr>
+    <td>
+      <a target="_blank" href="https://vhs.codeberg.page/after-dark/images/screenshots/example-landing-page-fs8.png">
+        <img alt="Example Landing Page screenshot" src="https://vhs.codeberg.page/after-dark/images/screenshots/example-landing-page-fs8.png">
+      </a>
+    </td>
+    <td>
+      <a target="_blank" href="https://vhs.codeberg.page/after-dark/images/screenshots/feature-online-help-fs8.png">
+        <img alt="Online Help screenshot" src="https://vhs.codeberg.page/after-dark/images/screenshots/feature-online-help-fs8.png">
+      </a>
+    </td>
+    <td>
+      <a target="_blank" href="https://vhs.codeberg.page/after-dark/images/screenshots/feature-error-page-fs8.png">
+        <img alt="Error Page screenshot" src="https://vhs.codeberg.page/after-dark/images/screenshots/feature-error-page-fs8.png">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <th scope="col">Landing Page Example</th>
+    <th scope="col">Online Help</th>
+    <th scope="col">Error Page</th>
+  </tr>
+</table>
+
+<table role="presentation">
+  <tr>
+    <td>
+      <a target="_blank" href="https://vhs.codeberg.page/after-dark/images/screenshots/module-toxic-swamp-fs8.png">
+        <img alt="Webmining screenshot" src="https://vhs.codeberg.page/after-dark/images/screenshots/module-toxic-swamp-fs8.png">
+      </a>
+    </td>
+    <td>
+      <a target="_blank" href="https://vhs.codeberg.page/after-dark/images/screenshots/shortcode-button-fs8.png">
+        <img alt="Form Controls screenshot" src="https://vhs.codeberg.page/after-dark/images/screenshots/shortcode-button-fs8.png">
+      </a>
+    </td>
+    <td>
+      <a target="_blank" href="https://vhs.codeberg.page/after-dark/images/screenshots/extra-high-tea-fs8.png">
+        <img alt="Extras screenshot" src="https://vhs.codeberg.page/after-dark/images/screenshots/extra-high-tea-fs8.png">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <th scope="col">Webmining</th>
+    <th scope="col">Form Controls</th>
+    <th scope="col">Extras</th>
+  </tr>
+</table>
 
 ## Getting Started
 
@@ -29,21 +81,21 @@ Visit [vhs.codeberg.page/after-dark](https://vhs.codeberg.page/after-dark) for a
 
 ### Installation
 
-Then run the [Quick Installer](https://vhs.codeberg.page/after-dark/feature/quick-installer/) to start a new site:
+Use [Quick Installer](https://vhs.codeberg.page/after-dark/feature/quick-installer/) to start a new site:
 
 ```shell
 wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
 ```
 
-Installation will download and install After Dark and should complete in 15 to 20 seconds depending on connection speed:
+Scripted installation should complete in under 5-20 seconds depending on connection speed:
 
 <a href="https://asciinema.org/a/E1Ds7jbjhTel52PvMqZzuGsWE" target="_blank"><img src="https://asciinema.org/a/E1Ds7jbjhTel52PvMqZzuGsWE.png" alt="Quick Installer screenshot"></a>
 
-If you'd prefer to install manually download one of the available [releases](https://codeberg.org/vhs/after-dark/releases) to the themes directory of an existing hugo site and then serve the site with `hugo serve --theme after-dark`. An example site is included in the `/docs` directory as a reference.
+Manual installation possible via `git clone` or by simply downloading one of the [available releases](https://codeberg.org/vhs/after-dark/releases) to the themes directory of an existing hugo site and then serve the site with `hugo serve --theme after-dark`. Each release includes an example website in the `/docs` directory to help you get started.
 
 ### Upgrading
 
-Simply run the [Upgrade Script](https://vhs.codeberg.page/after-dark/feature/upgrade-script/) anytime to check for updates and automatically upgrade to the latest version.
+Run the [Upgrade Script](https://vhs.codeberg.page/after-dark/feature/upgrade-script/) anytime to check for updates and automatically upgrade to the latest version.
 
 ### Verifying
 
