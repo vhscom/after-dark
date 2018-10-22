@@ -43,14 +43,14 @@ images = [
     <legend>Realize new efficiencies in your publishing workflow with a unique set of capabilities you won't find anywhere else:</legend>
     <tr>
       <th scope="col" width="25%">Features</th>
-      <th scope="col" width="25%">Shortcodes</th>
       <th scope="col" width="25%">Modules</th>
+      <th scope="col" width="25%">Shortcodes</th>
       <th scope="col" width="25%">Extras</th>
     </tr>
     <tr>
       <td><a href="./feature/">33</a></td>
-      <td><a href="./shortcode/">23</a></td>
       <td><a href="./module/">4</a></td>
+      <td><a href="./shortcode/">23</a></td>
       <td><a href="./extra/">1</a></td>
     </tr>
   </table>
