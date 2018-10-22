@@ -61,4 +61,4 @@ Use [ephemeral hosting](../air-gapping/#ephemeral-hosting-with-end-to-end-encryp
 
 Nobody likes a slow website. Benchmark and analyze performance from various locations worldwide using {{< external href="https://tools.pingdom.com" text="Pingdom Tools" />}} and {{< external "https://webpagetest.org" />}} for free.
 
-Monitor performance overtime using {{< external href="https://speedtracker.org" text="SpeedTracker" />}}.
+Monitor performance over time using {{< external href="https://speedtracker.org" text="SpeedTracker" />}}.
