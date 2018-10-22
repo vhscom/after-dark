@@ -10,7 +10,9 @@ features = ["snippets", "related content"]
 **Webminer Mirror:** {{< external "https://codeberg.org/vhs/webminerpool" />}}<br>
 **Module Source:** {{< external "https://codeberg.org/vhs/toxic-swamp" />}}
 
-Earn rewards throughout the Web content lifecycle in one of more than 40 mining pools and take home over 200% more per hash when compared to Coinhive.<sup><a href="#mining-footnote">†</a></sup>
+Earn rewards throughout the Web content lifecycle in one of more than 40 mining pools and take home over 200% more per hash when compared to Coinhive using.<sup><a href="#mining-footnote">†</a></sup>
+
+Basic set-up is simple. October 2018 hard fork supported. Works with both Cryptonight and Cryptonight-Light. {{< external text="Kovri I2P Router" href="https://getkovri.org" />}} integration anticipated.
 
 ## Demo
 
@@ -64,6 +66,22 @@ Then generate your configuration to begin earning rewards:
 
 {{< hackcss-card header="Interactive Config Generator" >}}
   {{< hackcss-form name="generator" disabled="true" action="http://localhost:1414/module/toxic-swamp/configuration/" >}}
+    <noscript>
+      {{< hackcss-helpblock >}}
+        <p>Enable JavaScript for offline config generation.</p>
+      {{< /hackcss-helpblock >}}
+    </noscript>
+    {{< hackcss-alert type="warning" class="js-usesameorigin" >}}
+      <style>.js-usesameorigin { display: none }</style>
+      <strong>NOPE!</strong> Attempting to submit to unknown origin.
+    {{< /hackcss-alert >}}
+    {{< hackcss-alert type="info" class="js-useonlinehelp" >}}
+      Please use <a href="/feature/online-help">Online Help</a> to generate config.
+    {{< /hackcss-alert >}}
+    {{< hackcss-alert type="info" class="js-disconnect" >}}
+      <style>.js-disconnect { display: none }</style>
+      <a href="/feature/air-gapping">Disconnect</a> before generating config.
+    {{< /hackcss-alert >}}
     {{< hackcss-formgroup name="addressgroup" >}}
       {{< hackcss-label for="address" >}}
         <abbr title="Monero">XMR</abbr> Address:
@@ -82,22 +100,6 @@ Then generate your configuration to begin earning rewards:
     {{< hackcss-buttongroup formactions="true" >}}
       {{< hackcss-button class="muted" name="generate" type="success" text="Generate Config" disabled="true" />}}
     {{< /hackcss-buttongroup >}}
-    <noscript>
-      {{< hackcss-helpblock >}}
-        <p>JavaScript is required for config generation.</p>
-      {{< /hackcss-helpblock >}}
-    </noscript>
-    {{< hackcss-alert type="warning" class="js-usesameorigin" >}}
-      <style>.js-usesameorigin { display: none }</style>
-      <strong>NOPE!</strong> Attempting to submit to unknown origin.
-    {{< /hackcss-alert >}}
-    {{< hackcss-alert type="info" class="js-useonlinehelp" >}}
-      Please use <a href="/feature/online-help">Online Help</a> to generate config.
-    {{< /hackcss-alert >}}
-    {{< hackcss-alert type="info" class="js-disconnect" >}}
-      <style>.js-disconnect { display: none }</style>
-      Please <a href="/feature/air-gapping">Disconnect</a> before generating config.
-    {{< /hackcss-alert >}}
     <details>
       <summary>Advanced Settings</summary>
       <p>Advanced settings optional. Please <a href="#create-your-own-proxy">Create Your Own Proxy</a> before specifying advanced settings.</p>
