@@ -86,6 +86,12 @@ select.form-control,
 .help-block {
   font-size: initial;
 }
+@media only screen
+  and ( max-width: 30em ) {
+  .help-block {
+    font-size: unset;
+  }
+}
 html {
   font-size: 13px;
 }
