@@ -1,7 +1,7 @@
 +++
 title = "Configuration Settings"
 description = "Toxic Swamp one-time configuration settings."
-nonidex = true
+noindex = true
 features = ["snippets", "code highlighter", "index blocking"]
 +++
 
