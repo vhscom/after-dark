@@ -86,7 +86,7 @@ Use [Quick Installer](https://vhs.codeberg.page/after-dark/feature/quick-install
 wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
 ```
 
-Scripted installation should complete in under 5-20 seconds depending on connection speed:
+Scripted installation should complete in 5-10 seconds depending on connection speed:
 
 <a href="https://asciinema.org/a/E1Ds7jbjhTel52PvMqZzuGsWE" target="_blank"><img src="https://asciinema.org/a/E1Ds7jbjhTel52PvMqZzuGsWE.png" alt="Quick Installer screenshot"></a>
 
