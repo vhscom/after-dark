@@ -22,7 +22,36 @@ images = [
 </section>
 
 <section class="hero">
-  <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <style>
+    a[target=_self] {
+      border-bottom: unset;
+    }
+    a[target=_self]:hover {
+      background-color: transparent;
+    }
+    button.btn.btn-ghost.btn-primary {
+      border-radius: 4px;
+      color: #ccc;
+      background-color: #ff2e8860;
+      border: unset;
+      transition: all 0.25s ease;
+    }
+    button.btn.btn-ghost.btn-primary:hover {
+      background-color: #ff2e8880;
+      color: #fff;
+    }
+    button.btn.btn-ghost.btn-primary svg {
+      stroke: #ff9800;
+    }
+  </style>
+  {{< external rel="noopener" target="_self" href="/feature/quick-installer" >}}
+    {{< hackcss-button type="primary" isghost="true" >}}
+      <svg class="i-download" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30"></path>
+      </svg>&nbsp;&nbsp;Quick Installer
+    {{< /hackcss-button >}}
+  {{< /external >}}
+  <!-- <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M30 10 L16 26 2 10 Z" />
   </svg>
   <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -30,7 +59,7 @@ images = [
   </svg>
   <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M30 10 L16 26 2 10 Z" />
-  </svg>
+  </svg> -->
   {{< figure alt="After Dark screenshots" src="/images/minimal-mac_1600x1200-fs8.png" lqipsrc="/images/minimal-mac_800x600-fs8.png" >}}
 </section>
 
