@@ -11,7 +11,7 @@ High Tea pairs {{< external href="https://gitea.io" text="Gitea" />}} with {{< e
 
 {{< figure alt="After Dark screenshots"
   src="/images/addon-high-tea_1440x900-fs8.png"
-  lqipsrc="/images/addon-high-tea_720x450-fs8.png"
+  lqipsrc="/images/addon-high-tea_960x600-fs8.png"
   caption="Dashboard view within the High Tea Gitea application."
 >}}
 
