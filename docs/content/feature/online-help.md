@@ -6,7 +6,7 @@ tags = ["scripts", "security", "networking"]
 features = ["related content"]
 +++
 
-Navigate to http://localhost:1414 to view the online help docs after running [Quick Installer](../quick-installer). Everything you see here is included there for [offline use](../air-gapping).
+Navigate to http://localhost:1414 to view the online help docs after running [Quick Install](../quick-install). Everything you see here is included there for [offline use](../air-gapping).
 
 ---
 

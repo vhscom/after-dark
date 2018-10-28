@@ -1,7 +1,7 @@
 {
   "name": "after-dark",
   "version": "6.13.3",
-  "description": "After Dark is an extensible flat-file CMS built on Hugo designed to create incredibly fast static websites.",
+  "description": "After Dark is a self-hosted flat-file CMS built on Hugo designed to create static websites ungodly fast.",
   "author": "VHS <vhsdev@tutanota.com>",
   "keywords": [
     "hugo",

@@ -6,7 +6,7 @@ tags = ["privacy", "networking"]
 features = ["related content"]
 +++
 
-Unless running the [Quick Installer](../quick-installer) After Dark does not require an Internet connection to function. Leverage this feature in creative ways:
+Unless running the [Quick Install](../quick-install) After Dark does not require an Internet connection to function. Leverage this feature in creative ways:
 
 - Review the [Online Help](../online-help) docs during a flight on Virgin Galactic.
 - Keep a personal journal while couchsurfing through Southeast Asia.

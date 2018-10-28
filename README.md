@@ -1,6 +1,6 @@
 # After Dark
 
-> After Dark is an extensible flat-file CMS built on Hugo designed to create incredibly fast static websites which are easy to learn, rewarding to build, simple to maintain and securely designed.
+> After Dark is a self-hosted flat-file CMS built on Hugo designed to create static websites ungodly fast.
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
@@ -11,16 +11,14 @@
 
 ## Features
 
-Here are a few highlights of what's included:
+- [Web Mining](https://vhs.codeberg.page/after-dark/#feature-mining)
+- [Unreal Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics)
+- [Ludicrous Speed](https://vhs.codeberg.page/after-dark/#feature-speed)
+- [Fully Customizable](https://vhs.codeberg.page/after-dark/#feature-customize)
+- [Offline Search](https://vhs.codeberg.page/after-dark/#feature-search)
+- [Securely Designed](https://vhs.codeberg.page/after-dark/#feature-security)
 
-- Create lazy-loading responsive images and galleries without touching an image editor.
-- Load entire pages in less than half a second without relying on complex build systems.
-- Locate indexable content anywhere on your site even without an Internet connection.
-- Toggle between 1 of 8 customizable skin styles or disable entirely and roll your own.
-- Earn incentives for staying up-to-date and reward your creativity as you work.
-- Validate the integrity of your codebase using secure cryptographic release hashes.
-
-Visit [vhs.codeberg.page/after-dark](https://vhs.codeberg.page/after-dark) for demo, docs and more detail.
+And a lot more. Visit [vhs.codeberg.page/after-dark](https://vhs.codeberg.page/after-dark) to get a feel for what's possible.
 
 ## Screenshots
 
@@ -76,21 +74,15 @@ Visit [vhs.codeberg.page/after-dark](https://vhs.codeberg.page/after-dark) for d
 
 ## Getting Started
 
-[Install Hugo](https://gohugo.io/getting-started/installing) before getting started.
+Please [Install Hugo](https://gohugo.io/getting-started/installing) `0.44` or greater before getting started.
 
 ### Installation
 
-Use [Quick Installer](https://vhs.codeberg.page/after-dark/feature/quick-installer/) to start a new site:
+For scripted installation please use [Quick Install](https://vhs.codeberg.page/after-dark/feature/quick-install/). Otherwise download a copy and:
 
-```shell
-wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
+```sh
+hugo serve --theme after-dark
 ```
-
-Scripted installation should complete in 5-10 seconds depending on connection speed:
-
-<a href="https://asciinema.org/a/E1Ds7jbjhTel52PvMqZzuGsWE" target="_blank"><img src="https://asciinema.org/a/E1Ds7jbjhTel52PvMqZzuGsWE.png" alt="Quick Installer screenshot"></a>
-
-Manual installation possible via `git clone` or by simply downloading one of the [available releases](https://codeberg.org/vhs/after-dark/releases) to the themes directory of an existing hugo site and then serve the site with `hugo serve --theme after-dark`. Each release includes an example website in the `/docs` directory to help you get started.
 
 ### Upgrading
 
@@ -102,7 +94,7 @@ If installed or upgraded via script you may use the [Release Validator](https://
 
 ### Help
 
-Complete [Online Help](https://vhs.codeberg.page/after-dark/feature/online-help/) documentation included with installation.
+Complete [Online Help](https://vhs.codeberg.page/after-dark/feature/online-help/) included in the `/docs` directory.
 
 ## License
 
