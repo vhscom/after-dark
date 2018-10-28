@@ -1,6 +1,6 @@
 +++
 title = "After Dark"
-description = "After Dark is an extensible flat-file CMS built on Hugo designed to create incredibly fast static websites."
+description = "After Dark is a self-hosted flat-file CMS built on Hugo designed to create static websites ungodly fast."
 images = [
   "https://vhs.codeberg.page/after-dark/images/screenshots/example-landing-page-fs8.png"
 ]
@@ -17,7 +17,7 @@ images = [
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is an extensible flat-file CMS built on Hugo designed to create incredibly fast static websites which are easy to learn, rewarding to build, simple to maintain and securely designed.</p>
+    <p>After Dark is a self-hosted flat-file CMS built on Hugo designed to create static websites ungodly fast.</p>
   </div>
 </section>
 
@@ -44,11 +44,11 @@ images = [
       stroke: #ff9800;
     }
   </style>
-  {{< external rel="noopener" target="_self" href="/feature/quick-installer" >}}
+  {{< external rel="noopener" target="_self" href="/feature/quick-install" >}}
     {{< hackcss-button type="primary" isghost="true" >}}
       <svg class="i-download" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30"></path>
-      </svg>&nbsp;&nbsp;Quick Installer
+      </svg>&nbsp;&nbsp;Quick Install
     {{< /hackcss-button >}}
   {{< /external >}}
   <!-- <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">

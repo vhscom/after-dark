@@ -40,4 +40,4 @@ Generating help documentation ...<br>
 Upgrade complete! Please see CHANGELOG.md for changes.</samp>
 {{< /hackcss-alert >}}
 
-Like [Quick Installer](../quick-installer) the upgrade script is written to POSIX standard will not require additional dependencies to operate on most systems. Upon upgrade the [Release Hash](../release-hashes) will update as well so you may [Validate Release](/validate).
+Like [Quick Install](../quick-install) the upgrade script is written to POSIX standard will not require additional dependencies to operate on most systems. Upon upgrade the [Release Hash](../release-hashes) will update as well so you may [Validate Release](/validate).
