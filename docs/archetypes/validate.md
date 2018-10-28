@@ -25,7 +25,7 @@ noindex = true
   {{< /hackcss-formgroup >}}
 {{< /hackcss-form >}}
 
-<small>Valid installations use the [Quick Installer](/feature/quick-installer) or [Upgrade Script](/feature/upgrade-script) and may be checked offline. See [Release Hashes](/feature/release-hashes) for a more thorough approach to validation.</small>
+<small>Valid installations use the [Quick Install](/feature/quick-install) or [Upgrade Script](/feature/upgrade-script) and may be checked offline. See [Release Hashes](/feature/release-hashes) for a more thorough approach to validation.</small>
 
 <script>
   (function (window, document, undefined) {
