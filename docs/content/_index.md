@@ -1,6 +1,6 @@
 +++
 title = "After Dark"
-description = "After Dark is a self-hosted flat-file CMS built on Hugo designed to create static websites ungodly fast."
+description = "After Dark is a hypermedia authoring toolkit built on Hugo designed to creating fast static websites with ungodly speed."
 images = [
   "https://vhs.codeberg.page/after-dark/images/screenshots/example-landing-page-fs8.png"
 ]
@@ -17,7 +17,7 @@ images = [
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is a self-hosted flat-file CMS built on Hugo designed to create static websites ungodly fast.</p>
+    <p>After Dark is a hypermedia authoring toolkit built with Hugo for creating fast static websites with ungodly speed.</p>
   </div>
 </section>
 
@@ -115,7 +115,7 @@ images = [
 </section>
 
 <section id="feature-speed" class="feature">
-  <svg id="i-lightning" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <svg class="i-lightning" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
   </svg>
   <h2>Ludicrous Speed</h2>
