@@ -1,6 +1,6 @@
 # After Dark
 
-> After Dark is a self-hosted flat-file CMS built on Hugo designed to create static websites ungodly fast.
+> After Dark is a hypermedia authoring toolkit built with Hugo for creating fast static websites with ungodly speed.
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
