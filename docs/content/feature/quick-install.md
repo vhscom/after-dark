@@ -72,4 +72,4 @@ Script should complete in 5-10 seconds resulting in a sample site and help docs:
   caption="After Dark Quick Install running to completion in Terminal on macOS Mojave."
 >}}
 
-If you'd prefer not to run the script you can still [Download Manually](/#download) and use [Online Help](../feature/online-help) as an example to get you started.
+If you'd prefer not to run the script you can still [Download Manually](/#download) and use [Online Help](../online-help) as an example to get you started.
