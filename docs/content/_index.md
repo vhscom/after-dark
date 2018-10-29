@@ -44,7 +44,7 @@ images = [
       stroke: #ff9800;
     }
   </style>
-  {{< external rel="noopener" target="_self" href="/feature/quick-install" >}}
+  {{< external rel="noopener" target="_self" href="/feature/quick-install/" >}}
     {{< hackcss-button type="primary" isghost="true" >}}
       <svg class="i-download" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30"></path>
@@ -94,8 +94,8 @@ images = [
   <small><i style="color:lime">(Now in Beta!)</i></small>
   <p>Earn incentives for staying up-to-date and reward your creativity throughout the entire content publishing lifecycle, start to finish.</p>
   <nav><p>
-    <a href="/module/toxic-swamp">Get Started</a> |
-    <a href="/module/toxic-swamp#config-generator">Generate Config</a>
+    <a href="/module/toxic-swamp/">Get Started</a> |
+    <a href="/module/toxic-swamp/#config-generator">Generate Config</a>
   </p></nav>
 </section>
 
@@ -107,10 +107,10 @@ images = [
   <h2>Unreal Graphics</h2>
   <p>Create lazy-loading responsive images and galleries with low-quality image placeholders and special effects all without touching an image editor.</p>
   <nav><p>
-    <a href="/shortcode/figure">Figures</a> |
-    <a href="/feature/post-images">Post Images</a> |
-    <a href="/module/hall-of-mirrors">Galleries</a> |
-    <a href="/module/fractal-forest">BPG</a>
+    <a href="/shortcode/figure/">Figures</a> |
+    <a href="/feature/post-images/">Post Images</a> |
+    <a href="/module/hall-of-mirrors/">Galleries</a> |
+    <a href="/module/fractal-forest/">BPG</a>
   </p></nav>
 </section>
 
@@ -121,9 +121,9 @@ images = [
   <h2>Ludicrous Speed</h2>
   <p>Load entire pages in less than half a second without relying on complex build systems and generate entire websites with hummingbird speed.</p>
   <nav><p>
-    <a href="/feature/fetch-injection">Fetch Inject</a> |
-    <a href="/feature/lazy-loading">Lazy Load</a> |
-    <a href="/feature/jit-requests">JIT Requests</a>
+    <a href="/feature/fetch-injection/">Fetch Inject</a> |
+    <a href="/feature/lazy-loading/">Lazy Load</a> |
+    <a href="/feature/jit-requests/">JIT Requests</a>
   </p></nav>
 </section>
 
@@ -134,10 +134,10 @@ images = [
   <h2>Fully Customizable</h2>
   <p>Toggle between 1 of 8 skin styles or disable them entirely and use custom layouts and styles to take complete design control.</p>
   <nav><p>
-    <a href="/feature/display-variants">Skins</a> |
-    <a href="/feature/custom-layouts">Layouts</a> |
-    <a href="/feature/custom-styles">Styles</a> |
-    <a href="/feature/svg-favicon">Favicons</a>
+    <a href="/feature/skin-styles/">Skins</a> |
+    <a href="/feature/custom-layouts/">Layouts</a> |
+    <a href="/feature/custom-styles/">Styles</a> |
+    <a href="/feature/svg-favicon/">Favicons</a>
   </p></nav>
 </section>
 
@@ -149,8 +149,8 @@ images = [
   <h2>Offline Search</h2>
   <p>Locate indexable content anywhere on your site in the blink of an eye, even without an Internet connection. No registration required.</p>
   <nav><p>
-    <a href="/feature/fuzzy-search">Fuzzy Search</a> |
-    <a href="/shortcode/form">Form Controls</a> |
+    <a href="/feature/fuzzy-search/">Fuzzy Search</a> |
+    <a href="/shortcode/form/">Form Controls</a> |
     <a href="/search/?s=lay%20load">Try It Now</a>
   </p></nav>
 </section>
@@ -163,8 +163,8 @@ images = [
   <h2>Securely Designed</h2>
   <p>Validate the integrity of your codebase using secure cryptographic release hashes and upgrade your site in seconds with a single command.</p>
   <nav><p>
-    <a href="/feature/release-hashes">Release Hashes</a> |
-    <a href="/feature/upgrade-script">Upgrade Script</a>
+    <a href="/feature/release-hashes/">Release Hashes</a> |
+    <a href="/feature/upgrade-script/">Upgrade Script</a>
   </p></nav>
 </section>
 

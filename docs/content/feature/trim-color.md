@@ -6,9 +6,9 @@ tags = ["color", "style", "branding"]
 features = ["code highlighter", "snippets", "related content"]
 +++
 
-Trim color can sometimes affect how a browser or OS chooses to display the site. In {{< external href="https://brave.com/" text="Brave" />}} adjusting trim color affects the appearance of the location bar. By default trim color is set to background color of the current [Display Variant](../display-variants).
+Trim color can sometimes affect how a browser or OS chooses to display borders and accent colors for your site. In {{< external href="https://brave.com/" text="Brave" />}}, for example, adjusting trim color affects stylizes the location bar. Set a trim color to customize this behavior.
 
-Define trim color in your [Custom Styles](../custom-styles) by declaring the `--trim-color` variable inside a `:root` selector at the top of the file:
+The default trim color is automatically set to background color of the currently selected [Skin Style](../skin-styles). Override the default in your [Custom Styles](../custom-styles) by declaring the `--trim-color` variable inside a `:root` selector at the top of the file:
 
 {{< highlight css "linenos=inline" >}}
 :root {
