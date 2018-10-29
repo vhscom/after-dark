@@ -1,12 +1,15 @@
 +++
-title = "Display Variants"
-description = "Choose one of eight included skin styles."
+title = "Skin Styles"
+description = "Choose one of eight customizable skin styles."
 categories = ["customizing"]
 tags = ["color", "style", "branding"]
 features = ["code highlighter", "snippets", "related content"]
+aliases = [
+  "/feature/display-variants/"
+]
 +++
 
-After Dark uses {{< external href="https://hackcss.egoist.moe" text="hackcss" />}} to provide four color palettes and two display modes. Toggle between them from {{< external href="https://gohugo.io/getting-started/configuration/" text="Site Configuration" />}} for 8 possible styles.
+After Dark uses {{< external href="https://hackcss.egoist.moe" text="hackcss" />}} to provide four color palettes and two display modes. Toggle between them from your {{< external href="https://gohugo.io/getting-started/configuration/" text="site configuration" />}} for 8 possible combinations:
 
 <style>table[summary] td pre { margin:0 }</style>
 <table summary="Display Variations">
@@ -68,13 +71,31 @@ After Dark uses {{< external href="https://hackcss.egoist.moe" text="hackcss" />
   </tbody>
 </table>
 
-The default display variant uses the `dark` color palette with the `hack` display mode. No configuration is necessary to use the default display variant.
+The default skin uses the `dark` color palette with the `hack` display mode. No configuration is necessary to use the default skin.
 
-Disable display variants entirely with `disabled = true`:
+Choose a skin style from your site configuration. For example, to set a dark grey color _without_ the stylistic `markdown` treatment update your config like:
+
+{{< hackcss-card header="config.toml" >}}
+{{< highlight toml "linenos=inline" >}}
+baseurl = "https://letterboxd.com/"
+languageCode = "en-US"
+title = "A Scanner Darkly"
+
+[params]
+  description = "An undercover cop in a not-too-distant future becomes involved with a dangerous new drug and begins to lose his own identity as a result."
+  images = ["https://a.ltrbxd.com/resized/sm/upload/e3/kt/un/fi/nZuqo9yQpEo447sH0w0MFBgdT6J-1200-1200-675-675-crop-000000.jpg"]
+
+[params.hackcss]
+  mode = "standard"
+  palette = "dark-grey"
+{{< /highlight >}}
+{{< /hackcss-card >}}
+
+Disable skin styles by setting the `disabled` flag:
 
 ```toml
 [params.hackcss]
-  disabled = true # disable the display variant
+  disabled = true # disable skin styles entirely
 ```
 
-When changing variants review [Custom Styles](../custom-styles), [Trim Color](../trim-color) and [Error Page](../error-page), making any adjustments necessary to achieve the desired look-and-feel.
+When changing colors review [Custom Styles](../custom-styles), [Trim Color](../trim-color) and [Error Page](../error-page), making any adjustments necessary to achieve the desired look-and-feel.
