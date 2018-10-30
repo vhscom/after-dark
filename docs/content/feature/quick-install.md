@@ -46,7 +46,7 @@ Run the script however you like. Here are three possible methods:
 chmod +x install && ./install{{< /highlight >}}
     {{< /hackcss-alert >}}
 
-    <i>(It's safe it it comes from a CDN, ammirite?)</i>
+    <i>(It's safe if it comes from a CDN, amirite?)</i>
 
 3. From canonical `git` clone:
 
