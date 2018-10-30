@@ -1,6 +1,6 @@
 +++
 title = "After Dark"
-description = "After Dark is a hypermedia authoring toolkit built on Hugo designed to creating fast static websites with ungodly speed."
+description = "After Dark is a hypermedia authoring toolkit built with Hugo designed to create the worlds fastest, most scalable websites imaginable."
 images = [
   "https://vhs.codeberg.page/after-dark/images/screenshots/example-landing-page-fs8.png"
 ]
@@ -17,7 +17,7 @@ images = [
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is a hypermedia authoring toolkit built with Hugo for creating fast static websites with ungodly speed.</p>
+    <p>After Dark is a hypermedia authoring toolkit built with Hugo designed to create the worlds fastest, most scalable websites imaginable.</p>
   </div>
 </section>
 
@@ -69,7 +69,7 @@ images = [
   </svg>
   <h2>Beyond Compare</h2>
   <table>
-    <legend>Realize new efficiencies in your publishing workflow with a unique set of capabilities you won't find anywhere else:</legend>
+    <legend>Reimagine your publishing workflow with an array of capabilities specifically designed to greatly simplify site maintenance and speed-up content delivery:</legend>
     <tr>
       <th scope="col" width="25%">Features</th>
       <th scope="col" width="25%">Modules</th>
@@ -105,7 +105,7 @@ images = [
     <circle cx="10" cy="9" r="3" />
   </svg>
   <h2>Unreal Graphics</h2>
-  <p>Create lazy-loading responsive images and galleries with low-quality image placeholders and special effects all without touching an image editor.</p>
+  <p>Create lazy-loading responsive images and galleries with low-quality image placeholders and special effects without even touching an image editor.</p>
   <nav><p>
     <a href="/shortcode/figure/">Figures</a> |
     <a href="/feature/post-images/">Post Images</a> |
@@ -119,7 +119,7 @@ images = [
     <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
   </svg>
   <h2>Ludicrous Speed</h2>
-  <p>Load entire pages in less than half a second without relying on complex build systems and generate entire websites with hummingbird speed.</p>
+  <p>Load pages over the wire in milliseconds without relying on complex build systems and generate over 1000 pages per second using commodity hardware.</p>
   <nav><p>
     <a href="/feature/fetch-injection/">Fetch Inject</a> |
     <a href="/feature/lazy-loading/">Lazy Load</a> |
@@ -132,7 +132,7 @@ images = [
     <path d="M27 15 L27 30 2 30 2 5 17 5 M30 6 L26 2 9 19 7 25 13 23 Z M22 6 L26 10 Z M9 19 L13 23 Z" />
   </svg>
   <h2>Fully Customizable</h2>
-  <p>Toggle between 1 of 8 skin styles or disable them entirely and use custom layouts and styles to take complete design control.</p>
+  <p>Toggle between 1 of 8 customizable skin styles or disable them entirely and use custom layouts and styles to take complete design control.</p>
   <nav><p>
     <a href="/feature/skin-styles/">Skins</a> |
     <a href="/feature/custom-layouts/">Layouts</a> |
@@ -147,7 +147,7 @@ images = [
     <path d="M23 23 L30 30"  />
   </svg>
   <h2>Offline Search</h2>
-  <p>Locate indexable content anywhere on your site in the blink of an eye, even without an Internet connection. No registration required.</p>
+  <p>Locate content crawlable by search engines anywhere on your site instantly, even without an Internet connection. No registration required.</p>
   <nav><p>
     <a href="/feature/fuzzy-search/">Fuzzy Search</a> |
     <a href="/shortcode/form/">Form Controls</a> |
@@ -161,10 +161,12 @@ images = [
     <circle cx="16" cy="24" r="1" />
   </svg>
   <h2>Securely Designed</h2>
-  <p>Validate the integrity of your codebase using secure cryptographic release hashes and upgrade your site in seconds with a single command.</p>
+  <p>Verify you are using a genuine After Dark release online or off using secure cryptographic release hashes and upgrade your site remotely in seconds.</p>
   <nav><p>
-    <a href="/feature/release-hashes/">Release Hashes</a> |
-    <a href="/feature/upgrade-script/">Upgrade Script</a>
+    <a href="/validate/">Validate</a> |
+    <a href="/feature/upgrade-script/">Upgrade</a> |
+    <a href="/feature/release-hashes/">Learn More</a>
+
   </p></nav>
 </section>
 
