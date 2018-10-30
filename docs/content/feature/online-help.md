@@ -1,31 +1,33 @@
 +++
 title = "Online Help"
-description = "Complete After Dark help manual and demo website."
+description = "Complete self-hosted help guide and example website."
 categories = ["experience"]
 tags = ["scripts", "security", "networking"]
-features = ["related content"]
+features = ["related content", "code highlighter", "snippets"]
 +++
 
-Navigate to http://localhost:1414 to view the online help docs after running [Quick Install](../quick-install). Everything you see here is included there for [offline use](../air-gapping).
+After Dark includes an extensive online help manual and example website.
 
----
+View help docs locally by navigating to http://localhost:1414 following a [Quick Install](../quick-install) or after running the [Upgrade Script](../upgrade-script). Internet connection not required.
 
-Using the `help` script to view help docs anytime:
+If help is not running you may start it anytime via script:
 
-{{< hackcss-alert type="info" >}}
+{{< hackcss-alert >}}
 {{< highlight sh >}}
 cd flying-toasters && \
 ./themes/after-dark/bin/help
 {{< /highlight >}}
 {{< /hackcss-alert >}}
 
-Or create an alias and serve docs with live-reload for testing:
+Or simply create an alias and serve docs with live-reload:
 
-{{< hackcss-alert type="info" >}}
+{{< hackcss-alert >}}
 {{< highlight sh >}}
 alias hs='hugo serve --navigateToChanged' && \
 hs --port 1414 --source themes/after-dark/docs
 {{< /highlight >}}
 {{< /hackcss-alert >}}
 
-Get the latest documentation using the [Upgrade Script](../upgrade-script/).
+Help is included within the After Dark source code. So each new release will include the latest help docs, specific to that particular version.
+
+Upgrade to get the latest updates using the [Upgrade Script](../upgrade-script/).
