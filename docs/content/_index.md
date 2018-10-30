@@ -1,6 +1,6 @@
 +++
 title = "After Dark"
-description = "After Dark is a hypermedia authoring toolkit built with Hugo designed to create the worlds fastest, most scalable websites imaginable."
+description = "After Dark is a hypermedia authoring toolkit built with Hugo designed to create the world's fastest, most scalable websites imaginable."
 images = [
   "https://vhs.codeberg.page/after-dark/images/screenshots/example-landing-page-fs8.png"
 ]
@@ -17,7 +17,7 @@ images = [
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is a hypermedia authoring toolkit built with Hugo designed to create the worlds fastest, most scalable websites imaginable.</p>
+    <p>After Dark is a hypermedia authoring toolkit built with Hugo designed to create the world's fastest, most scalable websites imaginable.</p>
   </div>
 </section>
 
