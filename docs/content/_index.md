@@ -45,7 +45,7 @@ images = [
     }
   </style>
   {{< external rel="noopener" target="_self" href="/feature/quick-install/" >}}
-    {{< hackcss-button type="primary" isghost="true" >}}
+    {{< hackcss-button type="primary" disabled="true" isghost="true" >}}
       <svg class="i-download" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30"></path>
       </svg>&nbsp;&nbsp;Quick Install
