@@ -13,7 +13,7 @@ aliases = [
 ]
 +++
 
-After Dark source includes a portable installation script for quick set-up:
+After Dark includes a portable installation script for quick set-up:
 
 <style>.card-content .inner { overflow: scroll; max-height: 30em; }</style>
 {{< hackcss-card header="themes/after-dark/bin/install" >}}
@@ -25,7 +25,7 @@ After Dark source includes a portable installation script for quick set-up:
 </details>
 {{< /hackcss-card >}}
 
-Use of the script is optional, but it will save you time.
+Please install {{< external href="https://gohugo.io" text="Hugo" />}} `0.44` or greater before running the script.
 
 Script has been tested on Debian, BusyBox and Darwin, and should also work under Alpine, Ubuntu, Docker and Windows via {{< external href="http://cmder.net" text="Cmder" />}} without additional dependencies.
 
