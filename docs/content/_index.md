@@ -104,8 +104,8 @@ images = [
     <path d="M20 24 L12 16 2 26 2 2 30 2 30 24 M16 20 L22 14 30 22 30 30 2 30 2 24" />
     <circle cx="10" cy="9" r="3" />
   </svg>
-  <h2>Unreal Graphics</h2>
-  <p>Create lazy-loading responsive images and galleries with low-quality image placeholders and special effects without even touching an image editor.</p>
+  <h2>Advanced Grahpics</h2>
+  <p>Add a spash of color with your favorite high-res images, responsively using advanced performance techniques and visual effects without touching an image editor.</p>
   <nav><p>
     <a href="/shortcode/figure/">Figures</a> |
     <a href="/feature/post-images/">Post Images</a> |
@@ -114,11 +114,25 @@ images = [
   </p></nav>
 </section>
 
+<section id="feature-search" class="feature">
+  <svg id="i-search" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <circle cx="14" cy="14" r="12" />
+    <path d="M23 23 L30 30"  />
+  </svg>
+  <h2>Fuzzy Search</h2>
+  <p>Fat finger your way though your site content using a lightweight, customizable fuzzy search app built with auto-indexing and offline support.</p>
+  <nav><p>
+    <a href="/search/?s=lay%20load">Try It Now</a> |
+    <a href="/feature/fuzzy-search/">More Detail</a>
+  </p></nav>
+</section>
+
 <section id="feature-speed" class="feature">
   <svg class="i-lightning" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
   </svg>
-  <h2>Ludicrous Speed</h2>
+  <h2>Ludicrous speed</h2>
+  <p>Offline page renders in ~30ms with unprimed cache and online in less than 100-500ms when served over CDN with edge caching.</p>
   <p>Load pages over the wire in milliseconds without relying on complex build systems and generate over 1000 pages per second using commodity hardware.</p>
   <nav><p>
     <a href="/feature/fetch-injection/">Fetch Inject</a> |
@@ -131,27 +145,13 @@ images = [
   <svg id="i-compose" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M27 15 L27 30 2 30 2 5 17 5 M30 6 L26 2 9 19 7 25 13 23 Z M22 6 L26 10 Z M9 19 L13 23 Z" />
   </svg>
-  <h2>Fully Customizable</h2>
+  <h2>Easily Customized</h2>
   <p>Toggle between 1 of 8 customizable skin styles or disable them entirely and use custom layouts and styles to take complete design control.</p>
   <nav><p>
     <a href="/feature/skin-styles/">Skins</a> |
     <a href="/feature/custom-layouts/">Layouts</a> |
     <a href="/feature/custom-styles/">Styles</a> |
     <a href="/feature/svg-favicon/">Favicons</a>
-  </p></nav>
-</section>
-
-<section id="feature-search" class="feature">
-  <svg id="i-search" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <circle cx="14" cy="14" r="12" />
-    <path d="M23 23 L30 30"  />
-  </svg>
-  <h2>Offline Search</h2>
-  <p>Locate content crawlable by search engines anywhere on your site instantly, even without an Internet connection. No registration required.</p>
-  <nav><p>
-    <a href="/feature/fuzzy-search/">Fuzzy Search</a> |
-    <a href="/shortcode/form/">Form Controls</a> |
-    <a href="/search/?s=lay%20load">Try It Now</a>
   </p></nav>
 </section>
 
