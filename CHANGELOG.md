@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.13.4"></a>
+## [6.13.4](https://codeberg.org/vhs/after-dark/compare/v6.13.3...v6.13.4) (2018-11-05)
+
+
+### Bug Fixes
+
+* **assets/css:** normalize size of help text on small viewports ([bc0e33f](https://codeberg.org/vhs/after-dark/commits/bc0e33f))
+
+
+### Reverts
+
+* **help/home:** disable button wrapped in anchor tag ([88e4b17](https://codeberg.org/vhs/after-dark/commits/88e4b17))
+
+
+
 <a name="6.13.3"></a>
 ## [6.13.3](https://codeberg.org/vhs/after-dark/compare/v6.13.2...v6.13.3) (2018-10-18)
 
