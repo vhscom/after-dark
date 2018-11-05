@@ -1,7 +1,7 @@
 {
   "name": "after-dark",
   "version": "6.13.3",
-  "description": "After Dark is a hypermedia authoring toolkit built with Hugo designed to create the world's fastest, most scalable websites imaginable.",
+  "description": "The fastest way to the IndieWeb.",
   "author": "VHS <vhsdev@tutanota.com>",
   "keywords": [
     "hugo",
@@ -36,15 +36,15 @@
   },
   "devDependencies": {
     "atom-one-chroma": "^2.0.0",
-    "fuse.js": "^3.2.1",
+    "fuse.js": "^3.3.0",
     "hack": "^0.8.1",
-    "lazysizes": "^4.0.4",
+    "lazysizes": "^4.1.4",
+    "lodash-cli": "^4.17.5",
     "mark.js": "^8.11.1",
     "smoothscroll-polyfill": "^0.4.3",
-    "vue": "^2.5.16",
-    "lodash-cli": "^4.17.5",
     "standard-version": "^4.4.0",
-    "toxic-swamp": "git+ssh://git@git.vhs.codeberg.page/vhs/toxic-swamp.git#v0.1.0-alpha.0"
+    "toxic-swamp": "git+ssh://git@git.vhs.codeberg.page/vhs/toxic-swamp.git#v0.1.0-alpha.0",
+    "vue": "^2.5.16"
   },
   "license": "WTFPL"
 }
