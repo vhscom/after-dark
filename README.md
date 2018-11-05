@@ -1,6 +1,6 @@
 # After Dark
 
-> After Dark is a hypermedia authoring toolkit built with Hugo designed to create the world's fastest, most scalable websites imaginable.
+> After Dark is a hypermedia authoring toolkit built on Hugo designed to create the world's fastest, most scalable websites.
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
