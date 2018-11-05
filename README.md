@@ -12,13 +12,13 @@
 ## Features
 
 - [Web Mining](https://vhs.codeberg.page/after-dark/#feature-mining)
-- [Unreal Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics)
+- [Advanced Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics)
+- [Fuzzy Search](https://vhs.codeberg.page/after-dark/#feature-search)
 - [Ludicrous Speed](https://vhs.codeberg.page/after-dark/#feature-speed)
-- [Fully Customizable](https://vhs.codeberg.page/after-dark/#feature-customize)
-- [Offline Search](https://vhs.codeberg.page/after-dark/#feature-search)
+- [Easily Customized](https://vhs.codeberg.page/after-dark/#feature-customize)
 - [Securely Designed](https://vhs.codeberg.page/after-dark/#feature-security)
 
-And a lot more. Visit [vhs.codeberg.page/after-dark](https://vhs.codeberg.page/after-dark) to get a feel for what's possible.
+Visit the [Online Help](https://vhs.codeberg.page/after-dark) docs to learn
 
 ## Screenshots
 
@@ -94,7 +94,7 @@ If installed or upgraded via script you may use the [Release Validator](https://
 
 ### Help
 
-Complete [Online Help](https://vhs.codeberg.page/after-dark/feature/online-help/) included in the `/docs` directory.
+[Online Help](https://vhs.codeberg.page/after-dark/feature/online-help/) may be served locally with `hugo --source themes/after-dark/docs` upon installation and hosted online at vhs.codeberg.page/after-dark. WYSIWYG.
 
 ## License
 
