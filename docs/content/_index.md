@@ -21,45 +21,17 @@ images = [
   </div>
 </section>
 
-<section class="hero">
-  <style>
-    a[target=_self] {
-      border-bottom: unset;
-    }
-    a[target=_self]:hover {
-      background-color: transparent;
-    }
-    button.btn.btn-ghost.btn-primary {
-      border-radius: 4px;
-      color: #ccc;
-      background-color: #ff2e8860;
-      border: unset;
-      transition: all 0.25s ease;
-    }
-    button.btn.btn-ghost.btn-primary:hover {
-      background-color: #ff2e8880;
-      color: #fff;
-    }
-    button.btn.btn-ghost.btn-primary svg {
-      stroke: #ff9800;
-    }
-  </style>
-  {{< external rel="noopener" target="_self" href="/feature/quick-install/" >}}
+<section class="install cta">
+  {{< hackcss-form action="/feature/quick-install" >}}
     {{< hackcss-button type="primary" isghost="true" >}}
       <svg class="i-download" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30"></path>
       </svg>&nbsp;&nbsp;Quick Install
     {{< /hackcss-button >}}
-  {{< /external >}}
-  <!-- <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M30 10 L16 26 2 10 Z" />
-  </svg>
-  <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M30 10 L16 26 2 10 Z" />
-  </svg>
-  <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M30 10 L16 26 2 10 Z" />
-  </svg> -->
+  {{< /hackcss-form >}}
+</section>
+
+<section class="hero">
   {{< figure alt="After Dark screenshots" src="/images/minimal-mac_1600x1200-fs8.png" lqipsrc="/images/minimal-mac_800x600-fs8.png" >}}
 </section>
 
@@ -67,9 +39,9 @@ images = [
   <svg id="i-options" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M28 6 L4 6 M28 16 L4 16 M28 26 L4 26 M24 3 L24 9 M8 13 L8 19 M20 23 L20 29" />
   </svg>
-  <h2>Beyond Compare</h2>
+  <h2>Streamlined Workflow</h2>
   <table>
-    <legend>Reimagine your publishing workflow with an array of capabilities specifically designed to greatly simplify site maintenance and speed-up content delivery:</legend>
+    <legend>Ditch the bundler and reimagine your publishing workflow with capabilities designed to simplify site maintenance and speed-up content delivery:</legend>
     <tr>
       <th scope="col" width="25%">Features</th>
       <th scope="col" width="25%">Modules</th>
@@ -131,8 +103,7 @@ images = [
   <svg class="i-lightning" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
   </svg>
-  <h2>Ludicrous speed</h2>
-  <p>Offline page renders in ~30ms with unprimed cache and online in less than 100-500ms when served over CDN with edge caching.</p>
+  <h2>Ludicrous Speed</h2>
   <p>Load pages over the wire in milliseconds without relying on complex build systems and generate over 1000 pages per second using commodity hardware.</p>
   <nav><p>
     <a href="/feature/fetch-injection/">Fetch Inject</a> |
@@ -213,4 +184,5 @@ images = [
       {{< /external >}}
     </div>
   </section>
+
 </footer>

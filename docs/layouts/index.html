@@ -69,8 +69,25 @@
     .hack header h2 {
       margin-top: -1rem;
     }
-    .hack header h2 i {
-      border-bottom: 1px solid currentcolor;
+    .hack .install.cta {
+      margin-bottom: 2rem;
+    }
+    .hack .install.cta form[action*="quick-install"] {
+      width: unset;
+    }
+    .hack .install.cta form[action*="quick-install"] button {
+      border-radius: 4px;
+      color: #ccc;
+      background-color: #ff2e8860;
+      transition: all 0.25s ease;
+    }
+    .hack .install.cta form[action*="quick-install"] button:hover,
+    .hack .install.cta form[action*="quick-install"] button:focus {
+      background-color: #ff2e8880;
+      color: #fff;
+    }
+    .hack .install.cta form[action*="quick-install"] button svg {
+      stroke: #ff9800;
     }
     .hack section:not(.capabilities) {
       margin: var(--vertical-rhythm) 0;
@@ -129,7 +146,7 @@
 {{ define "main" }}
   <header>
     <h1>{{ .Title }}<sup class="muted">v{{ .Site.Data.npm.latest.version }}</sup></h1>
-    <h2 class="muted">The <i>fastest</i> way to the IndieWeb.</h2>
+    <h2 class="muted">The <i style="color:#ff2e88">fastest</i> way to the <span style="color:#ff9800">IndieWeb</span>.</h2>
   </header>
   {{ .Content }}
 {{ end }}
