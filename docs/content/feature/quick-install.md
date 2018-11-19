@@ -73,3 +73,61 @@ Script should complete in 5-10 seconds resulting in a sample site and help docs:
 >}}
 
 If you'd prefer not to run the script you can still [Download Manually](/#download) and use [Online Help](../online-help) as an example to get you started.
+
+# Multi-site Configuration
+
+After Dark enables multi-site management from a single installation. To manage multiple websites use the `-c` and `-d` flags to specify the `content` and `destination` directories, respectively
+
+For example, to generate an audio site using the current After Dark installation create an executable script to generate the site:
+
+{{< hackcss-card header="flying-toasters/bin/gen-audio-site" >}}
+{{< highlight shell >}}#!/bin/sh
+hugo -c sites/audio -d public/audio.domain.example{{< /highlight >}}
+{{< /hackcss-card >}}
+
+Where `audio` contains the content for that site:
+
+```
+├── layouts
+├── sites
+│   └── audio
+│       ├── audiobooks
+│       │   ├── gaining-currency.md
+│       │   └── the-power-of-now.md
+│       └── clips
+│           └── war-of-the-worlds.md
+├── static
+```
+
+And `public` contains a folder for each site:
+
+```
+public
+└── audio.balibebas.com
+    ├── categories
+    │   └── index.xml
+    ├── audiobooks
+    │   └── index.html
+    ├── clips
+    │   └── index.html
+    ├── css
+    ├── index.html
+    ├── index.xml
+    ├── js
+    ├── sitemap.xml
+    └── tags
+        └── index.xml
+```
+
+And create a another script to serve the content for editing:
+
+{{< hackcss-card header="flying-toasters/bin/serve-audio-site" >}}
+{{< highlight shell >}}#!/bin/sh
+hugo -c sites/audio{{< /highlight >}}
+{{< /hackcss-card >}}
+
+Each subdirectory of `public` then becomes an independent, deployable website and exact copy save for destination content generated.
+
+{{% hackcss-alert type="info" %}}**Tip:** For additional flexibility type `hugo --help` and modify your scripts using the `--theme` and `--config` flags.{{% /hackcss-alert %}}
+
+Multi-site is perfect for maintaining a consistent look-and-feel across multiple domain origins while limiting the need to run the [Upgrade Script](/feature/upgrade-script/) for each site.
