@@ -1,6 +1,6 @@
 +++
 title = "After Dark"
-description = "After Dark is a hypermedia authoring toolkit built on Hugo designed to create the world's fastest, most scalable websites."
+description = "After Dark is a hypermedia authoring toolkit built on Hugo designed to amplify the world's most influential voices. Yours."
 images = [
   "https://vhs.codeberg.page/after-dark/images/screenshots/example-landing-page-fs8.png"
 ]
@@ -17,7 +17,7 @@ images = [
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is a hypermedia authoring toolkit built on Hugo designed to create the world's fastest, most scalable websites.</p>
+    <p>After Dark is a hypermedia authoring toolkit built on Hugo designed to amplify the world's most influential voices. Yours.</p>
   </div>
 </section>
 
@@ -76,8 +76,8 @@ images = [
     <path d="M20 24 L12 16 2 26 2 2 30 2 30 24 M16 20 L22 14 30 22 30 30 2 30 2 24" />
     <circle cx="10" cy="9" r="3" />
   </svg>
-  <h2>Advanced Grahpics</h2>
-  <p>Add a spash of color with your favorite high-res images, responsively using advanced performance techniques and visual effects without touching an image editor.</p>
+  <h2>Advanced Graphics</h2>
+  <p>Add high-resolution responsive images using advanced performance techniques and visual effects without touching an image editor.</p>
   <nav><p>
     <a href="/shortcode/figure/">Figures</a> |
     <a href="/feature/post-images/">Post Images</a> |
@@ -180,8 +180,11 @@ images = [
   <section class="grid license">
     <div class="cell -12of12">
       {{< external rel="noopener license" href="https://choosealicense.com/licenses/wtfpl/" >}}
-        <img width="48" src="/images/wtfpl.svg" alt="WTFPL logo" title="After Dark is gratis under WTFPL license.">
+        <img width="48" src="/images/wtfpl.svg" alt="WTFPL logo" title="After Dark is yours, gratis and without restriction, licensed under the WTFPL.">
       {{< /external >}}
+      {{< blockquote cite="Aldous Huxley" >}}
+        Words can be like X-rays if you use them properly – they’ll go through anything. You read and you’re pierced.
+      {{< /blockquote >}}
     </div>
   </section>
 
