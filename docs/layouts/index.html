@@ -133,6 +133,9 @@
       display: block;
       margin: 3rem;
     }
+    .hack footer section.license blockquote {
+      margin-top: 3rem;
+    }
     .hack footer section.license a {
       border-bottom: none;
       background-color: inherit;
@@ -146,7 +149,7 @@
 {{ define "main" }}
   <header>
     <h1>{{ .Title }}<sup class="muted">v{{ .Site.Data.npm.latest.version }}</sup></h1>
-    <h2 class="muted">The <i style="color:#ff2e88">fastest</i> way to the <span style="color:#ff9800">IndieWeb</span>.</h2>
+    <h2 class="muted">The <span style="color:#ff2e88">fastest</span> way to the <span style="color:#ff9800">IndieWeb</span>.</h2>
   </header>
   {{ .Content }}
 {{ end }}
