@@ -168,7 +168,7 @@ images = [
       {{< /external >}}
     </div>
     <div class="cell -2of12">
-      {{< external title="Download" rel="prefetch" target="_self" itemtype="significantLink" href="https://codeberg.org/vhs/after-dark/#getting-started" >}}
+      {{< external title="Download" rel="prefetch" target="_self" itemtype="significantLink" href="https://codeberg.org/vhs/after-dark/releases" >}}
         <svg id="download" aria-labelledby="download-label" class="i-download" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
           <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30" />
         </svg>
