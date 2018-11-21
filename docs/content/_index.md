@@ -1,6 +1,6 @@
 +++
 title = "After Dark"
-description = "After Dark is privacy-focused hypermedia authoring system designed to amplify the world's most influential voices."
+description = "After Dark is a privacy-focused hypermedia authoring system designed to amplify the world's most influential voices."
 images = [
   "https://vhs.codeberg.page/after-dark/images/screenshots/example-landing-page-fs8.png"
 ]
@@ -17,7 +17,7 @@ images = [
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is privacy-focused hypermedia authoring system designed to amplify the world's most influential voices.</p>
+    <p>After Dark is a privacy-focused hypermedia authoring system designed to amplify the world's most influential voices.</p>
   </div>
 </section>
 
