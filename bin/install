@@ -76,7 +76,7 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   author = "" # Optional, controls author name display on posts
   hide_author = true # Optional, set true to hide author name on posts
   show_menu = false # Optional, set true to enable section menu
-  powered_by = true # Optional, set false to disable footer credits
+  has_cookies = false # Optional, set true to disable cookie disclaimer
   images = [
     "https://source.unsplash.com/collection/983219/2000x1322"
   ] # Suggested, controls default Open Graph images
