@@ -1,6 +1,6 @@
 # After Dark
 
-> After Dark is privacy-focused hypermedia authoring system designed to amplify the world's most influential voices.
+> After Dark is a privacy-focused hypermedia authoring system designed to amplify the world's most influential voices.
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
