@@ -37,7 +37,7 @@ Run the script however you like. Here are three possible methods:
     {{< highlight shell >}}wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh{{< /highlight >}}
     {{< /hackcss-alert >}}
 
-    <i>(Kahones not included.)</i>
+    <i>(Cojones not included.)</i>
 
 1. Download into new file, `chmod` and execute:
 
