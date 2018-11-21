@@ -1,7 +1,7 @@
 {
   "name": "after-dark",
   "version": "6.14.0",
-  "description": "After Dark is privacy-focused hypermedia authoring system designed to amplify the world's most influential voices.",
+  "description": "After Dark is a privacy-focused hypermedia authoring system designed to amplify the world's most influential voices.",
   "author": "VHS <vhsdev@tutanota.com>",
   "keywords": [
     "hugo",
