@@ -63,7 +63,6 @@ theme = [
 ]
 
 enableRobotsTXT = true # Suggested, enable robots.txt file
-disqusShortname = "" # Deprecated, add Disqus shortname for comments
 
 pygmentsCodefences = true # Suggested, highlight fenced code blocks
 pygmentsUseClasses = true # Required for custom syntax highlighting
