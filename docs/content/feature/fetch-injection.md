@@ -56,9 +56,9 @@ You can load Bootstrap (w/Font Awesome) and show how long ago it finished:
     const start = moment();
     fetchInject(['/js/bootstrap.min.js'],
       fetchInject([
-        'jquery.slim.min.js',
-        'tether.min.js',
-        'font-awesome.min.css'
+        '/js/jquery.slim.min.js',
+        '/js/tether.min.js',
+        '/css/font-awesome.min.css'
       ])
     ).then(console.log(`Bootstrap Loaded: ${_.capitalize(start.toNow())}.`));
   });
