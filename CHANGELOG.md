@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.14.0"></a>
+# [6.14.0](https://codeberg.org/vhs/after-dark/compare/v6.13.5...v6.14.0) (2018-11-21)
+
+
+### Features
+
+* **layouts/*:** add cookie disclaimer ([e8d9f68](https://codeberg.org/vhs/after-dark/commits/e8d9f68))
+
+
+
 <a name="6.13.5"></a>
 ## [6.13.5](https://codeberg.org/vhs/after-dark/compare/v6.13.4...v6.13.5) (2018-11-19)
 
