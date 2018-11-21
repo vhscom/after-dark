@@ -42,7 +42,7 @@ Run the script however you like. Here are three possible methods:
 1. Download into new file, `chmod` and execute:
 
     {{< hackcss-alert >}}
-    {{< highlight shell >}}curl -O cdn.jsdelivr.net/npm/after-dark@latest/bin/install && \
+    {{< highlight shell >}}curl -O https://cdn.jsdelivr.net/npm/after-dark@latest/bin/install && \
 chmod +x install && ./install{{< /highlight >}}
     {{< /hackcss-alert >}}
 
