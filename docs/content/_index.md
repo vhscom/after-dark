@@ -66,7 +66,7 @@ images = [
   <nav><p>
     <a href="/feature/fetch-injection/">Fetch Inject</a> |
     <a href="/feature/lazy-loading/">Lazy Load</a> |
-    <a href="/feature/jit-requests/">JIT Requests</a>
+    <a target="_blank" rel="external noopener nofollow" href="https://tools.pingdom.com/#59cd513710800000">Benchmark</a>
   </p></nav>
 </section>
 
