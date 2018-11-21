@@ -62,7 +62,7 @@ images = [
     <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
   </svg>
   <h2>Ludicrous Speed</h2>
-  <p>With {{< external text="0.615s average" href="https://forestry.io/blog/hugo-vs-jekyll-benchmark/" />}} builds and sub-second page loads you could conceivably develop and serve your content from IoT device in orbit.</p>
+  <p>With {{< external text="0.615s average" href="https://forestry.io/blog/hugo-vs-jekyll-benchmark/" />}} builds and sub-second page loads you could conceivably develop and serve your content from an ODROID in space.</p>
   <nav><p>
     <a href="/feature/fetch-injection/">Fetch Inject</a> |
     <a href="/feature/lazy-loading/">Lazy Load</a> |
@@ -119,7 +119,7 @@ images = [
   </svg>
   <h2 style="margin-bottom:0.2rem">Web Mining</h2>
   <small><i style="color:lime">(Now in Beta!)</i></small>
-  <p>Earn monetary incentives for remaining up-to-date and reward your creativity throughout the entire content publishing lifecycle, start to finish.</p>
+  <p>Earn incentives for staying up-to-date and monetize attention throughout the entire content publishing lifecycle, start to finish.</p>
   <nav><p>
     <a href="/module/toxic-swamp/">Get Started</a> |
     <a href="/module/toxic-swamp/#config-generator">Generate Config</a>
@@ -137,7 +137,21 @@ images = [
     <a href="/validate/">Validate</a> |
     <a href="/feature/upgrade-script/">Upgrade</a> |
     <a href="/feature/release-hashes/">Learn More</a>
+  </p></nav>
+</section>
 
+<section id="feature-privacy" class="feature">
+  <svg id="i-eye" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <circle cx="17" cy="15" r="1" />
+    <circle cx="16" cy="16" r="6" />
+    <path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z" />
+  </svg>
+  <h2>Privacy Focused</h2>
+  <p>Develop your entire site without Internet connectivity and easily expose an ephemeral Web server with e2e encryption and real-time request inspection.</p>
+  <nav><p>
+    <a href="/feature/air-gapping/">Air Gapping</a> |
+    <a href="/feature/air-gapping/#ephemeral-hosting-with-end-to-end-encryption">Hosting</a> |
+    <a href="/feature/referrer-policy/">Referrer Policy</a>
   </p></nav>
 </section>
 
