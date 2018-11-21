@@ -41,7 +41,7 @@ images = [
   </svg>
   <h2>Streamlined Workflow</h2>
   <table>
-    <legend>Ditch the bundler and reimagine your publishing workflow with capabilities designed to simplify site maintenance and speed-up content delivery:</legend>
+    <legend>Reimagine your publishing workflow with bespoke capabilities designed to simplify site maintenance and speed-up content delivery:</legend>
     <tr>
       <th scope="col" width="25%">Features</th>
       <th scope="col" width="25%">Modules</th>
@@ -57,17 +57,16 @@ images = [
   </table>
 </section>
 
-<section id="feature-mining" class="feature">
-  <svg id="i-creditcard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M2 7 L2 25 30 25 30 7 Z M5 18 L9 18 M5 21 L11 21" />
-    <path d="M2 11 L2 13 30 13 30 11 Z" fill="currentColor" />
+<section id="feature-speed" class="feature">
+  <svg class="i-lightning" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
   </svg>
-  <h2 style="margin-bottom:0.2rem">Web Mining</h2>
-  <small><i style="color:lime">(Now in Beta!)</i></small>
-  <p>Earn incentives for staying up-to-date and reward your creativity throughout the entire content publishing lifecycle, start to finish.</p>
+  <h2>Ludicrous Speed</h2>
+  <p>With {{< external text="0.615s average" href="https://forestry.io/blog/hugo-vs-jekyll-benchmark/" />}} builds and sub-second page loads you could conceivably develop and serve your content from IoT device in orbit.</p>
   <nav><p>
-    <a href="/module/toxic-swamp/">Get Started</a> |
-    <a href="/module/toxic-swamp/#config-generator">Generate Config</a>
+    <a href="/feature/fetch-injection/">Fetch Inject</a> |
+    <a href="/feature/lazy-loading/">Lazy Load</a> |
+    <a href="/feature/jit-requests/">JIT Requests</a>
   </p></nav>
 </section>
 
@@ -77,7 +76,7 @@ images = [
     <circle cx="10" cy="9" r="3" />
   </svg>
   <h2>Advanced Graphics</h2>
-  <p>Add high-resolution responsive images using advanced performance techniques and visual effects without touching an image editor.</p>
+  <p>Add high-resolution, mobile-friendly responsive images with low-quality image placeholders and visual effects without ever touching an image editor.</p>
   <nav><p>
     <a href="/shortcode/figure/">Figures</a> |
     <a href="/feature/post-images/">Post Images</a> |
@@ -92,23 +91,10 @@ images = [
     <path d="M23 23 L30 30"  />
   </svg>
   <h2>Fuzzy Search</h2>
-  <p>Fat finger your way though your site content using a lightweight, customizable fuzzy search app built with auto-indexing and offline support.</p>
+  <p>Quickly locate crawlable content anywhere on your site using the onboard fuzzy search app with automatic search indexing and full offline support.</p>
   <nav><p>
     <a href="/search/?s=lay%20load">Try It Now</a> |
     <a href="/feature/fuzzy-search/">More Detail</a>
-  </p></nav>
-</section>
-
-<section id="feature-speed" class="feature">
-  <svg class="i-lightning" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
-  </svg>
-  <h2>Ludicrous Speed</h2>
-  <p>Load pages over the wire in milliseconds without relying on complex build systems and generate over 1000 pages per second using commodity hardware.</p>
-  <nav><p>
-    <a href="/feature/fetch-injection/">Fetch Inject</a> |
-    <a href="/feature/lazy-loading/">Lazy Load</a> |
-    <a href="/feature/jit-requests/">JIT Requests</a>
   </p></nav>
 </section>
 
@@ -126,13 +112,27 @@ images = [
   </p></nav>
 </section>
 
+<section id="feature-mining" class="feature">
+  <svg id="i-creditcard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M2 7 L2 25 30 25 30 7 Z M5 18 L9 18 M5 21 L11 21" />
+    <path d="M2 11 L2 13 30 13 30 11 Z" fill="currentColor" />
+  </svg>
+  <h2 style="margin-bottom:0.2rem">Web Mining</h2>
+  <small><i style="color:lime">(Now in Beta!)</i></small>
+  <p>Earn monetary incentives for remaining up-to-date and reward your creativity throughout the entire content publishing lifecycle, start to finish.</p>
+  <nav><p>
+    <a href="/module/toxic-swamp/">Get Started</a> |
+    <a href="/module/toxic-swamp/#config-generator">Generate Config</a>
+  </p></nav>
+</section>
+
 <section id="feature-security" class="feature">
   <svg id="i-lock" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M5 15 L5 30 27 30 27 15 Z M9 15 C9 9 9 5 16 5 23 5 23 9 23 15 M16 20 L16 23" />
     <circle cx="16" cy="24" r="1" />
   </svg>
   <h2>Securely Designed</h2>
-  <p>Verify you are using a genuine After Dark release online or off using secure cryptographic release hashes and upgrade your site remotely in seconds.</p>
+  <p>Verify the authenticity of After Dark no matter where it came from and upgrade safely to the latest version in seconds.</p>
   <nav><p>
     <a href="/validate/">Validate</a> |
     <a href="/feature/upgrade-script/">Upgrade</a> |
@@ -182,9 +182,6 @@ images = [
       {{< external rel="noopener license" href="https://choosealicense.com/licenses/wtfpl/" >}}
         <img width="48" src="/images/wtfpl.svg" alt="WTFPL logo" title="After Dark is yours, gratis and without restriction, licensed under the WTFPL.">
       {{< /external >}}
-      {{< blockquote cite="Aldous Huxley" >}}
-        Words can be like X-rays if you use them properly – they’ll go through anything. You read and you’re pierced.
-      {{< /blockquote >}}
     </div>
   </section>
 
