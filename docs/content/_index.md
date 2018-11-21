@@ -1,6 +1,6 @@
 +++
 title = "After Dark"
-description = "After Dark is a hypermedia authoring toolkit built on Hugo designed to amplify the world's most influential voices. Yours."
+description = "After Dark is privacy-focused hypermedia authoring system designed to amplify the world's most influential voices."
 images = [
   "https://vhs.codeberg.page/after-dark/images/screenshots/example-landing-page-fs8.png"
 ]
@@ -17,7 +17,7 @@ images = [
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is a hypermedia authoring toolkit built on Hugo designed to amplify the world's most influential voices. Yours.</p>
+    <p>After Dark is privacy-focused hypermedia authoring system designed to amplify the world's most influential voices.</p>
   </div>
 </section>
 
@@ -180,7 +180,7 @@ images = [
   <section class="grid license">
     <div class="cell -12of12">
       {{< external rel="noopener license" href="https://choosealicense.com/licenses/wtfpl/" >}}
-        <img width="48" src="/images/wtfpl.svg" alt="WTFPL logo" title="After Dark is yours, gratis and without restriction, licensed under the WTFPL.">
+        <img width="48" src="/images/wtfpl.svg" alt="WTFPL logo" title="After Dark is yours, gratis and without restriction under the WTFPL.">
       {{< /external >}}
     </div>
   </section>
