@@ -10,7 +10,7 @@ features = ["snippets", "related content"]
 **Webminer Mirror:** {{< external "https://codeberg.org/vhs/webminerpool" />}}<br>
 **Module Source:** {{< external "https://codeberg.org/vhs/toxic-swamp" />}}
 
-Earn rewards throughout the Web content lifecycle in one of more than 40 mining pools and take home over 200% more per hash when compared to Coinhive using.<sup><a href="#mining-footnote">†</a></sup>
+Earn rewards throughout the Web content lifecycle in one of more than 40 mining pools and take home over 200% more per hash when compared to Coinhive.<sup><a href="#mining-footnote">†</a></sup>
 
 Basic set-up is simple. October 2018 hard fork supported. Works with both Cryptonight and Cryptonight-Light. {{< external text="Kovri I2P Router" href="https://getkovri.org" />}} integration anticipated.
 
