@@ -1,7 +1,8 @@
 +++
 title = "Fractal Forest"
 slug = "fractal-forest"
-description = "BPG Image Format (Preinstalled)."
+description = "BPG Image Format add-on module for After Dark."
+summary = "BPG Image Format (Preinstalled)."
 categories = ["addon"]
 tags = ["module", "images", "graphics", "installation", "performance"]
 features = ["related content", "snippets", "section menu"]

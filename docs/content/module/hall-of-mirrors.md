@@ -1,7 +1,8 @@
 +++
 title = "Hall of Mirrors"
 slug = "hall-of-mirrors"
-description = "Easy PhotoSwipe Image Galleries."
+description = "Responsive PhotoSwipe Image Galleries add-on module for After Dark."
+summary = "Responsive PhotoSwipe Image Galleries."
 categories = ["addon"]
 tags = ["module", "images", "graphics", "engagement"]
 features = ["related content", "snippets", "section menu"]
