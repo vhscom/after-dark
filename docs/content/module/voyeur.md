@@ -1,7 +1,8 @@
 +++
 title = "Voyeur"
 slug = "voyeur"
-description = "DIY self-hosted Fathom Analytics."
+description = "DIY self-hosted Fathom Analytics add-on module for After Dark."
+summary = "DIY self-hosted Fathom Analytics."
 categories = ["addon"]
 tags = ["module", "analytics", "privacy", "engagement"]
 features = ["related content", "snippets", "section menu"]

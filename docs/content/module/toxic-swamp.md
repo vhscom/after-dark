@@ -1,16 +1,54 @@
 +++
 title = "Toxic Swamp"
 slug = "toxic-swamp"
-description = "CryptoNote/Aeon Web Miner."
+description = "CryptoNote/Aeon Web Miner add-on module for After Dark."
+summary = "CryptoNote/Aeon Web Miner."
 categories = ["addon"]
 tags = ["module", "monetization", "rewards", "cryptocurrency"]
 features = ["snippets", "related content"]
 +++
 
-**Webminer Mirror:** {{< external "https://codeberg.org/vhs/webminerpool" />}}<br>
-**Module Source:** {{< external "https://codeberg.org/vhs/toxic-swamp" />}}
+Monetize attention in one of more than 40 cryptocurrency mining pools and take home over 200% more per hash when compared to Coinhive.<sup><a href="#mining-footnote">†</a></sup>
 
-Earn rewards throughout the Web content lifecycle in one of more than 40 mining pools and take home over 200% more per hash when compared to Coinhive.<sup><a href="#mining-footnote">†</a></sup>
+<section>
+  <style>.form { width: unset }</style>
+  {{< hackcss-grid >}}
+    {{< hackcss-cell class="-4of12" >}}
+      {{< hackcss-card header="Step 1" >}}
+        {{< hackcss-form action="https://codeberg.org/vhs/toxic-swamp/releases" >}}
+          {{< hackcss-button type="primary" isblock="true" isghost="true" >}}
+            <svg class="i-download" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30"></path>
+            </svg>&nbsp;&nbsp;Download
+          {{< /hackcss-button >}}
+        {{< /hackcss-form >}}
+      {{< /hackcss-card >}}
+    {{< /hackcss-cell >}}
+    {{< hackcss-cell class="-4of12" >}}
+      {{< hackcss-card header="Step 2" >}}
+        {{< hackcss-form action="#installation" >}}
+          {{< hackcss-button type="info" isblock="true" isghost="true" >}}
+            <svg id="source" aria-labelledby="source-label" class="i-code" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
+            </svg>&nbsp;&nbsp;Install
+          {{< /hackcss-button >}}
+        {{< /hackcss-form >}}
+      {{< /hackcss-card >}}
+    {{< /hackcss-cell >}}
+    {{< hackcss-cell class="-4of12" >}}
+      {{< hackcss-card header="Step 3" >}}
+        {{< hackcss-form action="#receiving-rewards" >}}
+          {{< hackcss-button type="success" isblock="true" isghost="true" >}}
+            <svg id="i-creditcard" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M2 7 L2 25 30 25 30 7 Z M5 18 L9 18 M5 21 L11 21" />
+              <path d="M2 11 L2 13 30 13 30 11 Z" fill="currentColor" />
+            </svg>&nbsp;&nbsp;Profit
+          {{< /hackcss-button >}}
+        {{< /hackcss-form >}}
+      {{< /hackcss-card >}}
+    {{< /hackcss-cell >}}
+  {{< /hackcss-grid >}}
+</section>
 
 Basic set-up is simple. October 2018 hard fork supported. Works with both Cryptonight and Cryptonight-Light. {{< external text="Kovri I2P Router" href="https://getkovri.org" />}} integration anticipated.
 
