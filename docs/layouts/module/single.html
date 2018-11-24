@@ -13,6 +13,7 @@
   </header>
   {{ with .Params.slug }}
     {{ partial "module-latest.html" (dict "slug" .) }}
+    <img alt="Minimum Required After Dark Version" src="https://img.shields.io/badge/dynamic/json.svg?url=https://codeberg.org/vhs/{{ . | safeURL }}/raw/branch/master/package.json&label=after%20dark&query=$..['after-dark']&colorB=000000&style=for-the-badge&longCache=false&maxAge=86400">
   {{ end }}
   {{/* TODO: Allow schema specification by type */}}
   {{/* {{ template "_internal/schema.html" . }} */}}

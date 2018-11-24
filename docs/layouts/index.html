@@ -28,7 +28,10 @@
       opacity: 0;
     }
     .animated {
-      animation: reveal 2s both;
+      /* FIXME: Animation disabled due to browser conflict with Web Miner */
+      /* animation: reveal 2s both; */
+      opacity: 1;
+      filter: var(--logo-animation-filter-end);
     }
     @keyframes reveal {
       from {
