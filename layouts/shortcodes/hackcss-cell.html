@@ -1,0 +1,3 @@
+{{ $class := .Get "class" }}
+{{ $body := .Get "text" | default .Inner }}
+{{- partial "components/cell.html" (dict "class" $class "body" $body) -}}
