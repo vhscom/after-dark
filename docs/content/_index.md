@@ -51,7 +51,7 @@ images = [
     <tr>
       <td><a href="./feature/">33</a></td>
       <td><a href="./module/">4</a></td>
-      <td><a href="./shortcode/">23</a></td>
+      <td><a href="./shortcode/">25</a></td>
       <td><a href="./extra/">1</a></td>
     </tr>
   </table>

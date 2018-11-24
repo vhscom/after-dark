@@ -1,0 +1,3 @@
+{{ $class := .Get "class" }}
+{{ $body := .Inner }}
+{{- partial "components/grid.html" (dict "class" $class "body" $body) -}}
