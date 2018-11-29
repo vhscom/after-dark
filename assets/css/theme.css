@@ -112,6 +112,10 @@ html {
 .hack .card .highlight:last-of-type .chroma {
   margin-bottom: unset;
 }
+.hack blockquote,
+.hack blockquote:after {
+  line-height: 1.5rem;
+}
 .hack figure {
   margin: unset;
 }
