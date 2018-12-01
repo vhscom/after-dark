@@ -1,6 +1,6 @@
 +++
 title = "After Dark"
-description = "After Dark is a privacy-focused hypermedia authoring system designed to amplify the world's most influential voices."
+description = "After Dark is free and open source software you can use to create a website, blog or app. Unparalleled speed, secure design and privacy focus allows you to monetize attention to earn low-maintenance income."
 images = [
   "https://vhs.codeberg.page/after-dark/images/screenshots/example-landing-page-fs8.png"
 ]
@@ -17,7 +17,7 @@ images = [
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is a privacy-focused hypermedia authoring system designed to amplify the world's most influential voices.</p>
+    <p>After Dark is free and open source software you can use to create a website, blog or app. Unparalleled speed, secure design and privacy focus allows you to monetize attention to earn low-maintenance income.</p>
   </div>
 </section>
 

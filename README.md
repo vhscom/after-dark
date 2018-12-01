@@ -1,6 +1,6 @@
 # After Dark
 
-> After Dark is a privacy-focused hypermedia authoring system designed to amplify the world's most influential voices.
+> After Dark is free and open source software you can use to create a website, blog or app. Unparalleled speed, secure design and privacy focus allows you to monetize attention to earn low-maintenance income.
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
