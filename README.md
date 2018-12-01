@@ -11,14 +11,16 @@
 
 ## Features
 
-- [Web Mining](https://vhs.codeberg.page/after-dark/#feature-mining)
-- [Advanced Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics)
-- [Fuzzy Search](https://vhs.codeberg.page/after-dark/#feature-search)
+- [Streamlined Workflow](https://vhs.codeberg.page/after-dark/#streamlined-workflow)
 - [Ludicrous Speed](https://vhs.codeberg.page/after-dark/#feature-speed)
+- [Advanced Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics)
 - [Easily Customized](https://vhs.codeberg.page/after-dark/#feature-customize)
+- [Fuzzy Search](https://vhs.codeberg.page/after-dark/#feature-search)
+- [Passive Income](https://vhs.codeberg.page/after-dark/#feature-income)
 - [Securely Designed](https://vhs.codeberg.page/after-dark/#feature-security)
+- [Privacy Focused](https://vhs.codeberg.page/after-dark/#feature-privacy)
 
-Visit the [Online Help](https://vhs.codeberg.page/after-dark) docs to learn
+Visit the [After Dark Docs](https://vhs.codeberg.page/after-dark) site to learn more.
 
 ## Screenshots
 

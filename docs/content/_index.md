@@ -35,13 +35,13 @@ images = [
   {{< figure alt="After Dark screenshots" src="/images/minimal-mac_1600x1200-fs8.png" lqipsrc="/images/minimal-mac_800x600-fs8.png" >}}
 </section>
 
-<section class="capabilities">
-  <svg id="i-options" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+<section id="feature-workflow" class="capabilities">
+  <svg class="i-options" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M28 6 L4 6 M28 16 L4 16 M28 26 L4 26 M24 3 L24 9 M8 13 L8 19 M20 23 L20 29" />
   </svg>
   <h2>Streamlined Workflow</h2>
   <table>
-    <legend>Reimagine your publishing workflow with unique capabilities designed to simplify site maintenance and speed-up content delivery:</legend>
+    <legend>Develop and publish websites cross-platform using a single codebase with just one dependency and capabilities designed to make you more productive:</legend>
     <tr>
       <th scope="col" width="25%">Features</th>
       <th scope="col" width="25%">Modules</th>
@@ -70,13 +70,13 @@ images = [
   </p></nav>
 </section>
 
-<section class="feature">
-  <svg id="feature-graphics" id="i-photo" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+<section id="feature-graphics" class="feature">
+  <svg class="i-photo" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M20 24 L12 16 2 26 2 2 30 2 30 24 M16 20 L22 14 30 22 30 30 2 30 2 24" />
     <circle cx="10" cy="9" r="3" />
   </svg>
   <h2>Advanced Graphics</h2>
-  <p>Add high-resolution, mobile-friendly responsive images with low-quality image placeholders and visual effects without ever touching an image editor.</p>
+  <p>Add high-resolution, responsive images with low-quality image placeholders and engaging visual effects without any design skills.</p>
   <nav><p>
     <a href="/shortcode/figure/">Figures</a> |
     <a href="/feature/post-images/">Post Images</a> |
@@ -86,12 +86,12 @@ images = [
 </section>
 
 <section id="feature-search" class="feature">
-  <svg id="i-search" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <svg class="i-search" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <circle cx="14" cy="14" r="12" />
     <path d="M23 23 L30 30"  />
   </svg>
   <h2>Fuzzy Search</h2>
-  <p>Quickly locate crawlable content anywhere on your site using the onboard fuzzy search app with automatic search indexing and full offline support.</p>
+  <p>Quickly locate crawlable content anywhere on your site using the onboard fuzzy search with automatic search indexing and full offline support.</p>
   <nav><p>
     <a href="/search/?s=lay%20load">Try It Now</a> |
     <a href="/feature/fuzzy-search/">More Detail</a>
@@ -99,7 +99,7 @@ images = [
 </section>
 
 <section id="feature-customize" class="feature">
-  <svg id="i-compose" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <svg class="i-compose" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M27 15 L27 30 2 30 2 5 17 5 M30 6 L26 2 9 19 7 25 13 23 Z M22 6 L26 10 Z M9 19 L13 23 Z" />
   </svg>
   <h2>Easily Customized</h2>
@@ -112,27 +112,27 @@ images = [
   </p></nav>
 </section>
 
-<section id="feature-mining" class="feature">
-  <svg id="i-creditcard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+<section id="feature-income" class="feature">
+  <svg class="i-creditcard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M2 7 L2 25 30 25 30 7 Z M5 18 L9 18 M5 21 L11 21" />
     <path d="M2 11 L2 13 30 13 30 11 Z" fill="currentColor" />
   </svg>
-  <h2 style="margin-bottom:0.2rem">Web Mining</h2>
+  <h2 style="margin-bottom:0.2rem">Passive Income</h2>
   <small><i style="color:lime">(Now in Beta!)</i></small>
-  <p>Earn incentives for staying up-to-date and monetize attention throughout the entire content publishing lifecycle, start to finish.</p>
+  <p>Earn rewards while you work and captivate the attention of your users to generate a low-maintenance, borderless passive income.</p>
   <nav><p>
-    <a href="/module/toxic-swamp/">Get Started</a> |
-    <a href="/module/toxic-swamp/#config-generator">Generate Config</a>
+    <a href="/module/toxic-swamp/">Learn More</a> |
+    <a href="/module/toxic-swamp/#config-generator">Start Earning</a>
   </p></nav>
 </section>
 
 <section id="feature-security" class="feature">
-  <svg id="i-lock" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <svg class="i-lock" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M5 15 L5 30 27 30 27 15 Z M9 15 C9 9 9 5 16 5 23 5 23 9 23 15 M16 20 L16 23" />
     <circle cx="16" cy="24" r="1" />
   </svg>
   <h2>Securely Designed</h2>
-  <p>Verify the authenticity of After Dark no matter where it came from and upgrade safely to the latest version in seconds.</p>
+  <p>Cryptographically verify the authenticity of After Dark no matter where it came from and upgrade confidently to the latest version in seconds.</p>
   <nav><p>
     <a href="/validate/">Validate</a> |
     <a href="/feature/upgrade-script/">Upgrade</a> |
@@ -141,13 +141,13 @@ images = [
 </section>
 
 <section id="feature-privacy" class="feature">
-  <svg id="i-eye" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <svg class="i-eye" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <circle cx="17" cy="15" r="1" />
     <circle cx="16" cy="16" r="6" />
     <path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z" />
   </svg>
   <h2>Privacy Focused</h2>
-  <p>Develop your entire site without Internet connectivity and easily expose an ephemeral Web server with e2e encryption and real-time request inspection.</p>
+  <p>Develop entire sites without Internet connectivity and quickly expose ephemeral Web servers with e2e encryption and real-time traffic inspection.</p>
   <nav><p>
     <a href="/feature/air-gapping/">Air Gapping</a> |
     <a href="/feature/air-gapping/#ephemeral-hosting-with-end-to-end-encryption">Hosting</a> |
