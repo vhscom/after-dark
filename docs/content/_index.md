@@ -41,7 +41,7 @@ images = [
   </svg>
   <h2>Streamlined Workflow</h2>
   <table>
-    <legend>Reimagine your publishing workflow with bespoke capabilities designed to simplify site maintenance and speed-up content delivery:</legend>
+    <legend>Reimagine your publishing workflow with unique capabilities designed to simplify site maintenance and speed-up content delivery:</legend>
     <tr>
       <th scope="col" width="25%">Features</th>
       <th scope="col" width="25%">Modules</th>
