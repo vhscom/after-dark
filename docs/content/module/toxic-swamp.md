@@ -8,6 +8,7 @@ tags = ["module", "monetization", "rewards", "cryptocurrency"]
 features = ["snippets", "related content"]
 +++
 
+<a id="footnote-return"></a>
 Monetize attention in one of more than 40 cryptocurrency mining pools and take home over 200% more per hash when compared to Coinhive.<sup><a href="#mining-footnote">†</a></sup>
 
 <section>
@@ -317,4 +318,4 @@ Follow the instructions in {{< external "https://codeberg.org/vhs/webminerpool" 
 
 ---
 
-<small class="muted" id="mining-footnote"><sup>†</sup> Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared with 0% for {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}} and excludes optional donation, hashrate variance, uptime, withdrawal fees and optimizations. <a href="#feature-income">↩</a></small>
+<small class="muted" id="mining-footnote"><sup>†</sup> Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared with 0% for {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}} and excludes optional donation, hashrate variance, uptime, withdrawal fees and optimizations. <a href="#footnote-return">↩</a></small>
