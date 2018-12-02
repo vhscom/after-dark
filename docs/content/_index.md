@@ -1,6 +1,6 @@
 +++
 title = "After Dark"
-description = "After Dark is free and open source software you can use to create a website, blog or app. Unparalleled speed, secure design and privacy focus allows you to monetize attention to earn low-maintenance income."
+description = "After Dark is free and open source software you can use to create a privacy-aware website, blog or app. Unparalleled speed, secure design and add-on rewards system help you own your data and monetize your users."
 images = [
   "https://vhs.codeberg.page/after-dark/images/screenshots/example-landing-page-fs8.png"
 ]
@@ -17,7 +17,7 @@ images = [
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is free and open source software you can use to create a website, blog or app. Unparalleled speed, secure design and privacy focus allows you to monetize attention to earn low-maintenance income.</p>
+    <p>After Dark is free and open source software you can use to create a privacy-aware website, blog or app. Unparalleled speed, secure design and add-on rewards system help you own your data and monetize your users.</p>
   </div>
 </section>
 
@@ -61,11 +61,11 @@ images = [
   <svg class="i-lightning" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
   </svg>
-  <h2>Ludicrous Speed</h2>
+  <h2>Unparalleled Speed</h2>
   <p>With {{< external text="0.615s average" href="https://forestry.io/blog/hugo-vs-jekyll-benchmark/" />}} builds and sub-second page loads you could conceivably develop and serve your content from an ODROID in space.</p>
   <nav><p>
     <a href="/feature/fetch-injection/">Fetch Inject</a> |
-    <a href="/feature/lazy-loading/">Lazy Load</a> |
+    <a href="/feature/lazy-loading/">Lazy Loading</a> |
     <a target="_blank" rel="external noopener nofollow" href="https://tools.pingdom.com/#59cd513710800000">Benchmark</a>
   </p></nav>
 </section>
@@ -76,12 +76,26 @@ images = [
     <circle cx="10" cy="9" r="3" />
   </svg>
   <h2>Advanced Graphics</h2>
-  <p>Add high-resolution, responsive images with low-quality image placeholders and engaging visual effects without any design skills.</p>
+  <p>Add high-resolution, responsive images with low-quality image placeholders and engaging visual effects without touching an image editor.</p>
   <nav><p>
     <a href="/shortcode/figure/">Figures</a> |
     <a href="/feature/post-images/">Post Images</a> |
     <a href="/module/hall-of-mirrors/">Galleries</a> |
     <a href="/module/fractal-forest/">BPG</a>
+  </p></nav>
+</section>
+
+<section id="feature-rewards" class="feature">
+  <svg class="i-creditcard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M2 7 L2 25 30 25 30 7 Z M5 18 L9 18 M5 21 L11 21" />
+    <path d="M2 11 L2 13 30 13 30 11 Z" fill="currentColor" />
+  </svg>
+  <h2 style="margin-bottom:0.2rem">Rewards System</h2>
+  <small><i style="color:lime">(Now in Beta!)</i></small>
+  <p>Earn rewards for keeping your software up-to-date and monetize attention to generate a borderless, low-maintenance passive income.</p>
+  <nav><p>
+    <a href="/module/toxic-swamp/">Learn More</a> |
+    <a href="/module/toxic-swamp/#config-generator">Start Earning</a>
   </p></nav>
 </section>
 
@@ -112,27 +126,13 @@ images = [
   </p></nav>
 </section>
 
-<section id="feature-income" class="feature">
-  <svg class="i-creditcard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M2 7 L2 25 30 25 30 7 Z M5 18 L9 18 M5 21 L11 21" />
-    <path d="M2 11 L2 13 30 13 30 11 Z" fill="currentColor" />
-  </svg>
-  <h2 style="margin-bottom:0.2rem">Passive Income</h2>
-  <small><i style="color:lime">(Now in Beta!)</i></small>
-  <p>Earn rewards while you work and captivate the attention of your users to generate a low-maintenance, borderless passive income.</p>
-  <nav><p>
-    <a href="/module/toxic-swamp/">Learn More</a> |
-    <a href="/module/toxic-swamp/#config-generator">Start Earning</a>
-  </p></nav>
-</section>
-
 <section id="feature-security" class="feature">
   <svg class="i-lock" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M5 15 L5 30 27 30 27 15 Z M9 15 C9 9 9 5 16 5 23 5 23 9 23 15 M16 20 L16 23" />
     <circle cx="16" cy="24" r="1" />
   </svg>
   <h2>Securely Designed</h2>
-  <p>Cryptographically verify the authenticity of After Dark no matter where it came from and upgrade confidently to the latest version in seconds.</p>
+  <p>Verify the authenticity of your installation using secure cryptographic hashes and upgrade confidently to the latest version in seconds.</p>
   <nav><p>
     <a href="/validate/">Validate</a> |
     <a href="/feature/upgrade-script/">Upgrade</a> |
@@ -147,7 +147,7 @@ images = [
     <path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z" />
   </svg>
   <h2>Privacy Focused</h2>
-  <p>Develop entire sites without Internet connectivity and quickly expose ephemeral Web servers with e2e encryption and real-time traffic inspection.</p>
+  <p>Develop your entire site without Internet connectivity and expose an ephemeral Web server with e2e encryption and real-time traffic inspection.</p>
   <nav><p>
     <a href="/feature/air-gapping/">Air Gapping</a> |
     <a href="/feature/air-gapping/#ephemeral-hosting-with-end-to-end-encryption">Hosting</a> |

@@ -12,11 +12,11 @@
 ## Features
 
 - [Streamlined Workflow](https://vhs.codeberg.page/after-dark/#streamlined-workflow)
-- [Ludicrous Speed](https://vhs.codeberg.page/after-dark/#feature-speed)
+- [Unparalleled Speed](https://vhs.codeberg.page/after-dark/#feature-speed)
 - [Advanced Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics)
-- [Easily Customized](https://vhs.codeberg.page/after-dark/#feature-customize)
+- [Rewards System](https://vhs.codeberg.page/after-dark/#feature-rewards)
 - [Fuzzy Search](https://vhs.codeberg.page/after-dark/#feature-search)
-- [Passive Income](https://vhs.codeberg.page/after-dark/#feature-income)
+- [Easily Customized](https://vhs.codeberg.page/after-dark/#feature-customize)
 - [Securely Designed](https://vhs.codeberg.page/after-dark/#feature-security)
 - [Privacy Focused](https://vhs.codeberg.page/after-dark/#feature-privacy)
 
