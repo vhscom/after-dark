@@ -62,6 +62,33 @@ Basic set-up is simple. October 2018 hard fork supported. Works with both Crypto
   </video>
 {{< /hackcss-alert >}}
 
+## Features
+
+Interface:
+
+- Completely transparent mining
+- Keyboard-accessible toolbar
+- One-click on/off user toggle
+- Adjustable hashrate throttle
+- At-a-glance hashing metrics
+- Detailed status messages
+
+Behavior:
+
+- Enables itself automatically
+- Remembers user-defined settings
+- Automatic multi-threading detection
+- Purges settings when session ends
+- Disables itself unless charging
+- Enters standby when attention lost
+
+Technical:
+
+- Efficient WASM implementation
+- Async loading with [Fetch Injection](/feature/fetch-injection)
+- Obfuscates IP address using a proxy server
+- Leverages session storage for app state
+
 ## Installation
 
 Choose a module download source:
