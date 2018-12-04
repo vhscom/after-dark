@@ -66,30 +66,38 @@ Basic set-up is simple. October 2018 hard fork supported. Works with both Crypto
 
 Interface:
 
-- Completely transparent mining
-- Keyboard-accessible toolbar
-- One-click on/off user toggle
-- Adjustable hashrate throttle
-- At-a-glance hashing metrics
+- At-a-glance hash metrics
+- Transparent worker state
+- User-adjustable hashrate
 - Detailed status messages
+- One-click on/off setting
+- Accessible user controls
 
 Behavior:
 
-- Enables itself automatically
-- Remembers user-defined settings
-- Automatic multi-threading detection
-- Purges settings when session ends
+- Auto-starts with simple opt-out
 - Disables itself unless charging
+- Remembers user-defined settings
+- Purges user data following session
 - Enters standby when attention lost
+- Obfuscates proxy server settings
+- Obfuscates end-user IP via proxy
 
 Technical:
 
-- Efficient WASM implementation
-- Async loading with [Fetch Injection](/feature/fetch-injection)
-- Obfuscates IP address using a proxy server
-- Leverages session storage for app state
+- Efficient client miner using ASM/WASM
+- Rust proxy server with full sources
+- WebSocket persists proxy connection
+- Compiles with Mono or Mono in Docker
+- Comprehensive pool settings included
+- Configurable client-side debugging
+- Loads quickly with [Fetch Injection](/feature/fetch-injection)
+- Uses automatic multi-thread detection
+- Automatic TLS certs with cron renewal
 
 ## Installation
+
+Depending on your configuration Toxic Swamp can be run stand-alone using [The Fire Swamp](#the-fire-swamp) proxy or full-stack using the source code included in the module.
 
 Choose a module download source:
 
@@ -117,7 +125,7 @@ theme = [
 {{< /highlight >}}
 
 {{< hackcss-alert type="success" >}}
-Miner now functional. You'll need to run your own proxy during the beta. <span hidden>A few more steps and you'll be safe in the fire swamp.</span>
+Miner functional! It's recommended you run your own proxy during the beta. <span hidden>A few more steps and you'll be safe in the fire swamp.</span>
 {{< /hackcss-alert >}}
 
 Optionally, verify the module [Release Hash](/feature/release-hashes):
@@ -297,11 +305,11 @@ Unless you specify a custom proxy you will begin mining in [The Fire Swamp](#the
 
 After Dark provides a proxy called The Fire Swamp using {{< external href="https://moneroocean.stream/?dark" text="MoneroOcean" />}} to help you get started and as a fallback when custom proxies fail to connect.
 
-The proxy servers are located at `fs*.vhs.codeberg.page:80` and will be used by default until you [Create Your Own Proxy](#create-your-own-proxy) or fall more than two major versions behind.
-
 {{< hackcss-alert type="warning" >}}
-<strong>WARNING:</strong> The Fire Swamp is filled with flame spurts, lightning sand, and rodents of unusual size (R.O.U.S.) so do use extreme caution, hmm?
+<strong>Warning:</strong> The Fire Swamp is filled with flame spurts, lightning sand, and rodents of unusual size (R.O.U.S.) so please do use caution, hmm?
 {{< /hackcss-alert >}}
+
+The proxy servers are located at `fs*.vhs.codeberg.page:80` and will be used by default until you [Create Your Own Proxy](#create-your-own-proxy) or fall more than two major versions behind.
 
 To maximize your rewards while using the Fire Swamp proxy you must try to keep your After Dark version up-to-date as illustrated here:
 
