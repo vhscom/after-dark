@@ -17,7 +17,7 @@ sectionPagesMenu = "main" # Enable menu system for lazy bloggers
 footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 
 [params]
-  description = "After Dark is free and open source software you can use to create a website, blog or app. Unparalleled speed, secure design and privacy focus allows you to monetize attention to earn low-maintenance income." # Suggested, controls default description meta
+  description = "After Dark is free and open source software you can use to create a privacy-aware website, blog or app. Unparalleled speed, secure design and add-on rewards system help you own your data and monetize your users." # Suggested, controls default description meta
   author = "VHS" # Optional, controls author name display on posts
   hide_author = true # Optional, set true to hide author name on posts
   show_menu = true # Optional, set true to enable section menu
