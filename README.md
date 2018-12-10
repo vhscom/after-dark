@@ -11,7 +11,7 @@
 
 ## Features
 
-- [Streamlined Workflow](https://vhs.codeberg.page/after-dark/#streamlined-workflow)
+- [Streamlined Workflow](https://vhs.codeberg.page/after-dark/#feature-workflow)
 - [Unparalleled Speed](https://vhs.codeberg.page/after-dark/#feature-speed)
 - [Advanced Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics)
 - [Rewards System](https://vhs.codeberg.page/after-dark/#feature-rewards)
