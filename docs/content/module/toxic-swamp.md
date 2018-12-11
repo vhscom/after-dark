@@ -186,7 +186,7 @@ Then generate your configuration to begin earning rewards:
       {{< /hackcss-formgroup >}}
       {{< hackcss-formgroup name="poolgroup" >}}
         {{< hackcss-label for="pool" text="Mining pool:" />}}
-        <select id="pool" name="pool" class="form-control">
+        {{< hackcss-select id="pool" name="pool" >}}
           <option>moneroocean.stream</option>
           <option>etn.nanopool.org</option>
           <option>monero.hashvault.pro</option>
@@ -230,7 +230,7 @@ Then generate your configuration to begin earning rewards:
           <option>aeon.sumominer.com</option>
           <option>monerohash.com</option>
           <option>monero.crypto-pool.fr</option>
-        </select>
+        {{< /hackcss-select >}}
         {{< hackcss-helpblock >}}
           Select a {{< external href="https://codeberg.org/vhs/toxic-swamp/src/branch/master/server/pools.json" text="supported pool" />}} to mine with.
         {{< /hackcss-helpblock >}}
