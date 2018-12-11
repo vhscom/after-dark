@@ -1,6 +1,6 @@
 # After Dark
 
-> After Dark is free and open source software you can use to create a website, blog or app. Unparalleled speed, secure design and privacy focus allows you to monetize attention to earn low-maintenance income.
+> After Dark is free and open source software you can use to create a privacy-aware website, blog or app. Unparalleled speed, secure design and add-on rewards system help you own your data and monetize your users.
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
@@ -68,7 +68,7 @@ Visit the [After Dark Docs](https://vhs.codeberg.page/after-dark) site to learn 
     </td>
   </tr>
   <tr>
-    <th scope="col">Webmining</th>
+    <th scope="col">Rewards System</th>
     <th scope="col">Form Controls</th>
     <th scope="col">Extras</th>
   </tr>
@@ -92,11 +92,11 @@ Run the [Upgrade Script](https://vhs.codeberg.page/after-dark/feature/upgrade-sc
 
 ### Verifying
 
-If installed or upgraded via script you may use the [Release Validator](https://vhs.codeberg.page/after-dark/validate/) to verify you're running a PGP-signed and SHA-verified release.
+If installed or upgraded via script you may use the [Release Validator](https://vhs.codeberg.page/after-dark/validate/) to verify you're running a PGP-signed and SHA-verified release. Integrity is checked at the source level and may be performed offline. See [Release Hashes](https://vhs.codeberg.page/after-dark/feature/release-hashes/) for more info.
 
 ### Help
 
-[Online Help](https://vhs.codeberg.page/after-dark/feature/online-help/) may be served locally with `hugo --source themes/after-dark/docs` upon installation and hosted online at vhs.codeberg.page/after-dark. WYSIWYG.
+Use the included [Online Help](https://vhs.codeberg.page/after-dark/feature/online-help/) to learn how to set-up and use After Dark. Help docs may be served locally and do not require an Internet connection to function.
 
 ## License
 
