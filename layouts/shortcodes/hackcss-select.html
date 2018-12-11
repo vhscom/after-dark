@@ -1,0 +1,7 @@
+{{ $id := .Get "id" }}
+{{ $name := .Get "name" }}
+{{ $class := .Get "class" }}
+{{ $disabled := .Get "disabled" }}
+{{ $form := .Get "form" }}
+{{ $body := .Get "body" | default .Inner }}
+{{ partial "components/select.html" (dict "id" $id "name" $name "class" $class "disabled" $disabled "body" $body) }}
