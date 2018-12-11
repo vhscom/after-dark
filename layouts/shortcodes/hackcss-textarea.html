@@ -8,7 +8,6 @@
 {{ $form := .Get "form" | default nil }}
 {{ $maxlength := .Get "maxlength" | default nil }}
 {{ $minlength := .Get "minlength" | default nil }}
-{{ $name := .Get "name" | default nil }}
 {{ $placeholder := .Get "placeholder" | default nil }}
 {{ $readonly := .Get "readonly" | default nil }}
 {{ $required := .Get "required" | default nil }}
@@ -17,7 +16,7 @@
 {{ $wrap := .Get "wrap" | default nil }}
 {{ $tabindex := .Get "tabindex" | default nil }}
 {{ $body := .Get "text" | default nil }}
-{{ partial "components/textarea.html" (dict "body" $body "attrs" (dict "id" $id "name" $name "class" $class "autocomplete" $autocomplete "autofocus" $autofocus "cols" $cols "disabled" $disabled "form" $form "maxlength" $maxlength "minlength" $minlength "name" $name "placeholder" $placeholder "readonly" $readonly "required" $required "rows" $rows "spellcheck" $spellcheck "wrap" $wrap "tabindex" $tabindex)) }}
+{{ partial "components/textarea.html" (dict "body" $body "attrs" (dict "id" $id "name" $name "class" $class "autocomplete" $autocomplete "autofocus" $autofocus "cols" $cols "disabled" $disabled "form" $form "maxlength" $maxlength "minlength" $minlength "placeholder" $placeholder "readonly" $readonly "required" $required "rows" $rows "spellcheck" $spellcheck "wrap" $wrap "tabindex" $tabindex)) }}
 {{ if eq "false" $autocomplete }}
   <p>{{ partial "components/alert.html" (dict "type" "error" "body" (errorf "Invalid autocomplete value for textarea. Did you mean \"off\" instead of %q?" $autocomplete)) }}</p>
 {{ end }}
