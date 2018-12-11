@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.15.0"></a>
+# [6.15.0](https://codeberg.org/vhs/after-dark/compare/v6.14.0...v6.15.0) (2018-12-11)
+
+
+### Bug Fixes
+
+* **assets/theme:** normalize blockquote line-height with rest of document ([20ec883](https://codeberg.org/vhs/after-dark/commits/20ec883))
+
+
+### Features
+
+* **layouts/shortcodes:** add grid and cell flexbox shortcode & snippet ([5bc322b](https://codeberg.org/vhs/after-dark/commits/5bc322b)), closes [#67](https://codeberg.org/vhs/after-dark/issues/67)
+* **layouts/shortcodes:** add select shortcode, docs and example use ([71fff83](https://codeberg.org/vhs/after-dark/commits/71fff83))
+
+
+
 <a name="6.14.0"></a>
 # [6.14.0](https://codeberg.org/vhs/after-dark/compare/v6.13.5...v6.14.0) (2018-11-21)
 
