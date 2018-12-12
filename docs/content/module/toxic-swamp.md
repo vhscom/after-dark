@@ -305,10 +305,6 @@ Unless you specify a custom proxy you will begin mining in [The Fire Swamp](#the
 
 After Dark provides a proxy called The Fire Swamp using {{< external href="https://moneroocean.stream/?dark" text="MoneroOcean" />}} to help you get started and as a fallback when custom proxies fail to connect.
 
-{{< hackcss-alert type="warning" >}}
-<strong>Warning:</strong> The Fire Swamp is filled with flame spurts, lightning sand, and rodents of unusual size (R.O.U.S.) so please do use caution, hmm?
-{{< /hackcss-alert >}}
-
 The proxy servers are located at `fs*.vhs.codeberg.page:80` and will be used by default until you [Create Your Own Proxy](#create-your-own-proxy) or fall more than two major versions behind.
 
 To maximize your rewards while using the Fire Swamp proxy you must try to keep your After Dark version up-to-date as illustrated here:
@@ -341,15 +337,133 @@ To describe with examples:
 
 - Finally, if you fall more than two major releases behind your miner may continue to function but you will no longer be eligible to earn additional rewards until you upgrade or create your own proxy.
 
-Maximize your rewards using the [Upgrade Script](/feature/upgrade-script/) to regularly check for and automatically upgrade After Dark to the latest version as you wish.
-
-### Receiving Rewards
-
-View accumulated rewards and check payment history anytime using the {{< external href="https://moneroocean.stream/?dark#/dashboard" text="MoneroOcean Dashboard" />}}. See the {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean FAQ" />}} for more details.
+Maximize your rewards using the [Upgrade Script](/feature/upgrade-script/) to regularly check for and automatically upgrade After Dark to the latest version.
 
 ## Create Your Own Proxy
 
-Follow the instructions in {{< external "https://codeberg.org/vhs/webminerpool" />}} to create your own proxy, regenerate your config and this will all soon be but a happy memory.
+Follow the instructions in {{< external "https://codeberg.org/vhs/webminerpool" />}} to create your own proxy. Reference the following table to understand when connections occur.
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3" scope="col">Device</th>
+      <th colspan="2" scope="col">Toolbar</th>
+      <th colspan="3" scope="col">Miner</th>
+      <th colspan="3" scope="col">Proxy</th>
+    </tr>
+    <tr>
+      <th scope="col">Charging</th>
+      <th scope="col">Online</th>
+      <th scope="col">Cores</th>
+      <th scope="col">Powered</th>
+      <th scope="col">Throttle</th>
+      <th scope="col">Mode</th>
+      <th scope="col">Socket</th>
+      <th scope="col">Threads</th>
+      <th scope="col">Online</th>
+      <th scope="col">Pool</th>
+      <th scope="col">Allow</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Any</td>
+      <td>Any</td>
+      <td>Any</td>
+      <td>Off</td>
+      <td>10–100</td>
+      <td>Inactive</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Any</td>
+      <td>On</td>
+      <td>10–100</td>
+      <td>Standby</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>16</td>
+      <td>On</td>
+      <td>10–100</td>
+      <td>Active</td>
+      <td>Connect</td>
+      <td>16</td>
+      <td>Yes</td>
+      <td>Known</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>Yes</td>
+      <td>8</td>
+      <td>On</td>
+      <td>10–100</td>
+      <td>Economy</td>
+      <td>Connect</td>
+      <td>2</td>
+      <td>Yes</td>
+      <td>Known</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>32</td>
+      <td>On</td>
+      <td>10–100</td>
+      <td>Active</td>
+      <td>Error</td>
+      <td>--</td>
+      <td>Yes</td>
+      <td>Unknown</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>Yes</td>
+      <td>4</td>
+      <td>On</td>
+      <td>10–100</td>
+      <td>Economy</td>
+      <td>Error</td>
+      <td>--</td>
+      <td>No</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+  </tbody>
+</table>
+
+{{< hackcss-alert type="info" >}}
+<strong>Note:</strong> During beta Economy mode may use all device processing cores.
+{{< /hackcss-alert >}}
+
+
+Enable debugging to output detailed socket messages from the proxy to the browser console by adding the following to your site config:
+
+```toml
+[params.modules.toxic_swamp]
+  debugging = true
+```
+
+## Receiving Rewards
+
+If you're using [The Fire Swamp](#the-fire-swamp) with a configured payout address, you may view your accumulated hash totals and payouts from the {{< external href="https://moneroocean.stream/?dark#/dashboard" text="MoneroOcean Dashboard" />}}.
+
+See the {{< external href="https://moneroocean.stream/?dark#/help/faq" text="FAQ" />}} for more details.
 
 ---
 
