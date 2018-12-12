@@ -341,7 +341,7 @@ Maximize your rewards using the [Upgrade Script](/feature/upgrade-script/) to re
 
 ## Create Your Own Proxy
 
-Follow the instructions in {{< external "https://codeberg.org/vhs/webminerpool" />}} to create your own proxy. Reference the following table to understand when connections occur.
+Follow the instructions in {{< external "https://codeberg.org/vhs/webminerpool" />}} to create your own proxy. Reference the following table to understand connection activity:
 
 <table>
   <thead>
