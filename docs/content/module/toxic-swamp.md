@@ -314,40 +314,92 @@ To maximize your rewards while using the Fire Swamp proxy you must try to keep y
   table tbody td:first-child { font-weight: initial; }
 </style>
 
-Latest Version | Your Version | Developer Donation
---- | --- | ---
-7.0.0 | 7.0.0 | Deactivated
-7.0.2 | 7.0.1 | 2.2%
-7.1.0 | 7.0.2 | 13.6%
-8.0.0 | 7.1.0 | 34.1%
 
-To describe with examples:
+<table>
+  <caption>Figure 1: Fire Swamp upgrade incentive based on After Dark version</caption>
+  <thead>
+    <tr>
+      <th scope="col">Latest Version</th>
+      <th scope="col">Your Version</th>
+      <th scope="col">Upgrade Incentive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7.0.0</td>
+      <td>7.0.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>7.0.2</td>
+      <td>7.0.1</td>
+      <td>2.2%</td>
+    </tr>
+    <tr>
+      <td>7.1.0</td>
+      <td>7.0.2</td>
+      <td>13.6%</td>
+    </tr>
+    <tr>
+      <td>8.0.0</td>
+      <td>7.1.0</td>
+      <td>34.1%</td>
+    </tr>
+  </tbody>
+</table>
 
-- If you're currently using `Latest Version` and a bugfix, documentation update, refactoring or other change is released you will earn 2.2% less until you upgrade or create your own proxy.
+To describe in more detail:
 
-- If you're currently using `Latest Version` and an enhancement is released you will earn 13.6% less until you upgrade or create your own proxy.
+- If a bugfix, documentation update, refactoring or other patch release occurs your upgrade incentive is 2.2% of your total combined mining hash power.
 
-- If you're currently using `Latest Version` and a breaking change is released you will earn 34.1% less until you upgrade or create your own proxy.
+- If an enhancement, feature or other minor release occurs your upgrade incentive is 13.6% of your total combined mining hash power.
 
-{{< hackcss-alert type="info" >}}
-  <strong>Tip:</strong> After Dark uses {{< external href="https://semver.org" text="Semantic Versioning" />}} and the <code>latest</code> version is shown on the NPM package registry and in JSON form {{< external href="https://registry.npmjs.org/-/package/after-dark/dist-tags" text="here" />}}.
+- If a breaking change, license update or other major release occurs your upgrade incentive is 34.1% of your total combined mining hash power.
+
+- If you fall more than one point release behind any minor or patch release the upgrade incentive will remain the same as if you were only one release behind.
+
+- If you fall more than two majors behind your miner may continue to function but you will be required to upgrade to maintain your upgrade incentive.
+
+Maximize your incentive with reduced effort by using the [Upgrade Script](/feature/upgrade-script/) to  check for and automatically update After Dark to the latest available version.
+
+{{< hackcss-alert type="success" >}}
+  <strong>Tip:</strong> After Dark uses {{< external href="https://semver.org" text="Semantic Versioning" />}} and the <code>latest</code> version may be tracked programmatically using on the NPM registry and in JSON form {{< external href="https://registry.npmjs.org/-/package/after-dark/dist-tags" text="here" />}}.
 {{< /hackcss-alert >}}
 
-- If you fall more than one point release behind any minor or patch you will not be penalized and the current developer donation will remain the same.
-
-- Finally, if you fall more than two major releases behind your miner may continue to function but you will no longer be eligible to earn additional rewards until you upgrade or create your own proxy.
-
-Maximize your rewards using the [Upgrade Script](/feature/upgrade-script/) to regularly check for and automatically upgrade After Dark to the latest version.
+{{< hackcss-alert type="info" >}}
+  <strong>Note:</strong> After Dark updates are typically backwards compatible with existing modules though there may be cases where module updates are required.
+{{< /hackcss-alert >}}
 
 ## Create Your Own Proxy
 
-Specify proxy under advanced settings when generating module config. Use the instructions in {{< external "https://codeberg.org/vhs/webminerpool" />}} to stand up your own proxy server and reference the following to understand device connection activity:
+Specify proxy under advanced settings when generating module config. Use the instructions in {{< external "https://codeberg.org/vhs/webminerpool" />}} to stand up your own proxy server and reference the following to understand connection activity:
 
+<style>
+  table { caption-side: bottom; }
+  caption { margin-top: 0.5rem; font-variant: all-small-caps; }
+  dd, dt { display: inline-block; }
+  dt { margin-left: 3rem; }
+  dd { width: 10rem; }
+</style>
 <table>
+  <legend>
+    Legend
+    <dl>
+      <dt>A<dd>Active
+      <dt>I<dd>Inactive
+      <dt>S<dd>Standby
+      <dt>E<dd>Error
+      <dt>O<dd>Open
+      <dt>C<dd>Closed
+      <dt>K<dd>Known
+      <dt>U<dd>Unknown
+    </dl>
+  </legend>
+  <caption>Figure 2: Miner connection activity by device, proxy and toolbar state</caption>
   <thead>
     <tr>
       <th colspan="3" scope="col">Device</th>
-      <th colspan="2" scope="col">Toolbar</th>
+      <th colspan="3" scope="col">Toolbar</th>
       <th colspan="4" scope="col">Miner</th>
       <th colspan="3" scope="col">Proxy</th>
     </tr>
@@ -355,10 +407,11 @@ Specify proxy under advanced settings when generating module config. Use the ins
       <th scope="col">Charging</th>
       <th scope="col">Online</th>
       <th scope="col">Cores</th>
+      <th scope="col">Visible</th>
       <th scope="col">Powered</th>
       <th scope="col">Throttle</th>
       <th scope="col">Status</th>
-      <th scope="col">WebSocket</th>
+      <th scope="col">Socket</th>
       <th scope="col">Workers</th>
       <th scope="col">Load</th>
       <th scope="col">Online</th>
@@ -368,12 +421,13 @@ Specify proxy under advanced settings when generating module config. Use the ins
   </thead>
   <tbody>
     <tr>
-      <td>Any</td>
-      <td>Any</td>
-      <td>Any</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
       <td>Off</td>
-      <td>Any</td>
-      <td>Inactive</td>
+      <td>--</td>
+      <td>I</td>
       <td>--</td>
       <td>--</td>
       <td>--</td>
@@ -383,12 +437,28 @@ Specify proxy under advanced settings when generating module config. Use the ins
     </tr>
     <tr>
       <td>Yes</td>
-      <td>No</td>
+      <td>Yes</td>
       <td>8</td>
+      <td>No</td>
       <td>On</td>
       <td>Any</td>
-      <td>Standby</td>
-      <td>Error</td>
+      <td>S</td>
+      <td>C</td>
+      <td>8</td>
+      <td>0</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>No</td>
+      <td>8</td>
+      <td>Yes</td>
+      <td>On</td>
+      <td>Any</td>
+      <td>S</td>
+      <td>E</td>
       <td>8</td>
       <td>0</td>
       <td>--</td>
@@ -399,80 +469,86 @@ Specify proxy under advanced settings when generating module config. Use the ins
       <td>No</td>
       <td>Yes</td>
       <td>16</td>
+      <td>Yes</td>
       <td>On</td>
       <td>25</td>
-      <td>Economy</td>
-      <td>Open</td>
+      <td>E</td>
+      <td>O</td>
       <td>16</td>
       <td>4</td>
       <td>Yes</td>
-      <td>Known</td>
+      <td>K</td>
       <td>Yes</td>
     </tr>
     <tr>
       <td>Yes</td>
       <td>Yes</td>
       <td>16</td>
+      <td>Yes</td>
       <td>On</td>
       <td>25</td>
-      <td>Active</td>
-      <td>Open</td>
+      <td>A</td>
+      <td>O</td>
       <td>16</td>
       <td>12</td>
       <td>Yes</td>
-      <td>Known</td>
+      <td>K</td>
       <td>Yes</td>
     </tr>
     <tr>
       <td>Yes</td>
       <td>Yes</td>
       <td>32</td>
+      <td>Yes</td>
       <td>On</td>
       <td>50</td>
-      <td>Active</td>
-      <td>Open</td>
+      <td>A</td>
+      <td>O</td>
       <td>32</td>
       <td>16</td>
       <td>Yes</td>
-      <td>Known</td>
+      <td>K</td>
       <td>Yes</td>
     </tr>
     <tr>
       <td>Yes</td>
       <td>Yes</td>
       <td>32</td>
+      <td>Yes</td>
       <td>On</td>
       <td>75</td>
-      <td>Active</td>
-      <td>Open</td>
+      <td>A</td>
+      <td>O</td>
       <td>32</td>
       <td>24</td>
       <td>Yes</td>
-      <td>Known</td>
+      <td>K</td>
       <td>Yes</td>
     </tr>
     <tr>
       <td>Yes</td>
       <td>Yes</td>
       <td>64</td>
+      <td>Yes</td>
       <td>On</td>
       <td>Any</td>
-      <td>Standby</td>
-      <td>Error</td>
+      <td>S</td>
+      <td>E</td>
       <td>64</td>
       <td>0</td>
       <td>Yes</td>
-      <td>Unknown</td>
+      <td>U</td>
       <td>No</td>
     </tr>
     <tr>
       <td>Yes</td>
       <td>Yes</td>
       <td>64</td>
+      <td>Yes</td>
       <td>On</td>
       <td>Any</td>
-      <td>Standby</td>
-      <td>Error</td>
+      <td>S</td>
+      <td>E</td>
       <td>64</td>
       <td>0</td>
       <td>No</td>
