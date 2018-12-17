@@ -176,7 +176,7 @@ Then generate your configuration to begin earning rewards:
     {{< /hackcss-buttongroup >}}
     <details>
       <summary>Advanced Settings</summary>
-      <p>Advanced settings optional. Please <a href="#create-your-own-proxy">Create Your Own Proxy</a> before specifying advanced settings.</p>
+      <p>Optional. <a href="#create-your-own-proxy">Create Your Own Proxy</a> before specifying advanced settings.</p>
       {{< hackcss-formgroup name="servergroup" >}}
         {{< hackcss-label for="server" text="Proxy Server:" />}}
         {{< hackcss-textinput type="url" id="server" name="server" placeholder="wss://domain.example:80" >}}
@@ -341,14 +341,14 @@ Maximize your rewards using the [Upgrade Script](/feature/upgrade-script/) to re
 
 ## Create Your Own Proxy
 
-Follow the instructions in {{< external "https://codeberg.org/vhs/webminerpool" />}} to create your own proxy. Reference the following table to understand connection activity:
+Specify proxy under advanced settings when generating module config. Use the instructions in {{< external "https://codeberg.org/vhs/webminerpool" />}} to stand up your own proxy server and reference the following to understand device connection activity:
 
 <table>
   <thead>
     <tr>
       <th colspan="3" scope="col">Device</th>
       <th colspan="2" scope="col">Toolbar</th>
-      <th colspan="3" scope="col">Miner</th>
+      <th colspan="4" scope="col">Miner</th>
       <th colspan="3" scope="col">Proxy</th>
     </tr>
     <tr>
@@ -357,9 +357,10 @@ Follow the instructions in {{< external "https://codeberg.org/vhs/webminerpool" 
       <th scope="col">Cores</th>
       <th scope="col">Powered</th>
       <th scope="col">Throttle</th>
-      <th scope="col">Mode</th>
-      <th scope="col">Socket</th>
-      <th scope="col">Threads</th>
+      <th scope="col">Status</th>
+      <th scope="col">WebSocket</th>
+      <th scope="col">Workers</th>
+      <th scope="col">Load</th>
       <th scope="col">Online</th>
       <th scope="col">Pool</th>
       <th scope="col">Allow</th>
@@ -371,49 +372,53 @@ Follow the instructions in {{< external "https://codeberg.org/vhs/webminerpool" 
       <td>Any</td>
       <td>Any</td>
       <td>Off</td>
-      <td>10–100</td>
+      <td>Any</td>
       <td>Inactive</td>
       <td>--</td>
       <td>--</td>
       <td>--</td>
       <td>--</td>
       <td>--</td>
+      <td>--</td>
     </tr>
     <tr>
       <td>Yes</td>
       <td>No</td>
-      <td>Any</td>
+      <td>8</td>
       <td>On</td>
-      <td>10–100</td>
+      <td>Any</td>
       <td>Standby</td>
-      <td>--</td>
-      <td>--</td>
+      <td>Error</td>
+      <td>8</td>
+      <td>0</td>
       <td>--</td>
       <td>--</td>
       <td>--</td>
     </tr>
     <tr>
-      <td>Yes</td>
+      <td>No</td>
       <td>Yes</td>
       <td>16</td>
       <td>On</td>
-      <td>10–100</td>
-      <td>Active</td>
-      <td>Connect</td>
+      <td>25</td>
+      <td>Economy</td>
+      <td>Open</td>
       <td>16</td>
+      <td>4</td>
       <td>Yes</td>
       <td>Known</td>
       <td>Yes</td>
     </tr>
     <tr>
-      <td>No</td>
       <td>Yes</td>
-      <td>8</td>
+      <td>Yes</td>
+      <td>16</td>
       <td>On</td>
-      <td>10–100</td>
-      <td>Economy</td>
-      <td>Connect</td>
-      <td>2</td>
+      <td>25</td>
+      <td>Active</td>
+      <td>Open</td>
+      <td>16</td>
+      <td>12</td>
       <td>Yes</td>
       <td>Known</td>
       <td>Yes</td>
@@ -423,34 +428,59 @@ Follow the instructions in {{< external "https://codeberg.org/vhs/webminerpool" 
       <td>Yes</td>
       <td>32</td>
       <td>On</td>
-      <td>10–100</td>
+      <td>50</td>
       <td>Active</td>
+      <td>Open</td>
+      <td>32</td>
+      <td>16</td>
+      <td>Yes</td>
+      <td>Known</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>32</td>
+      <td>On</td>
+      <td>75</td>
+      <td>Active</td>
+      <td>Open</td>
+      <td>32</td>
+      <td>24</td>
+      <td>Yes</td>
+      <td>Known</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>64</td>
+      <td>On</td>
+      <td>Any</td>
+      <td>Standby</td>
       <td>Error</td>
-      <td>--</td>
+      <td>64</td>
+      <td>0</td>
       <td>Yes</td>
       <td>Unknown</td>
       <td>No</td>
     </tr>
     <tr>
-      <td>No</td>
       <td>Yes</td>
-      <td>4</td>
+      <td>Yes</td>
+      <td>64</td>
       <td>On</td>
-      <td>10–100</td>
-      <td>Economy</td>
+      <td>Any</td>
+      <td>Standby</td>
       <td>Error</td>
-      <td>--</td>
+      <td>64</td>
+      <td>0</td>
       <td>No</td>
       <td>--</td>
       <td>--</td>
     </tr>
   </tbody>
 </table>
-
-{{< hackcss-alert type="info" >}}
-<strong>Note:</strong> During beta Economy mode may use all device processing cores.
-{{< /hackcss-alert >}}
-
 
 Enable debugging to output detailed socket messages from the proxy to the browser console by adding the following to your site config:
 
