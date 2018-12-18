@@ -314,7 +314,6 @@ To maximize your rewards while using the Fire Swamp proxy you must try to keep y
   table tbody td:first-child { font-weight: initial; }
 </style>
 
-
 <table>
   <caption>Figure 1: Fire Swamp upgrade incentive based on After Dark version</caption>
   <thead>
