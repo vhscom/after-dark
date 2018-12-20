@@ -471,8 +471,8 @@ Specify proxy under advanced settings when generating module config. Use the ins
       <td>Yes</td>
       <td>On</td>
       <td>25</td>
-      <td>E</td>
-      <td>O</td>
+      <td>I</td>
+      <td>C</td>
       <td>16</td>
       <td>4</td>
       <td>Yes</td>
