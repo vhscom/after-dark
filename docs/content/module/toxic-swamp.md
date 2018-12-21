@@ -566,9 +566,14 @@ Enable debugging to output detailed socket messages from the proxy to the browse
 
 ## Receiving Rewards
 
-If you're using [The Fire Swamp](#the-fire-swamp) with a configured payout address, you may view your accumulated hash totals and payouts from the {{< external href="https://moneroocean.stream/?dark#/dashboard" text="MoneroOcean Dashboard" />}}.
+If you're using [The Fire Swamp](#the-fire-swamp) with a configured payout address, you may view your accumulated hash totals and payouts from the {{< external href="https://moneroocean.stream/?dark#/dashboard" text="MoneroOcean Dashboard" />}}:
 
-See the {{< external href="https://moneroocean.stream/?dark#/help/faq" text="FAQ" />}} for more details.
+{{< figure alt="MoneroOcean Dashboard screenshots"
+  src="/images/screenshots/monero-ocean-dashboard-fs8.png"
+  caption="Monero Ocean Dashboard showing Toxic Swamp mining activity."
+>}}
+
+See the MoneroOcean {{< external href="https://moneroocean.stream/?dark#/help/faq" text="FAQ" />}} for more details.
 
 ---
 
