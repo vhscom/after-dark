@@ -64,6 +64,14 @@ Basic set-up is simple. October 2018 hard fork supported. Works with both Crypto
 
 ## Features
 
+General:
+
+- Start earning rewards the moment you begin creating your website
+- Monetize your users based on the level of attention they provide
+- Incentivize yourself to keep your software up-to-date and secure
+- Build user trust with transparent metrics and control mechanisms
+- Protect users by obfuscating their IP with included proxy server
+
 Interface:
 
 - At-a-glance hash metrics
