@@ -80,6 +80,7 @@ Interface:
 - Detailed status messages
 - One-click on/off setting
 - Accessible user controls
+- Easily translate content
 
 Behavior:
 
