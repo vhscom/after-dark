@@ -1,6 +1,11 @@
 #
-# Hugo Dockerfile for After Dark.
-# View the theme at <https://vhs.codeberg.page/after-dark/>.
+# Hugo Dockerfile for After Dark
+#
+# After Dark is free and open source software you can use to create a
+# privacy-aware website, blog or app.
+#
+# Read the docs (https://vhs.codeberg.page/after-dark/)
+# View the code (https://codeberg.org/vhs)
 #
 # Copyright (C) 2018 VHS <vhsdev@tutanota.com>
 #
