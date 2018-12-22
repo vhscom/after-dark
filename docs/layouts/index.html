@@ -29,9 +29,9 @@
     }
     .animated {
       /* FIXME: Animation disabled due to browser conflict with Web Miner */
-      /* animation: reveal 2s both; */
-      opacity: 1;
-      filter: var(--logo-animation-filter-end);
+      animation: reveal 2s both;
+      opacity: 1; /* remove with fix */
+      filter: var(--logo-animation-filter-end); /* remove with fix */
     }
     @keyframes reveal {
       from {
