@@ -1,8 +1,8 @@
 +++
 title = "Toxic Swamp"
 slug = "toxic-swamp"
-description = "CryptoNote/Aeon Web Miner add-on module for After Dark."
-summary = "CryptoNote/Aeon Web Miner."
+description = "Monero/Aeon Web Miner add-on module for After Dark."
+summary = "Monero/Aeon Web Miner."
 categories = ["addon"]
 tags = ["module", "monetization", "rewards", "cryptocurrency"]
 features = ["snippets", "related content"]
