@@ -94,6 +94,7 @@ Behavior:
 
 Technical:
 
+- Supports CrytoNight/CryptoNight-Lite
 - Efficient client miner using ASM/WASM
 - Rust proxy server with full sources
 - WebSocket persists proxy connection
