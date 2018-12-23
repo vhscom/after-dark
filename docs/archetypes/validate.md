@@ -11,7 +11,6 @@ noindex = true
     {{< /hackcss-label >}}
     {{< hackcss-textinput
         required="true"
-        autofocus="true"
         autocomplete="off"
         spellcheck="false"
         type="text" id="digest" name="digest"
