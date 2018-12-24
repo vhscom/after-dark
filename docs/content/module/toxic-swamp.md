@@ -71,6 +71,7 @@ General:
 - Incentivize yourself to keep your software up-to-date and secure
 - Build user trust with transparent metrics and control mechanisms
 - Protect users by obfuscating their IP with included proxy server
+- Automatically selects the most appropriate language for the user
 
 Interface:
 
@@ -80,7 +81,6 @@ Interface:
 - Detailed status messages
 - One-click on/off setting
 - Accessible user controls
-- Easily translate content
 
 Behavior:
 
@@ -584,6 +584,25 @@ If you're using [The Fire Swamp](#the-fire-swamp) with a configured payout addre
 >}}
 
 See the MoneroOcean {{< external href="https://moneroocean.stream/?dark#/help/faq" text="FAQ" />}} for more details.
+
+## Language Selection
+
+Toxic Swamp provides English and Bahasa Indonesia translations. Language selection is automatic based on the document HTML `lang` attribute, e.g.
+
+```html
+<html lang="id-ID"><!-- Use Bahasa Indonesia -->
+<html lang="en-US"><!-- Use Yankee English -->
+```
+
+To adjust, simply update `languageCode` in your After Dark site config:
+
+```toml
+languageCode = "id-ID" # Controls site language
+```
+
+If the language you're attempting to use isn't already provided you may update or override the module `inline.jsonld.html` within your site to add it.
+
+See [Custom Layouts](/feature/custom-layouts/) for help overriding.
 
 ---
 
