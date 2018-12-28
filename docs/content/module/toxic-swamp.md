@@ -585,24 +585,38 @@ If you're using [The Fire Swamp](#the-fire-swamp) with a configured payout addre
 
 See the MoneroOcean {{< external href="https://moneroocean.stream/?dark#/help/faq" text="FAQ" />}} for more details.
 
-## Language Selection
+## Internationalization
 
-Toxic Swamp provides English and Bahasa Indonesia translations. Language selection is automatic based on the document HTML `lang` attribute, e.g.
+Toxic Swamp provides English and Bahasa Indonesia translations. Language selection is automatic based on the document's HTML `lang` attribute:
 
 ```html
 <html lang="id-ID"><!-- Use Bahasa Indonesia -->
 <html lang="en-US"><!-- Use Yankee English -->
 ```
 
-To adjust, simply update `languageCode` in your After Dark site config:
+And may be adjusted by updating the `languageCode` from site config:
 
 ```toml
 languageCode = "id-ID" # Controls site language
 ```
 
-If the language you're attempting to use isn't already provided you may update or override the module `inline.jsonld.html` within your site to add it.
+### Customizing
 
-See [Custom Layouts](/feature/custom-layouts/) for help overriding.
+Add or remove translations from `inline.jsonld.html` in your site `layouts` directory. If the file doesn't exist yet, copy it from module default:
+
+```sh
+mkdir -p layouts/partials/modules/toxic-swamp/ && \
+cp themes/toxic-swamp/layouts/partials/modules/toxic-swamp/inline.jsonld.html $_
+```
+
+{{% hackcss-alert type="info" %}}**Tip:** See [Custom Layouts](/feature/custom-layouts/) for help customizing your layouts.{{% /hackcss-alert %}}
+
+And adjust their availability using the `translations` setting in site config:
+
+```toml
+[params.modules.toxic_swamp]
+  translations = ["id", "es"] # optional, specifies English translations available
+```
 
 ---
 
