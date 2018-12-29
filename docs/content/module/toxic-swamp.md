@@ -9,7 +9,7 @@ features = ["snippets", "related content"]
 +++
 
 <a id="footnote-return"></a>
-Monetize attention in one of more than 40 cryptocurrency mining pools and take home over 200% more per hash when compared to Coinhive.<sup><a href="#mining-footnote">†</a></sup>
+Monetize attention in one of more than 40 cryptocurrency mining pools and take home over 200% more per hash when compared to Coinhive.[^1]
 
 <section>
   <style>.form { width: unset }</style>
@@ -537,7 +537,7 @@ Enable debugging to output detailed socket messages from the proxy to the browse
 
 ## Receiving Rewards
 
-If you're using [The Fire Swamp](#the-fire-swamp) with a configured payout address, you may view your accumulated hash totals and payouts from the {{< external href="https://moneroocean.stream/?dark#/dashboard" text="MoneroOcean Dashboard" />}}:
+If you're using [The Fire Swamp](#the-fire-swamp) with a configured payout address, you may view your accumulated hash metrics and payouts from the {{< external href="https://moneroocean.stream/?dark#/dashboard" text="MoneroOcean Dashboard" />}}:
 
 {{< figure alt="MoneroOcean Dashboard screenshots"
   src="/images/screenshots/monero-ocean-dashboard-fs8.png"
@@ -548,45 +548,57 @@ See the MoneroOcean {{< external href="https://moneroocean.stream/?dark#/help/fa
 
 ## Internationalization
 
-Toxic Swamp provides English and Bahasa Indonesia translations. Language selection is automatic based on the document's HTML `lang` attribute:
+Toxic Swamp provides English and Indonesian base translations. Language selection is automatic based on the document's HTML `lang` attribute:
 
 ```html
-<html lang="id-ID"><!-- Use Bahasa Indonesia -->
-<html lang="en-US"><!-- Use Yankee English -->
+<html lang="id-ID"><!-- Bahasa Indonesia -->
+<html lang="en-US"><!-- American English -->
 ```
 
-And may be adjusted by updating the `languageCode` from site config:
+Toggle between langauges using the `languageCode` setting in site config:
 
 ```toml
-languageCode = "id-ID" # Controls site language
+languageCode = "id-ID" # Display toolbar in Indonesian
+languageCode = "en-UK" # Display toolbar in English
 ```
 
-### Preferred Language
-
-Text presented to the user will appear in the preferred language. Preferred language is derived from HTML and browser settings. If not specified by the HTML it will be inferred from the browser's language setting.
-
-If a translation is available for the preferred language it will be displayed. Otherwise English will be selected by default.
+If `lang` attribute is not present, the browser language may be used.
 
 ### Customizing Translations
 
-Add or remove translations from `inline.jsonld.html` in your site `layouts` directory. If the file doesn't exist yet, copy it from module default:
+Add, modify or remove translations from `inline.jsonld.html` in your site `layouts` directory. If the file doesn't exist yet, copy it from module default:
 
 ```sh
 mkdir -p layouts/partials/modules/toxic-swamp/ && \
 cp themes/toxic-swamp/layouts/partials/modules/toxic-swamp/inline.jsonld.html $_
 ```
 
-{{% hackcss-alert type="info" %}}**Tip:** See [Custom Layouts](/feature/custom-layouts/) for help customizing your layouts.{{% /hackcss-alert %}}
+Follow the `id` and `en` examples provided within. Once you're satisfied with your changes verify the file is well-formed JSON and rebuild your site to view changes. Delete the file to return to module defaults.
 
-Adjust availability using the `translations` setting in site config:
+### Specifying Availability
+
+Adjust language availability using the `translations` setting in site config:
 
 ```toml
 [params.modules.toxic_swamp]
-  translations = ["id-ID"] # optional, specifies English translations available
+  translations = ["id", "pt-BR"] # optional, available English translations
 ```
 
-Translations will not be presented to the user if not specified.
+The example above specifies a Português translation is available in addition to Indonesian. Remove the setting to return to module defaults.
 
----
+### Language Selection
 
-<small class="muted" id="mining-footnote"><sup>†</sup> Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared with 0% for {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}} and excludes optional donation, hashrate variance, uptime, withdrawal fees and optimizations. <a href="#footnote-return">↩</a></small>
+Text presented to the user will appear in a "preferred language". Preferred language is first derived from the `lang` attribute. If left unspecified, the browser's `navigator.language` will be used instead:
+
+HTML | Browser | Available Translations | Presented Language
+--- | --- | --- | ---
+id-ID | en-US | id | Indonesian
+pt-BR | id-ID | id | English
+-\- | pt-BR | id, pt-BR | Português (Brazilian)
+-\- | en-UK | id, pt-BR | English
+es-ES | es-US | es, es-419, es-ES | Español de España
+ru-RU | en-UK | ru | Pу́сский (Russian)
+
+Regardless of language preference, only [available translations](#specifying-availability) will be presented to the user. If no available translations are specified, English will be used.
+
+[^1]: Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared with 0% for {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}} and excludes optional donation, hashrate variance, uptime, withdrawal fees and optimizations.
