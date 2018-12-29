@@ -64,56 +64,19 @@ Basic set-up is simple. October 2018 hard fork supported. Works with both Crypto
 
 ## Features
 
-General:
-
-- Start earning rewards the moment you begin creating your website
-- Monetize your users based on the level of attention they provide
-- Incentivize yourself to keep your software up-to-date and secure
-- Build user trust with transparent metrics and control mechanisms
-- Protect users by obfuscating their IP with included proxy server
-- Automatically selects the most appropriate language for the user
-
-Interface:
-
-- At-a-glance hash metrics
-- Transparent worker state
-- User-adjustable hashrate
-- Detailed status messages
-- One-click on/off setting
-- Accessible user controls
-
-Behavior:
-
-- Auto-starts with simple opt-out
-- Disables itself unless charging
-- Remembers user-defined settings
-- Purges user data following session
-- Enters standby when attention lost
-- Obfuscates proxy server settings
-- Obfuscates end-user IP via proxy
-
-Technical:
-
-- Supports CrytoNight/CryptoNight-Lite
-- Efficient client miner using ASM/WASM
-- Rust proxy server with full sources
-- WebSocket persists proxy connection
-- Compiles with Mono or Mono in Docker
-- Comprehensive pool settings included
-- Configurable client-side debugging
-- Loads quickly with [Fetch Injection](/feature/fetch-injection)
-- Uses automatic multi-thread detection
-- Automatic TLS certs with cron renewal
+- Transparent, unobtrusive multilingual user interface
+- Does not use cookies or connect to any third-parties
+- Automatically starts when external power is detected
+- Suspends operation during loss of power or attention
+- Functions like an application without the complexity
 
 ## Installation
 
-Depending on your configuration Toxic Swamp can be run stand-alone using [The Fire Swamp](#the-fire-swamp) proxy or full-stack using the source code included in the module.
-
 Choose a module download source:
 
-- {{< external "https://www.npmjs.com/package/toxic-swamp" />}}
-- {{< external "https://www.jsdelivr.com/package/npm/toxic-swamp" />}}
-- {{< external "https://codeberg.org/vhs/toxic-swamp" />}}
+- {{< external "https://www.npmjs.com/package/toxic-swamp" />}} - npm
+- {{< external "https://www.jsdelivr.com/package/npm/toxic-swamp" />}} - cdn
+- {{< external "https://codeberg.org/vhs/toxic-swamp" />}} - git
 
 Extract module contents into site themes directory:
 
@@ -122,6 +85,13 @@ Extract module contents into site themes directory:
 └── themes
     ├── after-dark
     └── toxic-swamp
+```
+
+Verify [Release Hash](/feature/release-hashes) and signing key:
+
+```sh
+cd themes/toxic-swamp && \
+npm install && npm run integrity
 ```
 
 Specify module in site config:
@@ -134,19 +104,10 @@ theme = [
 ]
 {{< /highlight >}}
 
-{{< hackcss-alert type="success" >}}
-Miner functional! It's recommended you run your own proxy during the beta. <span hidden>A few more steps and you'll be safe in the fire swamp.</span>
-{{< /hackcss-alert >}}
-
-Optionally, verify the module [Release Hash](/feature/release-hashes):
-
-```sh
-cd themes/toxic-swamp && \
-npm install && npm run integrity
-```
+{{% hackcss-alert type="success" %}}**Success!** Miner now functional. Rebuild your site to view the changes.{{% /hackcss-alert %}}
 
 <a id="config-generator"></a>
-Then generate your configuration to begin earning rewards:
+Generate module config to begin earning rewards:
 
 {{< hackcss-card header="Interactive Config Generator" >}}
   {{< hackcss-form name="generator" disabled="true" action="http://localhost:1414/module/toxic-swamp/configuration/" >}}
@@ -309,11 +270,11 @@ Then generate your configuration to begin earning rewards:
   </script>
 {{< /hackcss-card >}}
 
-Unless you specify a custom proxy you will begin mining in [The Fire Swamp](#the-fire-swamp). Use `Advanced Settings` to set a custom proxy or come back later once you've survived the three terrors which lie ahead.
+Toxic Swamp may be run stand-alone using a single payout address and [The Fire Swamp](#the-fire-swamp) or full-stack with `Advanced Settings` once you [Create Your Own Proxy](#create-your-own-proxy).
 
 ## The Fire Swamp
 
-After Dark provides a proxy called The Fire Swamp using {{< external href="https://moneroocean.stream/?dark" text="MoneroOcean" />}} to help you get started and as a fallback when custom proxies fail to connect.
+After Dark provides upgrade incentives The Fire Swamp using {{< external href="https://moneroocean.stream/?dark" text="MoneroOcean" />}} to help you get started and as a fallback when custom proxies fail to connect.
 
 The proxy servers are located at `fs*.vhs.codeberg.page:80` and will be used by default until you [Create Your Own Proxy](#create-your-own-proxy) or fall more than two major versions behind.
 
@@ -600,7 +561,13 @@ And may be adjusted by updating the `languageCode` from site config:
 languageCode = "id-ID" # Controls site language
 ```
 
-### Customizing
+### Preferred Language
+
+Text presented to the user will appear in the preferred language. Preferred language is derived from HTML and browser settings. If not specified by the HTML it will be inferred from the browser's language setting.
+
+If a translation is available for the preferred language it will be displayed. Otherwise English will be selected by default.
+
+### Customizing Translations
 
 Add or remove translations from `inline.jsonld.html` in your site `layouts` directory. If the file doesn't exist yet, copy it from module default:
 
@@ -611,12 +578,14 @@ cp themes/toxic-swamp/layouts/partials/modules/toxic-swamp/inline.jsonld.html $_
 
 {{% hackcss-alert type="info" %}}**Tip:** See [Custom Layouts](/feature/custom-layouts/) for help customizing your layouts.{{% /hackcss-alert %}}
 
-And adjust their availability using the `translations` setting in site config:
+Adjust availability using the `translations` setting in site config:
 
 ```toml
 [params.modules.toxic_swamp]
-  translations = ["id", "es"] # optional, specifies English translations available
+  translations = ["id-ID"] # optional, specifies English translations available
 ```
+
+Translations will not be presented to the user if not specified.
 
 ---
 
