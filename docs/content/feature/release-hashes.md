@@ -29,10 +29,12 @@ Run the [Release Validator](/validate) to quickly check your release offline:
 <iframe title="Validate Release" scrolling="no" width="100%" height="360" src="/validate"></iframe>
 {{< /hackcss-card >}}
 
-For a more thorough inspection do the following, comparing your hash with those generated during the release as defined above:
+For a more thorough inspection do the following:
 
 1. Install the {{< external href="https://docs.npmjs.com/cli/npm" text="npm cli" />}} on your machine.
 2. Navigate to `themes/after-dark` from within your site.
-3. Run `npm run integrity` to generate your SHA-512 hash.
+3. Run `npm i && npm run integrity` to generate your SHA-512 hash.
+4. Compare your hash to the hash generated during a signed release.
+5. If equal, verify the GPG signature used to sign that release.
 
-If everything matches you're all set. If not, please {{< external href="https://codeberg.org/vhs/after-dark/issues/new" text="Submit an Issue" />}}.
+If inspection fails run the [Upgrade Script](../upgrade-script/) and try again.
