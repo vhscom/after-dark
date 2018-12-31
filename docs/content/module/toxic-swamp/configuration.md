@@ -62,7 +62,7 @@ touch data/modules/toxic_swamp/proxies.toml
 </section>
 
 <section class="js-hideadvanced">
-  <p>Rebuild and serve your site to start earning rewards, or learn more about <a href="../#the-fire-swamp">The Fire Swamp</a>, <a href="../#receiving-rewards">Receiving Rewards</a> and how to <a href="../#create-your-own-proxy">Create Your Own Proxy</a>.
+  <p>Then rebuild your site to start <a href="../#earning-rewards">Earning Rewards</a>.
 </section>
 
 <script>
