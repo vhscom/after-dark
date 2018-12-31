@@ -307,7 +307,9 @@ Maximize your incentive with reduced effort by using the [Upgrade Script](/featu
 
 ## Create Your Own Proxy
 
-Specify proxy under advanced settings when generating module config. \
+Advanced users may wish to configure their own proxy servers.
+
+advanced settings when running the [Config Generator](#config-generator) and stand up your proxy using the proxy server described in more detail here:
 
 <details>
 <summary>Expand to view details</summary>
@@ -509,57 +511,45 @@ Enable debugging to output detailed socket messages from the proxy to the browse
 
 ## Internationalization
 
-Toxic Swamp provides English and Indonesian base translations. Language selection is automatic based on the document's HTML `lang` attribute:
+Included languages available for UI presentation:
 
-```html
-<html lang="id-ID"><!-- Bahasa Indonesia -->
-<html lang="en-US"><!-- American English -->
-```
+- English
+- Indonesian
+- Russian
 
-Toggle between langauges using the `languageCode` setting in site config:
+Use `languageCode` in site config to control display language:
 
 ```toml
-languageCode = "id-ID" # Display toolbar in Indonesian
-languageCode = "en-UK" # Display toolbar in English
+languageCode = "en-US" # English (United States) or English by default
+languageCode = "id-ID" # Indonesian (Indonesia) or Indonesian, if available
+languageCode = "ru-RU" # Russian (Russia) or Russian, if available
 ```
 
-If `lang` attribute is not present, the browser language may be used.
+{{< hackcss-alert type="info" >}}
+<strong>Note:</strong> Language tag syntax is defined by the <abbr title="Internet Engineering Task Force">IETF</abbr>'s {{< external href="https://tools.ietf.org/html/bcp47" text="BCP 47" />}}.
+{{< /hackcss-alert >}}
 
-### Customizing Translations
+Customize translations without modifying source:
 
-Add, modify or remove translations from `inline.jsonld.html` in your site `layouts` directory. If the file doesn't exist yet, copy it from module default:
+<details>
+<summary>Expand to view details</summary>
+
+Modify translations from `inline.jsonld.html` in your site `layouts` directory. If the file doesn't exist yet, copy it from module default:
 
 ```sh
 mkdir -p layouts/partials/modules/toxic-swamp/ && \
 cp themes/toxic-swamp/layouts/partials/modules/toxic-swamp/inline.jsonld.html $_
 ```
 
-Follow the `id` and `en` examples provided within. Once you're satisfied with your changes verify the file is well-formed JSON and rebuild your site to view changes. Delete the file to return to module defaults.
-
-### Specifying Availability
-
-Adjust language availability using the `translations` setting in site config:
+Whitelist available `translations` for module in site config using override:
 
 ```toml
 [params.modules.toxic_swamp]
-  translations = ["id", "pt-BR"] # optional, available English translations
+  translations = ["id", "ru"] # Override available English translations
 ```
 
-The example above specifies a Português translation is available in addition to Indonesian. Remove the setting to return to module defaults.
+Remove any customizations to return to module defaults.
 
-### Language Selection
+</details>
 
-Text presented to the user will appear in a "preferred language". Preferred language is first derived from the `lang` attribute. If left unspecified, the browser's `navigator.language` will be used instead:
-
-HTML | Browser | Available Translations | Presented Language
---- | --- | --- | ---
-id-ID | en-US | id | Indonesian
-pt-BR | id-ID | id | English
--\- | pt-BR | id, pt-BR | Português (Brazilian)
--\- | en-UK | id, pt-BR | English
-es-ES | es-US | es, es-419, es-ES | Español de España
-ru-RU | en-UK | ru | Pу́сский (Russian)
-
-Regardless of language preference, only [available translations](#specifying-availability) will be presented to the user. If no available translations are specified, English will be used.
-
-[^1]: Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared with 0% for {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}} and excludes optional donation, hashrate variance, uptime, withdrawal fees and optimizations.
+[^1]: Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared with 0% for {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}} and excludes upgrade incentives, hashrate variance, pool and proxy uptime, withdrawal fees and other optimizations.
