@@ -8,67 +8,21 @@ tags = ["module", "monetization", "rewards", "cryptocurrency"]
 features = ["snippets", "related content"]
 +++
 
-<a id="footnote-return"></a>
-Monetize attention in one of more than 40 cryptocurrency mining pools and take home over 200% more per hash when compared to Coinhive.[^1]
-
-<section>
-  <style>.form { width: unset }</style>
-  {{< hackcss-grid >}}
-    {{< hackcss-cell class="-4of12" >}}
-      {{< hackcss-card header="Step 1" >}}
-        {{< hackcss-form action="https://codeberg.org/vhs/toxic-swamp/releases" >}}
-          {{< hackcss-button type="primary" isblock="true" isghost="true" >}}
-            <svg class="i-download" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-              <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30"></path>
-            </svg>&nbsp;&nbsp;Download
-          {{< /hackcss-button >}}
-        {{< /hackcss-form >}}
-      {{< /hackcss-card >}}
-    {{< /hackcss-cell >}}
-    {{< hackcss-cell class="-4of12" >}}
-      {{< hackcss-card header="Step 2" >}}
-        {{< hackcss-form action="#installation" >}}
-          {{< hackcss-button type="info" isblock="true" isghost="true" >}}
-            <svg id="source" aria-labelledby="source-label" class="i-code" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-              <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
-            </svg>&nbsp;&nbsp;Install
-          {{< /hackcss-button >}}
-        {{< /hackcss-form >}}
-      {{< /hackcss-card >}}
-    {{< /hackcss-cell >}}
-    {{< hackcss-cell class="-4of12" >}}
-      {{< hackcss-card header="Step 3" >}}
-        {{< hackcss-form action="#receiving-rewards" >}}
-          {{< hackcss-button type="success" isblock="true" isghost="true" >}}
-            <svg id="i-creditcard" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-              <path d="M2 7 L2 25 30 25 30 7 Z M5 18 L9 18 M5 21 L11 21" />
-              <path d="M2 11 L2 13 30 13 30 11 Z" fill="currentColor" />
-            </svg>&nbsp;&nbsp;Profit
-          {{< /hackcss-button >}}
-        {{< /hackcss-form >}}
-      {{< /hackcss-card >}}
-    {{< /hackcss-cell >}}
-  {{< /hackcss-grid >}}
-</section>
-
-Basic set-up is simple. October 2018 hard fork supported. Works with both Cryptonight and Cryptonight-Light. {{< external text="Kovri I2P Router" href="https://getkovri.org" />}} integration anticipated.
-
-## Demo
+Monetize attention in one of more than 40 cryptocurrency mining pools and take home 200% more per hash when compared to Coinhive.[^1]
 
 {{< hackcss-alert >}}
-  <video controls preload="auto" width="100%">
-    <source src="https://vhs.keybase.pub/toxic-swamp-demo.mp4" type="video/mp4">
-    <p>Your browser doesn't support HTML5 video. Here is a <a href="https://vhs.keybase.pub/after-dark-web-mining-prototype.mp4">link to the video</a> instead.</p>
-  </video>
+<img width="746" height="466" alt="Toxic Swamp screenshot" src="/images/screenshots/after-dark-v6.15.0-homepage-fs8.png">
 {{< /hackcss-alert >}}
 
 ## Features
 
 - Transparent, unobtrusive multilingual user interface
 - Does not use cookies or connect to any third-parties
+- Obfuscates end-user IPs and other connection details
 - Automatically starts when external power is detected
 - Suspends operation during loss of power or attention
-- Functions like an application without the complexity
+- Optimized for low-bandwidth high-latency connections
+- Ideal for IoT and distributed computing environments
 
 ## Installation
 
@@ -87,11 +41,12 @@ Extract module contents into site themes directory:
     └── toxic-swamp
 ```
 
-Verify [Release Hash](/feature/release-hashes) and signing key:
+Verify [Release Hash](/feature/release-hashes) and GPG signature:
 
 ```sh
 cd themes/toxic-swamp && \
-npm install && npm run integrity
+npm install && npm run integrity && \
+git tag --verify v1.0.0-beta.16
 ```
 
 Specify module in site config:
@@ -104,12 +59,11 @@ theme = [
 ]
 {{< /highlight >}}
 
-{{% hackcss-alert type="success" %}}**Success!** Miner now functional. Rebuild your site to view the changes.{{% /hackcss-alert %}}
-
 <a id="config-generator"></a>
 Generate module config to begin earning rewards:
 
 {{< hackcss-card header="Interactive Config Generator" >}}
+  <style>.form { width: unset; }</style>
   {{< hackcss-form name="generator" disabled="true" action="http://localhost:1414/module/toxic-swamp/configuration/" >}}
     <noscript>
       {{< hackcss-helpblock >}}
@@ -120,12 +74,12 @@ Generate module config to begin earning rewards:
       <style>.js-usesameorigin { display: none }</style>
       <strong>NOPE!</strong> Attempting to submit to unknown origin.
     {{< /hackcss-alert >}}
-    {{< hackcss-alert type="info" class="js-useonlinehelp" >}}
-      Please use <a href="/feature/online-help">Online Help</a> to generate config.
+    {{< hackcss-alert type="warning" class="js-useonlinehelp" >}}
+      Please use <a href="/feature/online-help">Online Help</a> to generate configuration with <a href="/feature/air-gapping/">Air Gapping</a>.
     {{< /hackcss-alert >}}
-    {{< hackcss-alert type="info" class="js-disconnect" >}}
+    {{< hackcss-alert type="warning" class="js-disconnect" >}}
       <style>.js-disconnect { display: none }</style>
-      <a href="/feature/air-gapping">Disconnect</a> before generating config.
+      Please <a href="/feature/air-gapping">Disconnect</a> from the network before generating your configuration.
     {{< /hackcss-alert >}}
     {{< hackcss-formgroup name="addressgroup" >}}
       {{< hackcss-label for="address" >}}
@@ -147,7 +101,7 @@ Generate module config to begin earning rewards:
     {{< /hackcss-buttongroup >}}
     <details>
       <summary>Advanced Settings</summary>
-      <p>Optional. <a href="#create-your-own-proxy">Create Your Own Proxy</a> before specifying advanced settings.</p>
+      <p>Optional. <a href="#create-your-own-proxy">Create Your Own Proxy</a> before using.</p>
       {{< hackcss-formgroup name="servergroup" >}}
         {{< hackcss-label for="server" text="Proxy Server:" />}}
         {{< hackcss-textinput type="url" id="server" name="server" placeholder="wss://domain.example:80" >}}
@@ -270,7 +224,18 @@ Generate module config to begin earning rewards:
   </script>
 {{< /hackcss-card >}}
 
-Toxic Swamp may be run stand-alone using a single payout address and [The Fire Swamp](#the-fire-swamp) or full-stack with `Advanced Settings` once you [Create Your Own Proxy](#create-your-own-proxy).
+Unless configuring `Advanced Settings` no other set-up is required.
+
+## Earning Rewards
+
+Using [The Fire Swamp](#the-fire-swamp) with a configured payout address, you may view your hash metrics and payout information from the {{< external href="https://moneroocean.stream/?dark#/dashboard" text="MoneroOcean Dashboard" />}}:
+
+{{< figure alt="MoneroOcean Dashboard screenshots"
+  src="/images/screenshots/monero-ocean-dashboard-fs8.png"
+  caption="Monero Ocean Dashboard showing Toxic Swamp mining activity."
+>}}
+
+See the MoneroOcean {{< external href="https://moneroocean.stream/?dark#/help/faq" text="FAQ" />}} for more details.
 
 ## The Fire Swamp
 
@@ -342,7 +307,12 @@ Maximize your incentive with reduced effort by using the [Upgrade Script](/featu
 
 ## Create Your Own Proxy
 
-Specify proxy under advanced settings when generating module config. Use the instructions in {{< external "https://codeberg.org/vhs/webminerpool" />}} to stand up your own proxy server and reference the following to understand connection activity:
+Specify proxy under advanced settings when generating module config. \
+
+<details>
+<summary>Expand to view details</summary>
+
+Use the instructions in {{< external "https://codeberg.org/vhs/webminerpool" />}} to stand up your own proxy server and reference the following to understand connection activity:
 
 <style>
   table { caption-side: bottom; }
@@ -528,23 +498,14 @@ Specify proxy under advanced settings when generating module config. Use the ins
   </tbody>
 </table>
 
+</details>
+
 Enable debugging to output detailed socket messages from the proxy to the browser console by adding the following to your site config:
 
 ```toml
 [params.modules.toxic_swamp]
   debugging = true
 ```
-
-## Receiving Rewards
-
-If you're using [The Fire Swamp](#the-fire-swamp) with a configured payout address, you may view your accumulated hash metrics and payouts from the {{< external href="https://moneroocean.stream/?dark#/dashboard" text="MoneroOcean Dashboard" />}}:
-
-{{< figure alt="MoneroOcean Dashboard screenshots"
-  src="/images/screenshots/monero-ocean-dashboard-fs8.png"
-  caption="Monero Ocean Dashboard showing Toxic Swamp mining activity."
->}}
-
-See the MoneroOcean {{< external href="https://moneroocean.stream/?dark#/help/faq" text="FAQ" />}} for more details.
 
 ## Internationalization
 
