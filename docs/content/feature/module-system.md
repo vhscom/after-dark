@@ -1,11 +1,11 @@
 +++
 title = "Module System"
-description = "Enhance functionality with prebuilt addon modules."
+description = "Enhance site functionality with add-on modules."
 categories = ["experience"]
 tags = ["module", "imaging", "graphics", "analytics", "installation"]
 features = ["module system", "related content"]
 +++
 
-After Dark uses {{< external href="https://gohugo.io/themes/theme-components/" text="Hugo Theme Components" />}} to produce a system for including a number of prebuilt add-on [Modules](/module) providing additional functionality.
+After Dark uses {{< external href="https://gohugo.io/themes/theme-components/" text="Theme Components" />}} and [Fetch Injection](../fetch-injection/) to provide a plug-in system for enhancing site functionality using optional add-on modules.
 
-See [Modules](/module) a summary of available modules.
+View the list of [available modules](/module/).
