@@ -16,13 +16,14 @@ Monetize attention in one of more than 40 cryptocurrency mining pools and take h
 
 ## Features
 
+- Earn cryptocurrency while visitors browse your sites
+- Reward effort during site development and publishing
 - Transparent, unobtrusive multilingual user interface
 - Does not use cookies or connect to any third-parties
 - Obfuscates end-user IPs and other connection details
 - Automatically starts when external power is detected
 - Suspends operation during loss of power or attention
 - Optimized for low-bandwidth high-latency connections
-- Ideal for IoT and distributed computing environments
 
 ## Installation
 
