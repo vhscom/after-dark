@@ -1,30 +1,38 @@
 +++
 title = "External"
-description = "Create links with SVG icon and custom behavior."
+description = "Create links with external icon and custom behavior."
 categories = ["navigation"]
 tags = ["links", "security", "privacy"]
 html_attributes = ["href", "class", "referrerpolicy", "target", "type", "rel"]
-custom_attributes = []
-snippets_used = ["external", "button"]
+custom_attributes = ["text"]
+snippets_used = ["external", "button", "alert"]
 +++
 
 Basic usage:
 
 ```html
-{{</* external text="After Dark" href="https://vhs.codeberg.page/after-dark" /*/>}}
+{{</* external href="https://vhs.codeberg.page/after-dark" text="After Dark" /*/>}}
 {{</* external href="https://vhs.codeberg.page/after-dark" /*/>}}
 ```
 
-{{< external text="After Dark" href="https://vhs.codeberg.page/after-dark" />}}
+{{< external href="https://vhs.codeberg.page/after-dark" text="After Dark" />}}
 {{< external href="https://vhs.codeberg.page/after-dark" />}}
 
+Shorthand usage:
+
 ```
+{{</* external "https://vhs.codeberg.page/after-dark" "After Dark" /*/>}}
 {{</* external "https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install" /*/>}}
 {{</* external "wss://fs1.vhs.codeberg.page:80" /*/>}}
 ```
 
+{{< external "https://vhs.codeberg.page/after-dark" "After Dark" />}}
 {{< external "https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install" />}}
 {{< external href="wss://fs1.vhs.codeberg.page:80" />}}
+
+{{< hackcss-alert type="info" >}}
+<strong>Note:</strong> URIs such as those using the <code>wss</code> scheme may be considered unsafe by the {{< external "https://golang.org/pkg/html/template/" "Go template package" />}}. Learn more in the package {{< external "https://golang.org/pkg/html/template/#hdr-Security_Model" "Security Model" />}}.
+{{< /hackcss-alert >}}
 
 With external link styling removed:
 
