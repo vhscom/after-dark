@@ -94,7 +94,8 @@ select.form-control,
 html {
   font-size: 13px;
 }
-.hack pre {
+.hack pre,
+.hack samp {
   font-size: 17px;
 }
 .hack .form input,
