@@ -42,4 +42,4 @@ And specify the `JSON` {{< external href="https://gohugo.io/templates/output-for
 
 Once activated your site will begin outputting an `index.json` file during generation, giving fuzzy search the data it needs to help you locate pages.
 
-Try it by navigating to [domain.example/search](/search), entering a search query and using <kbd>Tab</kbd> to navigate between search results.
+Try it now by navigating to [domain.example/search](/search/), or, if enabled, `Search` in the [Section Menu](../section-menu/), entering a query and navigating between results using <kbd>Tab</kbd>.
