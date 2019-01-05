@@ -1,19 +1,19 @@
-{{ $href := .Get "href" | default nil }}
-{{ $body := .Get "text" | default .Inner }}
-{{ $class := .Get "class" }}
-{{ $referrerpolicy := .Get "referrerpolicy" }}
-{{ $target := .Get "target" }}
-{{ $title := .Get "title" }}
-{{ $type := .Get "type" }}
-{{ $rel := .Get "rel" }}
-{{ $itemtype := .Get "itemtype" }}
-{{ if .IsNamedParams }}
-  {{- partial "shortcode/external.html" (dict "href" $href "body" $body "class" $class "referrerpolicy" $referrerpolicy "target" $target "type" $type "title" $title "rel" $rel "itemtype" $itemtype "suppress_external" (and .Inner (eq (len (findRE "external" $rel)) 0))) -}}
-{{ else if gt (len .Params) 1 }}
-  {{- partial "shortcode/external.html" (dict "href" (.Get 0) "body" (.Get 1)) -}}
-{{ else }}
-  {{- partial "shortcode/external.html" (dict "href" (.Get 0)) -}}
-{{ end -}}
+{{ $href := .Get "href" | default nil -}}
+{{ $body := .Get "text" | default .Inner -}}
+{{ $class := .Get "class" -}}
+{{ $referrerpolicy := .Get "referrerpolicy" -}}
+{{ $target := .Get "target" -}}
+{{ $title := .Get "title" -}}
+{{ $type := .Get "type" -}}
+{{ $rel := .Get "rel" -}}
+{{ $itemtype := .Get "itemtype" -}}
+{{- if .IsNamedParams -}}
+  {{ partial "shortcode/external.html" (dict "href" $href "body" $body "class" $class "referrerpolicy" $referrerpolicy "target" $target "type" $type "title" $title "rel" $rel "itemtype" $itemtype "suppress_external" (and .Inner (eq (len (findRE "external" $rel)) 0))) }}
+{{- else if gt (len .Params) 1 -}}
+  {{ partial "shortcode/external.html" (dict "href" (.Get 0) "body" (.Get 1)) }}
+{{- else -}}
+  {{ partial "shortcode/external.html" (dict "href" (.Get 0)) }}
+{{- end -}}
 {{- if or (and .IsNamedParams (eq $href nil)) (and (eq .IsNamedParams false) (eq (.Get 0) nil)) }}
   <p>{{ partial "components/alert.html" (dict "type" "error" "body" (errorf "Invalid use of external shortcode. Please provide a URL.")) }}</p>
 {{ end -}}
