@@ -47,4 +47,14 @@ Adjust link names and menu position by adding the following code block to your {
   url = "/post/"
 ```
 
+Decorate links with SVG icons using `pre` and `post`:
+
+```toml
+[[menu.main]]
+  name = "Search"
+  identifier = "search"
+  url = "/search/"
+  post = "<svg aria-hidden=\"true\" class=\"i-search\" viewBox=\"0 0 32 32\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentcolor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"3\"><circle cx=\"14\" cy=\"14\" r=\"12\" /><path d=\"M23 23 L30 30\" /></svg>"
+```
+
 See {{< external href="https://gohugo.io/content-management/menus/" text="Menus in Hugo" />}} for additional information.
