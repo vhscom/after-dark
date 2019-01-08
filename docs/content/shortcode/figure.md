@@ -1,6 +1,6 @@
 +++
 title = "Figure"
-description = "Present lazy-loaded images with LQIP support."
+description = "Load images progressively with blurry placeholders."
 categories = ["experience"]
 tags = ["performance", "images", "graphics"]
 html_attributes = ["class", "alt", "src"]
@@ -11,24 +11,26 @@ notes = [
 ]
 +++
 
-With low-quality image placeholder:
+With progressive image placeholder:
 
 ```html
 {{</* figure
-  src="https://source.unsplash.com/Y-w15LfHO8w/5184x3456"
-  lqipsrc="https://source.unsplash.com/Y-w15LfHO8w/1080x720"
-  caption="Be Creative"
-  attr="AK¥N Cakiner"
-  attrlink="https://unsplash.com/@akin"
+  src="/images/watercolor_pTIyYTqAlF8_w1440h700.jpeg"
+  alt="Map image"
+  lqipsrc="/images/watercolor_pTIyYTqAlF8_w936h455.jpeg"
+  title="Map of Bali in Watercolor"
+  attr="Stamen Design"
+  attrlink="https://maps.stamen.com/"
 */>}}
 ```
 
 {{< figure
-  src="https://source.unsplash.com/Y-w15LfHO8w/5184x3456"
-  lqipsrc="https://source.unsplash.com/Y-w15LfHO8w/1080x720"
-  caption="Be Creative"
-  attr="AK¥N Cakiner"
-  attrlink="https://unsplash.com/@akin"
+  src="/images/watercolor_pTIyYTqAlF8_w1440h700.jpeg"
+  alt="Map image"
+  lqipsrc="/images/watercolor_pTIyYTqAlF8_w936h455.jpeg"
+  title="Map of Bali in Watercolor"
+  attr="Stamen Design"
+  attrlink="https://maps.stamen.com/"
 >}}
 
 See {{< external href="https://gohugo.io/content-management/shortcodes/#figure" text="Figures in Hugo" />}} for additional usage.
