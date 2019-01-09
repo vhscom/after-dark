@@ -14,7 +14,7 @@
   <div id="search-app">
     <div v-cloak>
       <section>
-        <form v-on:submit.prevent class="form" action="{{ "search" | absURL }}">
+        <form v-on:submit.prevent role="search" class="form" action="{{ "search" | absURL }}">
           <fieldset class="form-group">
             <input v-model="query" id="query" name="s" type="search" class="form-control" maxlength="32" autocomplete="off"{{ with .Params.form.input.placeholder }} placeholder="{{ . }}"{{ end }}{{ if eq .Params.form.input.disabled true }} disabled{{ end }}>
             {{ with .Params.form.helpblock }}
