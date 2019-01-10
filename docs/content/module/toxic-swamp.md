@@ -14,7 +14,7 @@ Monetize attention in one of more than 40 cryptocurrency mining pools and take h
 <img width="746" height="466" alt="Toxic Swamp screenshot" src="/images/screenshots/after-dark-v6.15.0-homepage-fs8.png">
 {{< /hackcss-alert >}}
 
-## Features
+# Features
 
 - Earn cryptocurrency while visitors browse your sites
 - Reward effort during site development and publishing
@@ -25,7 +25,7 @@ Monetize attention in one of more than 40 cryptocurrency mining pools and take h
 - Suspends operation during loss of power or attention
 - Optimized for low-bandwidth high-latency connections
 
-## Installation
+# Installation
 
 Choose a module download source:
 
@@ -227,7 +227,7 @@ Generate module config to begin earning rewards:
 
 Unless configuring `Advanced Settings` no other set-up is required.
 
-## Earning Rewards
+# Earning Rewards
 
 Using [The Fire Swamp](#the-fire-swamp) with a configured payout address, you may view your hash metrics and payout information from the {{< external href="https://moneroocean.stream/?dark#/dashboard" text="MoneroOcean Dashboard" />}}:
 
@@ -238,7 +238,7 @@ Using [The Fire Swamp](#the-fire-swamp) with a configured payout address, you ma
 
 See the MoneroOcean {{< external href="https://moneroocean.stream/?dark#/help/faq" text="FAQ" />}} for more details.
 
-## The Fire Swamp
+# The Fire Swamp
 
 After Dark provides upgrade incentives The Fire Swamp using {{< external href="https://moneroocean.stream/?dark" text="MoneroOcean" />}} to help you get started and as a fallback when custom proxies fail to connect.
 
@@ -306,9 +306,11 @@ Maximize your incentive with reduced effort by using the [Upgrade Script](/featu
   <strong>Note:</strong> After Dark updates are typically backwards compatible with existing modules though there may be cases where module updates are required.
 {{< /hackcss-alert >}}
 
-## Create Your Own Proxy
+# Create Your Own Proxy
 
 Advanced users may wish to configure their own proxy servers.
+
+{{% hackcss-alert type="warning" %}}**Warning:** When creating your own proxy consider adding an "Indemnification" clause in a prominent location on your website, app or SaaS.{{% /hackcss-alert %}}
 
 advanced settings when running the [Config Generator](#config-generator) and stand up your proxy using the proxy server described in more detail here:
 
@@ -510,7 +512,7 @@ Enable debugging to output detailed socket messages from the proxy to the browse
   debugging = true
 ```
 
-## Internationalization
+# Internationalization
 
 Included languages available for UI presentation:
 
@@ -552,5 +554,20 @@ Whitelist available `translations` for module in site config using override:
 Remove any customizations to return to module defaults.
 
 </details>
+
+# Indemnification
+
+While using Toxic Swamp you may wish to consider placing an indemnity clause in a prominent — or obvious — location within your website, app or service.
+
+An example indemnity clause might look like the following:
+
+<b><i>By using [Site] you acknowledge you are the sole owner of the computer or device used to connect to [Site] and hereby agree to indemnify, defend, and hold harmless [Site] in any matter arising from the unauthorized use thereof.</i></b>
+
+The intent of this clause is to limit your liability should someone attempt to use Toxic Swamp in a way which may be construed by another as illicit.
+
+{{< blockquote
+  text="Hanlon's Razor: Never attribute to malice that which can be adequately explained by stupidity."
+  cite="Robert Heinlein, Logic of Empire (1941)"
+/>}}
 
 [^1]: Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared with 0% for {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}} and excludes upgrade incentives, hashrate variance, pool and proxy uptime, withdrawal fees and other optimizations.
