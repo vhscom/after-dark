@@ -557,13 +557,13 @@ Remove any customizations to return to module defaults.
 
 # Indemnification
 
-While using Toxic Swamp you may wish to consider placing an indemnity clause in a prominent — or obvious — location within your website, app or service.
+Though not specifically required, you may choose to place an indemnity clause in a prominent — or obvious — location within your website, app or service.
 
-An example indemnity clause might look like the following:
+An example clause might look like the following:
 
-<b><i>By using [Site] you acknowledge you are the sole owner of the computer or device used to connect to [Site] and hereby agree to indemnify, defend, and hold harmless [Site] in any matter arising from the unauthorized use thereof.</i></b>
+<b><i>By using [Site] you acknowledge you are the sole owner of the computer or device used to connect to [Site] and hereby agree to indemnify, defend, and hold harmless [Site] in any matter arising from or in relation to the unauthorized use thereof.</i></b>
 
-The intent of this clause is to limit your liability should someone attempt to use Toxic Swamp in a way which may be construed by another as illicit.
+The clause intends to limit liability should someone attempt to use [Site] in a way which may be construed by another as illicit.
 
 {{< blockquote
   text="Hanlon's Razor: Never attribute to malice that which can be adequately explained by stupidity."
