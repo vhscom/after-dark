@@ -310,8 +310,6 @@ Maximize your incentive with reduced effort by using the [Upgrade Script](/featu
 
 Advanced users may wish to configure their own proxy servers.
 
-{{% hackcss-alert type="warning" %}}**Warning:** When creating your own proxy consider adding an "Indemnification" clause in a prominent location on your website, app or SaaS.{{% /hackcss-alert %}}
-
 advanced settings when running the [Config Generator](#config-generator) and stand up your proxy using the proxy server described in more detail here:
 
 <details>
