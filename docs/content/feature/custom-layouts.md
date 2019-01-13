@@ -79,4 +79,5 @@ Adjust `list.html` and `single.html` layouts and use [Custom Styles](../custom-s
 
 - {{< external "https://gohugo.io/templates/" />}} for templating functions and logic
 - {{< external "devdocs.io" />}} for a comprehensive HTML and CSS reference
+- {{< external "https://internetingishard.com" />}} learn HTML & CSS for free
 - {{< external "https://inclusive-components.design" />}} for design pattern ideas
