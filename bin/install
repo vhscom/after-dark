@@ -93,7 +93,7 @@ update_archetypes () {
 }
 
 create_welcome_post () {
-   echo "Creating a helpful welcome post ..."
+   echo "Creating welcome post ..."
    hugo new post/welcome.md 1>/dev/null
 }
 
