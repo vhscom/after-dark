@@ -72,6 +72,34 @@ With 12 columns:
   {{< hackcss-cell class="-1of12" text="1" />}}
 {{< /hackcss-grid >}}
 
+Aligning three images with space around:
+
+```html
+{{</* hackcss-grid class="-around" >}}
+  {{< hackcss-cell class="-2of12" >}}
+    <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%23f00'/%3E%3C/svg%3E">
+  {{< /hackcss-cell >}}
+  {{< hackcss-cell class="-2of12" >}}
+    <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='lime'/%3E%3C/svg%3E">
+  {{< /hackcss-cell >}}
+  {{< hackcss-cell class="-2of12" >}}
+    <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%2300f'/%3E%3C/svg%3E">
+  {{< /hackcss-cell >}}
+{{< /hackcss-grid */>}}
+```
+
+{{< hackcss-grid class="-around" >}}
+  {{< hackcss-cell class="-2of12" >}}
+    <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%23f00'/%3E%3C/svg%3E">
+  {{< /hackcss-cell >}}
+  {{< hackcss-cell class="-2of12" >}}
+    <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='lime'/%3E%3C/svg%3E">
+  {{< /hackcss-cell >}}
+  {{< hackcss-cell class="-2of12" >}}
+    <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%2300f'/%3E%3C/svg%3E">
+  {{< /hackcss-cell >}}
+{{< /hackcss-grid >}}
+
 Enclosing [Cards](../card/) with various [Buttons](../button/) inside:
 
 ```html
