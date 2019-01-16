@@ -3,7 +3,7 @@ title = "SVG Favicon"
 description = "Decorate your site with a unique SVG favicon."
 categories = ["customizing"]
 tags = ["color", "style", "graphics", "branding"]
-features = ["code highlighter", "snippets", "related content"]
+features = ["code highlighter", "snippets", "related content", "grid", "cell"]
 +++
 
 After Dark ships with an 169B optimized[^1] SVG favicon embedded into every page:
@@ -25,32 +25,32 @@ The color of the icon can be modified by changing the `fill` attribute:
   text-align: center;
 }
 </style>
-<div class="grid">
-  <div class="cell -4of12">
+{{< hackcss-grid >}}
+  {{< hackcss-cell class="-4of12" >}}
     <figure>
       <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%23f00'/%3E%3C/svg%3E" width="96">
       <figcaption class="highlight">
         <pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">fill</span><span class="p">=</span><span class="s1">&quot;%23f00&quot;</span></code></pre>
       </figcaption>
     </figure>
-  </div>
-  <div class="cell -4of12">
+  {{< /hackcss-cell >}}
+  {{< hackcss-cell class="-4of12" >}}
     <figure>
       <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='lime'/%3E%3C/svg%3E" width="96">
       <figcaption class="highlight">
         <pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">fill</span><span class="p">=</span><span class="s1">&quot;lime&quot;</span></code></pre>
       </figcaption>
     </figure>
-  </div>
-  <div class="cell -4of12">
+  {{< /hackcss-cell >}}
+  {{< hackcss-cell class="-4of12" >}}
     <figure>
       <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%2300f'/%3E%3C/svg%3E" width="96">
       <figcaption class="highlight">
         <pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">fill</span><span class="p">=</span><span class="s1">&quot;%2300f&quot;</span></code></pre>
       </figcaption>
     </figure>
-  </div>
-</div>
+  {{< /hackcss-cell >}}
+{{< /hackcss-grid >}}
 
 Adjust it from `favicon.html` in the site `layouts/partials/head` directory:
 
