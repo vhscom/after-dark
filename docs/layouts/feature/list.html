@@ -8,25 +8,46 @@
       <blockquote itemprop="description">{{ .Description }}</blockquote>
     {{ end }}
   </header>
-  <table>
-    <legend>Choose a feature to learn more or run the <a href="./quick-install">Quick Install</a> to download and install After Dark and use the <a href="./online-help">Online Help</a> try any of these yourself:</legend>
-    <thead>
-      <tr>
-        <th scope="col">{{ .Title | singularize }}</th>
-        <th scope="col">Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <nav>
-        {{ range .Paginator.Pages }}
-          <tr>
-            <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-            <td>{{ .Description }}</td>
-          </tr>
-        {{ end }}
-      </nav>
-    </tbody>
-  </table>
+  {{ .Content }}
+  <style>
+    dl {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr 2fr);
+      grid-gap: 1rem;
+    }
+    dt {
+      text-align: right;
+    }
+    dd {
+      margin-inline-start: unset;
+      margin-bottom: 2rem;
+    }
+    @media screen and (min-width: 30em) {
+      dl {
+        grid-template-columns: repeat(2, 1fr 2fr);
+      }
+      .hack h2 {
+        text-align: center;
+      }
+      .hack h2::before {
+        content: "";
+      }
+    }
+  </style>
+  {{ $scratch := newScratch }}
+  {{ range .Paginator.Pages }}
+    {{ $scratch.Add "categories" .Params.categories | first 1 }}
+  {{ end }}
+  {{ $categories := $scratch.Get "categories" | uniq }}
+  {{ range $categories }}
+    <h2>{{ . | title }}</h2>
+    <dl>
+      {{ range where $.Paginator.Pages "Params.categories" "intersect" (slice .)  }}
+        <dt><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <dd>{{ .Description }}
+      {{ end }}
+    </dl>
+  {{ end }}
 {{ end }}
 {{ define "footer" }}
   {{ partial "pagination.html" . }}

@@ -12,8 +12,8 @@
     .hack table th, .hack table td { vertical-align: middle; }
     .hack table td img { margin-bottom: -7px; }
   </style>
+  {{ .Content }}
   <table>
-      <legend>After Dark includes a <a href="/feature/module-system">Module System</a> and several optional modules designed to compliment your site. A list of available modules can be found below:</legend>
     <thead>
       <tr>
         <th scope="col">{{ .Title | singularize }}</th>
