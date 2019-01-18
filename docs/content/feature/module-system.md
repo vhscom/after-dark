@@ -1,7 +1,7 @@
 +++
 title = "Module System"
 description = "Enhance site functionality with add-on modules."
-categories = ["experience"]
+categories = ["core"]
 tags = ["module", "imaging", "graphics", "analytics", "installation"]
 features = ["module system", "related content"]
 +++
