@@ -1,5 +1,4 @@
 baseurl = "https://vhs.codeberg.page/after-dark/" # Controls base URL sitewide
-languageCode = "en-US" # Controls site language
 title = "After Dark" # Homepage title and page title suffix
 paginate = 33 # Number of items to show before paginating
 
@@ -15,6 +14,14 @@ pygmentsUseClasses = true # Required for custom syntax highlighting
 
 sectionPagesMenu = "main" # Enable menu system for lazy bloggers
 footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
+
+[languages]
+  [languages.en]
+    languageCode = "en-US" # Controls site language
+    languageName = "English"
+  [languages.id]
+    languageCode = "id-ID" # Controls site language
+    languageName = "Indonesia"
 
 [params]
   description = "After Dark is free and open source software you can use to create a privacy-aware website, blog or app. Unparalleled speed, secure design and add-on rewards system help you own your data and monetize your users." # Suggested, controls default description meta

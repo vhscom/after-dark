@@ -1,7 +1,7 @@
 +++
 title = "Quick Install"
 description = "One command is all you need to start a new website."
-categories = ["experience"]
+categories = ["core"]
 tags = ["setup", "installation", "scripts"]
 features = ["code highlighter", "snippets", "related content"]
 notes = [

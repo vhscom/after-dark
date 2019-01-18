@@ -1,25 +1,25 @@
 +++
 title = "Upgrade Script"
-description = "Check for After Dark updates and upgrade effortlessly."
+description = "Memeriksa pembaruan After Dark dan mengupgrade dengan mudah."
 categories = ["core"]
 tags = ["updating", "installation", "scripts"]
-features = ["code highlighter", "related content", "snippets"]
+feature = ["code highlighter", "related content", "snippets"]
 +++
 
-To check for updates and automatically upgrade After Dark to the latest version simply run the upgrade script from your site directory:
+Untuk memeriksa pembaruan dan secara otomatis megupgrade After Dark ke versi terbaru, jalankan upgrade skrip dari direktori situs anda:
 
 ```sh
 cd flying toasters && \
 ./themes/after-dark/bin/upgrade
 ```
 
-If you're already using the latest version the script will let you know:
+Jika anda sudah menggunakan versi terbaru, skrip akan memberitahu anda:
 
 {{< hackcss-alert type="info" >}}
 <samp class="muted">Did not upgrade after-dark. Already using latest version.</samp>
 {{< /hackcss-alert >}}
 
-If an update is available the script will download and install it automatically:
+Jika pembaruan tersedia, skrip akan mengunduh dan menginstalnya secara otomatis:
 
 {{< hackcss-alert type="info" >}}
 <samp class="muted">Starting upgrade from 6.7.6 to 6.8.0 ...<br>
@@ -29,7 +29,7 @@ Generating help documentation ...<br>
 Upgrade complete! Please see CHANGELOG.md for changes.</samp>
 {{< /hackcss-alert >}}
 
-If current version can't be detected the script will prompt you:
+Jika versi saat ini tidak dapat dideteksi skrip akan meminta anda:
 
 {{< hackcss-alert type="info" >}}
 <samp class="muted">Cannot detect version. Upgrade after-dark anyway (y/n)? y<br>
@@ -40,4 +40,4 @@ Generating help documentation ...<br>
 Upgrade complete! Please see CHANGELOG.md for changes.</samp>
 {{< /hackcss-alert >}}
 
-Like [Quick Install](../quick-install) the upgrade script is written to POSIX standard will not require additional dependencies to operate on most systems. Upon upgrade the [Release Hash](../release-hashes) will update as well so you may [Validate Release](/validate).
+Seperti [Quick Install](../quick-install) Skrip upgrade ditulis ke standar PSOIX tidak akan memerlukan ketergantungan tambahan untuk beroperasi di sebagian besar sistem. Setelah upgrade [Release Hash](../release-hashes) akan memperbarui juga sehingga anda akan [Validate Release](/validate).

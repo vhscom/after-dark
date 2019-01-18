@@ -1,7 +1,7 @@
 +++
 title = "Online Help"
 description = "Complete self-hosted help guide and example website."
-categories = ["experience"]
+categories = ["core"]
 tags = ["scripts", "security", "networking"]
 features = ["related content", "code highlighter", "snippets"]
 +++
