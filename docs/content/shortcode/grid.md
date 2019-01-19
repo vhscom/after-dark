@@ -166,4 +166,7 @@ Enclosing [Cards](../card/) with various [Buttons](../button/) inside:
   {{< /hackcss-cell >}}
 {{< /hackcss-grid >}}
 
-See the {{< external text="hackcss" href="https://hackcss.egoist.moe/" />}} docs for full list of flexbox modifiers available.
+See the {{< external text="hackcss" href="https://hackcss.egoist.moe/" />}} docs for full list of flexbox modifiers available. Reference the following resources for additional help:
+
+- {{< external "https://philipwalton.github.io/solved-by-flexbox/" "Solved by Flexbox" />}} for cleaner, hack-free CSS
+- {{< external "https://www.w3.org/TR/css-flexbox-1/" "CSS Flexible Box Layout Module" />}} for Level 1 spec on W3C
