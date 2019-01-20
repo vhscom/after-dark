@@ -17,16 +17,13 @@ The favicon is a black-colored oblique triangle in the shape of a tepee as shown
 The color of the icon can be modified by changing the `fill` attribute:
 
 <style>
-.hack figcaption pre {
-  margin-top: 1em;
-}
-.hack .grid {
-  margin-top: 3em;
+.hack figure {
   text-align: center;
+  margin-top: 2rem;
 }
 </style>
-{{< hackcss-grid >}}
-  {{< hackcss-cell class="-4of12" >}}
+{{< hackcss-grid class="-around" >}}
+  {{< hackcss-cell class="-2of12" >}}
     <figure>
       <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%23f00'/%3E%3C/svg%3E" width="96">
       <figcaption class="highlight">
@@ -34,7 +31,7 @@ The color of the icon can be modified by changing the `fill` attribute:
       </figcaption>
     </figure>
   {{< /hackcss-cell >}}
-  {{< hackcss-cell class="-4of12" >}}
+  {{< hackcss-cell class="-2of12" >}}
     <figure>
       <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='lime'/%3E%3C/svg%3E" width="96">
       <figcaption class="highlight">
@@ -42,7 +39,7 @@ The color of the icon can be modified by changing the `fill` attribute:
       </figcaption>
     </figure>
   {{< /hackcss-cell >}}
-  {{< hackcss-cell class="-4of12" >}}
+  {{< hackcss-cell class="-2of12" >}}
     <figure>
       <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%2300f'/%3E%3C/svg%3E" width="96">
       <figcaption class="highlight">
