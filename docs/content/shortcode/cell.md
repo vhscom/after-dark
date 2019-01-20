@@ -8,13 +8,8 @@ custom_attributes = []
 snippets_used = ["grid", "card", "button"]
 +++
 
-<style>.margin-reset { margin: 0; }</style>
-{{< hackcss-card header="Quick Example" >}}
-  {{< hackcss-grid class="margin-reset" >}}
-    {{< hackcss-cell class="-4of12" text="4" />}}
-    {{< hackcss-cell class="-4of12" text="4" />}}
-    {{< hackcss-cell class="-4of12" text="4" />}}
-  {{< /hackcss-grid >}}
+Contained by [Grid](../grid) with three columns of equal size:
+
 {{< highlight html "linenos=inline" >}}
 {{</* hackcss-grid >}}
   {{< hackcss-cell class="-4of12" text="4" />}}
@@ -22,7 +17,12 @@ snippets_used = ["grid", "card", "button"]
   {{< hackcss-cell class="-4of12" text="4" />}}
 {{< /hackcss-grid */>}}
 {{< /highlight >}}
-{{< /hackcss-card >}}
+
+{{< hackcss-grid class="margin-reset" >}}
+  {{< hackcss-cell class="-4of12" text="4" />}}
+  {{< hackcss-cell class="-4of12" text="4" />}}
+  {{< hackcss-cell class="-4of12" text="4" />}}
+{{< /hackcss-grid >}}
 
 With two columns of odd size:
 
@@ -138,4 +138,7 @@ Enclosing [Cards](../card/) with various [Buttons](../button/) inside:
   {{< /hackcss-cell >}}
 {{< /hackcss-grid >}}
 
-See the {{< external text="hackcss" href="https://hackcss.egoist.moe/" />}} docs for full list of flexbox modifiers available.
+See the {{< external text="hackcss" href="https://hackcss.egoist.moe/" />}} docs for full list of flexbox modifiers available. Reference the following resources for additional help:
+
+- {{< external "https://philipwalton.github.io/solved-by-flexbox/" "Solved by Flexbox" />}} for cleaner, hack-free CSS
+- {{< external "https://www.w3.org/TR/css-flexbox-1/" "CSS Flexible Box Layout Module" />}} for Level 1 spec on W3C
