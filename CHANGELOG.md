@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.16.0"></a>
+# [6.16.0](https://codeberg.org/vhs/after-dark/compare/v6.15.1...v6.16.0) (2019-01-23)
+
+
+### Bug Fixes
+
+* **assets/css:** normalize samp element font size with pre ([c42ccba](https://codeberg.org/vhs/after-dark/commits/c42ccba))
+* **assets/css:** normalize whitespace around toc when post images present ([c3f37a5](https://codeberg.org/vhs/after-dark/commits/c3f37a5))
+
+
+### Features
+
+* **feature/fuzzy-search:** add aria landmark to search form ([7a9b75a](https://codeberg.org/vhs/after-dark/commits/7a9b75a))
+* **feature/post-images:** add image captions and structured data ([41f41e7](https://codeberg.org/vhs/after-dark/commits/41f41e7))
+* **feature/section-menu:** add support for html link decoration ([7634b42](https://codeberg.org/vhs/after-dark/commits/7634b42))
+* **shortcodes/external:** add shorthand usage for named anchors ([243d15a](https://codeberg.org/vhs/after-dark/commits/243d15a))
+
+
+
 <a name="6.15.1"></a>
 ## [6.15.1](https://codeberg.org/vhs/after-dark/compare/v6.15.0...v6.15.1) (2018-12-28)
 
