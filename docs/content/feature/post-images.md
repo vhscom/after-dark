@@ -67,7 +67,7 @@ Figure captions are generated automatically when `description` and/or `creator` 
     sameas = "https://unsplash.com/photos/NqOInJ-ttqM/ottawa-road-in-the-evening"
 ```
 
-Override automatic captions using `caption` in addition to any other metadata:
+Override automatic caption using `caption` metadata:
 
 ```toml
 [[resources]]
@@ -79,6 +79,20 @@ Override automatic captions using `caption` in addition to any other metadata:
     license = "https://unsplash.com/license"
     contentlocation = "Ottawa, Canada"
     keywords = ["light trail", "building", "speed", "night"]
+```
+
+Hide captions while retaining structured data with `hide_caption` param:
+
+```toml
+[[resources]]
+  src = "images/**291607**.jpg"
+  name = "header"
+  [resources.params]
+    hide_caption = true
+  [resources.params.meta]
+    creator = "Marc-Olivier Jodoin"
+    sameas = "https://unsplash.com/photos/NqOInJ-ttqM/ottawa-road-in-the-evening"
+    contentlocation = "Ottawa, Canada"
 ```
 
 All available metadata provided in examples above.
