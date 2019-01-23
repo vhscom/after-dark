@@ -10,9 +10,9 @@ After Dark menghasilkan metadata terstruktur menggunakan {{< external "http://sc
 
 Properti skema | Nilai frontmatter
 --------------- | -----------------
-penulis?         | `author`
-tanggal terbit   | `publishdate` atau `date`
-bagian artikel  | `[categories]`
+author?         | `author`
+datePublished   | `publishdate` atau `date`
+articleSection  | `categories`
 
 Pertimbangkan untuk menambahkan data terstruktur saat membuat [Custom Layouts](../custom-layouts) untuk meningkatkan semantik halaman dan SEO yang lebih baik.
 
