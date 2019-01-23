@@ -12,7 +12,13 @@ Schema Property | Frontmatter Value
 --------------- | -----------------
 author?         | `author`
 datePublished   | `publishdate` or `date`
-articleSection  | `[categories]`
+articleSection  | `categories`
+
+[Post Images]({{< relref "post-images" >}}) use {{< external "https://gohugo.io/content-management/page-resources/#page-resources-metadata" "Page Resources Metadata" />}} to add image captions:
+
+Schema Property | Header Image Resource Metadata
+--------------- | ----------------
+caption?        | `creator` [`sameas` domain] or `caption`
 
 Consider adding structured data when creating [Custom Layouts](../custom-layouts) for improved page semantics and better SEO.
 
