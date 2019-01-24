@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.16.1"></a>
+## [6.16.1](https://codeberg.org/vhs/after-dark/compare/v6.16.0...v6.16.1) (2019-01-24)
+
+
+### Bug Fixes
+
+* **feature/post-images:** fix yandex validation error ([93cc90f](https://codeberg.org/vhs/after-dark/commits/93cc90f))
+* **feature/post-images:** zap extra whitespaces ([32767d9](https://codeberg.org/vhs/after-dark/commits/32767d9))
+
+
+
 <a name="6.16.0"></a>
 # [6.16.0](https://codeberg.org/vhs/after-dark/compare/v6.15.1...v6.16.0) (2019-01-23)
 
