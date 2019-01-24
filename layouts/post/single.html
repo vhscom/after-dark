@@ -81,7 +81,7 @@
                 {{ else if $meta_creator }}
                   <span itemprop="caption">
                     Photo by {{ $meta_creator | plainify }}
-                    {{ with (urls.Parse $meta_sameas).Host }}
+                    {{- with (urls.Parse $meta_sameas).Host }}
                       on {{ (strings.TrimSuffix (path.Ext .) .) | title }}
                     {{- end }}.
                   </span>
