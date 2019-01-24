@@ -13,6 +13,7 @@ todo = [
   src="/images/watercolor_pTIyYTqAlF8_w1440h700.jpeg"
   alt="Map image"
   lqipsrc="/images/watercolor_pTIyYTqAlF8_w936h455.jpeg"
+  caption="Sample image placement. Not the real deal."
 >}}
 
 Add visual appeal to your posts with post images. Post images appear above post content and leverage {{< external href="https://gohugo.io/content-management/image-processing/" text="Hugo Image Processing" />}} and [Lazy Loading](../lazy-loading) to provide fully automatic, lazy-loaded responsive images with <abbr title="Low-Quality Image Placeholders">LQIP</abbr> and built-in art direction.
@@ -45,54 +46,41 @@ With a `header` image specified in `index.md`:
 
 {{% hackcss-alert type="info" %}}**Tip:** Orientation is not significant. For optimal display use larger images.{{% /hackcss-alert %}}
 
-Optionally use {{< external "https://gohugo.io/content-management/page-resources/#page-resources-metadata" "Page Resources Metadata" />}} to add [Structured Data]({{< relref "structured-data" >}}) for the image:
+Add an image caption showing the image title:
 
 ```toml
 [[resources]]
-  src = "images/**291607**.jpg"
+  src = "**291607-unsplash.jpg"
   name = "header"
-  [resources.params.meta]
-    creator = "Marc-Olivier Jodoin"
+  title = "Ottawa road in the evening" # adds image caption
 ```
 
-Figure captions are generated automatically when `description` and/or `creator` is specified and may be combined with `sameas` to specify image origin:
+Add [Structured Data]({{< relref "structured-data" >}}) using {{< external "https://gohugo.io/content-management/page-resources/#page-resources-metadata" "Resources Metadata" />}} to improve accessibility:
 
 ```toml
 [[resources]]
-  src = "images/**291607**.jpg"
+  src = "**291607-unsplash.jpg"
   name = "header"
+  title = "Ottawa road in the evening"
   [resources.params.meta]
-    description = "Ottawa road in the evening"
-    creator = "Marc-Olivier Jodoin"
-    sameas = "https://unsplash.com/photos/NqOInJ-ttqM/ottawa-road-in-the-evening"
+    description = "Light trails depicting speed" # adds alt text and image meta
+    creator = "Marc-Olivier Jodoin" # updates caption and adds image meta
 ```
 
-Override automatic caption using `caption` metadata:
+Continue adding metadata to improve accessibility:
 
 ```toml
 [[resources]]
-  src = "images/**291607**.jpg"
+  src = "**291607-unsplash.jpg"
   name = "header"
+  title = "Ottawa road in the evening"
   [resources.params.meta]
-    caption = "Photo by @marcojodoin on Twitter"
+    description = "Light trails depicting speed"
     creator = "Marc-Olivier Jodoin"
-    license = "https://unsplash.com/license"
+    sameas = "https://unsplash.com/photos/NqOInJ-ttqM/" # also updates caption
+    license = "https://unsplash.com/license" # attribution not required
     contentlocation = "Ottawa, Canada"
     keywords = ["light trail", "building", "speed", "night"]
 ```
 
-Hide captions while retaining structured data with `hide_caption` param:
-
-```toml
-[[resources]]
-  src = "images/**291607**.jpg"
-  name = "header"
-  [resources.params]
-    hide_caption = true
-  [resources.params.meta]
-    creator = "Marc-Olivier Jodoin"
-    sameas = "https://unsplash.com/photos/NqOInJ-ttqM/ottawa-road-in-the-evening"
-    contentlocation = "Ottawa, Canada"
-```
-
-All available metadata provided in examples above.
+Supported metadata in examples above. Adjust display using [Custom Styles]({{< relref "custom-styles" >}}).

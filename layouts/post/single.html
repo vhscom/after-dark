@@ -13,7 +13,6 @@
         <blockquote itemprop="description">{{ .Description }}</blockquote>
       {{ end }}
       {{ with $.Resources.GetMatch "header" }}
-        {{ $meta_caption := .Params.meta.caption }}
         {{ $meta_sameas := .Params.meta.sameas }}
         {{ $meta_license := .Params.meta.license }}
         {{ $meta_creator := .Params.meta.creator }}
@@ -24,18 +23,15 @@
         {{ $image900 := .Fill "900x506 q70 Center" }}
         {{ $image1200 := .Fill "1200x675 q80 Center" }}
         {{ $image1600 := .Fill "1600x900 q90 Center" }}
-        <figure itemscope itemtype="http://schema.org/ImageObject">
-          <meta itemprop="contentUrl" content="{{ .RelPermalink }}">
+        <figure aria-hidden="true" itemscope itemtype="http://schema.org/ImageObject">
+          <link itemprop="contentUrl" href="{{ .RelPermalink }}">
           <meta itemprop="encodingFormat" content="{{ .MediaType }}">
-          <meta itemprop="name" content="{{ .Title | plainify }}">
+          <meta itemprop="name" content="{{ .Name | plainify }}">
           {{ if (urls.Parse $meta_sameas).Host }}
-            <meta itemprop="sameAs" content="{{ $meta_sameas }}">
+            <link itemprop="sameAs" href="{{ $meta_sameas }}">
           {{ end }}
           {{ if (urls.Parse $meta_license).Host }}
-            <meta itemprop="license" content="{{ $meta_license }}">
-          {{ end }}
-          {{ with $meta_creator }}
-            <meta itemprop="creator" content="{{ $meta_creator | plainify }}">
+            <link itemprop="license" href="{{ $meta_license }}">
           {{ end }}
           {{ with $meta_keywords }}
             <meta itemprop="keywords" content="{{ delimit . ", " }}">
@@ -43,51 +39,55 @@
           {{ with $meta_contentlocation }}
             <meta itemprop="contentLocation" content="{{ . | plainify }}">
           {{ end }}
+          {{ with $meta_description }}
+            <meta itemprop="description" content="{{ . | plainify }}">
+          {{ end }}
           <img
-            itemprop="thumbnail"
-            alt=""
+            itemprop="thumbnailUrl"
+            alt="{{ with $meta_description }}{{ . }}{{ else }}{{ .Name | plainify }}{{ end }}"
             class="lazyload blur-up"
             src="{{ $image600.RelPermalink }}"
             data-sizes="auto"
             data-src="{{ $image1200.RelPermalink }}"
             data-srcset="{{ $image600.RelPermalink }} 600w, {{ $image900.RelPermalink }} 900w, {{ $image1200.RelPermalink }} 1200w, {{ $image1600.RelPermalink }} 1600w"
           >
-          {{ if not .Params.hide_caption }}
-            {{ if or .Title (or $meta_caption $meta_creator) }}
-              <style>
-                .hack header figure[itemtype*="ImageObject"] {
-                  position: relative;
-                }
-                .hack header figure[itemtype*="ImageObject"] figcaption {
-                  position: absolute;
-                  bottom: 0;
-                  right: 0;
-                  text-align: right;
-                  padding: 15px;
-                  font-style: oblique;
-                  font-size: smaller;
-                  mix-blend-mode: soft-light;
-                }
-                .hack header figure[itemtype*="ImageObject"] [itemprop="description"] {
-                  font-weight: bold;
-                }
-              </style>
-              <figcaption>
-                {{ with $meta_description }}
-                  <span itemprop="description">{{ . | plainify }}</span>.
-                {{ end }}
-                {{ if $meta_caption }}
-                  <span itemprop="caption">{{ $meta_caption | plainify }}</span>
-                {{ else if $meta_creator }}
-                  <span itemprop="caption">
-                    Photo by {{ $meta_creator | plainify }}
-                    {{- with (urls.Parse $meta_sameas).Host }}
-                      on {{ (strings.TrimSuffix (path.Ext .) .) | title }}
-                    {{- end }}.
+          {{ if or (not (path.Ext .Title)) (or $meta_creator $meta_sameas) }}
+            <style>
+              .hack header figure[itemtype*="ImageObject"] {
+                position: relative;
+              }
+              .hack header figure[itemtype*="ImageObject"] figcaption {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                text-align: right;
+                padding: 15px;
+                font-style: oblique;
+                font-size: smaller;
+                mix-blend-mode: soft-light;
+              }
+              .hack header figure[itemtype*="ImageObject"] [itemprop="headline"] {
+                font-weight: bold;
+              }
+            </style>
+            <figcaption itemprop="caption">
+              {{ if not (path.Ext .Title) }}
+                <span itemprop="headline">{{ .Title | plainify }}</span>.
+              {{ end }}
+              {{ if or $meta_creator $meta_sameas }}
+                Photo
+                {{ if $meta_creator }}
+                  by
+                  <span itemprop="creator">
+                    {{ $meta_creator | plainify -}}
                   </span>
-                {{ end }}
-              </figcaption>
-            {{ end }}
+                {{- end }}
+                {{- with (urls.Parse $meta_sameas).Host }}
+                  on
+                  {{ (strings.TrimSuffix (path.Ext .) .) | title }}
+                {{- end }}.
+              {{ end }}
+            </figcaption>
           {{ end }}
         </figure>
       {{ end }}
