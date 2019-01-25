@@ -1,7 +1,7 @@
 <article itemscope itemtype="http://schema.org/CreativeWork">
   <header>
     <h2 itemprop="name">
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <a href="{{ .RelPermalink }}" rel="bookmark">{{ .Title }}</a>
     </h2>
     {{ if eq .Type "post" }}
       <p class="muted">{{ partial "post/meta.html" . }}</p>
@@ -15,7 +15,7 @@
   </div>
   {{ if .Truncated }}
     <nav class="readmore"><p>
-      <a itemprop="url" href="{{ .RelPermalink }}">Read More&nbsp;&raquo;</a>
+      <a itemprop="url" href="{{ .RelPermalink }}" rel="bookmark">Read More&nbsp;&raquo;</a>
     </p></nav>
   {{ end }}
   <meta itemprop="inLanguage" content="{{ .Site.LanguageCode }}">
