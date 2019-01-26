@@ -77,9 +77,9 @@ Continue adding metadata to improve accessibility:
   [resources.params.meta]
     description = "Light trails depicting speed"
     creator = "Marc-Olivier Jodoin"
-    sameas = "https://unsplash.com/photos/NqOInJ-ttqM/" # also updates caption
+    sameAs = "https://unsplash.com/photos/NqOInJ-ttqM/" # also updates caption
     license = "https://unsplash.com/license" # attribution not required
-    contentlocation = "Ottawa, Canada"
+    contentLocation = "Ottawa, Canada"
     keywords = ["light trail", "building", "speed", "night"]
 ```
 
