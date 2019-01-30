@@ -18,7 +18,7 @@ After Dark termasuk skrip instalasi portabel untuk pengaturan cepat:
 <style>.card-content .inner { overflow: scroll; max-height: 30em; }</style>
 {{< hackcss-card header="themes/after-dark/bin/install" >}}
 <details>
-<summary>perluas untuk melihat skrip</summary>
+<summary>Perluas untuk melihat skrip</summary>
 {{< highlight shell "linenos=inline" >}}
 {{< include "themes/after-dark/bin/install" >}}
 {{< /highlight >}}
