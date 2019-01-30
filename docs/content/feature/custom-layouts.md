@@ -81,3 +81,5 @@ Adjust `list.html` and `single.html` layouts and use [Custom Styles](../custom-s
 - {{< external "devdocs.io" />}} for a comprehensive HTML and CSS reference
 - {{< external "https://internetingishard.com" />}} learn HTML & CSS for free
 - {{< external "https://inclusive-components.design" />}} for design pattern ideas
+- {{< external "https://diveintohtml5.info" >}} background behind HTML5
+- {{< external "https://gsnedders.html5.org/outliner/" />}} test your HTML document outline
