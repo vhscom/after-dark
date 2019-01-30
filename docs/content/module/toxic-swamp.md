@@ -11,7 +11,14 @@ features = ["snippets", "related content"]
 Monetize attention in one of more than 40 cryptocurrency mining pools and take home 200% more per hash when compared to Coinhive.[^1]
 
 {{< hackcss-alert >}}
-<img width="746" height="466" alt="Toxic Swamp screenshot" src="/images/screenshots/after-dark-v6.15.0-homepage-fs8.png">
+<video controls
+  src="https://vhs.keybase.pub/toxic-swamp-demo.mp4"
+  poster="/images/screenshots/after-dark-v6.15.0-homepage-fs8.png"
+  preload="auto"
+  width="100%">
+
+Your browser doesn't support embedded videos. Here is a <a href="https://vhs.keybase.pub/after-dark-web-mining-prototype.mp4">link to the video</a> instead.
+</video>
 {{< /hackcss-alert >}}
 
 # Features
