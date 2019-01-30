@@ -1,5 +1,5 @@
 {{ define "title" -}}
-  {{ .Params.title }}
+  {{ .Params.title }} | Semantic Design System for Hugo
 {{- end }}
 {{ define "header" }}
   {{ partial "menu.html" . }}
@@ -49,10 +49,19 @@
       content: none;
     }
     .hack header h1 {
+      font-family: Futura;
       padding: 0;
       margin: 1rem;
       font-size: 3em;
       display: inline-block;
+
+      background-color: #2a3439;
+      color: transparent;
+      text-shadow: 0 2px 3px rgba(255, 255, 255, 0.1);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      filter: brightness(3);
     }
     .hack header h1 sup {
       font-size: 1rem;
@@ -62,7 +71,7 @@
     }
     .hack header h2:before,
     .hack section h2:before {
-      content: ""
+      content: unset;
     }
     .hack header h2,
     .hack section h2 {
@@ -152,7 +161,7 @@
 {{ define "main" }}
   <header>
     <h1>{{ .Title }}<sup class="muted">v{{ .Site.Data.npm.latest.version }}</sup></h1>
-    <h2 class="muted">The Deep End of the Surface Web</h2>
+    <h2 class="muted">Semantic Design System for Hugo</h2>
   </header>
   {{ .Content }}
 {{ end }}
