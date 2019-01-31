@@ -1,4 +1,5 @@
 :root {
+  scroll-behavior: smooth;
   --screen-size-small: 30em; /* breakpoint reference only */
 }
 @keyframes intro {

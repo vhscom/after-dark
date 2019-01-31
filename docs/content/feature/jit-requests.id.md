@@ -24,6 +24,4 @@ jit-requests (document)
 
 Menggunakan [Fetch Injection](../fetch-injection) permintaan JIT dikeluarkan untuk mulai mengunduh sorotan stylesheet dengan cepat secara pararel dengan sumber daya lain, dan tata letak dasar berhati-hati untuk memastikan CSS hanya diminta pada halaman yang membutuhkan itu.
 
-Contoh lain dari permintaan JIT dapat dilihat di [Table Of Contents](../table-of-contents) dimana `scroll-behavior` polyfill dimuat secara tidak sinkron dan hanya sekali saja pengguna menunjukkan keinginan untuk menggunakan fitur ini, jika tidak disembunyikan di bawah penyingkapan.
-
 Buatlah permintaan JIT anda sendiri menggunakan [Custom Layout](../custom-layouts) dan [Fetch Injection](../fetch-injection).
