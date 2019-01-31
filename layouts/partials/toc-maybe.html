@@ -3,23 +3,4 @@
     <summary>Table of Contents</summary>
     {{ .TableOfContents }}
   </details>
-  <script>
-    (function (window, document, undefined) {
-      const el = document.querySelector('details summary');
-      el.onclick = () => {
-        window.fetchInject([{{ "/js/smoothscroll.js" | relURL }}]);
-        el.onclick = null;
-        document.querySelectorAll('#TableOfContents a').forEach(link => {
-          link.addEventListener('click', evt => {
-            evt.preventDefault();
-            const selector = link.href.slice(link.href.indexOf('#'));
-            document.querySelector(
-              selector
-            ).scrollIntoView({ behavior: 'smooth' });
-            window.history.pushState({}, "", selector);
-          });
-        });
-      };
-    })(window, document);
-  </script>
 {{ end }}

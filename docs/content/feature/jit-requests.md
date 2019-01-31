@@ -24,6 +24,4 @@ jit-requests (document)
 
 Using [Fetch Injection](../fetch-injection) a JIT request is issued to begin downloading the highlighter stylesheet on-the-fly in parallel with other resources and the base layout takes care to ensure the CSS is only requested on pages that need it.
 
-Another example of a JIT request can be seen in the [Table Of Contents](../table-of-contents) whereby a `scroll-behavior` polyfill is loaded asynchronyously and only once the user shows intent to use the feature, otherwise hidden under a disclosure.
-
 Create your own JIT requests using [Custom Layout](../custom-layouts) and [Fetch Injection](../fetch-injection).
