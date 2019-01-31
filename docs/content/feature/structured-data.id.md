@@ -23,4 +23,4 @@ Pelajari lebih lanjut tentang data terstruktur menggunakan sumber daya berikut:
 - {{< external href="https://moz.com/learn/seo/schema-structured-data" text="Schema Structured Data on Moz" />}}
 
 
-Gunakan [Webmaster Tools](../webmaster-tools/) untuk memvalidasi data terstruktur. Ini dapat dilakukan dari mesin pengembangan menggunakan [ephemeral hosting](http://localhost:1313/feature/air-gapping/#ephemeral-hosting-with-end-to-end-encryption).
+Gunakan [Webmaster Tools](../webmaster-tools/) untuk memvalidasi data terstruktur. Ini dapat dilakukan dari mesin pengembangan menggunakan [ephemeral hosting](../air-gapping/#hosting-ephemeral-dengan-enkripsi-end-to-end).
