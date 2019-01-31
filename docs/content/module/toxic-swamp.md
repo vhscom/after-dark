@@ -519,9 +519,10 @@ Enable debugging to output detailed socket messages from the proxy to the browse
 
 Included languages available for UI presentation:
 
-- English
-- Indonesian
-- Russian
+- English (en)
+- Indonesian (id)
+- Russian (ru)
+- Greek (el)
 
 Use `languageCode` in site config to control display language:
 
