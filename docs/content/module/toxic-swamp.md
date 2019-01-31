@@ -315,9 +315,7 @@ Maximize your incentive with reduced effort by using the [Upgrade Script](/featu
 
 # Create Your Own Proxy
 
-Advanced users may wish to configure their own proxy servers.
-
-advanced settings when running the [Config Generator](#config-generator) and stand up your proxy using the proxy server described in more detail here:
+Advanced users may wish to configure their own proxy servers. To do so select <samp>Advanced Settings</samp> when running the [Config Generator](#config-generator) after standing-up your proxy server described in more detail here:
 
 <details>
 <summary>Expand to view details</summary>
