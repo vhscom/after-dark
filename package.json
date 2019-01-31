@@ -25,7 +25,6 @@
   "scripts": {
     "update:lazysizes": "npm up lazysizes && cp -i node_modules/lazysizes/lazysizes.min.js static/js",
     "update:lodash:custom": "./node_modules/.bin/lodash include=debounce -p -o static/js/lodash.custom.min.js",
-    "update:smoothscroll": "npm up smoothscroll && cp -i node_modules/smoothscroll-polyfill/dist/smoothscroll.js static/js",
     "update:fuse": "npm up fuse.js && cp -i node_modules/fuse.js/dist/fuse.min.js static/js",
     "update:vue": "npm up vue && cp -i node_modules/vue/dist/vue.min.js static/js",
     "update:mark": "npm up mark.js && cp -i node_modules/mark.js/dist/mark.min.js static/js",
@@ -41,7 +40,6 @@
     "lazysizes": "^4.1.4",
     "lodash-cli": "^4.17.5",
     "mark.js": "^8.11.1",
-    "smoothscroll-polyfill": "^0.4.3",
     "standard-version": "^4.4.0",
     "toxic-swamp": "git+ssh://git@git.vhs.codeberg.page/vhs/toxic-swamp.git#v0.1.0-alpha.0",
     "vue": "^2.5.16"
