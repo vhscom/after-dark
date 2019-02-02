@@ -44,4 +44,6 @@ theme = [
 ]
 {{< /highlight >}}
 
+{{% hackcss-alert type="warning" %}}**Warning:** While Fathom was designed for privacy they {{% external "https://github.com/usefathom/fathom/issues/40" "made the mistake" /%}} of using a tracking cookie. If your version of Fathom uses cookies please additionally set `has_cookies = true` in your site config.{{% /hackcss-alert %}}
+
 See {{< external href="https://codeberg.org/vhs/voyeur/src/branch/master/README.md" text="README.md" />}} to confirm you're using the minimum required version of After Dark; and module setup, configuration and usage instructions. If you need help you may {{< external href="https://codeberg.org/vhs/voyeur/issues" text="Submit an Issue" />}} with your question.
