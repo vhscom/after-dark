@@ -81,7 +81,7 @@ Misalnya, untuk mengahasilkan situs audio menggunakan instalasi After Dark saat 
 
 {{< hackcss-card header="flying-toasters/bin/gen-audio-site" >}}
 {{< highlight shell >}}#!/bin/sh
-hugo -c sites/audio -d public/audio.domain.example{{< /highlight >}}
+hugo -c sites/audio -d public/static.domain.example{{< /highlight >}}
 {{< /hackcss-card >}}
 
 Dimana `audio` berisi konten untuk situs itu:
@@ -102,7 +102,7 @@ Dan `public` berisi folder untuk setiap situs:
 
 ```
 public
-└── audio.balibebas.com
+└── static.domain.example
     ├── categories
     │   └── index.xml
     ├── audiobooks
