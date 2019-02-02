@@ -82,7 +82,7 @@ For example, to generate an audio site using the current After Dark installation
 
 {{< hackcss-card header="flying-toasters/bin/gen-audio-site" >}}
 {{< highlight shell >}}#!/bin/sh
-hugo -c sites/audio -d public/audio.domain.example{{< /highlight >}}
+hugo -c sites/audio -d public/static.domain.example{{< /highlight >}}
 {{< /hackcss-card >}}
 
 Where `audio` contains the content for that site:
@@ -103,7 +103,7 @@ And `public` contains a folder for each site:
 
 ```
 public
-└── audio.balibebas.com
+└── static.domain.example
     ├── categories
     │   └── index.xml
     ├── audiobooks
@@ -119,7 +119,7 @@ public
         └── index.xml
 ```
 
-And create a another script to serve the content for editing:
+And create another script to serve the content for editing:
 
 {{< hackcss-card header="flying-toasters/bin/serve-audio-site" >}}
 {{< highlight shell >}}#!/bin/sh
