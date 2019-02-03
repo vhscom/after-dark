@@ -16,7 +16,7 @@ With progressive image placeholder:
 ```html
 {{</* figure
   src="/images/watercolor_pTIyYTqAlF8_w1440h700.jpeg"
-  alt="Map image"
+  alt="Artistic map"
   lqipsrc="/images/watercolor_pTIyYTqAlF8_w936h455.jpeg"
   title="Map of Bali in Watercolor"
   attr="Stamen Design"
@@ -26,7 +26,7 @@ With progressive image placeholder:
 
 {{< figure
   src="/images/watercolor_pTIyYTqAlF8_w1440h700.jpeg"
-  alt="Map image"
+  alt="Artistic map"
   lqipsrc="/images/watercolor_pTIyYTqAlF8_w936h455.jpeg"
   title="Map of Bali in Watercolor"
   attr="Stamen Design"
