@@ -1,6 +1,6 @@
 :root {
   scroll-behavior: smooth;
-  --screen-size-small: 30em; /* breakpoint reference only */
+  --screen-size-small: 768px; /* breakpoint reference only */
 }
 @keyframes intro {
   0% { opacity: 0 }; 100% { opacity: 1 }
@@ -46,8 +46,7 @@ footer time[datetime$="M"]:before {
 body > footer p.muted {
   margin-bottom: 0;
 }
-@media only screen
-  and ( max-width: 30em ) {
+@media only screen and (max-width: 768px) {
   footer time[datetime$="M"] {
     display: none;
   }
@@ -98,10 +97,6 @@ select.form-control,
 html {
   font-size: 13px;
 }
-.hack pre,
-.hack samp {
-  font-size: 17px;
-}
 .hack .form input,
 .hack .form textarea,
 .hack .form button,
@@ -146,9 +141,9 @@ table a {
 img {
   max-width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   html {
-    font-size: 1em;
+    font-size: 16px;
     margin-left: calc(100vw - 100%);
   }
   .container {
