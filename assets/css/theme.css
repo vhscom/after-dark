@@ -59,7 +59,7 @@ blockquote cite::before {
    content: "\2014\00A0";
 }
 :target {
-  color: #fff;
+  filter: brightness(1.2);
 }
 :disabled {
   cursor: not-allowed;
