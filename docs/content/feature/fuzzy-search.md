@@ -35,7 +35,6 @@ And specify the `JSON` {{< external href="https://gohugo.io/templates/output-for
 ```toml
 [outputs]
   home = ["HTML", "RSS", "JSON"]
-  section = ["HTML", "RSS", "JSON"]
 ```
 
 {{% hackcss-alert type="info" %}}**Note:** This adds `JSON` while keeping the `HTML` and `RSS` defaults.{{% /hackcss-alert %}}
