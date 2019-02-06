@@ -1,6 +1,6 @@
 # After Dark
 
-> After Dark is free and open-source software you can use to create a website, blog or app. Embedded structured data and <b>deep knowledge</b> of <i>Web Platform</i> specifications result in high-performance, semantic markup.
+> After Dark is free and open-source software you can use to create a website, blog or app. Utilize the world's fastest framework for building websites and design your entire site right inside the terminal.
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
