@@ -17,7 +17,7 @@ images = [
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is free and open-source software you can use to create a website, blog or app. Embedded structured data and <b>deep knowledge</b> of <i>Web Platform</i> specifications result in high-performance, semantic markup.</p>
+    <p>After Dark is free and open-source software you can use to create a website, blog or app. Utilize the world's fastest framework for building websites and design your entire site right inside the terminal.</p>
   </div>
 </section>
 
@@ -29,6 +29,7 @@ images = [
       </svg>&nbsp;&nbsp;Quick Install
     {{< /hackcss-button >}}
   {{< /hackcss-form >}}
+  <img height="28" class="lazyload" alt="npm downloads" data-src="https://img.shields.io/npm/dt/after-dark.svg?colorA=000000&colorB=000000&style=for-the-badge">
 </section>
 
 <section class="hero">
@@ -55,7 +56,6 @@ images = [
       <td><a href="./extra/">1</a></td>
     </tr>
   </table>
-  <small><i>(Includes <u>full support</u> for text-only browsers and offline development.)</i></small>
 </section>
 
 <section id="feature-speed" class="feature">
