@@ -4,6 +4,7 @@ paginate = 33 # Number of items to show before paginating
 
 # Controls default theme and theme components
 theme = [
+  "toxic-swamp",
   "after-dark"
 ]
 
@@ -34,7 +35,6 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
-  section = ["HTML", "RSS", "JSON"]
 
 [params.seo.webmaster_verifications]
   yandex = "4006a8813cbb9fdb" # https://webmaster.yandex.com/
