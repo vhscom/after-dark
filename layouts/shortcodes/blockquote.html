@@ -5,7 +5,7 @@
 <blockquote{{ with $class }} class="{{ . }}"{{ end }}{{ with $citelink }} cite="{{ . }}"{{ end }}>
   <p>{{- $body | plainify -}}</p>
   {{ if $citelink }}
-    <cite>{{ partial "shortcode/external.html" (dict "href" $citelink "body" $cite) }}</cite>
+    <cite>{{ partial "components/external.html" (dict "href" $citelink "body" $cite) }}</cite>
   {{ else if $cite }}
     <cite>{{ $cite }}</cite>
   {{ else }}

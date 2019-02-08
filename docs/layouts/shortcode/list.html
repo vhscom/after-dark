@@ -1,5 +1,5 @@
 {{ define "header" }}
-  {{ partial "menu.html" . }}
+  {{ partial "masthead.html" . }}
 {{ end }}
 {{ define "main" }}
   <header>
@@ -27,7 +27,7 @@
       </nav>
     </tbody>
   </table>
-  <p>In addition to the above you may {{ partial "shortcode/external.html" (dict "href" "https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes" "body" "Use Hugo's Built-in Shortcodes") }} as well.</p>
+  <p>In addition to the above you may {{ partial "components/external.html" (dict "href" "https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes" "body" "Use Hugo's Built-in Shortcodes") }} as well.</p>
 {{ end }}
 {{ define "footer" }}
   {{ partial "pagination.html" . }}

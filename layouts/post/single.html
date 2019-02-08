@@ -1,5 +1,5 @@
 {{ define "header" }}
-  {{ partial "menu.html" . }}
+  {{ partial "masthead.html" . }}
 {{ end }}
 {{ define "main" }}
   <article itemscope itemtype="http://schema.org/BlogPosting">
@@ -96,11 +96,6 @@
     <div itemprop="articleBody">
       {{ .Content }}
     </div>
-    {{ if .Site.DisqusShortname }}
-      <article>
-        {{ template "_internal/disqus.html" . }}
-      </article>
-    {{ end }}
     <footer>
       <hr>
       {{ partial "post/byline.html" . }}

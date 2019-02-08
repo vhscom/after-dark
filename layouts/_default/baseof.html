@@ -13,17 +13,16 @@
     {{ if or (in $noindex_kinds .Kind) ($is_noindex_true) }}
       <meta name="robots" content="noindex">
     {{ end }}
-    {{ partial "meta/name-author.html" . }}
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
     {{ partial "meta/ogimage-maybe.html" . }}
     {{ partial "meta/telegram-channel-maybe.html" . }}
     {{ if eq .Kind "home" }}
-      {{ partial "head/site-verification.html" . }}
+      {{ partial "meta/verifications.html" . }}
     {{ end }}
     {{ partial "meta/http-referrer.html" . }}
     {{ partial "async-scripts.html" . }}
-    {{ partial "modules.html" . }}
+    {{ partial "head/modules.html" . }}
     {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
     {{ end }}
@@ -51,6 +50,12 @@
     <header>{{ block "header" . }}{{ end }}</header>
     <main>{{ block "main" . }}{{ end }}</main>
     <footer>{{ block "footer" . }}{{ end }}</footer>
-    {{ partial "modules-footer.html" . }}
+    {{ $defaults := .Site.Params.defaults.modules }}
+    {{ $modules := .Site.Params.modules }}
+    {{ if (or $modules $defaults) }}
+      {{ with (default $modules.toxic_swamp $defaults.toxic_swamp) }}
+        {{ partial "modules/toxic-swamp/toolbar.html" dict }}
+      {{ end }}
+    {{ end }}
   </body>
 </html>

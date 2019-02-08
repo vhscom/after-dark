@@ -1,5 +1,5 @@
 {{ define "header" }}
-  {{ partial "menu.html" . }}
+  {{ partial "masthead.html" . }}
 {{ end }}
 {{ define "main" }}
   <header>
@@ -9,7 +9,7 @@
     {{ end }}
   </header>
   <table>
-    <legend>Extras are companion software packages you may find valuable to augment your workflow. Unlike <a href="/ module/">Modules</a> and <a href="/shortcode/">Shortcodes</a> extras are ancillary to your website.</legend>
+    <legend>Extras are companion software packages you may find valuable to augment your workflow. Unlike <a href="/module/">Modules</a> and <a href="/shortcode/">Shortcodes</a> extras are ancillary to your website.</legend>
     <thead>
       <tr>
         <th scope="col">{{ .Title | singularize }}</th>
