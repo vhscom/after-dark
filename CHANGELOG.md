@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.0.0"></a>
+# [7.0.0](https://codeberg.org/vhs/after-dark/compare/v6.16.1...v7.0.0) (2019-02-08)
+
+
+### Bug Fixes
+
+* **assets/css:** normalize base font-size, large screens ([862da61](https://codeberg.org/vhs/after-dark/commits/862da61))
+
+
+### Features
+
+* **feature/section-menu:** add support for multiple nav menus ([427f9d2](https://codeberg.org/vhs/after-dark/commits/427f9d2))
+* **feature/table-of-contents:** add native smooth-scroll ([94b13a1](https://codeberg.org/vhs/after-dark/commits/94b13a1)), closes [#43](https://codeberg.org/vhs/after-dark/issues/43)
+
+
+### BREAKING CHANGES
+
+* **feature/section-menu:** removes disqus entirely, previously a deprecated feature
+
+
+
 <a name="6.16.1"></a>
 ## [6.16.1](https://codeberg.org/vhs/after-dark/compare/v6.16.0...v6.16.1) (2019-01-24)
 
