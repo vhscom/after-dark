@@ -98,7 +98,7 @@ Use the included [Online Help](https://vhs.codeberg.page/after-dark/feature/onli
 
 ## License
 
-Copyright (C) 2016–2018 VHS <vhsdev@tutanota.com>
+Copyright (C) VHS <vhsdev@tutanota.com>
 
 This work is free. You can redistribute it and/or modify it under the
 terms of the Do What The Fuck You Want To Public License, Version 2,
