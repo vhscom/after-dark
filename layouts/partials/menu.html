@@ -1,3 +1,0 @@
-{{ if and (ne .Site.Params.show_menu false) (index .Site.Menus "main") }}
-  {{ partial "shortcode/navmenu.html" (dict "name" "main" "menus" .Site.Menus "page" .)}}
-{{ end }}

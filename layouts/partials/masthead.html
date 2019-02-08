@@ -1,0 +1,11 @@
+{{ $is_section_menu_enabled := ne .Site.Params.show_menu false }}
+{{ range $name, $entries := .Site.Menus }}
+  {{ if or (ne $name "main") (and (eq $name "main") $is_section_menu_enabled) }}
+    {{ with $.Site.Params.layout.menu }}
+      {{ $settings := (index . $name) | default dict }}
+      {{ partial "components/navmenu.html" (dict "name" $name "entries" $entries "settings" $settings "page" $)}}
+    {{ else }}
+      {{ partial "components/navmenu.html" (dict "name" $name "entries" $entries "settings" dict "page" $)}}
+    {{ end }}
+  {{ end }}
+{{ end }}

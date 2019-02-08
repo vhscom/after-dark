@@ -1,6 +1,6 @@
 +++
 title = "Snippets"
-description = "Share code between Shortcodes and Custom Templates."
+description = "Share code between Shortcodes and Custom Layouts."
 categories = ["customizing"]
 tags = ["shortcodes", "templating", "layout"]
 features = ["related content", "code highlighter", "snippets"]

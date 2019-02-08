@@ -6,15 +6,9 @@
   <title>404 Error | {{ .Site.Title }}</title>
   {{ partial "head/favicon.html" . }}
   {{ partial "meta/theme-color.html" . }}
-  {{ template "_internal/google_analytics_async.html" . }}
   <style media="screen">
     @keyframes intro {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
+      0% { opacity: 0; } 100% { opacity: 1; }
     }
     @font-face {
       font-family: 'Londrina Outline';

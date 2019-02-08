@@ -1,6 +1,6 @@
 {{ $permitted_attrs := .permitted_attrs | default (slice "id" "name" "class" "autocomplete" "autofocus" "cols" "disabled" "form" "maxlength" "minlength" "name" "placeholder" "readonly" "required" "rows" "spellcheck" "wrap" "tabindex") }}
 {{ $boolean_attrs := .boolean_attrs | default (slice "autofocus" "disabled" "readonly" "required") }}
 {{ $validations := .validations | default (dict "spellcheck" (slice "true" "default" "false") "autocomplete" (slice "on" "off") "wrap" (slice "hard" "soft" "off")) }}
-<textarea {{ partial "components/common/textattrs.html" (dict "attrs" .attrs "permitted_attrs" $permitted_attrs "boolean_attrs" $boolean_attrs "validations" $validations) | safeHTMLAttr }}>
+<textarea {{ partial "components/snippets/textattrs.html" (dict "attrs" .attrs "permitted_attrs" $permitted_attrs "boolean_attrs" $boolean_attrs "validations" $validations) | safeHTMLAttr }}>
   {{- with .body }}{{ . }}{{ end -}}
 </textarea>
