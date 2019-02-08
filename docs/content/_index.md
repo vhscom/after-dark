@@ -29,11 +29,11 @@ images = [
       </svg>&nbsp;&nbsp;Quick Install
     {{< /hackcss-button >}}
   {{< /hackcss-form >}}
-  <img height="28" class="lazyload" alt="npm downloads" data-src="https://img.shields.io/npm/dt/after-dark.svg?colorA=000000&colorB=000000&style=for-the-badge">
+  <img height="28" class="lazyload" alt="total downloads" data-src="https://img.shields.io/npm/dt/after-dark.svg?colorA=000000&colorB=000000&style=for-the-badge">
 </section>
 
 <section class="hero">
-  {{< figure alt="After Dark screenshots" src="/images/minimal-mac_1600x1200-fs8.png" lqipsrc="/images/minimal-mac_800x600-fs8.png" >}}
+  {{< figure alt="After Dark screenshots" src="/images/minimal-mac_2400x1800-fs8.png" lqipsrc="/images/minimal-mac_800x600-fs8.png" >}}
 </section>
 
 <section id="feature-workflow" class="capabilities">

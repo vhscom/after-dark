@@ -11,66 +11,64 @@
 
 ## Features
 
-- [Streamlined Workflow](https://vhs.codeberg.page/after-dark/#feature-workflow)
-- [Unparalleled Speed](https://vhs.codeberg.page/after-dark/#feature-speed)
-- [Advanced Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics)
-- [Rewards System](https://vhs.codeberg.page/after-dark/#feature-rewards)
-- [Fuzzy Search](https://vhs.codeberg.page/after-dark/#feature-search)
-- [Easily Customized](https://vhs.codeberg.page/after-dark/#feature-customize)
-- [Securely Designed](https://vhs.codeberg.page/after-dark/#feature-security)
-- [Privacy Focused](https://vhs.codeberg.page/after-dark/#feature-privacy)
-
-Visit the [After Dark Docs](https://vhs.codeberg.page/after-dark) site to learn more.
+- [Streamlined Workflow](https://vhs.codeberg.page/after-dark/#feature-workflow) – cross-platform, 1 dependency, single-codebase
+- [Unparalleled Speed](https://vhs.codeberg.page/after-dark/#feature-speed) – ~0.615s builds, 100-200ms page loads
+- [Advanced Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics) – responsive post images with lqip
+- [Rewards System](https://vhs.codeberg.page/after-dark/#feature-rewards) – monetize attention and earn borderless income
+- [Fuzzy Search](https://vhs.codeberg.page/after-dark/#feature-search) – automatic indexing and no third-parties
+- [Easily Customized](https://vhs.codeberg.page/after-dark/#feature-customize) – change skins, strip styles, create layouts
+- [Securely Designed](https://vhs.codeberg.page/after-dark/#feature-security) – verify release hashes even offline
+- [Privacy Focused](https://vhs.codeberg.page/after-dark/#feature-privacy) – no cookies and no external requests
 
 ## Screenshots
 
-<table role="presentation">
+<table>
   <tr>
     <td>
-      <a target="_blank" href="https://vhs.codeberg.page/after-dark/images/screenshots/example-landing-page-fs8.png">
-        <img alt="Example Landing Page screenshot" src="https://vhs.codeberg.page/after-dark/images/screenshots/example-landing-page-fs8.png">
+      <a href="https://vhs.codeberg.page/after-dark/">
+        <img alt src="https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png">
       </a>
     </td>
     <td>
-      <a target="_blank" href="https://vhs.codeberg.page/after-dark/images/screenshots/feature-online-help-fs8.png">
-        <img alt="Online Help screenshot" src="https://vhs.codeberg.page/after-dark/images/screenshots/feature-online-help-fs8.png">
+      <a href="https://vhs.codeberg.page/after-dark/feature/">
+        <img alt src="https://vhs.codeberg.page/after-dark/images/screenshots/feature-online-help-fs8.png">
       </a>
     </td>
     <td>
-      <a target="_blank" href="https://vhs.codeberg.page/after-dark/images/screenshots/feature-error-page-fs8.png">
-        <img alt="Error Page screenshot" src="https://vhs.codeberg.page/after-dark/images/screenshots/feature-error-page-fs8.png">
+      <a href="https://vhs.codeberg.page/after-dark/404.html">
+        <img alt src="https://vhs.codeberg.page/after-dark/images/screenshots/feature-error-page-fs8.png">
       </a>
     </td>
   </tr>
   <tr>
-    <th scope="col">Landing Page Example</th>
-    <th scope="col">Online Help</th>
-    <th scope="col">Error Page</th>
+    <th scope="col"><center>Multilingual Docs</center></th>
+    <th scope="col"><center>Comprehensive Features</center></th>
+    <th scope="col"><center>Canvas Animations</center></th>
   </tr>
 </table>
 
-<table role="presentation">
+<table>
   <tr>
     <td>
-      <a target="_blank" href="https://vhs.codeberg.page/after-dark/images/screenshots/module-toxic-swamp-fs8.png">
-        <img alt="Webmining screenshot" src="https://vhs.codeberg.page/after-dark/images/screenshots/module-toxic-swamp-fs8.png">
+      <a href="https://vhs.codeberg.page/after-dark/module/toxic-swamp/">
+        <img alt src="https://vhs.codeberg.page/after-dark/images/screenshots/module-toxic-swamp-fs8.png">
       </a>
     </td>
     <td>
-      <a target="_blank" href="https://vhs.codeberg.page/after-dark/images/screenshots/shortcode-button-fs8.png">
-        <img alt="Form Controls screenshot" src="https://vhs.codeberg.page/after-dark/images/screenshots/shortcode-button-fs8.png">
+      <a href="https://vhs.codeberg.page/after-dark/shortcode/button/">
+        <img alt src="https://vhs.codeberg.page/after-dark/images/screenshots/shortcode-button-fs8.png">
       </a>
     </td>
     <td>
-      <a target="_blank" href="https://vhs.codeberg.page/after-dark/images/screenshots/extra-high-tea-fs8.png">
-        <img alt="Extras screenshot" src="https://vhs.codeberg.page/after-dark/images/screenshots/extra-high-tea-fs8.png">
+      <a href="https://vhs.codeberg.page/after-dark/extra/">
+        <img alt src="https://vhs.codeberg.page/after-dark/images/screenshots/extra-high-tea-fs8.png">
       </a>
     </td>
   </tr>
   <tr>
-    <th scope="col">Rewards System</th>
-    <th scope="col">Form Controls</th>
-    <th scope="col">Extras</th>
+    <th scope="col"><center>Web Mining Add-on</center></th>
+    <th scope="col"><center>Composable Shortcodes</center></th>
+    <th scope="col"><center>IndieWeb Extras</center></th>
   </tr>
 </table>
 
