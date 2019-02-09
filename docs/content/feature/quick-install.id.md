@@ -3,29 +3,34 @@ title = "Quick Install"
 description = "Hanya satu perintah yang anda butuhkan untuk membuat website baru."
 categories = ["core"]
 tags = ["setup", "installation", "scripts"]
-feature = ["code highlighter", "snippets", "related content"]
+features = ["code highlighter", "snippets", "related content"]
 notes = [
   "mengulas 'module-system' saat menambah atau menghapus add-on yang telah di instal",
   "juga meninjau pilihan modul yang sudah dipasang sebelumnya (lihat masalah di depan)"
-]
-alias = [
-  "/feature/quick-installer/"
 ]
 +++
 
 After Dark termasuk skrip instalasi portabel untuk pengaturan cepat:
 
-<style>.card-content .inner { overflow: scroll; max-height: 30em; }</style>
 {{< hackcss-card header="themes/after-dark/bin/install" >}}
-<details>
+<style>.card-content .inner { overflow: scroll; max-height: 30em; }</style>
+<details itemscope itemtype="https://schema.org/SoftwareSourceCode">
 <summary>Perluas untuk melihat skrip</summary>
 {{< highlight shell "linenos=inline" >}}
 {{< include "themes/after-dark/bin/install" >}}
 {{< /highlight >}}
+<link itemprop="codeRepository" href="https://codeberg.org/vhs/after-dark">
+<meta itemprop="codeSampleType" content="script">
+<meta itemprop="programmingLanguage" content="sh">
+<meta itemprop="runtimePlatform" content="busybox">
+<link itemprop="targetProduct" href="https://vhs.codeberg.page/after-dark">
+<meta itemprop="accessMode" content="textual">
 </details>
 {{< /hackcss-card >}}
 
 Silahkan instal {{< external href="https://gohugo.io" text="Hugo" />}} `0.44` atau yang lebih besar sebelum menjalankan skrip.
+
+<!--more-->
 
 Skrip telah diuji pada Debian, BusyBox dan Darwin, dan seharusnya juga dapat bekerja di bawah Alpine, Ubuntu, Docker dan Windows melalui {{< external href="http://cmder.net" text="Cmder" />}} tanpa ketergantungan tambahan.
 

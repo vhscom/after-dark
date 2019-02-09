@@ -6,7 +6,7 @@
 {{ end }}
 {{ define "main" }}
   <header>
-    <h1>{{ .Title }}</h1>
+    <h1 itemprop="name">{{ .Title }}</h1>
     {{ if .Description }}
       <blockquote itemprop="description">{{ .Description }}</blockquote>
     {{ end }}
@@ -19,7 +19,7 @@
     <p>
       Published
       {{ with .Params.categories }}
-        in <span itemprop="articleSection">{{ delimit (apply (apply (sort .) "partial" "category-link.html" ".") "chomp" ".") ", " " and " }}</span>
+        in {{ delimit (apply (apply (sort .) "partial" "category-link.html" ".") "chomp" ".") ", " " and " }}
       {{ end }}
       {{ with .Params.features }}
         using {{ delimit (apply (apply (sort .) "partial" "feature-link.html" ".") "chomp" ".") ", " " and " }}.
