@@ -2,7 +2,7 @@
   {{ partial "masthead.html" . }}
 {{ end }}
 {{ define "main" }}
-  <article itemscope itemtype="http://schema.org/BlogPosting">
+  <article itemscope itemtype="https://schema.org/BlogPosting">
     {{ template "_internal/schema.html" . }}
     <header>
       <h1 itemprop="headline name">{{ .Title }}</h1>
@@ -23,7 +23,7 @@
         {{ $image900 := .Fill "900x506 q70 Center" }}
         {{ $image1200 := .Fill "1200x675 q80 Center" }}
         {{ $image1600 := .Fill "1600x900 q90 Center" }}
-        <figure aria-hidden="true" itemscope itemtype="http://schema.org/ImageObject">
+        <figure aria-hidden="true" itemscope itemtype="https://schema.org/ImageObject">
           <link itemprop="contentUrl" href="{{ .RelPermalink }}">
           <meta itemprop="encodingFormat" content="{{ .MediaType }}">
           <meta itemprop="name" content="{{ .Name | plainify }}">

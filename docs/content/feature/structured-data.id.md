@@ -6,7 +6,7 @@ tags = ["metadata", "semantics", "robots", "SEO"]
 feature = ["related content"]
 +++
 
-After Dark menghasilkan metadata terstruktur menggunakan {{< external "http://schema.org" />}} spesifikasi untuk postingan blog, [Menu Bagian](../section-menu), [Hall of Mirrors](/module/hall-of-mirrors) galeri gambar dan mengadaptasi data secara otomatis menggunakan yang ditentukan penulis [Post Bylines](../post-bylines) seperti yang ditunjukkan disini:
+After Dark menghasilkan metadata terstruktur menggunakan {{< external "https://schema.org" />}} spesifikasi untuk postingan blog, [Menu Bagian](../section-menu), [Hall of Mirrors](/module/hall-of-mirrors) galeri gambar dan mengadaptasi data secara otomatis menggunakan yang ditentukan penulis [Post Bylines](../post-bylines) seperti yang ditunjukkan disini:
 
 Properti skema | Nilai frontmatter
 --------------- | -----------------
