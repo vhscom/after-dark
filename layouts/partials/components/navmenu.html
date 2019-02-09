@@ -1,5 +1,5 @@
 {{ if not (eq .settings.hidden true) }}
-  <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
     <meta itemprop="name" content="{{ .name | humanize }} Menu">
     {{ range .entries }}
       {{ $is_active := or ($.page.IsMenuCurrent $.name .) ($.page.HasMenuCurrent $.name .) }}
