@@ -10,8 +10,8 @@ After Dark uses link typing to indicate semantic relationships between documents
 
 ```html
 <link href="https://domain.example/index.xml" rel="alternate" type="application/rss+xml" title="After Dark">
-<link href="http://domain.example/categories/privacy/index.xml" rel="alternate" type="application/rss+xml" title="After Dark">
-<link href="http://domain.example/tags/color/index.xml" rel="alternate" type="application/rss+xml" title="After Dark">
+<link href="https://domain.example/categories/privacy/index.xml" rel="alternate" type="application/rss+xml" title="After Dark">
+<link href="https://domain.example/tags/color/index.xml" rel="alternate" type="application/rss+xml" title="After Dark">
 ```
 
 In addition to defaults After Dark recognizes the `prev` and `next` link types if specified in page {{< external href="https://gohugo.io/content-management/front-matter/" text="Front Matter" />}}:
