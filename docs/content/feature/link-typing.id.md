@@ -10,8 +10,8 @@ After Dark menggunakan pengetikan tautan untuk menunjukkan hubungan semantik ant
 
 ```html
 <link href="https://domain.example/index.xml" rel="alternate" type="application/rss+xml" title="After Dark">
-<link href="http://domain.example/categories/privacy/index.xml" rel="alternate" type="application/rss+xml" title="After Dark">
-<link href="http://domain.example/tags/color/index.xml" rel="alternate" type="application/rss+xml" title="After Dark">
+<link href="https://domain.example/categories/privacy/index.xml" rel="alternate" type="application/rss+xml" title="After Dark">
+<link href="https://domain.example/tags/color/index.xml" rel="alternate" type="application/rss+xml" title="After Dark">
 ```
 
 Sebagai tambahan ke defaults After Dark mengenali jenis tautan `prev` dan `next` jika ditentukan di halaman {{< external href="https://gohugo.io/content-management/front-matter/" text="Front Matter" />}}:
