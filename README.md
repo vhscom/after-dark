@@ -30,7 +30,7 @@
       </a>
     </td>
     <td>
-      <a href="https://vhs.codeberg.page/after-dark/feature/">
+      <a href="https://vhs.codeberg.page/after-dark/feature/svg-favicon/">
         <img alt src="https://vhs.codeberg.page/after-dark/images/screenshots/feature-online-help-fs8.png">
       </a>
     </td>
@@ -42,7 +42,7 @@
   </tr>
   <tr>
     <th scope="col"><center>Multilingual Docs</center></th>
-    <th scope="col"><center>Comprehensive Features</center></th>
+    <th scope="col"><center>SVG Favicon</center></th>
     <th scope="col"><center>Canvas Animations</center></th>
   </tr>
 </table>
@@ -60,7 +60,7 @@
       </a>
     </td>
     <td>
-      <a href="https://vhs.codeberg.page/after-dark/extra/">
+      <a href="https://vhs.codeberg.page/after-dark/extra/high-tea/">
         <img alt src="https://vhs.codeberg.page/after-dark/images/screenshots/extra-high-tea-fs8.png">
       </a>
     </td>
