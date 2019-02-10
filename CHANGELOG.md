@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.0.1"></a>
+## [7.0.1](https://codeberg.org/vhs/after-dark/compare/v7.0.0...v7.0.1) (2019-02-10)
+
+
+### Bug Fixes
+
+* **partials/powered-by:** point to expected directory of refactored file ([f32207f](https://codeberg.org/vhs/after-dark/commits/f32207f))
+
+
+
 <a name="7.0.0"></a>
 # [7.0.0](https://codeberg.org/vhs/after-dark/compare/v6.16.1...v7.0.0) (2019-02-08)
 
