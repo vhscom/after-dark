@@ -41,7 +41,6 @@
     "lodash-cli": "^4.17.5",
     "mark.js": "^8.11.1",
     "standard-version": "^4.4.0",
-    "toxic-swamp": "git+ssh://git@git.vhs.codeberg.page/vhs/toxic-swamp.git#v0.1.0-alpha.0",
     "vue": "^2.5.16"
   },
   "license": "WTFPL"
