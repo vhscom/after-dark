@@ -7,7 +7,7 @@
   {{ with $modules.hall_of_mirrors }}
     {{ partial "modules/hall-of-mirrors/index.html" (dict "settings" . "page" $.Page) }}
   {{ end }}
-  {{ with (default $modules.toxic_swamp $defaults.toxic_swamp) }}
+  {{ with (default $defaults.toxic_swamp $modules.toxic_swamp) }}
     {{ partial "modules/toxic-swamp/index.html" (dict "settings" . "data" $.Site.Data) }}
   {{ end }}
   {{ with $modules.voyeur }}
