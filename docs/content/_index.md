@@ -62,11 +62,11 @@ images = [
     <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
   </svg>
   <h2>Unparalleled Speed</h2>
-  <p>With {{< external text="0.615s average" href="https://forestry.io/blog/hugo-vs-jekyll-benchmark/" />}} builds and <strong><i>sub-second</i> page loads</strong> you could conceivably develop and serve your content from an {{< external "https://amzn.to/2Wx7xJk" "ODROID" />}} in space.</p>
+  <p>With {{< external text="0.615s average" href="https://forestry.io/blog/hugo-vs-jekyll-benchmark/" />}} builds and <strong><i>decisecond</i> page loads</strong> you could conceivably develop and serve your content from an {{< external "https://amzn.to/2Wx7xJk" "ODROID" />}} in space.</p>
   <nav><p>
     <a href="/feature/fetch-injection/">Fetch Inject</a> |
     <a href="/feature/lazy-loading/">Lazy Loading</a> |
-    <a target="_blank" rel="external noopener nofollow" href="https://tools.pingdom.com/#5a03920a7b000000">Benchmark</a>
+    <a target="_blank" rel="external noopener nofollow" href="https://tools.pingdom.com/#5a399f9666400000">Benchmark</a>
   </p></nav>
 </section>
 

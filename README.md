@@ -12,12 +12,12 @@
 ## Features
 
 - [Streamlined Workflow](https://vhs.codeberg.page/after-dark/#feature-workflow) – cross-platform, 1 dependency, single-codebase
-- [Unparalleled Speed](https://vhs.codeberg.page/after-dark/#feature-speed) – ~0.615s builds, 100-200ms page loads
+- [Unparalleled Speed](https://vhs.codeberg.page/after-dark/#feature-speed) – ~0.615s builds, decisecond page loads
 - [Advanced Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics) – responsive post images with lqip
 - [Rewards System](https://vhs.codeberg.page/after-dark/#feature-rewards) – monetize attention and earn borderless income
 - [Fuzzy Search](https://vhs.codeberg.page/after-dark/#feature-search) – automatic indexing and no third-parties
 - [Easily Customized](https://vhs.codeberg.page/after-dark/#feature-customize) – change skins, strip styles, create layouts
-- [Securely Designed](https://vhs.codeberg.page/after-dark/#feature-security) – verify release hashes even offline
+- [Securely Designed](https://vhs.codeberg.page/after-dark/#feature-security) – referrer policy, release hashes, air gapping
 - [Privacy Focused](https://vhs.codeberg.page/after-dark/#feature-privacy) – no cookies and no external requests
 
 ## Screenshots
