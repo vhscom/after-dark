@@ -76,7 +76,7 @@ If optimizing for platform experiences do so from within `favicon.html`:
 <link rel="apple-touch-icon" href="data:image/png;base64,{{ readFile "static/icon.png" | base64Encode }}">
 {{< /highlight >}}
 
-See the {{< external href="https://github.com/h5bp/html5-boilerplate/blob/6.1.0/dist/doc/extend.md#web-apps" text="H5BP Wiki" />}} for platform-specific requirements and {{< external href="https://gohugo.io/documentation/" text="Hugo Documentation" />}} for help with templating functions and variables.
+See {{< external href="https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md#web-apps" text="H5BP Extend" />}} for platform-specific requirements and {{< external href="https://gohugo.io/documentation/" text="Hugo Documentation" />}} for help with templating functions and variables.
 
 [^1]: See [Optimizing SVGs in data URIs](https://codepen.io/tigt/post/optimizing-svgs-in-data-uris) for help optimizing your own SVGs.
 [^2]: Learn how to apply [SVG animation with SMIL](https://devdocs.io/svg/svg_animation_with_smil).
