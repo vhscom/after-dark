@@ -522,14 +522,20 @@ Enable debugging to output detailed socket messages from the proxy to the browse
 
 # Internationalization
 
-Included languages available for UI presentation:
+English translations available for toolbar display:
 
-- English (en)
 - Indonesian (id)
 - Russian (ru)
 - Greek (el)
 
-Use `languageCode` in site config to control display language:
+Enable them with module `translations` whitelist:
+
+```toml
+[params.modules.toxic_swamp]
+  translations = ["id", "ru", "el"] # English translations enabled
+```
+
+Use `languageCode` site config to control which is displayed:
 
 ```toml
 languageCode = "en-US" # English (United States) or English by default
@@ -541,11 +547,6 @@ languageCode = "ru-RU" # Russian (Russia) or Russian, if available
 <strong>Note:</strong> Language tag syntax is defined by the <abbr title="Internet Engineering Task Force">IETF</abbr>'s {{< external href="https://tools.ietf.org/html/bcp47" text="BCP 47" />}}.
 {{< /hackcss-alert >}}
 
-Customize translations without modifying source:
-
-<details>
-<summary>Expand to view details</summary>
-
 Modify translations from `inline.jsonld.html` in your site `layouts` directory. If the file doesn't exist yet, copy it from module default:
 
 ```sh
@@ -553,15 +554,6 @@ mkdir -p layouts/partials/modules/toxic-swamp/ && \
 cp themes/toxic-swamp/layouts/partials/modules/toxic-swamp/inline.jsonld.html $_
 ```
 
-Whitelist available `translations` for module in site config using override:
-
-```toml
-[params.modules.toxic_swamp]
-  translations = ["id", "ru"] # Override available English translations
-```
-
-Remove any customizations to return to module defaults.
-
-</details>
+Remove config and customizations to return to module defaults.
 
 [^1]: Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared with 0% for {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}} and excludes upgrade incentives, hashrate variance, pool and proxy uptime, withdrawal fees and other optimizations.
