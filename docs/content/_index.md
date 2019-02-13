@@ -29,7 +29,6 @@ images = [
       </svg>&nbsp;&nbsp;Quick Install
     {{< /hackcss-button >}}
   {{< /hackcss-form >}}
-  <img height="28" class="lazyload" alt="total downloads" data-src="https://img.shields.io/npm/dt/after-dark.svg?colorA=000000&colorB=000000&style=for-the-badge">
 </section>
 
 <section class="hero">
