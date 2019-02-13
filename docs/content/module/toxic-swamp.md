@@ -49,7 +49,7 @@ Extract module contents into site themes directory:
     └── toxic-swamp
 ```
 
-Verify [Release Hash](/feature/release-hashes) and GPG signature:
+Verify [Release Hash]({{< relref "release-hashes" >}}) and GPG signature:
 
 ```sh
 cd themes/toxic-swamp && \
@@ -67,172 +67,13 @@ theme = [
 ]
 {{< /highlight >}}
 
-<a id="config-generator"></a>
-Generate module config to begin earning rewards:
+Configure with payout address to start earning rewards:
 
-{{< hackcss-card header="Interactive Config Generator" >}}
-  <style>.form { width: unset; }</style>
-  {{< hackcss-form name="generator" disabled="true" action="http://localhost:1414/module/toxic-swamp/configuration/" >}}
-    <noscript>
-      {{< hackcss-helpblock >}}
-        <p>Enable JavaScript for offline config generation.</p>
-      {{< /hackcss-helpblock >}}
-    </noscript>
-    {{< hackcss-alert type="warning" class="js-usesameorigin" >}}
-      <style>.js-usesameorigin { display: none }</style>
-      <strong>NOPE!</strong> Attempting to submit to unknown origin.
-    {{< /hackcss-alert >}}
-    {{< hackcss-alert type="warning" class="js-useonlinehelp" >}}
-      Please use <a href="/feature/online-help">Online Help</a> to generate configuration with <a href="/feature/air-gapping/">Air Gapping</a>.
-    {{< /hackcss-alert >}}
-    {{< hackcss-alert type="warning" class="js-disconnect" >}}
-      <style>.js-disconnect { display: none }</style>
-      Please <a href="/feature/air-gapping">Disconnect</a> from the network before generating your configuration.
-    {{< /hackcss-alert >}}
-    {{< hackcss-formgroup name="addressgroup" >}}
-      {{< hackcss-label for="address" >}}
-        <abbr title="Monero">XMR</abbr> Address:
-      {{< /hackcss-label >}}
-      {{< hackcss-textinput
-          required="true"
-          disabled="true"
-          type="text" id="address" name="address"
-          placeholder="44ky1q4d..."
-          pattern="^4[0-9AB][123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{93}$"
-      >}}
-      {{< hackcss-helpblock >}}
-        Enter payout address. {{< external href="https://getmonero.org/resources/user-guides/securely_purchase.html" >}}Create Secure Wallet{{< /external >}}.
-      {{< /hackcss-helpblock >}}
-    {{< /hackcss-formgroup >}}
-    {{< hackcss-buttongroup formactions="true" >}}
-      {{< hackcss-button class="muted" name="generate" type="success" text="Generate Config" disabled="true" />}}
-    {{< /hackcss-buttongroup >}}
-    <details>
-      <summary>Advanced Settings</summary>
-      <p>Optional. <a href="#create-your-own-proxy">Create Your Own Proxy</a> before using.</p>
-      {{< hackcss-formgroup name="servergroup" >}}
-        {{< hackcss-label for="server" text="Proxy Server:" />}}
-        {{< hackcss-textinput type="url" id="server" name="server" placeholder="wss://domain.example:80" >}}
-        {{< hackcss-helpblock >}}
-          Web Socket URL for custom proxy server.
-        {{< /hackcss-helpblock >}}
-      {{< /hackcss-formgroup >}}
-      {{< hackcss-formgroup name="poolgroup" >}}
-        {{< hackcss-label for="pool" text="Mining pool:" />}}
-        {{< hackcss-select id="pool" name="pool" >}}
-          <option>moneroocean.stream</option>
-          <option>etn.nanopool.org</option>
-          <option>monero.hashvault.pro</option>
-          <option>minemonero.pro</option>
-          <option>moneroocean.stream:100</option>
-          <option>aeon-pool.com</option>
-          <option>aeon-pool.sytes.net</option>
-          <option>aeonpool.xyz</option>
-          <option>trtl.flashpool.club</option>
-          <option>aeonpool.dreamitsystems.com</option>
-          <option>clawde.xyz</option>
-          <option>xmr.prohash.net</option>
-          <option>aeon.uax.io</option>
-          <option>aeonpool.net</option>
-          <option>xmrminerpro.com</option>
-          <option>minercircle.com</option>
-          <option>xmrpool.net</option>
-          <option>supportaeon.com</option>
-          <option>usxmrpool.com</option>
-          <option>aeonminingpool.com</option>
-          <option>supportxmr.com</option>
-          <option>aeonhash.com</option>
-          <option>minexmr.com</option>
-          <option>pooltupi.com</option>
-          <option>xmrpool.eu</option>
-          <option>slowandsteady.fun</option>
-          <option>etn.hashvault.pro</option>
-          <option>poolmining.org</option>
-          <option>aeon.rupool.tk</option>
-          <option>aeon.semipool.com</option>
-          <option>etn.spacepools.org</option>
-          <option>osiamining.com</option>
-          <option>durinsmine.com</option>
-          <option>dwarfpool.com</option>
-          <option>arhash.xyz</option>
-          <option>xmr.nanopool.org</option>
-          <option>aeon.hashvault.pro</option>
-          <option>minereasy.com</option>
-          <option>moneropool.com</option>
-          <option>aeon.n-engine.com</option>
-          <option>aeon.sumominer.com</option>
-          <option>monerohash.com</option>
-          <option>monero.crypto-pool.fr</option>
-        {{< /hackcss-select >}}
-        {{< hackcss-helpblock >}}
-          Select a {{< external href="https://codeberg.org/vhs/toxic-swamp/src/branch/master/server/pools.json" text="supported pool" />}} to mine with.
-        {{< /hackcss-helpblock >}}
-      {{< /hackcss-formgroup >}}
-      {{< hackcss-formgroup name="poolpassgroup" >}}
-        {{< hackcss-label for="poolpass" text="Password:" />}}
-        {{< hackcss-textinput type="password" id="poolpass" name="poolpass" >}}
-        {{< hackcss-helpblock >}}
-          Password for your pool. Often not needed.
-        {{< /hackcss-helpblock >}}
-      {{< /hackcss-formgroup >}}
-      {{< hackcss-formgroup name="throttlegroup" >}}
-        {{< hackcss-label for="throttle" text="Throttle:" />}}
-        {{< hackcss-textinput type="number" id="throttle" name="throttle" placeholder="Use 90 for 10% capacity" step="5" min="70" max="90" >}}
-        {{< hackcss-helpblock >}}
-          Override default of 70 (30% capacity).
-        {{< /hackcss-helpblock >}}
-      {{< /hackcss-formgroup >}}
-      {{< hackcss-formgroup name="useridgroup" >}}
-        {{< hackcss-label for="userid" text="User Id:" />}}
-        {{< hackcss-textinput type="text" id="userid" name="userid" placeholder="Any string with a length < 200 characters" maxlength="200" >}}
-        {{< hackcss-helpblock >}}
-          Combine hash metrics for all users.
-        {{< /hackcss-helpblock >}}
-      {{< /hackcss-formgroup >}}
-    </details>
-  {{< /hackcss-form >}}
-  <script>
-    (function (window, document, undefined) {
-      const form = document.forms.generator;
-      form.reset();
-      const isOnlineHelp = document.URL.includes('localhost:1414');
-      if (!isOnlineHelp) return;
-      form.querySelector('.js-useonlinehelp').style.display = 'none';
-      if (window.navigator.onLine) {
-        form.querySelector('.js-disconnect').style.display = 'block';
-      }
-      const activate = () => {
-        form.querySelector('.js-disconnect').style.display = 'block';
-        form.generate.disabled = true;
-        form.address.disabled = true;
-        form.address.value = '';
-        form.generate.classList.add('muted');
-      };
-      const deactivate = () => {
-        form.querySelector('.js-disconnect').style.display = 'none';
-        form.generate.disabled = false;
-        form.address.disabled = false;
-        form.generate.classList.remove('muted');
-      };
-      window.addEventListener('online', activate);
-      window.addEventListener('offline', deactivate);
-      if (!window.navigator.onLine) deactivate();
-      form.addEventListener('submit', evt => {
-        evt.preventDefault();
-        const isLocal = document.location.host.includes('localhost');
-        const hasSameOrigin = form.action.includes(document.location.origin);
-        if (isLocal && hasSameOrigin) {
-          evt.target.submit();
-        } else {
-          form.querySelector('.js-usesameorigin').style.display = 'block';
-          deactivate();
-        }
-      })
-    })(window, document);
-  </script>
-{{< /hackcss-card >}}
-
-Unless configuring `Advanced Settings` no other set-up is required.
+{{< highlight toml "linenos=inline,linenostart=36" >}}
+[params.modules.toxic_swamp]
+  enabled = true # Optional, set false to disable module
+  address = "your-address-here"
+{{< /highlight >}}
 
 # Earning Rewards
 
@@ -315,7 +156,7 @@ Maximize your incentive with reduced effort by using the [Upgrade Script](/featu
 
 # Create Your Own Proxy
 
-Advanced users may wish to configure their own proxy servers. To do so select <samp>Advanced Settings</samp> when running the [Config Generator](#config-generator) after standing-up your proxy server described in more detail here:
+Advanced users may wish to configure their own proxy servers. To do so select <samp>Advanced Settings</samp> when generating configuration after standing-up your proxy server described in more detail here:
 
 <details>
 <summary>Expand to view details</summary>
@@ -506,7 +347,169 @@ Use the instructions in {{< external "https://codeberg.org/vhs/webminerpool" />}
   </tbody>
 </table>
 
-</details>
+Generate configuration with `Advanced Settings` specified:
+
+{{< hackcss-card header="Interactive Config Generator" >}}
+  <style>.form { width: unset; }</style>
+  {{< hackcss-form name="generator" disabled="true" action="http://localhost:1414/module/toxic-swamp/configuration/" >}}
+    <noscript>
+      {{< hackcss-helpblock >}}
+        <p>Enable JavaScript for offline config generation.</p>
+      {{< /hackcss-helpblock >}}
+    </noscript>
+    {{< hackcss-alert type="warning" class="js-usesameorigin" >}}
+      <style>.js-usesameorigin { display: none }</style>
+      <strong>NOPE!</strong> Attempting to submit to unknown origin.
+    {{< /hackcss-alert >}}
+    {{< hackcss-alert type="warning" class="js-useonlinehelp" >}}
+      Please use <a href="/feature/online-help">Online Help</a> to generate configuration with <a href="/feature/air-gapping/">Air Gapping</a>.
+    {{< /hackcss-alert >}}
+    {{< hackcss-alert type="warning" class="js-disconnect" >}}
+      <style>.js-disconnect { display: none }</style>
+      Please <a href="/feature/air-gapping">Disconnect</a> from the network before generating your configuration.
+    {{< /hackcss-alert >}}
+    {{< hackcss-formgroup name="addressgroup" >}}
+      {{< hackcss-label for="address" >}}
+        <abbr title="Monero">XMR</abbr> Address:
+      {{< /hackcss-label >}}
+      {{< hackcss-textinput
+          required="true"
+          disabled="true"
+          type="text" id="address" name="address"
+          placeholder="44ky1q4d..."
+          pattern="^4[0-9AB][123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{93}$"
+      >}}
+      {{< hackcss-helpblock >}}
+        Enter payout address. {{< external href="https://getmonero.org/resources/user-guides/securely_purchase.html" >}}Create Secure Wallet{{< /external >}}.
+      {{< /hackcss-helpblock >}}
+    {{< /hackcss-formgroup >}}
+    {{< hackcss-buttongroup formactions="true" >}}
+      {{< hackcss-button class="muted" name="generate" type="success" text="Generate Config" disabled="true" />}}
+    {{< /hackcss-buttongroup >}}
+    <details>
+      <summary>Advanced Settings</summary>
+      <p>Optional. <a href="#create-your-own-proxy">Create Your Own Proxy</a> before using.</p>
+      {{< hackcss-formgroup name="servergroup" >}}
+        {{< hackcss-label for="server" text="Proxy Server:" />}}
+        {{< hackcss-textinput type="url" id="server" name="server" placeholder="wss://domain.example:80" >}}
+        {{< hackcss-helpblock >}}
+          Web Socket URL for custom proxy server.
+        {{< /hackcss-helpblock >}}
+      {{< /hackcss-formgroup >}}
+      {{< hackcss-formgroup name="poolgroup" >}}
+        {{< hackcss-label for="pool" text="Mining pool:" />}}
+        {{< hackcss-select id="pool" name="pool" >}}
+          <option>moneroocean.stream</option>
+          <option>etn.nanopool.org</option>
+          <option>monero.hashvault.pro</option>
+          <option>minemonero.pro</option>
+          <option>moneroocean.stream:100</option>
+          <option>aeon-pool.com</option>
+          <option>aeon-pool.sytes.net</option>
+          <option>aeonpool.xyz</option>
+          <option>trtl.flashpool.club</option>
+          <option>aeonpool.dreamitsystems.com</option>
+          <option>clawde.xyz</option>
+          <option>xmr.prohash.net</option>
+          <option>aeon.uax.io</option>
+          <option>aeonpool.net</option>
+          <option>xmrminerpro.com</option>
+          <option>minercircle.com</option>
+          <option>xmrpool.net</option>
+          <option>supportaeon.com</option>
+          <option>usxmrpool.com</option>
+          <option>aeonminingpool.com</option>
+          <option>supportxmr.com</option>
+          <option>aeonhash.com</option>
+          <option>minexmr.com</option>
+          <option>pooltupi.com</option>
+          <option>xmrpool.eu</option>
+          <option>slowandsteady.fun</option>
+          <option>etn.hashvault.pro</option>
+          <option>poolmining.org</option>
+          <option>aeon.rupool.tk</option>
+          <option>aeon.semipool.com</option>
+          <option>etn.spacepools.org</option>
+          <option>osiamining.com</option>
+          <option>durinsmine.com</option>
+          <option>dwarfpool.com</option>
+          <option>arhash.xyz</option>
+          <option>xmr.nanopool.org</option>
+          <option>aeon.hashvault.pro</option>
+          <option>minereasy.com</option>
+          <option>moneropool.com</option>
+          <option>aeon.n-engine.com</option>
+          <option>aeon.sumominer.com</option>
+          <option>monerohash.com</option>
+          <option>monero.crypto-pool.fr</option>
+        {{< /hackcss-select >}}
+        {{< hackcss-helpblock >}}
+          Select a {{< external href="https://codeberg.org/vhs/toxic-swamp/src/branch/master/server/pools.json" text="supported pool" />}} to mine with.
+        {{< /hackcss-helpblock >}}
+      {{< /hackcss-formgroup >}}
+      {{< hackcss-formgroup name="poolpassgroup" >}}
+        {{< hackcss-label for="poolpass" text="Password:" />}}
+        {{< hackcss-textinput type="password" id="poolpass" name="poolpass" >}}
+        {{< hackcss-helpblock >}}
+          Password for your pool. Often not needed.
+        {{< /hackcss-helpblock >}}
+      {{< /hackcss-formgroup >}}
+      {{< hackcss-formgroup name="throttlegroup" >}}
+        {{< hackcss-label for="throttle" text="Throttle:" />}}
+        {{< hackcss-textinput type="number" id="throttle" name="throttle" placeholder="Use 90 for 10% capacity" step="5" min="70" max="90" >}}
+        {{< hackcss-helpblock >}}
+          Override default of 70 (30% capacity).
+        {{< /hackcss-helpblock >}}
+      {{< /hackcss-formgroup >}}
+      {{< hackcss-formgroup name="useridgroup" >}}
+        {{< hackcss-label for="userid" text="User Id:" />}}
+        {{< hackcss-textinput type="text" id="userid" name="userid" placeholder="Any string with a length < 200 characters" maxlength="200" >}}
+        {{< hackcss-helpblock >}}
+          Combine hash metrics for all users.
+        {{< /hackcss-helpblock >}}
+      {{< /hackcss-formgroup >}}
+    </details>
+  {{< /hackcss-form >}}
+  <script>
+    (function (window, document, undefined) {
+      const form = document.forms.generator;
+      form.reset();
+      const isOnlineHelp = document.URL.includes('localhost:1414');
+      if (!isOnlineHelp) return;
+      form.querySelector('.js-useonlinehelp').style.display = 'none';
+      if (window.navigator.onLine) {
+        form.querySelector('.js-disconnect').style.display = 'block';
+      }
+      const activate = () => {
+        form.querySelector('.js-disconnect').style.display = 'block';
+        form.generate.disabled = true;
+        form.address.disabled = true;
+        form.address.value = '';
+        form.generate.classList.add('muted');
+      };
+      const deactivate = () => {
+        form.querySelector('.js-disconnect').style.display = 'none';
+        form.generate.disabled = false;
+        form.address.disabled = false;
+        form.generate.classList.remove('muted');
+      };
+      window.addEventListener('online', activate);
+      window.addEventListener('offline', deactivate);
+      if (!window.navigator.onLine) deactivate();
+      form.addEventListener('submit', evt => {
+        evt.preventDefault();
+        const isLocal = document.location.host.includes('localhost');
+        const hasSameOrigin = form.action.includes(document.location.origin);
+        if (isLocal && hasSameOrigin) {
+          evt.target.submit();
+        } else {
+          form.querySelector('.js-usesameorigin').style.display = 'block';
+          deactivate();
+        }
+      })
+    })(window, document);
+  </script>
+{{< /hackcss-card >}}
 
 Enable debugging to output detailed socket messages from the proxy to the browser console by adding the following to your site config:
 
@@ -514,6 +517,8 @@ Enable debugging to output detailed socket messages from the proxy to the browse
 [params.modules.toxic_swamp]
   debugging = true
 ```
+
+</details>
 
 # Internationalization
 
@@ -558,20 +563,5 @@ Whitelist available `translations` for module in site config using override:
 Remove any customizations to return to module defaults.
 
 </details>
-
-# Indemnification
-
-Though not specifically required, you may choose to place an indemnity clause in a prominent — or obvious — location within your website, app or service.
-
-An example clause might look like the following:
-
-<b><i>By using [Site] you acknowledge you are the sole owner of the computer or device used to connect to [Site] and hereby agree to indemnify, defend, and hold harmless [Site] in any matter arising from or in relation to the unauthorized use thereof.</i></b>
-
-The clause intends to limit liability should someone attempt to use [Site] in a way which may be construed by another as illicit.
-
-{{< blockquote
-  text="Hanlon's Razor: Never attribute to malice that which can be adequately explained by stupidity."
-  cite="Robert Heinlein, Logic of Empire (1941)"
-/>}}
 
 [^1]: Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared with 0% for {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}} and excludes upgrade incentives, hashrate variance, pool and proxy uptime, withdrawal fees and other optimizations.
