@@ -14,14 +14,14 @@ Untuk memverifikasi dengan`meta` tambahkan yang berikut ini ke {{< external href
 
 ```toml
 [params.seo.webmaster_verifications]
-  google = "" # https://search.google.com/search-console
-  bing = "" # https://www.bing.com/toolbox/webmaster/
-  alexa = "" # claiming retired (see note below)
-  yandex = "" # https://webmaster.yandex.com/
+  google = "" # Opsional, lihat https://search.google.com/search-console
+  bing = "" # Opsional, lihat https://www.bing.com/toolbox/webmaster/
+  yandex = "" # Opsional, lihat https://webmaster.yandex.com/
+  alexa = "" # Opsional, mengklaim dihentikan (lihat catatan di bawah ini)
 ```
 
 {{< hackcss-alert type="info" >}}
-<strong>Note:</strong> Claiming your site with Alexa {{< external text="was retired" href="https://support.alexa.com/hc/en-us/articles/219135887-Claiming-has-been-retired-May-2016" />}} in May 2016.
+<strong>Note:</strong> Mengklaim situs anda dengan Alexa {{< external text="dihentikan" href="https://support.alexa.com/hc/en-us/articles/219135887-Claiming-has-been-retired-May-2016" />}} dalam May 2016.
 {{< /hackcss-alert >}}
 
 Nanti anda dapat menghapus verifikasi yang tidak anda perlukan lagi atau memutuskan untuk tidak menggunakannya.
@@ -62,3 +62,8 @@ Gunakan [ephemeral hosting](../air-gapping/#ephemeral-hosting-with-end-to-end-en
 Tidak ada yang menyukai website yang lambat. Mengevaluasi dan menganalisa kinerja dari berbagai lokasi di seluruh dunia menggunakan {{< external href="https://tools.pingdom.com" text="Pingdom Tools" />}} dan {{< external "https://webpagetest.org" />}} secara gratis.
 
 Memantau kinerja dari waktu ke waktu menggunakan {{< external href="https://speedtracker.org" text="SpeedTracker" />}}.
+
+
+## Layanan Tambahan
+
+- {{< external "https://w3c.github.io/developers/tools/" />}}
