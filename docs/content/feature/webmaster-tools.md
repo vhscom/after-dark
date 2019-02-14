@@ -14,10 +14,10 @@ To verify with `meta` add the following to your {{< external href="https://gohug
 
 ```toml
 [params.seo.webmaster_verifications]
-  google = "" # https://search.google.com/search-console
-  bing = "" # https://www.bing.com/toolbox/webmaster/
-  alexa = "" # claiming retired (see note below)
-  yandex = "" # https://webmaster.yandex.com/
+  google = "" # Optional, see https://search.google.com/search-console
+  bing = "" # Optional, see https://www.bing.com/toolbox/webmaster/
+  yandex = "" # Optional, see https://webmaster.yandex.com/
+  alexa = "" # Optional, claiming retired (see note below)
 ```
 
 {{< hackcss-alert type="info" >}}
@@ -62,3 +62,7 @@ Use [ephemeral hosting](../air-gapping/#ephemeral-hosting-with-end-to-end-encryp
 Nobody likes a slow website. Benchmark and analyze performance from various locations worldwide using {{< external href="https://tools.pingdom.com" text="Pingdom Tools" />}} and {{< external "https://webpagetest.org" />}} for free.
 
 Monitor performance over time using {{< external href="https://speedtracker.org" text="SpeedTracker" />}}.
+
+## Additional services
+
+- {{< external "https://w3c.github.io/developers/tools/" />}}
