@@ -62,6 +62,7 @@ theme = [
   "after-dark"
 ]
 
+disableLiveReload = false # Optional, set true to disable live reload
 enableRobotsTXT = true # Suggested, enable robots.txt file
 
 pygmentsCodefences = true # Suggested, highlight fenced code blocks
@@ -75,6 +76,7 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   author = "" # Optional, controls author name display on posts
   hide_author = false # Optional, set true to hide author name on posts
   has_cookies = false # Optional, set true to disable cookie disclaimer
+  disable_csp = false # Optional, set true to disable content security policy
   images = [
     "https://source.unsplash.com/collection/983219/2000x1322"
   ] # Suggested, controls default Open Graph images
