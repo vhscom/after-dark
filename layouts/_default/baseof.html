@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   <head>
+    {{ partial "meta/content-security-policy.html" . }}
     {{ .Hugo.Generator }}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +22,14 @@
       {{ partial "meta/verifications.html" . }}
     {{ end }}
     {{ partial "meta/http-referrer.html" . }}
-    {{ partial "async-scripts.html" . }}
+    {{ $import := resources.Get "/js/vendor/fetch-inject.min.js" }}
+    {{ $baseof := resources.Get "/js/baseof.js" | resources.ExecuteAsTemplate "baseof.js" . }}
+    <script integrity="{{ ($import | resources.Fingerprint "sha512").Data.Integrity }}">
+      {{- $import.Content | safeJS -}}
+    </script>
+    <script integrity="{{ ($baseof | resources.Fingerprint "sha512").Data.Integrity }}">
+      {{- $baseof.Content | safeJS -}}
+    </script>
     {{ partial "head/modules.html" . }}
     {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
@@ -37,7 +45,7 @@
     {{ partial "global-styles.html" . }}
     {{ $highlights := findRE "class\\s*?=\\s*?\".*?\\bhighlight\\b.*?\"|class\\s*?=\\s*?highlight\\b" .Content }}
     {{ if ge (len $highlights) 1 }}
-      <script>fetchInject([{{ "/css/syntax.css" | relURL }}])</script>
+      <script integrity="sha512-ISTAV0GadOIz/NXXHOS+eCM0ysXVVHhQTlvA6LJxz/DeA5yIxm0Vqf5IE+WH0yuuXkayAKtoZkQ326nch5f/fg==">fetchInject([{{ "/css/syntax.css" | relURL }}]);</script>
       <noscript>
         <link href="{{ "/css/syntax.css" | relURL }}" rel="stylesheet">
       </noscript>

@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "atom-one-chroma": "^2.0.0",
+    "fetch-inject": "^2.0.2",
     "fuse.js": "^3.3.0",
     "hack": "^0.8.1",
     "lazysizes": "^4.1.4",
