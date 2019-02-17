@@ -12,6 +12,8 @@ After Dark includes an animated {{< external rel="nofollow help" href="/404.html
   <iframe title="Error Page Example" width="100%" height="300" src="/404.html"></iframe>
 {{< /hackcss-card >}}
 
+<!--more-->
+
 Adjust it from `404.html` in the site `content` directory:
 
 ```
