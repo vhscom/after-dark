@@ -12,6 +12,8 @@ After Dark termasuk animasi {{< external rel="nofollow help" href="/404.html" te
   <iframe title="Error Page Example" width="100%" height="300" src="/404.html"></iframe>
 {{< /hackcss-card >}}
 
+<!--more-->
+
 Sesuaikan itu dari `404.html` di situs `content` direktori:
 
 ```
