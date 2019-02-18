@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.1.0"></a>
+# [7.1.0](https://codeberg.org/vhs/after-dark/compare/v7.0.3...v7.1.0) (2019-02-18)
+
+
+### Features
+
+* **feature/security:** add content security policy ([6cc19b9](https://codeberg.org/vhs/after-dark/commits/6cc19b9))
+
+
+
 <a name="7.0.3"></a>
 ## [7.0.3](https://codeberg.org/vhs/after-dark/compare/v7.0.2...v7.0.3) (2019-02-12)
 
