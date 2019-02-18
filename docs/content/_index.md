@@ -132,11 +132,11 @@ images = [
     <circle cx="16" cy="24" r="1" />
   </svg>
   <h2>Securely Designed</h2>
-  <p>Verify the <i>authenticity</i> of your installation using secure cryptographic hashes and <strong>upgrade confidently</strong> to the latest version in seconds.</p>
+  <p>Verify the <i>authenticity</i> of your installation using secure cryptographic hashes and use CSP, SRI and Referrer Policy to <strong>lock down your content</strong>.</p>
   <nav><p>
-    <a href="/validate/">Validate</a> |
-    <a href="/feature/upgrade-script/">Upgrade</a> |
-    <a href="/feature/release-hashes/">Learn More</a>
+    <a href="/feature/release-hashes/">Release Hashes</a> |
+    <a href="/feature/content-security-policy/">CSP</a> |
+    <a href="/feature/referrer-policy/">Referrer Policy</a>
   </p></nav>
 </section>
 
