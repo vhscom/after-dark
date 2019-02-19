@@ -41,7 +41,7 @@ images = [
   </svg>
   <h2>Streamlined Workflow</h2>
   <table>
-    <legend>Develop and publish websites cross-platform using a <strong>single codebase</strong> with just <strong>one dependency</strong> and capabilities designed to make you more productive:</legend>
+    <caption>Develop and publish websites cross-platform using a <strong>single codebase</strong> with just <strong>one dependency</strong> and capabilities designed to make you more productive:</caption>
     <tr>
       <th scope="col" width="25%">Features</th>
       <th scope="col" width="25%">Modules</th>
