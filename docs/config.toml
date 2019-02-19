@@ -1,6 +1,6 @@
 baseurl = "https://vhs.codeberg.page/after-dark/" # Controls base URL sitewide
 title = "After Dark" # Homepage title and page title suffix
-paginate = 33 # Number of items to show before paginating
+paginate = 36 # Number of items to show before paginating
 
 # Controls default theme and theme components
 theme = [
