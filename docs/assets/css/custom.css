@@ -24,3 +24,10 @@ a[itemprop="url"]:hover {
   column-gap: 20px;
   grid-template-areas: "nav nav";
 }
+.hack.dark table tr:nth-child(odd) td {
+  background-color: #1976d220;
+}
+caption {
+  margin-bottom: 20px;
+  text-align: left;
+}
