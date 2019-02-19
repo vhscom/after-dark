@@ -13,6 +13,9 @@
       {{ else }} 'self'{{ end }};font-src{{ if $site_directives.fontsrc }}
         {{- range $site_directives.fontsrc }} {{ . | safeHTML }}{{ end -}}
         {{- range .Params.security.csp.directives.fontsrc }} {{ . | safeHTML }}{{ end -}}
+      {{ else }} 'self'{{ end }};media-src{{ if $site_directives.mediasrc }}
+        {{- range $site_directives.mediasrc }} {{ . | safeHTML }}{{ end -}}
+        {{- range .Params.security.csp.directives.mediasrc }} {{ . | safeHTML }}{{ end -}}
       {{ else }} 'self'{{ end }};img-src{{ if $site_directives.imgsrc }}
         {{- range $site_directives.imgsrc }} {{ . | safeHTML }}{{ end -}}
         {{- range .Params.security.csp.directives.imgsrc }} {{ . | safeHTML }}{{ end -}}
