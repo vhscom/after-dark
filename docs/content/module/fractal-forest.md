@@ -13,11 +13,16 @@ features = ["related content", "snippets", "section menu"]
 
 ## Demo
 
-{{< hackcss-alert >}}
-  <iframe title="BPG Visual Comparisons" width="100%" height="600" src="https://xooyoozoo.github.io/yolo-octo-bugfixes/"></iframe>
-{{< /hackcss-alert >}}
+- {{< external "http://xooyoozoo.github.io/yolo-octo-bugfixes/" "Visual comparison" />}} between BPG, JPEG, JP2K and WebP
+- {{< external "https://bellard.org/bpg/lena.html" "Lena 512x512 image, visual comparison with JPEG" />}}
+- {{< external "https://bellard.org/bpg/gallery1.html" "Wikipedia photos" />}}
+- {{< external "https://bellard.org/bpg/gallery2.html" "Images with alpha channel" />}}
+- {{< external "https://bellard.org/bpg/gallery3.html" "Test images using different color spaces and bit depth" />}}
+- {{< external "https://bellard.org/bpg/animation.html" "Test animations" />}}
 
 ## Installation
+
+{{% hackcss-alert type="info" %}}**Note:** Module pre-installed via [Quick Install]({{< relref "quick-install" >}}) with example in post archetype.{{% /hackcss-alert %}}
 
 Choose a module download source:
 
