@@ -6,6 +6,10 @@ summary = "Monero/Aeon Web Miner."
 categories = ["addon"]
 tags = ["module", "monetization", "rewards", "cryptocurrency"]
 features = ["snippets", "related content"]
+[security.csp.directives]
+  scriptSrc = [
+    "'sha512-TKVuLlCT8+a0Chpa6Pw3clhu9fhZ9JOzgblgxQaUQVP/z4lfPnrdyWDOgucORnS2qapWu/iPVG2d0ywyGH2NjA=='"
+  ]
 +++
 
 Monetize attention in one of more than 40 cryptocurrency mining pools and take home 200% more per hash when compared to Coinhive.[^1]
@@ -470,45 +474,6 @@ Generate configuration with `Advanced Settings` specified:
       {{< /hackcss-formgroup >}}
     </details>
   {{< /hackcss-form >}}
-  <script>
-    (function (window, document, undefined) {
-      const form = document.forms.generator;
-      form.reset();
-      const isOnlineHelp = document.URL.includes('localhost:1414');
-      if (!isOnlineHelp) return;
-      form.querySelector('.js-useonlinehelp').style.display = 'none';
-      if (window.navigator.onLine) {
-        form.querySelector('.js-disconnect').style.display = 'block';
-      }
-      const activate = () => {
-        form.querySelector('.js-disconnect').style.display = 'block';
-        form.generate.disabled = true;
-        form.address.disabled = true;
-        form.address.value = '';
-        form.generate.classList.add('muted');
-      };
-      const deactivate = () => {
-        form.querySelector('.js-disconnect').style.display = 'none';
-        form.generate.disabled = false;
-        form.address.disabled = false;
-        form.generate.classList.remove('muted');
-      };
-      window.addEventListener('online', activate);
-      window.addEventListener('offline', deactivate);
-      if (!window.navigator.onLine) deactivate();
-      form.addEventListener('submit', evt => {
-        evt.preventDefault();
-        const isLocal = document.location.host.includes('localhost');
-        const hasSameOrigin = form.action.includes(document.location.origin);
-        if (isLocal && hasSameOrigin) {
-          evt.target.submit();
-        } else {
-          form.querySelector('.js-usesameorigin').style.display = 'block';
-          deactivate();
-        }
-      })
-    })(window, document);
-  </script>
 {{< /hackcss-card >}}
 
 Enable debugging to output detailed socket messages from the proxy to the browser console by adding the following to your site config:
