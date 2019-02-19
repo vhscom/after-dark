@@ -55,6 +55,7 @@ Directive | Mapping | Advanced Default
 default-src | defaultSrc | 'none'
 connect-src | connectSrc | 'self'
 font-src | fontSrc | 'self'
+media-src | mediaSrc | 'self'
 img-src | imgSrc | 'self' data:
 script-src | scriptSrc | 'none'
 style-src | styleSrc | 'self' 'unsafe-inline'
@@ -63,13 +64,18 @@ object-src | objectSrc | 'none'
 
 Once set, view the `Content-Security-Policy` meta tag in the `head` of your page and inspect the console for errors as you navigate to different pages. Each time you encounter an error caused by CSP is an opportunity to improve your policy.
 
-Continue overriding advanced defaults as necessary until all CSP errors are resolved or you're satisfied with the changes.
+Add page-specific directives from page front matter using the same structure and naming conventions used in site config to append items for that page:
 
-Add page-specific directives from page front matter using the same structure and naming conventions used in site config to append items for that page.
+```toml
+[security.csp.directives]
+  scriptSrc = [
+    "'sha512-TKVuLlCT8+a0Chpa6Pw3clhu9fhZ9JOzgblgxQaUQVP/z4lfPnrdyWDOgucORnS2qapWu/iPVG2d0ywyGH2NjA=='"
+  ]
+```
 
 {{% hackcss-alert type="info" %}}**Note:** Page-specific directives _will not_ override any site-wide setting and will not apply without first overriding its advanced default via site config.{{% /hackcss-alert %}}
 
-Repeat the above process for each of the available advanced defaults until you're satisfied with your overall policy. Leverage [Basic Configuration]({{< relref "#basic-configuration" >}}) to disable CSP on a per-page basis during testing.
+Continue overriding advanced defaults as necessary until all CSP errors are resolved or you're satisfied with the changes.
 
 ## Additional Resources
 
