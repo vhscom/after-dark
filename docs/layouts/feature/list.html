@@ -22,15 +22,31 @@
       margin-inline-start: unset;
       margin-bottom: 2rem;
     }
+    nav {
+      margin-bottom: 20px;
+    }
+    .hack article:first-of-type h2 {
+      margin-top: 30px;
+    }
+    .hack h2 {
+      position: sticky;
+      top: 20px;
+      padding: 5px;
+      background-color: #1976d215;
+      margin: -20px 0 30px;
+    }
+    .hack h2:before {
+      content: ">> ";
+    }
+    .hack h2:after {
+      content: " <<";
+    }
     @media screen and (min-width: 30em) {
       dl {
         grid-template-columns: repeat(2, 1fr 2fr);
       }
       .hack h2 {
         text-align: center;
-      }
-      .hack h2::before {
-        content: "";
       }
     }
   </style>
@@ -39,14 +55,22 @@
     {{ $scratch.Add "categories" .Params.categories | first 1 }}
   {{ end }}
   {{ $categories := $scratch.Get "categories" | uniq }}
+  <nav class="alert alert-info">
+    <b>Category:</b>
+    {{ range $categories }}
+      <a href="#{{ . | anchorize }}">{{ . | title }}</a>
+    {{ end }}
+  </nav>
   {{ range $categories }}
-    <h2>{{ . | title }}</h2>
-    <dl>
-      {{ range where $.Paginator.Pages "Params.categories" "intersect" (slice .)  }}
-        <dt><a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <dd>{{ .Description }}
-      {{ end }}
-    </dl>
+    <article>
+      <h2 id="{{ . | anchorize }}">{{ . | title }}</h2>
+      <dl>
+        {{ range where $.Paginator.Pages "Params.categories" "intersect" (slice .)  }}
+          <dt><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <dd>{{ .Description }}
+        {{ end }}
+      </dl>
+    </article>
   {{ end }}
 {{ end }}
 {{ define "footer" }}
