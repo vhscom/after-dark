@@ -40,6 +40,9 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   hidden = false # Optional, set false or remove to show section menu
 
 [params.security.csp.directives]
+  mediaSrc = [
+    "https://vhs.keybase.pub"
+  ]
   scriptSrc = [
     "'self'",
     "'unsafe-inline'",
