@@ -95,7 +95,7 @@ images = [
   <p>Earn rewards for keeping your software up-to-date and <strong>monetize attention</strong> to generate a <strong><i>borderless</i></strong>, low-maintenance & passive income.</p>
   <nav><p>
     <a href="/module/toxic-swamp/#installation">Installation</a> |
-    <a href="/module/toxic-swamp/#earning-rewards">Earning Rewards</a>
+    <a href="/module/toxic-swamp/#earning-rewards">Earning Rewards</a> |
     <a href="/module/toxic-swamp/">Learn More</a>
   </p></nav>
 </section>
