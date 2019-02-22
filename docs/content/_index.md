@@ -49,9 +49,9 @@ images = [
       <th scope="col" width="25%">Extras</th>
     </tr>
     <tr>
-      <td><a href="./feature/">33</a></td>
+      <td><a href="./feature/">35</a></td>
       <td><a href="./module/">4</a></td>
-      <td><a href="./shortcode/">26</a></td>
+      <td><a href="./shortcode/">26+</a></td>
       <td><a href="./extra/">1</a></td>
     </tr>
   </table>
@@ -151,7 +151,7 @@ images = [
   <p>Develop your entire site <strong><i>without</i> Internet</strong> connectivity and <i>expose</i> an ephemeral Web server with e2e encryption and <strong>real-time traffic inspection</strong>.</p>
   <nav><p>
     <a href="/feature/air-gapping/">Air Gapping</a> |
-    <a href="/feature/air-gapping/#ephemeral-hosting-with-end-to-end-encryption">Hosting</a> |
+    <a href="/feature/ephemeral-hosting">SSH Hosting</a> |
     <a href="/feature/referrer-policy/">Referrer Policy</a>
   </p></nav>
 </section>

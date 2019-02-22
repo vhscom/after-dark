@@ -55,7 +55,7 @@ Untuk menguji dengan Yandex gunakan {{< external href="https://webmaster.yandex.
   {{< /hackcss-formgroup >}}
 {{< /hackcss-form >}}
 
-Gunakan [ephemeral hosting](../air-gapping/#ephemeral-hosting-with-end-to-end-encryption) untuk memeriksa situs anda saat dalam pengembangan/pengujian.
+Gunakan [Hosting Ephemeral]({{< relref "ephemeral-hosting" >}}) untuk memeriksa situs anda saat dalam pengembangan/pengujian.
 
 ## Menguji dan memantau kecepatan
 
