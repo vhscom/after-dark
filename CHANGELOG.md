@@ -8,10 +8,8 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* **feature/security:** add content security policy ([de24354](https://codeberg.org/vhs/after-dark/commits/de24354))
 * **help/homepage:** update security featurette ([dcd0199](https://codeberg.org/vhs/after-dark/commits/dcd0199))
 * **layouts:** add rss with full content ([fe99466](https://codeberg.org/vhs/after-dark/commits/fe99466))
-
 
 
 <a name="7.1.0"></a>
@@ -20,18 +18,22 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* **feature/security:** add content security policy ([6cc19b9](https://codeberg.org/vhs/after-dark/commits/6cc19b9))
+* **feature/security:** add content security policy ([de24354](https://codeberg.org/vhs/after-dark/commits/de24354)
 
-
+### Bug Fixes
 
 <a name="7.0.3"></a>
 ## [7.0.3](https://codeberg.org/vhs/after-dark/compare/v7.0.2...v7.0.3) (2019-02-12)
 
+* **layout/default:** delegate module config to modules ([79f2a13](https://codeberg.org/vhs/after-dark/commit/79f2a13))
 
+
+### Bug Fixes
 
 <a name="7.0.2"></a>
 ## [7.0.2](https://codeberg.org/vhs/after-dark/compare/v7.0.1...v7.0.2) (2019-02-12)
 
+* **feature/security:** restore gpg signing of commits and tags
 
 
 <a name="7.0.1"></a>
