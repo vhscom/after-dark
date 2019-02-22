@@ -1,14 +1,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <docs>https://blogs.law.harvard.edu/tech/rss</docs>
-    <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ .Site.Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
-    <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{ . }} {{ end }}{{ end }}on {{ .Site.Title }}</description>{{ if ge (len .Site.Params.images) 1 }}
+    <description>Recent content {{ if ne .Title .Site.Title }}{{ with .Title }}in {{ . }} {{ end }}{{ end }}on {{ .Site.Title }}</description>{{ if .Site.Params.images }}{{ if ge (len .Site.Params.images) 1 }}
     <image>
-      <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ .Site.Title }}{{ end }}</title>
+      <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ .Site.Title }}{{ end }}</title>
       <link>{{ .Permalink }}</link>
       <url>{{ index .Site.Params.images 0 }}</url>
-    </image>{{ end }}
+    </image>{{ end }}{{ end }}
     <ttl>1440</ttl>
     <generator>{{ with .Site.Data.npm.latest }}{{ .name | humanize | title }} {{ .version }} (Hugo {{ $.Hugo.Version }}){{ else }}Hugo {{ .Hugo.Version }}{{ end }}</generator>{{ with .Site.LanguageCode }}
     <language>{{ . }}</language>{{ end }}{{ with .Site.Author }}
@@ -29,7 +29,7 @@
         <description>{{ .Summary | plainify }}</description>{{ range .Params.categories }}
         <category domain="{{ printf "%s%s" ("/categories/" | absURL) (. | urlize ) }}">{{ . | title }}</category>{{ end }}{{ with .Resources.GetMatch "enclosure" }}{{ if .Params.length }}
         <enclosure url="{{ .Permalink }}" length="{{ .Params.length }}" type="{{ .MediaType }}" />{{ end }}{{ end }}
-        <content:encoded>{{ "<![CDATA[" | safeHTML }}{{ .Content | plainify }}{{ `]]>` | safeHTML }}</content:encoded>
+        <content:encoded>{{ "<![CDATA[" | safeHTML }}{{ .Content | plainify }}{{ "]]>" | safeHTML }}</content:encoded>
       </item>
     {{ end }}
   </channel>
