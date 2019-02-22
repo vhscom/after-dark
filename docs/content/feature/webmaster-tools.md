@@ -55,7 +55,7 @@ To test with Yandex use their {{< external href="https://webmaster.yandex.com/to
   {{< /hackcss-formgroup >}}
 {{< /hackcss-form >}}
 
-Use [ephemeral hosting](../air-gapping/#ephemeral-hosting-with-end-to-end-encryption) to check your site while in development/testing.
+Use [Ephemeral Hosting]({{< relref "ephemeral-hosting" >}}) to check your site while in development/testing.
 
 ## Test and Monitor Speed
 
