@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.2.1"></a>
+## [7.2.1](https://codeberg.org/vhs/after-dark/compare/v7.2.0...v7.2.1) (2019-02-22)
+
+
+### Bug Fixes
+
+* **layout/default:** workaround hugo bug on eval len(nil) go tmpl ([258c747](https://codeberg.org/vhs/after-dark/commits/258c747)), closes [#135](https://codeberg.org/vhs/after-dark/issues/135)
+
+
+
 <a name="7.2.0"></a>
 # [7.2.0](https://codeberg.org/vhs/after-dark/compare/v7.0.1...v7.2.0) (2019-02-20)
 
