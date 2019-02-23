@@ -3,12 +3,12 @@
     <docs>https://blogs.law.harvard.edu/tech/rss</docs>
     <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ .Site.Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
-    <description>Recent content {{ if ne .Title .Site.Title }}{{ with .Title }}in {{ . }} {{ end }}{{ end }}on {{ .Site.Title }}</description>{{ if .Site.Params.images }}{{ if ge (len .Site.Params.images) 1 }}
+    <description>Recent content {{ if ne .Title .Site.Title }}{{ with .Title }}in {{ . }} {{ end }}{{ end }}on {{ .Site.Title }}</description>{{ range first 1 (default slice .Site.Params.images) }}
     <image>
-      <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ .Site.Title }}{{ end }}</title>
-      <link>{{ .Permalink }}</link>
-      <url>{{ index .Site.Params.images 0 }}</url>
-    </image>{{ end }}{{ end }}
+      <title>{{ if eq $.Title $.Site.Title }}{{ $.Site.Title }}{{ else }}{{ with $.Title }}{{ . }} on {{ end }}{{ $.Site.Title }}{{ end }}</title>
+      <link>{{ $.Permalink }}</link>
+      <url>{{ . }}</url>
+    </image>{{ end }}
     <ttl>1440</ttl>
     <generator>{{ with .Site.Data.npm.latest }}{{ .name | humanize | title }} {{ .version }} (Hugo {{ $.Hugo.Version }}){{ else }}Hugo {{ .Hugo.Version }}{{ end }}</generator>{{ with .Site.LanguageCode }}
     <language>{{ . }}</language>{{ end }}{{ with .Site.Author }}
