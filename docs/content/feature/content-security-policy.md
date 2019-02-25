@@ -54,6 +54,7 @@ Directive | Mapping | Advanced Default
 --- | --- | ---
 default-src | defaultSrc | 'none'
 connect-src | connectSrc | 'self'
+worker-src | workerSrc | 'self'
 font-src | fontSrc | 'self'
 media-src | mediaSrc | 'self'
 img-src | imgSrc | 'self' data:

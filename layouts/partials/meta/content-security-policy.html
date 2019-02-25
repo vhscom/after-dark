@@ -10,6 +10,9 @@
       {{ else }} 'none'{{ end }};connect-src{{ if $site_directives.connectsrc }}
         {{- range $site_directives.connectsrc }} {{ . | safeHTML }}{{ end -}}
         {{- range .Params.security.csp.directives.connectsrc }} {{ . | safeHTML }}{{ end -}}
+      {{ else }} 'self'{{ end }};worker-src{{ if $site_directives.workersrc }}
+        {{- range $site_directives.workersrc }} {{ . | safeHTML }}{{ end -}}
+        {{- range .Params.security.csp.directives.workersrc }} {{ . | safeHTML }}{{ end -}}
       {{ else }} 'self'{{ end }};font-src{{ if $site_directives.fontsrc }}
         {{- range $site_directives.fontsrc }} {{ . | safeHTML }}{{ end -}}
         {{- range .Params.security.csp.directives.fontsrc }} {{ . | safeHTML }}{{ end -}}
@@ -34,5 +37,5 @@
       {{ else }} 'none'{{ end }};">
   {{ end }}
 {{ else if not $is_disabled }}
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; font-src 'self' https: data:; img-src 'self' https: data:; object-src 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; connect-src 'self' wss: data:; font-src 'self' https: data:; img-src 'self' https: data:; object-src 'none'">
 {{ end }}
