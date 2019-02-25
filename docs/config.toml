@@ -40,16 +40,27 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   hidden = false # Optional, set false or remove to show section menu
 
 [params.security.csp.directives]
+  workerSrc = [
+    "'self'",
+    "blob:"
+  ]
+  connectSrc = [
+    "'self'",
+    "wss:",
+    "data:"
+  ]
   mediaSrc = [
     "https://vhs.keybase.pub"
   ]
   scriptSrc = [
     "'self'",
     "'unsafe-inline'",
+    "'unsafe-eval'",
     "https:",
     "'sha512-Jx/MqTxYWqHdoOkHItRJJZCvFDhERPr5gG4I5ESu3V&#43;BgQyAQ6wXfdsGzhzmT0yyvkAWz2jbrn81q90RRJTSTg=='",
     "'sha512-hno7WeTIciCJSjg/myjyK30HYkrcGCVwo4g4SpUalvrs3r2lS7bPNIQwbCNypKbg7BZ1sA4AsGnk6Gq4NOKpGA=='",
     "'sha512-ISTAV0GadOIz/NXXHOS&#43;eCM0ysXVVHhQTlvA6LJxz/DeA5yIxm0Vqf5IE&#43;WH0yuuXkayAKtoZkQ326nch5f/fg=='",
+    "'sha512-VcgUV40yC63NPTwc43S34Yr3YnyVURl4rAQvU7+FMe1xF9StT5IVQWQPkE4KAH7NlQfb4Dy/ivf0Y5g7trYVdA=='",
     "'strict-dynamic'"
   ]
 
