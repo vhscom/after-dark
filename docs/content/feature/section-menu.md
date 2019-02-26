@@ -46,7 +46,7 @@ Exclude menu items by identifier:
 
 ```toml
 [params.layout.menu.main]
-  exclude = ["home", "search"] # exclude homepage and blog postings
+  exclude = ["home", "post"] # exclude homepage and blog postings
 ```
 
 Decorate links with SVG icons using `pre` and `post`:
