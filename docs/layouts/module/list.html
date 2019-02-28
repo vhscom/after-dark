@@ -27,7 +27,6 @@
         {{ range $patinator.Pages }}
           <tr>
             <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-            <td>{{ with .Params.slug }}{{ partial "module-latest.html" (dict "slug" .) }}{{ else }}N/A{{ end }}</td>
             <td>{{ .Params.summary }}</td>
           </tr>
         {{ end }}
