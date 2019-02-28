@@ -12,7 +12,7 @@ features = ["snippets", "related content"]
   ]
 +++
 
-Monetize attention in one of more than 40 cryptocurrency mining pools and take home 200% more per hash when compared to Coinhive.[^1]
+Monetize attention in one of more than 40 cryptocurrency mining pools with planned support for the March 2019 hard fork already a work in progress.
 
 {{< hackcss-alert >}}
 <video controls
@@ -520,5 +520,3 @@ cp themes/toxic-swamp/layouts/partials/modules/toxic-swamp/inline.jsonld.html $_
 ```
 
 Remove config and customizations to return to module defaults.
-
-[^1]: Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared with 0% for {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}} and excludes upgrade incentives, hashrate variance, pool and proxy uptime, withdrawal fees and other optimizations.
