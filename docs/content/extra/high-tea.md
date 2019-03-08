@@ -9,7 +9,7 @@ features = ["related content", "snippets"]
 
 High Tea pairs {{< external href="https://gitea.io" text="Gitea" />}} with {{< external href="https://traefik.io" text="Traefik" />}} enabling you to manage your source code online using an intuitive and sleek-looking web-based interface:
 
-{{< figure alt="After Dark screenshots"
+{{< figure alt="High Tea dashboard"
   src="/images/addon-high-tea_1440x900-fs8.png"
   lqipsrc="/images/addon-high-tea_960x600-fs8.png"
   caption="Dashboard view within the High Tea Gitea application."
