@@ -12,7 +12,7 @@ features = ["snippets", "related content"]
   ]
 +++
 
-Monetize attention in one of more than 40 cryptocurrency mining pools with planned support for the March 2019 hard fork already a work in progress.
+Monetize attention in one of more than 40 cryptocurrency mining pools with support for the March 2019 Monero hard fork.
 
 {{< hackcss-alert >}}
 <video controls
