@@ -9,6 +9,9 @@ features = ["related content"]
 After Dark provides a template guide to enable Telegram Instant Views for posts. Use it to create an {{< external href="https://instantview.telegram.org/my/" text="Instant View Template" />}} on the Telegram site:
 
 ```yaml
+# use 2.0
+~version: "2.0"
+
 # enable for items in the post section
 ?path: /post/.+
 
@@ -16,17 +19,29 @@ After Dark provides a template guide to enable Telegram Instant Views for posts.
 title: //*[@itemprop="headline"]
 body: //*[@itemprop="articleBody"]
 
+# add optional site name and subtitle
+subtitle: //*[@itemprop="description"][normalize-space()]
+site_name: //*[@itemprop="url"][@href="/"]
+
+# if author exists, define name and url
+?exists: //*[@itemprop="author"]
+author: //*[@itemprop="author"]
+author_url: //*[@itemprop="url"]/@href
+
+# add optional telegram channel
+channel: //*[@name="telegram:channel"]/@content
+
 # if cover exists, define images
-?exists: //head/meta[@property="og:image"]/@content
-cover: //head/meta[@property="og:image"]/@content
+?exists: //article/meta[@itemprop="image"]/@content
+cover: //article/header/figure[@itemprop="image"]
 image_url: $cover/self::img/@src
 
-# author and post date extracted automatically
+# post date extracted automatically
 ```
 
 Preview your results on the Telegram site:
 
-![Telegram Instant View screenshot](/images/instant-view-fs8.png "Example Telegram Instant View for After Dark")
+![Telegram Instant View screenshot](/images/feature-instant-view-fs8.png "Example Telegram Instant View for After Dark")
 
 Additionally, if your site has a telegram channel, you can specify it by setting the following in your site config:
 
