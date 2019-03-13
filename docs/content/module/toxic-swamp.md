@@ -27,7 +27,7 @@ Your browser doesn't support embedded videos. Here is a <a href="https://vhs.key
 
 # Features
 
-- Earn cryptocurrency while visitors browse your sites
+- Mine cryptocurrency while visitors browse your sites
 - Reward effort during site development and publishing
 - Transparent, unobtrusive multilingual user interface
 - Does not use cookies or connect to any third-parties
