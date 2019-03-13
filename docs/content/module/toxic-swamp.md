@@ -35,6 +35,7 @@ Your browser doesn't support embedded videos. Here is a <a href="https://vhs.key
 - Automatically starts when external power is detected
 - Suspends operation during loss of power or attention
 - Optimized for low-bandwidth high-latency connections
+- Cannot be detected by MinerBlock extension at 1.2.12
 
 # Installation
 
@@ -58,7 +59,7 @@ Verify [Release Hash]({{< relref "release-hashes" >}}) and GPG signature:
 ```sh
 cd themes/toxic-swamp && \
 npm install && npm run integrity && \
-git tag --verify v1.0.0-beta.16
+git tag --verify v1.0.0-beta.24
 ```
 
 Specify module in site config:
