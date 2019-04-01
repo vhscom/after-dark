@@ -59,7 +59,7 @@ Verify [Release Hash]({{< relref "release-hashes" >}}) and GPG signature:
 ```sh
 cd themes/toxic-swamp && \
 npm install && npm run integrity && \
-git tag --verify v1.0.0-beta.25
+git tag --verify v1.0.0-beta.26
 ```
 
 Specify module in site config:
@@ -494,6 +494,7 @@ English translations available for toolbar display:
 - Russian (ru)
 - Greek (el)
 - German (de)
+- Polish (pl)
 
 Enable them with module `translations` whitelist:
 
@@ -509,6 +510,7 @@ languageCode = "en-US" # English (United States) or English by default
 languageCode = "id-ID" # Indonesian (Indonesia) or Indonesian, if available
 languageCode = "ru-RU" # Russian (Russia) or Russian, if available
 languageCode = "de-DE" # German (Germany) or German, if available
+languageCode = "pl-PL" # Polish (Poland) or Polish, if available
 ```
 
 {{< hackcss-alert type="info" >}}
