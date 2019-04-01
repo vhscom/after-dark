@@ -52,6 +52,11 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   mediaSrc = [
     "https://vhs.keybase.pub"
   ]
+  imgSrc = [
+    "'self'",
+    "data:",
+    "https://*.unsplash.com"
+  ]
   scriptSrc = [
     "'self'",
     "'unsafe-inline'",
