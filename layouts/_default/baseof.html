@@ -2,7 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
   <head>
     {{ partial "meta/content-security-policy.html" . }}
-    {{ .Hugo.Generator }}
+    <meta name="generator" content="{{ with .Site.Data.npm.latest }}{{ .name | humanize | title }} {{ .version }} (Hugo {{ $.Hugo.Version }}){{ else }}Hugo {{ .Hugo.Version }}{{ end }}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
@@ -31,8 +31,8 @@
       {{- $baseof.Content | safeJS -}}
     </script>
     {{ partial "head/modules.html" . }}
-    {{ if .RSSLink }}
-      <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
+    {{ with .OutputFormats.Get "rss" }}
+      {{ printf "<link rel=\"%s\" type=\"%s\" href=\"%s\" title=\"%s\">" .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end }}
     <link rel="canonical" href="{{ .Permalink }}">
     {{ if (isset .Params "prev") }}
