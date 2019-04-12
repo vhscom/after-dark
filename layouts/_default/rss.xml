@@ -10,7 +10,7 @@
       <url>{{ . }}</url>
     </image>{{ end }}
     <ttl>1440</ttl>
-    <generator>{{ with .Site.Data.npm.latest }}{{ .name | humanize | title }} {{ .version }} (Hugo {{ hugo.Version }}){{ else }}Hugo {{ .Hugo.Version }}{{ end }}</generator>{{ with .Site.LanguageCode }}
+    <generator>{{ with .Site.Data.npm.latest }}{{ .name | humanize | title }} {{ .version }} (Hugo {{ hugo.Version }}){{ else }}Hugo {{ hugo.Version }}{{ end }}</generator>{{ with .Site.LanguageCode }}
     <language>{{ . }}</language>{{ end }}{{ with .Site.Author }}
     <managingEditor>{{ .email }}{{ with .name }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with .Site.Author }}
     <webMaster>{{ .email }}{{ with .name }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with .Site.Copyright }}
