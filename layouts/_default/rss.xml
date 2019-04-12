@@ -14,23 +14,21 @@
     <language>{{ . }}</language>{{ end }}{{ with .Site.Author }}
     <managingEditor>{{ .email }}{{ with .name }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with .Site.Author }}
     <webMaster>{{ .email }}{{ with .name }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with .Site.Copyright }}
-    <copyright>{{ . }}</copyright>{{ end }}{{ if not .Date.IsZero }}
-    <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
-    {{ with .OutputFormats.Get "rss" }}
+    <copyright>{{ . }}</copyright>{{ end }}{{ if not now.IsZero }}
+    <lastBuildDate>{{ dateFormat "Mon, 02 Jan 2006 15:04:05" now.UTC | safeHTML }} UT</lastBuildDate>{{ end }}
+    {{ with .OutputFormats.Get "rss" -}}
       {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
-    {{ end }}
-    {{ range .Pages }}
-      <item>
-        <title>{{ .Title }}</title>
-        <link>{{ .Permalink }}</link>{{ if not .PublishDate.IsZero }}
-        <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>{{ end }}{{ if ne .Site.Params.hide_author true }}{{ if or (.Param "author") .Site.Author.email }}
-        <dc:creator>{{ default .Site.Author.email (.Param "author") }}{{ if and (not (.Param "author")) .Site.Author.name }} ({{ default (.Param "author") .Site.Author.name }}){{ end }}</dc:creator>{{ end }}{{ end }}
-        <guid>{{ .Permalink }}</guid>
-        <description>{{ .Summary | plainify }}</description>{{ range .Params.categories }}
-        <category domain="{{ printf "%s%s" ("/categories/" | absURL) (. | urlize ) }}">{{ . | title }}</category>{{ end }}{{ with .Resources.GetMatch "enclosure" }}{{ if .Params.length }}
-        <enclosure url="{{ .Permalink }}" length="{{ .Params.length }}" type="{{ .MediaType }}" />{{ end }}{{ end }}
-        <content:encoded>{{ "<![CDATA[" | safeHTML }}{{ .Content | plainify }}{{ "]]>" | safeHTML }}</content:encoded>
-      </item>
-    {{ end }}
+    {{- end }}{{ range .Pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>{{ if not .PublishDate.IsZero }}
+      <pubDate>{{ dateFormat "Mon, 02 Jan 2006 15:04:05" .Date.UTC | safeHTML }} UT</pubDate>{{ end }}{{ if ne .Site.Params.hide_author true }}{{ if or (.Param "author") .Site.Author.email }}
+      <dc:creator>{{ default .Site.Author.email (.Param "author") }}{{ if and (not (.Param "author")) .Site.Author.name }} ({{ default (.Param "author") .Site.Author.name }}){{ end }}</dc:creator>{{ end }}{{ end }}
+      <guid>{{ .Permalink }}</guid>
+      <description>{{ .Summary | plainify }}</description>{{ range .Params.categories }}
+      <category domain="{{ printf "%s%s" ("/categories/" | absURL) (. | urlize ) }}">{{ . | title }}</category>{{ end }}{{ with .Resources.GetMatch "enclosure" }}{{ if .Params.length }}
+      <enclosure url="{{ .Permalink }}" length="{{ .Params.length }}" type="{{ .MediaType }}" />{{ end }}{{ end }}
+      <content:encoded>{{ "<![CDATA[" | safeHTML }}{{ .Content | plainify }}{{ "]]>" | safeHTML }}</content:encoded>
+    </item>{{ end }}
   </channel>
 </rss>
