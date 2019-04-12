@@ -2,7 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
   <head>
     {{ partial "meta/content-security-policy.html" . }}
-    <meta name="generator" content="{{ with .Site.Data.npm.latest }}{{ .name | humanize | title }} {{ .version }} (Hugo {{ $.Hugo.Version }}){{ else }}Hugo {{ .Hugo.Version }}{{ end }}">
+    <meta name="generator" content="{{ with .Site.Data.npm.latest }}{{ .name | humanize | title }} {{ .version }} (Hugo {{ hugo.Version }}){{ else }}Hugo {{ .Hugo.Version }}{{ end }}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>

@@ -46,7 +46,7 @@ fetchInject([
 
     const getUrl = (query) => {
       const encodedQuery = encodeURIComponent(query);
-      const url = "{{ .URL }}";
+      const url = "{{ .RelPermalink }}";
       return (encodedQuery)
         ? `${url}?${queryParam}=${encodedQuery}`
         : url;
