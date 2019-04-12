@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.2.2"></a>
+## [7.2.2](https://codeberg.org/vhs/after-dark/compare/v7.2.1...v7.2.2) (2019-04-12)
+
+
+### Bug Fixes
+
+* **feature/web-feeds:** output last build date in rfc822 with 4-digit year ([c735feb](https://codeberg.org/vhs/after-dark/commits/c735feb))
+* **shortcode/hackcss-alert:** restore legacy behavior for shortcode ([b127eeb](https://codeberg.org/vhs/after-dark/commits/b127eeb))
+
+
+
 <a name="7.2.1"></a>
 ## [7.2.1](https://codeberg.org/vhs/after-dark/compare/v7.2.0...v7.2.1) (2019-02-22)
 
