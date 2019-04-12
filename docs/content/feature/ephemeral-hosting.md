@@ -3,7 +3,7 @@ title = "Ephemeral Hosting"
 description = "Briefly expose your site to the Internet over SSH with encryption."
 categories = ["security"]
 tags = ["privacy", "networking"]
-features = ["related content", "alert"]
+features = ["related content", "snippets"]
 +++
 
 Using {{< external href="https://serveo.net" text="Serveo" />}} you may briefly expose your site to the Internet with end-to-end encryption, no sign-up required. Use this alongside [Air Gapping]({{< relref "air-gapping" >}}) to quietly poke a hole through your NAT or firewall to move information more discretely.

@@ -17,7 +17,7 @@ images = [
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is free and open-source software you can use to create a website, blog or app. Utilize the world's fastest framework for building websites and design your entire site right inside the terminal.</p>
+    <p>After Dark is free and open-source software you can use to create a website, blog or app. Utilize the world's fastest framework for building websites to build the fastest websites in the world.</p>
   </div>
 </section>
 
@@ -49,7 +49,7 @@ images = [
       <th scope="col" width="25%">Extras</th>
     </tr>
     <tr>
-      <td><a href="./feature/">35</a></td>
+      <td><a href="./feature/">36</a></td>
       <td><a href="./module/">4</a></td>
       <td><a href="./shortcode/">26+</a></td>
       <td><a href="./extra/">1</a></td>

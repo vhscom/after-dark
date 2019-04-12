@@ -1,5 +1,5 @@
 {{ define "title" -}}
-  {{ .Params.title }} | Semantic Design System for Hugo
+  {{ .Params.title }} | Build Fast Websites with Hugo
 {{- end }}
 {{ define "header" }}
   {{ partial "masthead.html" . }}
@@ -173,7 +173,7 @@
 {{ define "main" }}
   <header>
     <h1>{{ .Title }}<sup class="muted">v{{ .Site.Data.npm.latest.version }}</sup></h1>
-    <h2 class="muted">Semantic Design System for Hugo</h2>
+    <h2 class="muted">Build Fast Websites with Hugo</h2>
   </header>
   {{ .Content }}
 {{ end }}
