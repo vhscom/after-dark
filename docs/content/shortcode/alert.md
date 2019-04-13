@@ -6,6 +6,7 @@ tags = ["alert", "dialog", "message", "advertisement"]
 html_attributes = ['class']
 custom_attributes = ["type", "text"]
 snippets_used = ["alert", "card", "external", "button", "button group", "progress"]
+disable_csp = true
 +++
 
 <style>.margin-reset { margin: 0; }</style>
