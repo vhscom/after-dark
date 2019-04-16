@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.2.4"></a>
+## [7.2.4](https://codeberg.org/vhs/after-dark/compare/v7.2.3...v7.2.4) (2019-04-16)
+
+
+
 <a name="7.2.3"></a>
 ## [7.2.3](https://codeberg.org/vhs/after-dark/compare/v7.2.2...v7.2.3) (2019-04-12)
 
