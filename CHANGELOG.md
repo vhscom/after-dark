@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.3.0"></a>
+# [7.3.0](https://codeberg.org/vhs/after-dark/compare/v7.2.3...v7.3.0) (2019-04-27)
+
+
+### Features
+
+* **shortcode:** add trusted custom attr to external ([ba1d35e](https://codeberg.org/vhs/after-dark/commits/ba1d35e))
+
+
+
 <a name="7.2.4"></a>
 ## [7.2.4](https://codeberg.org/vhs/after-dark/compare/v7.2.3...v7.2.4) (2019-04-16)
 
