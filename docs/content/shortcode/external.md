@@ -4,7 +4,7 @@ description = "Create links with external icon and custom behavior."
 categories = ["navigation"]
 tags = ["links", "security", "privacy"]
 html_attributes = ["href", "class", "referrerpolicy", "target", "type", "rel"]
-custom_attributes = ["text"]
+custom_attributes = ["text", "trusted"]
 snippets_used = ["external", "button", "alert"]
 +++
 
@@ -20,19 +20,29 @@ Basic usage:
 
 Shorthand usage:
 
-```
+```term
 {{</* external "https://vhs.codeberg.page/after-dark" "After Dark" /*/>}}
-{{</* external "https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install" /*/>}}
+{{</* external href="https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install" /*/>}}
 {{</* external "wss://fs1.vhs.codeberg.page:80" /*/>}}
 ```
 
 {{< external "https://vhs.codeberg.page/after-dark" "After Dark" />}}
-{{< external "https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install" />}}
-{{< external href="wss://fs1.vhs.codeberg.page:80" />}}
+{{< external href="https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install" />}}
+{{< external "wss://fs1.vhs.codeberg.page:80" />}}
 
 {{< hackcss-alert type="info" >}}
 <strong>Note:</strong> URIs such as those using the <code>wss</code> scheme may be considered unsafe by the {{< external "https://golang.org/pkg/html/template/" "Go template package" />}}. Learn more in the package {{< external "https://golang.org/pkg/html/template/#hdr-Security_Model" "Security Model" />}}.
 {{< /hackcss-alert >}}
+
+With a trusted URL:
+
+```html
+{{</* external trusted="true" href="wss://fs1.vhs.codeberg.page:80" /*/>}}
+{{</* external trusted="true" href="irc://chat.freenode.net:6667/after-dark" /*/>}}
+```
+
+{{< external trusted="true" href="wss://fs1.vhs.codeberg.page:80" />}}
+{{< external trusted="true" href="irc://chat.freenode.net:6667/after-dark" />}}
 
 With external link styling removed:
 
