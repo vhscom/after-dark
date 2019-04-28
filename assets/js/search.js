@@ -12,6 +12,7 @@ fetchInject([
     ).replace(/\+/g, ' ');
 
     const queryParam = 's';
+    const hotkeys = '{{ .Params.form.hotkeys | default (slice "/" "s") }}';
     const selectors = {
       appContainer: '#search-app',
       resultContainer: '#search-results',
@@ -72,8 +73,12 @@ fetchInject([
         window.onpopstate = (evt) => {
           this.query = evt.state.query;
         };
-        document.onkeyup = function (evt) {
-          evt.key === 's' && focusSearchInput();
+        document.onkeydown = function (evt) {
+          if (hotkeys.includes(evt.key)) {
+            evt.preventDefault();
+            focusSearchInput();
+            getSearchInput().select();
+          };
         }
         focusSearchInput();
       },
