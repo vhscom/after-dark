@@ -4,7 +4,7 @@
     {{ range .entries }}
       {{ $is_active := or ($.page.IsMenuCurrent $.name .) ($.page.HasMenuCurrent $.name .) }}
       {{ if (not (in $.settings.exclude .Identifier)) }}
-        <a itemprop="url"{{ if $is_active }} class="active"{{ end }} href="{{ .URL }}">{{ if .Pre }}{{ .Pre | safeHTML }} {{ end }}{{ .Name }}{{ if .Post }} {{ .Post | safeHTML }}{{ end }}</a>
+        <a itemprop="url"{{ if $is_active }} class="active"{{ end }}{{ if eq .Identifier "search" }} rel="search"{{ end }} href="{{ .URL }}">{{ if .Pre }}{{ .Pre | safeHTML }} {{ end }}{{ .Name }}{{ if .Post }} {{ .Post | safeHTML }}{{ end }}</a>
       {{ end }}
     {{ end }}
   </nav>
