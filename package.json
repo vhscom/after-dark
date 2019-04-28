@@ -31,10 +31,13 @@
     "update:hackcss": "npm up hackcss && cp -ir node_modules/hack/dist/ assets/css/vendor/hack/",
     "test": "while true; do head -n 100 /dev/urandom; sleep 0.1; done | hexdump -C | grep 'ca fe'",
     "integrity": "npm pack --dry-run --json . | grep integrity | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '\" '",
-    "release": "standard-version"
+    "release": "standard-version",
+    "commit": "npx git-cz"
   },
   "devDependencies": {
     "atom-one-chroma": "^2.0.0",
+    "commitizen": "^3.1.1",
+    "cz-conventional-changelog": "^2.1.0",
     "fetch-inject": "^2.0.2",
     "fuse.js": "^3.3.0",
     "hack": "^0.8.1",
@@ -43,6 +46,11 @@
     "mark.js": "^8.11.1",
     "standard-version": "^4.4.0",
     "vue": "^2.5.16"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "license": "WTFPL"
 }
