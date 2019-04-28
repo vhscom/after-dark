@@ -8,7 +8,7 @@ images = [
 
 <section class="grid logo">
   <div class="cell -12of12">
-    {{< external rel="author" target="_self" href="https://vhs.codeberg.page" >}}
+    {{< external rel="author" target="_self" href="https://vhs.codeberg.page/code/after-dark/" >}}
       <svg class="shaded animated" viewBox="0 0 46 45" width="92" height="90" xmlns="http://www.w3.org/2000/svg">
         <title>After Dark</title>
         <path d="M.708 45L23 .416 45.292 45H.708zM35 38L23 19 11 38h24z" fill="#000"/>
