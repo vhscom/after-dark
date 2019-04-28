@@ -10,7 +10,7 @@ noindex = true # tell robots not to index
   disabled = false
 [security.csp.directives]
   scriptSrc = [
-    "'sha512-/RBCDeYFF/rhDFH6gLtx6zZUXN92hCNlE/FRjG9d4KrijurUGd/79Poe07qs7CBadFV6SqXlC0bWZ+Gn2OLkDA=='",
+    "'sha512-6G7cmlXR4eLBphfUmmEWLEnLWSEtZPdKP2xv7bXZ8D3LReZazwxcwb4tTx2HeCeoAChG5ZCE+UqHmbe3K4xoJg=='",
     "'unsafe-eval'"
   ]
 +++

@@ -12,7 +12,7 @@ fetchInject([
     ).replace(/\+/g, ' ');
 
     const queryParam = 's';
-    const hotkeys = '{{ .Params.form.hotkeys | default (slice "/" "s") }}';
+    const hotkeys = {{ (.Params.form.hotkeys | default (slice "/" "s")) | jsonify }};
     const selectors = {
       appContainer: '#search-app',
       resultContainer: '#search-results',
@@ -73,7 +73,9 @@ fetchInject([
         window.onpopstate = (evt) => {
           this.query = evt.state.query;
         };
+        const searchInput = getSearchInput();
         document.onkeydown = function (evt) {
+          if (evt.target === searchInput) return;
           if (hotkeys.includes(evt.key)) {
             evt.preventDefault();
             focusSearchInput();
