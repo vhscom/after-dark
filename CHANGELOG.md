@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.4.1"></a>
+## [7.4.1](https://codeberg.org/vhs/after-dark/compare/v7.4.0...v7.4.1) (2019-04-28)
+
+
+### Bug Fixes
+
+* **fuzzy-search:** handle search layout hotkey assignments properly ([b2c549e](https://codeberg.org/vhs/after-dark/commits/b2c549e))
+
+
+
 <a name="7.4.0"></a>
 # [7.4.0](https://codeberg.org/vhs/after-dark/compare/v7.2.3...v7.4.0) (2019-04-28)
 
