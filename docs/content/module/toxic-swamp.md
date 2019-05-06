@@ -500,7 +500,7 @@ Enable them with module `translations` whitelist:
 
 ```toml
 [params.modules.toxic_swamp]
-  translations = ["id", "ru", "el", "de"] # English translations enabled
+  translations = ["id", "ru", "el", "de", "pl", "it"] # English translations enabled
 ```
 
 Use `languageCode` site config to control which is displayed:
@@ -509,8 +509,10 @@ Use `languageCode` site config to control which is displayed:
 languageCode = "en-US" # English (United States) or English by default
 languageCode = "id-ID" # Indonesian (Indonesia) or Indonesian, if available
 languageCode = "ru-RU" # Russian (Russia) or Russian, if available
+languageCode = "el-GR" # Greek (Greece) or Greek, if available
 languageCode = "de-DE" # German (Germany) or German, if available
 languageCode = "pl-PL" # Polish (Poland) or Polish, if available
+languageCode = "it-IT" # Italian (Italy) or Italian, if available
 ```
 
 {{< hackcss-alert type="info" >}}
