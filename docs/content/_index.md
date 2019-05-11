@@ -196,8 +196,8 @@ images = [
 
   <section class="grid license">
     <div class="cell -12of12">
-      {{< external rel="noopener license" href="https://choosealicense.com/licenses/wtfpl/" >}}
-        <img width="48" src="/images/wtfpl.svg" alt="WTFPL logo" title="After Dark gives you agency over your code under the terms of the WTFPL.">
+      {{< external rel="noopener license" href="https://www.gnu.org/licenses/agpl.html" >}}
+        <img width="120" src="/images/agpl-3-logo.svg" alt="AGPLv3 logo" title="After Dark is free software released under the terms of the GNU Affero General Public License v3.0 or later">
       {{< /external >}}
     </div>
   </section>

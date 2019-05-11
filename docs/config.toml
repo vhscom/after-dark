@@ -31,7 +31,7 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   author = "VHS" # Optional, controls author name display on posts
   hide_author = true # Optional, set true to hide author name on posts
   has_cookies = false # Optional, set true to disable cookie disclaimer
-  disable_csp = false # Optional, set true to disable content security policy
+  disable_csp = true # Optional, set true to disable content security policy
   images = [
     "https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png"
   ] # Suggested, controls default Open Graph images
