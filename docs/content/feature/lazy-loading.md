@@ -4,6 +4,10 @@ description = "Defer loading of images, iframes and scripts."
 categories = ["experience"]
 tags = ["performance", "images", "graphics"]
 features = ["code highlighter", "related content", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark uses {{< external href="https://github.com/aFarkas/lazysizes" text="lazySizes" />}} to prioritize loading of certain external resources to improve page load times and help reduce overall bandwidth consumption.

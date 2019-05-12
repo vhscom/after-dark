@@ -4,6 +4,10 @@ description = "Bagikan kode antara Shortcodes and Templat Kustom."
 categories = ["customizing"]
 tags = ["shortcodes", "templating", "layout"]
 feature = ["related content", "code highlighter", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Snippets adalah abstraksi templat yang memungkinkan anda menggunakan kembali markup dan logika yang sama dengan yang digunakan untuk membuat [Shortcodes](/shortcode) di [Custom Layouts](../custom-layouts) anda.

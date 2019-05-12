@@ -2,6 +2,10 @@
 title = "Validate Release"
 description = "Complete the included form to validate the release."
 noindex = true
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 {{< hackcss-form name="validate" action="/validate/" >}}

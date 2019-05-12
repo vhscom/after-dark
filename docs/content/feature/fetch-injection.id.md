@@ -4,6 +4,10 @@ description = "Memuat skrip dan gaya eksternal dengan kecepatan luar biasa."
 categories = ["experience"]
 tags = ["performance", "styles"]
 feature = ["snippets", "related content", "code highlighter"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark menggunakan {{< external rel="external help" href="https://codeberg.org/vhs/vhs/fetch-inject" text="Fetch Inject" />}} pustaka untuk memuat dan menjalankan skrip dan gaya ekesternal lebih cepat dari yang dapat dilakukan browser.

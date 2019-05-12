@@ -7,6 +7,10 @@ feature = ["code highlighter", "snippets", "section menu"]
 notes = [
   "meninjau contoh 'fuzzy-search' jika dimodifikasi"
 ]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark menggunakan Hugo's {{< external href="https://gohugo.io/templates/menu-templates/#section-menu-for-lazy-bloggers" text="Section Menu for “Lazy” Bloggers" />}} untuk membuat bantuan navigasi di seluruh situs. Menu bagian dinonaktifkan secara default.

@@ -4,6 +4,10 @@ description = "Preview secara instant konten anda di Telegram."
 categories = ["social"]
 tags = ["author", "templating"]
 features = ["related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark menyediakan panduan templat untuk mengaktifkan Telegram Instant Views untuk postingan. Gunakan itu untuk membuat {{< external href="https://instantview.telegram.org/my/" text="Instant View Template" />}} di situs telegram:

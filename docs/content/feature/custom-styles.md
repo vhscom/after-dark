@@ -4,6 +4,10 @@ description = "Modify theme styles for complete design control."
 categories = ["customizing"]
 tags = ["color", "style", "branding"]
 features = ["code highlighter", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark uses {{< external href="https://gohugo.io/hugo-pipes/" text="Hugo Pipes" />}} to enable customization of theme styles using CSS. Left unmodified the following custom styles are provided by default:

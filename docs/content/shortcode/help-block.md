@@ -6,6 +6,10 @@ tags = []
 html_attributes = ["class"]
 custom_attributes = ["text"]
 snippets_used = ["form group", "text input"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Plain or formatted text:

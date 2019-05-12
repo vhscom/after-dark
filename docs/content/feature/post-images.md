@@ -4,9 +4,10 @@ description = "Add large hero images without touching an image editor."
 categories = ["experience"]
 tags = ["performance", "imaging", "graphics", "posts"]
 features = ["code highlighter", "snippets", "related content"]
-todo = [
-  "normalize with the actual code to create a responsive post image"
-]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 {{< figure

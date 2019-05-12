@@ -4,6 +4,10 @@ description = "Share links with images on Facebook and Twitter."
 categories = ["social"]
 tags = ["author", "metadata", "images"]
 features = ["code highlighter", "snippets", "related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark provides {{< external text="Open Graph Protocol" href="http://opengraphprotocol.org" />}} and {{< external href="https://developer.twitter.com/en/docs/tweets/optimize-with-cards" text="Twitter Cards" />}} metadata in pages to achieve rich sharing cards on Facebook, Twitter and more:

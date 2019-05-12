@@ -4,6 +4,10 @@ description = "Memeriksa pembaruan After Dark dan mengupgrade dengan mudah."
 categories = ["core"]
 tags = ["updating", "installation", "scripts"]
 feature = ["code highlighter", "related content", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Untuk memeriksa pembaruan dan secara otomatis megupgrade After Dark ke versi terbaru, jalankan upgrade skrip dari direktori situs anda:

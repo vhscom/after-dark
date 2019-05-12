@@ -4,6 +4,10 @@ description = "Mengubah gaya tema untuk design kontrol yang lengkap."
 categories = ["customizing"]
 tags = ["color", "style", "branding"]
 feature = ["code highlighter", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark menggunakan {{< external href="https://gohugo.io/hugo-pipes/" text="Hugo Pipes" />}} untuk mengaktifkan kostomisasi gaya tema menggunakan CSS. Jika tidak diubah gaya khusus berikut disediakan secara standart:

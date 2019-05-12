@@ -4,6 +4,10 @@ description = "Highlight code written in more than 160 languages."
 categories = ["experience"]
 tags = ["color", "style", "syntax"]
 features = ["snippets", "related content", "jit requests"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark uses a customized version of {{< external href="https://atom.io/themes/one-dark-syntax" text="One Dark Syntax" />}} to produce print-friendly code highlighting for more than 160 languages.

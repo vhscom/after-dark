@@ -1,16 +1,13 @@
 {
   "name": "after-dark",
   "version": "7.4.1",
-  "description": "Build Fast Websites with Hugo.",
+  "description": "Build Websites with Hugo.",
   "author": "VHS <vhsdev@tutanota.com> (https://vhs.codeberg.page)",
   "keywords": [
     "hugo",
-    "hackcss",
-    "lazysizes",
-    "lodash",
-    "vue",
-    "fuse.js",
-    "mark.js"
+    "libre",
+    "website",
+    "generator"
   ],
   "homepage": "https://vhs.codeberg.page/after-dark",
   "repository": {
@@ -53,5 +50,5 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "license": "WTFPL"
+  "license": "AGPL-3.0-or-later"
 }

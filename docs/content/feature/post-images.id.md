@@ -4,9 +4,10 @@ description = "menambahkan gambar ke postingan tanpa menyentuh editor gambar."
 categories = ["experience"]
 tags = ["performance", "imaging", "graphics", "posts"]
 feature = ["code highlighter", "snippets", "related content"]
-todo = [
-  "normalisasi dengan kode aktual untuk membuat postingan gambar yang responsif"
-]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Tambahkan daya tarik visual ke postingan anda dengan memposting gambar. Gambar postingan muncul diatas konten postingan dan pengaruh {{< external href="https://gohugo.io/content-management/image-processing/" text="Hugo Image Processing" />}} dan [Lazy Loading](../lazy-loading) untuk menyediakan gambar yang sepenuhnya otomatis dan lazy-loaded <abbr title="Low-Quality Image Placeholders">LQIP</abbr> dan arah seni bawaan.

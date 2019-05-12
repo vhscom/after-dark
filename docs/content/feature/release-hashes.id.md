@@ -4,10 +4,14 @@ description = "Memastikan anda menggunakan perangkat After Dark yang asli."
 categories = ["security"]
 tags = ["validate", "privacy", "security", "cryptography", "npm", "git"]
 feature = ["code highlighter", "related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark memanfaatkan {{< external href="https://www.npmjs.com" text="NPM" />}} CLI untuk menghasilkan hash kriptografi yang unik di setiap rilis, memungkinkan setiap salinan diidentifikasi secara unik terlepas dari sumbernya.
- 
+
 Lepaskan penggunaan hash dengan <abbr title="Secure Hashing Algorithm">SHA-512</abbr> algoritma dan terlihat seperti ini:
 
 {{< hackcss-alert type="success" >}}

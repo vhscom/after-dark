@@ -4,7 +4,10 @@ description = "Hosting ephemeral dengan enkripsi end-to-end."
 categories = ["security"]
 tags = ["privacy", "networking"]
 features = ["related content", "alert"]
-todo = ["i18n"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Menggunakan {{< external href="https://serveo.net" text="Serveo" />}} secara singkat anda dapat membuka situs anda ke internet, tanpa perlu mendaftar. Use this alongside [Air Gapping]({{< relref "air-gapping" >}}) to quietly poke a hole through your NAT or firewall to move information more discretely.

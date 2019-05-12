@@ -6,6 +6,10 @@ tags = []
 html_attributes = ["class"]
 custom_attributes = []
 snippets_used = ["grid", "card", "button"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Contained by [Grid](../grid) with three columns of equal size:

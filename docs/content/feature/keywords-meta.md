@@ -4,6 +4,10 @@ description = "Add semantic detail regarding content subject matter."
 categories = ["search"]
 tags = ["metadata", "robots", "SEO"]
 features = ["code highlighter", "related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Keywords offer detail to robots regarding the subject matter of your content. After Dark generates keywords automatically for pages given the tags taxonomy for that page, and for other pages using the site's categories taxonomy.

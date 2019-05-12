@@ -4,6 +4,10 @@ description = "Help visitors understand when posts were last modified."
 categories = ["experience"]
 tags = ["publishing", "expired", "future", "posts", "date", "time"]
 features = ["code highlighter", "snippets", "related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Denote posts with substantive changes or simply draw older, more relevant posts closer to the top of the listings with last modified.

@@ -6,6 +6,10 @@ tags = []
 html_attributes = []
 custom_attributes = ["header", "text"]
 snippets_used = ["card", "external", "button"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 With `header` attribute and plain text:

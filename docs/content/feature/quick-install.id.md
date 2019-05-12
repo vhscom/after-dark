@@ -8,6 +8,10 @@ notes = [
   "mengulas 'module-system' saat menambah atau menghapus add-on yang telah di instal",
   "juga meninjau pilihan modul yang sudah dipasang sebelumnya (lihat masalah di depan)"
 ]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark termasuk skrip instalasi portabel untuk pengaturan cepat:

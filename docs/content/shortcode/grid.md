@@ -6,6 +6,10 @@ tags = []
 html_attributes = ["class"]
 custom_attributes = []
 snippets_used = ["cell", "card", "button"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Containing three [Cell](../cell) of equal size:

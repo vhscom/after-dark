@@ -4,6 +4,10 @@ description = "Menguji dan mengirim situs anda dengan mesin pencari yang terkena
 categories = ["search"]
 tags = ["SEO", "robots", "metadata"]
 feature = ["code highlighter", "related content", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 ## Verifikasi Webmaster

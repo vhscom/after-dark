@@ -4,6 +4,10 @@ description = "After Dark is free and open-source software you can use to create
 images = [
   "https://vhs.codeberg.page/after-dark/images/screenshots/example-landing-page-fs8.png"
 ]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 <section class="grid logo">
@@ -19,7 +23,7 @@ images = [
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is free and open-source software you can use to create a website, blog or app. Utilize the world's fastest framework for building websites to build the fastest websites in the world.</p>
+    <p>After Dark is free and open-source software you can use to create a website, blog or app. Utilize the world's fastest framework for building websites to build the <a href="#feature-speed">fastest</a> websites in the world.</p>
   </div>
 </section>
 
@@ -193,13 +197,4 @@ images = [
       {{< /external >}}
     </div>
   </section>
-
-  <section class="grid license">
-    <div class="cell -12of12">
-      {{< external rel="noopener license" href="https://choosealicense.com/licenses/wtfpl/" >}}
-        <img width="48" src="/images/wtfpl.svg" alt="WTFPL logo" title="After Dark gives you agency over your code under the terms of the WTFPL.">
-      {{< /external >}}
-    </div>
-  </section>
-
 </footer>

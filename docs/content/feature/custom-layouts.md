@@ -4,6 +4,10 @@ description = "Customize layouts without modifying theme source."
 categories = ["customizing"]
 tags = ["layout", "templating", "style"]
 features = ["code highlighter", "snippets", "related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark uses block templates to facilitate the creation of unique page layouts anywhere on your site. Use them to add [Snippets](../snippets) to pages in a section, selectively apply [Custom Styles](../custom-styles) or add an about section to the homepage.

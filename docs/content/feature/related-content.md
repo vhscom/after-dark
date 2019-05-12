@@ -4,6 +4,10 @@ description = "Promote more of your content to your site's visitors."
 categories = ["navigation"]
 tags = ["links", "retention", "engagement"]
 features = ["code highlighter", "snippets", "related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark provides related content to help users find more information that's relevant to them and can increase page views and time spent on your site.

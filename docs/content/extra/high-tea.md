@@ -5,6 +5,10 @@ categories = ["security"]
 slug = "high-tea"
 tags = ["privacy", "networking"]
 features = ["related content", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 High Tea pairs {{< external href="https://gitea.io" text="Gitea" />}} with {{< external href="https://traefik.io" text="Traefik" />}} enabling you to manage your source code online using an intuitive and sleek-looking web-based interface:

@@ -7,6 +7,10 @@ features = ["code highlighter", "snippets", "related content"]
 aliases = [
   "/feature/display-variants/"
 ]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark uses {{< external href="https://hackcss.egoist.moe" text="hackcss" />}} to provide four color palettes and two display modes. Toggle between them from your {{< external href="https://gohugo.io/getting-started/configuration/" text="site configuration" />}} for 8 possible combinations:

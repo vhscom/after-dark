@@ -7,6 +7,10 @@ features = ["snippets", "code highlighter", "index blocking"]
   scriptSrc = [
     "'sha512-ZcJCmjpwoDxVbrP6iOEsmJC7fC6I0nq6bSOjjbGkrbSE7mtb0647MoQa+Wbxa8fkTUqhUYkfVY/oduanSklU9g=='"
   ]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 <section class="js-toshow" style="display:none">

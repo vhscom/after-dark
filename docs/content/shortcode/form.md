@@ -6,6 +6,10 @@ tags = ["controls"]
 html_attributes = ["id", "name", "accept-charset", "action", "enctype", "target", "novalidate", "method", "class", "autocomplete"]
 custom_attributes = []
 snippets_used = ["help block", "button", "alert", "throbber", "label", "form group", "form", "text input"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 With auto-focused [Text Input](../text-input) requesting a new email address:

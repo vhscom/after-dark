@@ -4,6 +4,10 @@ description = "Tunda pemuatan gambar, iframe dan skrip."
 categories = ["experience"]
 tags = ["performance", "images", "graphics"]
 feature = ["code highlighter", "related content", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark menggunakan {{< external href="https://github.com/aFarkas/lazysizes" text="lazySizes" />}} untuk memprioritaskan pemuatan sumber daya eksternal tertentu untuk meningkatkan waktu pemuatan halaman dan membantu mengurangi konsumsi bandwith secara keseluruhan.

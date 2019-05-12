@@ -4,6 +4,10 @@ description = "Panduan bantuan self-hosted lengkap dan contoh website."
 categories = ["core"]
 tags = ["scripts", "security", "networking"]
 feature = ["related content", "code highlighter", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark termasuk bantuan online manual yang luas dan contoh website.

@@ -6,6 +6,10 @@ tags = []
 html_attributes = []
 custom_attributes = ["showpercent", "value", "filltext"]
 snippets_used = ["progress", "card", "alert"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Basic usage:

@@ -7,6 +7,10 @@ feature = ["related content", "code highlighter"]
 notes = [
   "perbarui contoh postingan byline'taxonomy pages'jika dimodifikasi"
 ]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark mwmbuat postingan byline yang sangat banyak secara otomatis. Bylines termasuk pilihan nama penuis, jumlah kata, tautan ke [Halaman Taksonomi](../taxonomy-pages) dan [Structured Data](../structured-data).

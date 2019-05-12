@@ -4,6 +4,10 @@ description = "Share RSS feeds with full-content and optional enclosures."
 categories = ["search"]
 tags = ["metadata", "robots", "SEO"]
 features = ["snippets", "related content", "code highlighter"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark provides RSS web feeds conforming with the {{< external "https://cyber.harvard.edu/rss/rss.html" "RSS 2.0 Specification" />}} and enhanced semantically using the following custom extensions:

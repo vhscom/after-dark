@@ -4,6 +4,10 @@ description = "Memaksimalkan sumber daya sambil meminimalkan permintaan eksterna
 categories = ["experience"]
 tags = ["performance", "styles", "javascript"]
 feature = ["related content", "snippets", "code highlighter"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark membuat permintaan <abbr title="Just-In-Time">JIT</abbr> untuk beberapa aset eksternal untuk mengurangi konsumsi sumber daya dan meningkatkan kinerja halaman.

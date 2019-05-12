@@ -1,5 +1,24 @@
+{{/*
+Copyright (C) 2019  VHS <vhsdev@tutanota.com>
+
+This file is part of After Dark.
+
+After Dark is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+After Dark is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/}}
+
 {{ define "title" -}}
-  {{ .Params.title }} | Build Fast Websites with Hugo
+  {{ .Params.title }} | Build Websites with Hugo
 {{- end }}
 {{ define "header" }}
   {{ partial "masthead.html" . }}
@@ -157,18 +176,6 @@
     .hack footer section.cta a small {
       display: block;
     }
-    .hack footer section.license {
-      display: block;
-      margin: 3rem;
-    }
-    .hack footer section.license blockquote {
-      margin-top: 3rem;
-    }
-    .hack footer section.license a {
-      border-bottom: none;
-      background-color: inherit;
-      filter: var(--logo-animation-filter-end);
-    }
     .dark table tbody td:first-child {
       color: inherit;
     }
@@ -177,11 +184,12 @@
 {{ define "main" }}
   <header>
     <h1>{{ .Title }}<sup class="muted">v{{ .Site.Data.npm.latest.version }}</sup></h1>
-    <h2 class="muted">Build Fast Websites with Hugo</h2>
+    <h2 class="muted">Build Websites with Hugo</h2>
   </header>
   {{ .Content }}
 {{ end }}
 {{ define "footer" }}
-  {{ partial "powered-by.html" . }}
-  {{ partial "cookie-disclaimer.html" . }}
+  <small class="muted">
+    {{ partial "copyright-notice.html" . }}
+  </small>
 {{ end }}

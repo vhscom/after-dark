@@ -4,6 +4,10 @@ description = "Menyesuaikan tata letak tanpa memodifikasi sumber tema."
 categories = ["customizing"]
 tags = ["layout", "templating", "style"]
 feature = ["code highlighter", "snippets", "related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark menggunakan blok template untuk memfasilitasi pembuatan tata letak halaman yang unik di mana saja di dalam situs anda. Gunakan itu untuk menambah [Snippets](../snippets) ke setiap bagian halaman, secara selektif [Custom Styles](../custom-styles) atau tambahkan kira-kira satu bagian ke beranda.

@@ -4,6 +4,10 @@ description = "Mempromosikan lebih banyak konten anda kepada pengunjung situs."
 categories = ["navigation"]
 tags = ["links", "retention", "engagement"]
 feature = ["code highlighter", "snippets", "related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark menyediakan konten terkait untuk membantu pengguna menemukan lebih banyak informasi yang relevan bagi mereka dan dapat meningkatkan tampilan halaman dan waktu yang dihabiskan untuk situs anda.

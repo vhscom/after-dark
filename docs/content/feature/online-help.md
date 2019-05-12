@@ -4,6 +4,10 @@ description = "Complete self-hosted help guide and example website."
 categories = ["core"]
 tags = ["scripts", "security", "networking"]
 features = ["related content", "code highlighter", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark includes an extensive online help manual and example website.

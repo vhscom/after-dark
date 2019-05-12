@@ -4,6 +4,10 @@ description = "Membagikan tautan dengan gambar di Facebook dan Twitter."
 categories = ["social"]
 tags = ["author", "metadata", "images"]
 feature = ["code highlighter", "snippets", "related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark menyediakan {{< external text="Open Graph Protocol" href="http://opengraphprotocol.org" />}} dan {{< external href="https://developer.twitter.com/en/docs/tweets/optimize-with-cards" text="Twitter Cards" />}} metadata di halaman untuk mencapai kartu berbagi yang banyak:

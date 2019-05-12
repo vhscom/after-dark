@@ -6,6 +6,10 @@ summary = "BPG Image Format (Preinstalled)."
 categories = ["addon"]
 tags = ["module", "images", "graphics", "installation", "performance"]
 features = ["related content", "snippets", "section menu"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 **BPG Image format Homepage:** {{< external "https://bellard.org/bpg/" />}}<br>

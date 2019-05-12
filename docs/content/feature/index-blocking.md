@@ -4,6 +4,10 @@ description = "Define pages to prevent them from appearing in search."
 categories = ["search"]
 tags = ["links", "search", "robots", "metadata"]
 features = ["code highlighter", "related content", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark uses the `noindex` robots meta directive to prevent search engines from crawling and indexing certain parts of your site. It appears in the HTML document `head` and looks like this:

@@ -6,6 +6,10 @@ tags = ["controls"]
 html_attributes = ["id", "name", "class", "autocomplete", "autofocus", "disabled", "form", "formaction", "formmethod", "formtarget", "height", "max", "maxlength", "min", "minlength", "multiple", "pattern", "placeholder", "readonly", "required", "size", "spellcheck", "step", "tabindex", "type", "value", "width"]
 custom_attributes = []
 snippets_used = ["text input", "label", "form group", "form", "help block"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Basic usage:
