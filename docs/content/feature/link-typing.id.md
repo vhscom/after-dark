@@ -4,6 +4,10 @@ description = "Menunjukkan hubungan antar dokumen secara eksplisit."
 categories = ["navigation"]
 tags = ["links", "accessibility", "taxonomy", "metadata"]
 feature = ["code highlighter", "snippets", "related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark menggunakan pengetikan tautan untuk menunjukkan hubungan semantik antara dokumen. Secara default tipe tautan `alternate` digunakan untuk menyorot keberadaan umpan web di beranda dan di dalam daftar taksonomi:

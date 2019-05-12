@@ -4,6 +4,10 @@ description = "Menentukan berapa banyak info yang diteruskan ke tautan eksternal
 categories = ["security"]
 tags = ["privacy", "security", "SEO", "metadata"]
 feature = ["related content", "code highlighter", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark menambahkan {{< external href="https://w3c.github.io/webappsec-referrer-policy/" text="Referrer Policy" />}} untuk meningkatkan keamanan situs dan meningkatkan privasi pengunjung di luar browser standar menggunakan kebijakan seluruh situs sederhana.

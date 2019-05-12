@@ -4,6 +4,10 @@ description = "Kode sorot ditulis lebih dari 160 bahasa."
 categories = ["experience"]
 tags = ["color", "style", "syntax"]
 feature = ["snippets", "related content", "jit requests"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark menggunakan versi yang disesuaikan {{< external href="https://atom.io/themes/one-dark-syntax" text="One Dark Syntax" />}} untuk menghasilkan kode yang ramah cetak untuk lebih dari 160 bahasa.

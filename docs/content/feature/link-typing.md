@@ -4,6 +4,10 @@ description = "Explicitly indicate relationships between documents."
 categories = ["navigation"]
 tags = ["links", "accessibility", "taxonomy", "metadata"]
 features = ["code highlighter", "snippets", "related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark uses link typing to indicate semantic relationships between documents. By default the `alternate` link type is used to highlight the presence of web feeds on the homepage and in taxonomy listings:

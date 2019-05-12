@@ -7,6 +7,10 @@ features = ["related content", "code highlighter"]
 notes = [
   "update 'taxonomy pages' post byline example if modified"
 ]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark creates rich post bylines automatically. Bylines include optional author name, word count, links to [Taxonomy Pages](../taxonomy-pages) and [Structured Data](../structured-data).

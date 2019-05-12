@@ -6,6 +6,10 @@ summary = "DIY self-hosted Fathom Analytics."
 categories = ["addon"]
 tags = ["module", "analytics", "privacy", "engagement"]
 features = ["related content", "snippets", "section menu"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 **Fathom Mirror:** {{< external "https://codeberg.org/vhs/fathom" />}}<br>

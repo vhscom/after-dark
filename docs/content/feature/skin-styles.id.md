@@ -7,6 +7,10 @@ feature = ["code highlighter", "snippets", "related content"]
 alias = [
   "/feature/display-variants/"
 ]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark menggunakan {{< external href="https://hackcss.egoist.moe" text="hackcss" />}} untuk menyediakan empat palet warna dan dua mode tampilan. Beralih diantara mereka dari {{< external href="https://gohugo.io/getting-started/configuration/" text="site configuration" />}} anda untuk 8 kemungkinan kombinasi:

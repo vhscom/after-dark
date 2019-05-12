@@ -9,6 +9,10 @@ snippets_used = ["button group", "button", "form"]
 notes = [
   "update 'snippets' if this content is updated"
 ]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 With three [Buttons](../button), one ghosted and one of type info:

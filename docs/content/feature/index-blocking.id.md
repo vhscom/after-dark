@@ -4,6 +4,10 @@ description = "Menentukan halaman untuk mencegahnya muncul dalam pencarian."
 categories = ["search"]
 tags = ["links", "search", "robots", "metadata"]
 feature = ["code highlighter", "related content", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark menggunakan `noindex` robots meta arahan untuk mencegah mesin pencari merayap dan mengindeks bagian-bagian tertentu dari situs anda. Itu muncul di dokumen HTML `head` dan terlihat seperti berikut ini:

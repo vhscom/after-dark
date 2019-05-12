@@ -6,6 +6,10 @@ summary = "Responsive PhotoSwipe Image Galleries."
 categories = ["addon"]
 tags = ["module", "images", "graphics", "engagement"]
 features = ["related content", "snippets", "section menu"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 **PhotoSwipe Homepage:** {{< external "http://photoswipe.com" />}}<br>

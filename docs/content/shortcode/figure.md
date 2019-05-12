@@ -9,6 +9,10 @@ snippets_used = ["code highlighter"]
 notes = [
   "review 'lazy-loading' if this page is modified"
 ]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 With progressive image placeholder:

@@ -4,6 +4,10 @@ description = "Hiasi situs anda dengan favicon SVG yang unik."
 categories = ["customizing"]
 tags = ["color", "style", "graphics", "branding"]
 feature = ["code highlighter", "snippets", "related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark dikirimkan dengan 169B yang dioptimalkan [^1] SVG favicon tertanam di setiap halaman:

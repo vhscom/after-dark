@@ -10,6 +10,10 @@ features = ["snippets", "related content"]
   scriptSrc = [
     "'sha512-TKVuLlCT8+a0Chpa6Pw3clhu9fhZ9JOzgblgxQaUQVP/z4lfPnrdyWDOgucORnS2qapWu/iPVG2d0ywyGH2NjA=='"
   ]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Monetize attention in one of more than 40 cryptocurrency mining pools with support for the March 2019 Monero hard fork.

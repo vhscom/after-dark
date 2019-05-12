@@ -4,6 +4,10 @@ description = "Menentukan warna yang digunakan untuk menampilkan batas di sekita
 categories = ["customizing"]
 tags = ["color", "style", "branding"]
 feature = ["code highlighter", "snippets", "related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Trim color terkadang dapat mempengaruhi cara browser atau OS memilih untuk menampilkan batas dan aksen warna untuk situs anda. Didalam {{< external href="https://brave.com/" text="Brave" />}}, misalnya, menyesuaikan trim color mempengaruhi gaya bilah lokasi. Atur trim colors untuk menyesuaikan hal ini.

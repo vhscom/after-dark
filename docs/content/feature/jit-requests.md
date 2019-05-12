@@ -4,6 +4,10 @@ description = "Maximize resources while minimizing external requests."
 categories = ["experience"]
 tags = ["performance", "styles", "javascript"]
 features = ["related content", "snippets", "code highlighter"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark makes <abbr title="Just-In-Time">JIT</abbr> requests for some external assets to cut down on resource consumption and increase page performance.

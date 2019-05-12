@@ -4,7 +4,10 @@ description = "Secara cepat menemukan konten yang telah di indeks dimanapun pada
 categories = ["navigation"]
 tags = ["links", "search", "controls"]
 feature = ["code highlighter", "snippets", "related content"]
-todo = ["link to page layout"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Jika mesin pencari dapat menemukannya, anda pun juga bisa. Temukan lokasi konten yang dapat diindeks dengan cepat menggunakan fuzzy search. Tidak memerlukan pendaftaran.

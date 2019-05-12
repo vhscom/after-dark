@@ -4,6 +4,10 @@ description = "Membangun dan menjalankan seluruh situs anda tanpa akses internet
 categories = ["security"]
 tags = ["privacy", "networking"]
 feature = ["related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Kecuali menjalankan [Instal Cepat](../quick-install) After Dark tidak memerlukan koneksi internet untuk berfungsi. Manfaatkan fitur ini dengan berbagai cara yang kreatif:

@@ -4,6 +4,10 @@ description = "Check for After Dark updates and upgrade effortlessly."
 categories = ["core"]
 tags = ["updating", "installation", "scripts"]
 features = ["code highlighter", "related content", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 To check for updates and automatically upgrade After Dark to the latest version simply run the upgrade script from your site directory:

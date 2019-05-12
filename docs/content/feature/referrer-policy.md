@@ -4,6 +4,10 @@ description = "Specify how much info is passed to external links."
 categories = ["security"]
 tags = ["privacy", "security", "SEO", "metadata"]
 features = ["related content", "code highlighter", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark adds a {{< external href="https://w3c.github.io/webappsec-referrer-policy/" text="Referrer Policy" />}} to improve site security and increase visitor privacy beyond browser defaults using a simple site-wide policy.

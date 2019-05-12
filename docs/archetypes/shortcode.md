@@ -6,4 +6,8 @@ tags = ["after", "dark"]
 html_attributes = []
 custom_attributes = []
 snippets_used = []
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++

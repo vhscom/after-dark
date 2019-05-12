@@ -4,6 +4,10 @@ description = "Share code between Shortcodes and Custom Layouts."
 categories = ["customizing"]
 tags = ["shortcodes", "templating", "layout"]
 features = ["related content", "code highlighter", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Snippets are template abstractions enabling you to reuse the same markup and logic used to create [Shortcodes](/shortcode) in your [Custom Layouts](../custom-layouts).

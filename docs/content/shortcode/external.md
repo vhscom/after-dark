@@ -6,6 +6,10 @@ tags = ["links", "security", "privacy"]
 html_attributes = ["href", "class", "referrerpolicy", "target", "type", "rel"]
 custom_attributes = ["text", "trusted"]
 snippets_used = ["external", "button", "alert"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Basic usage:

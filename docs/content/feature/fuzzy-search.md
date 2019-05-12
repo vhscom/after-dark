@@ -4,7 +4,10 @@ description = "Quickly locate indexed content anywhere on the site."
 categories = ["navigation"]
 tags = ["links", "search", "controls"]
 features = ["code highlighter", "snippets", "related content"]
-todo = ["link to page layout"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 If a search engine can find it, so can you. Quickly locate indexable content site-wide with fuzzy search. No registration necessary.

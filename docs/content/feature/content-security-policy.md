@@ -6,6 +6,10 @@ tags = ["privacy", "xss", "csp"]
 features = ["code highlighter", "related content", "snippets"]
 [blackfriday]
   smartypants = false
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark helps you secure your site using Content Security Policy (CSP). Basic CSP is enabled by default and [Advanced Configurations]({{< relref "#advanced-configuration" >}}) are also possible.

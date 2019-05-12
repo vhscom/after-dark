@@ -4,6 +4,10 @@ description = "Instantly preview your content from within Telegram."
 categories = ["social"]
 tags = ["author", "templating"]
 features = ["related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark provides a template guide to enable Telegram Instant Views for posts. Use it to create an {{< external href="https://instantview.telegram.org/my/" text="Instant View Template" />}} on the Telegram site:

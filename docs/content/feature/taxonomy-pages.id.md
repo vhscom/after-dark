@@ -7,6 +7,10 @@ feature = ["related content", "code highlighter", "snippets"]
 alias = [
   "/feature/page-taxonomies/"
 ]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark menghasilkan tag dan kategoris taksonomi, halaman dan tautan istilah taksonomi [Post Bylines](../post-bylines).

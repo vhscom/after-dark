@@ -5,4 +5,8 @@ description = "This text is displayed in search result listings."
 categories = ["addon"]
 tags = ["module"]
 features = [""]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++

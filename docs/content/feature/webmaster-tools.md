@@ -4,6 +4,10 @@ description = "Test and submit your site with popular search engines."
 categories = ["search"]
 tags = ["SEO", "robots", "metadata"]
 features = ["code highlighter", "related content", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 ## Webmaster verification

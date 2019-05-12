@@ -4,6 +4,10 @@ description = "Membantu pengunjung memahami kapan postingan terakhir diubah."
 categories = ["experience"]
 tags = ["publishing", "expired", "future", "posts", "date", "time"]
 feature = ["code highlighter", "snippets", "related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Menunjukkan postingan dengan perubahan substantif atau cukup dengan gambar sebelumnya, postingan yang lebih relevan semakin dekat ke bagian atas daftar postingan yang terakhir dimodifikasi.

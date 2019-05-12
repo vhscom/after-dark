@@ -6,6 +6,10 @@ tags = ["controls"]
 html_attributes = ["id", "name", "class", "autocomplete", "autofocus", "cols", "disabled", "form", "maxlength", "minlength", "name", "placeholder", "readonly", "required", "rows", "spellcheck", "wrap", "tabindex"]
 custom_attributes = ["text"]
 snippets_used = []
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Read-only with prefilled text:

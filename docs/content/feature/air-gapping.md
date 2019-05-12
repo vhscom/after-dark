@@ -4,6 +4,10 @@ description = "Build and run your entire site without Internet access."
 categories = ["security"]
 tags = ["privacy", "networking"]
 features = ["related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Unless running the [Quick Install](../quick-install) After Dark does not require an Internet connection to function. Leverage this feature in creative ways:

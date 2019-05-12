@@ -4,6 +4,10 @@ description = "Berikan para pengunjung sebuah alasan agar tidak meninggalkan hal
 categories = ["experience"]
 tags = ["engagement", "retention", "branding"]
 feature = ["error page", "snippets", "code highlighter", "related content", "index blocking"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark termasuk animasi {{< external rel="nofollow help" href="/404.html" text="404 Page" />}} yang dapat anda tampilkan ketika halaman lain tidak dapat ditemukan. Halaman yang error berisi latar belakang animasi dengan layar penuh dan "404" link dengan perawatan Ginsu. Mengikuti tautan untuk menavigasi ke beranda.

@@ -6,6 +6,10 @@ tags = ["form"]
 html_attributes = ["disabled", "form", "name", "class", "legend", "body"]
 custom_attributes = ["hastextarea", "state"]
 snippets_used = ["label", "text input", "text area", "help block"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 [Label](../label) states with [Text Input](../text-input):

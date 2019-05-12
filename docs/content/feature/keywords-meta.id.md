@@ -4,6 +4,10 @@ description = "Tambahkan detail semantik tentang isi materi pelajaran."
 categories = ["search"]
 tags = ["metadata", "robots", "SEO"]
 feature = ["code highlighter", "related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Kata kunci menawarkan penjelasan kepada robot mengenai masalah pada konten anda. After Dark menghasilkan kata kunci secara otomatis untuk halaman yang diberikan tag taksonomi untuk halaman itu, dan untuk halaman lain menggunakan taksonomi kategori situs.

@@ -11,6 +11,10 @@ notes = [
 aliases = [
   "/feature/quick-installer/"
 ]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark includes a portable installation script for quick set-up:

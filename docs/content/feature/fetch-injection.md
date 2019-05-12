@@ -4,6 +4,10 @@ description = "Load external scripts and styles with incredible speed."
 categories = ["experience"]
 tags = ["performance", "styles"]
 features = ["snippets", "related content", "code highlighter"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark uses the {{< external rel="external help" href="https://codeberg.org/vhs/vhs/fetch-inject" text="Fetch Inject" />}} library to load and execute external scripts and styles faster than browsers are capable of otherwise.

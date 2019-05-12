@@ -4,6 +4,10 @@ description = "Memberikan mesin pencari yang kaya tentang struktur situs."
 categories = ["search"]
 tags = ["metadata", "semantics", "robots", "SEO"]
 feature = ["related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark menghasilkan metadata terstruktur menggunakan {{< external "https://schema.org" />}} spesifikasi untuk postingan blog, [Menu Bagian](../section-menu), [Hall of Mirrors](/module/hall-of-mirrors) galeri gambar dan mengadaptasi data secara otomatis menggunakan yang ditentukan penulis [Post Bylines](../post-bylines) seperti yang ditunjukkan disini:

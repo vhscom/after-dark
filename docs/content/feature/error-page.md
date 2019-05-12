@@ -4,6 +4,10 @@ description = "Give visitors a reason to stay when errors occur."
 categories = ["experience"]
 tags = ["engagement", "retention", "branding"]
 features = ["error page", "snippets", "code highlighter", "related content", "index blocking"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark includes an animated {{< external rel="nofollow help" href="/404.html" text="404 Page" />}} you can display when other pages cannot be found. The error page contains a full-screen background animation and "404" link with Ginsu treatment. Following the link navigates to the homepage.

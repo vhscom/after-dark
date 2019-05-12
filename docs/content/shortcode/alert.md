@@ -7,6 +7,10 @@ html_attributes = ['class']
 custom_attributes = ["type", "text"]
 snippets_used = ["alert", "card", "external", "button", "button group", "progress"]
 disable_csp = true
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 <style>.margin-reset { margin: 0; }</style>

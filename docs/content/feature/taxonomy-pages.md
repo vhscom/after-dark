@@ -7,6 +7,10 @@ features = ["related content", "code highlighter", "snippets"]
 aliases = [
   "/feature/page-taxonomies/"
 ]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark generates categorical and tag taxonomy and taxonomy terms pages and links to them automatically in posts using [Post Bylines](../post-bylines).

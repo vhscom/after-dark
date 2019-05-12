@@ -4,6 +4,10 @@ description = "Decorate your site with a unique SVG favicon."
 categories = ["customizing"]
 tags = ["color", "style", "graphics", "branding"]
 features = ["code highlighter", "snippets", "related content", "grid", "cell"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark ships with an 169B optimized[^1] SVG favicon embedded into every page:
