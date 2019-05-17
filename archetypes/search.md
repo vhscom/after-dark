@@ -32,8 +32,4 @@ noindex = true # tell robots not to index
     "'sha512-6G7cmlXR4eLBphfUmmEWLEnLWSEtZPdKP2xv7bXZ8D3LReZazwxcwb4tTx2HeCeoAChG5ZCE+UqHmbe3K4xoJg=='",
     "'unsafe-eval'"
   ]
-[[copyright]]
-  owner = "{{ .Site.Params.author | default .Site.Title }}"
-  date = "{{ now.Format "2006" }}"
-  license = "cc-by-nd-4.0"
 +++
