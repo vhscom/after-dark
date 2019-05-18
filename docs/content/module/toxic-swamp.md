@@ -499,6 +499,7 @@ English translations available for toolbar display:
 - Greek (el)
 - German (de)
 - Polish (pl)
+- Italian (it)
 
 Enable them with module `translations` whitelist:
 
