@@ -63,7 +63,7 @@ Verify [Release Hash]({{< relref "release-hashes" >}}) and GPG signature:
 ```sh
 cd themes/toxic-swamp && \
 npm install && npm run integrity && \
-git tag --verify v1.0.0-beta.26
+git tag --verify v1.0.0-beta.28
 ```
 
 Specify module in site config:
