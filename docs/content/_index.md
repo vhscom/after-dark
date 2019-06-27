@@ -58,7 +58,7 @@ images = [
       <td><a href="./feature/">36</a></td>
       <td><a href="./module/">4</a></td>
       <td><a href="./shortcode/">26+</a></td>
-      <td><a href="./extra/">1</a></td>
+      <td><a href="./extra/">2</a></td>
     </tr>
   </table>
 </section>
@@ -159,6 +159,19 @@ images = [
     <a href="/feature/air-gapping/">Air Gapping</a> |
     <a href="/feature/ephemeral-hosting">SSH Hosting</a> |
     <a href="/feature/referrer-policy/">Referrer Policy</a>
+  </p></nav>
+</section>
+
+<section id="feature-extras" class="feature">
+  <svg class="i-paperclip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M10 9 L10 24 C10 28 13 30 16 30 19 30 22 28 22 24 L22 6 C22 3 20 2 18 2 16 2 14 3 14 6 L14 23 C14 24 15 25 16 25 17 25 18 24 18 23 L18 9" />
+  </svg>
+  <h2>Batteries Included</h2>
+  <p>Self-host your entire stack using <strong><i>commodity hardware</i></strong> and keep your source code and visitor metrics entirely <strong>under your control</strong>.</p>
+  <nav><p>
+    <a href="/extra/high-tea">Gitea</a> |
+    <a href="/extra/after-dark-k3s/">Kubernetes</a> |
+    <a href="/module/voyeur/">Fathom</a>
   </p></nav>
 </section>
 
