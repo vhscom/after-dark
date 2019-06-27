@@ -3,7 +3,7 @@ title = "Ephemeral Hosting"
 description = "Hosting ephemeral dengan enkripsi end-to-end."
 categories = ["security"]
 tags = ["privacy", "networking"]
-features = ["related content", "alert"]
+features = ["related content", "snippets"]
 [[copyright]]
   owner = "VHS"
   date = "2019"

@@ -5,7 +5,7 @@ categories = ["experience"]
 tags = ["performance", "images", "graphics"]
 html_attributes = ["class", "alt", "src"]
 custom_attributes = ["lqipsrc", "caption", "link", "linktarget", "attr", "attrlink", "title"]
-snippets_used = ["code highlighter"]
+snippets_used = ["external"]
 notes = [
   "review 'lazy-loading' if this page is modified"
 ]

@@ -5,7 +5,7 @@ categories = ["experience"]
 tags = []
 html_attributes = []
 custom_attributes = []
-snippets_used = ["throber", "button"]
+snippets_used = ["throbber", "button"]
 [[copyright]]
   owner = "VHS"
   date = "2019"

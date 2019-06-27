@@ -82,7 +82,7 @@ Resulting in the following `layouts` tree structure:
 Adjust `list.html` and `single.html` layouts and use [Custom Styles](../custom-styles) to achieve the desired result. Reference the following resources for help:
 
 - {{< external "https://gohugo.io/templates/" />}} for templating functions and logic
-- {{< external "devdocs.io" />}} for a comprehensive HTML and CSS reference
+- {{< external "https://devdocs.io" />}} for a comprehensive HTML and CSS reference
 - {{< external "https://internetingishard.com" />}} learn HTML & CSS for free
 - {{< external "https://inclusive-components.design" />}} for design pattern ideas
 - {{< external "https://diveintohtml5.info" >}} background behind HTML5
