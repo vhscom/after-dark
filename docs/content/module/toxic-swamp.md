@@ -453,7 +453,7 @@ Generate configuration with `Advanced Settings` specified:
           <option>monero.crypto-pool.fr</option>
         {{< /hackcss-select >}}
         {{< hackcss-helpblock >}}
-          Select a {{< external href="https://codeberg.org/vhs/toxic-swamp/src/branch/master/server/pools.json" text="supported pool" />}} to mine with.
+          Select a {{< external href="https://codeberg.org/vhs/webminerpool/src/branch/master/server/pools.json" text="supported pool" />}} to mine with.
         {{< /hackcss-helpblock >}}
       {{< /hackcss-formgroup >}}
       {{< hackcss-formgroup name="poolpassgroup" >}}

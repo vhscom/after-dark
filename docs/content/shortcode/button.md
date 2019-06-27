@@ -70,7 +70,7 @@ Text in body:
 {{% hackcss-button type="success" %}}~~Markdown~~{{% /hackcss-button %}}
 {{< hackcss-button isghost="true" text="Comment" >}}Hidden comment{{< /hackcss-button >}}
 
-In [Button Group](..button-group):
+In [Button Group](../button-group):
 
 ```html
 {{</* hackcss-buttongroup >}}

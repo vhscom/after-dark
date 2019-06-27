@@ -82,5 +82,5 @@ Menghasilkan struktur pohon`layouts` sebagai berikut:
 Sesuaikan `list.html` dan `single.html` layouts dan gunakan [Custom Styles](../custom-styles) untuk mendapatkan hasil yang diinginkan. Gunakan referensi sumber daya berikut sebagai bantuan:
 
 - {{< external "https://gohugo.io/templates/" />}} untuk fungsi templating dan logika
-- {{< external "devdocs.io" />}} untuk HTML yang komprehensif dan CSS reference
+- {{< external "https://devdocs.io" />}} untuk HTML yang komprehensif dan CSS reference
 - {{< external "https://inclusive-components.design" />}} untuk ide pola design
