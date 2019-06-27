@@ -19,6 +19,7 @@
 - [Easily Customized](https://vhs.codeberg.page/after-dark/#feature-customize) – change skins, strip styles, create layouts
 - [Securely Designed](https://vhs.codeberg.page/after-dark/#feature-security) – csp, referrer policy, release hashes
 - [Privacy Focused](https://vhs.codeberg.page/after-dark/#feature-privacy) – no cookies, no external requests, ephemeral ssh hosting
+- [Batteries Included](https://vhs.codeberg.page/after-dark/#feature-extras) – self-host with gitea, k3s, traefik and fathom
 
 ## Demo
 
