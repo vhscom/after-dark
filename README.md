@@ -76,15 +76,24 @@ Click a screenshot to view a live demo of the functionality.
 
 ## Getting Started
 
-Please [Install Hugo](https://gohugo.io/getting-started/installing) `0.44` or greater before getting started.
+Unless you're starting with [After Dark K3s](https://vhs.codeberg.page/after-dark/extra/after-dark-k3s) please [Install Hugo](https://gohugo.io/getting-started/installing) `0.44` or greater on your machine prior to installation.
 
 ### Installation
 
-For scripted installation use [Quick Install](https://vhs.codeberg.page/after-dark/feature/quick-install/). Otherwise download a copy and:
+For scripted installation use the provided [Quick Install](https://vhs.codeberg.page/after-dark/feature/quick-install/) script. Quick Install is ideal for first-time users and does not require use of git. Use it to automatically set-up, configure and run a sample After Dark website you may re-purpose as your own.
+
+By convention After Dark may be used with an existing Hugo site by git cloning to or adding as a submodule:
 
 ```sh
-hugo serve --theme after-dark
+flying-toasters
+├── static
+└── themes
+    └── after-dark # git clone or add submodule here
 ```
+
+See [Install a Single Theme](https://gohugo.io/themes/installing-and-using-themes/#install-a-single-theme) on the Hugo docs site for step-by-step instructions.
+
+After Dark also ships [as an NPM module](https://www.npmjs.com/package/after-dark) as a convenience for users. As with git, Node isn't required to install or run After Dark but may be leveraged when integrating with existing publishing workflows.
 
 ### Upgrading
 
