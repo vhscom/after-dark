@@ -23,7 +23,7 @@ images = [
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is free and open-source software you can use to create a website, blog or app. Utilize the world's fastest framework for building websites to build the <a href="#feature-speed">fastest</a> websites in the world.</p>
+    <p>After Dark is free and open-source software you can use to create a website, blog or app. Utilize the world's fastest framework for building websites to build the <a href="#feature-speed">fastest</a> websites in the world, online or off.</p>
   </div>
 </section>
 
