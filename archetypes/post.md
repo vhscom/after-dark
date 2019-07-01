@@ -31,7 +31,7 @@ images = [
 [[copyright]]
   owner = "{{ .Site.Params.author | default .Site.Title }}"
   date = "{{ now.Format "2006" }}"
-  license = "cc-by-nd-4.0"
+  license = "cc-by-nc-sa-4.0"
 +++
 
 Before continuing please create a post archetype. Archetypes are located within markdown files in the `archetypes` directory of your site:
