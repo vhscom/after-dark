@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [8.0.1](https://codeberg.org/vhs/after-dark/compare/v8.0.0...v8.0.1) (2019-07-01)
+
+
+### Build System
+
+* **npm/lockfile:** improve sec of dev deps with 1 audit fixed ([d956c71](https://codeberg.org/vhs/after-dark/commit/d956c71))
+
+
+
 ## 8.0.0 (2019-05-17)
 
 
