@@ -1,6 +1,12 @@
-# After Dark
+<img
+  alt="After Dark"
+  src="https://codeberg.org/vhs/after-dark/raw/branch/master/static/images/logo-dark.png"
+  width="358">
 
-> After Dark is free and open-source software you can use to create a website, blog or app.
+**Hugo Dark Theme Website Generator**
+<br>[Documentation](https://vhs.codeberg.page/after-dark) • [Releases](https://codeberg.org/vhs/after-dark/releases) • [Community](https://t.me/afterdarkhugo)
+
+## After Dark
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
@@ -8,18 +14,23 @@
 [![IRC chat](https://img.shields.io/badge/irc-%23after--dark-32AFED.svg?style=flat-square&longCache=true)](https://vhs.codeberg.page/after-dark/#chat)
 [![AGPL licensed](https://img.shields.io/npm/l/after-dark.svg?style=flat-square&longCache=true)](https://codeberg.org/vhs/after-dark/src/branch/master/COPYING)
 
+```sh
+wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
+```
+
+**After Dark** is an extensible, offline-first [Hugo](https://gohugo.io) theme written from the ground up for speed, privacy and security.
 
 ## Features
 
-- [Streamlined Workflow](https://vhs.codeberg.page/after-dark/#feature-workflow) – cross-platform, 1 dependency, single-codebase
-- [Unparalleled Speed](https://vhs.codeberg.page/after-dark/#feature-speed) – ~0.615s builds, decisecond page loads
-- [Advanced Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics) – responsive post images with lqip
-- [Rewards System](https://vhs.codeberg.page/after-dark/#feature-rewards) – monetize attention and earn borderless income
-- [Fuzzy Search](https://vhs.codeberg.page/after-dark/#feature-search) – automatic indexing and no third-parties
-- [Easily Customized](https://vhs.codeberg.page/after-dark/#feature-customize) – change skins, strip styles, create layouts
-- [Securely Designed](https://vhs.codeberg.page/after-dark/#feature-security) – csp, referrer policy, release hashes
-- [Privacy Focused](https://vhs.codeberg.page/after-dark/#feature-privacy) – no cookies, no external requests, ephemeral ssh hosting
-- [Batteries Included](https://vhs.codeberg.page/after-dark/#feature-extras) – self-host with gitea, k3s, traefik and fathom
+- **[Streamlined Workflow](https://vhs.codeberg.page/after-dark/#feature-workflow)**: Cross-platform, 1 dependency, single-codebase.
+- **[Unparalleled Speed](https://vhs.codeberg.page/after-dark/#feature-speed)**: ~0.615s builds and decisecond page loads.
+- **[Advanced Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics)**: Responsive post images with LQIP.
+- **[Rewards System](https://vhs.codeberg.page/after-dark/#feature-rewards)**: Monetize attention and earn a borderless income.
+- **[Fuzzy Search](https://vhs.codeberg.page/after-dark/#feature-search)**: Offline, automatic and no third-parties.
+- **[Easily Customized](https://vhs.codeberg.page/after-dark/#feature-customize)**: Change skins, strip styles, modify layouts.
+- **[Securely Designed](https://vhs.codeberg.page/after-dark/#feature-security)**: CSP, Referrer Policy, Release Hashes
+- **[Privacy Focused](https://vhs.codeberg.page/after-dark/#feature-privacy)**: No cookies, no external requests, ephemeral hosting.
+- **[Batteries Included](https://vhs.codeberg.page/after-dark/#feature-extras)**: Self-host with gitea, k3s, traefik and fathom.
 
 ## Demo
 
