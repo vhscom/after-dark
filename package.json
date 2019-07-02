@@ -1,7 +1,7 @@
 {
   "name": "after-dark",
   "version": "8.0.1",
-  "description": "Build Websites with Hugo.",
+  "description": "Hugo Dark Theme Website Generator.",
   "author": "VHS <vhsdev@tutanota.com> (https://vhs.codeberg.page)",
   "keywords": [
     "hugo",
