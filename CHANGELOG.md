@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [8.0.2](https://codeberg.org/vhs/after-dark/compare/v8.0.1...v8.0.2) (2019-07-02)
+
+
+
 ### [8.0.1](https://codeberg.org/vhs/after-dark/compare/v8.0.0...v8.0.1) (2019-07-01)
 
 
