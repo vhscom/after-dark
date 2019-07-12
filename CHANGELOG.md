@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.1.0](https://codeberg.org/vhs/after-dark/compare/v8.0.2...v8.1.0) (2019-07-12)
+
+
+### Features
+
+* **feature/custom-homepage:** add custom homepage and docs in english ([87d2076](https://codeberg.org/vhs/after-dark/commit/87d2076)), closes [#41](https://codeberg.org/vhs/after-dark/issues/41)
+* **snippets:** abstract figure shortcode for use in layout ([8ca09f4](https://codeberg.org/vhs/after-dark/commit/8ca09f4))
+
+
+
 ### [8.0.2](https://codeberg.org/vhs/after-dark/compare/v8.0.1...v8.0.2) (2019-07-02)
 
 
