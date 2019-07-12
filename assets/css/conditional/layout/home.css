@@ -1,0 +1,43 @@
+/*!
+ * Copyright (C) 2019  VHS <vhsdev@tutanota.com>
+ *
+ * This file is part of After Dark.
+ *
+ * After Dark is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * After Dark is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+section ul.grid {
+  margin: 10px -10px;
+}
+section ul.grid li {
+  padding: 10px;
+}
+section ul.grid li h2 {
+  margin-bottom: 1rem;
+}
+section ul.grid li a figure:hover {
+  filter: brightness(1.1);
+}
+.hack section ul.grid li h2::before {
+  content: initial;
+}
+.hack section ul.grid li::after {
+  content: initial;
+}
+.standard section ol.grid,
+.standard section ul.grid {
+  padding-left: 0px;
+  list-style-type: none;
+  display: flex;
+}

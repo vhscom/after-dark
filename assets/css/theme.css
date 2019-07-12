@@ -134,7 +134,8 @@ html {
 .hack blockquote:after {
   line-height: 1.5;
 }
-.hack figure {
+.hack figure,
+.standard figure {
   margin: unset;
 }
 .hack figure a {
@@ -142,10 +143,6 @@ html {
 }
 .hack figure a:hover {
   background-color: inherit;
-}
-article [itemprop="description"] {
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 article header img {
   width: 100%;

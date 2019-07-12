@@ -55,12 +55,26 @@ images = [
       <th scope="col" width="25%">Extras</th>
     </tr>
     <tr>
-      <td><a href="./feature/">36</a></td>
+      <td><a href="./feature/">37</a></td>
       <td><a href="./module/">4</a></td>
       <td><a href="./shortcode/">26+</a></td>
       <td><a href="./extra/">2</a></td>
     </tr>
   </table>
+</section>
+
+<section id="feature-customize" class="feature">
+  <svg class="i-compose" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M27 15 L27 30 2 30 2 5 17 5 M30 6 L26 2 9 19 7 25 13 23 Z M22 6 L26 10 Z M9 19 L13 23 Z" />
+  </svg>
+  <h2>Easily Customized</h2>
+  <p>Toggle between 1 of 8 <strong><i>customizable</i> skin styles</strong> or disable them entirely and use custom layouts and styles to take complete design control.</p>
+  <nav><p>
+    <a href="/feature/skin-styles/">Skins</a> |
+    <a href="/feature/custom-homepage/">Homepage</a> |
+    <a href="/feature/custom-styles/">Styles</a> |
+    <a href="/feature/#customizing">See All</a>
+  </p></nav>
 </section>
 
 <section id="feature-speed" class="feature">
@@ -91,21 +105,6 @@ images = [
   </p></nav>
 </section>
 
-<section id="feature-rewards" class="feature">
-  <svg class="i-creditcard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M2 7 L2 25 30 25 30 7 Z M5 18 L9 18 M5 21 L11 21" />
-    <path d="M2 11 L2 13 30 13 30 11 Z" fill="currentColor" />
-  </svg>
-  <h2 style="margin-bottom:0.2rem">Rewards System</h2>
-  <small><i style="color:lime">(Now in Beta!)</i></small>
-  <p>Earn rewards for keeping your software up-to-date and <strong>monetize attention</strong> to generate a <strong><i>borderless</i></strong>, low-maintenance & passive income.</p>
-  <nav><p>
-    <a href="/module/toxic-swamp/#installation">Installation</a> |
-    <a href="/module/toxic-swamp/#earning-rewards">Earning Rewards</a> |
-    <a href="/module/toxic-swamp/">Learn More</a>
-  </p></nav>
-</section>
-
 <section id="feature-search" class="feature">
   <svg class="i-search" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <circle cx="14" cy="14" r="12" />
@@ -119,17 +118,18 @@ images = [
   </p></nav>
 </section>
 
-<section id="feature-customize" class="feature">
-  <svg class="i-compose" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M27 15 L27 30 2 30 2 5 17 5 M30 6 L26 2 9 19 7 25 13 23 Z M22 6 L26 10 Z M9 19 L13 23 Z" />
+<section id="feature-rewards" class="feature">
+  <svg class="i-creditcard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M2 7 L2 25 30 25 30 7 Z M5 18 L9 18 M5 21 L11 21" />
+    <path d="M2 11 L2 13 30 13 30 11 Z" fill="currentColor" />
   </svg>
-  <h2>Easily Customized</h2>
-  <p>Toggle between 1 of 8 <strong><i>customizable</i> skin styles</strong> or disable them entirely and use custom layouts and styles to take complete design control.</p>
+  <h2 style="margin-bottom:0.2rem">Rewards System</h2>
+  <small><i style="color:lime">(Now in Beta!)</i></small>
+  <p>Earn rewards for keeping your software up-to-date and <strong>monetize attention</strong> to generate a <strong><i>borderless</i></strong>, low-maintenance & passive income.</p>
   <nav><p>
-    <a href="/feature/skin-styles/">Skins</a> |
-    <a href="/feature/custom-layouts/">Layouts</a> |
-    <a href="/feature/custom-styles/">Styles</a> |
-    <a href="/feature/svg-favicon/">Favicons</a>
+    <a href="/module/toxic-swamp/#installation">Installation</a> |
+    <a href="/module/toxic-swamp/#earning-rewards">Earning Rewards</a> |
+    <a href="/module/toxic-swamp/">Learn More</a>
   </p></nav>
 </section>
 
