@@ -82,9 +82,6 @@ blockquote cite::before {
 :disabled {
   cursor: not-allowed;
 }
-#search-app [v-cloak] {
-  display: none;
-}
 /* hack.css overrides and enhancements */
 .hack li ul {
   margin: 0;
