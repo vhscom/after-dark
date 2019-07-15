@@ -10,7 +10,7 @@ features = ["related content"]
   license = "agpl-3.0-or-later"
 +++
 
-After Dark generates structured metadata using {{< external "https://schema.org" />}} specifications for blog posts, [Section Menu](../section-menu), [Hall of Mirrors](/module/hall-of-mirrors) image galleries and adapts data automatically using author-defined [Post Bylines](../post-bylines) as shown here:
+After Dark generates structured metadata using {{< external "https://schema.org" />}} specifications for [Custom Homepage](../custom-homepage), [Section Menu](../section-menu), [Image Galleries](/module/hall-of-mirrors) and adapts data automatically using author-defined [Post Bylines](../post-bylines) as shown here:
 
 Schema Property | Frontmatter Value
 --------------- | -----------------
