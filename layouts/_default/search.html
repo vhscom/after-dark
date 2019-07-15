@@ -27,18 +27,25 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   <header>
     <h1>{{ .Title }}</h1>
   </header>
-  <div id="search-app">
+  <div id="search-app" v-cloak>
+    {{ with resources.Get "css/conditional/layout/search.css" | minify }}
+      <style>{{ .Content | safeCSS }}</style>
+    {{ end }}
     <section>
       <form v-on:submit.prevent role="search" class="form" action="{{ "search" | absURL }}">
         <fieldset class="form-group">
           <input v-model="query" id="query" name="s" type="search" class="form-control" maxlength="32" autocomplete="off"{{ with .Params.form.input.placeholder }} placeholder="{{ . }}"{{ end }}{{ if eq .Params.form.input.disabled true }} disabled{{ end }}>
           {{ with .Params.form.helpblock }}
-            <div class="help-block">{{ . | safeHTML }}</div>
+            <div class="help-block js-cloaked">{{ . | safeHTML }}</div>
           {{ end }}
+          <div class="help-block js-initializing">{{/* placeholder */}}</div>
         </fieldset>
       </form>
     </section>
-    <section v-if="results.length">
+    <noscript>
+      <p>Cannot initialize. Search requires JavaScript to function.</p>
+    </noscript>
+    <section v-if="results.length" class="js-cloaked">
       <p><i>Showing results for “{ resultsForSearch }”.</i></p>
       <div id="search-results">
         <article v-for="result in results" itemscope itemtype="https://schema.org/CreativeWork">
