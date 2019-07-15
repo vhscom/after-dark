@@ -17,10 +17,8 @@ aliases = [
   license = "agpl-3.0-or-later"
 +++
 
-After Dark includes a portable installation script for quick set-up:
+After Dark includes a portable installation script for quick set-up. Please install {{< external href="https://gohugo.io" text="Hugo" />}} `0.44` or greater before running the script:
 
-{{< hackcss-card header="themes/after-dark/bin/install" >}}
-<style>.card-content .inner { overflow: scroll; max-height: 30em; }</style>
 <details itemscope itemtype="https://schema.org/SoftwareSourceCode">
 <summary>Expand to view script</summary>
 {{< highlight sh "linenos=inline" >}}
@@ -33,17 +31,14 @@ After Dark includes a portable installation script for quick set-up:
 <link itemprop="targetProduct" href="https://vhs.codeberg.page/after-dark">
 <meta itemprop="accessMode" content="textual">
 </details>
-{{< /hackcss-card >}}
-
-Please install {{< external href="https://gohugo.io" text="Hugo" />}} `0.44` or greater before running the script.
 
 <!--more-->
 
-Script has been tested on Debian, BusyBox and Darwin, and should also work under Alpine, Ubuntu, Docker and Windows via {{< external href="http://cmder.net" text="Cmder" />}} without additional dependencies.
+Script has been tested on GNU/Linux, BSD (Darwin) and Windows via {{< external href="http://cmder.net" text="Cmder" />}}.
 
-{{% hackcss-alert type="warning" %}}**Warning:** Always examine scripts downloaded from the internet before running them locally. If you'd prefer not to run the script [Download Manually](/#download).{{% /hackcss-alert %}}
+{{% hackcss-alert type="warning" %}}**Warning:** Examine scripts downloaded from the Internet before running them.{{% /hackcss-alert %}}
 
-Run the script however you like. Here are three possible methods:
+Here are three methods for downloading and running:
 
 1. Download and pipe to `sh` directly:
 
@@ -51,16 +46,12 @@ Run the script however you like. Here are three possible methods:
     {{< highlight shell >}}wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh{{< /highlight >}}
     {{< /hackcss-alert >}}
 
-    <i>(Cojones not included.)</i>
-
 2. Download into new file, `chmod` and execute:
 
     {{< hackcss-alert >}}
     {{< highlight shell >}}curl -O https://cdn.jsdelivr.net/npm/after-dark@latest/bin/install && \
 chmod +x install && ./install{{< /highlight >}}
     {{< /hackcss-alert >}}
-
-    <i>(It's safe if it comes from a CDN, amirite?)</i>
 
 3. From canonical `git` clone:
 
@@ -76,17 +67,17 @@ echo "${$(npm run integrity)#*sha512-}"
 {{< /highlight >}}
     {{< /hackcss-alert >}}
 
-    <i>(<a href="/feature/release-hashes/">Release Hashes</a> may be used for code validation.)</i>
-
 Script should complete in 5-10 seconds resulting in a sample site and help docs:
 
 {{< figure alt="After Dark screenshots"
   src="/images/quick-install.png"
   lqipsrc="/images/quick-install-fs8.png"
-  caption="After Dark Quick Install running to completion in Terminal on macOS Mojave."
+  caption="After Dark Quick Install running to completion in Terminal on Deepin Manjaro."
 >}}
 
-# Multi-site Configuration
+Your new site will be called `flying-toasters`. Change it to the name of your project.
+
+# Multi-site Configuration (Advanced)
 
 After Dark enables multi-site management from a single installation. To manage multiple websites use the `-c` and `-d` flags to specify the `content` and `destination` directories, respectively
 
