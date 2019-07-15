@@ -18,23 +18,23 @@
 wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
 ```
 
-**After Dark** is an extensible, offline-first [Hugo](https://gohugo.io) theme written from the ground up for speed, privacy and security.
+**After Dark** is an extensible, robust [Hugo](https://gohugo.io) theme written from the ground up for speed, privacy and security.
 
 ## Features
 
 - **[Streamlined Workflow](https://vhs.codeberg.page/after-dark/#feature-workflow)**: Cross-platform, 1 dependency, single-codebase.
+- **[Easily Customized](https://vhs.codeberg.page/after-dark/#feature-customize)**: Easily modify website look-and-feel.
 - **[Unparalleled Speed](https://vhs.codeberg.page/after-dark/#feature-speed)**: ~0.615s builds and decisecond page loads.
-- **[Advanced Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics)**: Responsive post images with LQIP.
-- **[Rewards System](https://vhs.codeberg.page/after-dark/#feature-rewards)**: Monetize attention and earn a borderless income.
+- **[Advanced Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics)**: Responsive post and thumbnail images.
 - **[Fuzzy Search](https://vhs.codeberg.page/after-dark/#feature-search)**: Offline, automatic and no third-parties.
-- **[Easily Customized](https://vhs.codeberg.page/after-dark/#feature-customize)**: Change skins, strip styles, modify layouts.
+- **[Rewards System](https://vhs.codeberg.page/after-dark/#feature-rewards)**: Monetize attention and earn a borderless income.
 - **[Securely Designed](https://vhs.codeberg.page/after-dark/#feature-security)**: CSP, Referrer Policy, Release Hashes
 - **[Privacy Focused](https://vhs.codeberg.page/after-dark/#feature-privacy)**: No cookies, no external requests, ephemeral hosting.
 - **[Batteries Included](https://vhs.codeberg.page/after-dark/#feature-extras)**: Self-host with gitea, k3s, traefik and fathom.
 
 ## Demo
 
-Click a screenshot to view a live demo of the functionality.
+Click a screenshot for a live demo of the functionality:
 
 <table>
   <tr>
@@ -88,24 +88,24 @@ Click a screenshot to view a live demo of the functionality.
 
 ## Getting Started
 
-Unless you're starting with [After Dark K3s](https://vhs.codeberg.page/after-dark/extra/after-dark-k3s) please [Install Hugo](https://gohugo.io/getting-started/installing) `0.44` or greater on your machine prior to installation.
+Please [Install Hugo](https://gohugo.io/getting-started/installing) `0.44` or greater on your machine prior to installation unless you're starting with [After Dark K3s](https://vhs.codeberg.page/after-dark/extra/after-dark-k3s).
 
 ### Installation
 
-For scripted installation use the provided [Quick Install](https://vhs.codeberg.page/after-dark/feature/quick-install/) script. Quick Install is ideal for first-time users and does not require use of git. Use it to automatically set-up, configure and run a sample After Dark website you may re-purpose as your own.
+For fastest installation use the provided [Quick Install](https://vhs.codeberg.page/after-dark/feature/quick-install/) script. Quick Install is ideal for first-time users and does not require use of git. Use it to automatically set-up, configure and run a sample After Dark website you may re-purpose as your own.
 
-By convention After Dark may be used with an existing Hugo site by git cloning to or adding as a submodule:
+By convention After Dark may be used with an existing Hugo site by git cloning to or adding as a submodule of the `themes` directory:
 
 ```sh
 flying-toasters
 ├── static
 └── themes
-    └── after-dark # git clone or add submodule here
+    └── after-dark # the clone or submodule
 ```
 
-See [Install a Single Theme](https://gohugo.io/themes/installing-and-using-themes/#install-a-single-theme) on the Hugo docs site for step-by-step instructions.
+See [Install a Single Theme](https://gohugo.io/themes/installing-and-using-themes/#install-a-single-theme) on the Hugo docs site for further instructions.
 
-After Dark also ships [as an NPM module](https://www.npmjs.com/package/after-dark) as a convenience for users. As with git, Node isn't required to install or run After Dark but may be leveraged when integrating with existing publishing workflows.
+After Dark also ships [as an NPM module](https://www.npmjs.com/package/after-dark) as a convenience for users. Use it to integrate After Dark into an existing publishing workflow.
 
 ### Upgrading
 
@@ -115,13 +115,15 @@ Run the [Upgrade Script](https://vhs.codeberg.page/after-dark/feature/upgrade-sc
 ./themes/after-dark/bin/upgrade
 ```
 
+Upgrading replaces the file contents of the theme as a whole.
+
 ### Verifying
 
 If installed or upgraded via script you may use the [Release Validator](https://vhs.codeberg.page/after-dark/validate/) to verify you're running a PGP-signed and SHA-verified release. Integrity is checked at the source level and may be performed offline. See [Release Hashes](https://vhs.codeberg.page/after-dark/feature/release-hashes/) for more info.
 
 ### Usage
 
-Use the included [Online Help](https://vhs.codeberg.page/after-dark/feature/online-help/) to learn how to set-up and use After Dark. Help docs may be served locally and do not require an Internet connection to function.
+Use [Online Help](https://vhs.codeberg.page/after-dark/feature/online-help/) to learn how to set-up and use After Dark. Help docs may be served locally and do not require an Internet connection to function.
 
 ## Credits
 

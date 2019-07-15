@@ -23,7 +23,7 @@ images = [
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is free and open-source software you can use to create a website, blog or app. Utilize the world's fastest framework for building websites to build the <a href="#feature-speed">fastest</a> websites in the world, online or off.</p>
+    <p>After Dark is free and open-source software you can use to create a website, blog or app. Utilize the world's fastest framework for building websites to build the fastest websites in the world, online or off.</p>
   </div>
 </section>
 
@@ -98,9 +98,9 @@ images = [
   <h2>Advanced Graphics</h2>
   <p>Add high-resolution, responsive images with <strong>low-quality image placeholders</strong> and <strong>engaging visual effects</strong> without even touching an image editor.</p>
   <nav><p>
+    <a href="/feature/custom-homepage/">Thumbnails</a> |
     <a href="/shortcode/figure/">Figures</a> |
     <a href="/feature/post-images/">Post Images</a> |
-    <a href="/module/hall-of-mirrors/">Galleries</a> |
     <a href="/module/fractal-forest/">BPG</a>
   </p></nav>
 </section>
@@ -114,7 +114,7 @@ images = [
   <p>Quickly <strong>locate <i>indexed</i> content</strong> anywhere on your site using inbuilt fuzzy search with automatic search indexing and <strong>full offline support</strong>.</p>
   <nav><p>
     <a href="/search/?s=lay%20load">Try It Now</a> |
-    <a href="/feature/fuzzy-search/">More Detail</a>
+    <a href="/feature/fuzzy-search/">How to Use</a>
   </p></nav>
 </section>
 
