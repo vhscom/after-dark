@@ -1,8 +1,8 @@
 +++
 title = "Custom Homepage"
-description = "Hide the blog and specify the content shown."
+description = "Hide the blog and specify how content is shown."
 categories = ["customizing"]
-tags = ["layout", "templating", "style"]
+tags = ["layout", "templating", "style", "metadata", "semantics", "robots"]
 features = ["code highlighter", "snippets", "related content"]
 [[copyright]]
   owner = "VHS"
@@ -77,14 +77,14 @@ And use the space to add more sections:
   type = "podcast"
 ```
 
-Or even add stand-alone pages too:
+Or add stand-alone pages too:
 
 ```toml
 [[params.layout.home.section]]
   type = "about"
 ```
 
-And display sections in order by weight:
+And display them in order by weight:
 
 ```toml
 [[params.layout.home.section]]
@@ -96,7 +96,7 @@ And display sections in order by weight:
   weight = 2
 ```
 
-Each section is output using generic [Structured Data](../structured-data):
+With each section containing generic [Structured Data](../structured-data):
 
 ```
 Homepage
@@ -107,7 +107,7 @@ Homepage
     └── Thing
 ```
 
-And may be enhanced using front matter:
+Which may be enhanced using front matter:
 
 ```
 ├── archetypes
@@ -122,11 +122,15 @@ And may be enhanced using front matter:
 ```
 
 ```toml
+title = "About"
+description = "Information about the site."
 [schema]
   type = "AboutPage" # inside about.md
 ```
 
 ```toml
+title = "Podcasts"
+description = "Live on the Web. Fresh to your head."
 [schema]
   type = "Audiobook" # inside _index.md
 ```
@@ -142,7 +146,9 @@ Homepage
     └── Audiobook
 ```
 
-Which can be further enhanced using thumbnail images, which are output automatically for any list item in any section using a [Post Images](../post-images) formatted resource bundle and containing the string `thumbnail`:
+Including `name` and `description` properties consistent between what's shown to users and what will appear in <abbr title="Search Engine Results Page">SERP</abbr>s.
+
+Item lists may include thumbnail images generated automatically for any `ItemList` element using a [Post Images](../post-images)-formatted resource bundle and containing `thumbnail` in the name:
 
 ```toml
 [[resources]]
@@ -150,7 +156,7 @@ Which can be further enhanced using thumbnail images, which are output automatic
   name = "header thumbnail"
 ```
 
-Thumbnails output automatically when described in front-matter for any resource type in any section, and may be manipulated using {{< external "https://gohugo.io/content-management/image-processing/#readout" "Hugo Image Processing" />}} using the `thumbs` setting in any section:
+Images include high-performance defaults and may be modified using {{< external "https://gohugo.io/content-management/image-processing/#readout" "Hugo Image Processing" />}} via config using the `thumbs` property in site config:
 
 ```toml
 [[params.layout.home.section]]
@@ -158,4 +164,4 @@ Thumbnails output automatically when described in front-matter for any resource 
   thumbs = ["fill", "400x400"]
 ```
 
-Valid options are `fit`, `resize` and `fill`, and image dimensions may be omitted for a 4x3 aspect ratio thumbnail.
+Valid image processing options are `fit`, `resize` and `fill`, and image dimensions may be omitted for a 4x3 aspect ratio thumbnail.
