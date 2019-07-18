@@ -162,3 +162,9 @@ img {
     max-width: 50rem;
   }
 }
+@media only screen and (min-width: 768px), (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* @see http://browserhacks.com/#hack-28f493d247a12ab654f6c3637f6978d5 */
+  html {
+    margin-left: calc(100vw - 100%); /* @see https://aykevl.nl/2014/09/fix-jumping-scrollbar */
+  }
+}
