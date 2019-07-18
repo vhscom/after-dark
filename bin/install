@@ -51,7 +51,7 @@ create_site () {
 download_theme () {
    echo "Downloading the latest version of After Dark ..."
    LATEST_META=$(wget -qO - https://registry.npmjs.org/after-dark/latest)
-   vers=$(echo "$LATEST_META" | egrep -o "\"version\".*[^,]*," | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '" ')
+   vers=$(echo "$LATEST_META" | grep -oE "\"version\".*[^,]*," | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '" ')
    mkdir -p themes/after-dark
    wget -qO - https://registry.npmjs.org/after-dark/-/after-dark-"$vers".tgz | tar --strip-components=1 -xz -C themes/after-dark
    echo "Version $vers downloaded to $SITE_DIR/themes/after-dark"
@@ -61,7 +61,7 @@ download_module () {
    [ -z "$1" ] && { echo "Error: Attempt to download undefined module" >&2; exit 1; }
    echo "Downloading $1 module for After Dark ..."
    meta=$(wget -qO - https://registry.npmjs.org/"$1"/latest)
-   vers=$(echo "$meta" | egrep -o "\"version\".*[^,]*," | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '" ')
+   vers=$(echo "$meta" | grep -oE "\"version\".*[^,]*," | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '" ')
    mkdir -p themes/"$1"
    wget -qO - https://registry.npmjs.org/"$1"/-/"$1"-"$vers".tgz | tar --strip-components=1 -xz -C themes/"$1"
    echo "Version $vers downloaded to $SITE_DIR/themes/$1"
