@@ -127,7 +127,7 @@ Use [Online Help](https://vhs.codeberg.page/after-dark/feature/online-help/) to 
 
 ## Credits
 
-Special thanks to エゴイスト for [hackcss](https://codeberg.org/vhs/hack), Dan Klammer for the [bytesize icons](https://codeberg.org/vhs/bytesize-icons) and Vincent Prouillet for the [Zola port](https://www.getzola.org/themes/after-dark/).
+Special thanks to エゴイスト for [hackcss](https://codeberg.org/vhs/vhs/hack), Dan Klammer for the [bytesize icons](https://codeberg.org/vhs/bytesize-icons) and Vincent Prouillet for the [Zola port](https://www.getzola.org/themes/after-dark/).
 
 ## Rights
 
