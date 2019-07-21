@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.3.0](https://codeberg.org/vhs/after-dark/compare/v8.2.0...v8.3.0) (2019-07-21)
+
+
+### Features
+
+* **shortcode/video:** add video shortcode ([ace4c7c](https://codeberg.org/vhs/after-dark/commit/ace4c7c)), closes [#20](https://codeberg.org/vhs/after-dark/issues/20) [#81](https://codeberg.org/vhs/after-dark/issues/81)
+
+
+
 ## [8.2.0](https://codeberg.org/vhs/after-dark/compare/v8.1.0...v8.2.0) (2019-07-18)
 
 
