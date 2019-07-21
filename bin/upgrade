@@ -37,7 +37,7 @@ generate_help_docs () {
 update_module () {
    meta_file=themes/"$1"/data/npm/latest.json
    if [ -f "$meta_file" ] ; then
-      current_vers=$(echo "$meta_file" | grep -oE "\"version\".*[^,]*," | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '" ')
+      current_vers=$(sed -n 's/.*"version":"\([^"]*\).*/\1/p' < "$meta_file")
    else
       echo "Cannot detect version. Upgrade $1 anyway (y/n)? \c"
       read -r answer
