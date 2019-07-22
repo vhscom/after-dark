@@ -34,8 +34,8 @@
   },
   "devDependencies": {
     "atom-one-chroma": "^2.0.0",
-    "commitizen": "^3.1.1",
-    "cz-conventional-changelog": "^2.1.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
     "fetch-inject": "^2.0.4",
     "fuse.js": "^3.4.4",
     "hack": "^0.8.1",
