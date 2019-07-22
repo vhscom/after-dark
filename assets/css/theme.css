@@ -24,25 +24,31 @@
 @keyframes intro {
   0% { opacity: 0 } 100% { opacity: 1 }
 }
-.blur-up {
-  -webkit-filter: blur(5px);
+.blur-up.lazyloading {
   filter: blur(5px);
-  transition: filter 400ms, -webkit-filter 400ms;
+  opacity: 1;
+  transition: opacity 1s, filter 1.5s;
+}
+.blur-up.lazyload {
+  opacity: 0;
+  filter: blur(10px);
 }
 .blur-up.lazyloaded {
-  -webkit-filter: blur(0);
   filter: blur(0);
+  transition: filter 1s;
 }
 .hack .readmore {
   margin-bottom: 2.2em;
 }
-.responsive-iframe {
+.responsive-iframe,
+.ratio-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%; /* 16:9 = 56.25% = calc(9 / 16 * 100%) */
   padding-top: 25px;
   height: 0;
 }
-.responsive-iframe iframe {
+.responsive-iframe iframe,
+.ratio-container > *:not([itemprop="caption"]) {
   position: absolute;
   top: 0;
   left: 0;
