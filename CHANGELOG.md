@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [8.3.2](https://codeberg.org/vhs/after-dark/compare/v8.3.1...v8.3.2) (2019-07-22)
+
+
+### Bug Fixes
+
+* **feature/post-images:** prevent content from jumping as image loads ([452ce64](https://codeberg.org/vhs/after-dark/commit/452ce64)), closes [#162](https://codeberg.org/vhs/after-dark/issues/162)
+
+
+### Build System
+
+* **npm:** audit and fix dev dependency vulnerabilities ([782506e](https://codeberg.org/vhs/after-dark/commit/782506e))
+* **npm:** greenkeep commit helper and changelog generator ([0c571ef](https://codeberg.org/vhs/after-dark/commit/0c571ef))
+
+
+
 ### [8.3.1](https://codeberg.org/vhs/after-dark/compare/v8.3.0...v8.3.1) (2019-07-21)
 
 
