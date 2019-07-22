@@ -88,7 +88,7 @@ With markdown image and link styling removed:
 {{% /external */%}}
 ```
 
-{{% external rel="next" href="https://source.unsplash.com/collection/983219/2160x1440" %}}
+{{% external rel="next" href="https://source.unsplash.com/collection/983219/1080x720" %}}
   ![Example image](https://source.unsplash.com/collection/983219/1080x720 "View Random Image Enlarged")
 {{% /external %}}
 
