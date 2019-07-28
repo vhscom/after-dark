@@ -22,171 +22,95 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {{- end }}
 {{ define "header" }}
   {{ partial "masthead.html" . }}
-  <style>
-    :root {
-      --vertical-rhythm: 5rem;
-      --logo-animation-filter-start: drop-shadow(0 -25px 45px #ff2e88) brightness(1) drop-shadow(0 -55px 35px #ff2e88) brightness(1) drop-shadow(0 -35px 155px #ff9800) brightness(4);
-      --logo-animation-filter-end: drop-shadow(0 -20px 45px #ff2e88) brightness(.1) drop-shadow(0 0 5px #ff2e88) brightness(.7) drop-shadow(0 -20px 135px #ff2e88) brightness(2);
-    }
-    main, footer, header, caption {
-      text-align: center;
-    }
-    nav[itemtype*="SiteNavigationElement"] {
-      opacity: 0;
-      transition: opacity 300ms ease;
-    }
-    nav[itemtype*="SiteNavigationElement"]:focus-within {
-      opacity: 1;
-      transition: opacity 300ms ease;
-    }
-    @media screen and (max-width: 768px) {
-      nav[itemtype*="SiteNavigationElement"] {
-        display: none;
-      }
-      .hack header h1 {
-        margin-top: 2rem !important;
-      }
-      .grid {
-        flex-direction: row;
-      }
-      .cell {
-        flex: 1;
-      }
-    }
-    .shaded {
-      filter: var(--logo-animation-filter-start);
-      opacity: 0;
-    }
-    .animated {
-      /* FIXME: Animation disabled due to browser conflict with Web Miner */
-      animation: reveal 2s both;
-      opacity: 1; /* remove with fix */
-      filter: var(--logo-animation-filter-end); /* remove with fix */
-    }
-    @keyframes reveal {
-      from {
-        filter: var(--logo-animation-filter-start);
-      }
-      to {
-        filter: var(--logo-animation-filter-end);
-        opacity: 1;
-      }
-    }
-    .hack .grid {
-      justify-content: center;
-    }
-    .hack header h1:after {
-      content: none;
-    }
-    .hack header h1 {
-      font-family: Futura,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
-      padding: 0;
-      margin: 1rem;
-      font-size: 3em;
-      display: inline-block;
-
-      background-color: #2a3439;
-      color: transparent;
-      text-shadow: 0 2px 3px rgba(255, 255, 255, 0.1);
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text;
-      filter: brightness(3);
-    }
-    .hack header h1 sup {
-      font-size: 1rem;
-    }
-    .hack header h1 sup:before {
-      content: " ";
-    }
-    .hack header h2:before,
-    .hack section h2:before {
-      content: unset;
-    }
-    .hack header h2,
-    .hack section h2 {
-      margin-top: .8rem;
-      font-size: 1.2em;
-    }
-    .hack header h2 {
-      margin-top: -1rem;
-    }
-    .hack .install.cta {
-      margin-top: -1rem;
-      margin-bottom: 2rem;
-    }
-    .hack .install.cta form[action*="quick-install"] {
-      width: unset;
-    }
-    .hack .install.cta form[action*="quick-install"] button {
-      border-radius: 4px;
-      color: #ccc;
-      background-color: #ff2e8860;
-      transition: all 0.25s ease;
-    }
-    .hack .install.cta form[action*="quick-install"] button:hover,
-    .hack .install.cta form[action*="quick-install"] button:focus {
-      background-color: #ff2e8880;
-      color: #fff;
-    }
-    .hack .install.cta form[action*="quick-install"] button svg {
-      stroke: #ff9800;
-    }
-    .hack section:not(.capabilities) {
-      margin: var(--vertical-rhythm) 0;
-    }
-    .hack section.logo a {
-      border-bottom: none;
-      background-color: inherit;
-    }
-    .hack section.hero {
-      margin-top: -2rem;
-      margin-bottom: 0;
-    }
-    .hack section.hero figure {
-      margin: 0;
-      line-height: 0;
-      min-height: 266px;
-    }
-    @media screen and (min-width: 768px) {
-      .hack section.hero figure img {
-        margin: -3em 0 -2em;
-      }
-    }
-    .hack section.tagline p {
-      margin: 0;
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-    .hack section.capabilities table a {
-      display: block;
-    }
-    .hack footer section.cta {
-      margin-top: 6rem;
-    }
-    .hack footer section.cta a {
-      border-bottom: none;
-      background-color: inherit;
-      color: #ff9800;
-      display: inline-block;
-    }
-    .hack footer section.cta a:hover {
-      color: #fff;
-    }
-    .hack footer section.cta a small {
-      display: block;
-    }
-    .dark table tbody td:first-child {
-      color: inherit;
-    }
-  </style>
 {{ end }}
 {{ define "main" }}
+  {{ with resources.Get "css/conditional/layout/landing.css" | minify }}
+    <style>{{ .Content | safeCSS }}</style>
+  {{ end }}
   <header>
     <h1>{{ .Title }}<sup class="muted">v{{ .Site.Data.npm.latest.version }}</sup></h1>
     <h2 class="muted">Hugo Dark Theme Website Generator</h2>
   </header>
-  {{ .Content }}
+  <section class="grid logo">
+    <a class="cell -12of12" rel="author" target="_self" href="https://vhs.codeberg.page/code/after-dark/">
+      <svg class="shaded animated" viewBox="0 0 46 45" width="92" height="90" xmlns="http://www.w3.org/2000/svg">
+        <title>After Dark</title>
+        <path d="M.708 45L23 .416 45.292 45H.708zM35 38L23 19 11 38h24z" fill="#000"/>
+      </svg>
+    </a>
+  </section>
+  <section class="grid tagline">
+    <div class="cell -12of12">
+      <p>{{ .Description }}</p>
+    </div>
+  </section>
+  <section class="install cta">
+    {{ .Content }}
+  </section>
+  <section class="hero">
+    {{ partial "components/figure.html" (dict "alt" "After Dark screenshots" "src" "/images/minimal-mac_2400x1800-fs8.png" "lqipsrc" "/images/minimal-mac_800x600-fs8.png") }}
+  </section>
+  {{ range .Params.spotlight }}
+    <section id="feature-{{ .name }}" class="{{ if eq .name "workflow" }}capabilities{{ else }}feature{{ end }}">
+      {{ with .icon }}
+        {{ (resources.Get (printf "svg/vendor/bytesize-icons/%s.svg" .)).Content | safeHTML }}
+      {{ end }}
+      <h2{{ if eq .beta true }} style="margin-bottom:0.2rem"{{ end }}>{{ .title | title }}</h2>
+      {{ if eq .beta true }}
+        <small><i style="color:lime">(Now in Beta!)</i></small>
+      {{ end }}
+      {{ if eq .name "workflow" }}
+        <table>
+          <caption>{{ .description | markdownify }}</caption>
+          <tr>
+            <th scope="col" width="25%">Features</th>
+            <th scope="col" width="25%">Modules</th>
+            <th scope="col" width="25%">Shortcodes</th>
+            <th scope="col" width="25%">Extras</th>
+          </tr>
+          <tr>
+            <td><a href="./feature/">37</a></td>
+            <td><a href="./module/">4</a></td>
+            <td><a href="./shortcode/">27+</a></td>
+            <td><a href="./extra/">2</a></td>
+          </tr>
+        </table>
+      {{ else }}
+        <p>{{ .description | markdownify }}</p>
+        <ul>{{ range .link }}
+          <li><a href="{{ .href }}"{{ with .target }} target="{{ . }}"{{ end }}{{ with .rel }} rel="{{ . }}"{{ end }}>{{ .text }}</a>
+        {{ end }}</ul>
+      {{ end }}
+    </section>
+  {{ end }}
+  <footer>
+    <section class="grid cta">
+      <a target="_self" class="cell -2of12" itemtype="significantLink" rel="prefetch noreferrer" href="https://t.me/afterdarkupdates">
+        <svg id="updates" aria-lebelledby="updates-label" class="i-bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M8 17 C8 12 9 6 16 6 23 6 24 12 24 17 24 22 27 25 27 25 L5 25 C5 25 8 22 8 17 Z M20 25 C20 25 20 29 16 29 12 29 12 25 12 25 M16 3 L16 6" />
+        </svg>
+        <small role="tooltip" id="updates-label">Updates</small>
+      </a>
+      <a target="_self" class="cell -2of12" itemtype="significantLink" rel="prefetch" href="https://codeberg.org/vhs/after-dark/">
+        <svg id="source" aria-labelledby="source-label" class="i-code" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
+        </svg>
+        <small role="tooltip" id="source-label">Source</small>
+      </a>
+      <a target="_blank" class="cell -2of12" itemtype="significantLink" rel="noopener noreferrer nofollow" href="irc://chat.freenode.net:6667/after-dark">
+        <svg id="chat" aria-labelledby="chat-label" class="i-message" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M2 4 L30 4 30 22 16 22 8 29 8 22 2 22 Z" />
+        </svg>
+        <small role="tooltip" id="chat-label">Chat</small>
+      </a>
+      <a target="_self" class="cell -2of12" itemtype="significantLink" rel="prefetch" href="https://codeberg.org/vhs/after-dark/releases">
+        <svg id="download" aria-labelledby="download-label" class="i-download" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30" />
+        </svg>
+        <small role="tooltip" id="download-label">Download</small>
+      </a>
+    </section>
+  </footer>
 {{ end }}
 {{ define "footer" }}
   <small class="muted">

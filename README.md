@@ -18,19 +18,19 @@
 wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
 ```
 
-**After Dark** is an extensible, robust [Hugo](https://gohugo.io) theme written from the ground up for speed, privacy and security.
+**After Dark** is an extensible, robust templating system for [Hugo](https://gohugo.io) written from the ground up for speed, privacy and security.
 
 ## Features
 
 - **[Streamlined Workflow](https://vhs.codeberg.page/after-dark/#feature-workflow)**: Cross-platform, 1 dependency, single-codebase.
-- **[Easily Customized](https://vhs.codeberg.page/after-dark/#feature-customize)**: Easily modify website look-and-feel.
-- **[Unparalleled Speed](https://vhs.codeberg.page/after-dark/#feature-speed)**: ~0.615s builds and decisecond page loads.
-- **[Advanced Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics)**: Responsive post and thumbnail images.
-- **[Fuzzy Search](https://vhs.codeberg.page/after-dark/#feature-search)**: Offline, automatic and no third-parties.
-- **[Rewards System](https://vhs.codeberg.page/after-dark/#feature-rewards)**: Monetize attention and earn a borderless income.
-- **[Securely Designed](https://vhs.codeberg.page/after-dark/#feature-security)**: CSP, Referrer Policy, Release Hashes
+- **[Incredibly Fast](https://vhs.codeberg.page/after-dark/#feature-speed)**: ~0.615s builds and decisecond page loads.
 - **[Privacy Focused](https://vhs.codeberg.page/after-dark/#feature-privacy)**: No cookies, no external requests, ephemeral hosting.
-- **[Batteries Included](https://vhs.codeberg.page/after-dark/#feature-extras)**: Self-host with gitea, k3s, traefik and fathom.
+- **[Advanced Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics)**: Silky-smooth post and homepage images.
+- **[Easily Customized](https://vhs.codeberg.page/after-dark/#feature-customize)**: Easily modify website look-and-feel.
+- **[Fuzzy Search](https://vhs.codeberg.page/after-dark/#feature-search)**: Offline, automatic and no third-parties.
+- **[Rewards System](https://vhs.codeberg.page/after-dark/#feature-rewards)**: Earn rewards for keeping your software up-to-date.
+- **[Securely Designed](https://vhs.codeberg.page/after-dark/#feature-security)**: Source-level integrity, content security and more.
+- **[Batteries Included](https://vhs.codeberg.page/after-dark/#feature-extras)**: Integrate with Gitea, k8s, Traefik and Fathom.
 
 ## Demo
 
