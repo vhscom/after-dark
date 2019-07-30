@@ -17,25 +17,25 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-# DOCKER-VERSION 17.12.0-ce, build c97c6d6
+# DOCKER-VERSION 18.09.7-ce, build 2d0083d657
 
 # Pull hugo builder base image
-FROM golang:1.10.3-alpine3.7 AS hugobuilder
+FROM golang:1.11.4-alpine3.8 AS hugobuilder
 
 # Set environment variables for hugo build
-ENV HUGO_VERSION=0.44 \
-    CGO_ENABLED=0 \
-    GOOS=linux
+ENV HUGO_VERSION=0.56.0 \
+    CGO_ENABLED=1 \
+    GOOS=linux \
+    GO111MODULE=on \
+    BUILD_TAGS="extended"
 
 # Build hugo from source using specified version
 RUN \
-  apk add --update --no-cache git musl-dev && \
+  apk add --update --no-cache git gcc g++ binutils musl-dev && \
   git clone https://github.com/gohugoio/hugo.git $GOPATH/src/github.com/gohugoio/hugo && \
   cd ${GOPATH:-$HOME/go}/src/github.com/gohugoio/hugo && \
   git checkout v$HUGO_VERSION && \
-  go get github.com/golang/dep/cmd/dep && \
-  dep ensure -vendor-only && \
-  go install -ldflags '-s -w'
+  go install -ldflags '-s -w -extldflags "-static"' -tags ${BUILD_TAGS}
 
 # Move compiled binary into own container
 FROM scratch
