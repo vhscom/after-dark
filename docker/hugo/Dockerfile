@@ -23,7 +23,7 @@
 FROM golang:1.11.4-alpine3.8 AS hugobuilder
 
 # Set environment variables for hugo build
-ENV HUGO_VERSION=0.56.0 \
+ENV HUGO_VERSION=0.56.3 \
     CGO_ENABLED=1 \
     GOOS=linux \
     GO111MODULE=on \
