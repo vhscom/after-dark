@@ -70,4 +70,5 @@ Memantau kinerja dari waktu ke waktu menggunakan {{< external href="https://spee
 
 ## Layanan Tambahan
 
+- {{< external "https://webmaster.yandex.com/tools/robotstxt/" />}}
 - {{< external "https://w3c.github.io/developers/tools/" />}}

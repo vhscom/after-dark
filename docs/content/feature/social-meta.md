@@ -10,7 +10,7 @@ features = ["code highlighter", "snippets", "related content"]
   license = "agpl-3.0-or-later"
 +++
 
-After Dark provides {{< external text="Open Graph Protocol" href="http://opengraphprotocol.org" />}} and {{< external href="https://developer.twitter.com/en/docs/tweets/optimize-with-cards" text="Twitter Cards" />}} metadata in pages to achieve rich sharing cards on Facebook, Twitter and more:
+After Dark provides {{< external text="Open Graph Protocol" href="http://opengraphprotocol.org" />}} and {{< external href="https://developer.twitter.com/en/docs/tweets/optimize-with-cards" text="Twitter Cards" />}} metadata in pages to achieve rich sharing cards on WhatsApp, Twitter, Telegram and more:
 
 ![Open Graph sharing card screenshot](/images/instant-view-fs8.png "Example Open Graph sharing card produced by After Dark")
 

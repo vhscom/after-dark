@@ -46,6 +46,9 @@ a[itemprop="url"]:hover {
 .hack.dark table tr:nth-child(odd) td {
   background-color: #1976d220;
 }
+.hack.dark table tr td a {
+  display: block;
+}
 caption {
   margin-bottom: 20px;
   text-align: left;

@@ -1,5 +1,5 @@
 +++
-title = "Quick Install"
+title = "Instal Cepat"
 description = "Hanya satu perintah yang anda butuhkan untuk membuat website baru."
 categories = ["core"]
 tags = ["setup", "installation", "scripts"]
@@ -71,7 +71,7 @@ Skrip harus selesai dalam 5-10 detik sehingga menghasilkan sampel situs dan doku
   caption="After Dark Quick Install running to completion in Terminal on Deepin Manjaro."
 >}}
 
-Situs baru Anda akan disebut `flying-toasters`. Ubah ke nama proyek Anda.
+Situs baru Anda akan disebut `flying-toaster`. Ubah ke nama proyek anda kapan saja anda suka. Akses situs dengan menavigasi ke https://localhost:1313.
 
 # Konfigurasi Multi-situs (Lanjutan)
 
