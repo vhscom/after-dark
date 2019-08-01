@@ -49,14 +49,14 @@ In [Form Group](../form-group) with warning [Label](../label) and [Help Block](.
 ```html
 {{</* hackcss-formgroup state="warning" >}}
   {{< hackcss-label for="key64" text="64-bit PGP key:" />}}
-  {{< hackcss-textinput type="text" id="key64" >}}
+  {{< hackcss-textinput spellcheck="false" type="text" id="key64" >}}
   {{< hackcss-helpblock text="In this format: BB73 67EE 9A70 A631" />}}
 {{< /hackcss-formgroup */>}}
 ```
 
 {{< hackcss-formgroup state="warning" >}}
   {{< hackcss-label for="key64" text="64-bit PGP key:" />}}
-  {{< hackcss-textinput type="text" id="key64" >}}
+  {{< hackcss-textinput spellcheck="false" type="text" id="key64" >}}
   {{< hackcss-helpblock text="In this format: BB73 67EE 9A70 A631" />}}
 {{< /hackcss-formgroup >}}
 

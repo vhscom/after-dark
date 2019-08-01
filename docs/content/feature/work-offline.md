@@ -1,9 +1,12 @@
 +++
-title = "Air Gapping"
+title = "Work Offline"
 description = "Build and run your entire site without Internet access."
 categories = ["security"]
 tags = ["privacy", "networking"]
 features = ["related content"]
+aliases = [
+  "/feature/air-gapping"
+]
 [[copyright]]
   owner = "VHS"
   date = "2019"

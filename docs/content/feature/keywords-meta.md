@@ -23,4 +23,4 @@ keywords = [
 ]
 ```
 
-While not considered relevant to search rankings, keywords can be a useful way to document target search terms and give more semantic meaning to your pages.
+While not considered relevant to search rankings, keywords can be a useful way to document target search terms and key phrases used in <abbr title="Pay Per Click">PPC</abbr> campaigns.

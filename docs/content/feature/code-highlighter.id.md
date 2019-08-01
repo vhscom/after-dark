@@ -33,18 +33,24 @@ Menghasilkan kode yang dihighlight seperti berikut:
 </div>
 ```
 
-Atau gabungkan {{% external href="https://gohugo.io/content-management/syntax-highlighting/#highlight-shortcode" %}}`highlight` shortcode{{% /external %}} dan `include` [Snippet](../snippets):
+Atau gunakan shortcode highlight yang disediakan oleh Hugo:
+
+Atau gabungkan {{% external href="https://gohugo.io/content-management/syntax-highlighting/#highlight-shortcode" %}}highlight shortcode{{% /external %}} disediakan oleh Hugo:
 
 ```html
-{{</* highlight css */>}}
-{{</* include file="themes/after-dark/static/css/syntax.css" */>}}
+{{</* highlight python */>}}
+@app.on_message(Filters.private)
+def hello(client, message):
+    message.reply_text("Hello {}".format(message.from_user.first_name))
 {{</* /highlight */>}}
 ```
 
-Untuk melihat CSS yang digunakan untuk menampilkan highlight highlighter yang disorot:
+Untuk menambahkan nomor baris dan sorotan:
 
-{{< highlight css >}}
-{{< include type="source" file="themes/after-dark/static/css/syntax.css" >}}
+{{< highlight python "linenos=inline,linenostart=5,hl_lines=2" >}}
+@app.on_message(Filters.private)
+def hello(client, message):
+    message.reply_text("Hello {}".format(message.from_user.first_name))
 {{< /highlight >}}
 
 Tidak menyukai warnanya? Tidak masalah. Gunakan perintah `hugo gen chromastyles` untuk {{< external href="https://gohugo.io/content-management/syntax-highlighting/#generate-syntax-highlighter-css" text="generate your own" />}} `syntax.css` stylesheet dari {{< external href="https://help.farbox.com/pygments.html" text="style gallery" />}} dan menyesuaikannya menggunakan tujuan umum {{< external href="https://codeberg.org/vhs/atom-one-chroma" text="Atom One Chroma" />}} tema rol sintaks.

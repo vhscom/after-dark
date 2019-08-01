@@ -371,11 +371,11 @@ Generate configuration with `Advanced Settings` specified:
       <strong>NOPE!</strong> Attempting to submit to unknown origin.
     {{< /hackcss-alert >}}
     {{< hackcss-alert type="warning" class="js-useonlinehelp" >}}
-      Please use <a href="/feature/online-help">Online Help</a> to generate configuration with <a href="/feature/air-gapping/">Air Gapping</a>.
+      Please use <a href="/feature/online-help/">Online Help</a> to generate configuration while <a href="/feature/work-offline/">Working Offline</a>.
     {{< /hackcss-alert >}}
     {{< hackcss-alert type="warning" class="js-disconnect" >}}
       <style>.js-disconnect { display: none }</style>
-      Please <a href="/feature/air-gapping">Disconnect</a> from the network before generating your configuration.
+      Please <a href="/feature/work-offline/">Disconnect</a> from the network before generating your configuration.
     {{< /hackcss-alert >}}
     {{< hackcss-formgroup name="addressgroup" >}}
       {{< hackcss-label for="address" >}}

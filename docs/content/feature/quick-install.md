@@ -75,11 +75,11 @@ Script should complete in 5-10 seconds resulting in a sample site and help docs:
   caption="After Dark Quick Install running to completion in Terminal on Deepin Manjaro."
 >}}
 
-Your new site will be called `flying-toasters`. Change it to the name of your project.
+Your new site will be called `flying-toasters`. Change it to the name of your project anytime you like. Access site by navigating to https://localhost:1313.
 
 # Multi-site Configuration (Advanced)
 
-After Dark enables multi-site management from a single installation. To manage multiple websites use the `-c` and `-d` flags to specify the `content` and `destination` directories, respectively
+After Dark enables multi-site management from a single installation. To manage multiple websites use the `-c` and `-d` flags to specify the `content` and `destination` directories, respectively.
 
 For example, to generate an audio site using the current After Dark installation create an executable script to generate the site:
 

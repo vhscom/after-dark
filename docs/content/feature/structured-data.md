@@ -33,4 +33,4 @@ Learn more about structured data using the following resources:
 - {{< external href="https://moz.com/learn/seo/schema-structured-data" text="Schema Structured Data on Moz" />}}
 
 
-Use [Webmaster Tools](../webmaster-tools/) to validate structured data. This can be done from a development machine using [ephemeral hosting](../air-gapping/#ephemeral-hosting-with-end-to-end-encryption).
+Use [Webmaster Tools](../webmaster-tools/) to validate structured data. This can be done from a development machine using [ephemeral hosting](../ephemeral-hosting/).

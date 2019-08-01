@@ -10,9 +10,9 @@ images = [
   license = "agpl-3.0-or-later"
 [[spotlight]]
   name = "workflow"
-  title = "Streamlined Workflow"
+  title = "Developer Focused"
   description = "Develop and publish websites cross-platform using a <strong>single codebase</strong> with just <strong>one dependency</strong> and capabilities designed to make you more productive:"
-  icon = "options"
+  icon = "code"
 [[spotlight]]
   name = "speed"
   title = "Incredibly Fast"
@@ -31,18 +31,32 @@ images = [
     rel = "external nofollow noopener"
 [[spotlight]]
   name = "privacy"
-  title = "Privacy Focused"
+  title = "Privacy Aware"
   description = "Develop your entire site <strong><i>without</i> Internet</strong> connectivity and <i>expose</i> an ephemeral Web server with e2e encryption and <strong>real-time traffic inspection</strong>."
   icon = "eye"
   [[spotlight.link]]
-    href = "/feature/air-gapping/"
+    href = "/feature/work-offline/"
     text = "Work Offline"
   [[spotlight.link]]
     href = "/feature/referrer-policy/"
-    text = "Referrer Policy"
+    text = "Hide Referrals"
   [[spotlight.link]]
     href = "/feature/ephemeral-hosting/"
-    text = "SSH Hosting"
+    text = "SSH Host"
+[[spotlight]]
+  name = "security"
+  title = "Securely Designed"
+  description = "Verify the <i>authenticity</i> of your installation using secure cryptographic hashes and use <abbr title=\"Content Security Policy\">CSP</abbr>, <abbr title=\"Sub-Resource Integrity\">SRI</abbr> and Referrer Policy to <strong>lock down your content</strong>."
+  icon = "lock"
+  [[spotlight.link]]
+    href = "/feature/content-security-policy/"
+    text = "Content Policy"
+  [[spotlight.link]]
+    href = "/validate/"
+    text = "Check Integrity"
+  [[spotlight.link]]
+    href = "/feature/#security"
+    text = "See All"
 [[spotlight]]
   name = "graphics"
   title = "Advanced Graphics"
@@ -61,7 +75,7 @@ images = [
   name = "customize"
   title = "Easily Customized"
   description = "Toggle between 1 of 8 <strong><i>customizable</i> skin styles</strong> or disable them entirely and use custom layouts and styles to take complete design control."
-  icon = "compose"
+  icon = "options"
   [[spotlight.link]]
     href = "/feature/custom-homepage/"
     text = "Homepage"
@@ -95,20 +109,6 @@ images = [
     href = "/module/toxic-swamp/"
     text = "Learn More"
 [[spotlight]]
-  name = "security"
-  title = "Securely Designed"
-  description = "Verify the <i>authenticity</i> of your installation using secure <a href=\"/feature/release-hashes\">cryptographic hashes</a> and use <abbr title=\"Content Security Policy\">CSP</abbr>, <abbr title=\"Sub-Resource Integrity\">SRI</abbr> and Referrer Policy to <strong>lock down your content</strong>."
-  icon = "lock"
-  [[spotlight.link]]
-    href = "/feature/content-security-policy/"
-    text = "Content Policy"
-  [[spotlight.link]]
-    href = "/validate/"
-    text = "Check Integrity"
-  [[spotlight.link]]
-    href = "/feature/#security"
-    text = "See All"
-[[spotlight]]
   name = "extras"
   title = "Batteries Included"
   description = "Self-host your entire stack using <strong><i>commodity hardware</i></strong> and keep your source code and visitor metrics entirely <strong>under your control</strong>."
@@ -122,6 +122,14 @@ images = [
   [[spotlight.link]]
     href = "/module/voyeur/"
     text = "Fathom"
+[[spotlight]]
+  name = "builds"
+  title = "Extended Builds"
+  description = "Create **high-performance Hugo builds** using Alpine Linux with Musl. Builds Hugo Extended binary <i>with Sass support</i> using Docker **directly from source**."
+  icon = "export"
+  [[spotlight.link]]
+    href = "/feature/extended-builds/"
+    text = "Create Build Now"
 +++
 
 {{< hackcss-form action="/feature/quick-install" >}}

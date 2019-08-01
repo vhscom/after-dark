@@ -15,7 +15,14 @@ aliases = [
 
 After Dark uses {{< external href="https://hackcss.egoist.moe" text="hackcss" />}} to provide four color palettes and two display modes. Toggle between them from your {{< external href="https://gohugo.io/getting-started/configuration/" text="site configuration" />}} for 8 possible combinations:
 
-<style>table[summary] td pre { margin: 0; }</style>
+<style>
+  table[summary] td pre {
+    margin: 0;
+  }
+  .hack.dark table tr:nth-child(odd) td {
+    background-color: initial;
+  }
+</style>
 <table summary="Color palette and display mode settings">
   <thead>
     <tr>

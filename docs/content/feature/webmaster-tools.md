@@ -69,4 +69,5 @@ Monitor performance over time using {{< external href="https://speedtracker.org"
 
 ## Additional services
 
+- {{< external "https://webmaster.yandex.com/tools/robotstxt/" />}}
 - {{< external "https://w3c.github.io/developers/tools/" />}}

@@ -12,7 +12,7 @@ features = ["code highlighter", "snippets", "related content"]
 
 Denote posts with substantive changes or simply draw older, more relevant posts closer to the top of the listings with last modified.
 
-Modifications will be made obvious to visitors with a visible callout in post summaries and the original publish date will be kept intact in the post bylines.
+Modifications will be made obvious to visitors with a visible callout in post summaries and the original publish date will be kept intact in the [Post Bylines](../post-bylines).
 
 For robots, making this change will automatically update Schema Structured Data, RSS feeds and the `lastmod` setting in your {{< external href="https://gohugo.io/templates/sitemap-template/" text="Sitemap" />}}.
 
@@ -32,4 +32,4 @@ date = "2017-02-02"
 publishdate = "2016-11-21"
 ```
 
-It's also possible to future and expiry dates for content in Hugo. To learn more see the documentation on {{< external href="https://gohugo.io/getting-started/usage/#draft-future-and-expired-content" text="Draft, Future, and Expired Content" />}}.
+It's also possible to set future and expiry dates for content in Hugo. To learn more see the documentation on {{< external href="https://gohugo.io/getting-started/usage/#draft-future-and-expired-content" text="Draft, Future, and Expired Content" />}}.

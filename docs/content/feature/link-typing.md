@@ -25,7 +25,7 @@ prev = "/series/learn-to-code/part-one/"
 next = "/series/learn-to-code/part-three/"
 ```
 
-Use `prev` and `next` link types for segmented articles, [Live Blog Postings](https://schema.org/LiveBlogPosting) or to mimic the traits of a `series` taxonomy if no series taxonomy is present.
+Use `prev` and `next` link types for segmented articles, {{< external "https://schema.org/LiveBlogPosting" "Live Blog Postings" />}} or to mimic the traits of a `series` taxonomy if no series taxonomy is present.
 
 Link Types are commonly shown at the top of the page in text browsers such as {{< external href="http://elinks.or.cz" text="ELinks" />}} as an auxiliary form of navigation and can help robots and users better understand relationships between your content.
 

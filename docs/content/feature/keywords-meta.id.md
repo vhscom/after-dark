@@ -23,4 +23,4 @@ keywords = [
 ]
 ```
 
-Meskipun dianggap tidak relevan untuk mencari peringkat, kata kunci dapat menjadi cara yang berguna untuk mendokumentasikan istilah pencarian target dan memberikan makna lebih semantik ke halaman pencarian anda.
+Meskipun dianggap tidak relevan untuk mencari peringkat, kata kunci dapat menjadi cara yang berguna untuk mendokumentasikan istilah pencarian target dan frase kunci yang digunakan dalam <abbr title="Bayar Per Klik">PPC</abbr> kampanye.
