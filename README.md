@@ -25,11 +25,11 @@ wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
 - **[Developer Focused](https://vhs.codeberg.page/after-dark/#feature-workflow)**: Cross-platform, 1 dependency, single-codebase.
 - **[Incredibly Fast](https://vhs.codeberg.page/after-dark/#feature-speed)**: ~0.615s builds and decisecond page loads.
 - **[Privacy Aware](https://vhs.codeberg.page/after-dark/#feature-privacy)**: No cookies, no external requests, ephemeral hosting.
+- **[Securely Designed](https://vhs.codeberg.page/after-dark/#feature-security)**: Source-level integrity, content security and more.
 - **[Advanced Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics)**: Silky-smooth post and homepage images.
 - **[Easily Customized](https://vhs.codeberg.page/after-dark/#feature-customize)**: Easily modify website look-and-feel.
 - **[Fuzzy Search](https://vhs.codeberg.page/after-dark/#feature-search)**: Offline, automatic and no third-parties.
 - **[Rewards System](https://vhs.codeberg.page/after-dark/#feature-rewards)**: Earn rewards for keeping your software up-to-date.
-- **[Securely Designed](https://vhs.codeberg.page/after-dark/#feature-security)**: Source-level integrity, content security and more.
 - **[Batteries Included](https://vhs.codeberg.page/after-dark/#feature-extras)**: Integrate with Gitea, k8s, Traefik and Fathom.
 - **[Extended Builds](https://vhs.codeberg.page/after-dark/#feature-builds)**: Create high-performance Hugo builds with integrated Sass support.
 
