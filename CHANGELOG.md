@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [8.3.4](https://codeberg.org/vhs/after-dark/compare/v8.3.3...v8.3.4) (2019-08-05)
+
+Finish documentation TODOs.
+
 ### [8.3.3](https://codeberg.org/vhs/after-dark/compare/v8.3.2...v8.3.3) (2019-07-31)
 
 
@@ -84,6 +88,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## 8.0.0 (2019-05-17)
 
+Moves After Dark to AGPLv3+.
 
 ### Bug Fixes
 
