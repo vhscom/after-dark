@@ -12,7 +12,7 @@ feature = ["code highlighter", "related content", "snippets"]
 
 After Dark menggunakan {{< external href="https://github.com/aFarkas/lazysizes" text="lazySizes" />}} untuk memprioritaskan pemuatan sumber daya eksternal tertentu untuk meningkatkan waktu pemuatan halaman dan membantu mengurangi konsumsi bandwith secara keseluruhan.
 
-Lazy loading bekerja secara otomatis untuk [Post Images](../post-images) dan ketika menggunakan [Figure Shortcode](/shortcode/figure), atau terkait dengan [Snippet](../snippets), seperti yang terlihat sebagai berikut:
+Lazy loading bekerja secara otomatis untuk [Custom Homepage](../custom-homepage) thumbnails, [Post Images](../post-images) dan ketika menggunakan [Figure Shortcode](/shortcode/figure), atau terkait dengan [Snippet](../snippets), seperti yang terlihat sebagai berikut:
 
 {{< figure
   src="https://source.unsplash.com/Y-w15LfHO8w/5184x3456"
