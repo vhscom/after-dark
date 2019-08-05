@@ -16,6 +16,7 @@ notes = [
 
 After Dark termasuk skrip instalasi portabel untuk pengaturan cepat. Silahkan instal {{< external href="https://gohugo.io" text="Hugo" />}} `0.44` atau yang lebih besar sebelum menjalankan skrip:
 
+{{< hackcss-alert >}}
 <details itemscope itemtype="https://schema.org/SoftwareSourceCode">
 <summary>Perluas untuk melihat skrip</summary>
 {{< highlight shell "linenos=inline" >}}
@@ -28,6 +29,7 @@ After Dark termasuk skrip instalasi portabel untuk pengaturan cepat. Silahkan in
 <link itemprop="targetProduct" href="https://vhs.codeberg.page/after-dark">
 <meta itemprop="accessMode" content="textual">
 </details>
+{{< /hackcss-alert >}}
 
 <!--more-->
 

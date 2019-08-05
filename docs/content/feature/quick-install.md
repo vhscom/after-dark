@@ -19,6 +19,7 @@ aliases = [
 
 After Dark includes a portable installation script for quick set-up. Please install {{< external href="https://gohugo.io" text="Hugo" />}} `0.44` or greater before running:
 
+{{< hackcss-alert >}}
 <details itemscope itemtype="https://schema.org/SoftwareSourceCode">
 <summary>Expand to view script</summary>
 {{< highlight sh "linenos=inline" >}}
@@ -31,6 +32,7 @@ After Dark includes a portable installation script for quick set-up. Please inst
 <link itemprop="targetProduct" href="https://vhs.codeberg.page/after-dark">
 <meta itemprop="accessMode" content="textual">
 </details>
+{{< /hackcss-alert >}}
 
 <!--more-->
 
