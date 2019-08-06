@@ -22,6 +22,7 @@ section ul.grid {
 }
 section ul.grid li {
   padding: 10px;
+  margin-bottom: 10px;
 }
 section ul.grid li h2 {
   margin-bottom: 1rem;
