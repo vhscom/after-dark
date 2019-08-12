@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [9.0.0](https://codeberg.org/vhs/after-dark/compare/v8.3.3...v9.0.0) (2019-08-12)
+
+
+### Features
+
+* **feature/featured-posts:** allow featured items in posts section ([49f5c56](https://codeberg.org/vhs/after-dark/commit/49f5c56)), closes [#170](https://codeberg.org/vhs/after-dark/issues/170) [#160](https://codeberg.org/vhs/after-dark/issues/160)
+
+
+### BREAKING CHANGES
+
+* **feature/featured-posts:** Hugo minimum required version now 0.51 (was 0.44)
+
+
+
 ### [8.3.4](https://codeberg.org/vhs/after-dark/compare/v8.3.3...v8.3.4) (2019-08-05)
 
 Finish documentation TODOs.
