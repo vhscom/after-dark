@@ -14,7 +14,7 @@ notes = [
   license = "agpl-3.0-or-later"
 +++
 
-After Dark termasuk skrip instalasi portabel untuk pengaturan cepat. Silahkan instal {{< external href="https://gohugo.io" text="Hugo" />}} `0.44` atau yang lebih besar sebelum menjalankan skrip:
+After Dark termasuk skrip instalasi portabel untuk pengaturan cepat. Silahkan instal {{< external href="https://gohugo.io" text="Hugo" />}} `0.51` atau yang lebih besar sebelum menjalankan skrip:
 
 {{< hackcss-alert >}}
 <details itemscope itemtype="https://schema.org/SoftwareSourceCode">

@@ -17,7 +17,7 @@ aliases = [
   license = "agpl-3.0-or-later"
 +++
 
-After Dark includes a portable installation script for quick set-up. Please install {{< external href="https://gohugo.io" text="Hugo" />}} `0.44` or greater before running:
+After Dark includes a portable installation script for quick set-up. Please install {{< external href="https://gohugo.io" text="Hugo" />}} `0.51` or greater before running:
 
 {{< hackcss-alert >}}
 <details itemscope itemtype="https://schema.org/SoftwareSourceCode">

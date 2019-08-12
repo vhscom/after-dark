@@ -23,4 +23,7 @@ Use it to manage organizations, create pull mirrors, selectively mark private re
 
 High Tea also provides a Traefik integration so you can manage web services, monitor traffic and inspect service health in real-time.
 
-**Repository:** {{< external "https://codeberg.org/vhs/high-tea" />}}
+---
+
+- {{< external "https://codeberg.org/vhs/high-tea" />}} -- source
+- {{< external "https://vhs.codeberg.page/after-dark/extra/high-tea/" />}} -- website
