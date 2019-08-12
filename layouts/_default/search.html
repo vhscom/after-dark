@@ -28,7 +28,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <h1>{{ .Title }}</h1>
   </header>
   <div id="search-app" v-cloak>
-    {{ with resources.Get "css/conditional/layout/search.css" | minify }}
+    {{ with resources.Get "css/conditional/layouts/search.css" | minify }}
       <style>{{ .Content | safeCSS }}</style>
     {{ end }}
     <section>

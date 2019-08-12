@@ -22,7 +22,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {{ end }}
 {{ define "main" }}
   {{ if ne $.Site.Params.hackcss.disabled true }}
-    {{ with resources.Get "css/conditional/layout/post/single.css" | minify }}
+    {{ with resources.Get "css/conditional/layouts/post/single.css" | minify }}
       <style>{{ .Content | safeCSS }}</style>
     {{ end }}
   {{ end }}

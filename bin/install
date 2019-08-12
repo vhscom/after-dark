@@ -22,13 +22,13 @@
 validate_hugo () {
    # Exit with error if hugo is not installed
    if ! hash hugo 2>/dev/null ; then
-     echo "Error: After Dark requires Hugo version 0.44 or greater" >&2; exit 1
+     echo "Error: After Dark requires Hugo version 0.51 or greater" >&2; exit 1
    fi
 
    # Exit with error if not minimum required hugo version
-   re="v(0\d*\.([4-9][4-9]|[5-9])|[1-9]).*"
+   re="v(0\d*\.([5-9][1-9]|[6-9])|[1-9]).*"
    if ! hugo version | grep -qE "$re" ; then
-      echo "Error: After Dark requires Hugo version 0.44 or greater" >&2; exit 1
+      echo "Error: After Dark requires Hugo version 0.51 or greater" >&2; exit 1
    fi
 }
 

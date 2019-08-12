@@ -19,7 +19,7 @@
 
 baseurl = "https://vhs.codeberg.page/after-dark/" # Controls base URL sitewide
 title = "After Dark" # Homepage title and page title suffix
-paginate = 38 # Number of items to show before paginating
+paginate = 39 # Number of items to show before paginating
 copyright = "Copyright &copy; VHS. Licensed under <a target=\"_blank\" rel=\"external noopener license\" href=\"https://www.gnu.org/licenses/agpl.html\">AGPL-3.0-or-later</a>."
 
 # Controls default theme and theme components
