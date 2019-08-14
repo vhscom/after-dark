@@ -2,7 +2,7 @@
 title = "Extended Builds"
 description = "Build Hugo with Sass and Go CDK Deploy support."
 categories = ["core"]
-tags = ["docker", "container", "sass", "cloud"]
+tags = ["docker", "container", "sass", "cloud", "ci"]
 features = ["code highlighter", "related content"]
 [[copyright]]
   owner = "VHS"
