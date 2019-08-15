@@ -18,7 +18,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */}}
 
 {{ define "title" -}}
-  {{ .Params.title }} | Hugo Dark Theme Website Generator
+  Hugo Dark Theme Site Generator | {{ .Params.title }}
 {{- end }}
 {{ define "header" }}
   {{ partial "masthead.html" . }}
@@ -29,7 +29,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   {{ end }}
   <header>
     <h1>{{ .Title }}<sup class="muted">v{{ .Site.Data.npm.latest.version }}</sup></h1>
-    <h2 class="muted">Hugo Dark Theme Website Generator</h2>
+    <h2 class="muted">Hugo Dark Theme Site Generator</h2>
   </header>
   <section class="grid logo">
     <a class="cell -12of12" rel="author" target="_self" href="https://vhs.codeberg.page/code/after-dark/">
