@@ -3,7 +3,7 @@
   src="https://codeberg.org/vhs/after-dark/raw/branch/master/static/images/logo-dark.png"
   width="358">
 
-**Hugo Dark Theme Website Generator**
+**Dark Themed Website Generator**
 <br>[Docs](https://vhs.codeberg.page/after-dark) • [Releases](https://codeberg.org/vhs/after-dark/releases) • [Community](https://t.me/afterdarkhugo)
 
 ## After Dark

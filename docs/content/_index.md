@@ -1,9 +1,10 @@
 +++
 title = "After Dark"
-description = "After Dark is an extensible, robust templating system for Hugo written from the ground up for speed, privacy and security."
+description = "It's getting late. Welcome to After Dark. After Dark is open source software you can use to create a dark website, blog or theme."
 images = [
   "https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png"
 ]
+keywords = ["blog", "website", "content management", "publishing"]
 [[copyright]]
   owner = "VHS"
   date = "2019"
@@ -58,6 +59,18 @@ images = [
     href = "/feature/#security"
     text = "See All"
 [[spotlight]]
+  name = "rewards"
+  title = "CryptoNote Mining"
+  description = "Earn rewards for keeping your software up-to-date and <strong>monetize attention</strong> to generate a <strong><i>borderless</i></strong>, low-maintenance passive income."
+  icon = "creditcard"
+  beta = true
+  [[spotlight.link]]
+    href = "/module/toxic-swamp/#installation"
+    text = "Get Started"
+  [[spotlight.link]]
+    href = "/module/toxic-swamp/"
+    text = "Learn More"
+[[spotlight]]
   name = "graphics"
   title = "Advanced Graphics"
   description = "Add high-resolution, responsive images with <strong>low-quality image placeholders</strong> and <strong>engaging visual effects</strong> without even touching an image editor."
@@ -96,18 +109,6 @@ images = [
   [[spotlight.link]]
     href = "/search/?s=uzzy%20searvh"
     text = "Try It Now"
-[[spotlight]]
-  name = "rewards"
-  title = "Rewards System"
-  description = "Earn rewards for keeping your software up-to-date and <strong>monetize attention</strong> to generate a <strong><i>borderless</i></strong>, low-maintenance passive income."
-  icon = "creditcard"
-  beta = true
-  [[spotlight.link]]
-    href = "/module/toxic-swamp/#installation"
-    text = "Get Started"
-  [[spotlight.link]]
-    href = "/module/toxic-swamp/"
-    text = "Learn More"
 [[spotlight]]
   name = "extras"
   title = "Batteries Included"
