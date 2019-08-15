@@ -15,7 +15,7 @@ After Dark ships with the ability to build Hugo from tagged-version source. Supp
 To use install Docker then run the following command:
 
 ```sh
-cd after-dark/docker/hugo && docker build .
+cd after-dark/docker/hugo && docker build --rm .
 ```
 
 Build container uses Alpine and includes `musl-dev` for high-performance. Update the `HUGO_VERSION` to get a specific Hugo release built. Upon successful build extract the resulting `hugo` binary out of the scratch container like:

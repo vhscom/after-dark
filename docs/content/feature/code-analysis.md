@@ -17,7 +17,7 @@ Code analysis is ideal for identifying potential 404 errors and determining when
 To use install Docker then run the following command:
 
 ```sh
-cd after-dark/docker/htmltest && docker build .
+cd after-dark/docker/htmltest && docker build --rm .
 ```
 
 Build container uses Alpine and includes `musl-dev` for high-performance. Update the `HTMLTEST_VERSION` to get a specific release built. Upon successful build extract the resulting binary out of the scratch container like:
