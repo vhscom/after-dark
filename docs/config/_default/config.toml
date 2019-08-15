@@ -24,6 +24,7 @@ copyright = "Copyright &copy; VHS. Licensed under <a target=\"_blank\" rel=\"ext
 
 # Controls default theme and theme components
 theme = [
+  "toxic-swamp",
   "after-dark" # AGPL-3.0-or-later
 ]
 
