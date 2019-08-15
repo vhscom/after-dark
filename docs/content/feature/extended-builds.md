@@ -31,7 +31,7 @@ Where `f2b785583ce8` is the scratch container's Image ID and `/usr/local/bin` is
 For builds without Sass support enabled turn off `CGO_ENABLED`, pass in a phony value to `BUILD_TAGS`, create another build and give it a docker tag:
 
 ```sh
-docker tag $(docker images -q | head -n 1) gohugoio/hugo:v0.56.3
+docker tag $(docker images -q | head -n 1) gohugoio/hugo:v0.57.0
 ```
 
 It's recommended at least 2GB of storage space is available when running builds. The resulting binary inside the scratch container is less than 50MB.
