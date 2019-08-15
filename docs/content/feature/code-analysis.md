@@ -1,6 +1,6 @@
 +++
 title = "Code Analysis"
-description = "Test generated website HTML for problems."
+description = "Test generated website HTML for common problems."
 categories = ["experience"]
 tags = ["docker", "container", "cloud", "ci", "go", "robots"]
 features = ["code highlighter", "related content", "snippets"]
