@@ -1,13 +1,14 @@
 {
   "name": "after-dark",
   "version": "9.0.0",
-  "description": "Hugo Dark Theme Website Generator.",
+  "description": "Hugo Dark Theme Site Generator",
   "author": "VHS <vhsdev@tutanota.com> (https://vhs.codeberg.page)",
   "keywords": [
     "hugo",
-    "libre",
+    "dark",
+    "theme",
     "website",
-    "generator"
+    "blog"
   ],
   "homepage": "https://vhs.codeberg.page/after-dark",
   "repository": {

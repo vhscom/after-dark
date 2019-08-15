@@ -4,10 +4,6 @@ description = "One command is all you need to start a new website."
 categories = ["core"]
 tags = ["setup", "installation", "scripts"]
 features = ["code highlighter", "snippets", "related content"]
-notes = [
-  "review 'module-system' when adding or removing installed add-ons",
-  "also review selection of pre-installed modules (see front matter)"
-]
 aliases = [
   "/feature/quick-installer/"
 ]
@@ -16,6 +12,14 @@ aliases = [
   date = "2019"
   license = "agpl-3.0-or-later"
 +++
+
+{{< hackcss-alert type="success" >}}
+{{< highlight shell >}}wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh{{< /highlight >}}
+{{< /hackcss-alert >}}
+
+Run the above command in a terminal emulator after {{< external href="https://gohugo.io/getting-started/installing" text="installing Hugo" />}} to start a new website in 5-10 seconds. Hugo version `0.51` or greater required.
+
+---
 
 After Dark includes a portable installation script for quick set-up. Please install {{< external href="https://gohugo.io" text="Hugo" />}} `0.51` or greater before running:
 

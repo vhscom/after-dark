@@ -1,6 +1,6 @@
 +++
 title = "After Dark"
-description = "After Dark is an extensible, robust templating system for Hugo written from the ground up for speed, privacy and security."
+description = "After Dark is open source software you can use to build a secure website, blog or app. One command is all you need to start a new website."
 images = [
   "https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png"
 ]
@@ -104,7 +104,7 @@ images = [
   beta = true
   [[spotlight.link]]
     href = "/module/toxic-swamp/#installation"
-    text = "Get Started"
+    text = "Installation"
   [[spotlight.link]]
     href = "/module/toxic-swamp/"
     text = "Learn More"
@@ -136,7 +136,7 @@ images = [
   {{< hackcss-button type="primary" isghost="true" >}}
     <svg class="i-download" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
       <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30"></path>
-    </svg>&nbsp;&nbsp;Quick Install
+    </svg>&nbsp;&nbsp;Get Started
   {{< /hackcss-button >}}
   {{< hackcss-helpblock >}}
     <small>English and <a href="/id/feature/quick-install">Bahasa</a></small>
