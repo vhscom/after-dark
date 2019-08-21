@@ -54,7 +54,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
       </section>
     {{ end }}
   {{ end }}
-  {{ range (.Paginate (collections.SymDiff .Pages ($scratch.Get "featured"))).Pages }}
+  {{ range (.Paginate (collections.SymDiff .Pages (default slice ($scratch.Get "featured")))).Pages }}
     {{ partial "page-summary.html" . }}
   {{ end }}
 {{ end }}
