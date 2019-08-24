@@ -76,7 +76,7 @@ The [Module System](http://localhost:1414/feature/module-system/), for example, 
 
 ![BPG animation example](/bpg/cinemagraph-6.bpg)
 
-If you do not see the above animation, you may install the [Fractal Forest](http://localhost:1414/module/fractal-forest/) module yourself or reinstall After Dark using the [Quick Install](http://localhost:1414/feature/quick-install/) for instant setup.
+If you do not see the above animation, you may install the [Fractal Forest](http://localhost:1414/module/fractal-forest/) module yourself or reinstall After Dark using [Quick Install](http://localhost:1414/feature/quick-install/) for instant setup.
 
 Review the [Online Help](http://localhost:1414/) to learn about other useful features such as the [Section Menus](http://localhost:1414/feature/section-menu) navigational aid, responsive [Post Images](http://localhost:1414/feature/post-images/"), offline [Fuzzy Search](http://localhost:1414/feature/fuzzy-search/) and more.
 
