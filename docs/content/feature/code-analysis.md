@@ -24,7 +24,7 @@ Build container uses Alpine and includes `musl-dev` for high-performance. Update
 
 ```
 docker create -it --name temp f2b785583ce8 sh && \
-sudo docker cp temp:/hugo /usr/local/bin && \
+sudo docker cp temp:/htmltest /usr/local/bin && \
 docker rm -fv temp
 ```
 
