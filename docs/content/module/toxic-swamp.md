@@ -19,14 +19,7 @@ features = ["snippets", "related content"]
 Monetize attention in one of more than 40 cryptocurrency mining pools with support for the March 2019 Monero hard fork.
 
 {{< hackcss-alert >}}
-<video controls
-  src="https://vhs.keybase.pub/toxic-swamp-demo.mp4"
-  poster="/images/screenshots/after-dark-v6.15.0-homepage-fs8.png"
-  preload="auto"
-  width="100%">
-
-Your browser doesn't support embedded videos. Here is a <a href="https://vhs.keybase.pub/after-dark-web-mining-prototype.mp4">link to the video</a> instead.
-</video>
+  {{< video controls="true" src="https://vhs.codeberg.page/code/toxic-swamp/assets/toxic-swamp-demo.mp4" preload="auto" poster="https://vhs.codeberg.page/code/toxic-swamp/images/after-dark-v6.15.0-homepage-fs8.png" width="100%" >}}
 {{< /hackcss-alert >}}
 
 # Features
