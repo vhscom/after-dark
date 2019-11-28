@@ -40,7 +40,7 @@ images = [
     "data:"
   ]
   mediaSrc = [
-    "https://vhs.keybase.pub"
+    "https://*.vhs.codeberg.page"
   ]
   imgSrc = [
     "'self'",

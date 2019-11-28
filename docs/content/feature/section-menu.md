@@ -91,7 +91,7 @@ Provide your own config settings for use in [Custom Layouts]({{< relref "custom-
 
 ```toml
 [params.layout.menu.main.custom]
-  social_icons = ["telegram", "mastodon", "keybase"]
+  social_icons = ["telegram", "mastodon", "matrix"]
 ```
 
 And access them via your customized `navmenu.html`, if present:
