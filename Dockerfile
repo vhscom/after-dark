@@ -17,17 +17,17 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-# DOCKER-VERSION 19.03.1-ce, build 74b1e89e8a
+# DOCKER-VERSION 19.03.5, build 633a0ea 
 
 # Specify build image
-ARG GO_VERSION=1.11.4
-ARG BUILD_TARGET=alpine3.8
+ARG GO_VERSION=1.13.4
+ARG BUILD_TARGET=alpine3.10
 
 # Pull builder base image
 FROM golang:${GO_VERSION}-${BUILD_TARGET} AS hugobuilder
 
 # Set hugo environment variables
-ENV HUGO_VERSION=0.57.0 \
+ENV HUGO_VERSION=0.60.0 \
     CGO_ENABLED=1 \
     GOOS=linux \
     GO111MODULE=on \
@@ -35,7 +35,7 @@ ENV HUGO_VERSION=0.57.0 \
 
 # Build hugo from source using specified version
 RUN \
-  apk add --update --no-cache git gcc g++ binutils musl-dev && \
+  apk add --update --no-cache git gcc g++ && \
   git clone https://github.com/gohugoio/hugo.git $GOPATH/src/github.com/gohugoio/hugo && \
   cd ${GOPATH:-$HOME/go}/src/github.com/gohugoio/hugo && \
   git checkout v$HUGO_VERSION && \

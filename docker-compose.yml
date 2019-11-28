@@ -22,7 +22,7 @@
 
 # HOW TO USE THIS FILE
 #
-# 1. Install Docker and Docker Compose on a host
+# 1. Install Docker and Docker Compose on a host machine
 # 2. Copy `Dockerfile` and `docker-compose.yml` to directory of choice
 # 3. Run `docker build .` to build after-dark image
 # 4. Run `mkdir -p site/content` to contain your config and site content
