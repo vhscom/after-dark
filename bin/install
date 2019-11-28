@@ -86,12 +86,14 @@ theme = [
 
 disableLiveReload = false # Optional, set true to disable live reload
 enableRobotsTXT = true # Suggested, enable robots.txt file
-
-[markup.highlight]
-  noClasses = false # Required for custom syntax highlighting
-
 sectionPagesMenu = "main" # Enable menu system for lazy bloggers
-footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
+
+[markup]
+  defaultMarkdownHandler = "blackfriday"
+  [markup.blackfriday]
+    footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
+  [markup.highlight]
+    noClasses = false # Required for custom syntax highlighting
 
 [params]
   description = "" # Suggested, controls default description meta
