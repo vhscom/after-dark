@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 #
 # Copyright (C) 2019  VHS <vhsdev@tutanota.com>
 #
@@ -85,8 +87,8 @@ theme = [
 disableLiveReload = false # Optional, set true to disable live reload
 enableRobotsTXT = true # Suggested, enable robots.txt file
 
-pygmentsCodefences = true # Suggested, highlight fenced code blocks
-pygmentsUseClasses = true # Required for custom syntax highlighting
+[markup.highlight]
+  noClasses = false # Required for custom syntax highlighting
 
 sectionPagesMenu = "main" # Enable menu system for lazy bloggers
 footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
@@ -141,8 +143,6 @@ serve_help () {
    echo "Starting help server ..."
    hugo serve --disableLiveReload --port 1414 1>/dev/null &
 }
-
-set -e
 
 echo "Welcome to the After Dark quick installer. Press CTRL-C at any time to abort."
 
