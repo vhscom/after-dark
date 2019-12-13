@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [9.2.0](https://codeberg.org/vhs/after-dark/compare/v9.1.0...v9.2.0) (2019-12-13)
+
+
+### Bug Fixes
+
+* **markdown:** restore footnote return links in hugo 0.60.0+ ([01aef48](https://codeberg.org/vhs/after-dark/commit/01aef48))
+
+
+### Build System
+
+* **docker:** update for hugo release 0.61.0 ([0a1dc50](https://codeberg.org/vhs/after-dark/commit/0a1dc50))
+* **feature/extended-builds:** upgrade extended build to hugo@0.60.0, go@1.13.4 and alpine@3.10 ([b229f2b](https://codeberg.org/vhs/after-dark/commit/b229f2b))
+
+
+### Features
+
+* **feat/extended-builds:** add dockerfile and docker-compose ([52f1830](https://codeberg.org/vhs/after-dark/commit/52f1830))
+
+
+
 ## [9.1.0](https://codeberg.org/vhs/after-dark/compare/v9.0.0...v9.1.0) (2019-08-21)
 
 
