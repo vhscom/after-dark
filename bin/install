@@ -1,7 +1,4 @@
-#!/bin/sh
-
-set -e
-
+#!/bin/sh -e
 #
 # Copyright (C) 2019  VHS <vhsdev@tutanota.com>
 #
@@ -88,12 +85,10 @@ disableLiveReload = false # Optional, set true to disable live reload
 enableRobotsTXT = true # Suggested, enable robots.txt file
 sectionPagesMenu = "main" # Enable menu system for lazy bloggers
 
-[markup]
-  defaultMarkdownHandler = "blackfriday"
-  [markup.blackfriday]
-    footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
-  [markup.highlight]
-    noClasses = false # Required for custom syntax highlighting
+[markup.goldmark.renderer]
+  unsafe = true # Optional, allows HTML inside your CommonMark content
+[markup.highlight]
+  noClasses = false # Suggested, used for custom syntax highlighting
 
 [params]
   description = "" # Suggested, controls default description meta
