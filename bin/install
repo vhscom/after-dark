@@ -1,7 +1,4 @@
-#!/bin/sh
-
-set -e
-
+#!/bin/sh -e
 #
 # Copyright (C) 2019  VHS <vhsdev@tutanota.com>
 #
