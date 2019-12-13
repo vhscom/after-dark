@@ -27,7 +27,7 @@ ARG BUILD_TARGET=alpine3.10
 FROM golang:${GO_VERSION}-${BUILD_TARGET} AS hugobuilder
 
 # Set environment variables
-ENV HUGO_VERSION=0.60.0 \
+ENV HUGO_VERSION=0.61.0 \
     CGO_ENABLED=1 \
     GOOS=linux \
     GO111MODULE=on \
