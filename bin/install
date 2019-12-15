@@ -87,6 +87,9 @@ sectionPagesMenu = "main" # Enable menu system for lazy bloggers
 
 [markup.goldmark.renderer]
   unsafe = true # Optional, allows HTML inside your CommonMark content
+[markup.tableOfContents]
+  startLevel = 1 # Suggested, draws TOC using all heading levels
+  endLevel = 6 # Suggested, draws TOC using all heading levels
 [markup.highlight]
   noClasses = false # Suggested, used for custom syntax highlighting
 
