@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [9.2.1](https://codeberg.org/vhs/after-dark/compare/v9.2.0...v9.2.1) (2019-12-15)
+
+
+### Bug Fixes
+
+* collapse whitespace inside goldmark code blocks, alerts and cards ([5c9347d](https://codeberg.org/vhs/after-dark/commit/5c9347d))
+* print out the full table of contents ([c176a8c](https://codeberg.org/vhs/after-dark/commit/c176a8c))
+
+
+
 ## [9.2.0](https://codeberg.org/vhs/after-dark/compare/v9.1.0...v9.2.0) (2019-12-13)
 
 
