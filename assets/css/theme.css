@@ -126,11 +126,19 @@ html {
   font-size: 1rem;
 }
 .hack .alert .highlight:first-of-type .chroma,
-.hack .card .highlight:first-of-type .chroma {
+.hack .card .highlight:first-of-type .chroma,
+.hack .alert pre:first-of-type,
+.hack .alert p:first-of-type,
+.hack .card pre:first-of-type,
+.hack .card p:first-of-type {
   margin-top: unset;
 }
 .hack .alert .highlight:last-of-type .chroma,
-.hack .card .highlight:last-of-type .chroma {
+.hack .card .highlight:last-of-type .chroma,
+.hack .alert pre:last-of-type,
+.hack .alert p:last-of-type,
+.hack .card pre:last-of-type,
+.hack .card p:last-of-type {
   margin-bottom: unset;
 }
 .hack blockquote,
