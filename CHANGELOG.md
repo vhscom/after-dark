@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [9.2.2](https://codeberg.org/vhs/after-dark/compare/v9.2.1...v9.2.2) (2020-02-19)
+
+
+### Bug Fixes
+
+* **layouts/_default:** show posts on homepage as expected ([60d7c0d](https://codeberg.org/vhs/after-dark/commit/60d7c0d)), closes [#174](https://codeberg.org/vhs/after-dark/issues/174)
+* **shortcode/blockquote:** prevent raw html output when body used with citelink attr ([903dd69](https://codeberg.org/vhs/after-dark/commit/903dd69))
+
+
+
 ### [9.2.1](https://codeberg.org/vhs/after-dark/compare/v9.2.0...v9.2.1) (2019-12-15)
 
 
