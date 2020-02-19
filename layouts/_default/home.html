@@ -61,7 +61,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   {{ end }}
   {{ if not .Site.Params.layout.home.hide_blog }}
     <section itemscope itemtype="https://schema.org/Blog">
-      {{ range (.Paginate (where .Data.Pages "Type" "in" (site.Params.layout.homepage.sections | default (slice "post")))).Pages }}
+      {{ range (.Paginate (where .Site.RegularPages "Type" "in" (site.Params.layout.homepage.sections | default (slice "post")))).Pages }}
         {{ partial "page-summary.html" . }}
       {{ end }}
     </section>
