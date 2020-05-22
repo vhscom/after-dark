@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019  VHS <vhsdev@tutanota.com>
+# Copyright (C) 2019, 2020  VHS <vhsdev@tutanota.com>
 #
 # This file is part of After Dark.
 #
@@ -17,17 +17,17 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-# DOCKER-VERSION 19.03.5, build 633a0ea 
+# DOCKER-VERSION 19.03.8-ce, build afacb8b7f0
 
 # Specify build image
-ARG GO_VERSION=1.13.4
-ARG BUILD_TARGET=alpine3.10
+ARG GO_VERSION=1.14.3
+ARG BUILD_TARGET=alpine3.11
 
 # Pull builder base image
 FROM golang:${GO_VERSION}-${BUILD_TARGET} AS hugobuilder
 
 # Set hugo environment variables
-ENV HUGO_VERSION=0.61.0 \
+ENV HUGO_VERSION=0.71.0 \
     CGO_ENABLED=1 \
     GOOS=linux \
     GO111MODULE=on \
