@@ -6,7 +6,7 @@ tags = ["docker", "container", "sass", "cloud", "ci"]
 features = ["code highlighter", "related content"]
 [[copyright]]
   owner = "VHS"
-  date = "2019"
+  date = "2019, 2020"
   license = "agpl-3.0-or-later"
 +++
 
@@ -22,7 +22,7 @@ Build container uses Alpine and includes `musl-dev` for high-performance. Update
 
 ```sh
 docker create -it --name temp f2b785583ce8 sh && \
-sudo docker cp temp:/hugo /usr/local/bin && \
+sudo docker cp temp:/usr/local/bin/hugo /usr/local/bin && \
 docker rm -fv temp
 ```
 
