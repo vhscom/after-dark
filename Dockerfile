@@ -20,14 +20,14 @@
 # DOCKER-VERSION 19.03.8-ce, build afacb8b7f0
 
 # Specify build image
-ARG GO_VERSION=1.14.3
-ARG BUILD_TARGET=alpine3.11
+ARG GO_VERSION=1.15.6
+ARG BUILD_TARGET=alpine3.12
 
 # Pull builder base image
 FROM golang:${GO_VERSION}-${BUILD_TARGET} AS hugobuilder
 
 # Set hugo environment variables
-ENV HUGO_VERSION=0.71.0 \
+ENV HUGO_VERSION=0.78.1 \
     CGO_ENABLED=1 \
     GOOS=linux \
     GO111MODULE=on \

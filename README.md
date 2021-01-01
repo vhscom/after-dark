@@ -45,13 +45,32 @@ Click a link below to learn more:
 
 Visit the [official docs](https://vhs.codeberg.page/after-dark) for demo and documentation. For an example site see [vhs.codeberg.page](https://vhs.codeberg.page). Additional examples listed in the source repository Wiki.
 
-## Getting Started
+## Requirements
 
-[Install Hugo](https://gohugo.io/getting-started/installing) `0.51` or greater on your machine before getting started unless starting with [After Dark K3s](https://vhs.codeberg.page/after-dark/extra/after-dark-k3s) or creating an [Extended Build](https://vhs.codeberg.page/after-dark/#feature-builds).
+[Install Hugo](https://gohugo.io/getting-started/installing) `0.51` or greater on your machine before getting started.
 
-### Installation
+## Installation
+### Quick
 
-For fastest installation use the provided [Quick Install](https://vhs.codeberg.page/after-dark/feature/quick-install/) script. Quick Install is ideal for first-time users and does not require use of git. Use it to automatically set-up, configure and run a sample After Dark website you may re-purpose as your own.
+Use the [Quick Install](https://vhs.codeberg.page/after-dark/feature/quick-install/) script. Quick Install is ideal for first-time users and does not require and understanding of git. Use it to automatically set-up, configure and run a sample After Dark website you can use to preview the software.
+
+### Docker
+
+```sh
+docker pull vhs after-dark
+```
+
+### NPM
+
+```sh
+npm i after-dark
+```
+
+### Kubernetes
+
+Visit the [After Dark K3s](https://vhs.codeberg.page/after-dark/extra/after-dark-k3s) repo for setup instructions.
+
+### Additionally
 
 By convention After Dark may be used with an existing Hugo site by git cloning to or adding as a submodule of the `themes` directory:
 
