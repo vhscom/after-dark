@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [9.2.3](https://codeberg.org/vhs/after-dark/compare/v9.2.2...v9.2.3) (2021-01-04)
+
 ### [9.2.2](https://codeberg.org/vhs/after-dark/compare/v9.2.1...v9.2.2) (2020-02-19)
 
 
