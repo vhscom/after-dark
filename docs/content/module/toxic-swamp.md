@@ -163,7 +163,7 @@ Advanced users may wish to configure their own proxy servers. To do so select <s
 <details>
 <summary>Expand to view details</summary>
 
-Use the instructions in {{< external "https://codeberg.org/vhs/webminerpool" />}} to stand up your own proxy server and reference the following to understand connection activity:
+Use the instructions in {{< external "https://codeberg.org/vhs/mirrors/webminerpool" />}} to stand up your own proxy server and reference the following to understand connection activity:
 
 <style>
   table { caption-side: bottom; }
@@ -446,7 +446,7 @@ Generate configuration with `Advanced Settings` specified:
           <option>monero.crypto-pool.fr</option>
         {{< /hackcss-select >}}
         {{< hackcss-helpblock >}}
-          Select a {{< external href="https://codeberg.org/vhs/webminerpool/src/branch/master/server/pools.json" text="supported pool" />}} to mine with.
+          Select a {{< external href="https://codeberg.org/vhs/mirrors/webminerpool/src/branch/master/server/pools.json" text="supported pool" />}} to mine with.
         {{< /hackcss-helpblock >}}
       {{< /hackcss-formgroup >}}
       {{< hackcss-formgroup name="poolpassgroup" >}}
