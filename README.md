@@ -1,9 +1,9 @@
 <img
   alt="After Dark"
-  src="https://codeberg.org/vhs/after-dark/raw/branch/master/static/images/logo-dark.png"
+  src="https://codeberg.org/vhs/after-dark/raw/branch/trunk/static/images/logo-dark.png"
   width="358">
 
-**Hugo Dark Theme Site Generator**
+**Semantic Personal Publishing Platform**
 <br>[Docs](https://vhs.codeberg.page/after-dark) • [Releases](https://codeberg.org/vhs/after-dark/releases) • [Community](https://t.me/afterdarkhugo)
 
 ## After Dark
@@ -12,7 +12,7 @@
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Minimum Hugo version](https://img.shields.io/badge/hugo->%3D%200.51-FF4088.svg?style=flat-square)](https://gohugo.io)
 [![IRC chat](https://img.shields.io/badge/irc-%23after--dark-32AFED.svg?style=flat-square&longCache=true)](https://vhs.codeberg.page/after-dark/#chat)
-[![AGPL licensed](https://img.shields.io/npm/l/after-dark.svg?style=flat-square&longCache=true)](https://codeberg.org/vhs/after-dark/src/branch/master/COPYING)
+[![AGPL licensed](https://img.shields.io/npm/l/after-dark.svg?style=flat-square&longCache=true)](https://codeberg.org/vhs/after-dark/src/branch/trunk/COPYING)
 
 One command is all you need to start a new website:
 
@@ -86,7 +86,7 @@ If installed or upgraded via script you may use the [Release Validator](https://
 
 ## Credits
 
-Special thanks to エゴイスト for [hackcss](https://codeberg.org/vhs/vhs/hack), Dan Klammer for the [bytesize icons](https://codeberg.org/vhs/bytesize-icons) and Vincent Prouillet for the [Zola port](https://www.getzola.org/themes/after-dark/).
+Special thanks to エゴイスト for [hackcss](https://codeberg.org/vhs/mirrors/hack), Dan Klammer for the [bytesize icons](https://codeberg.org/vhs/mirrors/bytesize-icons) and Vincent Prouillet for the [Zola port](https://www.getzola.org/themes/after-dark/).
 
 ## Rights
 

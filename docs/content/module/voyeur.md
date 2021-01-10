@@ -12,7 +12,7 @@ features = ["related content", "snippets", "section menu"]
   license = "agpl-3.0-or-later"
 +++
 
-**Fathom Mirror:** {{< external "https://codeberg.org/vhs/fathom" />}}<br>
+**Fathom Mirror:** {{< external "https://codeberg.org/vhs/mirrors/fathom" />}}<br>
 **Module Source:** {{< external "https://codeberg.org/vhs/voyeur" />}}
 
 {{< figure alt="After Dark screenshots"
@@ -49,4 +49,4 @@ theme = [
 ]
 {{< /highlight >}}
 
-See {{< external href="https://codeberg.org/vhs/voyeur/src/branch/master/README.md" text="README.md" />}} to confirm you're using the minimum required version of After Dark; and module setup, configuration and usage instructions. If you need help you may {{< external href="https://codeberg.org/vhs/voyeur/issues" text="Submit an Issue" />}} with your question.
+See {{< external href="https://codeberg.org/vhs/voyeur/src/branch/trunk/README.md" text="README.md" />}} to confirm you're using the minimum required version of After Dark; and module setup, configuration and usage instructions. If you need help you may {{< external href="https://codeberg.org/vhs/voyeur/issues" text="Submit an Issue" />}} with your question.
