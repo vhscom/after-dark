@@ -48,4 +48,4 @@ theme = [
 ]
 {{< /highlight >}}
 
-See {{< external href="https://codeberg.org/vhs/hall-of-mirrors/src/branch/master/README.md" text="README.md" />}} to confirm you're using the minimum required version of After Dark; and module setup, configuration and usage instructions. If you need help you may {{< external href="https://codeberg.org/vhs/hall-of-mirrors/issues" text="Submit an Issue" />}} with your question.
+See {{< external href="https://codeberg.org/vhs/hall-of-mirrors/src/branch/trunk/README.md" text="README.md" />}} to confirm you're using the minimum required version of After Dark; and module setup, configuration and usage instructions. If you need help you may {{< external href="https://codeberg.org/vhs/hall-of-mirrors/issues" text="Submit an Issue" />}} with your question.
