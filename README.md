@@ -3,7 +3,7 @@
   src="https://codeberg.org/vhs/after-dark/raw/branch/trunk/static/images/logo-dark.png"
   width="358">
 
-**Semantic Personal Publishing Platform**
+**Retro Dark Theme for Hugo**
 <br>[Docs](https://vhs.codeberg.page/after-dark) • [Releases](https://codeberg.org/vhs/after-dark/releases) • [Community](https://t.me/afterdarkhugo)
 
 ## After Dark
@@ -14,61 +14,59 @@
 [![IRC chat](https://img.shields.io/badge/irc-%23after--dark-32AFED.svg?style=flat-square&longCache=true)](https://vhs.codeberg.page/after-dark/#chat)
 [![AGPL licensed](https://img.shields.io/npm/l/after-dark.svg?style=flat-square&longCache=true)](https://codeberg.org/vhs/after-dark/src/branch/trunk/COPYING)
 
-One command is all you need to start a new website:
+## Features
+
+- **Developer Focused:** Cross-platform, 1 dependency, single-codebase.
+- **Incredibly Fast:** ~0.615s average build time and decisecond page loads.
+- **Privacy Aware:** No cookies, no trackers, no external requests.
+- **Securely Designed:** Source-level integrity checking and strict content security policy.
+- **Advanced Graphics:** BPG image support, PhotoSwipe support, aggressive lazy-loading.
+- **Easily Customized:** Override any theme template to compose your own views.
+- **Fuzzy Search:** Offline, automatic and no third-parties.
+- **Batteries Included**: Integrates with Gitea, Kubernetes, Traefik and Fathom Analytics.
+- **Extended Builds:** Add Sass support to your project and decrease built times.
+- **Detailed Docs:** Includes example documentation website written using After Dark.
+
+## Screenshot
+
+[![Demo](https://codeberg.org/vhs/after-dark/raw/branch/trunk/docs/static/images/screenshots/after-dark-v6.15.0-homepage-fs8.png)](https://codeberg.org/vhs/after-dark)
+
+## Requirements
+
+Hugo 0.51+ is the only requirement. ([Install instructions](https://gohugo.io/getting-started/installing/))
+
+### Installation
+
+The fastest installation method is to run the quick install script:
 
 ```sh
 wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
 ```
 
-**After Dark** is an extensible, robust templating system for [Hugo](https://gohugo.io) written from the ground up for speed, privacy and security.
+Quick Install is ideal for first-time users and does not require use of git. Quick install will automatically run two servers: One containing your website ready to use and the other containing comprehensive help documentation.
 
-## Features
-
-Click a link below to learn more:
-
-- **[Developer Focused](https://vhs.codeberg.page/after-dark/#feature-workflow)**: Cross-platform, 1 dependency, single-codebase.
-- **[Incredibly Fast](https://vhs.codeberg.page/after-dark/#feature-speed)**: ~0.615s builds and decisecond page loads.
-- **[Privacy Aware](https://vhs.codeberg.page/after-dark/#feature-privacy)**: No cookies, no external requests, ephemeral hosting.
-- **[Securely Designed](https://vhs.codeberg.page/after-dark/#feature-security)**: Source-level integrity, content security and more.
-- **[Advanced Graphics](https://vhs.codeberg.page/after-dark/#feature-graphics)**: Silky-smooth post and homepage images.
-- **[Easily Customized](https://vhs.codeberg.page/after-dark/#feature-customize)**: Easily modify website look-and-feel.
-- **[Fuzzy Search](https://vhs.codeberg.page/after-dark/#feature-search)**: Offline, automatic and no third-parties.
-- **[Rewards System](https://vhs.codeberg.page/after-dark/#feature-rewards)**: Earn rewards for keeping your software up-to-date.
-- **[Batteries Included](https://vhs.codeberg.page/after-dark/#feature-extras)**: Integrate with Gitea, k8s, Traefik and Fathom.
-- **[Extended Builds](https://vhs.codeberg.page/after-dark/#feature-builds)**: Create high-performance Hugo builds with integrated Sass support.
-
-## Screenshot
-
-[![Demo](https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png)](https://vhs.codeberg.page/after-dark)
-
-## Demo
-
-Visit the [official docs](https://vhs.codeberg.page/after-dark) for demo and documentation. For an example site see [vhs.codeberg.page](https://vhs.codeberg.page). Additional examples listed in the source repository Wiki.
-
-## Getting Started
-
-[Install Hugo](https://gohugo.io/getting-started/installing) `0.51` or greater on your machine before getting started unless starting with [After Dark K3s](https://vhs.codeberg.page/after-dark/extra/after-dark-k3s) or creating an [Extended Build](https://vhs.codeberg.page/after-dark/#feature-builds).
-
-### Installation
-
-For fastest installation use the provided [Quick Install](https://vhs.codeberg.page/after-dark/feature/quick-install/) script. Quick Install is ideal for first-time users and does not require use of git. Use it to automatically set-up, configure and run a sample After Dark website you may re-purpose as your own.
-
-By convention After Dark may be used with an existing Hugo site by git cloning to or adding as a submodule of the `themes` directory:
+By convention After Dark may also be used with an existing Hugo site by git cloning to or adding as a submodule of the `themes` directory of your Hugo site:
 
 ```sh
 flying-toasters
 ├── static
 └── themes
-    └── after-dark # the clone or submodule
+    └── after-dark # git clone or submodule
 ```
 
-See [Install a Single Theme](https://gohugo.io/themes/installing-and-using-themes/#install-a-single-theme) on the Hugo docs site for further instructions.
+See [Install a Single Theme](https://gohugo.io/themes/installing-and-using-themes/#install-a-single-theme) on the Hugo docs site for additional instructions.
 
 After Dark releases are tagged in git and [packaged on NPM](https://www.npmjs.com/package/after-dark). Use the NPM package to integrate After Dark into existing workflows.
 
 ### Usage
 
-Review the [Online Help](https://vhs.codeberg.page/after-dark/feature/online-help/) to learn how to set-up and customize After Dark. Docs included with installation and may be served locally.
+Run the online help server after installing for detailed instructions:
+
+```
+sh ./themes/after-dark/bin/help
+```
+
+See the [Hugo docs](https://gohugo.io/documentation/) as well. There's also a [Hugo community forum](https://discourse.gohugo.io/) in case you get stuck.
 
 ### Upgrading
 
