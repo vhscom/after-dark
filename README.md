@@ -79,7 +79,8 @@ Special thanks to エゴイスト for [hackcss](https://codeberg.org/vhs/mirrors
 
 ## Rights
 
-Copyright (C) 2019  VHS <vhsdev@tutanota.com>
+After Dark - A retro dark theme for Hugo.<br>
+Copyright (C) 2019&nbsp;&nbsp;VHS &lt;vhsdev@tutanota.com&gt; (https://vhs.codeberg.page)
 
 After Dark is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
