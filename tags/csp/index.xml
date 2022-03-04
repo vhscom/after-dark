@@ -1,0 +1,40 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>csp on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/csp/</link>
+    <description>Recent content in csp on After Dark</description>
+    <image>
+      <title>csp on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/csp/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/csp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Content Security Policy</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/content-security-policy/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/content-security-policy/</guid>
+      <description>After Dark helps you secure your site using Content Security Policy (CSP). Basic CSP is enabled by default and Advanced Configurations are also possible.
+Basic CSP offers minimal protection but is still helpful as it keeps resources from accidentally being loaded over http. In addition, Basic CSP automatically blocks all Flash and Silverlight objects before they have a chance to load.
+Basic Configuration Disable CSP site-wide add the following to your site config:</description>
+      <category domain="https://vhs.codeberg.page/categories/security">Security</category>
+      <content:encoded><![CDATA[After Dark helps you secure your site using Content Security Policy (CSP). Basic CSP is enabled by default and Advanced Configurations are also possible.
+Basic CSP offers minimal protection but is still helpful as it keeps resources from accidentally being loaded over http. In addition, Basic CSP automatically blocks all Flash and Silverlight objects before they have a chance to load.
+Basic Configuration Disable CSP site-wide add the following to your site config:
+[params] disable_csp = true # disable site-wide Disable CSP for a specific page using front matter:
+disable_csp = true # disable for page Advanced Configuration Advanced configuration allows you to fine-tune policy directives based on your specific needs. To get started specify at least 1 CSP directive in site config.
+Note: You may wish to Disable LiveReload while defining advanced config.
+ Define the script-src directive site-wide:
+[params.security.csp.directives] scriptSrc = [ &amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-inline&amp;#39;&amp;#34;, &amp;#34;https:&amp;#34;, &amp;#34;&amp;#39;sha512-Jx/MqTxYWqHdoOkHItRJJZCvFDhERPr5gG4I5ESu3V&#43;BgQyAQ6wXfdsGzhzmT0yyvkAWz2jbrn81q90RRJTSTg==&amp;#39;&amp;#34;, &amp;#34;&amp;#39;sha512-hno7WeTIciCJSjg/myjyK30HYkrcGCVwo4g4SpUalvrs3r2lS7bPNIQwbCNypKbg7BZ1sA4AsGnk6Gq4NOKpGA==&amp;#39;&amp;#34;, &amp;#34;&amp;#39;sha512-ISTAV0GadOIz/NXXHOS&amp;amp;&#43;eCM0ysXVVHhQTlvA6LJxz/DeA5yIxm0Vqf5IE&amp;amp;&#43;WH0yuuXkayAKtoZkQ326nch5f/fg==&amp;#39;&amp;#34;, &amp;#34;&amp;#39;strict-dynamic&amp;#39;&amp;#34; ] This will override the script-src directive&amp;rsquo;s advanced default:
+   Directive Mapping Advanced Default     default-src defaultSrc &amp;lsquo;none&amp;rsquo;   connect-src connectSrc &amp;lsquo;self&amp;rsquo;   worker-src workerSrc &amp;lsquo;self&amp;rsquo;   font-src fontSrc &amp;lsquo;self&amp;rsquo;   media-src mediaSrc &amp;lsquo;self&amp;rsquo;   img-src imgSrc &amp;lsquo;self&amp;rsquo; data:   script-src scriptSrc &amp;lsquo;none&amp;rsquo;   style-src styleSrc &amp;lsquo;self&amp;rsquo; &amp;lsquo;unsafe-inline&amp;rsquo;   frame-src frameSrc &amp;lsquo;self&amp;rsquo;   object-src objectSrc &amp;lsquo;none&amp;rsquo;    Once set, view the Content-Security-Policy meta tag in the head of your page and inspect the console for errors as you navigate to different pages. Each time you encounter an error caused by CSP is an opportunity to improve your policy.
+Add page-specific directives from page front matter using the same structure and naming conventions used in site config to append items for that page:
+[security.csp.directives] scriptSrc = [ &amp;#34;&amp;#39;sha512-TKVuLlCT8&#43;a0Chpa6Pw3clhu9fhZ9JOzgblgxQaUQVP/z4lfPnrdyWDOgucORnS2qapWu/iPVG2d0ywyGH2NjA==&amp;#39;&amp;#34; ]  Note: Page-specific directives will not override any site-wide setting and will not apply without first overriding its advanced default via site config.  Continue overriding advanced defaults as necessary until all CSP errors are resolved or you&amp;rsquo;re satisfied with the changes.
+Additional Resources  About Content Security Policy Test policy with Observatory by Mozilla See CSP examples to learn more  ]]></content:encoded>
+    </item>
+  </channel>
+</rss>

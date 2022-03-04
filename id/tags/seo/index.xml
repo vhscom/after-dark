@@ -1,0 +1,79 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>SEO on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/id/tags/seo/</link>
+    <description>Recent content in SEO on After Dark</description>
+    <image>
+      <title>SEO on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/id/tags/seo/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>id-ID</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:16 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/id/tags/seo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Keywords Meta</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/keywords-meta/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/keywords-meta/</guid>
+      <description>Kata kunci menawarkan penjelasan kepada robot mengenai masalah pada konten anda. After Dark menghasilkan kata kunci secara otomatis untuk halaman yang diberikan tag taksonomi untuk halaman itu, dan untuk halaman lain menggunakan taksonomi kategori situs.
+Sesuaikan frase kunci dari Front Matter menggunakan keywords array seperti:
+keywords = [ &amp;#34;web development&amp;#34;, &amp;#34;digital marketing&amp;#34;, &amp;#34;social media&amp;#34;, &amp;#34;link building&amp;#34; ] Meskipun dianggap tidak relevan untuk mencari peringkat, kata kunci dapat menjadi cara yang berguna untuk mendokumentasikan istilah pencarian target dan frase kunci yang digunakan dalam PPC kampanye.</description>
+      <category domain="https://vhs.codeberg.page/categories/search">Search</category>
+      <content:encoded><![CDATA[Kata kunci menawarkan penjelasan kepada robot mengenai masalah pada konten anda. After Dark menghasilkan kata kunci secara otomatis untuk halaman yang diberikan tag taksonomi untuk halaman itu, dan untuk halaman lain menggunakan taksonomi kategori situs.
+Sesuaikan frase kunci dari Front Matter menggunakan keywords array seperti:
+keywords = [ &amp;#34;web development&amp;#34;, &amp;#34;digital marketing&amp;#34;, &amp;#34;social media&amp;#34;, &amp;#34;link building&amp;#34; ] Meskipun dianggap tidak relevan untuk mencari peringkat, kata kunci dapat menjadi cara yang berguna untuk mendokumentasikan istilah pencarian target dan frase kunci yang digunakan dalam PPC kampanye.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Referrer Policy</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/referrer-policy/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/referrer-policy/</guid>
+      <description>After Dark menambahkan Referrer Policy untuk meningkatkan keamanan situs dan meningkatkan privasi pengunjung di luar browser standar menggunakan kebijakan seluruh situs sederhana.
+Sesuaikan site-wide defaultsame-origin dari Site Configuration:
+[params.seo] referrer = &amp;#34;same-origin&amp;#34; Melonggarkan kebijakan keamanan dengan:
+ Menyesuaikan standar seluruh situs; Menggunakan atribut referrerpolicy dari External Shortcode; Menggunakan nested browsing context untuk menyesuaikan secara kontekstual.  Lihat Referrer Policy on W3C untuk daftar nilai yang memungkinkan.</description>
+      <category domain="https://vhs.codeberg.page/categories/security">Security</category>
+      <content:encoded><![CDATA[After Dark menambahkan Referrer Policy untuk meningkatkan keamanan situs dan meningkatkan privasi pengunjung di luar browser standar menggunakan kebijakan seluruh situs sederhana.
+Sesuaikan site-wide defaultsame-origin dari Site Configuration:
+[params.seo] referrer = &amp;#34;same-origin&amp;#34; Melonggarkan kebijakan keamanan dengan:
+ Menyesuaikan standar seluruh situs; Menggunakan atribut referrerpolicy dari External Shortcode; Menggunakan nested browsing context untuk menyesuaikan secara kontekstual.  Lihat Referrer Policy on W3C untuk daftar nilai yang memungkinkan.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Structured Data</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/structured-data/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/structured-data/</guid>
+      <description>After Dark menghasilkan metadata terstruktur menggunakan schema.org spesifikasi untuk postingan blog, Custom Homepage, Related Content, Featured Posts, Menu Bagian, Hall of Mirrors galeri gambar dan mengadaptasi data secara otomatis menggunakan yang ditentukan penulis Post Bylines seperti yang ditunjukkan disini:
+   Properti skema Nilai frontmatter     author? author   datePublished publishdate atau date   articleSection categories    Post Images use Page Resources Metadata to add image captions:</description>
+      <category domain="https://vhs.codeberg.page/categories/search">Search</category>
+      <content:encoded><![CDATA[After Dark menghasilkan metadata terstruktur menggunakan schema.org spesifikasi untuk postingan blog, Custom Homepage, Related Content, Featured Posts, Menu Bagian, Hall of Mirrors galeri gambar dan mengadaptasi data secara otomatis menggunakan yang ditentukan penulis Post Bylines seperti yang ditunjukkan disini:
+   Properti skema Nilai frontmatter     author? author   datePublished publishdate atau date   articleSection categories    Post Images use Page Resources Metadata to add image captions:
+   Schema Property Header Image Resource Metadata     caption? creator [sameas domain] or caption    Pertimbangkan untuk menambahkan data terstruktur saat membuat Custom Layouts untuk meningkatkan semantik halaman dan SEO yang lebih baik.
+Pelajari lebih lanjut tentang data terstruktur menggunakan sumber daya berikut:
+  HTML Microdata on W3C  Microdata on MDN  Schema Structured Data on Moz  Gunakan Webmaster Tools untuk memvalidasi data terstruktur. Ini dapat dilakukan dari mesin pengembangan menggunakan ephemeral hosting.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Webmaster Tools</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/webmaster-tools/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/webmaster-tools/</guid>
+      <description>Verifikasi Webmaster Gunakan berandameta untuk memverifikasi situs anda dengan Google, Bing, Alexa dan Yandex. Semua verifikasi bersifat opsional dan beberapa penyedia mengizinkan anda submit manually.
+Untuk memverifikasi denganmeta tambahkan yang berikut ini ke Site Configuration dan isi nilai yang diberikan kepada anda oleh konsol webmaster mesin pencari atau sejenisnya :
+[params.seo.webmaster_verifications] google = &amp;#34;&amp;#34; # Opsional, lihat https://search.google.com/search-console bing = &amp;#34;&amp;#34; # Opsional, lihat https://www.bing.com/toolbox/webmaster/ yandex = &amp;#34;&amp;#34; # Opsional, lihat https://webmaster.</description>
+      <category domain="https://vhs.codeberg.page/categories/search">Search</category>
+      <content:encoded><![CDATA[Verifikasi Webmaster Gunakan berandameta untuk memverifikasi situs anda dengan Google, Bing, Alexa dan Yandex. Semua verifikasi bersifat opsional dan beberapa penyedia mengizinkan anda submit manually.
+Untuk memverifikasi denganmeta tambahkan yang berikut ini ke Site Configuration dan isi nilai yang diberikan kepada anda oleh konsol webmaster mesin pencari atau sejenisnya :
+[params.seo.webmaster_verifications] google = &amp;#34;&amp;#34; # Opsional, lihat https://search.google.com/search-console bing = &amp;#34;&amp;#34; # Opsional, lihat https://www.bing.com/toolbox/webmaster/ yandex = &amp;#34;&amp;#34; # Opsional, lihat https://webmaster.yandex.com/ alexa = &amp;#34;&amp;#34; # Opsional, mengklaim dihentikan (lihat catatan di bawah ini)  Note: Mengklaim situs anda dengan Alexa dihentikan dalam May 2016.  Nanti anda dapat menghapus verifikasi yang tidak anda perlukan lagi atau memutuskan untuk tidak menggunakannya.
+Kirim secara manual Mengirim peta situs anda secara manual untuk pengindeksan pencarian:
+ Google:   Bing:   Uji Data Terstruktur Untuk menguji dengan Yandex gunakan Structured data validator alat uji. Untuk Google kirimkan formulir dibawah ini dengan URL yang ingin anda uji:
+Test URL:   Gunakan Hosting Ephemeral untuk memeriksa situs anda saat dalam pengembangan/pengujian.
+Menguji dan memantau kecepatan Tidak ada yang menyukai website yang lambat. Mengevaluasi dan menganalisa kinerja dari berbagai lokasi di seluruh dunia menggunakan Pingdom Tools dan webpagetest.org secara gratis.
+Memantau kinerja dari waktu ke waktu menggunakan SpeedTracker.
+Layanan Tambahan   webmaster.yandex.com/tools/robotstxt/  w3c.github.io/developers/tools/  ]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>go on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/go/</link>
+    <description>Recent content in go on After Dark</description>
+    <image>
+      <title>go on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/go/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Analysis</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/code-analysis/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/code-analysis/</guid>
+      <description>After Dark includes a source build of htmltest which may be used to analyze HTML generated for problems such as linkrot, meta attributes and more.
+Code analysis is ideal for identifying potential 404 errors and determining when to link to the archived version of an external page which has gone offline.
+To use install Docker then run the following command:
+cd after-dark/docker/htmltest &amp;amp;&amp;amp; docker build --rm . Build container uses Alpine and includes musl-dev for high-performance.</description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[After Dark includes a source build of htmltest which may be used to analyze HTML generated for problems such as linkrot, meta attributes and more.
+Code analysis is ideal for identifying potential 404 errors and determining when to link to the archived version of an external page which has gone offline.
+To use install Docker then run the following command:
+cd after-dark/docker/htmltest &amp;amp;&amp;amp; docker build --rm . Build container uses Alpine and includes musl-dev for high-performance. Update the HTMLTEST_VERSION to get a specific release built. Upon successful build extract the resulting binary out of the scratch container like:
+docker create -it --name temp f2b785583ce8 sh &amp;amp;&amp;amp; \ sudo docker cp temp:/htmltest /usr/local/bin &amp;amp;&amp;amp; \ docker rm -fv temp Where f2b785583ce8 is the scratch container’s Image ID and /usr/local/bin is the destination on the host. Place executable in most appropriate directory.
+If using Hugo 0.56.x or higher may also possible to include htmltest as a Go module using Hugo Modules if your particular use case calls for it.
+See htmltest for documentation and usage.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

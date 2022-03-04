@@ -1,0 +1,41 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>shortcodes on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/shortcodes/</link>
+    <description>Recent content in shortcodes on After Dark</description>
+    <image>
+      <title>shortcodes on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/shortcodes/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Snippets</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/snippets/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/snippets/</guid>
+      <description>Snippets are template abstractions enabling you to reuse the same markup and logic used to create Shortcodes in your Custom Layouts.
+Take for example the included Button Group shortcode used for creating a set of styled buttons, which we&amp;rsquo;ll look at in detail here.
+First the partial:
+{{/*Copyright(C)2019VHS&amp;lt;vhsdev@tutanota.com&amp;gt;ThisfileispartofAfterDark.AfterDarkisfreesoftware:youcanredistributeitand/ormodifyitunderthetermsoftheGNUAfferoGeneralPublicLicenseaspublishedbytheFreeSoftwareFoundation,eitherversion3oftheLicense,or(atyouroption)anylaterversion.AfterDarkisdistributedinthehopethatitwillbeuseful,butWITHOUTANYWARRANTY;withouteventheimpliedwarrantyofMERCHANTABILITYorFITNESSFORAPARTICULARPURPOSE.SeetheGNUAfferoGeneralPublicLicenseformoredetails.YoushouldhavereceivedacopyoftheGNUAfferoGeneralPublicLicensealongwiththisprogram.Ifnot,see&amp;lt;https://www.gnu.org/licenses/&amp;gt;.*/-}} &amp;lt;div class=&amp;#34;btn-group{{ifeq.formactions&amp;#34;true&amp;#34;}}form-actions{{end}}{{with.class}}{{.}}{{end}}&amp;#34;&amp;gt; {{.body}} &amp;lt;/div&amp;gt; Now the shortcode:
+{{/*Copyright(C)2019VHS&amp;lt;vhsdev@tutanota.com&amp;gt;ThisfileispartofAfterDark.AfterDarkisfreesoftware:youcanredistributeitand/ormodifyitunderthetermsoftheGNUAfferoGeneralPublicLicenseaspublishedbytheFreeSoftwareFoundation,eitherversion3oftheLicense,or(atyouroption)anylaterversion.AfterDarkisdistributedinthehopethatitwillbeuseful,butWITHOUTANYWARRANTY;withouteventheimpliedwarrantyofMERCHANTABILITYorFITNESSFORAPARTICULARPURPOSE.SeetheGNUAfferoGeneralPublicLicenseformoredetails.YoushouldhavereceivedacopyoftheGNUAfferoGeneralPublicLicensealongwiththisprogram.Ifnot,see&amp;lt;https://www.gnu.org/licenses/&amp;gt;.*/-}} {{$formactions:=.Get&amp;#34;formactions&amp;#34;}} {{$class:=.Get&amp;#34;class&amp;#34;}} {{$body:=.Inner}} {{partial&amp;#34;components/buttongroup.html&amp;#34;(dict&amp;#34;formactions&amp;#34;$formactions&amp;#34;class&amp;#34;$class&amp;#34;body&amp;#34;$body)}} Notice how the shortcode serves only to collect input and call the partial, which contains all markup and display logic.</description>
+      <category domain="https://vhs.codeberg.page/categories/customizing">Customizing</category>
+      <content:encoded><![CDATA[Snippets are template abstractions enabling you to reuse the same markup and logic used to create Shortcodes in your Custom Layouts.
+Take for example the included Button Group shortcode used for creating a set of styled buttons, which we&amp;rsquo;ll look at in detail here.
+First the partial:
+{{/*Copyright(C)2019VHS&amp;lt;vhsdev@tutanota.com&amp;gt;ThisfileispartofAfterDark.AfterDarkisfreesoftware:youcanredistributeitand/ormodifyitunderthetermsoftheGNUAfferoGeneralPublicLicenseaspublishedbytheFreeSoftwareFoundation,eitherversion3oftheLicense,or(atyouroption)anylaterversion.AfterDarkisdistributedinthehopethatitwillbeuseful,butWITHOUTANYWARRANTY;withouteventheimpliedwarrantyofMERCHANTABILITYorFITNESSFORAPARTICULARPURPOSE.SeetheGNUAfferoGeneralPublicLicenseformoredetails.YoushouldhavereceivedacopyoftheGNUAfferoGeneralPublicLicensealongwiththisprogram.Ifnot,see&amp;lt;https://www.gnu.org/licenses/&amp;gt;.*/-}} &amp;lt;div class=&amp;#34;btn-group{{ifeq.formactions&amp;#34;true&amp;#34;}}form-actions{{end}}{{with.class}}{{.}}{{end}}&amp;#34;&amp;gt; {{.body}} &amp;lt;/div&amp;gt; Now the shortcode:
+{{/*Copyright(C)2019VHS&amp;lt;vhsdev@tutanota.com&amp;gt;ThisfileispartofAfterDark.AfterDarkisfreesoftware:youcanredistributeitand/ormodifyitunderthetermsoftheGNUAfferoGeneralPublicLicenseaspublishedbytheFreeSoftwareFoundation,eitherversion3oftheLicense,or(atyouroption)anylaterversion.AfterDarkisdistributedinthehopethatitwillbeuseful,butWITHOUTANYWARRANTY;withouteventheimpliedwarrantyofMERCHANTABILITYorFITNESSFORAPARTICULARPURPOSE.SeetheGNUAfferoGeneralPublicLicenseformoredetails.YoushouldhavereceivedacopyoftheGNUAfferoGeneralPublicLicensealongwiththisprogram.Ifnot,see&amp;lt;https://www.gnu.org/licenses/&amp;gt;.*/-}} {{$formactions:=.Get&amp;#34;formactions&amp;#34;}} {{$class:=.Get&amp;#34;class&amp;#34;}} {{$body:=.Inner}} {{partial&amp;#34;components/buttongroup.html&amp;#34;(dict&amp;#34;formactions&amp;#34;$formactions&amp;#34;class&amp;#34;$class&amp;#34;body&amp;#34;$body)}} Notice how the shortcode serves only to collect input and call the partial, which contains all markup and display logic. This delegation of responsibility is the abstraction that enables reuse between content and template.
+Now let&amp;rsquo;s see how to actually use it.
+Use the Button Group shortcode to group buttons in content:
+{{&amp;lt; hackcss-buttongroup &amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Left&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Middle&amp;#34; type=&amp;#34;info&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Right&amp;#34; isghost=&amp;#34;true&amp;#34; /&amp;gt;}} {{&amp;lt; /hackcss-buttongroup &amp;gt;}} Which creates a styled button group with three buttons as shown here:
+Left Middle Right  To reuse in layout mirror the partial call used inside the shortcode.
+All Shortcodes implementing hackcss components are built using the snippets template abstraction enabling each of them to be reused in Custom Layouts.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>updating on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/updating/</link>
+    <description>Recent content in updating on After Dark</description>
+    <image>
+      <title>updating on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/updating/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/updating/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upgrade Script</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/upgrade-script/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/upgrade-script/</guid>
+      <description>To check for updates and automatically upgrade After Dark to the latest version simply run the upgrade script from your site directory:
+cd flying toasters &amp;amp;&amp;amp; \ ./themes/after-dark/bin/upgrade If you&amp;rsquo;re already using the latest version the script will let you know:
+Did not upgrade after-dark. Already using latest version.  If an update is available the script will download and install it automatically:
+Starting upgrade from 6.7.6 to 6.8.0 ...</description>
+      <category domain="https://vhs.codeberg.page/categories/core">Core</category>
+      <content:encoded><![CDATA[To check for updates and automatically upgrade After Dark to the latest version simply run the upgrade script from your site directory:
+cd flying toasters &amp;amp;&amp;amp; \ ./themes/after-dark/bin/upgrade If you&amp;rsquo;re already using the latest version the script will let you know:
+Did not upgrade after-dark. Already using latest version.  If an update is available the script will download and install it automatically:
+Starting upgrade from 6.7.6 to 6.8.0 ...
+Version 6.8.0 downloaded to themes/after-dark
+Stopping help server if running ... Generating help documentation ...
+Upgrade complete! Please see CHANGELOG.md for changes.  If current version can&amp;rsquo;t be detected the script will prompt you:
+Cannot detect version. Upgrade after-dark anyway (y/n)? y
+Starting upgrade from unknown version to 6.12.1 ...
+Version 6.12.1 downloaded to themes/after-dark
+Stopping help server if running ... Generating help documentation ...
+Upgrade complete! Please see CHANGELOG.md for changes.  Like Quick Install the upgrade script is written to POSIX standard will not require additional dependencies to operate on most systems. Upon upgrade the Release Hash will update as well so you may Validate Release.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

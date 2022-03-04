@@ -1,0 +1,140 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>robots on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/robots/</link>
+    <description>Recent content in robots on After Dark</description>
+    <image>
+      <title>robots on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/robots/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/robots/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Analysis</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/code-analysis/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/code-analysis/</guid>
+      <description>After Dark includes a source build of htmltest which may be used to analyze HTML generated for problems such as linkrot, meta attributes and more.
+Code analysis is ideal for identifying potential 404 errors and determining when to link to the archived version of an external page which has gone offline.
+To use install Docker then run the following command:
+cd after-dark/docker/htmltest &amp;amp;&amp;amp; docker build --rm . Build container uses Alpine and includes musl-dev for high-performance.</description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[After Dark includes a source build of htmltest which may be used to analyze HTML generated for problems such as linkrot, meta attributes and more.
+Code analysis is ideal for identifying potential 404 errors and determining when to link to the archived version of an external page which has gone offline.
+To use install Docker then run the following command:
+cd after-dark/docker/htmltest &amp;amp;&amp;amp; docker build --rm . Build container uses Alpine and includes musl-dev for high-performance. Update the HTMLTEST_VERSION to get a specific release built. Upon successful build extract the resulting binary out of the scratch container like:
+docker create -it --name temp f2b785583ce8 sh &amp;amp;&amp;amp; \ sudo docker cp temp:/htmltest /usr/local/bin &amp;amp;&amp;amp; \ docker rm -fv temp Where f2b785583ce8 is the scratch container’s Image ID and /usr/local/bin is the destination on the host. Place executable in most appropriate directory.
+If using Hugo 0.56.x or higher may also possible to include htmltest as a Go module using Hugo Modules if your particular use case calls for it.
+See htmltest for documentation and usage.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Custom Homepage</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/custom-homepage/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/custom-homepage/</guid>
+      <description>After Dark provides a configurable way to customize the content shown on your homepage without the need for creating a Custom Layout. Use it to hide the blog and display recent content from various sections of your site.
+   Quick Example 1[params.layout.home] 2 hide_blog = true 3 4[[params.layout.home.section]] 5 type = &amp;#34;about&amp;#34; 6 weight = 1 7 8[[params.layout.home.section]] 9 type = &amp;#34;code&amp;#34; # Required, name of section to show on homepage 10 limit = 4 # Optional, set number of items to show from section 11 weight = 2 # Optional, choose layout order for section 12 thumbs = [&amp;#34;fill&amp;#34;, &amp;#34;400x400&amp;#34;] # Optional, thumbnail image processing 13 14[[params.</description>
+      <category domain="https://vhs.codeberg.page/categories/customizing">Customizing</category>
+      <content:encoded><![CDATA[After Dark provides a configurable way to customize the content shown on your homepage without the need for creating a Custom Layout. Use it to hide the blog and display recent content from various sections of your site.
+   Quick Example 1[params.layout.home] 2 hide_blog = true 3 4[[params.layout.home.section]] 5 type = &amp;#34;about&amp;#34; 6 weight = 1 7 8[[params.layout.home.section]] 9 type = &amp;#34;code&amp;#34; # Required, name of section to show on homepage 10 limit = 4 # Optional, set number of items to show from section 11 weight = 2 # Optional, choose layout order for section 12 thumbs = [&amp;#34;fill&amp;#34;, &amp;#34;400x400&amp;#34;] # Optional, thumbnail image processing 13 14[[params.layout.home.section]] 15 type = &amp;#34;site&amp;#34; 16 limit = 2 17 weight = 3 18 19[[params.layout.home.section]] 20 type = &amp;#34;post&amp;#34; 21 limit = 3 22 weight = 4    Start by adding a section to display:
+[[params.layout.home.section]] type = &amp;#34;post&amp;#34; Limit the number of items shown:
+[[params.layout.home.section]] type = &amp;#34;post&amp;#34; limit = 3 Then hide the blog if you like:
+[params.layout.home] hide_blog = true And use the space to add more sections:
+[[params.layout.home.section]] type = &amp;#34;post&amp;#34; [[params.layout.home.section]] type = &amp;#34;podcast&amp;#34; Or add stand-alone pages too:
+[[params.layout.home.section]] type = &amp;#34;about&amp;#34; And display them in order by weight:
+[[params.layout.home.section]] type = &amp;#34;about&amp;#34; weight = 1 [[params.layout.home.section]] type = &amp;#34;podcast&amp;#34; weight = 2 With each section containing generic Structured Data:
+Homepage ├── Thing └── ItemList ├── Thing ├── Thing └── Thing Which may be enhanced using front matter:
+├── archetypes ├── content │ └── about.md │ └── podcast │ ├── _index.md │ ├── secrets-of-silicon-valley │ ├── the-5g-dragnet │ └── language-is-a-weapon ├── layouts title = &amp;#34;About&amp;#34; description = &amp;#34;Information about the site.&amp;#34; [schema] type = &amp;#34;AboutPage&amp;#34; # inside about.md title = &amp;#34;Podcasts&amp;#34; description = &amp;#34;Live on the Web. Fresh to your head.&amp;#34; [schema] type = &amp;#34;Audiobook&amp;#34; # inside _index.md Resulting in machine-readable structure:
+Homepage ├── AboutPage └── ItemList ├── Audiobook ├── Audiobook └── Audiobook Including name and description properties consistent between what&amp;rsquo;s shown to users and what will appear in SERPs.
+Item lists may include thumbnail images generated automatically for any ItemList element using a Post Images-formatted resource bundle and containing thumbnail in the name:
+[[resources]] src = &amp;#34;**hyperdrive-logo.png&amp;#34; name = &amp;#34;header thumbnail&amp;#34; Images include high-performance defaults and may be modified using Hugo Image Processing via config using the thumbs property in site config:
+[[params.layout.home.section]] type = &amp;#34;code&amp;#34; thumbs = [&amp;#34;fill&amp;#34;, &amp;#34;400x400&amp;#34;] Valid image processing options are fit, resize and fill, and image dimensions may be omitted for a 4x3 aspect ratio thumbnail.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Index Blocking</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/index-blocking/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/index-blocking/</guid>
+      <description>After Dark uses the noindex robots meta directive to prevent search engines from crawling and indexing certain parts of your site. It appears in the HTML document head and looks like this:
+&amp;lt;meta name=&amp;#34;robots&amp;#34; content=&amp;#34;noindex&amp;#34;&amp;gt; Unlike robots.txt meta directives are defined within page content itself and unambiguously indicate which, if any, pages should be blocked from indexing — even if some of those pages appear in your site&amp;rsquo;s Sitemap.
+To facilitate the discovery of index blocked pages Fuzzy Search utilizes the very same meta directive exposed to search engines to prevent disclosure of pages in its own result listings.</description>
+      <category domain="https://vhs.codeberg.page/categories/search">Search</category>
+      <content:encoded><![CDATA[After Dark uses the noindex robots meta directive to prevent search engines from crawling and indexing certain parts of your site. It appears in the HTML document head and looks like this:
+&amp;lt;meta name=&amp;#34;robots&amp;#34; content=&amp;#34;noindex&amp;#34;&amp;gt; Unlike robots.txt meta directives are defined within page content itself and unambiguously indicate which, if any, pages should be blocked from indexing — even if some of those pages appear in your site&amp;rsquo;s Sitemap.
+To facilitate the discovery of index blocked pages Fuzzy Search utilizes the very same meta directive exposed to search engines to prevent disclosure of pages in its own result listings. Therefore, if a page can be found in fuzzy search, that page may ultimately appear on a search engine result page.
+Adjust index blocking per-page using noindex Front Matter:
+noindex = true # set false or remove to unblock Block entire sections using an _index.md file with the above setting:
+├── content │ ├── legal │ │ ├── _index.md │ │ ├── terms.md │ │ └── privacy.md │ ├── post By default the following page types are blocked automatically:
+ Section listings automatically linked to from the Section Menu; Taxonomy Pages such as Category, Tag and terms listings; and, If enabled, the Fuzzy Search page or any deep-linked result within.  Adjust defaults using the noindex_kinds setting from Site Configuration. For example, to enable crawling of section pages add the following to the config:
+[params] noindex_kinds = [ &amp;#34;taxonomy&amp;#34;, &amp;#34;taxonomyTerm&amp;#34; ] # crawl &amp;#34;section&amp;#34; pages Learn about Robots Meta Directives on Moz and see how Google uses noindex in Block search indexing with &amp;#39;noindex&amp;#39;.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Keywords Meta</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/keywords-meta/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/keywords-meta/</guid>
+      <description>Keywords offer detail to robots regarding the subject matter of your content. After Dark generates keywords automatically for pages given the tags taxonomy for that page, and for other pages using the site&amp;rsquo;s categories taxonomy.
+Adjust key phrases from Front Matter using a keywords array like so:
+keywords = [ &amp;#34;web development&amp;#34;, &amp;#34;digital marketing&amp;#34;, &amp;#34;social media&amp;#34;, &amp;#34;link building&amp;#34; ] While not considered relevant to search rankings, keywords can be a useful way to document target search terms and key phrases used in PPC campaigns.</description>
+      <category domain="https://vhs.codeberg.page/categories/search">Search</category>
+      <content:encoded><![CDATA[Keywords offer detail to robots regarding the subject matter of your content. After Dark generates keywords automatically for pages given the tags taxonomy for that page, and for other pages using the site&amp;rsquo;s categories taxonomy.
+Adjust key phrases from Front Matter using a keywords array like so:
+keywords = [ &amp;#34;web development&amp;#34;, &amp;#34;digital marketing&amp;#34;, &amp;#34;social media&amp;#34;, &amp;#34;link building&amp;#34; ] While not considered relevant to search rankings, keywords can be a useful way to document target search terms and key phrases used in PPC campaigns.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Structured Data</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/structured-data/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/structured-data/</guid>
+      <description>After Dark generates structured metadata using schema.org specifications for Custom Homepage, Related Content, Featured Posts, Section Menu, Image Galleries and adapts data automatically using author-defined Post Bylines as shown here:
+   Schema Property Frontmatter Value     author? author   datePublished publishdate or date   articleSection categories    Post Images use Page Resources Metadata to add image captions:
+   Schema Property Header Image Resource Metadata     caption?</description>
+      <category domain="https://vhs.codeberg.page/categories/search">Search</category>
+      <content:encoded><![CDATA[After Dark generates structured metadata using schema.org specifications for Custom Homepage, Related Content, Featured Posts, Section Menu, Image Galleries and adapts data automatically using author-defined Post Bylines as shown here:
+   Schema Property Frontmatter Value     author? author   datePublished publishdate or date   articleSection categories    Post Images use Page Resources Metadata to add image captions:
+   Schema Property Header Image Resource Metadata     caption? creator [sameas domain] or caption    Consider adding structured data when creating Custom Layouts for improved page semantics and better SEO.
+Learn more about structured data using the following resources:
+  HTML Microdata on W3C  Microdata on MDN  Schema Structured Data on Moz  Use Webmaster Tools to validate structured data. This can be done from a development machine using Ephemeral Hosting.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Web Feeds</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/web-feeds/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/web-feeds/</guid>
+      <description>After Dark provides RSS web feeds conforming with the RSS 2.0 Specification and enhanced semantically using the following custom extensions:
+  Content Module to convey the full content of pages and posts  Dublin Core to give authorship credit on individual pages  Atom for improved compatibility with Atom feeds  Feeds are generated automatically on a per-section basis, in addition to a consolidated site-wide feed combining content from across the site:</description>
+      <category domain="https://vhs.codeberg.page/categories/search">Search</category>
+      <content:encoded><![CDATA[After Dark provides RSS web feeds conforming with the RSS 2.0 Specification and enhanced semantically using the following custom extensions:
+  Content Module to convey the full content of pages and posts  Dublin Core to give authorship credit on individual pages  Atom for improved compatibility with Atom feeds  Feeds are generated automatically on a per-section basis, in addition to a consolidated site-wide feed combining content from across the site:
+ /index.xml site-wide feed /feature/index.xml features feed /module/index.xml modules feed /shortcode/index.xml shortcodes feed /extra/index.xml extras feed  Add multimedia attachments to pages and posts using RSS enclosures. Enclosures will output automatically to feeds when supplied. To supply an enclosure create a Page Bundle as described in Post Images and shown here for a blog post:
+├── archetypes ├── content │ └── post │ └── backup-restore-macos-mojave │ ├── assets │ │ └── macos_v10.14.3-upgrade-fail.mp4 │ ├── images │ └── index.md ├── layouts Then reference the resource from front matter as shown here:
+[[resources]] src = &amp;#34;assets/macos_v10.14.3-upgrade-fail.mp4&amp;#34; name = &amp;#34;enclosure&amp;#34; title = &amp;#34;Software Update Malfunction: Mojave 10.14.3&amp;#34; [resources.params] length = &amp;#34;3705578&amp;#34;  Note: Length is the number of bytes in the file and required by RSS 2.0 spec.  Tip: From a terminal get length using wc -c &amp;lt; /path/to/file.  Enclosures may be output to page content by creating a custom shortcode or using a Custom Layout with content like:
+{{with.Resources.GetMatch&amp;#34;enclosure&amp;#34;}}{{if.Params.length}} &amp;lt;svg id=&amp;#34;i-paperclip&amp;#34; viewBox=&amp;#34;0 0 32 32&amp;#34; width=&amp;#34;16&amp;#34; height=&amp;#34;16&amp;#34; fill=&amp;#34;none&amp;#34; stroke=&amp;#34;var(--accent-color)&amp;#34; stroke-linecap=&amp;#34;round&amp;#34; stroke-linejoin=&amp;#34;round&amp;#34; stroke-width=&amp;#34;2&amp;#34;&amp;gt; &amp;lt;path d=&amp;#34;M10 9 L10 24 C10 28 13 30 16 30 19 30 22 28 22 24 L22 6 C22 3 20 2 18 2 16 2 14 3 14 6 L14 23 C14 24 15 25 16 25 17 25 18 24 18 23 L18 9&amp;#34; /&amp;gt; &amp;lt;/svg&amp;gt; &amp;lt;a href=&amp;#34;{{.Permalink}}&amp;#34; title=&amp;#34;{{with.Title}}{{.}}{{end}}[{{.Params.length}}byte {{.MediaType}}]&amp;#34;&amp;gt;Enclosure&amp;lt;/a&amp;gt; {{end}}{{end}} Use the W3C Feed Validation Service to validate your feed. For help creating custom shortcodes see Create Your Own Shortcodes on the Hugo docs site.
+See RSS Templates in Hugo for additional information.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Webmaster Tools</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/webmaster-tools/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/webmaster-tools/</guid>
+      <description>Webmaster verification Use homepage meta to verify your site with Google, Bing, Alexa and Yandex. All verifications are optional and some providers allow you to submit manually.
+To verify with meta add the following to your Site Configuration and fill in the value provided to you by the search engine webmaster console or similar:
+[params.seo.webmaster_verifications] google = &amp;#34;&amp;#34; # Optional, see https://search.google.com/search-console bing = &amp;#34;&amp;#34; # Optional, see https://www.bing.com/toolbox/webmaster/ yandex = &amp;#34;&amp;#34; # Optional, see https://webmaster.</description>
+      <category domain="https://vhs.codeberg.page/categories/search">Search</category>
+      <content:encoded><![CDATA[Webmaster verification Use homepage meta to verify your site with Google, Bing, Alexa and Yandex. All verifications are optional and some providers allow you to submit manually.
+To verify with meta add the following to your Site Configuration and fill in the value provided to you by the search engine webmaster console or similar:
+[params.seo.webmaster_verifications] google = &amp;#34;&amp;#34; # Optional, see https://search.google.com/search-console bing = &amp;#34;&amp;#34; # Optional, see https://www.bing.com/toolbox/webmaster/ yandex = &amp;#34;&amp;#34; # Optional, see https://webmaster.yandex.com/ alexa = &amp;#34;&amp;#34; # Optional, claiming retired (see note below)  Note: Claiming your site with Alexa was retired in May 2016.  You may later remove verifications you no longer need or decide not to use.
+Submit manually Manually submit your Sitemap for search indexing:
+ Google:   Bing:   Test Structured Data To test with Yandex use their Structured data validator testing tool. For Google submit the form below with the URL you wish to test:
+Test URL:   Use Ephemeral Hosting to check your site while in development/testing.
+Test and Monitor Speed Nobody likes a slow website. Benchmark and analyze performance from various locations worldwide using Pingdom Tools and webpagetest.org for free.
+Monitor performance over time using SpeedTracker.
+Additional services   webmaster.yandex.com/tools/robotstxt/  w3c.github.io/developers/tools/  ]]></content:encoded>
+    </item>
+  </channel>
+</rss>

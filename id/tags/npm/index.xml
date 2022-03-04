@@ -1,0 +1,37 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>npm on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/id/tags/npm/</link>
+    <description>Recent content in npm on After Dark</description>
+    <image>
+      <title>npm on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/id/tags/npm/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>id-ID</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:16 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/id/tags/npm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Release Hashes</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/release-hashes/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/release-hashes/</guid>
+      <description>After Dark memanfaatkan NPM CLI untuk menghasilkan hash kriptografi yang unik di setiap rilis, memungkinkan setiap salinan diidentifikasi secara unik terlepas dari sumbernya.
+Lepaskan penggunaan hash dengan SHA-512 algoritma dan terlihat seperti ini:
+VWcn7AxXUkZRGsRIM/6A5RjqW7DOPH&#43;XbnLGRp7hpr0TCH/9l31ug2h2JaIlEvsDzOPRcZDBdyZvJ4mSm/Rqjg==  Setiap rilis hash baru dihasilkan di lokasi berikut:
+ Tertanam menggunakan PGP di release source pesangit tag. Dikodifikasikan ke dalam latest atau version-specific metadata paket NPM. Tertanam di dalam After Dark Bantuan Online dokumentasi.  Setelah menerima salinan After Dark anda, anda dapat menggunakan hash rilis, untuk memverifikasi anda dapat menggunakan versi perangkat lunak yang tidak dipalsukan.</description>
+      <category domain="https://vhs.codeberg.page/categories/security">Security</category>
+      <content:encoded><![CDATA[After Dark memanfaatkan NPM CLI untuk menghasilkan hash kriptografi yang unik di setiap rilis, memungkinkan setiap salinan diidentifikasi secara unik terlepas dari sumbernya.
+Lepaskan penggunaan hash dengan SHA-512 algoritma dan terlihat seperti ini:
+VWcn7AxXUkZRGsRIM/6A5RjqW7DOPH&#43;XbnLGRp7hpr0TCH/9l31ug2h2JaIlEvsDzOPRcZDBdyZvJ4mSm/Rqjg==  Setiap rilis hash baru dihasilkan di lokasi berikut:
+ Tertanam menggunakan PGP di release source pesangit tag. Dikodifikasikan ke dalam latest atau version-specific metadata paket NPM. Tertanam di dalam After Dark Bantuan Online dokumentasi.  Setelah menerima salinan After Dark anda, anda dapat menggunakan hash rilis, untuk memverifikasi anda dapat menggunakan versi perangkat lunak yang tidak dipalsukan.
+Jalankan Release Validator untuk memeriksa dengan cepat rilis anda secara offline:
+Interactive Release Validator     Untuk pemeriksaan yang lebih meyeluruh lakukan hal berikut ini, membandingkan hash anda dengan yang dihasilkan selama rilis seperti yang didefinisikan diatas:
+ Instal npm cli di perangkat anda. Navigasikan ke themes/after-dark dari dalam situs anda. Jalankan npm run integrity untuk menghasilkan SHA-512 hash anda.  Jika semuanya cocok, berarti anda sudah siap. Jika tidak, silahkan Submit an Issue.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

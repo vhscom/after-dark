@@ -1,0 +1,45 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>retention on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/id/tags/retention/</link>
+    <description>Recent content in retention on After Dark</description>
+    <image>
+      <title>retention on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/id/tags/retention/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>id-ID</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:16 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/id/tags/retention/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Error Page</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/error-page/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/error-page/</guid>
+      <description>After Dark termasuk animasi 404 Page yang dapat anda tampilkan ketika halaman lain tidak dapat ditemukan. Halaman yang error berisi latar belakang animasi dengan layar penuh dan &amp;ldquo;404&amp;rdquo; link dengan perawatan Ginsu. Mengikuti tautan untuk menavigasi ke beranda.
+Interactive Example    </description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[After Dark termasuk animasi 404 Page yang dapat anda tampilkan ketika halaman lain tidak dapat ditemukan. Halaman yang error berisi latar belakang animasi dengan layar penuh dan &amp;ldquo;404&amp;rdquo; link dengan perawatan Ginsu. Mengikuti tautan untuk menavigasi ke beranda.
+Interactive Example     Sesuaikan itu dari 404.html di situs content direktori:
+├── archetypes ├── content │ ├── post │ └── 404.html ├── layouts Jika file belum ada, salinlah dari tema standart:
+$ cp themes/after-dark/content/404.html content Konfigurasikan server web anda untuk mengarahkan ulang ke 404.html ketika halaman tidak dapat ditemukan untuk menggunakannya. Gabungkan dengan Voyeur Module untuk membantu membuat Page Aliases.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Related Content</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/related-content/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/related-content/</guid>
+      <description>After Dark menyediakan konten terkait untuk membantu pengguna menemukan lebih banyak informasi yang relevan bagi mereka dan dapat meningkatkan tampilan halaman dan waktu yang dihabiskan untuk situs anda.
+   Ketika dua halaman atau lebih atau postingan yang berisi taksonomitags yang sama, mereka akan ditautkan di bagian seperti yang ditunjukkan di bagian bawah halaman. Bagian ini muncul secara otomatis seperti dibawah ini Post Bylines dengan maksimum 7 item default yang ditampilkan.</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[After Dark menyediakan konten terkait untuk membantu pengguna menemukan lebih banyak informasi yang relevan bagi mereka dan dapat meningkatkan tampilan halaman dan waktu yang dihabiskan untuk situs anda.
+   Ketika dua halaman atau lebih atau postingan yang berisi taksonomitags yang sama, mereka akan ditautkan di bagian seperti yang ditunjukkan di bagian bawah halaman. Bagian ini muncul secara otomatis seperti dibawah ini Post Bylines dengan maksimum 7 item default yang ditampilkan.
+Tip: Buatlah Custom Layout untuk menampilkan konten terkait diluar postingan.  Sesuaikan seluruh situs maksimum dari Site Configuration dengan menambah related_content_limit:
+[params] related_content_limit = 5 # limit to 5 items maximum site-wide Lihat Related Content in Hugo untuk pilihan konfigurasi tambahan .
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,46 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>Extras on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/extra/</link>
+    <description>Recent content in Extras on After Dark</description>
+    <image>
+      <title>Extras on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/extra/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/extra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>After Dark K3s</title>
+      <link>https://vhs.codeberg.page/after-dark/extra/after-dark-k3s/</link>
+      <pubDate>Thu, 27 Jun 2019 08:00:54 UT</pubDate>
+      <guid>https://vhs.codeberg.page/after-dark/extra/after-dark-k3s/</guid>
+      <description>After Dark K3s pairs K3s with Nginx enabling you to scale After Dark using container orchestration in a low-friction, efficient multi-tier deployment. Use it to self-host, and automatically build and serve your site in real-time.
+Tip: Learn how to get wildcard SSL certificates (with auto-renewal) using K3s and Traefik in Wildcard Let&#39;s Encrypt certs on Kubernetes with Traefik.
+ Benefits  Isolates published site inside a container. Uses IoC pattern to remove Hugo dependency.</description>
+      <category domain="https://vhs.codeberg.page/categories/devops">Devops</category>
+      <content:encoded><![CDATA[After Dark K3s pairs K3s with Nginx enabling you to scale After Dark using container orchestration in a low-friction, efficient multi-tier deployment. Use it to self-host, and automatically build and serve your site in real-time.
+Tip: Learn how to get wildcard SSL certificates (with auto-renewal) using K3s and Traefik in Wildcard Let&#39;s Encrypt certs on Kubernetes with Traefik.
+ Benefits  Isolates published site inside a container. Uses IoC pattern to remove Hugo dependency. Doubles as a web server and reverse proxy. 75% more memory efficient than Kubernetes. Native support for ARM devices, ideal for IoT. Manage set-up using Configuration as Code. Integrate with Traefik for HA front-ends.  Repository: codeberg.org/vhs/teowood/after-dark-k3s-amd64 Mirror: git.plaindark.com/teowood/after-dark-k3s-amd64
+]]></content:encoded>
+    </item>
+    <item>
+      <title>High Tea</title>
+      <link>https://vhs.codeberg.page/after-dark/extra/high-tea/</link>
+      <guid>https://vhs.codeberg.page/after-dark/extra/high-tea/</guid>
+      <description>High Tea pairs Gitea with Traefik enabling you to manage your source code online using an intuitive and sleek-looking web-based interface:
+   Dashboard view within the High Tea Gitea application.    Use it to manage organizations, create pull mirrors, selectively mark private repos, configure LFS and collaborate on code with others using git for free.
+High Tea also provides a Traefik integration so you can manage web services, monitor traffic and inspect service health in real-time.</description>
+      <category domain="https://vhs.codeberg.page/categories/security">Security</category>
+      <content:encoded><![CDATA[High Tea pairs Gitea with Traefik enabling you to manage your source code online using an intuitive and sleek-looking web-based interface:
+   Dashboard view within the High Tea Gitea application.    Use it to manage organizations, create pull mirrors, selectively mark private repos, configure LFS and collaborate on code with others using git for free.
+High Tea also provides a Traefik integration so you can manage web services, monitor traffic and inspect service health in real-time.
+   codeberg.org/vhs/high-tea &amp;ndash; source  vhs.codeberg.page/after-dark/extra/high-tea/ &amp;ndash; website  ]]></content:encoded>
+    </item>
+  </channel>
+</rss>

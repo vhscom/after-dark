@@ -1,0 +1,74 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>networking on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/networking/</link>
+    <description>Recent content in networking on After Dark</description>
+    <image>
+      <title>networking on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/networking/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ephemeral Hosting</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/ephemeral-hosting/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/ephemeral-hosting/</guid>
+      <description>Using Serveo you may briefly expose your site to the Internet with end-to-end encryption, no sign-up required. Use this to Work Offline and quietly poke a hole through your NAT or firewall to move information more discretely.
+Warning: No form of communication over the Internet is 100% secure.  Serve and expose your site with the following command:
+$ hugo serve --disableLiveReload &amp;amp; ssh -R 80:localhost:1313 serveo.net Once started press g for traffic inspection, or quit to go offline and use fg to return to hugo.</description>
+      <category domain="https://vhs.codeberg.page/categories/security">Security</category>
+      <content:encoded><![CDATA[Using Serveo you may briefly expose your site to the Internet with end-to-end encryption, no sign-up required. Use this to Work Offline and quietly poke a hole through your NAT or firewall to move information more discretely.
+Warning: No form of communication over the Internet is 100% secure.  Serve and expose your site with the following command:
+$ hugo serve --disableLiveReload &amp;amp; ssh -R 80:localhost:1313 serveo.net Once started press g for traffic inspection, or quit to go offline and use fg to return to hugo. Install dropbear or openssh if you need ssh.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>High Tea</title>
+      <link>https://vhs.codeberg.page/after-dark/extra/high-tea/</link>
+      <guid>https://vhs.codeberg.page/after-dark/extra/high-tea/</guid>
+      <description>High Tea pairs Gitea with Traefik enabling you to manage your source code online using an intuitive and sleek-looking web-based interface:
+   Dashboard view within the High Tea Gitea application.    Use it to manage organizations, create pull mirrors, selectively mark private repos, configure LFS and collaborate on code with others using git for free.
+High Tea also provides a Traefik integration so you can manage web services, monitor traffic and inspect service health in real-time.</description>
+      <category domain="https://vhs.codeberg.page/categories/security">Security</category>
+      <content:encoded><![CDATA[High Tea pairs Gitea with Traefik enabling you to manage your source code online using an intuitive and sleek-looking web-based interface:
+   Dashboard view within the High Tea Gitea application.    Use it to manage organizations, create pull mirrors, selectively mark private repos, configure LFS and collaborate on code with others using git for free.
+High Tea also provides a Traefik integration so you can manage web services, monitor traffic and inspect service health in real-time.
+   codeberg.org/vhs/high-tea &amp;ndash; source  vhs.codeberg.page/after-dark/extra/high-tea/ &amp;ndash; website  ]]></content:encoded>
+    </item>
+    <item>
+      <title>Online Help</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/online-help/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/online-help/</guid>
+      <description>After Dark includes an extensive online help manual and example website.
+View help docs locally by navigating to http://localhost:1414 following a Quick Install or after running the Upgrade Script. Internet connection not required.
+If help is not running you may start it anytime via script:
+cd flying-toasters &amp;amp;&amp;amp; \ ./themes/after-dark/bin/help  Or simply create an alias and serve docs with live-reload:
+alias hs=&amp;#39;hugo serve --navigateToChanged&amp;#39; &amp;amp;&amp;amp; \ hs --port 1414 --source themes/after-dark/docs  Help is included within the After Dark source code.</description>
+      <category domain="https://vhs.codeberg.page/categories/core">Core</category>
+      <content:encoded><![CDATA[After Dark includes an extensive online help manual and example website.
+View help docs locally by navigating to http://localhost:1414 following a Quick Install or after running the Upgrade Script. Internet connection not required.
+If help is not running you may start it anytime via script:
+cd flying-toasters &amp;amp;&amp;amp; \ ./themes/after-dark/bin/help  Or simply create an alias and serve docs with live-reload:
+alias hs=&amp;#39;hugo serve --navigateToChanged&amp;#39; &amp;amp;&amp;amp; \ hs --port 1414 --source themes/after-dark/docs  Help is included within the After Dark source code. So each new release will include the latest help docs, specific to that particular version.
+Upgrade to get the latest updates using the Upgrade Script.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Work Offline</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/work-offline/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/work-offline/</guid>
+      <description>Unless running the Quick Install After Dark does not require an Internet connection to function. Leverage this feature in creative ways:
+ Use Ephemeral Hosting to report news without tipping off authorities. Run your site behind a NAT or firewall blocking all outbound requests. Review the Online Help docs during a flight on Virgin Galactic. Keep a personal journal while couchsurfing through Southeast Asia. Securely generate configuration for the Web Mining add-on module.</description>
+      <category domain="https://vhs.codeberg.page/categories/security">Security</category>
+      <content:encoded><![CDATA[Unless running the Quick Install After Dark does not require an Internet connection to function. Leverage this feature in creative ways:
+ Use Ephemeral Hosting to report news without tipping off authorities. Run your site behind a NAT or firewall blocking all outbound requests. Review the Online Help docs during a flight on Virgin Galactic. Keep a personal journal while couchsurfing through Southeast Asia. Securely generate configuration for the Web Mining add-on module. Develop your content using Termux on Android in airplane mode. Create an Image Gallery while trekking the Mount Nimbus via ferrata.  By default After Dark makes no outbound requests except when viewing certain Online Help documentation to cover related functionality.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

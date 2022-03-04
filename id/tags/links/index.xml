@@ -1,0 +1,119 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>links on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/id/tags/links/</link>
+    <description>Recent content in links on After Dark</description>
+    <image>
+      <title>links on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/id/tags/links/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>id-ID</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:16 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/id/tags/links/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fuzzy Search</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/fuzzy-search/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/fuzzy-search/</guid>
+      <description>Jika mesin pencari dapat menemukannya, anda pun juga bisa. Temukan lokasi konten yang dapat diindeks dengan cepat menggunakan fuzzy search. Tidak memerlukan pendaftaran.
+Interactive Example     Sesuaikan dari _index.md di situs content/search direktori:
+├── archetypes ├── content │ └── search │ └── _index.md ├── static ├── themes Jika file belum ada, buatlah:
+$ hugo new search/_index.md Dan tentukanJSON Output Format di dalam situs konfigurasi:
+[outputs] home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;]  Note: ini menambahkan JSON sambil menyimpan HTML dan RSS secara standart.</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[Jika mesin pencari dapat menemukannya, anda pun juga bisa. Temukan lokasi konten yang dapat diindeks dengan cepat menggunakan fuzzy search. Tidak memerlukan pendaftaran.
+Interactive Example     Sesuaikan dari _index.md di situs content/search direktori:
+├── archetypes ├── content │ └── search │ └── _index.md ├── static ├── themes Jika file belum ada, buatlah:
+$ hugo new search/_index.md Dan tentukanJSON Output Format di dalam situs konfigurasi:
+[outputs] home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;]  Note: ini menambahkan JSON sambil menyimpan HTML dan RSS secara standart.  Setelah diaktifkan, situs anda akan mulai menghasilkan file index.json selama pembuatan, memberikan fuzzy search data yang dibutuhkan untuk membantu anda menemukan halaman.
+Cobalah dengan menavigasi domain.example/search, memasukkan permintaan pencarian dan dengan menggunakan Tab untuk menavigasi diantara hasil pencarian.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Index Blocking</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/index-blocking/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/index-blocking/</guid>
+      <description>After Dark menggunakan noindex robots meta arahan untuk mencegah mesin pencari merayap dan mengindeks bagian-bagian tertentu dari situs anda. Itu muncul di dokumen HTML head dan terlihat seperti berikut ini:
+&amp;lt;meta name=&amp;#34;robots&amp;#34; content=&amp;#34;noindex&amp;#34;&amp;gt; Tidak seperti robots.txt meta arahan diterangkan dalam konten halaman itu sendiri dan dengan jelas menunjuk yang mana, jika ada, halaman harus diblokir dari pengindeksan bahkan jika beberapa halaman tersebut muncul di situs anda Sitemap.
+Untuk memfasilitasi penemuan halaman indeks yang diblokir Fuzzy Search menggunakan meta arahan yang sama yang terbuka ke mesin pencari untuk mencegah penyingkapan halaman dalam daftar hasil itu sendiri.</description>
+      <category domain="https://vhs.codeberg.page/categories/search">Search</category>
+      <content:encoded><![CDATA[After Dark menggunakan noindex robots meta arahan untuk mencegah mesin pencari merayap dan mengindeks bagian-bagian tertentu dari situs anda. Itu muncul di dokumen HTML head dan terlihat seperti berikut ini:
+&amp;lt;meta name=&amp;#34;robots&amp;#34; content=&amp;#34;noindex&amp;#34;&amp;gt; Tidak seperti robots.txt meta arahan diterangkan dalam konten halaman itu sendiri dan dengan jelas menunjuk yang mana, jika ada, halaman harus diblokir dari pengindeksan bahkan jika beberapa halaman tersebut muncul di situs anda Sitemap.
+Untuk memfasilitasi penemuan halaman indeks yang diblokir Fuzzy Search menggunakan meta arahan yang sama yang terbuka ke mesin pencari untuk mencegah penyingkapan halaman dalam daftar hasil itu sendiri. Oleh karena itu jika sebuah halaman dapat ditemukan di fuzzy search, pada akhirnya halaman itu dapat muncul pada halaman hasil mesin pencari.
+Sesuaikan pemblokiran indeks per-halaman menggunakan noindex Front Matter:
+noindex = true # set false atau hapus untuk mmebuka blokir Blok semua bagian menggunakan file_index.md dengan pengaturan seperti diatas:
+├── content │ ├── legal │ │ ├── _index.md │ │ ├── terms.md │ │ └── privacy.md │ ├── post Secara standart jenis halaman seperti berikut diblokir secara otomatis:
+ Daftar bagian secara otomatis ditautkan dari Menu Bagian; Halaman Taksonomi seperti Category, Tag dan daftar istilah; dan, Jika diaktifkan, halaman Fuzzy Search atau beberapa hasil yang terkait erat di dalam.  Sesuaikan defaults menggunakan pengaturan noindex_kinds dari Site Configuration. Sebagai contoh, untuk mengaktifkan perayapan dari bagian halaman tambahkan hal berikut ini ke konfigurasi :
+[params] noindex_kinds = [ &amp;#34;taxonomy&amp;#34;, &amp;#34;taxonomyTerm&amp;#34; ] # crawl &amp;#34;section&amp;#34; pages Pelajari tentang Robots Meta Directives on Moz dan lihatlah bagaimana Google menggunakan noindex di Block search indexing with &amp;#39;noindex&amp;#39;.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Link Typing</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/link-typing/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/link-typing/</guid>
+      <description>After Dark menggunakan pengetikan tautan untuk menunjukkan hubungan semantik antara dokumen. Secara default tipe tautan alternate digunakan untuk menyorot keberadaan umpan web di beranda dan di dalam daftar taksonomi:
+&amp;lt;link href=&amp;#34;https://domain.example/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; &amp;lt;link href=&amp;#34;https://domain.example/categories/privacy/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; &amp;lt;link href=&amp;#34;https://domain.example/tags/color/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; Sebagai tambahan ke defaults After Dark mengenali jenis tautan prev dan next jika ditentukan di halaman Front Matter:
+prev = &amp;#34;/series/learn-to-code/part-one/&amp;#34; next = &amp;#34;/series/learn-to-code/part-three/&amp;#34; Gunakan jenis tautan prev dan next untuk artikel tersegmentasi, Live Blog Postings atau untuk meniru ciri-ciri taksonomi series jika tidak ada taksonomi seri.</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[After Dark menggunakan pengetikan tautan untuk menunjukkan hubungan semantik antara dokumen. Secara default tipe tautan alternate digunakan untuk menyorot keberadaan umpan web di beranda dan di dalam daftar taksonomi:
+&amp;lt;link href=&amp;#34;https://domain.example/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; &amp;lt;link href=&amp;#34;https://domain.example/categories/privacy/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; &amp;lt;link href=&amp;#34;https://domain.example/tags/color/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; Sebagai tambahan ke defaults After Dark mengenali jenis tautan prev dan next jika ditentukan di halaman Front Matter:
+prev = &amp;#34;/series/learn-to-code/part-one/&amp;#34; next = &amp;#34;/series/learn-to-code/part-three/&amp;#34; Gunakan jenis tautan prev dan next untuk artikel tersegmentasi, Live Blog Postings atau untuk meniru ciri-ciri taksonomi series jika tidak ada taksonomi seri.
+Jenis tautan biasanya ditampilkan di bagian atas halaman di browser teks seperti ELinks sebagai bentuk navigasi tambahan dan dapat membantu robot dan pengguna lebih memahami hubungan antar konten anda.
+Pelajari lagi tentang link types dan Taxonomies in Hugo.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Related Content</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/related-content/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/related-content/</guid>
+      <description>After Dark menyediakan konten terkait untuk membantu pengguna menemukan lebih banyak informasi yang relevan bagi mereka dan dapat meningkatkan tampilan halaman dan waktu yang dihabiskan untuk situs anda.
+   Ketika dua halaman atau lebih atau postingan yang berisi taksonomitags yang sama, mereka akan ditautkan di bagian seperti yang ditunjukkan di bagian bawah halaman. Bagian ini muncul secara otomatis seperti dibawah ini Post Bylines dengan maksimum 7 item default yang ditampilkan.</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[After Dark menyediakan konten terkait untuk membantu pengguna menemukan lebih banyak informasi yang relevan bagi mereka dan dapat meningkatkan tampilan halaman dan waktu yang dihabiskan untuk situs anda.
+   Ketika dua halaman atau lebih atau postingan yang berisi taksonomitags yang sama, mereka akan ditautkan di bagian seperti yang ditunjukkan di bagian bawah halaman. Bagian ini muncul secara otomatis seperti dibawah ini Post Bylines dengan maksimum 7 item default yang ditampilkan.
+Tip: Buatlah Custom Layout untuk menampilkan konten terkait diluar postingan.  Sesuaikan seluruh situs maksimum dari Site Configuration dengan menambah related_content_limit:
+[params] related_content_limit = 5 # limit to 5 items maximum site-wide Lihat Related Content in Hugo untuk pilihan konfigurasi tambahan .
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Section Menu</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/section-menu/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/section-menu/</guid>
+      <description>After Dark menggunakan Hugo&amp;rsquo;s Section Menu for “Lazy” Bloggers untuk membuat bantuan navigasi di seluruh situs. Menu bagian dinonaktifkan secara default.
+Interactive Example Overview Features Modules Shortcodes Extras Search     Aktifkan itu dengan mengubah pengaturan show_menu dalam konfigurasi situs anda:
+[params] show_menu = false # atur ke `true` untuk mengaktifkan menu bagian Dengan menu yang diaktifkan, tautan navigasi akan mulai muncul secara otomatis di setiap bagian saat Published Content tersedia dalam bagian itu.</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[After Dark menggunakan Hugo&amp;rsquo;s Section Menu for “Lazy” Bloggers untuk membuat bantuan navigasi di seluruh situs. Menu bagian dinonaktifkan secara default.
+Interactive Example Overview Features Modules Shortcodes Extras Search     Aktifkan itu dengan mengubah pengaturan show_menu dalam konfigurasi situs anda:
+[params] show_menu = false # atur ke `true` untuk mengaktifkan menu bagian Dengan menu yang diaktifkan, tautan navigasi akan mulai muncul secara otomatis di setiap bagian saat Published Content tersedia dalam bagian itu.
+Tautan ke halaman yang berdiri sendiri dari Front Matter dengan menentukan menu = &amp;quot;main&amp;quot;:
+title = &amp;#34;About&amp;#34; menu = &amp;#34;main&amp;#34; Sesuaikan nama tautan dan posisi menu dengan menambahkan kode blok berikut ke Site Configuration anda dan memodifikasinya untuk memenuhi kebutuhan anda:
+[[menu.main]] name = &amp;#34;Home&amp;#34; weight = 1 identifier = &amp;#34;home&amp;#34; url = &amp;#34;/&amp;#34; [[menu.main]] name = &amp;#34;Posts&amp;#34; weight = 2 identifier = &amp;#34;post&amp;#34; url = &amp;#34;/post/&amp;#34; Lihat Menus in Hugo untuk informasi tambahan.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Taxonomy Pages</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/taxonomy-pages/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/taxonomy-pages/</guid>
+      <description>After Dark menghasilkan tag dan kategoris taksonomi, halaman dan tautan istilah taksonomi Post Bylines.
+Berikan halaman berikut ini Front Matter untuk jenis postingan:
+categories = [&amp;#34;navigation&amp;#34;] tags = [&amp;#34;links&amp;#34;, &amp;#34;taxonomy&amp;#34;] Tautan taksonomi berikut akan muncul di bylines:
+ Diterbitkan [by author] [publishdate or date] di dalam navigation and tagged links dan taxonomy menggunakan [wordcount] words.
+ Berikut ini Index Blocked halaman taksonomi dihasilkan:
+ /categories/index.html /categories/navigation/index.html /tags/index.html /tags/links/index.html /tags/taxonomy/index.html  Umpan web taksonomi berikut dibuat:</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[After Dark menghasilkan tag dan kategoris taksonomi, halaman dan tautan istilah taksonomi Post Bylines.
+Berikan halaman berikut ini Front Matter untuk jenis postingan:
+categories = [&amp;#34;navigation&amp;#34;] tags = [&amp;#34;links&amp;#34;, &amp;#34;taxonomy&amp;#34;] Tautan taksonomi berikut akan muncul di bylines:
+ Diterbitkan [by author] [publishdate or date] di dalam navigation and tagged links dan taxonomy menggunakan [wordcount] words.
+ Berikut ini Index Blocked halaman taksonomi dihasilkan:
+ /categories/index.html /categories/navigation/index.html /tags/index.html /tags/links/index.html /tags/taxonomy/index.html  Umpan web taksonomi berikut dibuat:
+ /categories/index.xml /categories/navigation/index.xml /tags/index.xml /tags/links/index.xml /tags/taxonomy/index.xml   Sitemap dan Related Content perbarui dan, jika diaktifkan, Fuzzy Search indeks pencarian JSON (ditimbang pada taksonomi) dibuat ulang, semuanya otomatis Lihat Taxonomies in Hugo untuk mempelajari tentang taksonoomi dan cara menyesuaikannya.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

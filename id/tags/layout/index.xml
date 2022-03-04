@@ -1,0 +1,77 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>layout on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/id/tags/layout/</link>
+    <description>Recent content in layout on After Dark</description>
+    <image>
+      <title>layout on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/id/tags/layout/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>id-ID</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:16 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/id/tags/layout/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Custom Layouts</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/custom-layouts/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/custom-layouts/</guid>
+      <description>After Dark menggunakan blok template untuk memfasilitasi pembuatan tata letak halaman yang unik di mana saja di dalam situs anda. Gunakan itu untuk menambah Snippets ke setiap bagian halaman, secara selektif Custom Styles atau tambahkan kira-kira satu bagian ke beranda.
+Bagaimana cara kerjanya Berikan &amp;lsquo;block&amp;rsquo; berikut ini dengan nilai standart pilihan:
+&amp;lt;title&amp;gt;{{block&amp;#34;title&amp;#34;}}Judul Situs{{end}}&amp;lt;/title&amp;gt; Templates warisan dapat menghilangkan blok dan mempertahankan nilai standart atau menerangkan block untuk mengubah nilainya, seperti yang ditunjukan berikut ini:</description>
+      <category domain="https://vhs.codeberg.page/categories/customizing">Customizing</category>
+      <content:encoded><![CDATA[After Dark menggunakan blok template untuk memfasilitasi pembuatan tata letak halaman yang unik di mana saja di dalam situs anda. Gunakan itu untuk menambah Snippets ke setiap bagian halaman, secara selektif Custom Styles atau tambahkan kira-kira satu bagian ke beranda.
+Bagaimana cara kerjanya Berikan &amp;lsquo;block&amp;rsquo; berikut ini dengan nilai standart pilihan:
+&amp;lt;title&amp;gt;{{block&amp;#34;title&amp;#34;}}Judul Situs{{end}}&amp;lt;/title&amp;gt; Templates warisan dapat menghilangkan blok dan mempertahankan nilai standart atau menerangkan block untuk mengubah nilainya, seperti yang ditunjukan berikut ini:
+{{define&amp;#34;title&amp;#34;}}Judul Halaman | Site Title{{end}} Digabungkan dengan Lookup Order in Hugo block menjadi penting dalam menunjuk bagian dalam yang dapat diedit, dan meningkatkan penggunaan kembali file templates yang sudah ada.
+Diterapkan dalam konteks Inilah template yang digunakan untuk menampilkan sebuah halaman di After Dark:
+{{/*Copyright(C)2019VHS&amp;lt;vhsdev@tutanota.com&amp;gt;ThisfileispartofAfterDark.AfterDarkisfreesoftware:youcanredistributeitand/ormodifyitunderthetermsoftheGNUAfferoGeneralPublicLicenseaspublishedbytheFreeSoftwareFoundation,eitherversion3oftheLicense,or(atyouroption)anylaterversion.AfterDarkisdistributedinthehopethatitwillbeuseful,butWITHOUTANYWARRANTY;withouteventheimpliedwarrantyofMERCHANTABILITYorFITNESSFORAPARTICULARPURPOSE.SeetheGNUAfferoGeneralPublicLicenseformoredetails.YoushouldhavereceivedacopyoftheGNUAfferoGeneralPublicLicensealongwiththisprogram.Ifnot,see&amp;lt;https://www.gnu.org/licenses/&amp;gt;.*/}} {{define&amp;#34;title&amp;#34;-}} {{.Title}} | {{.Site.Title}} {{-end}} {{define&amp;#34;header&amp;#34;}} {{partial&amp;#34;masthead.html&amp;#34;.}} {{end}} {{define&amp;#34;main&amp;#34;}} &amp;lt;header&amp;gt; &amp;lt;h1&amp;gt;{{.Title}}&amp;lt;/h1&amp;gt; &amp;lt;/header&amp;gt; {{.Content}} {{end}} {{define&amp;#34;footer&amp;#34;}} &amp;lt;small class=&amp;#34;muted&amp;#34;&amp;gt; {{partial&amp;#34;copyright-notice.html&amp;#34;.}} &amp;lt;/small&amp;gt; {{end}} Tidak banyak tentang itu. Sebagian besar kode diwarisi dari template lain, memberikan gambaran yang jelas tentang struktur halaman dan membuat modifikasi yang sepele.
+Membuat milik anda sendiri Bayangkan anda membuat bagian Buku Audio untuk situs anda dan menginginkan dua layout khusus baru: yang satu untuk membuat daftar klip audio dan yang lain untuk menjelaskan.
+Untuk mendapatkan hal tersebut dengan menggunakan template block, pertama buat bagian &amp;lsquo;audiobook&amp;rsquo; dengan satu halaman untuk menggambarkan klip:
+$ hugo new audiobook/the-power-of-now.md Menghasilkan struktur pohon sebagai berikut:
+├── assets ├── content │ └── audiobook │ └── the-power-of-now.md ├── layouts Jika sudah melayani situs anda bagian dan halaman audiobooks anda akan segera muncul menggunakan standart template block. Untuk menyesuaikan dari standart, tambahkan list.html dan single.html ke a layouts/audiobook di situs direktori anda.
+Jika file belum ada, salinlah dari tema standart:
+$ mkdir -p layouts/audiobook $ cp themes/after-dark/layouts/_default/list.html layouts/audiobook $ cp themes/after-dark/layouts/_default/single.html layouts/audiobook Menghasilkan struktur pohonlayouts sebagai berikut:
+├── content ├── layouts │ └── audiobook │ ├── list.html │ └── single.html ├── static Sesuaikan list.html dan single.html layouts dan gunakan Custom Styles untuk mendapatkan hasil yang diinginkan. Gunakan referensi sumber daya berikut sebagai bantuan:
+  gohugo.io/templates/ untuk fungsi templating dan logika  devdocs.io untuk HTML yang komprehensif dan CSS reference  inclusive-components.design untuk ide pola design  ]]></content:encoded>
+    </item>
+    <item>
+      <title>Related Content</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/related-content/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/related-content/</guid>
+      <description>After Dark menyediakan konten terkait untuk membantu pengguna menemukan lebih banyak informasi yang relevan bagi mereka dan dapat meningkatkan tampilan halaman dan waktu yang dihabiskan untuk situs anda.
+   Ketika dua halaman atau lebih atau postingan yang berisi taksonomitags yang sama, mereka akan ditautkan di bagian seperti yang ditunjukkan di bagian bawah halaman. Bagian ini muncul secara otomatis seperti dibawah ini Post Bylines dengan maksimum 7 item default yang ditampilkan.</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[After Dark menyediakan konten terkait untuk membantu pengguna menemukan lebih banyak informasi yang relevan bagi mereka dan dapat meningkatkan tampilan halaman dan waktu yang dihabiskan untuk situs anda.
+   Ketika dua halaman atau lebih atau postingan yang berisi taksonomitags yang sama, mereka akan ditautkan di bagian seperti yang ditunjukkan di bagian bawah halaman. Bagian ini muncul secara otomatis seperti dibawah ini Post Bylines dengan maksimum 7 item default yang ditampilkan.
+Tip: Buatlah Custom Layout untuk menampilkan konten terkait diluar postingan.  Sesuaikan seluruh situs maksimum dari Site Configuration dengan menambah related_content_limit:
+[params] related_content_limit = 5 # limit to 5 items maximum site-wide Lihat Related Content in Hugo untuk pilihan konfigurasi tambahan .
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Snippets</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/snippets/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/snippets/</guid>
+      <description>Snippets adalah abstraksi templat yang memungkinkan anda menggunakan kembali markup dan logika yang sama dengan yang digunakan untuk membuat Shortcodes di Custom Layouts anda.
+Ambil contoh yang termasuk Button Group kode pendek yang digunakan untuk membuat satu set tombol gaya, yang akan kita lihat secara rinci disini.
+Pertama, Parsial:
+{{/*Copyright(C)2019VHS&amp;lt;vhsdev@tutanota.com&amp;gt;ThisfileispartofAfterDark.AfterDarkisfreesoftware:youcanredistributeitand/ormodifyitunderthetermsoftheGNUAfferoGeneralPublicLicenseaspublishedbytheFreeSoftwareFoundation,eitherversion3oftheLicense,or(atyouroption)anylaterversion.AfterDarkisdistributedinthehopethatitwillbeuseful,butWITHOUTANYWARRANTY;withouteventheimpliedwarrantyofMERCHANTABILITYorFITNESSFORAPARTICULARPURPOSE.SeetheGNUAfferoGeneralPublicLicenseformoredetails.YoushouldhavereceivedacopyoftheGNUAfferoGeneralPublicLicensealongwiththisprogram.Ifnot,see&amp;lt;https://www.gnu.org/licenses/&amp;gt;.*/-}} &amp;lt;div class=&amp;#34;btn-group{{ifeq.formactions&amp;#34;true&amp;#34;}}form-actions{{end}}{{with.class}}{{.}}{{end}}&amp;#34;&amp;gt; {{.body}} &amp;lt;/div&amp;gt; Kemudian shortcode:
+{{/*Copyright(C)2019VHS&amp;lt;vhsdev@tutanota.com&amp;gt;ThisfileispartofAfterDark.AfterDarkisfreesoftware:youcanredistributeitand/ormodifyitunderthetermsoftheGNUAfferoGeneralPublicLicenseaspublishedbytheFreeSoftwareFoundation,eitherversion3oftheLicense,or(atyouroption)anylaterversion.AfterDarkisdistributedinthehopethatitwillbeuseful,butWITHOUTANYWARRANTY;withouteventheimpliedwarrantyofMERCHANTABILITYorFITNESSFORAPARTICULARPURPOSE.SeetheGNUAfferoGeneralPublicLicenseformoredetails.YoushouldhavereceivedacopyoftheGNUAfferoGeneralPublicLicensealongwiththisprogram.Ifnot,see&amp;lt;https://www.gnu.org/licenses/&amp;gt;.*/-}} {{$formactions:=.Get&amp;#34;formactions&amp;#34;}} {{$class:=.Get&amp;#34;class&amp;#34;}} {{$body:=.Inner}} {{partial&amp;#34;components/buttongroup.html&amp;#34;(dict&amp;#34;formactions&amp;#34;$formactions&amp;#34;class&amp;#34;$class&amp;#34;body&amp;#34;$body)}} Perhatikan bagaimana shortcode hanya berfungsi untuk mengumpulkan input dan memanggil parsial, yang berisi semua markup dan logika tambahan.</description>
+      <category domain="https://vhs.codeberg.page/categories/customizing">Customizing</category>
+      <content:encoded><![CDATA[Snippets adalah abstraksi templat yang memungkinkan anda menggunakan kembali markup dan logika yang sama dengan yang digunakan untuk membuat Shortcodes di Custom Layouts anda.
+Ambil contoh yang termasuk Button Group kode pendek yang digunakan untuk membuat satu set tombol gaya, yang akan kita lihat secara rinci disini.
+Pertama, Parsial:
+{{/*Copyright(C)2019VHS&amp;lt;vhsdev@tutanota.com&amp;gt;ThisfileispartofAfterDark.AfterDarkisfreesoftware:youcanredistributeitand/ormodifyitunderthetermsoftheGNUAfferoGeneralPublicLicenseaspublishedbytheFreeSoftwareFoundation,eitherversion3oftheLicense,or(atyouroption)anylaterversion.AfterDarkisdistributedinthehopethatitwillbeuseful,butWITHOUTANYWARRANTY;withouteventheimpliedwarrantyofMERCHANTABILITYorFITNESSFORAPARTICULARPURPOSE.SeetheGNUAfferoGeneralPublicLicenseformoredetails.YoushouldhavereceivedacopyoftheGNUAfferoGeneralPublicLicensealongwiththisprogram.Ifnot,see&amp;lt;https://www.gnu.org/licenses/&amp;gt;.*/-}} &amp;lt;div class=&amp;#34;btn-group{{ifeq.formactions&amp;#34;true&amp;#34;}}form-actions{{end}}{{with.class}}{{.}}{{end}}&amp;#34;&amp;gt; {{.body}} &amp;lt;/div&amp;gt; Kemudian shortcode:
+{{/*Copyright(C)2019VHS&amp;lt;vhsdev@tutanota.com&amp;gt;ThisfileispartofAfterDark.AfterDarkisfreesoftware:youcanredistributeitand/ormodifyitunderthetermsoftheGNUAfferoGeneralPublicLicenseaspublishedbytheFreeSoftwareFoundation,eitherversion3oftheLicense,or(atyouroption)anylaterversion.AfterDarkisdistributedinthehopethatitwillbeuseful,butWITHOUTANYWARRANTY;withouteventheimpliedwarrantyofMERCHANTABILITYorFITNESSFORAPARTICULARPURPOSE.SeetheGNUAfferoGeneralPublicLicenseformoredetails.YoushouldhavereceivedacopyoftheGNUAfferoGeneralPublicLicensealongwiththisprogram.Ifnot,see&amp;lt;https://www.gnu.org/licenses/&amp;gt;.*/-}} {{$formactions:=.Get&amp;#34;formactions&amp;#34;}} {{$class:=.Get&amp;#34;class&amp;#34;}} {{$body:=.Inner}} {{partial&amp;#34;components/buttongroup.html&amp;#34;(dict&amp;#34;formactions&amp;#34;$formactions&amp;#34;class&amp;#34;$class&amp;#34;body&amp;#34;$body)}} Perhatikan bagaimana shortcode hanya berfungsi untuk mengumpulkan input dan memanggil parsial, yang berisi semua markup dan logika tambahan. Pelimpahan tanggungjawab ini adalah abstraksi yang memungkinkan penggunaan kembali antara konten dan templat.
+Sekarang mari kita lihat bagaimana cara menggunakannya.
+Gunakan Button Group shortcode ke tombol grup dalam konten:
+{{&amp;lt; hackcss-buttongroup &amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Left&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Middle&amp;#34; type=&amp;#34;info&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Right&amp;#34; isghost=&amp;#34;true&amp;#34; /&amp;gt;}} {{&amp;lt; /hackcss-buttongroup &amp;gt;}} Yang membuat grup tombol gaya dengan tiga tombol seperti yang dtunjukkan disini:
+Left Middle Right  Untuk menggunakan kembali di mirror layout panggilan parsial yang digunakan di dalam shortcode.
+Seluruh Shortcodes mengimplementasikan hackcss komponen dibangun menggunakan abstraksi templat snippets yang memungkinkan masing-masing digunakan kembali Custom Layouts.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

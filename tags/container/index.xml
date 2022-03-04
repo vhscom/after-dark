@@ -1,0 +1,53 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>container on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/container/</link>
+    <description>Recent content in container on After Dark</description>
+    <image>
+      <title>container on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/container/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/container/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Analysis</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/code-analysis/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/code-analysis/</guid>
+      <description>After Dark includes a source build of htmltest which may be used to analyze HTML generated for problems such as linkrot, meta attributes and more.
+Code analysis is ideal for identifying potential 404 errors and determining when to link to the archived version of an external page which has gone offline.
+To use install Docker then run the following command:
+cd after-dark/docker/htmltest &amp;amp;&amp;amp; docker build --rm . Build container uses Alpine and includes musl-dev for high-performance.</description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[After Dark includes a source build of htmltest which may be used to analyze HTML generated for problems such as linkrot, meta attributes and more.
+Code analysis is ideal for identifying potential 404 errors and determining when to link to the archived version of an external page which has gone offline.
+To use install Docker then run the following command:
+cd after-dark/docker/htmltest &amp;amp;&amp;amp; docker build --rm . Build container uses Alpine and includes musl-dev for high-performance. Update the HTMLTEST_VERSION to get a specific release built. Upon successful build extract the resulting binary out of the scratch container like:
+docker create -it --name temp f2b785583ce8 sh &amp;amp;&amp;amp; \ sudo docker cp temp:/htmltest /usr/local/bin &amp;amp;&amp;amp; \ docker rm -fv temp Where f2b785583ce8 is the scratch container’s Image ID and /usr/local/bin is the destination on the host. Place executable in most appropriate directory.
+If using Hugo 0.56.x or higher may also possible to include htmltest as a Go module using Hugo Modules if your particular use case calls for it.
+See htmltest for documentation and usage.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Extended Builds</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/extended-builds/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/extended-builds/</guid>
+      <description>After Dark ships with the ability to build Hugo from tagged-version source. Supply a version tag and let Docker Machine build you a high-performance extended Hugo build with integrated Sass and Go CDK deployment support.
+To use install Docker then run the following command:
+cd after-dark/docker/hugo &amp;amp;&amp;amp; docker build . Build container uses Alpine and includes musl-dev for high-performance. Update the HUGO_VERSION to get a specific Hugo release built. Upon successful build extract the resulting hugo binary out of the scratch container like:</description>
+      <category domain="https://vhs.codeberg.page/categories/core">Core</category>
+      <content:encoded><![CDATA[After Dark ships with the ability to build Hugo from tagged-version source. Supply a version tag and let Docker Machine build you a high-performance extended Hugo build with integrated Sass and Go CDK deployment support.
+To use install Docker then run the following command:
+cd after-dark/docker/hugo &amp;amp;&amp;amp; docker build . Build container uses Alpine and includes musl-dev for high-performance. Update the HUGO_VERSION to get a specific Hugo release built. Upon successful build extract the resulting hugo binary out of the scratch container like:
+docker create -it --name temp f2b785583ce8 sh &amp;amp;&amp;amp; \ sudo docker cp temp:/usr/local/bin/hugo /usr/local/bin &amp;amp;&amp;amp; \ docker rm -fv temp Where f2b785583ce8 is the scratch container&amp;rsquo;s Image ID and /usr/local/bin is the destination on the host. Place executable in most appropriate directory.
+For builds without Sass support enabled turn off CGO_ENABLED, pass in a phony value to BUILD_TAGS, create another build and give it a docker tag:
+docker tag $(docker images -q | head -n 1) gohugoio/hugo:v0.61.0 It&amp;rsquo;s recommended at least 2GB of storage space is available when running builds. The resulting binary inside the scratch container is less than 50MB.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

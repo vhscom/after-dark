@@ -1,0 +1,65 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/</link>
+    <description>Recent content on After Dark</description>
+    <image>
+      <title>After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Extras</title>
+      <link>https://vhs.codeberg.page/after-dark/extra/</link>
+      <guid>https://vhs.codeberg.page/after-dark/extra/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    <item>
+      <title>Features</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/</guid>
+      <description>Choose a feature to learn more or run Quick Install to download and install After Dark and try any of these yourself.</description>
+      <content:encoded><![CDATA[Choose a feature to learn more or run Quick Install to download and install After Dark and try any of these yourself.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Modules</title>
+      <link>https://vhs.codeberg.page/after-dark/module/</link>
+      <guid>https://vhs.codeberg.page/after-dark/module/</guid>
+      <description>After Dark includes a Module System and several optional modules designed to compliment your site. A list of available modules can be found below.</description>
+      <content:encoded><![CDATA[After Dark includes a Module System and several optional modules designed to compliment your site. A list of available modules can be found below.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Search</title>
+      <link>https://vhs.codeberg.page/after-dark/search/</link>
+      <guid>https://vhs.codeberg.page/after-dark/search/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    <item>
+      <title>Shortcodes</title>
+      <link>https://vhs.codeberg.page/after-dark/shortcode/</link>
+      <guid>https://vhs.codeberg.page/after-dark/shortcode/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    <item>
+      <title>Validate Release</title>
+      <link>https://vhs.codeberg.page/after-dark/validate/</link>
+      <guid>https://vhs.codeberg.page/after-dark/validate/</guid>
+      <description>SHA-512 Digest:  Submit with 9.2.3 Release Hash to validate. JavaScript required for proper validation.    Valid installations use the Quick Install or Upgrade Script and may be checked offline. See Release Hashes for a more thorough approach to validation.
+ (function (window, document, undefined) { &#34;use strict&#34;; const digest = &#39;KxMbfuJ2nWTL3HOwBj/h34eF&#43;l4t1EG56docvU4ENooyht2NXEiBWZzKhPue5liWNtKOPu21LQHiup8rc6enOw==&#39;; const confirm = form = { form.digest.readOnly = true; form.digest.value = digest; form.integrity.classList.add(&#39;form-success&#39;); const message = &#34;</description>
+      <content:encoded><![CDATA[ SHA-512 Digest:  Submit with 9.2.3 Release Hash to validate. JavaScript required for proper validation.    Valid installations use the Quick Install or Upgrade Script and may be checked offline. See Release Hashes for a more thorough approach to validation.
+ (function (window, document, undefined) { &#34;use strict&#34;; const digest = &#39;KxMbfuJ2nWTL3HOwBj/h34eF&#43;l4t1EG56docvU4ENooyht2NXEiBWZzKhPue5liWNtKOPu21LQHiup8rc6enOw==&#39;; const confirm = form = { form.digest.readOnly = true; form.digest.value = digest; form.integrity.classList.add(&#39;form-success&#39;); const message = &#34;Hash verified. Valid installation detected.&#34; form.querySelector(&#39;.help-block&#39;).innerHTML = message; }; const validate = (search, form) = { search.includes(encodeURIComponent(digest)) ? confirm(form) : challenge(form); }; const challenge = form = { form.digest.value = digest; const check = () = { const classes = form.integrity.classList; if (form.checkValidity()) { classes.add(&#39;form-success&#39;); classes.remove(&#39;form-warning&#39;); } else { classes.add(&#39;form-warning&#39;); classes.remove(&#39;form-success&#39;); } }; form.oninput = check; document.location.search &amp;&amp; (() = { form.integrity.classList.add(&#39;form-error&#39;); document.title = &#34;Invalid Hash | After Dark&#34;; const help = form.querySelector(&#39;.help-block&#39;); help.innerHTML = help.innerText = &#34;Unexpected hash. Please try again.&#34;; const alert = document.createElement(&#39;div&#39;); alert.classList.add(&#39;alert&#39;); alert.classList.add(&#39;alert-warning&#39;); alert.innerHTML = &#39;WARNING: Your installation is invalid or has been tampered with. Please run the Upgrade Script to download the latest version.&#39;; document.querySelector(&#39;main&#39;).appendChild(alert); })(); }; const initialize = () = { const form = document.forms.validate; (document.location.search.replace(&#39;?digest=&#39;,&#39;&#39;).length) ? validate(location.search, form) : challenge(form); }; document.onreadystatechange = () = { document.readyState === &#39;interactive&#39; &amp;&amp; initialize(); }; })(window, document);  ]]></content:encoded>
+    </item>
+  </channel>
+</rss>

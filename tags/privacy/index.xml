@@ -1,0 +1,150 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>privacy on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/privacy/</link>
+    <description>Recent content in privacy on After Dark</description>
+    <image>
+      <title>privacy on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/privacy/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Content Security Policy</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/content-security-policy/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/content-security-policy/</guid>
+      <description>After Dark helps you secure your site using Content Security Policy (CSP). Basic CSP is enabled by default and Advanced Configurations are also possible.
+Basic CSP offers minimal protection but is still helpful as it keeps resources from accidentally being loaded over http. In addition, Basic CSP automatically blocks all Flash and Silverlight objects before they have a chance to load.
+Basic Configuration Disable CSP site-wide add the following to your site config:</description>
+      <category domain="https://vhs.codeberg.page/categories/security">Security</category>
+      <content:encoded><![CDATA[After Dark helps you secure your site using Content Security Policy (CSP). Basic CSP is enabled by default and Advanced Configurations are also possible.
+Basic CSP offers minimal protection but is still helpful as it keeps resources from accidentally being loaded over http. In addition, Basic CSP automatically blocks all Flash and Silverlight objects before they have a chance to load.
+Basic Configuration Disable CSP site-wide add the following to your site config:
+[params] disable_csp = true # disable site-wide Disable CSP for a specific page using front matter:
+disable_csp = true # disable for page Advanced Configuration Advanced configuration allows you to fine-tune policy directives based on your specific needs. To get started specify at least 1 CSP directive in site config.
+Note: You may wish to Disable LiveReload while defining advanced config.
+ Define the script-src directive site-wide:
+[params.security.csp.directives] scriptSrc = [ &amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-inline&amp;#39;&amp;#34;, &amp;#34;https:&amp;#34;, &amp;#34;&amp;#39;sha512-Jx/MqTxYWqHdoOkHItRJJZCvFDhERPr5gG4I5ESu3V&#43;BgQyAQ6wXfdsGzhzmT0yyvkAWz2jbrn81q90RRJTSTg==&amp;#39;&amp;#34;, &amp;#34;&amp;#39;sha512-hno7WeTIciCJSjg/myjyK30HYkrcGCVwo4g4SpUalvrs3r2lS7bPNIQwbCNypKbg7BZ1sA4AsGnk6Gq4NOKpGA==&amp;#39;&amp;#34;, &amp;#34;&amp;#39;sha512-ISTAV0GadOIz/NXXHOS&amp;amp;&#43;eCM0ysXVVHhQTlvA6LJxz/DeA5yIxm0Vqf5IE&amp;amp;&#43;WH0yuuXkayAKtoZkQ326nch5f/fg==&amp;#39;&amp;#34;, &amp;#34;&amp;#39;strict-dynamic&amp;#39;&amp;#34; ] This will override the script-src directive&amp;rsquo;s advanced default:
+   Directive Mapping Advanced Default     default-src defaultSrc &amp;lsquo;none&amp;rsquo;   connect-src connectSrc &amp;lsquo;self&amp;rsquo;   worker-src workerSrc &amp;lsquo;self&amp;rsquo;   font-src fontSrc &amp;lsquo;self&amp;rsquo;   media-src mediaSrc &amp;lsquo;self&amp;rsquo;   img-src imgSrc &amp;lsquo;self&amp;rsquo; data:   script-src scriptSrc &amp;lsquo;none&amp;rsquo;   style-src styleSrc &amp;lsquo;self&amp;rsquo; &amp;lsquo;unsafe-inline&amp;rsquo;   frame-src frameSrc &amp;lsquo;self&amp;rsquo;   object-src objectSrc &amp;lsquo;none&amp;rsquo;    Once set, view the Content-Security-Policy meta tag in the head of your page and inspect the console for errors as you navigate to different pages. Each time you encounter an error caused by CSP is an opportunity to improve your policy.
+Add page-specific directives from page front matter using the same structure and naming conventions used in site config to append items for that page:
+[security.csp.directives] scriptSrc = [ &amp;#34;&amp;#39;sha512-TKVuLlCT8&#43;a0Chpa6Pw3clhu9fhZ9JOzgblgxQaUQVP/z4lfPnrdyWDOgucORnS2qapWu/iPVG2d0ywyGH2NjA==&amp;#39;&amp;#34; ]  Note: Page-specific directives will not override any site-wide setting and will not apply without first overriding its advanced default via site config.  Continue overriding advanced defaults as necessary until all CSP errors are resolved or you&amp;rsquo;re satisfied with the changes.
+Additional Resources  About Content Security Policy Test policy with Observatory by Mozilla See CSP examples to learn more  ]]></content:encoded>
+    </item>
+    <item>
+      <title>Ephemeral Hosting</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/ephemeral-hosting/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/ephemeral-hosting/</guid>
+      <description>Using Serveo you may briefly expose your site to the Internet with end-to-end encryption, no sign-up required. Use this to Work Offline and quietly poke a hole through your NAT or firewall to move information more discretely.
+Warning: No form of communication over the Internet is 100% secure.  Serve and expose your site with the following command:
+$ hugo serve --disableLiveReload &amp;amp; ssh -R 80:localhost:1313 serveo.net Once started press g for traffic inspection, or quit to go offline and use fg to return to hugo.</description>
+      <category domain="https://vhs.codeberg.page/categories/security">Security</category>
+      <content:encoded><![CDATA[Using Serveo you may briefly expose your site to the Internet with end-to-end encryption, no sign-up required. Use this to Work Offline and quietly poke a hole through your NAT or firewall to move information more discretely.
+Warning: No form of communication over the Internet is 100% secure.  Serve and expose your site with the following command:
+$ hugo serve --disableLiveReload &amp;amp; ssh -R 80:localhost:1313 serveo.net Once started press g for traffic inspection, or quit to go offline and use fg to return to hugo. Install dropbear or openssh if you need ssh.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>External</title>
+      <link>https://vhs.codeberg.page/after-dark/shortcode/external/</link>
+      <guid>https://vhs.codeberg.page/after-dark/shortcode/external/</guid>
+      <description>Basic usage:
+{{&amp;lt; external href=&amp;#34;https://vhs.codeberg.page/after-dark&amp;#34; text=&amp;#34;After Dark&amp;#34; /&amp;gt;}} {{&amp;lt; external href=&amp;#34;https://vhs.codeberg.page/after-dark&amp;#34; /&amp;gt;}}  After Dark vhs.codeberg.page/after-dark
+Shorthand usage:
+{{&amp;lt; external &amp;quot;https://vhs.codeberg.page/after-dark&amp;quot; &amp;quot;After Dark&amp;quot; /&amp;gt;}} {{&amp;lt; external href=&amp;quot;https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install&amp;quot; /&amp;gt;}} {{&amp;lt; external &amp;quot;wss://fs1.vhs.codeberg.page:80&amp;quot; /&amp;gt;}}  After Dark codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install wss://fs1.vhs.codeberg.page:80
+Note: URIs such as those using the wss scheme may be considered unsafe by the Go template package. Learn more in the package Security Model.  With a trusted URL:
+{{&amp;lt; external trusted=&amp;#34;true&amp;#34; href=&amp;#34;wss://fs1.</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[Basic usage:
+{{&amp;lt; external href=&amp;#34;https://vhs.codeberg.page/after-dark&amp;#34; text=&amp;#34;After Dark&amp;#34; /&amp;gt;}} {{&amp;lt; external href=&amp;#34;https://vhs.codeberg.page/after-dark&amp;#34; /&amp;gt;}}  After Dark vhs.codeberg.page/after-dark
+Shorthand usage:
+{{&amp;lt; external &amp;quot;https://vhs.codeberg.page/after-dark&amp;quot; &amp;quot;After Dark&amp;quot; /&amp;gt;}} {{&amp;lt; external href=&amp;quot;https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install&amp;quot; /&amp;gt;}} {{&amp;lt; external &amp;quot;wss://fs1.vhs.codeberg.page:80&amp;quot; /&amp;gt;}}  After Dark codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install wss://fs1.vhs.codeberg.page:80
+Note: URIs such as those using the wss scheme may be considered unsafe by the Go template package. Learn more in the package Security Model.  With a trusted URL:
+{{&amp;lt; external trusted=&amp;#34;true&amp;#34; href=&amp;#34;wss://fs1.vhs.codeberg.page:80&amp;#34; /&amp;gt;}} {{&amp;lt; external trusted=&amp;#34;true&amp;#34; href=&amp;#34;irc://chat.freenode.net:6667/after-dark&amp;#34; /&amp;gt;}}  wss://fs1.vhs.codeberg.page:80 irc://chat.freenode.net:6667/after-dark
+With external link styling removed:
+{{&amp;lt; external rel=&amp;#34;noopener&amp;#34; href=&amp;#34;https://blog.domain.example&amp;#34; /&amp;gt;}}  blog.domain.example With internal link opening in a new window:
+{{&amp;lt; external href=&amp;#34;/404.html&amp;#34; text=&amp;#34;Error Page&amp;#34; /&amp;gt;}}  Error Page With structured data type:
+{{&amp;lt; external itemtype=&amp;#34;significantLink&amp;#34; href=&amp;#34;https://vhs.codeberg.page&amp;#34; /&amp;gt;}}  vhs.codeberg.page With site-wide Referrer Policy overridden:
+{{&amp;lt; external referrerpolicy=&amp;#34;unsafe-url&amp;#34; href=&amp;#34;http://goo.gl&amp;#34; /&amp;gt;}}  goo.gl With markdown image and link styling removed:
+{{% external rel=&amp;#34;next&amp;#34; href=&amp;#34;https://source.unsplash.com/collection/983219/2160x1440&amp;#34; %}} ![Example image](https://source.unsplash.com/collection/983219/1080x720 &amp;#34;View Random Image Enlarged&amp;#34;) {{% /external %}}   With interactive Button to run a Fuzzy Search:
+{{&amp;lt; external rel=&amp;#34;search&amp;#34; target=&amp;#34;_self&amp;#34; href=&amp;#34;/search/?s=button&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-button type=&amp;#34;primary&amp;#34; text=&amp;#34;Search&amp;#34; /&amp;gt;}} {{&amp;lt; /external &amp;gt;}}  Search  ]]></content:encoded>
+    </item>
+    <item>
+      <title>High Tea</title>
+      <link>https://vhs.codeberg.page/after-dark/extra/high-tea/</link>
+      <guid>https://vhs.codeberg.page/after-dark/extra/high-tea/</guid>
+      <description>High Tea pairs Gitea with Traefik enabling you to manage your source code online using an intuitive and sleek-looking web-based interface:
+   Dashboard view within the High Tea Gitea application.    Use it to manage organizations, create pull mirrors, selectively mark private repos, configure LFS and collaborate on code with others using git for free.
+High Tea also provides a Traefik integration so you can manage web services, monitor traffic and inspect service health in real-time.</description>
+      <category domain="https://vhs.codeberg.page/categories/security">Security</category>
+      <content:encoded><![CDATA[High Tea pairs Gitea with Traefik enabling you to manage your source code online using an intuitive and sleek-looking web-based interface:
+   Dashboard view within the High Tea Gitea application.    Use it to manage organizations, create pull mirrors, selectively mark private repos, configure LFS and collaborate on code with others using git for free.
+High Tea also provides a Traefik integration so you can manage web services, monitor traffic and inspect service health in real-time.
+   codeberg.org/vhs/high-tea &amp;ndash; source  vhs.codeberg.page/after-dark/extra/high-tea/ &amp;ndash; website  ]]></content:encoded>
+    </item>
+    <item>
+      <title>Referrer Policy</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/referrer-policy/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/referrer-policy/</guid>
+      <description>After Dark adds a Referrer Policy to improve site security and increase visitor privacy beyond browser defaults using a simple site-wide policy.
+Adjust the site-wide default of same-origin from Site Configuration:
+[params.seo] referrer = &amp;#34;same-origin&amp;#34; Relax the security policy by:
+ Adjusting the site-wide default; Using the referrerpolicy attribute of the External Shortcode; Using a nested browsing context to adjust contextually.  See Referrer Policy on W3C for a list of possible values.</description>
+      <category domain="https://vhs.codeberg.page/categories/security">Security</category>
+      <content:encoded><![CDATA[After Dark adds a Referrer Policy to improve site security and increase visitor privacy beyond browser defaults using a simple site-wide policy.
+Adjust the site-wide default of same-origin from Site Configuration:
+[params.seo] referrer = &amp;#34;same-origin&amp;#34; Relax the security policy by:
+ Adjusting the site-wide default; Using the referrerpolicy attribute of the External Shortcode; Using a nested browsing context to adjust contextually.  See Referrer Policy on W3C for a list of possible values.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Release Hashes</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/release-hashes/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/release-hashes/</guid>
+      <description>After Dark utilizes the NPM CLI to produce a unique cryptographic hash each release, enabling any copy to be uniquely identified regardless of its source.
+Release hashes use the SHA-512 algorithm and look like this:
+VWcn7AxXUkZRGsRIM/6A5RjqW7DOPH&#43;XbnLGRp7hpr0TCH/9l31ug2h2JaIlEvsDzOPRcZDBdyZvJ4mSm/Rqjg==  Each release a new hash is generated in the following locations:
+ Embedded using PGP in the release source git tag message. Codified into the latest or version-specific NPM package metadata. Embedded inside the After Dark Online Help documentation.</description>
+      <category domain="https://vhs.codeberg.page/categories/security">Security</category>
+      <content:encoded><![CDATA[After Dark utilizes the NPM CLI to produce a unique cryptographic hash each release, enabling any copy to be uniquely identified regardless of its source.
+Release hashes use the SHA-512 algorithm and look like this:
+VWcn7AxXUkZRGsRIM/6A5RjqW7DOPH&#43;XbnLGRp7hpr0TCH/9l31ug2h2JaIlEvsDzOPRcZDBdyZvJ4mSm/Rqjg==  Each release a new hash is generated in the following locations:
+ Embedded using PGP in the release source git tag message. Codified into the latest or version-specific NPM package metadata. Embedded inside the After Dark Online Help documentation.  Upon receiving your copy of After Dark you may use the release hash to verify you are using an unadulterated version of the software.
+Run the Release Validator to quickly check your release offline:
+Interactive Release Validator     For a more thorough inspection do the following:
+ Install the npm cli on your machine. Navigate to themes/after-dark from within your site. Run npm i &amp;amp;&amp;amp; npm run integrity to generate your SHA-512 hash. Compare your hash to the hash generated during a signed release. If equal, verify the GPG signature used to sign that release.  If inspection fails run the Upgrade Script and try again.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Voyeur</title>
+      <link>https://vhs.codeberg.page/after-dark/module/voyeur/</link>
+      <guid>https://vhs.codeberg.page/after-dark/module/voyeur/</guid>
+      <description>DIY self-hosted Fathom Analytics.</description>
+      <category domain="https://vhs.codeberg.page/categories/addon">Addon</category>
+      <content:encoded><![CDATA[Fathom Mirror: codeberg.org/vhs/mirrors/fathom
+Module Source: codeberg.org/vhs/voyeur
+   Voyeur Analytics Dashboard.    Please visit the Fathom Website for interactive product demo.
+Installation Choose module download source:
+  www.npmjs.com/package/mod-voyeur  www.jsdelivr.com/package/npm/mod-voyeur  codeberg.org/vhs/voyeur  Extract module contents into site themes directory:
+├── static └── themes ├── after-dark └── voyeur Specify module in site config:
+6# Controls default theme and theme components 7theme = [ 8 &amp;#34;voyeur&amp;#34;, # sequence before &amp;#34;after-dark&amp;#34; 9 &amp;#34;after-dark&amp;#34; 10] See README.md to confirm you&amp;rsquo;re using the minimum required version of After Dark; and module setup, configuration and usage instructions. If you need help you may Submit an Issue with your question.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Work Offline</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/work-offline/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/work-offline/</guid>
+      <description>Unless running the Quick Install After Dark does not require an Internet connection to function. Leverage this feature in creative ways:
+ Use Ephemeral Hosting to report news without tipping off authorities. Run your site behind a NAT or firewall blocking all outbound requests. Review the Online Help docs during a flight on Virgin Galactic. Keep a personal journal while couchsurfing through Southeast Asia. Securely generate configuration for the Web Mining add-on module.</description>
+      <category domain="https://vhs.codeberg.page/categories/security">Security</category>
+      <content:encoded><![CDATA[Unless running the Quick Install After Dark does not require an Internet connection to function. Leverage this feature in creative ways:
+ Use Ephemeral Hosting to report news without tipping off authorities. Run your site behind a NAT or firewall blocking all outbound requests. Review the Online Help docs during a flight on Virgin Galactic. Keep a personal journal while couchsurfing through Southeast Asia. Securely generate configuration for the Web Mining add-on module. Develop your content using Termux on Android in airplane mode. Create an Image Gallery while trekking the Mount Nimbus via ferrata.  By default After Dark makes no outbound requests except when viewing certain Online Help documentation to cover related functionality.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

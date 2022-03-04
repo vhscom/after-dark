@@ -1,0 +1,99 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>addon on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/categories/addon/</link>
+    <description>Recent content in addon on After Dark</description>
+    <image>
+      <title>addon on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/categories/addon/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/categories/addon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fractal Forest</title>
+      <link>https://vhs.codeberg.page/after-dark/module/fractal-forest/</link>
+      <guid>https://vhs.codeberg.page/after-dark/module/fractal-forest/</guid>
+      <description>BPG Image Format (Preinstalled).</description>
+      <category domain="https://vhs.codeberg.page/categories/addon">Addon</category>
+      <content:encoded><![CDATA[BPG Image format Homepage: bellard.org/bpg/
+Module Source: codeberg.org/vhs/fractal-forest
+Demo   Visual comparison between BPG, JPEG, JP2K and WebP  Lena 512x512 image, visual comparison with JPEG  Wikipedia photos  Images with alpha channel  Test images using different color spaces and bit depth  Test animations  Installation Note: Module pre-installed via Quick Install with example in post archetype.  Choose a module download source:
+  www.npmjs.com/package/fractal-forest  www.jsdelivr.com/package/npm/fractal-forest  codeberg.org/vhs/fractal-forest  Extract module contents into site themes directory:
+├── static └── themes ├── after-dark └── fractal-forest Specify module in site config:
+6# Controls default theme and theme components 7theme = [ 8 &amp;#34;fractal-forest&amp;#34;, # sequence before &amp;#34;after-dark&amp;#34; 9 &amp;#34;after-dark&amp;#34; 10] See README.md to confirm you&amp;rsquo;re using the minimum required version of After Dark; and module setup, configuration and usage instructions. If you need help you may Submit an Issue with your question.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Hall of Mirrors</title>
+      <link>https://vhs.codeberg.page/after-dark/module/hall-of-mirrors/</link>
+      <guid>https://vhs.codeberg.page/after-dark/module/hall-of-mirrors/</guid>
+      <description>Responsive PhotoSwipe Image Galleries.</description>
+      <category domain="https://vhs.codeberg.page/categories/addon">Addon</category>
+      <content:encoded><![CDATA[PhotoSwipe Homepage: photoswipe.com
+Module Source: codeberg.org/vhs/hall-of-mirrors
+Demo Your browser doesn&#39;t support HTML5 video. Download video instead.   Installation Choose a module download source:
+  www.npmjs.com/package/hall-of-mirrors  www.jsdelivr.com/package/npm/hall-of-mirrors  codeberg.org/vhs/hall-of-mirrors  Extract module contents into site themes directory:
+├── static └── themes ├── after-dark └── hall-of-mirrors Specify module in site config:
+6# Controls default theme and theme components 7theme = [ 8 &amp;#34;hall-of-mirrors&amp;#34;, # sequence before &amp;#34;after-dark&amp;#34; 9 &amp;#34;after-dark&amp;#34; 10] See README.md to confirm you&amp;rsquo;re using the minimum required version of After Dark; and module setup, configuration and usage instructions. If you need help you may Submit an Issue with your question.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Toxic Swamp</title>
+      <link>https://vhs.codeberg.page/after-dark/module/toxic-swamp/</link>
+      <guid>https://vhs.codeberg.page/after-dark/module/toxic-swamp/</guid>
+      <description>Monero/Aeon Web Miner.</description>
+      <category domain="https://vhs.codeberg.page/categories/addon">Addon</category>
+      <content:encoded><![CDATA[Monetize attention in one of more than 40 cryptocurrency mining pools with support for the March 2019 Monero hard fork.
+Your browser doesn&#39;t support HTML5 video. Download video instead.   Features  Mine cryptocurrency while visitors browse your sites Reward effort during site development and publishing Transparent, unobtrusive multilingual user interface Does not use cookies or connect to any third-parties Obfuscates end-user IPs and other connection details Automatically starts when external power is detected Suspends operation during loss of power or attention Optimized for low-bandwidth high-latency connections Cannot be detected by MinerBlock extension at 1.2.12  Installation Choose a module download source:
+  www.npmjs.com/package/toxic-swamp - npm  www.jsdelivr.com/package/npm/toxic-swamp - cdn  codeberg.org/vhs/toxic-swamp - git  Extract module contents into site themes directory:
+├── static └── themes ├── after-dark └── toxic-swamp Verify Release Hash and GPG signature:
+cd themes/toxic-swamp &amp;amp;&amp;amp; \ npm install &amp;amp;&amp;amp; npm run integrity &amp;amp;&amp;amp; \ git tag --verify v1.0.0-beta.28 Specify module in site config:
+6# Controls default theme and theme components 7theme = [ 8 &amp;#34;toxic-swamp&amp;#34;, # sequence before &amp;#34;after-dark&amp;#34; 9 &amp;#34;after-dark&amp;#34; 10] Configure with payout address to start earning rewards:
+36[params.modules.toxic_swamp] 37 enabled = true # Optional, set false to disable module 38 address = &amp;#34;your-address-here&amp;#34; Earning Rewards Using The Fire Swamp with a configured payout address, you may view your hash metrics and payout information from the MoneroOcean Dashboard:
+   Monero Ocean Dashboard showing Toxic Swamp mining activity.    See the MoneroOcean FAQ for more details.
+The Fire Swamp After Dark provides upgrade incentives The Fire Swamp using MoneroOcean to help you get started and as a fallback when custom proxies fail to connect.
+The proxy servers are located at fs*.vhs.codeberg.page:80 and will be used by default until you Create Your Own Proxy or fall more than two major versions behind.
+To maximize your rewards while using the Fire Swamp proxy you must try to keep your After Dark version up-to-date as illustrated here:
+ .dark table tbody td:first-child { color: inherit; } table tbody td:first-child { font-weight: initial; }   Figure 1: Fire Swamp upgrade incentive based on After Dark version   Latest Version Your Version Upgrade Incentive     7.0.0 7.0.0 None   7.0.2 7.0.1 2.2%   7.1.0 7.0.2 13.6%   8.0.0 7.1.0 34.1%    To describe in more detail:
+  If a bugfix, documentation update, refactoring or other patch release occurs your upgrade incentive is 2.2% of your total combined mining hash power.
+  If an enhancement, feature or other minor release occurs your upgrade incentive is 13.6% of your total combined mining hash power.
+  If a breaking change, license update or other major release occurs your upgrade incentive is 34.1% of your total combined mining hash power.
+  If you fall more than one point release behind any minor or patch release the upgrade incentive will remain the same as if you were only one release behind.
+  If you fall more than two majors behind your miner may continue to function but you will be required to upgrade to maintain your upgrade incentive.
+  Maximize your incentive with reduced effort by using the Upgrade Script to check for and automatically update After Dark to the latest available version.
+Tip: After Dark uses Semantic Versioning and the latest version may be tracked programmatically using on the NPM registry and in JSON form here.  Note: After Dark updates are typically backwards compatible with existing modules though there may be cases where module updates are required.  Create Your Own Proxy Advanced users may wish to configure their own proxy servers. To do so select Advanced Settings when generating configuration after standing-up your proxy server described in more detail here:
+ Expand to view details Use the instructions in codeberg.org/vhs/mirrors/webminerpool to stand up your own proxy server and reference the following to understand connection activity:
+ table { caption-side: bottom; } caption { margin-top: 0.5rem; font-variant: all-small-caps; } dd, dt { display: inline-block; } dt { margin-left: 3rem; } dd { width: 10rem; }    Legend  AActive IInactive SStandby EError OOpen CClosed KKnown UUnknown   Figure 2: Miner connection activity by device, proxy and toolbar state   Device Toolbar Miner Proxy   Charging Online Cores Visible Powered Throttle Status Socket Workers Load Online Pool Allow     -- -- -- -- Off -- I -- -- -- -- -- --   Yes Yes 8 No On Any S C 8 0 -- -- --   Yes No 8 Yes On Any S E 8 0 -- -- --   No Yes 16 Yes On 25 I C 16 4 Yes K Yes   Yes Yes 16 Yes On 25 A O 16 12 Yes K Yes   Yes Yes 32 Yes On 50 A O 32 16 Yes K Yes   Yes Yes 32 Yes On 75 A O 32 24 Yes K Yes   Yes Yes 64 Yes On Any S E 64 0 Yes U No   Yes Yes 64 Yes On Any S E 64 0 No -- --    Generate configuration with Advanced Settings specified:
+Interactive Config Generator .form { width: unset; }  Enable JavaScript for offline config generation.
+  .js-usesameorigin { display: none } NOPE! Attempting to submit to unknown origin.  Please use Online Help to generate configuration while Working Offline.  .js-disconnect { display: none } Please Disconnect from the network before generating your configuration.  XMR Address:  Enter payout address. Create Secure Wallet.   Generate Config   Advanced Settings Optional. Create Your Own Proxy before using.
+Proxy Server: Web Socket URL for custom proxy server.   Mining pool: moneroocean.stream etn.nanopool.org monero.hashvault.pro minemonero.pro moneroocean.stream:100 aeon-pool.com aeon-pool.sytes.net aeonpool.xyz trtl.flashpool.club aeonpool.dreamitsystems.com clawde.xyz xmr.prohash.net aeon.uax.io aeonpool.net xmrminerpro.com minercircle.com xmrpool.net supportaeon.com usxmrpool.com aeonminingpool.com supportxmr.com aeonhash.com minexmr.com pooltupi.com xmrpool.eu slowandsteady.fun etn.hashvault.pro poolmining.org aeon.rupool.tk aeon.semipool.com etn.spacepools.org osiamining.com durinsmine.com dwarfpool.com arhash.xyz xmr.nanopool.org aeon.hashvault.pro minereasy.com moneropool.com aeon.n-engine.com aeon.sumominer.com monerohash.com monero.crypto-pool.fr  Select a supported pool to mine with.   Password: Password for your pool. Often not needed.   Throttle: Override default of 70 (30% capacity).   User Id: Combine hash metrics for all users.        Enable debugging to output detailed socket messages from the proxy to the browser console by adding the following to your site config:
+[params.modules.toxic_swamp] debugging = true  Internationalization English translations available for toolbar display:
+ Indonesian (id) Russian (ru) Greek (el) German (de) Polish (pl) Italian (it)  Enable them with module translations whitelist:
+[params.modules.toxic_swamp] translations = [&amp;#34;id&amp;#34;, &amp;#34;ru&amp;#34;, &amp;#34;el&amp;#34;, &amp;#34;de&amp;#34;, &amp;#34;pl&amp;#34;, &amp;#34;it&amp;#34;] # English translations enabled Use languageCode site config to control which is displayed:
+languageCode = &amp;#34;en-US&amp;#34; # English (United States) or English by default languageCode = &amp;#34;id-ID&amp;#34; # Indonesian (Indonesia) or Indonesian, if available languageCode = &amp;#34;ru-RU&amp;#34; # Russian (Russia) or Russian, if available languageCode = &amp;#34;el-GR&amp;#34; # Greek (Greece) or Greek, if available languageCode = &amp;#34;de-DE&amp;#34; # German (Germany) or German, if available languageCode = &amp;#34;pl-PL&amp;#34; # Polish (Poland) or Polish, if available languageCode = &amp;#34;it-IT&amp;#34; # Italian (Italy) or Italian, if available  Note: Language tag syntax is defined by the IETF&#39;s BCP 47.  Modify translations from inline.jsonld.html in your site layouts directory. If the file doesn&amp;rsquo;t exist yet, copy it from module default:
+mkdir -p layouts/partials/modules/toxic-swamp/ &amp;amp;&amp;amp; \ cp themes/toxic-swamp/layouts/partials/modules/toxic-swamp/inline.jsonld.html $_ Remove config and customizations to return to module defaults.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Voyeur</title>
+      <link>https://vhs.codeberg.page/after-dark/module/voyeur/</link>
+      <guid>https://vhs.codeberg.page/after-dark/module/voyeur/</guid>
+      <description>DIY self-hosted Fathom Analytics.</description>
+      <category domain="https://vhs.codeberg.page/categories/addon">Addon</category>
+      <content:encoded><![CDATA[Fathom Mirror: codeberg.org/vhs/mirrors/fathom
+Module Source: codeberg.org/vhs/voyeur
+   Voyeur Analytics Dashboard.    Please visit the Fathom Website for interactive product demo.
+Installation Choose module download source:
+  www.npmjs.com/package/mod-voyeur  www.jsdelivr.com/package/npm/mod-voyeur  codeberg.org/vhs/voyeur  Extract module contents into site themes directory:
+├── static └── themes ├── after-dark └── voyeur Specify module in site config:
+6# Controls default theme and theme components 7theme = [ 8 &amp;#34;voyeur&amp;#34;, # sequence before &amp;#34;after-dark&amp;#34; 9 &amp;#34;after-dark&amp;#34; 10] See README.md to confirm you&amp;rsquo;re using the minimum required version of After Dark; and module setup, configuration and usage instructions. If you need help you may Submit an Issue with your question.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

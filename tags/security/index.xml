@@ -1,0 +1,95 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>security on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/security/</link>
+    <description>Recent content in security on After Dark</description>
+    <image>
+      <title>security on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/security/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>External</title>
+      <link>https://vhs.codeberg.page/after-dark/shortcode/external/</link>
+      <guid>https://vhs.codeberg.page/after-dark/shortcode/external/</guid>
+      <description>Basic usage:
+{{&amp;lt; external href=&amp;#34;https://vhs.codeberg.page/after-dark&amp;#34; text=&amp;#34;After Dark&amp;#34; /&amp;gt;}} {{&amp;lt; external href=&amp;#34;https://vhs.codeberg.page/after-dark&amp;#34; /&amp;gt;}}  After Dark vhs.codeberg.page/after-dark
+Shorthand usage:
+{{&amp;lt; external &amp;quot;https://vhs.codeberg.page/after-dark&amp;quot; &amp;quot;After Dark&amp;quot; /&amp;gt;}} {{&amp;lt; external href=&amp;quot;https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install&amp;quot; /&amp;gt;}} {{&amp;lt; external &amp;quot;wss://fs1.vhs.codeberg.page:80&amp;quot; /&amp;gt;}}  After Dark codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install wss://fs1.vhs.codeberg.page:80
+Note: URIs such as those using the wss scheme may be considered unsafe by the Go template package. Learn more in the package Security Model.  With a trusted URL:
+{{&amp;lt; external trusted=&amp;#34;true&amp;#34; href=&amp;#34;wss://fs1.</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[Basic usage:
+{{&amp;lt; external href=&amp;#34;https://vhs.codeberg.page/after-dark&amp;#34; text=&amp;#34;After Dark&amp;#34; /&amp;gt;}} {{&amp;lt; external href=&amp;#34;https://vhs.codeberg.page/after-dark&amp;#34; /&amp;gt;}}  After Dark vhs.codeberg.page/after-dark
+Shorthand usage:
+{{&amp;lt; external &amp;quot;https://vhs.codeberg.page/after-dark&amp;quot; &amp;quot;After Dark&amp;quot; /&amp;gt;}} {{&amp;lt; external href=&amp;quot;https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install&amp;quot; /&amp;gt;}} {{&amp;lt; external &amp;quot;wss://fs1.vhs.codeberg.page:80&amp;quot; /&amp;gt;}}  After Dark codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install wss://fs1.vhs.codeberg.page:80
+Note: URIs such as those using the wss scheme may be considered unsafe by the Go template package. Learn more in the package Security Model.  With a trusted URL:
+{{&amp;lt; external trusted=&amp;#34;true&amp;#34; href=&amp;#34;wss://fs1.vhs.codeberg.page:80&amp;#34; /&amp;gt;}} {{&amp;lt; external trusted=&amp;#34;true&amp;#34; href=&amp;#34;irc://chat.freenode.net:6667/after-dark&amp;#34; /&amp;gt;}}  wss://fs1.vhs.codeberg.page:80 irc://chat.freenode.net:6667/after-dark
+With external link styling removed:
+{{&amp;lt; external rel=&amp;#34;noopener&amp;#34; href=&amp;#34;https://blog.domain.example&amp;#34; /&amp;gt;}}  blog.domain.example With internal link opening in a new window:
+{{&amp;lt; external href=&amp;#34;/404.html&amp;#34; text=&amp;#34;Error Page&amp;#34; /&amp;gt;}}  Error Page With structured data type:
+{{&amp;lt; external itemtype=&amp;#34;significantLink&amp;#34; href=&amp;#34;https://vhs.codeberg.page&amp;#34; /&amp;gt;}}  vhs.codeberg.page With site-wide Referrer Policy overridden:
+{{&amp;lt; external referrerpolicy=&amp;#34;unsafe-url&amp;#34; href=&amp;#34;http://goo.gl&amp;#34; /&amp;gt;}}  goo.gl With markdown image and link styling removed:
+{{% external rel=&amp;#34;next&amp;#34; href=&amp;#34;https://source.unsplash.com/collection/983219/2160x1440&amp;#34; %}} ![Example image](https://source.unsplash.com/collection/983219/1080x720 &amp;#34;View Random Image Enlarged&amp;#34;) {{% /external %}}   With interactive Button to run a Fuzzy Search:
+{{&amp;lt; external rel=&amp;#34;search&amp;#34; target=&amp;#34;_self&amp;#34; href=&amp;#34;/search/?s=button&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-button type=&amp;#34;primary&amp;#34; text=&amp;#34;Search&amp;#34; /&amp;gt;}} {{&amp;lt; /external &amp;gt;}}  Search  ]]></content:encoded>
+    </item>
+    <item>
+      <title>Online Help</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/online-help/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/online-help/</guid>
+      <description>After Dark includes an extensive online help manual and example website.
+View help docs locally by navigating to http://localhost:1414 following a Quick Install or after running the Upgrade Script. Internet connection not required.
+If help is not running you may start it anytime via script:
+cd flying-toasters &amp;amp;&amp;amp; \ ./themes/after-dark/bin/help  Or simply create an alias and serve docs with live-reload:
+alias hs=&amp;#39;hugo serve --navigateToChanged&amp;#39; &amp;amp;&amp;amp; \ hs --port 1414 --source themes/after-dark/docs  Help is included within the After Dark source code.</description>
+      <category domain="https://vhs.codeberg.page/categories/core">Core</category>
+      <content:encoded><![CDATA[After Dark includes an extensive online help manual and example website.
+View help docs locally by navigating to http://localhost:1414 following a Quick Install or after running the Upgrade Script. Internet connection not required.
+If help is not running you may start it anytime via script:
+cd flying-toasters &amp;amp;&amp;amp; \ ./themes/after-dark/bin/help  Or simply create an alias and serve docs with live-reload:
+alias hs=&amp;#39;hugo serve --navigateToChanged&amp;#39; &amp;amp;&amp;amp; \ hs --port 1414 --source themes/after-dark/docs  Help is included within the After Dark source code. So each new release will include the latest help docs, specific to that particular version.
+Upgrade to get the latest updates using the Upgrade Script.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Referrer Policy</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/referrer-policy/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/referrer-policy/</guid>
+      <description>After Dark adds a Referrer Policy to improve site security and increase visitor privacy beyond browser defaults using a simple site-wide policy.
+Adjust the site-wide default of same-origin from Site Configuration:
+[params.seo] referrer = &amp;#34;same-origin&amp;#34; Relax the security policy by:
+ Adjusting the site-wide default; Using the referrerpolicy attribute of the External Shortcode; Using a nested browsing context to adjust contextually.  See Referrer Policy on W3C for a list of possible values.</description>
+      <category domain="https://vhs.codeberg.page/categories/security">Security</category>
+      <content:encoded><![CDATA[After Dark adds a Referrer Policy to improve site security and increase visitor privacy beyond browser defaults using a simple site-wide policy.
+Adjust the site-wide default of same-origin from Site Configuration:
+[params.seo] referrer = &amp;#34;same-origin&amp;#34; Relax the security policy by:
+ Adjusting the site-wide default; Using the referrerpolicy attribute of the External Shortcode; Using a nested browsing context to adjust contextually.  See Referrer Policy on W3C for a list of possible values.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Release Hashes</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/release-hashes/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/release-hashes/</guid>
+      <description>After Dark utilizes the NPM CLI to produce a unique cryptographic hash each release, enabling any copy to be uniquely identified regardless of its source.
+Release hashes use the SHA-512 algorithm and look like this:
+VWcn7AxXUkZRGsRIM/6A5RjqW7DOPH&#43;XbnLGRp7hpr0TCH/9l31ug2h2JaIlEvsDzOPRcZDBdyZvJ4mSm/Rqjg==  Each release a new hash is generated in the following locations:
+ Embedded using PGP in the release source git tag message. Codified into the latest or version-specific NPM package metadata. Embedded inside the After Dark Online Help documentation.</description>
+      <category domain="https://vhs.codeberg.page/categories/security">Security</category>
+      <content:encoded><![CDATA[After Dark utilizes the NPM CLI to produce a unique cryptographic hash each release, enabling any copy to be uniquely identified regardless of its source.
+Release hashes use the SHA-512 algorithm and look like this:
+VWcn7AxXUkZRGsRIM/6A5RjqW7DOPH&#43;XbnLGRp7hpr0TCH/9l31ug2h2JaIlEvsDzOPRcZDBdyZvJ4mSm/Rqjg==  Each release a new hash is generated in the following locations:
+ Embedded using PGP in the release source git tag message. Codified into the latest or version-specific NPM package metadata. Embedded inside the After Dark Online Help documentation.  Upon receiving your copy of After Dark you may use the release hash to verify you are using an unadulterated version of the software.
+Run the Release Validator to quickly check your release offline:
+Interactive Release Validator     For a more thorough inspection do the following:
+ Install the npm cli on your machine. Navigate to themes/after-dark from within your site. Run npm i &amp;amp;&amp;amp; npm run integrity to generate your SHA-512 hash. Compare your hash to the hash generated during a signed release. If equal, verify the GPG signature used to sign that release.  If inspection fails run the Upgrade Script and try again.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>semantics on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/id/tags/semantics/</link>
+    <description>Recent content in semantics on After Dark</description>
+    <image>
+      <title>semantics on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/id/tags/semantics/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>id-ID</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:16 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/id/tags/semantics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Structured Data</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/structured-data/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/structured-data/</guid>
+      <description>After Dark menghasilkan metadata terstruktur menggunakan schema.org spesifikasi untuk postingan blog, Custom Homepage, Related Content, Featured Posts, Menu Bagian, Hall of Mirrors galeri gambar dan mengadaptasi data secara otomatis menggunakan yang ditentukan penulis Post Bylines seperti yang ditunjukkan disini:
+   Properti skema Nilai frontmatter     author? author   datePublished publishdate atau date   articleSection categories    Post Images use Page Resources Metadata to add image captions:</description>
+      <category domain="https://vhs.codeberg.page/categories/search">Search</category>
+      <content:encoded><![CDATA[After Dark menghasilkan metadata terstruktur menggunakan schema.org spesifikasi untuk postingan blog, Custom Homepage, Related Content, Featured Posts, Menu Bagian, Hall of Mirrors galeri gambar dan mengadaptasi data secara otomatis menggunakan yang ditentukan penulis Post Bylines seperti yang ditunjukkan disini:
+   Properti skema Nilai frontmatter     author? author   datePublished publishdate atau date   articleSection categories    Post Images use Page Resources Metadata to add image captions:
+   Schema Property Header Image Resource Metadata     caption? creator [sameas domain] or caption    Pertimbangkan untuk menambahkan data terstruktur saat membuat Custom Layouts untuk meningkatkan semantik halaman dan SEO yang lebih baik.
+Pelajari lebih lanjut tentang data terstruktur menggunakan sumber daya berikut:
+  HTML Microdata on W3C  Microdata on MDN  Schema Structured Data on Moz  Gunakan Webmaster Tools untuk memvalidasi data terstruktur. Ini dapat dilakukan dari mesin pengembangan menggunakan ephemeral hosting.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

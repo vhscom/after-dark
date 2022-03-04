@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    
+
+
+
+    <meta name="generator" content="After Dark Hugo">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Personal Publishing Platform | After Dark</title>
+    <meta name="description" content="After Dark is open source software you can use to build a secure website, blog or app. One command is all you need to start a new website.">
+    <meta name="keywords" content="addon, core, customizing, devops, experience, interaction, navigation, search, security, social, ">
+    
+    
+    
+    
+    <meta property="og:title" content="After Dark" />
+<meta property="og:description" content="After Dark is open source software you can use to build a secure website, blog or app. One command is all you need to start a new website." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://vhs.codeberg.page/after-dark/" />
+<meta property="og:image" content="https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png" />
+<meta property="og:updated_time" content="2019-06-27T16:00:54+08:00" />
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png"/>
+
+<meta name="twitter:title" content="After Dark"/>
+<meta name="twitter:description" content="After Dark is open source software you can use to build a secure website, blog or app. One command is all you need to start a new website."/>
+
+    
+
+  <meta property="og:image" content="https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png">
+
+
+
+
+    
+
+    
+      
+
+
+
+  <meta name="yandex-verification" content="4006a8813cbb9fdb">
+
+
+    
+    
+  <meta name="referrer" content="same-origin">
+
+
+    
+    
+    <script integrity="sha512-7ZzXFQ9628LCcxLKBxBJuWPBZwC3GlrQ3bLFqJo3mVSddSVWdjIKh&#43;PCxOomazUdvNKmRdixzWBl8GZ1VI29/w==">/*! Fetch Inject v2.0.4 | Copyright (C) VHS <vhsdev@tutanota.com> (https://vhs.codeberg.page) | @license Zlib */
+var fetchInject=function(){"use strict";const e=function(e,t,r,n,o,c,i){c=t.createElement(r),i=t.getElementsByTagName(r)[0],c.appendChild(t.createTextNode(n.text)),c.onload=o(n),i?i.parentNode.insertBefore(c,i):t.head.appendChild(c)};return function(t,r){if(!arguments.length)return Promise.reject(new ReferenceError("Failed to execute 'fetchInject': 1 argument required but only 0 present."));if(arguments[0]&&arguments[0].constructor!==Array)return Promise.reject(new TypeError("Failed to execute 'fetchInject': argument 1 must be of type 'Array'."));if(arguments[1]&&arguments[1].constructor!==Promise)return Promise.reject(new TypeError("Failed to execute 'fetchInject': argument 2 must be of type 'Promise'."));const n=[],o=r?[].concat(r):[],c=[];return t.forEach(e=>o.push(window.fetch(e).then(e=>[e.clone().text(),e.blob()]).then(e=>Promise.all(e).then(e=>{n.push({text:e[0],blob:e[1]})})))),Promise.all(o).then(()=>(n.forEach(t=>{c.push({then:r=>{t.blob.type.includes("text/css")?e(window,document,"style",t,r):e(window,document,"script",t,r)}})}),Promise.all(c)))}}();
+</script>
+    <script integrity="sha512-XEuV3LdLKrk1naElI7ZMMamhuRl0BOLDv8n7bdV9vHNro00TsmjIZGVHzurr125jLueCdCmxHukWlZNGDziEzw==">/*!
+ * Copyright (C) 2019  VHS <vhsdev@tutanota.com>
+ *
+ * This file is part of After Dark.
+ *
+ * After Dark is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * After Dark is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+fetchInject(["/after-dark/js/lazysizes.min.js"]);
+</script>
+    
+
+
+
+    
+      <link rel="alternate" type="application/rss+xml" href="https://vhs.codeberg.page/after-dark/index.xml" title="After Dark">
+    
+    <link rel="canonical" href="https://vhs.codeberg.page/after-dark/">
+    
+    
+    <link rel="icon" sizes="128x128" href="/favicon.png">
+
+    
+
+  
+  
+  
+  
+  
+  
+  
+    
+      
+        <style>html{font-size:12px}*{box-sizing:border-box;text-rendering:geometricPrecision}body{font-size:1rem;line-height:1.5rem;margin:0;font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;word-wrap:break-word}h1,h2,h3,h4,h5,h6{line-height:1.3em}fieldset{border:none;padding:0;margin:0}pre{padding:2rem;margin:1.75rem 0;background-color:#fff;border:1px solid #ccc;overflow:auto}code[class*=language-],pre[class*=language-],pre code{font-weight:100;text-shadow:none;margin:1.75rem 0}a{cursor:pointer;color:#ff2e88;text-decoration:none;border-bottom:1px solid #ff2e88}a:hover{background-color:#ff2e88;color:#fff}.grid{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.grid.\-top{-ms-flex-align:start;align-items:flex-start}.grid.\-middle{-ms-flex-align:center;align-items:center}.grid.\-bottom{-ms-flex-align:end;align-items:flex-end}.grid.\-stretch{-ms-flex-align:stretch;align-items:stretch}.grid.\-baseline{-ms-flex-align:baseline;align-items:baseline}.grid.\-left{-ms-flex-pack:start;justify-content:flex-start}.grid.\-center{-ms-flex-pack:center;justify-content:center}.grid.\-right{-ms-flex-pack:end;justify-content:flex-end}.grid.\-between{-ms-flex-pack:justify;justify-content:space-between}.grid.\-around{-ms-flex-pack:distribute;justify-content:space-around}.cell{-ms-flex:1;flex:1;box-sizing:border-box}@media screen and (min-width:768px){.cell.\-1of12{-ms-flex:0 0 8.33333%;flex:0 0 8.33333%}.cell.\-2of12{-ms-flex:0 0 16.66667%;flex:0 0 16.66667%}.cell.\-3of12{-ms-flex:0 0 25%;flex:0 0 25%}.cell.\-4of12{-ms-flex:0 0 33.33333%;flex:0 0 33.33333%}.cell.\-5of12{-ms-flex:0 0 41.66667%;flex:0 0 41.66667%}.cell.\-6of12{-ms-flex:0 0 50%;flex:0 0 50%}.cell.\-7of12{-ms-flex:0 0 58.33333%;flex:0 0 58.33333%}.cell.\-8of12{-ms-flex:0 0 66.66667%;flex:0 0 66.66667%}.cell.\-9of12{-ms-flex:0 0 75%;flex:0 0 75%}.cell.\-10of12{-ms-flex:0 0 83.33333%;flex:0 0 83.33333%}.cell.\-11of12{-ms-flex:0 0 91.66667%;flex:0 0 91.66667%}}@media screen and (max-width:768px){.grid{-ms-flex-direction:column;flex-direction:column}.cell{-ms-flex:0 0 auto;flex:0 0 auto}}.hack,.hack blockquote,.hack code,.hack em,.hack h1,.hack h2,.hack h3,.hack h4,.hack h5,.hack h6,.hack strong{font-size:1rem;font-style:normal;font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif}.hack blockquote,.hack code,.hack em,.hack strong{line-height:20px}.hack blockquote,.hack code,.hack footer,.hack h1,.hack h2,.hack h3,.hack h4,.hack h5,.hack h6,.hack header,.hack li,.hack ol,.hack p,.hack section,.hack ul{float:none;margin:0;padding:0}.hack blockquote,.hack h1,.hack ol,.hack p,.hack ul{margin-top:20px;margin-bottom:20px}.hack h1{position:relative;display:inline-block;display:table-cell;padding:20px 0 30px;margin:0;overflow:hidden}.hack h1:after{content:"====================================================================================================";position:absolute;bottom:10px;left:0}.hack h1+*{margin-top:0}.hack h2,.hack h3,.hack h4,.hack h5,.hack h6{position:relative;margin-bottom:1.75rem}.hack h2:before,.hack h3:before,.hack h4:before,.hack h5:before,.hack h6:before{display:inline}.hack h2:before{content:"## "}.hack h3:before{content:"### "}.hack h4:before{content:"#### "}.hack h5:before{content:"##### "}.hack h6:before{content:"###### "}.hack li{position:relative;display:block;padding-left:20px}.hack li:after{position:absolute;top:0;left:0}.hack ul>li:after{content:"-"}.hack ol{counter-reset:a}.hack ol>li:after{content:counter(a) ".";counter-increment:a}.hack ol li:nth-child(n+10):after{left:-7px}.hack blockquote{position:relative;padding-left:17px;padding-left:2ch;overflow:hidden}.hack blockquote:after{content:">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";white-space:pre;position:absolute;top:0;left:0;line-height:20px}.hack em:after,.hack em:before{content:"*";display:inline}.hack pre code:after,.hack pre code:before{content:""}.hack code{font-weight:700}.hack code:after,.hack code:before{content:"`";display:inline}.hack hr{position:relative;height:20px;overflow:hidden;border:0;margin:20px 0}.hack hr:after{content:"----------------------------------------------------------------------------------------------------";position:absolute;top:0;left:0;line-height:20px;width:100%;word-wrap:break-word}@-moz-document url-prefix(){.hack h1{display:block}}.hack-ones ol>li:after{content:"1."}p{margin:0 0 1.75rem}.container{max-width:70rem}.container,.container-fluid{margin:0 auto;padding:0 1rem}.inner{padding:1rem}.inner2x{padding:2rem}.pull-left{float:left}.pull-right{float:right}.progress-bar{height:8px;opacity:.8;background-color:#ccc;margin-top:12px}.progress-bar.progress-bar-show-percent{margin-top:38px}.progress-bar-filled{background-color:gray;height:100%;transition:width .3s ease;position:relative;width:0}.progress-bar-filled:before{content:"";border:6px solid transparent;border-top-color:gray;position:absolute;top:-12px;right:-6px}.progress-bar-filled:after{color:gray;content:attr(data-filled);display:block;font-size:12px;white-space:nowrap;position:absolute;border:6px solid transparent;top:-38px;right:0;-ms-transform:translateX(50%);transform:translateX(50%)}table{width:100%;border-collapse:collapse;margin:1.75rem 0;color:#778087}table td,table th{vertical-align:top;border:1px solid #ccc;line-height:15px;padding:10px}table thead th{font-size:10px}table tbody td:first-child{font-weight:700;color:#333}.form{width:30rem}.form-group{margin-bottom:1.75rem;overflow:auto}.form-group label{border-bottom:2px solid #ccc;color:#333;width:10rem;display:inline-block;height:38px;line-height:38px;padding:0;float:left;position:relative}.form-group.form-success label{color:#4caf50!important;border-color:#4caf50!important}.form-group.form-warning label{color:#ff9800!important;border-color:#ff9800!important}.form-group.form-error label{color:#f44336!important;border-color:#f44336!important}.form-control{outline:none;border:none;border-bottom:2px solid #ccc;padding:.5rem 0;width:20rem;height:38px;background-color:transparent}.form-control:focus{border-color:#555}.form-group.form-textarea label:after{position:absolute;content:"";width:2px;background-color:#fff;right:-2px;top:0;bottom:0}textarea.form-control{height:auto;resize:none;padding:1rem 0;border-bottom:2px solid #ccc;border-left:2px solid #ccc;padding:.5rem}select.form-control{border-radius:0;background-color:transparent;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none}.help-block{color:#999;margin-top:.5rem}.form-actions{margin-bottom:1.75rem}.btn{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;cursor:pointer;outline:none;padding:.65rem 2rem;font-size:1rem;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative;z-index:1}.btn:active{box-shadow:inset 0 1px 3px rgba(0,0,0,.12)}.btn.btn-ghost{border-color:#757575;color:#757575;background-color:transparent}.btn.btn-ghost:focus,.btn.btn-ghost:hover{border-color:#424242;color:#424242;z-index:2}.btn.btn-ghost:hover{background-color:transparent}.btn-block{width:100%;display:-ms-flexbox;display:flex}.btn-default{color:#fff;background-color:#e0e0e0;border:1px solid #e0e0e0;color:#333}.btn-default:focus:not(.btn-ghost),.btn-default:hover{background-color:#dcdcdc;border-color:#dcdcdc}.btn-success{color:#fff;background-color:#4caf50;border:1px solid #4caf50}.btn-success:focus:not(.btn-ghost),.btn-success:hover{background-color:#43a047;border-color:#43a047}.btn-success.btn-ghost{border-color:#4caf50;color:#4caf50}.btn-success.btn-ghost:focus,.btn-success.btn-ghost:hover{border-color:#388e3c;color:#388e3c;z-index:2}.btn-error{color:#fff;background-color:#f44336;border:1px solid #f44336}.btn-error:focus:not(.btn-ghost),.btn-error:hover{background-color:#e53935;border-color:#e53935}.btn-error.btn-ghost{border-color:#f44336;color:#f44336}.btn-error.btn-ghost:focus,.btn-error.btn-ghost:hover{border-color:#d32f2f;color:#d32f2f;z-index:2}.btn-warning{color:#fff;background-color:#ff9800;border:1px solid #ff9800}.btn-warning:focus:not(.btn-ghost),.btn-warning:hover{background-color:#fb8c00;border-color:#fb8c00}.btn-warning.btn-ghost{border-color:#ff9800;color:#ff9800}.btn-warning.btn-ghost:focus,.btn-warning.btn-ghost:hover{border-color:#f57c00;color:#f57c00;z-index:2}.btn-info{color:#fff;background-color:#00bcd4;border:1px solid #00bcd4}.btn-info:focus:not(.btn-ghost),.btn-info:hover{background-color:#00acc1;border-color:#00acc1}.btn-info.btn-ghost{border-color:#00bcd4;color:#00bcd4}.btn-info.btn-ghost:focus,.btn-info.btn-ghost:hover{border-color:#0097a7;color:#0097a7;z-index:2}.btn-primary{color:#fff;background-color:#2196f3;border:1px solid #2196f3}.btn-primary:focus:not(.btn-ghost),.btn-primary:hover{background-color:#1e88e5;border-color:#1e88e5}.btn-primary.btn-ghost{border-color:#2196f3;color:#2196f3}.btn-primary.btn-ghost:focus,.btn-primary.btn-ghost:hover{border-color:#1976d2;color:#1976d2;z-index:2}.btn-group{overflow:auto}.btn-group .btn{float:left}.btn-group .btn-ghost:not(:first-child){margin-left:-1px}.card{border:1px solid #ccc}.card .card-header{color:#333;text-align:center;background-color:#ddd;padding:.5rem 0}.alert{color:#ccc;padding:1rem;border:1px solid #ccc;margin-bottom:1.75rem}.alert-success{color:#4caf50;border-color:#4caf50}.alert-error{color:#f44336;border-color:#f44336}.alert-info{color:#00bcd4;border-color:#00bcd4}.alert-warning{color:#ff9800;border-color:#ff9800}.media:not(:last-child){margin-bottom:1.25rem}.media-left{padding-right:1rem}.media-left,.media-right{display:table-cell;vertical-align:top}.media-right{padding-left:1rem}.media-body{display:table-cell;vertical-align:top}.media-heading{font-size:1.16667rem;font-weight:700}.media-content{margin-top:.3rem}.avatarholder,.placeholder{background-color:#f0f0f0;text-align:center;color:#b9b9b9;font-size:1rem;border:1px solid #f0f0f0}.avatarholder{width:48px;height:48px;line-height:46px;font-size:2rem;background-size:cover;background-position:50%;background-repeat:no-repeat}.avatarholder.rounded{border-radius:33px}.loading{display:inline-block;content:"&nbsp;";height:20px;width:20px;margin:0 .5rem;animation:a .6s infinite linear;border:2px solid #e91e63;border-right-color:transparent;border-radius:50%}.btn .loading{margin-bottom:0;width:14px;height:14px}.btn div.loading{float:left}.alert .loading{margin-bottom:-5px}@keyframes a{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}.menu{width:100%}.menu .menu-item{display:block;color:#616161;border-color:#616161}.menu .menu-item.active,.menu .menu-item:hover{color:#000;border-color:#000;background-color:transparent}@media screen and (max-width:768px){.form-group label{display:block;border-bottom:none;width:100%}.form-group.form-textarea label:after{display:none}.form-control{width:100%}textarea.form-control{border-left:none;padding:.5rem 0}pre::-webkit-scrollbar{height:3px}}@media screen and (max-width:480px){.form{width:100%}}.dark{color:#ccc}.dark,.dark pre{background-color:#000}.dark pre{padding:0;border:none}.dark pre code{color:#00bcd4}.dark h1 a,.dark h2 a,.dark h3 a,.dark h4 a,.dark h5 a{color:#ccc}.dark code,.dark strong{color:#fff}.dark code{font-weight:100}.dark table{color:#ccc}.dark table td,.dark table th{border-color:#444}.dark table tbody td:first-child{color:#fff}.dark .form-group label{color:#ccc;border-color:rgba(95,95,95,.78)}.dark .form-group.form-textarea label:after{background-color:#000}.dark .form-control{color:#ccc;border-color:rgba(95,95,95,.78)}.dark .form-control:focus{border-color:#ccc;color:#ccc}.dark textarea.form-control{color:#ccc}.dark .card{border-color:rgba(95,95,95,.78)}.dark .card .card-header{background-color:transparent;color:#ccc;border-bottom:1px solid rgba(95,95,95,.78)}.dark .btn.btn-ghost.btn-default{border-color:#ababab;color:#ababab}.dark .btn.btn-ghost.btn-default:focus,.dark .btn.btn-ghost.btn-default:hover{border-color:#9c9c9c;color:#9c9c9c;z-index:1}.dark .btn.btn-ghost.btn-default:focus,.dark .btn.btn-ghost.btn-default:hover{border-color:#e0e0e0;color:#e0e0e0}.dark .btn.btn-ghost.btn-primary:focus,.dark .btn.btn-ghost.btn-primary:hover{border-color:#64b5f6;color:#64b5f6}.dark .btn.btn-ghost.btn-success:focus,.dark .btn.btn-ghost.btn-success:hover{border-color:#81c784;color:#81c784}.dark .btn.btn-ghost.btn-info:focus,.dark .btn.btn-ghost.btn-info:hover{border-color:#4dd0e1;color:#4dd0e1}.dark .btn.btn-ghost.btn-error:focus,.dark .btn.btn-ghost.btn-error:hover{border-color:#e57373;color:#e57373}.dark .btn.btn-ghost.btn-warning:focus,.dark .btn.btn-ghost.btn-warning:hover{border-color:#ffb74d;color:#ffb74d}.dark .avatarholder,.dark .placeholder{background-color:transparent;border-color:#333}.dark .menu .menu-item{color:#ccc;border-color:rgba(95,95,95,.78)}.dark .menu .menu-item.active,.dark .menu .menu-item:hover{color:#fff;border-color:#ccc}/*!* Copyright (C) 2019 VHS <vhsdev@tutanota.com>
+*
+* This file is part of After Dark.
+*
+* After Dark is free software: you can redistribute it and/or modify
+* it under the terms of the GNU Affero General Public License as published
+* by the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* After Dark is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+* GNU Affero General Public License for more details.
+*
+* You should have received a copy of the GNU Affero General Public License
+* along with this program. If not, see <https://www.gnu.org/licenses/>.*/:root{--screen-size-small: 30em}@keyframes intro{0%{opacity:0}100%{opacity:1}}.blur-up.lazyloading{filter:blur(5px);opacity:1;transition:opacity 1s,filter 1.5s}.blur-up.lazyload{opacity:0;filter:blur(10px)}.blur-up.lazyloaded{filter:blur(0);transition:filter 1s}.hack .readmore{margin-bottom:2.2em}.responsive-iframe,.ratio-container{position:relative;padding-bottom:56.25%;padding-top:25px;height:0}.responsive-iframe iframe,.ratio-container>*:not([itemprop=caption]){position:absolute;top:0;left:0;width:100%;height:100%}iframe{border:0}main,footer{animation:intro .3s both;animation-delay:.15s}header:first-of-type+details{margin:20px 0}footer time[datetime$=M]:before{content:"\2013\0020"}body>footer p.muted{margin-bottom:0}@media only screen and (max-width:768px){footer time[datetime$=M]{display:none}}blockquote cite{display:block}blockquote cite::before{content:"\2014\00A0"}:target{filter:brightness(1.2)}:disabled{cursor:not-allowed}.hack li ul{margin:0}.hack ol li{padding-left:27px}.main{padding:20px 10px}input.form-control{border-radius:0;background-color:transparent;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none}input.form-control,textarea.form-control,select.form-control,.help-block{font-size:initial}@media only screen and (max-width:768px){.help-block{font-size:unset}}html{font-size:13px}.hack .form input,.hack .form textarea,.hack .form button,.hack .form label{font-size:1rem}.hack .alert .highlight:first-of-type .chroma,.hack .card .highlight:first-of-type .chroma,.hack .alert pre:first-of-type,.hack .alert p:first-of-type,.hack .card pre:first-of-type,.hack .card p:first-of-type{margin-top:unset}.hack .alert .highlight:last-of-type .chroma,.hack .card .highlight:last-of-type .chroma,.hack .alert pre:last-of-type,.hack .alert p:last-of-type,.hack .card pre:last-of-type,.hack .card p:last-of-type{margin-bottom:unset}.hack blockquote,.hack blockquote:after{line-height:1.5}.hack figure,.standard figure{margin:unset}.hack figure a{border-bottom:none}.hack figure a:hover{background-color:inherit}article header img{width:100%;border-radius:3px}table td,table th{line-height:inherit}table a{border-bottom:unset}img{max-width:100%}@media only screen and (min-width:768px){html{font-size:16px}.container{max-width:50rem}}@media only screen and (min-width:768px),(-ms-high-contrast:active),(-ms-high-contrast:none){html{margin-left:calc(100vw - 100%)}}/*!
+ * Copyright (C) 2019  VHS <vhsdev@tutanota.com>
+ *
+ * This file is part of After Dark.
+ *
+ * After Dark is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * After Dark is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+a[rel*="external"]::after {
+  content: " " url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20class='i-external'%20viewBox='0%200%2032%2032'%20width='14'%20height='14'%20fill='none'%20stroke='%23ff9800'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='9.38%'%3E%3Cpath%20d='M14%209%20L3%209%203%2029%2023%2029%2023%2018%20M18%204%20L28%204%2028%2014%20M28%204%20L14%2018'/%3E%3C/svg%3E");
+}
+nav a.active {
+  background-color: inherit;
+  color: #fff;
+}
+a[itemprop="url"] {
+  color: #ff9800;
+}
+a[itemprop="url"]:hover {
+  color: #fff;
+}
+.muted, .help-block {
+  opacity: 0.70;
+}
+.hack .muted,
+.hack .help-block {
+  color: #e0e0e0;
+}
+.hack > header {
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, auto);
+  column-gap: 20px;
+  grid-template-areas: "nav nav";
+}
+.hack.dark table tr:nth-child(odd) td {
+  background-color: #1976d220;
+}
+.hack.dark table tr td a {
+  display: block;
+}
+caption {
+  margin-bottom: 20px;
+  text-align: left;
+}
+</style>
+        
+
+
+  
+    <meta name="theme-color" content=#000>
+  
+
+
+      
+    
+  
+
+
+    
+    
+  </head>
+  
+  
+  
+  <body class="hack dark main container">
+    <header>
+  
+
+  
+    
+      
+      
+  <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+    <meta itemprop="name" content="Main Menu">
+    
+      
+      
+        <a itemprop="url" class="active" href="/after-dark/">Overview</a>
+      
+    
+      
+      
+        <a itemprop="url" href="/after-dark/feature/">Features</a>
+      
+    
+      
+      
+        <a itemprop="url" href="/after-dark/module/">Modules</a>
+      
+    
+      
+      
+        <a itemprop="url" href="/after-dark/shortcode/">Shortcodes</a>
+      
+    
+      
+      
+        <a itemprop="url" href="/after-dark/extra/">Extras</a>
+      
+    
+      
+      
+        <a itemprop="url" rel="search" href="/after-dark/search/">Search</a>
+      
+    
+  </nav>
+
+
+    
+  
+
+<nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+  <meta itemprop="name" content="Translation Menu">
+  
+</nav>
+
+</header>
+    <main>
+  
+    <style>:root{--vertical-rhythm: 5rem;--logo-animation-filter-start: drop-shadow(0 -25px 45px #ff2e88) brightness(1) drop-shadow(0 -55px 35px #ff2e88) brightness(1) drop-shadow(0 -35px 155px #ff9800) brightness(4);--logo-animation-filter-end: drop-shadow(0 -20px 45px #ff2e88) brightness(.1) drop-shadow(0 0 5px #ff2e88) brightness(.7) drop-shadow(0 -20px 135px #ff2e88) brightness(2)}main,footer,header,caption{text-align:center}nav[itemtype*=SiteNavigationElement]{opacity:0;transition:opacity 300ms ease}nav[itemtype*=SiteNavigationElement]:focus-within{opacity:1;transition:opacity 300ms ease}@media screen and (max-width:768px){nav[itemtype*=SiteNavigationElement]{display:none}.hack header h1{margin-top:2rem!important}.grid{flex-direction:row}.cell{flex:1}}.shaded{filter:var(--logo-animation-filter-start);opacity:0}.animated{animation:reveal 2s both;opacity:1;filter:var(--logo-animation-filter-end)}@keyframes reveal{from{filter:var(--logo-animation-filter-start)}to{filter:var(--logo-animation-filter-end);opacity:1}}.hack .grid{justify-content:center}.hack header h1:after{content:none}.hack header h1{font-family:Futura,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;padding:0;margin:1rem;font-size:3em;display:inline-block;background-color:#2a3439;color:transparent;text-shadow:0 2px 3px rgba(255,255,255,.1);-webkit-background-clip:text;-moz-background-clip:text;background-clip:text;filter:brightness(3)}.hack header h1 sup{font-size:1rem}.hack header h1 sup:before{content:" "}.hack header h2:before,.hack section h2:before{content:unset}.hack header h2,.hack section h2{margin-top:.8rem;font-size:1.2em}.hack header h2{margin-top:-1rem}.hack .install.cta{margin-top:-1rem;margin-bottom:2rem}.hack .install.cta form[action*=quick-install]{width:unset}.hack .install.cta form[action*=quick-install] button{border-radius:4px;color:#ccc;background-color:#ff2e8860;transition:all .25s ease}.hack .install.cta form[action*=quick-install] button:hover,.hack .install.cta form[action*=quick-install] button:focus{background-color:#ff2e8880;color:#fff}.hack .install.cta form[action*=quick-install] button svg{stroke:#ff9800}.hack section:not(.capabilities){margin:var(--vertical-rhythm)0}.hack section.logo a{border-bottom:none;background-color:inherit}.hack section.hero{margin-top:-3rem;margin-bottom:0}.hack section.hero img{pointer-events:none}.hack section.feature ul li{display:inline;padding-left:unset}.hack section.feature ul>li::after{position:unset;content:""}.hack section.feature ul>li:not(:last-of-type)::after{content:" | "}.hack section.hero figure{margin:0;line-height:0;min-height:266px}@media screen and (min-width:768px){.hack section.hero figure img{margin:-3em 0 -2em}}.hack section.tagline p{margin:0;font-size:1.1rem;line-height:1.6}.hack section.capabilities table a{display:block}.hack footer section.cta{margin-top:6rem}.hack footer section.cta a{border-bottom:none;background-color:inherit;color:#ff9800;display:inline-block}.hack footer section.cta a:hover{color:#fff}.hack footer section.cta a small{display:block}.hack.dark table tbody td:first-child{color:inherit;font-weight:initial}.hack.dark table tr th{background-color:#1976d220}.hack.dark table tr td a{border:1px solid #2196f340;padding:.25rem}.hack.dark table tr td a:hover{transition:all 300ms ease;background-color:#ff2e8860;border-color:#2196f360}.hack.dark table tr td a:not(:hover){transition:all 300ms ease;background-color:#ff2e8825}</style>
+  
+  <header>
+    <h1>After Dark<sup class="muted">v9.2.3</sup></h1>
+    <h2 class="muted">Semantic Personal Publishing Platform</h2>
+  </header>
+  <section class="grid logo">
+    <a class="cell -12of12" rel="author" target="_self" href="https://vhs.codeberg.page/code/after-dark/">
+      <svg class="shaded animated" viewBox="0 0 46 45" width="92" height="90" xmlns="http://www.w3.org/2000/svg">
+        <title>After Dark</title>
+        <path d="M.708 45L23 .416 45.292 45H.708zM35 38L23 19 11 38h24z" fill="#000"/>
+      </svg>
+    </a>
+  </section>
+  <section class="grid tagline">
+    <div class="cell -12of12">
+      <p>After Dark is open source software you can use to build a secure website, blog or app. One command is all you need to start a new website.</p>
+    </div>
+  </section>
+  <section class="install cta">
+    
+
+
+
+
+
+
+
+
+
+
+<form
+  
+  
+  action="/feature/quick-install" 
+  
+  
+  
+  
+  
+  
+  class="form">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  class="btn btn-primary btn-ghost"
+>
+    <svg class="i-download" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30"></path>
+    </svg>&nbsp;&nbsp;Get Started
+  </button>
+
+
+  
+
+<div class="help-block">
+    <small>English and <a href="/id/feature/quick-install">Bahasa</a></small>
+  </div>
+
+
+</form>
+
+
+
+
+  </section>
+  <section class="hero">
+    <figure>
+  <img class="lazyload blur-up" src="/images/minimal-mac_800x600-fs8.png" data-src="/images/minimal-mac_2400x1800-fs8.png" alt="After Dark screenshots" itemprop="image">
+  
+</figure>
+
+  </section>
+  
+    <section id="feature-workflow" class="capabilities">
+      
+        <svg id="i-code" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
+</svg>
+      
+      <h2>Developer Focused</h2>
+      
+      
+        <table>
+          <caption>Develop and publish websites cross-platform using a <strong>single codebase</strong> with just <strong>one dependency</strong> and capabilities designed to make you more productive:</caption>
+          <tr>
+            <th scope="col" width="25%">Features</th>
+            <th scope="col" width="25%">Modules</th>
+            <th scope="col" width="25%">Shortcodes</th>
+            <th scope="col" width="25%">Extras</th>
+          </tr>
+          <tr>
+            <td><a href="./feature/">40</a></td>
+            <td><a href="./module/">4</a></td>
+            <td><a href="./shortcode/">27+</a></td>
+            <td><a href="./extra/">2</a></td>
+          </tr>
+        </table>
+      
+    </section>
+  
+    <section id="feature-speed" class="feature">
+      
+        <svg id="i-lightning" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
+</svg>
+      
+      <h2>Incredibly Fast</h2>
+      
+      
+        <p>With <a target="_blank" rel="external nofollow noopener" href="https://forestry.io/blog/hugo-vs-jekyll-benchmark/">0.615s average</a> builds and <strong><i>decisecond</i> page loads</strong> you could conceivably develop and serve your content from an <a target="_blank" rel="external nofollow noopener" href="https://amzn.to/2Wx7xJk">ODROID</a> in space.</p>
+        <ul>
+          <li><a href="/feature/fetch-injection/">Fetch Inject</a>
+        
+          <li><a href="/feature/lazy-loading/">Lazy Loading</a>
+        
+          <li><a href="https://tools.pingdom.com/#5a399f9666400000" target="_blank" rel="external nofollow noopener">Benchmark</a>
+        </ul>
+      
+    </section>
+  
+    <section id="feature-privacy" class="feature">
+      
+        <svg id="i-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <circle cx="17" cy="15" r="1" />
+    <circle cx="16" cy="16" r="6" />
+    <path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z" />
+</svg>
+      
+      <h2>Privacy Aware</h2>
+      
+      
+        <p>Develop your entire site <strong><i>without</i> Internet</strong> connectivity and <i>expose</i> an ephemeral Web server with e2e encryption and <strong>real-time traffic inspection</strong>.</p>
+        <ul>
+          <li><a href="/feature/work-offline/">Work Offline</a>
+        
+          <li><a href="/feature/referrer-policy/">Hide Referrals</a>
+        
+          <li><a href="/feature/ephemeral-hosting/">SSH Host</a>
+        </ul>
+      
+    </section>
+  
+    <section id="feature-security" class="feature">
+      
+        <svg id="i-lock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M5 15 L5 30 27 30 27 15 Z M9 15 C9 9 9 5 16 5 23 5 23 9 23 15 M16 20 L16 23" />
+    <circle cx="16" cy="24" r="1" />
+</svg>
+      
+      <h2>Securely Designed</h2>
+      
+      
+        <p>Verify the <i>authenticity</i> of your installation using secure cryptographic hashes and use <abbr title="Content Security Policy">CSP</abbr>, <abbr title="Sub-Resource Integrity">SRI</abbr> and Referrer Policy to <strong>lock down your content</strong>.</p>
+        <ul>
+          <li><a href="/feature/content-security-policy/">Content Policy</a>
+        
+          <li><a href="/validate/">Check Integrity</a>
+        
+          <li><a href="/feature/#security">See All</a>
+        </ul>
+      
+    </section>
+  
+    <section id="feature-graphics" class="feature">
+      
+        <svg id="i-photo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M20 24 L12 16 2 26 2 2 30 2 30 24 M16 20 L22 14 30 22 30 30 2 30 2 24" />
+    <circle cx="10" cy="9" r="3" />
+</svg>
+      
+      <h2>Advanced Graphics</h2>
+      
+      
+        <p>Add high-resolution, responsive images with <strong>low-quality image placeholders</strong> and <strong>engaging visual effects</strong> without even touching an image editor.</p>
+        <ul>
+          <li><a href="/feature/post-images/">Post Images</a>
+        
+          <li><a href="/feature/custom-homepage/">Thumbnails</a>
+        
+          <li><a href="/module/hall-of-mirrors/">Galleries</a>
+        </ul>
+      
+    </section>
+  
+    <section id="feature-customize" class="feature">
+      
+        <svg id="i-options" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M28 6 L4 6 M28 16 L4 16 M28 26 L4 26 M24 3 L24 9 M8 13 L8 19 M20 23 L20 29" />
+</svg>
+      
+      <h2>Easily Customized</h2>
+      
+      
+        <p>Toggle between 1 of 8 <strong><i>customizable</i> skin styles</strong> or disable them entirely and use custom layouts and styles to take complete design control.</p>
+        <ul>
+          <li><a href="/feature/custom-homepage/">Homepage</a>
+        
+          <li><a href="/feature/skin-styles/">Skins</a>
+        
+          <li><a href="/feature/#customizing">See All</a>
+        </ul>
+      
+    </section>
+  
+    <section id="feature-search" class="feature">
+      
+        <svg id="i-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <circle cx="14" cy="14" r="12" />
+    <path d="M23 23 L30 30"  />
+</svg>
+      
+      <h2>Fuzzy Search</h2>
+      
+      
+        <p>Quickly <strong>locate <i>indexed</i> content</strong> anywhere on your site using inbuilt fuzzy search with automatic search indexing and <strong>full offline support</strong>.</p>
+        <ul>
+          <li><a href="/feature/fuzzy-search/">Learn More</a>
+        
+          <li><a href="/search/?s=uzzy%20searvh">Try It Now</a>
+        </ul>
+      
+    </section>
+  
+    <section id="feature-rewards" class="feature">
+      
+        <svg id="i-creditcard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M2 7 L2 25 30 25 30 7 Z M5 18 L9 18 M5 21 L11 21" />
+    <path d="M2 11 L2 13 30 13 30 11 Z" fill="currentColor" />
+</svg>
+      
+      <h2 style="margin-bottom:0.2rem">Rewards System</h2>
+      
+        <small><i style="color:lime">(Now in Beta!)</i></small>
+      
+      
+        <p>Earn rewards for keeping your software up-to-date and <strong>monetize attention</strong> to generate a <strong><i>borderless</i></strong>, low-maintenance passive income.</p>
+        <ul>
+          <li><a href="/module/toxic-swamp/#installation">Installation</a>
+        
+          <li><a href="/module/toxic-swamp/">Learn More</a>
+        </ul>
+      
+    </section>
+  
+    <section id="feature-extras" class="feature">
+      
+        <svg id="i-paperclip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M10 9 L10 24 C10 28 13 30 16 30 19 30 22 28 22 24 L22 6 C22 3 20 2 18 2 16 2 14 3 14 6 L14 23 C14 24 15 25 16 25 17 25 18 24 18 23 L18 9" />
+</svg>
+      
+      <h2>Batteries Included</h2>
+      
+      
+        <p>Self-host your entire stack using <strong><i>commodity hardware</i></strong> and keep your source code and visitor metrics entirely <strong>under your control</strong>.</p>
+        <ul>
+          <li><a href="/extra/high-tea/">Gitea</a>
+        
+          <li><a href="/extra/after-dark-k3s/">Kubernetes</a>
+        
+          <li><a href="/module/voyeur/">Fathom</a>
+        </ul>
+      
+    </section>
+  
+    <section id="feature-builds" class="feature">
+      
+        <svg id="i-export" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M28 22 L28 30 4 30 4 22 M16 4 L16 24 M8 12 L16 4 24 12" />
+</svg>
+      
+      <h2>Extended Builds</h2>
+      
+      
+        <p>Create <strong>high-performance Hugo builds</strong> using Alpine Linux with Musl. Builds Hugo Extended binary <i>with Sass support</i> using Docker <strong>directly from source</strong>.</p>
+        <ul>
+          <li><a href="/feature/extended-builds/">Create Build Now</a>
+        </ul>
+      
+    </section>
+  
+  <footer>
+    <section class="grid cta">
+      <a target="_self" class="cell -2of12" itemtype="significantLink" rel="prefetch noreferrer" href="https://t.me/afterdarkupdates">
+        <svg id="updates" aria-lebelledby="updates-label" class="i-bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M8 17 C8 12 9 6 16 6 23 6 24 12 24 17 24 22 27 25 27 25 L5 25 C5 25 8 22 8 17 Z M20 25 C20 25 20 29 16 29 12 29 12 25 12 25 M16 3 L16 6" />
+        </svg>
+        <small role="tooltip" id="updates-label">Updates</small>
+      </a>
+      <a target="_self" class="cell -2of12" itemtype="significantLink" rel="prefetch" href="https://codeberg.org/vhs/after-dark/">
+        <svg id="source" aria-labelledby="source-label" class="i-code" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
+        </svg>
+        <small role="tooltip" id="source-label">Source</small>
+      </a>
+      <a target="_blank" class="cell -2of12" itemtype="significantLink" rel="noopener noreferrer nofollow" href="irc://chat.freenode.net:6667/after-dark">
+        <svg id="chat" aria-labelledby="chat-label" class="i-message" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M2 4 L30 4 30 22 16 22 8 29 8 22 2 22 Z" />
+        </svg>
+        <small role="tooltip" id="chat-label">Chat</small>
+      </a>
+      <a target="_self" class="cell -2of12" itemtype="significantLink" rel="prefetch" href="https://codeberg.org/vhs/after-dark/releases">
+        <svg id="download" aria-labelledby="download-label" class="i-download" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30" />
+        </svg>
+        <small role="tooltip" id="download-label">Download</small>
+      </a>
+    </section>
+  </footer>
+</main>
+    <footer>
+  <small class="muted">
+    
+  
+    
+      Copyright &copy; 2019 VHS.
+      
+        Licensed under <a  target="_blank" rel="external noopener license" href="https://www.gnu.org/licenses/agpl.html">GNU AGPLv3&#43;</a>.
+      
+    
+  
+
+
+  </small>
+</footer>
+    
+    
+    
+  </body>
+</html>

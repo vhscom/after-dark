@@ -1,0 +1,45 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>imaging on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/id/tags/imaging/</link>
+    <description>Recent content in imaging on After Dark</description>
+    <image>
+      <title>imaging on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/id/tags/imaging/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>id-ID</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:16 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/id/tags/imaging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Module System</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/module-system/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/module-system/</guid>
+      <description>After Dark menggunakan Hugo Theme Components untuk menghasilkan sistem untuk menyertakan sejumlah prebuilt add-on Modules yang menyediakan fungsionalitas tambahan.
+Lihat Modules ringkasan modul yang tersedia.</description>
+      <category domain="https://vhs.codeberg.page/categories/core">Core</category>
+      <content:encoded><![CDATA[After Dark menggunakan Hugo Theme Components untuk menghasilkan sistem untuk menyertakan sejumlah prebuilt add-on Modules yang menyediakan fungsionalitas tambahan.
+Lihat Modules ringkasan modul yang tersedia.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Post Images</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/post-images/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/post-images/</guid>
+      <description>Tambahkan daya tarik visual ke postingan anda dengan memposting gambar. Gambar postingan muncul diatas konten postingan dan pengaruh Hugo Image Processing dan Lazy Loading untuk menyediakan gambar yang sepenuhnya otomatis dan lazy-loaded LQIP dan arah seni bawaan.
+   Be Creative. Photo: AK¥N Cakiner on Unsplash     Menggunakan gambar postingan memerlukan beberapa pendapat terkait dengan struktur konten anda. Untuk membuat postingan dengan gambar posting anda harus:</description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[Tambahkan daya tarik visual ke postingan anda dengan memposting gambar. Gambar postingan muncul diatas konten postingan dan pengaruh Hugo Image Processing dan Lazy Loading untuk menyediakan gambar yang sepenuhnya otomatis dan lazy-loaded LQIP dan arah seni bawaan.
+   Be Creative. Photo: AK¥N Cakiner on Unsplash     Menggunakan gambar postingan memerlukan beberapa pendapat terkait dengan struktur konten anda. Untuk membuat postingan dengan gambar posting anda harus:
+ Gabungkan gambar dan konten dalam direktori seperti yang ditunjukan di bawah ini. Perbarui postingan Front Matter seperti yang dijelaskan dibawah ini.  Contoh bundel halaman mungkin akan terlihat seperti berikut ini:
+├── archetypes ├── content │ └── post │ └── secure-your-digital-life │ ├── images │ │ └── florian-klauer-119557-unsplash.jpg │ └── index.md ├── layouts Dengan gambar header yang ditunjukkan di index.md:
+[[resources]] src = &amp;#34;images/*119557*&amp;#34; name = &amp;#34;header&amp;#34;  Tip: Orientasi tidak signifikan. Untuk tampilan optimal gunakan gambar yang lebih besar.  Itu dia! After Dark melakukan hal selebihnya.
+Untuk membantu memahami bundel, lihat Page Bundles in Hugo.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

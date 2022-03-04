@@ -1,0 +1,155 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>links on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/links/</link>
+    <description>Recent content in links on After Dark</description>
+    <image>
+      <title>links on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/links/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/links/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>External</title>
+      <link>https://vhs.codeberg.page/after-dark/shortcode/external/</link>
+      <guid>https://vhs.codeberg.page/after-dark/shortcode/external/</guid>
+      <description>Basic usage:
+{{&amp;lt; external href=&amp;#34;https://vhs.codeberg.page/after-dark&amp;#34; text=&amp;#34;After Dark&amp;#34; /&amp;gt;}} {{&amp;lt; external href=&amp;#34;https://vhs.codeberg.page/after-dark&amp;#34; /&amp;gt;}}  After Dark vhs.codeberg.page/after-dark
+Shorthand usage:
+{{&amp;lt; external &amp;quot;https://vhs.codeberg.page/after-dark&amp;quot; &amp;quot;After Dark&amp;quot; /&amp;gt;}} {{&amp;lt; external href=&amp;quot;https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install&amp;quot; /&amp;gt;}} {{&amp;lt; external &amp;quot;wss://fs1.vhs.codeberg.page:80&amp;quot; /&amp;gt;}}  After Dark codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install wss://fs1.vhs.codeberg.page:80
+Note: URIs such as those using the wss scheme may be considered unsafe by the Go template package. Learn more in the package Security Model.  With a trusted URL:
+{{&amp;lt; external trusted=&amp;#34;true&amp;#34; href=&amp;#34;wss://fs1.</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[Basic usage:
+{{&amp;lt; external href=&amp;#34;https://vhs.codeberg.page/after-dark&amp;#34; text=&amp;#34;After Dark&amp;#34; /&amp;gt;}} {{&amp;lt; external href=&amp;#34;https://vhs.codeberg.page/after-dark&amp;#34; /&amp;gt;}}  After Dark vhs.codeberg.page/after-dark
+Shorthand usage:
+{{&amp;lt; external &amp;quot;https://vhs.codeberg.page/after-dark&amp;quot; &amp;quot;After Dark&amp;quot; /&amp;gt;}} {{&amp;lt; external href=&amp;quot;https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install&amp;quot; /&amp;gt;}} {{&amp;lt; external &amp;quot;wss://fs1.vhs.codeberg.page:80&amp;quot; /&amp;gt;}}  After Dark codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install wss://fs1.vhs.codeberg.page:80
+Note: URIs such as those using the wss scheme may be considered unsafe by the Go template package. Learn more in the package Security Model.  With a trusted URL:
+{{&amp;lt; external trusted=&amp;#34;true&amp;#34; href=&amp;#34;wss://fs1.vhs.codeberg.page:80&amp;#34; /&amp;gt;}} {{&amp;lt; external trusted=&amp;#34;true&amp;#34; href=&amp;#34;irc://chat.freenode.net:6667/after-dark&amp;#34; /&amp;gt;}}  wss://fs1.vhs.codeberg.page:80 irc://chat.freenode.net:6667/after-dark
+With external link styling removed:
+{{&amp;lt; external rel=&amp;#34;noopener&amp;#34; href=&amp;#34;https://blog.domain.example&amp;#34; /&amp;gt;}}  blog.domain.example With internal link opening in a new window:
+{{&amp;lt; external href=&amp;#34;/404.html&amp;#34; text=&amp;#34;Error Page&amp;#34; /&amp;gt;}}  Error Page With structured data type:
+{{&amp;lt; external itemtype=&amp;#34;significantLink&amp;#34; href=&amp;#34;https://vhs.codeberg.page&amp;#34; /&amp;gt;}}  vhs.codeberg.page With site-wide Referrer Policy overridden:
+{{&amp;lt; external referrerpolicy=&amp;#34;unsafe-url&amp;#34; href=&amp;#34;http://goo.gl&amp;#34; /&amp;gt;}}  goo.gl With markdown image and link styling removed:
+{{% external rel=&amp;#34;next&amp;#34; href=&amp;#34;https://source.unsplash.com/collection/983219/2160x1440&amp;#34; %}} ![Example image](https://source.unsplash.com/collection/983219/1080x720 &amp;#34;View Random Image Enlarged&amp;#34;) {{% /external %}}   With interactive Button to run a Fuzzy Search:
+{{&amp;lt; external rel=&amp;#34;search&amp;#34; target=&amp;#34;_self&amp;#34; href=&amp;#34;/search/?s=button&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-button type=&amp;#34;primary&amp;#34; text=&amp;#34;Search&amp;#34; /&amp;gt;}} {{&amp;lt; /external &amp;gt;}}  Search  ]]></content:encoded>
+    </item>
+    <item>
+      <title>Fuzzy Search</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/fuzzy-search/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/fuzzy-search/</guid>
+      <description>If a search engine can find it, so can you. Quickly locate indexable content site-wide with fuzzy search. No registration necessary.
+Interactive Example     Adjust it from _index.md in the site content/search directory:
+├── archetypes ├── content │ └── search │ └── _index.md ├── static ├── themes If the file doesn&amp;rsquo;t exist, yet create it:
+$ hugo new search/_index.md And specify the JSON Output Format in site config:</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[If a search engine can find it, so can you. Quickly locate indexable content site-wide with fuzzy search. No registration necessary.
+Interactive Example     Adjust it from _index.md in the site content/search directory:
+├── archetypes ├── content │ └── search │ └── _index.md ├── static ├── themes If the file doesn&amp;rsquo;t exist, yet create it:
+$ hugo new search/_index.md And specify the JSON Output Format in site config:
+[outputs] home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;]  Note: This adds JSON while keeping the HTML and RSS defaults.  Once activated your site will begin outputting an index.json file during generation, giving fuzzy search the data it needs to help you locate pages.
+Try it now by navigating to domain.example/search, or, if enabled, Search in the Section Menu, entering a query and navigating between results using Tab.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Index Blocking</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/index-blocking/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/index-blocking/</guid>
+      <description>After Dark uses the noindex robots meta directive to prevent search engines from crawling and indexing certain parts of your site. It appears in the HTML document head and looks like this:
+&amp;lt;meta name=&amp;#34;robots&amp;#34; content=&amp;#34;noindex&amp;#34;&amp;gt; Unlike robots.txt meta directives are defined within page content itself and unambiguously indicate which, if any, pages should be blocked from indexing — even if some of those pages appear in your site&amp;rsquo;s Sitemap.
+To facilitate the discovery of index blocked pages Fuzzy Search utilizes the very same meta directive exposed to search engines to prevent disclosure of pages in its own result listings.</description>
+      <category domain="https://vhs.codeberg.page/categories/search">Search</category>
+      <content:encoded><![CDATA[After Dark uses the noindex robots meta directive to prevent search engines from crawling and indexing certain parts of your site. It appears in the HTML document head and looks like this:
+&amp;lt;meta name=&amp;#34;robots&amp;#34; content=&amp;#34;noindex&amp;#34;&amp;gt; Unlike robots.txt meta directives are defined within page content itself and unambiguously indicate which, if any, pages should be blocked from indexing — even if some of those pages appear in your site&amp;rsquo;s Sitemap.
+To facilitate the discovery of index blocked pages Fuzzy Search utilizes the very same meta directive exposed to search engines to prevent disclosure of pages in its own result listings. Therefore, if a page can be found in fuzzy search, that page may ultimately appear on a search engine result page.
+Adjust index blocking per-page using noindex Front Matter:
+noindex = true # set false or remove to unblock Block entire sections using an _index.md file with the above setting:
+├── content │ ├── legal │ │ ├── _index.md │ │ ├── terms.md │ │ └── privacy.md │ ├── post By default the following page types are blocked automatically:
+ Section listings automatically linked to from the Section Menu; Taxonomy Pages such as Category, Tag and terms listings; and, If enabled, the Fuzzy Search page or any deep-linked result within.  Adjust defaults using the noindex_kinds setting from Site Configuration. For example, to enable crawling of section pages add the following to the config:
+[params] noindex_kinds = [ &amp;#34;taxonomy&amp;#34;, &amp;#34;taxonomyTerm&amp;#34; ] # crawl &amp;#34;section&amp;#34; pages Learn about Robots Meta Directives on Moz and see how Google uses noindex in Block search indexing with &amp;#39;noindex&amp;#39;.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Link Typing</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/link-typing/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/link-typing/</guid>
+      <description>After Dark uses link typing to indicate semantic relationships between documents. By default the alternate link type is used to highlight the presence of web feeds on the homepage and in taxonomy listings:
+&amp;lt;link href=&amp;#34;https://domain.example/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; &amp;lt;link href=&amp;#34;https://domain.example/categories/privacy/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; &amp;lt;link href=&amp;#34;https://domain.example/tags/color/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; In addition to defaults After Dark recognizes the prev and next link types if specified in page Front Matter:</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[After Dark uses link typing to indicate semantic relationships between documents. By default the alternate link type is used to highlight the presence of web feeds on the homepage and in taxonomy listings:
+&amp;lt;link href=&amp;#34;https://domain.example/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; &amp;lt;link href=&amp;#34;https://domain.example/categories/privacy/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; &amp;lt;link href=&amp;#34;https://domain.example/tags/color/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; In addition to defaults After Dark recognizes the prev and next link types if specified in page Front Matter:
+prev = &amp;#34;/series/learn-to-code/part-one/&amp;#34; next = &amp;#34;/series/learn-to-code/part-three/&amp;#34; Use prev and next link types for segmented articles, Live Blog Postings or to mimic the traits of a series taxonomy if no series taxonomy is present.
+Link Types are commonly shown at the top of the page in text browsers such as ELinks as an auxiliary form of navigation and can help robots and users better understand relationships between your content.
+Learn more about link types and Taxonomies in Hugo.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Related Content</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/related-content/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/related-content/</guid>
+      <description>After Dark provides related content to help users find more information that&amp;rsquo;s relevant to them and can increase page views and time spent on your site.
+   When two or more pages or posts contain the same taxonomy tags they will be linked in a section as shown near the bottom of the page. The section appears automatically below Post Bylines with a default maximum of 7 items shown.</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[After Dark provides related content to help users find more information that&amp;rsquo;s relevant to them and can increase page views and time spent on your site.
+   When two or more pages or posts contain the same taxonomy tags they will be linked in a section as shown near the bottom of the page. The section appears automatically below Post Bylines with a default maximum of 7 items shown.
+Tip: Create a Custom Layout to show Related Content outside posts.  Adjust site-wide maximum from Site Configuration by adding related_content_limit:
+[params] related_content_limit = 5 # limit to 5 items maximum site-wide By default related content will appear as an unordered list of page titles with hyperlinks to their respective pages along with the approximate reading time.
+For posts, display thumbnail images instead by adding a related limit:
+[params.layout.post.related] limit = 3 And for each post create a Post Images-formatted resource bundle containing thumbnail in the name as described in more detail on Custom Homepage.
+As with homepage thumbnails, image processing may be adjusted:
+[params.layout.post.related] limit = 4 thumbs = [&amp;#34;fill&amp;#34;, &amp;#34;400x400&amp;#34;] # Optional, thumbnail image processing Set limit to 0 to hide the related content section.
+See Related Content in Hugo for additional configuration options.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Section Menu</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/section-menu/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/section-menu/</guid>
+      <description>After Dark uses Hugo&amp;rsquo;s Section Menu for “Lazy” Bloggers to create a site-wide navigational aid. The section menu is disabled by default.
+Interactive Example Overview Features Modules Shortcodes Extras Search     Enable it from menu.main layout config in your site configuration:
+[params.layout.menu.main] hidden = true # set `false` or remove to show section menu With the menu enabled navigation links will begin appearing automatically on a per-section basis whenever Published Content is available within that section.</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[After Dark uses Hugo&amp;rsquo;s Section Menu for “Lazy” Bloggers to create a site-wide navigational aid. The section menu is disabled by default.
+Interactive Example Overview Features Modules Shortcodes Extras Search     Enable it from menu.main layout config in your site configuration:
+[params.layout.menu.main] hidden = true # set `false` or remove to show section menu With the menu enabled navigation links will begin appearing automatically on a per-section basis whenever Published Content is available within that section.
+Customizing Adjust link names and menu positions by adding the following code block to your Site Configuration and modifying it to meet your needs:
+[[menu.main]] name = &amp;#34;Home&amp;#34; weight = 1 identifier = &amp;#34;home&amp;#34; url = &amp;#34;/&amp;#34; [[menu.main]] name = &amp;#34;Posts&amp;#34; weight = 2 identifier = &amp;#34;post&amp;#34; url = &amp;#34;/post/&amp;#34; Exclude menu items by identifier:
+[params.layout.menu.main] exclude = [&amp;#34;home&amp;#34;, &amp;#34;post&amp;#34;] # exclude homepage and blog postings Decorate links with SVG icons using pre and post:
+[[menu.main]] name = &amp;#34;Search&amp;#34; identifier = &amp;#34;search&amp;#34; url = &amp;#34;/search/&amp;#34; post = &amp;#34;&amp;lt;svg aria-hidden=\&amp;#34;true\&amp;#34; class=\&amp;#34;i-search\&amp;#34; viewBox=\&amp;#34;0 0 32 32\&amp;#34; width=\&amp;#34;14\&amp;#34; height=\&amp;#34;14\&amp;#34; fill=\&amp;#34;none\&amp;#34; stroke=\&amp;#34;currentcolor\&amp;#34; stroke-linecap=\&amp;#34;round\&amp;#34; stroke-linejoin=\&amp;#34;round\&amp;#34; stroke-width=\&amp;#34;3\&amp;#34;&amp;gt;&amp;lt;circle cx=\&amp;#34;14\&amp;#34; cy=\&amp;#34;14\&amp;#34; r=\&amp;#34;12\&amp;#34; /&amp;gt;&amp;lt;path d=\&amp;#34;M23 23 L30 30\&amp;#34; /&amp;gt;&amp;lt;/svg&amp;gt;&amp;#34; Link to stand-alone pages using Front Matter menu setting:
+title = &amp;#34;About&amp;#34; menu = &amp;#34;main&amp;#34; Change the link title to differentiate from page:
+title = &amp;#34;About Us&amp;#34; menu = &amp;#34;main&amp;#34; linktitle = &amp;#34;About&amp;#34; Position items using Menu Entry Variables for more control:
+title = &amp;#34;About Us&amp;#34; [menu.main] name = &amp;#34;About&amp;#34; weight = 5 Provide your own config settings for use in Custom Layouts:
+[params.layout.menu.main.custom] social_icons = [&amp;#34;telegram&amp;#34;, &amp;#34;mastodon&amp;#34;, &amp;#34;matrix&amp;#34;] And access them via your customized navmenu.html, if present:
+{{range.settings.custom.social_icons}} {{partial&amp;#34;social-links.html&amp;#34;.}} {{end}} Create a second menu immediately after the first:
+[[menu.main]] name = &amp;#34;Posts&amp;#34; weight = 2 identifier = &amp;#34;post&amp;#34; url = &amp;#34;/post/&amp;#34; [[menu.utility]] name = &amp;#34;Email&amp;#34; weight = 1 identifier = &amp;#34;email&amp;#34; url = &amp;#34;mailto:d0x3d@posteo.com&amp;#34; And position it to the right using Custom Styles:
+.hack &amp;gt; header { display: grid; grid-template-columns: 1fr minmax(min-content, auto); column-gap: 20px; grid-template-areas: &amp;#34;nav nav&amp;#34;; } See Menus in Hugo for additional capabilities. For help with CSS Grid Layout get your feet wet at cssgridgarden.com.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Taxonomy Pages</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/taxonomy-pages/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/taxonomy-pages/</guid>
+      <description>After Dark generates categorical and tag taxonomy and taxonomy terms pages and links to them automatically in posts using Post Bylines.
+Given the following page Front Matter for a post type:
+categories = [&amp;#34;navigation&amp;#34;] tags = [&amp;#34;links&amp;#34;, &amp;#34;taxonomy&amp;#34;] The following taxonomy links would appear in the byline:
+ Published [by author] [publishdate or date] in navigation and tagged links and taxonomy using [wordcount] words.
+ The following Index Blocked taxonomy pages generated:</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[After Dark generates categorical and tag taxonomy and taxonomy terms pages and links to them automatically in posts using Post Bylines.
+Given the following page Front Matter for a post type:
+categories = [&amp;#34;navigation&amp;#34;] tags = [&amp;#34;links&amp;#34;, &amp;#34;taxonomy&amp;#34;] The following taxonomy links would appear in the byline:
+ Published [by author] [publishdate or date] in navigation and tagged links and taxonomy using [wordcount] words.
+ The following Index Blocked taxonomy pages generated:
+ /categories/index.html /categories/navigation/index.html /tags/index.html /tags/links/index.html /tags/taxonomy/index.html  The following taxonomic web feeds created:
+ /categories/index.xml /categories/navigation/index.xml /tags/index.xml /tags/links/index.xml /tags/taxonomy/index.xml  The Sitemap and Related Content updated and, if activated, the Fuzzy Search JSON search index (weighted on taxonomy) regenerated, all automatically.
+See Taxonomies in Hugo to learn about taxonomies and how to customize them.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

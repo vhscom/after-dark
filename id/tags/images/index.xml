@@ -1,0 +1,50 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>images on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/id/tags/images/</link>
+    <description>Recent content in images on After Dark</description>
+    <image>
+      <title>images on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/id/tags/images/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>id-ID</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:16 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/id/tags/images/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lazy Loading</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/lazy-loading/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/lazy-loading/</guid>
+      <description>After Dark menggunakan lazySizes untuk memprioritaskan pemuatan sumber daya eksternal tertentu untuk meningkatkan waktu pemuatan halaman dan membantu mengurangi konsumsi bandwith secara keseluruhan.
+Lazy loading bekerja secara otomatis untuk Custom Homepage thumbnails, Post Images dan ketika menggunakan Figure Shortcode, atau terkait dengan Snippet, seperti yang terlihat sebagai berikut:
+   Be Creative AK¥N Cakiner     Untuk menggunakan lazy loading di Custom Layouts atau saat membuat milik anda sendiri Shortcodes menambahkan atribut kelas lazyload dan data yang relevan seperti yang ditunjukkan di sini:</description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[After Dark menggunakan lazySizes untuk memprioritaskan pemuatan sumber daya eksternal tertentu untuk meningkatkan waktu pemuatan halaman dan membantu mengurangi konsumsi bandwith secara keseluruhan.
+Lazy loading bekerja secara otomatis untuk Custom Homepage thumbnails, Post Images dan ketika menggunakan Figure Shortcode, atau terkait dengan Snippet, seperti yang terlihat sebagai berikut:
+   Be Creative AK¥N Cakiner     Untuk menggunakan lazy loading di Custom Layouts atau saat membuat milik anda sendiri Shortcodes menambahkan atribut kelas lazyload dan data yang relevan seperti yang ditunjukkan di sini:
+&amp;lt;!-- non-responsive --&amp;gt; &amp;lt;img data-src=&amp;#34;image.jpg&amp;#34; class=&amp;#34;lazyload&amp;#34;&amp;gt; &amp;lt;!-- responsive with automatic sizes calculation --&amp;gt; &amp;lt;img data-sizes=&amp;#34;auto&amp;#34; data-src=&amp;#34;image2.jpg&amp;#34; data-srcset=&amp;#34;image1.jpg 300w, image2.jpg 600w, image3.jpg 900w&amp;#34; class=&amp;#34;lazyload&amp;#34;&amp;gt; &amp;lt;!-- iframe example --&amp;gt; &amp;lt;iframe frameborder=&amp;#34;0&amp;#34; class=&amp;#34;lazyload&amp;#34; allowfullscreen data-src=&amp;#34;//www.youtube.com/embed/ZfV-aYdU4uE&amp;#34;&amp;gt; &amp;lt;/iframe&amp;gt; Lihat lazySizes sebagai informasi dan contoh tambahan.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Social Meta</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/social-meta/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/social-meta/</guid>
+      <description>After Dark menyediakan Open Graph Protocol dan Twitter Cards metadata di halaman untuk mencapai kartu berbagi yang banyak:
+Menyesuaikanauthor di Site Configuration untuk menentukan nama yang ditampilkan, jika ada:
+[params] author = &amp;#34;Bali Bebas!&amp;#34; Setel atau gantiauthor per halaman menggunakan Front Matter seperti yang ditunjukkan disini:
+title = &amp;#34;Become a Digital Nomad in Bali: The Lost Guide&amp;#34; description = &amp;#34;Everything you need to know to become a Digital Nomad in Bali.</description>
+      <category domain="https://vhs.codeberg.page/categories/social">Social</category>
+      <content:encoded><![CDATA[After Dark menyediakan Open Graph Protocol dan Twitter Cards metadata di halaman untuk mencapai kartu berbagi yang banyak:
+Menyesuaikanauthor di Site Configuration untuk menentukan nama yang ditampilkan, jika ada:
+[params] author = &amp;#34;Bali Bebas!&amp;#34; Setel atau gantiauthor per halaman menggunakan Front Matter seperti yang ditunjukkan disini:
+title = &amp;#34;Become a Digital Nomad in Bali: The Lost Guide&amp;#34; description = &amp;#34;Everything you need to know to become a Digital Nomad in Bali.&amp;#34; author = &amp;#34;After Dark&amp;#34; date = &amp;#34;2017-02-02T11:57:24&#43;08:00&amp;#34; publishdate = &amp;#34;2017-01-28T02:31:22&#43;08:00&amp;#34; images = [ &amp;#34;https://source.unsplash.com/-09QE4q0ezw/2000x1322&amp;#34; ] Sesuaikan images untuk menentukan gambar eksternal atau jika menggunakan Page Bundles, tentukan jalur relatif ke sumber gambar untuk digunakan:
+images = [ &amp;#34;/post/post-title/images/lana-abie-581813-unsplash.jpg&amp;#34; ]  Kenapa menggunakan susunan? Open Graph mendukung berbagai ukuran gambar. Dan meskipun After Dark tidak mendukung berbagai ukuran, pengguna dapat membuat custom layouts itu.  Jika tidak ada gambar tingkat halaman yang disediakan After Dark akan mundur ke gambar site-wide yang dapat disesuaikan atau dihapus dari Site Configuration:
+[params] images = [ &amp;#34;https://source.unsplash.com/-09QE4q0ezw/2000x1322&amp;#34; # site-wide og:image ] Lihat Unsplash dan Unsplash Source untuk ribuan gambar bebas royalti.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

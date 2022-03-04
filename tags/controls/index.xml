@@ -1,0 +1,115 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>controls on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/controls/</link>
+    <description>Recent content in controls on After Dark</description>
+    <image>
+      <title>controls on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/controls/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/controls/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Button</title>
+      <link>https://vhs.codeberg.page/after-dark/shortcode/button/</link>
+      <guid>https://vhs.codeberg.page/after-dark/shortcode/button/</guid>
+      <description>Different types:
+{{&amp;lt; hackcss-button text=&amp;#34;Default&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Primary&amp;#34; type=&amp;#34;primary&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Success&amp;#34; type=&amp;#34;success&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Info&amp;#34; type=&amp;#34;info&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Warning&amp;#34; type=&amp;#34;warning&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Error&amp;#34; type=&amp;#34;error&amp;#34; /&amp;gt;}}  Default Primary Success Info Warning Error Ghost types:
+{{&amp;lt; hackcss-button isghost=&amp;#34;true&amp;#34; text=&amp;#34;Default&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button isghost=&amp;#34;true&amp;#34; text=&amp;#34;Primary&amp;#34; type=&amp;#34;primary&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button isghost=&amp;#34;true&amp;#34; text=&amp;#34;Success&amp;#34; type=&amp;#34;success&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button isghost=&amp;#34;true&amp;#34; text=&amp;#34;Info&amp;#34; type=&amp;#34;info&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button isghost=&amp;#34;true&amp;#34; text=&amp;#34;Warning&amp;#34; type=&amp;#34;warning&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button isghost=&amp;#34;true&amp;#34; text=&amp;#34;Error&amp;#34; type=&amp;#34;error&amp;#34; /&amp;gt;}}  Default Primary Success Info Warning Error Block-level:</description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[Different types:
+{{&amp;lt; hackcss-button text=&amp;#34;Default&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Primary&amp;#34; type=&amp;#34;primary&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Success&amp;#34; type=&amp;#34;success&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Info&amp;#34; type=&amp;#34;info&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Warning&amp;#34; type=&amp;#34;warning&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Error&amp;#34; type=&amp;#34;error&amp;#34; /&amp;gt;}}  Default Primary Success Info Warning Error Ghost types:
+{{&amp;lt; hackcss-button isghost=&amp;#34;true&amp;#34; text=&amp;#34;Default&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button isghost=&amp;#34;true&amp;#34; text=&amp;#34;Primary&amp;#34; type=&amp;#34;primary&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button isghost=&amp;#34;true&amp;#34; text=&amp;#34;Success&amp;#34; type=&amp;#34;success&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button isghost=&amp;#34;true&amp;#34; text=&amp;#34;Info&amp;#34; type=&amp;#34;info&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button isghost=&amp;#34;true&amp;#34; text=&amp;#34;Warning&amp;#34; type=&amp;#34;warning&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button isghost=&amp;#34;true&amp;#34; text=&amp;#34;Error&amp;#34; type=&amp;#34;error&amp;#34; /&amp;gt;}}  Default Primary Success Info Warning Error Block-level:
+{{&amp;lt; hackcss-button type=&amp;#34;primary&amp;#34; isghost=&amp;#34;true&amp;#34; isblock=&amp;#34;true&amp;#34; text=&amp;#34;Block Level Button&amp;#34; /&amp;gt;}}  Block Level Button Text in body:
+{{&amp;lt; hackcss-button &amp;gt;}}Default{{&amp;lt; /hackcss-button &amp;gt;}} {{&amp;lt; hackcss-button type=&amp;#34;primary&amp;#34; &amp;gt;}}&amp;lt;i&amp;gt;HTML&amp;lt;/i&amp;gt;{{&amp;lt; /hackcss-button &amp;gt;}} {{% hackcss-button type=&amp;#34;success&amp;#34; %}}~~Markdown~~{{% /hackcss-button %}} {{&amp;lt; hackcss-button isghost=&amp;#34;true&amp;#34; text=&amp;#34;Comment&amp;#34; &amp;gt;}}Hidden comment{{&amp;lt; /hackcss-button &amp;gt;}}  Default HTML &amp;lt;button
+class=&amp;ldquo;btn btn-success&amp;rdquo;
+ Markdown
+ Comment In Button Group:
+{{&amp;lt; hackcss-buttongroup &amp;gt;}} {{&amp;lt; hackcss-button isghost=&amp;#34;true&amp;#34; type=&amp;#34;success&amp;#34; text=&amp;#34;Left&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-button isghost=&amp;#34;true&amp;#34; type=&amp;#34;success&amp;#34; text=&amp;#34;Middle&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-button isghost=&amp;#34;true&amp;#34; type=&amp;#34;success&amp;#34; text=&amp;#34;Right&amp;#34; &amp;gt;}} {{&amp;lt; /hackcss-buttongroup &amp;gt;}}  Left Middle Right  Print preview:
+{{&amp;lt; hackcss-button type=&amp;#34;info&amp;#34; isghost=&amp;#34;true&amp;#34; onclick=&amp;#34;print()&amp;#34; &amp;gt;}} &amp;lt;svg viewBox=&amp;#34;0 0 32 32&amp;#34; width=&amp;#34;16&amp;#34; height=&amp;#34;16&amp;#34; fill=&amp;#34;none&amp;#34; stroke=&amp;#34;currentcolor&amp;#34; stroke-linecap=&amp;#34;round&amp;#34; stroke-linejoin=&amp;#34;round&amp;#34; stroke-width=&amp;#34;2&amp;#34;&amp;gt; &amp;lt;path d=&amp;#34;M7 25 L2 25 2 9 30 9 30 25 25 25 M7 19 L7 30 25 30 25 19 Z M25 9 L25 2 7 2 7 9 M22 14 L25 14&amp;#34; /&amp;gt; &amp;lt;/svg&amp;gt; {{&amp;lt; /hackcss-button &amp;gt;}}    Loading indication:
+{{&amp;lt; hackcss-button type=&amp;#34;info&amp;#34; isghost=&amp;#34;true&amp;#34; &amp;gt;}} Loading&amp;amp;hellip; {{&amp;lt; hackcss-throbber &amp;gt;}} {{&amp;lt; /hackcss-button &amp;gt;}}  Loading&amp;hellip;   External navigation:
+{{&amp;lt; external rel=&amp;#34;shortlink&amp;#34; href=&amp;#34;https://vhs.codeberg.page/mavic-air&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-button type=&amp;#34;success&amp;#34; text=&amp;#34;Open&amp;#34; /&amp;gt;}} {{&amp;lt; /external &amp;gt;}}  Open  Form control:
+{{&amp;lt; hackcss-form action=&amp;#34;javascript:alert(&amp;#39;Form Alert&amp;#39;)&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-buttongroup formactions=&amp;#34;true&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Custom Action&amp;#34; action=&amp;#34;javascript:alert(&amp;#39;Custom Alert&amp;#39;)&amp;#34; isghost=&amp;#34;true&amp;#34; type=&amp;#34;primary&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button disabled=&amp;#34;true&amp;#34; isghost=&amp;#34;true&amp;#34; text=&amp;#34;Disabled&amp;#34; /&amp;gt;}} {{&amp;lt; /hackcss-buttongroup &amp;gt;}} {{&amp;lt; /hackcss-form &amp;gt;}}  Custom Action Disabled   {{&amp;lt; hackcss-form id=&amp;#34;owner&amp;#34; action=&amp;#34;javascript:alert(&amp;#39;Form Alert&amp;#39;)&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button form=&amp;#34;owner&amp;#34; text=&amp;#34;Form Action&amp;#34; type=&amp;#34;primary&amp;#34; isghost=&amp;#34;true&amp;#34; /&amp;gt;}}   Form Action ]]></content:encoded>
+    </item>
+    <item>
+      <title>Button Group</title>
+      <link>https://vhs.codeberg.page/after-dark/shortcode/button-group/</link>
+      <guid>https://vhs.codeberg.page/after-dark/shortcode/button-group/</guid>
+      <description>With three Buttons, one ghosted and one of type info:
+{{&amp;lt; hackcss-buttongroup &amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Left&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button type=&amp;#34;info&amp;#34; &amp;gt;}}Middle{{&amp;lt; /hackcss-button &amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Right&amp;#34; isghost=&amp;#34;true&amp;#34; /&amp;gt;}} {{&amp;lt; /hackcss-buttongroup &amp;gt;}}  Left Middle Right  With three Buttons styled using class attribute:
+&amp;lt;style&amp;gt;.btn-text button::after { content: attr(class) }&amp;lt;/style&amp;gt; {{&amp;lt; hackcss-buttongroup class=&amp;#34;btn-text&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-button /&amp;gt;}} {{&amp;lt; hackcss-button type=&amp;#34;info&amp;#34; /&amp;gt;}} {{&amp;lt; /hackcss-buttongroup &amp;gt;}} .btn-text button::after { content: attr(class) }    With two Buttons inside a Form using formactions attribute:</description>
+      <category domain="https://vhs.codeberg.page/categories/interaction">Interaction</category>
+      <content:encoded><![CDATA[With three Buttons, one ghosted and one of type info:
+{{&amp;lt; hackcss-buttongroup &amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Left&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button type=&amp;#34;info&amp;#34; &amp;gt;}}Middle{{&amp;lt; /hackcss-button &amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Right&amp;#34; isghost=&amp;#34;true&amp;#34; /&amp;gt;}} {{&amp;lt; /hackcss-buttongroup &amp;gt;}}  Left Middle Right  With three Buttons styled using class attribute:
+&amp;lt;style&amp;gt;.btn-text button::after { content: attr(class) }&amp;lt;/style&amp;gt; {{&amp;lt; hackcss-buttongroup class=&amp;#34;btn-text&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-button /&amp;gt;}} {{&amp;lt; hackcss-button type=&amp;#34;info&amp;#34; /&amp;gt;}} {{&amp;lt; /hackcss-buttongroup &amp;gt;}} .btn-text button::after { content: attr(class) }    With two Buttons inside a Form using formactions attribute:
+{{&amp;lt; hackcss-form action=&amp;#34;/search&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-textinput type=&amp;#34;hidden&amp;#34; name=&amp;#34;s&amp;#34; value=&amp;#34;button&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-buttongroup formactions=&amp;#34;true&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Print&amp;#34; action=&amp;#34;javascript:window.print()&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Search&amp;#34; type=&amp;#34;primary&amp;#34; isghost=&amp;#34;true&amp;#34; /&amp;gt;}} {{&amp;lt; /hackcss-buttongroup &amp;gt;}} {{&amp;lt; /hackcss-form &amp;gt;}}  Print Search   ]]></content:encoded>
+    </item>
+    <item>
+      <title>Form</title>
+      <link>https://vhs.codeberg.page/after-dark/shortcode/form/</link>
+      <guid>https://vhs.codeberg.page/after-dark/shortcode/form/</guid>
+      <description>With auto-focused Text Input requesting a new email address:
+{{&amp;lt; hackcss-form autocomplete=&amp;#34;disabled&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-textinput autofocus=&amp;#34;true&amp;#34; type=&amp;#34;email&amp;#34; placeholder=&amp;#34;Please change your email…&amp;#34; &amp;gt;}} {{&amp;lt; /hackcss-form &amp;gt;}}   With Text Input and Label inside Form Group running Fuzzy Search in new window:
+{{&amp;lt; hackcss-form id=&amp;#34;search&amp;#34; action=&amp;#34;/search/&amp;#34; target=&amp;#34;_blank&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-formgroup &amp;gt;}} {{&amp;lt; hackcss-label for=&amp;#34;query&amp;#34; text=&amp;#34;Search query:&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-textinput id=&amp;#34;query&amp;#34; type=&amp;#34;search&amp;#34; name=&amp;#34;s&amp;#34; form=&amp;#34;search&amp;#34; &amp;gt;}} {{&amp;lt; /hackcss-formgroup &amp;gt;}}   Search query:  Two forms with a Button and Text Input inside Alert with Throbber:</description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[With auto-focused Text Input requesting a new email address:
+{{&amp;lt; hackcss-form autocomplete=&amp;#34;disabled&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-textinput autofocus=&amp;#34;true&amp;#34; type=&amp;#34;email&amp;#34; placeholder=&amp;#34;Please change your email…&amp;#34; &amp;gt;}} {{&amp;lt; /hackcss-form &amp;gt;}}   With Text Input and Label inside Form Group running Fuzzy Search in new window:
+{{&amp;lt; hackcss-form id=&amp;#34;search&amp;#34; action=&amp;#34;/search/&amp;#34; target=&amp;#34;_blank&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-formgroup &amp;gt;}} {{&amp;lt; hackcss-label for=&amp;#34;query&amp;#34; text=&amp;#34;Search query:&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-textinput id=&amp;#34;query&amp;#34; type=&amp;#34;search&amp;#34; name=&amp;#34;s&amp;#34; form=&amp;#34;search&amp;#34; &amp;gt;}} {{&amp;lt; /hackcss-formgroup &amp;gt;}}   Search query:  Two forms with a Button and Text Input inside Alert with Throbber:
+{{&amp;lt; hackcss-alert type=&amp;#34;info&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-form id=&amp;#34;throttle&amp;#34; method=&amp;#34;post&amp;#34; action=&amp;#34;/throttle&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-form id=&amp;#34;choke&amp;#34; novalidate=&amp;#34;true&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button type=&amp;#34;primary&amp;#34; form=&amp;#34;choke&amp;#34; text=&amp;#34;Doh!&amp;#34; disabled=&amp;#34;true&amp;#34; /&amp;gt;}} This one doesn&amp;#39;t actually do anything… {{&amp;lt; hackcss-throbber &amp;gt;}} {{&amp;lt; hackcss-textinput type=&amp;#34;hidden&amp;#34; name=&amp;#34;speed&amp;#34; value=&amp;#34;80&amp;#34; form=&amp;#34;throttle&amp;#34; &amp;gt;}} {{&amp;lt; /hackcss-alert &amp;gt;}}    Doh! This one doesn&#39;t actually do anything…   With Form Group, Label, required and validated Text Input and Help Block:
+{{&amp;lt; hackcss-form name=&amp;#34;validate&amp;#34; action=&amp;#34;/validate&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-formgroup name=&amp;#34;integrity&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-label for=&amp;#34;digest&amp;#34; &amp;gt;}} &amp;lt;abbr title=&amp;#34;Secure Hash Algorithm&amp;#34;&amp;gt;SHA-512&amp;lt;/abbr&amp;gt; Digest: {{&amp;lt; /hackcss-label &amp;gt;}} {{&amp;lt; hackcss-textinput required=&amp;#34;true&amp;#34; autofocus=&amp;#34;true&amp;#34; autocomplete=&amp;#34;off&amp;#34; type=&amp;#34;text&amp;#34; id=&amp;#34;digest&amp;#34; name=&amp;#34;digest&amp;#34; pattern=&amp;#34;^(?:[A-Za-z0-9&#43;/]{4})*(?:[A-Za-z0-9&#43;/]{2}==|[A-Za-z0-9&#43;/]{3}=)?$&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-helpblock &amp;gt;}} Submit with digest to validate installation. &amp;lt;noscript&amp;gt;JavaScript must be enabled for proper validation.&amp;lt;/noscript&amp;gt; {{&amp;lt; /hackcss-helpblock &amp;gt;}} {{&amp;lt; /hackcss-formgroup &amp;gt;}} {{&amp;lt; /hackcss-form &amp;gt;}}  SHA-512 Digest:  Submit with digest to validate installation. JavaScript must be enabled for proper validation.    ]]></content:encoded>
+    </item>
+    <item>
+      <title>Fuzzy Search</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/fuzzy-search/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/fuzzy-search/</guid>
+      <description>If a search engine can find it, so can you. Quickly locate indexable content site-wide with fuzzy search. No registration necessary.
+Interactive Example     Adjust it from _index.md in the site content/search directory:
+├── archetypes ├── content │ └── search │ └── _index.md ├── static ├── themes If the file doesn&amp;rsquo;t exist, yet create it:
+$ hugo new search/_index.md And specify the JSON Output Format in site config:</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[If a search engine can find it, so can you. Quickly locate indexable content site-wide with fuzzy search. No registration necessary.
+Interactive Example     Adjust it from _index.md in the site content/search directory:
+├── archetypes ├── content │ └── search │ └── _index.md ├── static ├── themes If the file doesn&amp;rsquo;t exist, yet create it:
+$ hugo new search/_index.md And specify the JSON Output Format in site config:
+[outputs] home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;]  Note: This adds JSON while keeping the HTML and RSS defaults.  Once activated your site will begin outputting an index.json file during generation, giving fuzzy search the data it needs to help you locate pages.
+Try it now by navigating to domain.example/search, or, if enabled, Search in the Section Menu, entering a query and navigating between results using Tab.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Text Area</title>
+      <link>https://vhs.codeberg.page/after-dark/shortcode/text-area/</link>
+      <guid>https://vhs.codeberg.page/after-dark/shortcode/text-area/</guid>
+      <description>Read-only with prefilled text:
+{{&amp;lt; hackcss-textarea readonly=&amp;#34;true&amp;#34; text=&amp;#34;Only this and nothing more.&amp;#34; &amp;gt;}}  Only this and nothing more. With spellcheck disabled:
+{{&amp;lt; hackcss-textarea spellcheck=&amp;#34;false&amp;#34; &amp;gt;}}   With 16 columns and hard wrapping enabled:
+{{&amp;lt; hackcss-textarea cols=&amp;#34;16&amp;#34; wrap=&amp;#34;hard&amp;#34; &amp;gt;}}   Inside disabled form group with error label and placeholder:
+{{&amp;lt; hackcss-formgroup hastextarea=&amp;#34;true&amp;#34; disabled=&amp;#34;true&amp;#34; state=&amp;#34;error&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-label for=&amp;#34;message&amp;#34; text=&amp;#34;Message:&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-textarea id=&amp;#34;message&amp;#34; placeholder=&amp;#34;Guestbook offline…&amp;#34; rows=&amp;#34;10&amp;#34; &amp;gt;}} {{&amp;lt; /hackcss-formgroup &amp;gt;}}  Message:   </description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[Read-only with prefilled text:
+{{&amp;lt; hackcss-textarea readonly=&amp;#34;true&amp;#34; text=&amp;#34;Only this and nothing more.&amp;#34; &amp;gt;}}  Only this and nothing more. With spellcheck disabled:
+{{&amp;lt; hackcss-textarea spellcheck=&amp;#34;false&amp;#34; &amp;gt;}}   With 16 columns and hard wrapping enabled:
+{{&amp;lt; hackcss-textarea cols=&amp;#34;16&amp;#34; wrap=&amp;#34;hard&amp;#34; &amp;gt;}}   Inside disabled form group with error label and placeholder:
+{{&amp;lt; hackcss-formgroup hastextarea=&amp;#34;true&amp;#34; disabled=&amp;#34;true&amp;#34; state=&amp;#34;error&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-label for=&amp;#34;message&amp;#34; text=&amp;#34;Message:&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-textarea id=&amp;#34;message&amp;#34; placeholder=&amp;#34;Guestbook offline…&amp;#34; rows=&amp;#34;10&amp;#34; &amp;gt;}} {{&amp;lt; /hackcss-formgroup &amp;gt;}}  Message:   ]]></content:encoded>
+    </item>
+    <item>
+      <title>Text Input</title>
+      <link>https://vhs.codeberg.page/after-dark/shortcode/text-input/</link>
+      <guid>https://vhs.codeberg.page/after-dark/shortcode/text-input/</guid>
+      <description>Basic usage:
+{{&amp;lt; hackcss-textinput &amp;gt;}} {{&amp;lt; hackcss-textinput type=&amp;#34;password&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-textinput type=&amp;#34;email&amp;#34; placeholder=&amp;#34;Please enter your email…&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-textinput disabled=&amp;#34;true&amp;#34; placeholder=&amp;#34;Disabled&amp;#34; &amp;gt;}}  With Label and Help Block in Form with custom validation:
+{{&amp;lt; hackcss-form &amp;gt;}} {{&amp;lt; hackcss-label &amp;gt;}} {{&amp;lt; hackcss-helpblock text=&amp;#34;Enter your Associate Tag:&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-textinput name=&amp;#34;AssociateTag&amp;#34; required=&amp;#34;true&amp;#34; pattern=&amp;#34;^\b\w*\b-20$&amp;#34; placeholder=&amp;#34;associate-20&amp;#34; &amp;gt;}} {{&amp;lt; /hackcss-label &amp;gt;}} {{&amp;lt; /hackcss-form &amp;gt;}}   Enter your Associate Tag:   In Form Group with warning Label and Help Block:</description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[Basic usage:
+{{&amp;lt; hackcss-textinput &amp;gt;}} {{&amp;lt; hackcss-textinput type=&amp;#34;password&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-textinput type=&amp;#34;email&amp;#34; placeholder=&amp;#34;Please enter your email…&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-textinput disabled=&amp;#34;true&amp;#34; placeholder=&amp;#34;Disabled&amp;#34; &amp;gt;}}  With Label and Help Block in Form with custom validation:
+{{&amp;lt; hackcss-form &amp;gt;}} {{&amp;lt; hackcss-label &amp;gt;}} {{&amp;lt; hackcss-helpblock text=&amp;#34;Enter your Associate Tag:&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-textinput name=&amp;#34;AssociateTag&amp;#34; required=&amp;#34;true&amp;#34; pattern=&amp;#34;^\b\w*\b-20$&amp;#34; placeholder=&amp;#34;associate-20&amp;#34; &amp;gt;}} {{&amp;lt; /hackcss-label &amp;gt;}} {{&amp;lt; /hackcss-form &amp;gt;}}   Enter your Associate Tag:   In Form Group with warning Label and Help Block:
+{{&amp;lt; hackcss-formgroup state=&amp;#34;warning&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-label for=&amp;#34;key64&amp;#34; text=&amp;#34;64-bit PGP key:&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-textinput spellcheck=&amp;#34;false&amp;#34; type=&amp;#34;text&amp;#34; id=&amp;#34;key64&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-helpblock text=&amp;#34;In this format: BB73 67EE 9A70 A631&amp;#34; /&amp;gt;}} {{&amp;lt; /hackcss-formgroup &amp;gt;}}  64-bit PGP key: In this format: BB73 67EE 9A70 A631  Typed with Label in Form Group targeting Form owner:
+{{&amp;lt; hackcss-form id=&amp;#34;search&amp;#34; action=&amp;#34;/search&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-formgroup &amp;gt;}} {{&amp;lt; hackcss-label for=&amp;#34;query&amp;#34; text=&amp;#34;Search query:&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-textinput type=&amp;#34;search&amp;#34; id=&amp;#34;query&amp;#34; form=&amp;#34;search&amp;#34; &amp;gt;}} {{&amp;lt; /hackcss-formgroup &amp;gt;}}   Search query:  ]]></content:encoded>
+    </item>
+  </channel>
+</rss>

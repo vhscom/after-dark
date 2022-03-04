@@ -1,0 +1,34 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>javascript on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/id/tags/javascript/</link>
+    <description>Recent content in javascript on After Dark</description>
+    <image>
+      <title>javascript on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/id/tags/javascript/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>id-ID</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:16 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/id/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JIT Requests</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/jit-requests/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/jit-requests/</guid>
+      <description>After Dark membuat permintaan JIT untuk beberapa aset eksternal untuk mengurangi konsumsi sumber daya dan meningkatkan kinerja halaman.
+Ambil Code Highlighter stylesheet sebagai contoh:
+.highlight,pre.highlight{background:#000;color:#abb2bf}.highlight pre{background:#000}.highlight .ge{font-style:italic}.highlight .gs{font-weight:700}.highlight .ow{font-weight:700}.highlight .n,.highlight .nf,.highlight .nn,.highlight .o,.highlight .p{color:#abb2bf}.highlight .c,.highlight .c1,.highlight .cm,.highlight .cp,.highlight .cs{color:#5c6370;font-style:italic}.highlight .sr,.highlight .ss{color:#56b6c2}.highlight .k,.highlight .kc,.highlight .kd,.highlight .kn,.highlight .kp,.highlight .kr,.highlight .kt{color:#c678dd}.highlight .l,.highlight .ld,.highlight .s,.highlight .s1,.highlight .s2,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx{color:#98c379}.highlight .nt,.highlight .nx,.highlight .vi{color:#e06c75}.highlight .il,.highlight .m,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,.highlight .na{color:#d19a66}.highlight .</description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[After Dark membuat permintaan JIT untuk beberapa aset eksternal untuk mengurangi konsumsi sumber daya dan meningkatkan kinerja halaman.
+Ambil Code Highlighter stylesheet sebagai contoh:
+.highlight,pre.highlight{background:#000;color:#abb2bf}.highlight pre{background:#000}.highlight .ge{font-style:italic}.highlight .gs{font-weight:700}.highlight .ow{font-weight:700}.highlight .n,.highlight .nf,.highlight .nn,.highlight .o,.highlight .p{color:#abb2bf}.highlight .c,.highlight .c1,.highlight .cm,.highlight .cp,.highlight .cs{color:#5c6370;font-style:italic}.highlight .sr,.highlight .ss{color:#56b6c2}.highlight .k,.highlight .kc,.highlight .kd,.highlight .kn,.highlight .kp,.highlight .kr,.highlight .kt{color:#c678dd}.highlight .l,.highlight .ld,.highlight .s,.highlight .s1,.highlight .s2,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx{color:#98c379}.highlight .nt,.highlight .nx,.highlight .vi{color:#e06c75}.highlight .il,.highlight .m,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,.highlight .na{color:#d19a66}.highlight .bp,.highlight .nb,.highlight .nc,.highlight .nd,.highlight .ne,.highlight .ni,.highlight .nl,.highlight .no,.highlight .nv,.highlight .py,.highlight .vc,.highlight .vg{color:#e5c07b}.highlight .err{color:#fff;background-color:#e05252}.highlight .gd{color:#e05252}.highlight .gi{color:#43d08a}.highlight .w{color:#f8f8f2}.highlight .cpf{color:navy}.highlight .gu{color:#75715e}.highlight .lineno{color:#636d83;user-select:none}.highlight .ln{color:#636d83;user-select:none}.highlight .ln:after{content:&amp;#34; &amp;#34;}.highlight .hll{color:#abb2bf;background-color:#3a3f4b}.highlight .hl{color:#abb2bf;background-color:#3a3f4b}.highlight .language-json .w&#43;.s2{color:#e06c75}.highlight .language-json .kc{color:#56b6c2} Kode stylesheet yang ditunjukkan diatas itu sendiri disorot menggunakan permintaan JIT. Konfirmasikan dengan melihat permintaan jaringan untuk halaman ini dan amati permintaanfetch untuk file syntax.css seperti yang digambarkan sebagai berikut:
+jit-requests (document) ├── lazysizes.min.js (fetch) ├── syntax.css (fetch) Menggunakan Fetch Injection permintaan JIT dikeluarkan untuk mulai mengunduh sorotan stylesheet dengan cepat secara pararel dengan sumber daya lain, dan tata letak dasar berhati-hati untuk memastikan CSS hanya diminta pada halaman yang membutuhkan itu.
+Buatlah permintaan JIT anda sendiri menggunakan Custom Layout dan Fetch Injection.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

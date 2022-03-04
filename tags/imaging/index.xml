@@ -1,0 +1,47 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>imaging on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/imaging/</link>
+    <description>Recent content in imaging on After Dark</description>
+    <image>
+      <title>imaging on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/imaging/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/imaging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Module System</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/module-system/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/module-system/</guid>
+      <description>After Dark uses Theme Components and Fetch Injection to provide a plug-in system for enhancing site functionality using optional add-on modules.
+View the list of available modules.</description>
+      <category domain="https://vhs.codeberg.page/categories/core">Core</category>
+      <content:encoded><![CDATA[After Dark uses Theme Components and Fetch Injection to provide a plug-in system for enhancing site functionality using optional add-on modules.
+View the list of available modules.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Post Images</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/post-images/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/post-images/</guid>
+      <description>Sample image placement. Not the real deal.    Add visual appeal to your posts with post images. Post images appear above post content and leverage Hugo Image Processing and Lazy Loading to provide fully automatic, lazy-loaded responsive images with LQIP and built-in art direction.
+Using post images requires some opinion with regard to the structure of your content. To create a post with a post image you must:</description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[    Sample image placement. Not the real deal.    Add visual appeal to your posts with post images. Post images appear above post content and leverage Hugo Image Processing and Lazy Loading to provide fully automatic, lazy-loaded responsive images with LQIP and built-in art direction.
+Using post images requires some opinion with regard to the structure of your content. To create a post with a post image you must:
+ Group image and content in a Page Bundle as shown below. Update post Front Matter as described below.  An example page bundle might look like:
+├── archetypes ├── content │ └── post │ └── secure-your-digital-life │ ├── images │ │ └── florian-klauer-119557-unsplash.jpg │ └── index.md ├── layouts With a header image specified in index.md:
+[[resources]] src = &amp;#34;images/*119557*&amp;#34; name = &amp;#34;header&amp;#34;  Tip: Orientation is not significant. For optimal display use larger images.  Add an image caption showing the image title:
+[[resources]] src = &amp;#34;**291607-unsplash.jpg&amp;#34; name = &amp;#34;header&amp;#34; title = &amp;#34;Ottawa road in the evening&amp;#34; # adds image caption Add Structured Data using Resources Metadata to improve accessibility:
+[[resources]] src = &amp;#34;**291607-unsplash.jpg&amp;#34; name = &amp;#34;header&amp;#34; title = &amp;#34;Ottawa road in the evening&amp;#34; [resources.params.meta] description = &amp;#34;Light trails depicting speed&amp;#34; # adds alt text and image meta creator = &amp;#34;Marc-Olivier Jodoin&amp;#34; # updates caption and adds image meta Continue adding metadata to improve accessibility:
+[[resources]] src = &amp;#34;**291607-unsplash.jpg&amp;#34; name = &amp;#34;header&amp;#34; title = &amp;#34;Ottawa road in the evening&amp;#34; [resources.params.meta] description = &amp;#34;Light trails depicting speed&amp;#34; creator = &amp;#34;Marc-Olivier Jodoin&amp;#34; sameAs = &amp;#34;https://unsplash.com/photos/NqOInJ-ttqM/&amp;#34; # also updates caption license = &amp;#34;https://unsplash.com/license&amp;#34; # attribution not required contentLocation = &amp;#34;Ottawa, Canada&amp;#34; keywords = [&amp;#34;light trail&amp;#34;, &amp;#34;building&amp;#34;, &amp;#34;speed&amp;#34;, &amp;#34;night&amp;#34;] Supported metadata in examples above. Adjust display using Custom Styles.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

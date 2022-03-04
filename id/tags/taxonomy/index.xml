@@ -1,0 +1,84 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>taxonomy on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/id/tags/taxonomy/</link>
+    <description>Recent content in taxonomy on After Dark</description>
+    <image>
+      <title>taxonomy on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/id/tags/taxonomy/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>id-ID</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:16 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/id/tags/taxonomy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Link Typing</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/link-typing/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/link-typing/</guid>
+      <description>After Dark menggunakan pengetikan tautan untuk menunjukkan hubungan semantik antara dokumen. Secara default tipe tautan alternate digunakan untuk menyorot keberadaan umpan web di beranda dan di dalam daftar taksonomi:
+&amp;lt;link href=&amp;#34;https://domain.example/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; &amp;lt;link href=&amp;#34;https://domain.example/categories/privacy/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; &amp;lt;link href=&amp;#34;https://domain.example/tags/color/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; Sebagai tambahan ke defaults After Dark mengenali jenis tautan prev dan next jika ditentukan di halaman Front Matter:
+prev = &amp;#34;/series/learn-to-code/part-one/&amp;#34; next = &amp;#34;/series/learn-to-code/part-three/&amp;#34; Gunakan jenis tautan prev dan next untuk artikel tersegmentasi, Live Blog Postings atau untuk meniru ciri-ciri taksonomi series jika tidak ada taksonomi seri.</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[After Dark menggunakan pengetikan tautan untuk menunjukkan hubungan semantik antara dokumen. Secara default tipe tautan alternate digunakan untuk menyorot keberadaan umpan web di beranda dan di dalam daftar taksonomi:
+&amp;lt;link href=&amp;#34;https://domain.example/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; &amp;lt;link href=&amp;#34;https://domain.example/categories/privacy/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; &amp;lt;link href=&amp;#34;https://domain.example/tags/color/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; Sebagai tambahan ke defaults After Dark mengenali jenis tautan prev dan next jika ditentukan di halaman Front Matter:
+prev = &amp;#34;/series/learn-to-code/part-one/&amp;#34; next = &amp;#34;/series/learn-to-code/part-three/&amp;#34; Gunakan jenis tautan prev dan next untuk artikel tersegmentasi, Live Blog Postings atau untuk meniru ciri-ciri taksonomi series jika tidak ada taksonomi seri.
+Jenis tautan biasanya ditampilkan di bagian atas halaman di browser teks seperti ELinks sebagai bentuk navigasi tambahan dan dapat membantu robot dan pengguna lebih memahami hubungan antar konten anda.
+Pelajari lagi tentang link types dan Taxonomies in Hugo.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Post Bylines</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/post-bylines/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/post-bylines/</guid>
+      <description>After Dark mwmbuat postingan byline yang sangat banyak secara otomatis. Bylines termasuk pilihan nama penuis, jumlah kata, tautan ke Halaman Taksonomi dan Structured Data.
+Example Byline Diterbitkan [by `author`] [`publishdate` or `date`] di [navigation](/categories/navigation) dan ditandai [links](/tags/links) dan [taxonomy](/tags/taxonomy) menggunakan [`wordcount`] kata-kata.    Jika author ditentukan di Site Configuration params atau posting Front Matter itu akan dimasukkan secara otomatis dalam byline yang menghubungkan penulis:
+[params] author = &amp;#34;Billy Joe Jim Bob&amp;#34; # the guy behind the guy behind the guy Sesuaikan hide_author di Site Configuration untuk menekan atribusi di seluruh situs:</description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[After Dark mwmbuat postingan byline yang sangat banyak secara otomatis. Bylines termasuk pilihan nama penuis, jumlah kata, tautan ke Halaman Taksonomi dan Structured Data.
+Example Byline Diterbitkan [by `author`] [`publishdate` or `date`] di [navigation](/categories/navigation) dan ditandai [links](/tags/links) dan [taxonomy](/tags/taxonomy) menggunakan [`wordcount`] kata-kata.    Jika author ditentukan di Site Configuration params atau posting Front Matter itu akan dimasukkan secara otomatis dalam byline yang menghubungkan penulis:
+[params] author = &amp;#34;Billy Joe Jim Bob&amp;#34; # the guy behind the guy behind the guy Sesuaikan hide_author di Site Configuration untuk menekan atribusi di seluruh situs:
+[params] author = &amp;#34;&amp;#34; # optional setting, not required in config hide_author = true # hides author name and related structured data Gabungkan dengancategories dan Last Modified untuk mengahasilkan Structured Data yang unik.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Section Menu</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/section-menu/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/section-menu/</guid>
+      <description>After Dark menggunakan Hugo&amp;rsquo;s Section Menu for “Lazy” Bloggers untuk membuat bantuan navigasi di seluruh situs. Menu bagian dinonaktifkan secara default.
+Interactive Example Overview Features Modules Shortcodes Extras Search     Aktifkan itu dengan mengubah pengaturan show_menu dalam konfigurasi situs anda:
+[params] show_menu = false # atur ke `true` untuk mengaktifkan menu bagian Dengan menu yang diaktifkan, tautan navigasi akan mulai muncul secara otomatis di setiap bagian saat Published Content tersedia dalam bagian itu.</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[After Dark menggunakan Hugo&amp;rsquo;s Section Menu for “Lazy” Bloggers untuk membuat bantuan navigasi di seluruh situs. Menu bagian dinonaktifkan secara default.
+Interactive Example Overview Features Modules Shortcodes Extras Search     Aktifkan itu dengan mengubah pengaturan show_menu dalam konfigurasi situs anda:
+[params] show_menu = false # atur ke `true` untuk mengaktifkan menu bagian Dengan menu yang diaktifkan, tautan navigasi akan mulai muncul secara otomatis di setiap bagian saat Published Content tersedia dalam bagian itu.
+Tautan ke halaman yang berdiri sendiri dari Front Matter dengan menentukan menu = &amp;quot;main&amp;quot;:
+title = &amp;#34;About&amp;#34; menu = &amp;#34;main&amp;#34; Sesuaikan nama tautan dan posisi menu dengan menambahkan kode blok berikut ke Site Configuration anda dan memodifikasinya untuk memenuhi kebutuhan anda:
+[[menu.main]] name = &amp;#34;Home&amp;#34; weight = 1 identifier = &amp;#34;home&amp;#34; url = &amp;#34;/&amp;#34; [[menu.main]] name = &amp;#34;Posts&amp;#34; weight = 2 identifier = &amp;#34;post&amp;#34; url = &amp;#34;/post/&amp;#34; Lihat Menus in Hugo untuk informasi tambahan.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Taxonomy Pages</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/taxonomy-pages/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/taxonomy-pages/</guid>
+      <description>After Dark menghasilkan tag dan kategoris taksonomi, halaman dan tautan istilah taksonomi Post Bylines.
+Berikan halaman berikut ini Front Matter untuk jenis postingan:
+categories = [&amp;#34;navigation&amp;#34;] tags = [&amp;#34;links&amp;#34;, &amp;#34;taxonomy&amp;#34;] Tautan taksonomi berikut akan muncul di bylines:
+ Diterbitkan [by author] [publishdate or date] di dalam navigation and tagged links dan taxonomy menggunakan [wordcount] words.
+ Berikut ini Index Blocked halaman taksonomi dihasilkan:
+ /categories/index.html /categories/navigation/index.html /tags/index.html /tags/links/index.html /tags/taxonomy/index.html  Umpan web taksonomi berikut dibuat:</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[After Dark menghasilkan tag dan kategoris taksonomi, halaman dan tautan istilah taksonomi Post Bylines.
+Berikan halaman berikut ini Front Matter untuk jenis postingan:
+categories = [&amp;#34;navigation&amp;#34;] tags = [&amp;#34;links&amp;#34;, &amp;#34;taxonomy&amp;#34;] Tautan taksonomi berikut akan muncul di bylines:
+ Diterbitkan [by author] [publishdate or date] di dalam navigation and tagged links dan taxonomy menggunakan [wordcount] words.
+ Berikut ini Index Blocked halaman taksonomi dihasilkan:
+ /categories/index.html /categories/navigation/index.html /tags/index.html /tags/links/index.html /tags/taxonomy/index.html  Umpan web taksonomi berikut dibuat:
+ /categories/index.xml /categories/navigation/index.xml /tags/index.xml /tags/links/index.xml /tags/taxonomy/index.xml   Sitemap dan Related Content perbarui dan, jika diaktifkan, Fuzzy Search indeks pencarian JSON (ditimbang pada taksonomi) dibuat ulang, semuanya otomatis Lihat Taxonomies in Hugo untuk mempelajari tentang taksonoomi dan cara menyesuaikannya.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>cryptography on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/cryptography/</link>
+    <description>Recent content in cryptography on After Dark</description>
+    <image>
+      <title>cryptography on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/cryptography/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/cryptography/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Release Hashes</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/release-hashes/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/release-hashes/</guid>
+      <description>After Dark utilizes the NPM CLI to produce a unique cryptographic hash each release, enabling any copy to be uniquely identified regardless of its source.
+Release hashes use the SHA-512 algorithm and look like this:
+VWcn7AxXUkZRGsRIM/6A5RjqW7DOPH&#43;XbnLGRp7hpr0TCH/9l31ug2h2JaIlEvsDzOPRcZDBdyZvJ4mSm/Rqjg==  Each release a new hash is generated in the following locations:
+ Embedded using PGP in the release source git tag message. Codified into the latest or version-specific NPM package metadata. Embedded inside the After Dark Online Help documentation.</description>
+      <category domain="https://vhs.codeberg.page/categories/security">Security</category>
+      <content:encoded><![CDATA[After Dark utilizes the NPM CLI to produce a unique cryptographic hash each release, enabling any copy to be uniquely identified regardless of its source.
+Release hashes use the SHA-512 algorithm and look like this:
+VWcn7AxXUkZRGsRIM/6A5RjqW7DOPH&#43;XbnLGRp7hpr0TCH/9l31ug2h2JaIlEvsDzOPRcZDBdyZvJ4mSm/Rqjg==  Each release a new hash is generated in the following locations:
+ Embedded using PGP in the release source git tag message. Codified into the latest or version-specific NPM package metadata. Embedded inside the After Dark Online Help documentation.  Upon receiving your copy of After Dark you may use the release hash to verify you are using an unadulterated version of the software.
+Run the Release Validator to quickly check your release offline:
+Interactive Release Validator     For a more thorough inspection do the following:
+ Install the npm cli on your machine. Navigate to themes/after-dark from within your site. Run npm i &amp;amp;&amp;amp; npm run integrity to generate your SHA-512 hash. Compare your hash to the hash generated during a signed release. If equal, verify the GPG signature used to sign that release.  If inspection fails run the Upgrade Script and try again.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

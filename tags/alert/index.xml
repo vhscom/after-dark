@@ -1,0 +1,35 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>alert on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/alert/</link>
+    <description>Recent content in alert on After Dark</description>
+    <image>
+      <title>alert on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/alert/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/alert/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alert</title>
+      <link>https://vhs.codeberg.page/after-dark/shortcode/alert/</link>
+      <guid>https://vhs.codeberg.page/after-dark/shortcode/alert/</guid>
+      <description>.margin-reset { margin: 0; } Quick Example Toggle alert styling.  1{{&amp;lt; hackcss-alert type=&amp;#34;info&amp;#34; &amp;gt;}} 2 {{&amp;lt; hackcss-button 3 type=&amp;#34;primary&amp;#34; text=&amp;#34;Toggle&amp;#34; 4 onclick=&amp;#34;this.parentElement.classList.toggle(&amp;#39;alert&amp;#39;)&amp;#34; 5 /&amp;gt;}} alert styling. 6{{&amp;lt; /hackcss-alert &amp;gt;}}    Default with plain text and hidden comment:
+{{&amp;lt; hackcss-alert text=&amp;#34;Alert Text&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-alert &amp;gt;}}Inner Alert Text{{&amp;lt; /hackcss-alert &amp;gt;}} {{&amp;lt; hackcss-alert text=&amp;#34;Alert Text&amp;#34; &amp;gt;}}Hidden Comment{{&amp;lt; /hackcss-alert &amp;gt;}}  Alert Text  Inner Alert Text  Alert Text  Default with formatted text:</description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[.margin-reset { margin: 0; } Quick Example Toggle alert styling.  1{{&amp;lt; hackcss-alert type=&amp;#34;info&amp;#34; &amp;gt;}} 2 {{&amp;lt; hackcss-button 3 type=&amp;#34;primary&amp;#34; text=&amp;#34;Toggle&amp;#34; 4 onclick=&amp;#34;this.parentElement.classList.toggle(&amp;#39;alert&amp;#39;)&amp;#34; 5 /&amp;gt;}} alert styling. 6{{&amp;lt; /hackcss-alert &amp;gt;}}    Default with plain text and hidden comment:
+{{&amp;lt; hackcss-alert text=&amp;#34;Alert Text&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-alert &amp;gt;}}Inner Alert Text{{&amp;lt; /hackcss-alert &amp;gt;}} {{&amp;lt; hackcss-alert text=&amp;#34;Alert Text&amp;#34; &amp;gt;}}Hidden Comment{{&amp;lt; /hackcss-alert &amp;gt;}}  Alert Text  Inner Alert Text  Alert Text  Default with formatted text:
+{{&amp;lt; hackcss-alert &amp;gt;}} &amp;lt;strong&amp;gt;HTML&amp;lt;/strong&amp;gt; Text {{&amp;lt; /hackcss-alert &amp;gt;}} {{% hackcss-alert %}}**Markdown** Text{{% /hackcss-alert %}}  HTML Text  Markdown Text  Typed with plain and formatted text:
+{{&amp;lt; hackcss-alert type=&amp;#34;success&amp;#34; text=&amp;#34;Success Text&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-alert type=&amp;#34;info&amp;#34; &amp;gt;}}&amp;lt;s&amp;gt;Info&amp;lt;/s&amp;gt; ~~Text~~{{&amp;lt; /hackcss-alert &amp;gt;}} {{% hackcss-alert type=&amp;#34;warning&amp;#34; %}}~~Warning~~ Text{{% /hackcss-alert %}} {{&amp;lt; hackcss-alert type=&amp;#34;error&amp;#34; &amp;gt;}} &amp;lt;strong&amp;gt;Error&amp;lt;/strong&amp;gt; Text {{&amp;lt; /hackcss-alert &amp;gt;}}  Success Text  Info ~~Text~~  Warning Text  Error Text  Typed with interactive Button and plain text:
+{{&amp;lt; hackcss-alert type=&amp;#34;info&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-button type=&amp;#34;info&amp;#34; isghost=&amp;#34;true&amp;#34; text=&amp;#34;Toggle&amp;#34; onclick=&amp;#34;this.parentElement.classList.toggle(&amp;#39;alert&amp;#39;)&amp;#34; /&amp;gt;}} alert styling. {{&amp;lt; /hackcss-alert &amp;gt;}}  Toggle alert styling.  Inside a Card with a Button Group and two interactive Buttons:
+{{&amp;lt; hackcss-card header=&amp;#34;Card Title&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-alert type=&amp;#34;success&amp;#34; text=&amp;#34;Congratulations! Your application was approved.&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-buttongroup &amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Hide&amp;#34; type=&amp;#34;primary&amp;#34; onclick=&amp;#34;this.closest(&amp;#39;.card&amp;#39;).querySelector(&amp;#39;.alert&amp;#39;).hidden=true&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Show&amp;#34; onclick=&amp;#34;this.closest(&amp;#39;.card&amp;#39;).querySelector(&amp;#39;.alert&amp;#39;).hidden=false&amp;#34; /&amp;gt;}} {{&amp;lt; /hackcss-buttongroup &amp;gt;}} {{&amp;lt; /hackcss-card &amp;gt;}}  Card Title Congratulations! Your application was approved.  Hide Show     Typed with HTML graphic and External link:
+{{&amp;lt; hackcss-alert type=&amp;#34;success&amp;#34; &amp;gt;}} &amp;lt;img alt=&amp;#34;Advertisement&amp;#34; src=&amp;#34;/images/products/nano-s.jpg&amp;#34;&amp;gt; {{&amp;lt; external href=&amp;#34;https://vhs.codeberg.page/nano-s&amp;#34; class=&amp;#34;muted&amp;#34; &amp;gt;}} &amp;lt;small&amp;gt;Ledger Nano S - The secure hardware wallet&amp;lt;/small&amp;gt; {{&amp;lt; /external &amp;gt;}} {{&amp;lt; /hackcss-alert &amp;gt;}}  Ledger Nano S - The secure hardware wallet   Containing a Card with six Progress indicators:
+{{&amp;lt; hackcss-alert &amp;gt;}} {{&amp;lt; hackcss-card header=&amp;#34;Value-added Tax by Country&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-progress value=&amp;#34;16&amp;#34; showpercent=&amp;#34;true&amp;#34; filltext=&amp;#34;China – 增值税&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-progress value=&amp;#34;20&amp;#34; showpercent=&amp;#34;true&amp;#34; filltext=&amp;#34;France – TVA&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-progress value=&amp;#34;10&amp;#34; showpercent=&amp;#34;true&amp;#34; filltext=&amp;#34;Indonesia – PPN&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-progress value=&amp;#34;8&amp;#34; showpercent=&amp;#34;true&amp;#34; filltext=&amp;#34;Japan – 消費税&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-progress value=&amp;#34;15&amp;#34; showpercent=&amp;#34;true&amp;#34; filltext=&amp;#34;New Zealand – GST&amp;#34; &amp;gt;}} {{&amp;lt; hackcss-progress value=&amp;#34;20&amp;#34; showpercent=&amp;#34;true&amp;#34; filltext=&amp;#34;United Kingdom – VAT&amp;#34; &amp;gt;}} {{&amp;lt; /hackcss-card &amp;gt;}} {{&amp;lt; /hackcss-alert &amp;gt;}}  Value-added Tax by Country                 ]]></content:encoded>
+    </item>
+  </channel>
+</rss>

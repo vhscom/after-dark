@@ -1,0 +1,78 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>graphics on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/id/tags/graphics/</link>
+    <description>Recent content in graphics on After Dark</description>
+    <image>
+      <title>graphics on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/id/tags/graphics/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>id-ID</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:16 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/id/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lazy Loading</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/lazy-loading/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/lazy-loading/</guid>
+      <description>After Dark menggunakan lazySizes untuk memprioritaskan pemuatan sumber daya eksternal tertentu untuk meningkatkan waktu pemuatan halaman dan membantu mengurangi konsumsi bandwith secara keseluruhan.
+Lazy loading bekerja secara otomatis untuk Custom Homepage thumbnails, Post Images dan ketika menggunakan Figure Shortcode, atau terkait dengan Snippet, seperti yang terlihat sebagai berikut:
+   Be Creative AK¥N Cakiner     Untuk menggunakan lazy loading di Custom Layouts atau saat membuat milik anda sendiri Shortcodes menambahkan atribut kelas lazyload dan data yang relevan seperti yang ditunjukkan di sini:</description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[After Dark menggunakan lazySizes untuk memprioritaskan pemuatan sumber daya eksternal tertentu untuk meningkatkan waktu pemuatan halaman dan membantu mengurangi konsumsi bandwith secara keseluruhan.
+Lazy loading bekerja secara otomatis untuk Custom Homepage thumbnails, Post Images dan ketika menggunakan Figure Shortcode, atau terkait dengan Snippet, seperti yang terlihat sebagai berikut:
+   Be Creative AK¥N Cakiner     Untuk menggunakan lazy loading di Custom Layouts atau saat membuat milik anda sendiri Shortcodes menambahkan atribut kelas lazyload dan data yang relevan seperti yang ditunjukkan di sini:
+&amp;lt;!-- non-responsive --&amp;gt; &amp;lt;img data-src=&amp;#34;image.jpg&amp;#34; class=&amp;#34;lazyload&amp;#34;&amp;gt; &amp;lt;!-- responsive with automatic sizes calculation --&amp;gt; &amp;lt;img data-sizes=&amp;#34;auto&amp;#34; data-src=&amp;#34;image2.jpg&amp;#34; data-srcset=&amp;#34;image1.jpg 300w, image2.jpg 600w, image3.jpg 900w&amp;#34; class=&amp;#34;lazyload&amp;#34;&amp;gt; &amp;lt;!-- iframe example --&amp;gt; &amp;lt;iframe frameborder=&amp;#34;0&amp;#34; class=&amp;#34;lazyload&amp;#34; allowfullscreen data-src=&amp;#34;//www.youtube.com/embed/ZfV-aYdU4uE&amp;#34;&amp;gt; &amp;lt;/iframe&amp;gt; Lihat lazySizes sebagai informasi dan contoh tambahan.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Module System</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/module-system/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/module-system/</guid>
+      <description>After Dark menggunakan Hugo Theme Components untuk menghasilkan sistem untuk menyertakan sejumlah prebuilt add-on Modules yang menyediakan fungsionalitas tambahan.
+Lihat Modules ringkasan modul yang tersedia.</description>
+      <category domain="https://vhs.codeberg.page/categories/core">Core</category>
+      <content:encoded><![CDATA[After Dark menggunakan Hugo Theme Components untuk menghasilkan sistem untuk menyertakan sejumlah prebuilt add-on Modules yang menyediakan fungsionalitas tambahan.
+Lihat Modules ringkasan modul yang tersedia.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Post Images</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/post-images/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/post-images/</guid>
+      <description>Tambahkan daya tarik visual ke postingan anda dengan memposting gambar. Gambar postingan muncul diatas konten postingan dan pengaruh Hugo Image Processing dan Lazy Loading untuk menyediakan gambar yang sepenuhnya otomatis dan lazy-loaded LQIP dan arah seni bawaan.
+   Be Creative. Photo: AK¥N Cakiner on Unsplash     Menggunakan gambar postingan memerlukan beberapa pendapat terkait dengan struktur konten anda. Untuk membuat postingan dengan gambar posting anda harus:</description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[Tambahkan daya tarik visual ke postingan anda dengan memposting gambar. Gambar postingan muncul diatas konten postingan dan pengaruh Hugo Image Processing dan Lazy Loading untuk menyediakan gambar yang sepenuhnya otomatis dan lazy-loaded LQIP dan arah seni bawaan.
+   Be Creative. Photo: AK¥N Cakiner on Unsplash     Menggunakan gambar postingan memerlukan beberapa pendapat terkait dengan struktur konten anda. Untuk membuat postingan dengan gambar posting anda harus:
+ Gabungkan gambar dan konten dalam direktori seperti yang ditunjukan di bawah ini. Perbarui postingan Front Matter seperti yang dijelaskan dibawah ini.  Contoh bundel halaman mungkin akan terlihat seperti berikut ini:
+├── archetypes ├── content │ └── post │ └── secure-your-digital-life │ ├── images │ │ └── florian-klauer-119557-unsplash.jpg │ └── index.md ├── layouts Dengan gambar header yang ditunjukkan di index.md:
+[[resources]] src = &amp;#34;images/*119557*&amp;#34; name = &amp;#34;header&amp;#34;  Tip: Orientasi tidak signifikan. Untuk tampilan optimal gunakan gambar yang lebih besar.  Itu dia! After Dark melakukan hal selebihnya.
+Untuk membantu memahami bundel, lihat Page Bundles in Hugo.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>SVG Favicon</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/svg-favicon/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/svg-favicon/</guid>
+      <description>After Dark dikirimkan dengan 169B yang dioptimalkan1 SVG favicon tertanam di setiap halaman:
+ Perluas untuk melihat kode {{/* Copyright (C) 2019 VHS &amp;lt;vhsdev@tutanota.com&amp;gt; This file is part of After Dark. After Dark is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</description>
+      <category domain="https://vhs.codeberg.page/categories/customizing">Customizing</category>
+      <content:encoded><![CDATA[After Dark dikirimkan dengan 169B yang dioptimalkan1 SVG favicon tertanam di setiap halaman:
+ Perluas untuk melihat kode {{/* Copyright (C) 2019 VHS &amp;lt;vhsdev@tutanota.com&amp;gt; This file is part of After Dark. After Dark is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. After Dark is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details. You should have received a copy of the GNU Affero General Public License along with this program. If not, see &amp;lt;https://www.gnu.org/licenses/&amp;gt;. */ -}} &amp;lt;link rel=&amp;#34;icon&amp;#34; sizes=&amp;#34;any&amp;#34; href=&amp;#34;data:image/svg&#43;xml,%3Csvg%20viewBox=&amp;#39;0%200%2046%2045&amp;#39;%20xmlns=&amp;#39;http://www.w3.org/2000/svg&amp;#39;%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d=&amp;#39;M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z&amp;#39;%20fill=&amp;#39;%23000&amp;#39;/%3E%3C/svg%3E&amp;#34;&amp;gt;  Catatan: HTML (Go) Komentar template yang dilucuti selama generasi situs.  Favicon adalah segitiga miring berwarna hitam dalam bentuk tepee seperti yang ditunjukkan2 di Bantuan Online Overview. Pusat segitiga menggunakan ruang negatif untuk memberikan ilusi segitiga sama sisi kedua dalam bentuk piramida, atau api terbuka, yang terkandung di dalam.
+Warna ikon dapat dimodifikasi dengan mengubah atribut fill:
+ .hack figure { text-align: center; margin-top: 2rem; }   fill=&amp;quot;%23f00&amp;quot;     fill=&amp;quot;lime&amp;quot;     fill=&amp;quot;%2300f&amp;quot;     Sesuaikan darifavicon.html di direktori situs layouts/partials/head:
+├── content ├── layouts │ └── partials │ └── head │ └── favicon.html ├── static Jika file belum ada, salin darii tema default:
+$ mkdir -p layouts/partials/head $ cp themes/after-dark/layouts/partials/head/favicon.html layouts/partials/head Ganti SVG dengan grafik lain jika diinginkan:
+&amp;lt;link rel=&amp;#34;icon&amp;#34; sizes=&amp;#34;128x128&amp;#34; href=&amp;#34;/favicon.png&amp;#34;&amp;gt; Jika mengoptimalkan pengalaman platform lakukan dari dalam favicon.html:
+1&amp;lt;meta name=&amp;#34;apple-mobile-web-app-capable&amp;#34; content=&amp;#34;yes&amp;#34;&amp;gt; 2&amp;lt;meta name=&amp;#34;apple-mobile-web-app-status-bar-style&amp;#34; content=&amp;#34;black&amp;#34;&amp;gt; 3&amp;lt;meta name=&amp;#34;apple-mobile-web-app-title&amp;#34; content=&amp;#34;{{.Site.Title}}&amp;#34;&amp;gt; 4&amp;lt;link rel=&amp;#34;apple-touch-icon&amp;#34; href=&amp;#34;data:image/png;base64,{{readFile&amp;#34;static/icon.png&amp;#34;|base64Encode}}&amp;#34;&amp;gt; Lihat H5BP Extend untuk persyaratan khusus platform dan Hugo Documentation untuk bantuan dengan templating fungsi dan variabel.
+  Lihat Mengoptimalkan SVGs dalam data URIs untuk membantu mengoptimalkan SVGs anda sendiri. &amp;#x21a9;&amp;#xfe0e;
+ Pelajari cara mendaftar animasi SVG dengan SMIL. &amp;#x21a9;&amp;#xfe0e;
+   ]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,55 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>search on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/id/tags/search/</link>
+    <description>Recent content in search on After Dark</description>
+    <image>
+      <title>search on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/id/tags/search/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>id-ID</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:16 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/id/tags/search/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fuzzy Search</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/fuzzy-search/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/fuzzy-search/</guid>
+      <description>Jika mesin pencari dapat menemukannya, anda pun juga bisa. Temukan lokasi konten yang dapat diindeks dengan cepat menggunakan fuzzy search. Tidak memerlukan pendaftaran.
+Interactive Example     Sesuaikan dari _index.md di situs content/search direktori:
+├── archetypes ├── content │ └── search │ └── _index.md ├── static ├── themes Jika file belum ada, buatlah:
+$ hugo new search/_index.md Dan tentukanJSON Output Format di dalam situs konfigurasi:
+[outputs] home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;]  Note: ini menambahkan JSON sambil menyimpan HTML dan RSS secara standart.</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[Jika mesin pencari dapat menemukannya, anda pun juga bisa. Temukan lokasi konten yang dapat diindeks dengan cepat menggunakan fuzzy search. Tidak memerlukan pendaftaran.
+Interactive Example     Sesuaikan dari _index.md di situs content/search direktori:
+├── archetypes ├── content │ └── search │ └── _index.md ├── static ├── themes Jika file belum ada, buatlah:
+$ hugo new search/_index.md Dan tentukanJSON Output Format di dalam situs konfigurasi:
+[outputs] home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;]  Note: ini menambahkan JSON sambil menyimpan HTML dan RSS secara standart.  Setelah diaktifkan, situs anda akan mulai menghasilkan file index.json selama pembuatan, memberikan fuzzy search data yang dibutuhkan untuk membantu anda menemukan halaman.
+Cobalah dengan menavigasi domain.example/search, memasukkan permintaan pencarian dan dengan menggunakan Tab untuk menavigasi diantara hasil pencarian.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Index Blocking</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/index-blocking/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/index-blocking/</guid>
+      <description>After Dark menggunakan noindex robots meta arahan untuk mencegah mesin pencari merayap dan mengindeks bagian-bagian tertentu dari situs anda. Itu muncul di dokumen HTML head dan terlihat seperti berikut ini:
+&amp;lt;meta name=&amp;#34;robots&amp;#34; content=&amp;#34;noindex&amp;#34;&amp;gt; Tidak seperti robots.txt meta arahan diterangkan dalam konten halaman itu sendiri dan dengan jelas menunjuk yang mana, jika ada, halaman harus diblokir dari pengindeksan bahkan jika beberapa halaman tersebut muncul di situs anda Sitemap.
+Untuk memfasilitasi penemuan halaman indeks yang diblokir Fuzzy Search menggunakan meta arahan yang sama yang terbuka ke mesin pencari untuk mencegah penyingkapan halaman dalam daftar hasil itu sendiri.</description>
+      <category domain="https://vhs.codeberg.page/categories/search">Search</category>
+      <content:encoded><![CDATA[After Dark menggunakan noindex robots meta arahan untuk mencegah mesin pencari merayap dan mengindeks bagian-bagian tertentu dari situs anda. Itu muncul di dokumen HTML head dan terlihat seperti berikut ini:
+&amp;lt;meta name=&amp;#34;robots&amp;#34; content=&amp;#34;noindex&amp;#34;&amp;gt; Tidak seperti robots.txt meta arahan diterangkan dalam konten halaman itu sendiri dan dengan jelas menunjuk yang mana, jika ada, halaman harus diblokir dari pengindeksan bahkan jika beberapa halaman tersebut muncul di situs anda Sitemap.
+Untuk memfasilitasi penemuan halaman indeks yang diblokir Fuzzy Search menggunakan meta arahan yang sama yang terbuka ke mesin pencari untuk mencegah penyingkapan halaman dalam daftar hasil itu sendiri. Oleh karena itu jika sebuah halaman dapat ditemukan di fuzzy search, pada akhirnya halaman itu dapat muncul pada halaman hasil mesin pencari.
+Sesuaikan pemblokiran indeks per-halaman menggunakan noindex Front Matter:
+noindex = true # set false atau hapus untuk mmebuka blokir Blok semua bagian menggunakan file_index.md dengan pengaturan seperti diatas:
+├── content │ ├── legal │ │ ├── _index.md │ │ ├── terms.md │ │ └── privacy.md │ ├── post Secara standart jenis halaman seperti berikut diblokir secara otomatis:
+ Daftar bagian secara otomatis ditautkan dari Menu Bagian; Halaman Taksonomi seperti Category, Tag dan daftar istilah; dan, Jika diaktifkan, halaman Fuzzy Search atau beberapa hasil yang terkait erat di dalam.  Sesuaikan defaults menggunakan pengaturan noindex_kinds dari Site Configuration. Sebagai contoh, untuk mengaktifkan perayapan dari bagian halaman tambahkan hal berikut ini ke konfigurasi :
+[params] noindex_kinds = [ &amp;#34;taxonomy&amp;#34;, &amp;#34;taxonomyTerm&amp;#34; ] # crawl &amp;#34;section&amp;#34; pages Pelajari tentang Robots Meta Directives on Moz dan lihatlah bagaimana Google menggunakan noindex di Block search indexing with &amp;#39;noindex&amp;#39;.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

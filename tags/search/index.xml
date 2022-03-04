@@ -1,0 +1,54 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>search on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/search/</link>
+    <description>Recent content in search on After Dark</description>
+    <image>
+      <title>search on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/search/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/search/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fuzzy Search</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/fuzzy-search/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/fuzzy-search/</guid>
+      <description>If a search engine can find it, so can you. Quickly locate indexable content site-wide with fuzzy search. No registration necessary.
+Interactive Example     Adjust it from _index.md in the site content/search directory:
+├── archetypes ├── content │ └── search │ └── _index.md ├── static ├── themes If the file doesn&amp;rsquo;t exist, yet create it:
+$ hugo new search/_index.md And specify the JSON Output Format in site config:</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[If a search engine can find it, so can you. Quickly locate indexable content site-wide with fuzzy search. No registration necessary.
+Interactive Example     Adjust it from _index.md in the site content/search directory:
+├── archetypes ├── content │ └── search │ └── _index.md ├── static ├── themes If the file doesn&amp;rsquo;t exist, yet create it:
+$ hugo new search/_index.md And specify the JSON Output Format in site config:
+[outputs] home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;]  Note: This adds JSON while keeping the HTML and RSS defaults.  Once activated your site will begin outputting an index.json file during generation, giving fuzzy search the data it needs to help you locate pages.
+Try it now by navigating to domain.example/search, or, if enabled, Search in the Section Menu, entering a query and navigating between results using Tab.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Index Blocking</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/index-blocking/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/index-blocking/</guid>
+      <description>After Dark uses the noindex robots meta directive to prevent search engines from crawling and indexing certain parts of your site. It appears in the HTML document head and looks like this:
+&amp;lt;meta name=&amp;#34;robots&amp;#34; content=&amp;#34;noindex&amp;#34;&amp;gt; Unlike robots.txt meta directives are defined within page content itself and unambiguously indicate which, if any, pages should be blocked from indexing — even if some of those pages appear in your site&amp;rsquo;s Sitemap.
+To facilitate the discovery of index blocked pages Fuzzy Search utilizes the very same meta directive exposed to search engines to prevent disclosure of pages in its own result listings.</description>
+      <category domain="https://vhs.codeberg.page/categories/search">Search</category>
+      <content:encoded><![CDATA[After Dark uses the noindex robots meta directive to prevent search engines from crawling and indexing certain parts of your site. It appears in the HTML document head and looks like this:
+&amp;lt;meta name=&amp;#34;robots&amp;#34; content=&amp;#34;noindex&amp;#34;&amp;gt; Unlike robots.txt meta directives are defined within page content itself and unambiguously indicate which, if any, pages should be blocked from indexing — even if some of those pages appear in your site&amp;rsquo;s Sitemap.
+To facilitate the discovery of index blocked pages Fuzzy Search utilizes the very same meta directive exposed to search engines to prevent disclosure of pages in its own result listings. Therefore, if a page can be found in fuzzy search, that page may ultimately appear on a search engine result page.
+Adjust index blocking per-page using noindex Front Matter:
+noindex = true # set false or remove to unblock Block entire sections using an _index.md file with the above setting:
+├── content │ ├── legal │ │ ├── _index.md │ │ ├── terms.md │ │ └── privacy.md │ ├── post By default the following page types are blocked automatically:
+ Section listings automatically linked to from the Section Menu; Taxonomy Pages such as Category, Tag and terms listings; and, If enabled, the Fuzzy Search page or any deep-linked result within.  Adjust defaults using the noindex_kinds setting from Site Configuration. For example, to enable crawling of section pages add the following to the config:
+[params] noindex_kinds = [ &amp;#34;taxonomy&amp;#34;, &amp;#34;taxonomyTerm&amp;#34; ] # crawl &amp;#34;section&amp;#34; pages Learn about Robots Meta Directives on Moz and see how Google uses noindex in Block search indexing with &amp;#39;noindex&amp;#39;.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

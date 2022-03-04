@@ -1,0 +1,34 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>accessibility on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/id/tags/accessibility/</link>
+    <description>Recent content in accessibility on After Dark</description>
+    <image>
+      <title>accessibility on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/id/tags/accessibility/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>id-ID</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:16 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/id/tags/accessibility/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Link Typing</title>
+      <link>https://vhs.codeberg.page/after-dark/id/feature/link-typing/</link>
+      <guid>https://vhs.codeberg.page/after-dark/id/feature/link-typing/</guid>
+      <description>After Dark menggunakan pengetikan tautan untuk menunjukkan hubungan semantik antara dokumen. Secara default tipe tautan alternate digunakan untuk menyorot keberadaan umpan web di beranda dan di dalam daftar taksonomi:
+&amp;lt;link href=&amp;#34;https://domain.example/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; &amp;lt;link href=&amp;#34;https://domain.example/categories/privacy/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; &amp;lt;link href=&amp;#34;https://domain.example/tags/color/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; Sebagai tambahan ke defaults After Dark mengenali jenis tautan prev dan next jika ditentukan di halaman Front Matter:
+prev = &amp;#34;/series/learn-to-code/part-one/&amp;#34; next = &amp;#34;/series/learn-to-code/part-three/&amp;#34; Gunakan jenis tautan prev dan next untuk artikel tersegmentasi, Live Blog Postings atau untuk meniru ciri-ciri taksonomi series jika tidak ada taksonomi seri.</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[After Dark menggunakan pengetikan tautan untuk menunjukkan hubungan semantik antara dokumen. Secara default tipe tautan alternate digunakan untuk menyorot keberadaan umpan web di beranda dan di dalam daftar taksonomi:
+&amp;lt;link href=&amp;#34;https://domain.example/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; &amp;lt;link href=&amp;#34;https://domain.example/categories/privacy/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; &amp;lt;link href=&amp;#34;https://domain.example/tags/color/index.xml&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss&#43;xml&amp;#34; title=&amp;#34;After Dark&amp;#34;&amp;gt; Sebagai tambahan ke defaults After Dark mengenali jenis tautan prev dan next jika ditentukan di halaman Front Matter:
+prev = &amp;#34;/series/learn-to-code/part-one/&amp;#34; next = &amp;#34;/series/learn-to-code/part-three/&amp;#34; Gunakan jenis tautan prev dan next untuk artikel tersegmentasi, Live Blog Postings atau untuk meniru ciri-ciri taksonomi series jika tidak ada taksonomi seri.
+Jenis tautan biasanya ditampilkan di bagian atas halaman di browser teks seperti ELinks sebagai bentuk navigasi tambahan dan dapat membantu robot dan pengguna lebih memahami hubungan antar konten anda.
+Pelajari lagi tentang link types dan Taxonomies in Hugo.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

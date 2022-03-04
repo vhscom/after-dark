@@ -1,0 +1,121 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>layout on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/layout/</link>
+    <description>Recent content in layout on After Dark</description>
+    <image>
+      <title>layout on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/layout/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/layout/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Custom Homepage</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/custom-homepage/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/custom-homepage/</guid>
+      <description>After Dark provides a configurable way to customize the content shown on your homepage without the need for creating a Custom Layout. Use it to hide the blog and display recent content from various sections of your site.
+   Quick Example 1[params.layout.home] 2 hide_blog = true 3 4[[params.layout.home.section]] 5 type = &amp;#34;about&amp;#34; 6 weight = 1 7 8[[params.layout.home.section]] 9 type = &amp;#34;code&amp;#34; # Required, name of section to show on homepage 10 limit = 4 # Optional, set number of items to show from section 11 weight = 2 # Optional, choose layout order for section 12 thumbs = [&amp;#34;fill&amp;#34;, &amp;#34;400x400&amp;#34;] # Optional, thumbnail image processing 13 14[[params.</description>
+      <category domain="https://vhs.codeberg.page/categories/customizing">Customizing</category>
+      <content:encoded><![CDATA[After Dark provides a configurable way to customize the content shown on your homepage without the need for creating a Custom Layout. Use it to hide the blog and display recent content from various sections of your site.
+   Quick Example 1[params.layout.home] 2 hide_blog = true 3 4[[params.layout.home.section]] 5 type = &amp;#34;about&amp;#34; 6 weight = 1 7 8[[params.layout.home.section]] 9 type = &amp;#34;code&amp;#34; # Required, name of section to show on homepage 10 limit = 4 # Optional, set number of items to show from section 11 weight = 2 # Optional, choose layout order for section 12 thumbs = [&amp;#34;fill&amp;#34;, &amp;#34;400x400&amp;#34;] # Optional, thumbnail image processing 13 14[[params.layout.home.section]] 15 type = &amp;#34;site&amp;#34; 16 limit = 2 17 weight = 3 18 19[[params.layout.home.section]] 20 type = &amp;#34;post&amp;#34; 21 limit = 3 22 weight = 4    Start by adding a section to display:
+[[params.layout.home.section]] type = &amp;#34;post&amp;#34; Limit the number of items shown:
+[[params.layout.home.section]] type = &amp;#34;post&amp;#34; limit = 3 Then hide the blog if you like:
+[params.layout.home] hide_blog = true And use the space to add more sections:
+[[params.layout.home.section]] type = &amp;#34;post&amp;#34; [[params.layout.home.section]] type = &amp;#34;podcast&amp;#34; Or add stand-alone pages too:
+[[params.layout.home.section]] type = &amp;#34;about&amp;#34; And display them in order by weight:
+[[params.layout.home.section]] type = &amp;#34;about&amp;#34; weight = 1 [[params.layout.home.section]] type = &amp;#34;podcast&amp;#34; weight = 2 With each section containing generic Structured Data:
+Homepage ├── Thing └── ItemList ├── Thing ├── Thing └── Thing Which may be enhanced using front matter:
+├── archetypes ├── content │ └── about.md │ └── podcast │ ├── _index.md │ ├── secrets-of-silicon-valley │ ├── the-5g-dragnet │ └── language-is-a-weapon ├── layouts title = &amp;#34;About&amp;#34; description = &amp;#34;Information about the site.&amp;#34; [schema] type = &amp;#34;AboutPage&amp;#34; # inside about.md title = &amp;#34;Podcasts&amp;#34; description = &amp;#34;Live on the Web. Fresh to your head.&amp;#34; [schema] type = &amp;#34;Audiobook&amp;#34; # inside _index.md Resulting in machine-readable structure:
+Homepage ├── AboutPage └── ItemList ├── Audiobook ├── Audiobook └── Audiobook Including name and description properties consistent between what&amp;rsquo;s shown to users and what will appear in SERPs.
+Item lists may include thumbnail images generated automatically for any ItemList element using a Post Images-formatted resource bundle and containing thumbnail in the name:
+[[resources]] src = &amp;#34;**hyperdrive-logo.png&amp;#34; name = &amp;#34;header thumbnail&amp;#34; Images include high-performance defaults and may be modified using Hugo Image Processing via config using the thumbs property in site config:
+[[params.layout.home.section]] type = &amp;#34;code&amp;#34; thumbs = [&amp;#34;fill&amp;#34;, &amp;#34;400x400&amp;#34;] Valid image processing options are fit, resize and fill, and image dimensions may be omitted for a 4x3 aspect ratio thumbnail.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Custom Layouts</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/custom-layouts/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/custom-layouts/</guid>
+      <description>After Dark uses block templates to facilitate the creation of unique page layouts anywhere on your site. Use them to add Snippets to pages in a section, selectively apply Custom Styles or add an about section to the homepage.
+How it works Given the following block with optional default value:
+&amp;lt;title&amp;gt;{{block&amp;#34;title&amp;#34;}}Site Title{{end}}&amp;lt;/title&amp;gt; Inheriting templates may omit the block and keep the default value or define the block to change its value, as shown here:</description>
+      <category domain="https://vhs.codeberg.page/categories/customizing">Customizing</category>
+      <content:encoded><![CDATA[After Dark uses block templates to facilitate the creation of unique page layouts anywhere on your site. Use them to add Snippets to pages in a section, selectively apply Custom Styles or add an about section to the homepage.
+How it works Given the following block with optional default value:
+&amp;lt;title&amp;gt;{{block&amp;#34;title&amp;#34;}}Site Title{{end}}&amp;lt;/title&amp;gt; Inheriting templates may omit the block and keep the default value or define the block to change its value, as shown here:
+{{define&amp;#34;title&amp;#34;}}Page Title | Site Title{{end}} Combined with Lookup Order in Hugo blocks become valuable in designating editable regions within, and improving reuse of, existing template files.
+Applied in context Here&amp;rsquo;s the template used to display an individual page in After Dark:
+{{/*Copyright(C)2019VHS&amp;lt;vhsdev@tutanota.com&amp;gt;ThisfileispartofAfterDark.AfterDarkisfreesoftware:youcanredistributeitand/ormodifyitunderthetermsoftheGNUAfferoGeneralPublicLicenseaspublishedbytheFreeSoftwareFoundation,eitherversion3oftheLicense,or(atyouroption)anylaterversion.AfterDarkisdistributedinthehopethatitwillbeuseful,butWITHOUTANYWARRANTY;withouteventheimpliedwarrantyofMERCHANTABILITYorFITNESSFORAPARTICULARPURPOSE.SeetheGNUAfferoGeneralPublicLicenseformoredetails.YoushouldhavereceivedacopyoftheGNUAfferoGeneralPublicLicensealongwiththisprogram.Ifnot,see&amp;lt;https://www.gnu.org/licenses/&amp;gt;.*/}} {{define&amp;#34;title&amp;#34;-}} {{.Title}} | {{.Site.Title}} {{-end}} {{define&amp;#34;header&amp;#34;}} {{partial&amp;#34;masthead.html&amp;#34;.}} {{end}} {{define&amp;#34;main&amp;#34;}} &amp;lt;header&amp;gt; &amp;lt;h1&amp;gt;{{.Title}}&amp;lt;/h1&amp;gt; &amp;lt;/header&amp;gt; {{.Content}} {{end}} {{define&amp;#34;footer&amp;#34;}} &amp;lt;small class=&amp;#34;muted&amp;#34;&amp;gt; {{partial&amp;#34;copyright-notice.html&amp;#34;.}} &amp;lt;/small&amp;gt; {{end}} There&amp;rsquo;s not much to it. Most of the code is inherited from another template, giving a clear picture of the page structure and making modifications trivial.
+Creating your own Imagine you&amp;rsquo;re creating an Audiobooks section for your site and want two new custom layouts: one to list audio clips and another to describe them.
+To achieve this using block templates first create an audiobook section with a single page to describe a clip:
+$ hugo new audiobook/the-power-of-now.md Resulting in the following content tree structure:
+├── assets ├── content │ └── audiobook │ └── the-power-of-now.md ├── layouts If already serving your site the Audiobooks section and page will appear immediately using the default block templates. To customize from default add a list.html and single.html to a layouts/audiobook directory in your site.
+If the files don&amp;rsquo;t exist yet, copy them from theme defaults:
+$ mkdir -p layouts/audiobook $ cp themes/after-dark/layouts/_default/list.html layouts/audiobook $ cp themes/after-dark/layouts/_default/single.html layouts/audiobook Resulting in the following layouts tree structure:
+├── content ├── layouts │ └── audiobook │ ├── list.html │ └── single.html ├── static Adjust list.html and single.html layouts and use Custom Styles to achieve the desired result. Reference the following resources for help:
+  gohugo.io/templates/ for templating functions and logic  devdocs.io for a comprehensive HTML and CSS reference  internetingishard.com learn HTML &amp;amp; CSS for free  inclusive-components.design for design pattern ideas  diveintohtml5.info  ]]></content:encoded>
+    </item>
+    <item>
+      <title>Featured Posts</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/featured-posts/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/featured-posts/</guid>
+      <description>After Dark helps you showcase your favorite blog posts by allowing you to easily specify a set of pages to appear first in post listings using only site config.
+   Use featured posts to drive more traffic to your highest value pages, increase the visibility of niche content or target pages for additional inbound links.
+Adjust featured posts from Site Configuration by adding:
+[params.layout.post.featured] limit = 3 items = [ &amp;#34;borg-backup-minio-scaleway&amp;#34;, &amp;#34;dual-boot-manjaro-mojave-macbook-pro&amp;#34;, &amp;#34;surfing-uncensorable-web&amp;#34;, &amp;#34;encrypted-internet-wireguard-manjaro-linux&amp;#34; ] Modify items using the page slugs from your posts and adjust the featured limit to the total number of items you wish to display.</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[After Dark helps you showcase your favorite blog posts by allowing you to easily specify a set of pages to appear first in post listings using only site config.
+   Use featured posts to drive more traffic to your highest value pages, increase the visibility of niche content or target pages for additional inbound links.
+Adjust featured posts from Site Configuration by adding:
+[params.layout.post.featured] limit = 3 items = [ &amp;#34;borg-backup-minio-scaleway&amp;#34;, &amp;#34;dual-boot-manjaro-mojave-macbook-pro&amp;#34;, &amp;#34;surfing-uncensorable-web&amp;#34;, &amp;#34;encrypted-internet-wireguard-manjaro-linux&amp;#34; ] Modify items using the page slugs from your posts and adjust the featured limit to the total number of items you wish to display. Like Custom Homepage and Related Content performance-optimized thumbnail images will appear automatically when a post contains a Post Image with thumbnail in the name.
+Optionally, customize thumbnail styling using Custom Styles:
+ul.thumbnail.grid li a:hover figure { filter: initial; } ul.thumbnail.grid li a figure { position: relative; line-height: 0; margin-bottom: 8px; } ul.thumbnail.grid li a:hover figure::after { content: &amp;#34;&amp;#34;; position: absolute; bottom: 0; display: block; width: 100%; height: 100%; background: radial-gradient( circle, rgba(0,0,0,0.1) 0, rgba(0,0,0,0.3) 100% ); } ]]></content:encoded>
+    </item>
+    <item>
+      <title>Related Content</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/related-content/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/related-content/</guid>
+      <description>After Dark provides related content to help users find more information that&amp;rsquo;s relevant to them and can increase page views and time spent on your site.
+   When two or more pages or posts contain the same taxonomy tags they will be linked in a section as shown near the bottom of the page. The section appears automatically below Post Bylines with a default maximum of 7 items shown.</description>
+      <category domain="https://vhs.codeberg.page/categories/navigation">Navigation</category>
+      <content:encoded><![CDATA[After Dark provides related content to help users find more information that&amp;rsquo;s relevant to them and can increase page views and time spent on your site.
+   When two or more pages or posts contain the same taxonomy tags they will be linked in a section as shown near the bottom of the page. The section appears automatically below Post Bylines with a default maximum of 7 items shown.
+Tip: Create a Custom Layout to show Related Content outside posts.  Adjust site-wide maximum from Site Configuration by adding related_content_limit:
+[params] related_content_limit = 5 # limit to 5 items maximum site-wide By default related content will appear as an unordered list of page titles with hyperlinks to their respective pages along with the approximate reading time.
+For posts, display thumbnail images instead by adding a related limit:
+[params.layout.post.related] limit = 3 And for each post create a Post Images-formatted resource bundle containing thumbnail in the name as described in more detail on Custom Homepage.
+As with homepage thumbnails, image processing may be adjusted:
+[params.layout.post.related] limit = 4 thumbs = [&amp;#34;fill&amp;#34;, &amp;#34;400x400&amp;#34;] # Optional, thumbnail image processing Set limit to 0 to hide the related content section.
+See Related Content in Hugo for additional configuration options.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Snippets</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/snippets/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/snippets/</guid>
+      <description>Snippets are template abstractions enabling you to reuse the same markup and logic used to create Shortcodes in your Custom Layouts.
+Take for example the included Button Group shortcode used for creating a set of styled buttons, which we&amp;rsquo;ll look at in detail here.
+First the partial:
+{{/*Copyright(C)2019VHS&amp;lt;vhsdev@tutanota.com&amp;gt;ThisfileispartofAfterDark.AfterDarkisfreesoftware:youcanredistributeitand/ormodifyitunderthetermsoftheGNUAfferoGeneralPublicLicenseaspublishedbytheFreeSoftwareFoundation,eitherversion3oftheLicense,or(atyouroption)anylaterversion.AfterDarkisdistributedinthehopethatitwillbeuseful,butWITHOUTANYWARRANTY;withouteventheimpliedwarrantyofMERCHANTABILITYorFITNESSFORAPARTICULARPURPOSE.SeetheGNUAfferoGeneralPublicLicenseformoredetails.YoushouldhavereceivedacopyoftheGNUAfferoGeneralPublicLicensealongwiththisprogram.Ifnot,see&amp;lt;https://www.gnu.org/licenses/&amp;gt;.*/-}} &amp;lt;div class=&amp;#34;btn-group{{ifeq.formactions&amp;#34;true&amp;#34;}}form-actions{{end}}{{with.class}}{{.}}{{end}}&amp;#34;&amp;gt; {{.body}} &amp;lt;/div&amp;gt; Now the shortcode:
+{{/*Copyright(C)2019VHS&amp;lt;vhsdev@tutanota.com&amp;gt;ThisfileispartofAfterDark.AfterDarkisfreesoftware:youcanredistributeitand/ormodifyitunderthetermsoftheGNUAfferoGeneralPublicLicenseaspublishedbytheFreeSoftwareFoundation,eitherversion3oftheLicense,or(atyouroption)anylaterversion.AfterDarkisdistributedinthehopethatitwillbeuseful,butWITHOUTANYWARRANTY;withouteventheimpliedwarrantyofMERCHANTABILITYorFITNESSFORAPARTICULARPURPOSE.SeetheGNUAfferoGeneralPublicLicenseformoredetails.YoushouldhavereceivedacopyoftheGNUAfferoGeneralPublicLicensealongwiththisprogram.Ifnot,see&amp;lt;https://www.gnu.org/licenses/&amp;gt;.*/-}} {{$formactions:=.Get&amp;#34;formactions&amp;#34;}} {{$class:=.Get&amp;#34;class&amp;#34;}} {{$body:=.Inner}} {{partial&amp;#34;components/buttongroup.html&amp;#34;(dict&amp;#34;formactions&amp;#34;$formactions&amp;#34;class&amp;#34;$class&amp;#34;body&amp;#34;$body)}} Notice how the shortcode serves only to collect input and call the partial, which contains all markup and display logic.</description>
+      <category domain="https://vhs.codeberg.page/categories/customizing">Customizing</category>
+      <content:encoded><![CDATA[Snippets are template abstractions enabling you to reuse the same markup and logic used to create Shortcodes in your Custom Layouts.
+Take for example the included Button Group shortcode used for creating a set of styled buttons, which we&amp;rsquo;ll look at in detail here.
+First the partial:
+{{/*Copyright(C)2019VHS&amp;lt;vhsdev@tutanota.com&amp;gt;ThisfileispartofAfterDark.AfterDarkisfreesoftware:youcanredistributeitand/ormodifyitunderthetermsoftheGNUAfferoGeneralPublicLicenseaspublishedbytheFreeSoftwareFoundation,eitherversion3oftheLicense,or(atyouroption)anylaterversion.AfterDarkisdistributedinthehopethatitwillbeuseful,butWITHOUTANYWARRANTY;withouteventheimpliedwarrantyofMERCHANTABILITYorFITNESSFORAPARTICULARPURPOSE.SeetheGNUAfferoGeneralPublicLicenseformoredetails.YoushouldhavereceivedacopyoftheGNUAfferoGeneralPublicLicensealongwiththisprogram.Ifnot,see&amp;lt;https://www.gnu.org/licenses/&amp;gt;.*/-}} &amp;lt;div class=&amp;#34;btn-group{{ifeq.formactions&amp;#34;true&amp;#34;}}form-actions{{end}}{{with.class}}{{.}}{{end}}&amp;#34;&amp;gt; {{.body}} &amp;lt;/div&amp;gt; Now the shortcode:
+{{/*Copyright(C)2019VHS&amp;lt;vhsdev@tutanota.com&amp;gt;ThisfileispartofAfterDark.AfterDarkisfreesoftware:youcanredistributeitand/ormodifyitunderthetermsoftheGNUAfferoGeneralPublicLicenseaspublishedbytheFreeSoftwareFoundation,eitherversion3oftheLicense,or(atyouroption)anylaterversion.AfterDarkisdistributedinthehopethatitwillbeuseful,butWITHOUTANYWARRANTY;withouteventheimpliedwarrantyofMERCHANTABILITYorFITNESSFORAPARTICULARPURPOSE.SeetheGNUAfferoGeneralPublicLicenseformoredetails.YoushouldhavereceivedacopyoftheGNUAfferoGeneralPublicLicensealongwiththisprogram.Ifnot,see&amp;lt;https://www.gnu.org/licenses/&amp;gt;.*/-}} {{$formactions:=.Get&amp;#34;formactions&amp;#34;}} {{$class:=.Get&amp;#34;class&amp;#34;}} {{$body:=.Inner}} {{partial&amp;#34;components/buttongroup.html&amp;#34;(dict&amp;#34;formactions&amp;#34;$formactions&amp;#34;class&amp;#34;$class&amp;#34;body&amp;#34;$body)}} Notice how the shortcode serves only to collect input and call the partial, which contains all markup and display logic. This delegation of responsibility is the abstraction that enables reuse between content and template.
+Now let&amp;rsquo;s see how to actually use it.
+Use the Button Group shortcode to group buttons in content:
+{{&amp;lt; hackcss-buttongroup &amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Left&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Middle&amp;#34; type=&amp;#34;info&amp;#34; /&amp;gt;}} {{&amp;lt; hackcss-button text=&amp;#34;Right&amp;#34; isghost=&amp;#34;true&amp;#34; /&amp;gt;}} {{&amp;lt; /hackcss-buttongroup &amp;gt;}} Which creates a styled button group with three buttons as shown here:
+Left Middle Right  To reuse in layout mirror the partial call used inside the shortcode.
+All Shortcodes implementing hackcss components are built using the snippets template abstraction enabling each of them to be reused in Custom Layouts.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,91 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>images on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/images/</link>
+    <description>Recent content in images on After Dark</description>
+    <image>
+      <title>images on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/images/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/images/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Figure</title>
+      <link>https://vhs.codeberg.page/after-dark/shortcode/figure/</link>
+      <guid>https://vhs.codeberg.page/after-dark/shortcode/figure/</guid>
+      <description>With progressive image placeholder:
+{{&amp;lt; figure alt=&amp;#34;Artistic map&amp;#34; src=&amp;#34;/images/watercolor_pTIyYTqAlF8_w1440h700.jpeg&amp;#34; lqipsrc=&amp;#34;/images/watercolor_pTIyYTqAlF8_w936h455.jpeg&amp;#34; title=&amp;#34;Map of Bali in Watercolor&amp;#34; attr=&amp;#34;Stamen Design&amp;#34; attrlink=&amp;#34;https://maps.stamen.com/&amp;#34; &amp;gt;}}    Map of Bali in Watercolor   Stamen Design     Above as a Snippet used in a Custom Layout:
+{{partial&amp;#34;components/figure.html&amp;#34;(dict&amp;#34;alt&amp;#34;&amp;#34;Artistic map&amp;#34;&amp;#34;src&amp;#34;&amp;#34;/images/watercolor_pTIyYTqAlF8_w936h455.jpeg&amp;#34;&amp;#34;lqipsrc&amp;#34;&amp;#34;/images/watercolor_pTIyYTqAlF8_w1440h700.jpeg&amp;#34;&amp;#34;title&amp;#34;&amp;#34;Map of Bali in Watercolor&amp;#34;&amp;#34;attr&amp;#34;&amp;#34;Stamen Design&amp;#34;&amp;#34;attrlink&amp;#34;&amp;#34;https://maps.stamen.com/&amp;#34;)}} See Figures in Hugo for Hugo-specific implementation.</description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[With progressive image placeholder:
+{{&amp;lt; figure alt=&amp;#34;Artistic map&amp;#34; src=&amp;#34;/images/watercolor_pTIyYTqAlF8_w1440h700.jpeg&amp;#34; lqipsrc=&amp;#34;/images/watercolor_pTIyYTqAlF8_w936h455.jpeg&amp;#34; title=&amp;#34;Map of Bali in Watercolor&amp;#34; attr=&amp;#34;Stamen Design&amp;#34; attrlink=&amp;#34;https://maps.stamen.com/&amp;#34; &amp;gt;}}    Map of Bali in Watercolor   Stamen Design     Above as a Snippet used in a Custom Layout:
+{{partial&amp;#34;components/figure.html&amp;#34;(dict&amp;#34;alt&amp;#34;&amp;#34;Artistic map&amp;#34;&amp;#34;src&amp;#34;&amp;#34;/images/watercolor_pTIyYTqAlF8_w936h455.jpeg&amp;#34;&amp;#34;lqipsrc&amp;#34;&amp;#34;/images/watercolor_pTIyYTqAlF8_w1440h700.jpeg&amp;#34;&amp;#34;title&amp;#34;&amp;#34;Map of Bali in Watercolor&amp;#34;&amp;#34;attr&amp;#34;&amp;#34;Stamen Design&amp;#34;&amp;#34;attrlink&amp;#34;&amp;#34;https://maps.stamen.com/&amp;#34;)}} See Figures in Hugo for Hugo-specific implementation.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Fractal Forest</title>
+      <link>https://vhs.codeberg.page/after-dark/module/fractal-forest/</link>
+      <guid>https://vhs.codeberg.page/after-dark/module/fractal-forest/</guid>
+      <description>BPG Image Format (Preinstalled).</description>
+      <category domain="https://vhs.codeberg.page/categories/addon">Addon</category>
+      <content:encoded><![CDATA[BPG Image format Homepage: bellard.org/bpg/
+Module Source: codeberg.org/vhs/fractal-forest
+Demo   Visual comparison between BPG, JPEG, JP2K and WebP  Lena 512x512 image, visual comparison with JPEG  Wikipedia photos  Images with alpha channel  Test images using different color spaces and bit depth  Test animations  Installation Note: Module pre-installed via Quick Install with example in post archetype.  Choose a module download source:
+  www.npmjs.com/package/fractal-forest  www.jsdelivr.com/package/npm/fractal-forest  codeberg.org/vhs/fractal-forest  Extract module contents into site themes directory:
+├── static └── themes ├── after-dark └── fractal-forest Specify module in site config:
+6# Controls default theme and theme components 7theme = [ 8 &amp;#34;fractal-forest&amp;#34;, # sequence before &amp;#34;after-dark&amp;#34; 9 &amp;#34;after-dark&amp;#34; 10] See README.md to confirm you&amp;rsquo;re using the minimum required version of After Dark; and module setup, configuration and usage instructions. If you need help you may Submit an Issue with your question.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Hall of Mirrors</title>
+      <link>https://vhs.codeberg.page/after-dark/module/hall-of-mirrors/</link>
+      <guid>https://vhs.codeberg.page/after-dark/module/hall-of-mirrors/</guid>
+      <description>Responsive PhotoSwipe Image Galleries.</description>
+      <category domain="https://vhs.codeberg.page/categories/addon">Addon</category>
+      <content:encoded><![CDATA[PhotoSwipe Homepage: photoswipe.com
+Module Source: codeberg.org/vhs/hall-of-mirrors
+Demo Your browser doesn&#39;t support HTML5 video. Download video instead.   Installation Choose a module download source:
+  www.npmjs.com/package/hall-of-mirrors  www.jsdelivr.com/package/npm/hall-of-mirrors  codeberg.org/vhs/hall-of-mirrors  Extract module contents into site themes directory:
+├── static └── themes ├── after-dark └── hall-of-mirrors Specify module in site config:
+6# Controls default theme and theme components 7theme = [ 8 &amp;#34;hall-of-mirrors&amp;#34;, # sequence before &amp;#34;after-dark&amp;#34; 9 &amp;#34;after-dark&amp;#34; 10] See README.md to confirm you&amp;rsquo;re using the minimum required version of After Dark; and module setup, configuration and usage instructions. If you need help you may Submit an Issue with your question.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Lazy Loading</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/lazy-loading/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/lazy-loading/</guid>
+      <description>After Dark uses lazySizes to prioritize loading of certain external resources to improve page load times and help reduce overall bandwidth consumption.
+Lazy loading works automatically for Custom Homepage thumbnails, Post Images and when using the Figure Shortcode, or related Snippet, as seen here:
+   Be Creative AK¥N Cakiner     To use lazy loading in Custom Layouts or when creating your own Shortcodes adding the lazyload class and relevant data attributes as shown here:</description>
+      <category domain="https://vhs.codeberg.page/categories/experience">Experience</category>
+      <content:encoded><![CDATA[After Dark uses lazySizes to prioritize loading of certain external resources to improve page load times and help reduce overall bandwidth consumption.
+Lazy loading works automatically for Custom Homepage thumbnails, Post Images and when using the Figure Shortcode, or related Snippet, as seen here:
+   Be Creative AK¥N Cakiner     To use lazy loading in Custom Layouts or when creating your own Shortcodes adding the lazyload class and relevant data attributes as shown here:
+&amp;lt;!-- non-responsive --&amp;gt; &amp;lt;img data-src=&amp;#34;image.jpg&amp;#34; class=&amp;#34;lazyload&amp;#34;&amp;gt; &amp;lt;!-- responsive with automatic sizes calculation --&amp;gt; &amp;lt;img data-sizes=&amp;#34;auto&amp;#34; data-src=&amp;#34;image2.jpg&amp;#34; data-srcset=&amp;#34;image1.jpg 300w, image2.jpg 600w, image3.jpg 900w&amp;#34; class=&amp;#34;lazyload&amp;#34;&amp;gt; &amp;lt;!-- iframe example --&amp;gt; &amp;lt;iframe frameborder=&amp;#34;0&amp;#34; class=&amp;#34;lazyload&amp;#34; allowfullscreen data-src=&amp;#34;//www.youtube.com/embed/ZfV-aYdU4uE&amp;#34;&amp;gt; &amp;lt;/iframe&amp;gt; See lazySizes for additional information and examples.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Social Meta</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/social-meta/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/social-meta/</guid>
+      <description>After Dark provides Open Graph Protocol and Twitter Cards metadata in pages to achieve rich sharing cards on WhatsApp, Twitter, Telegram and more:
+Adjust author in Site Configuration to specify name shown, if any:
+[params] author = &amp;#34;Bali Bebas!&amp;#34; Set or override author per page using Front Matter as shown here:
+title = &amp;#34;Become a Digital Nomad in Bali: The Lost Guide&amp;#34; description = &amp;#34;Everything you need to know to become a Digital Nomad in Bali.</description>
+      <category domain="https://vhs.codeberg.page/categories/social">Social</category>
+      <content:encoded><![CDATA[After Dark provides Open Graph Protocol and Twitter Cards metadata in pages to achieve rich sharing cards on WhatsApp, Twitter, Telegram and more:
+Adjust author in Site Configuration to specify name shown, if any:
+[params] author = &amp;#34;Bali Bebas!&amp;#34; Set or override author per page using Front Matter as shown here:
+title = &amp;#34;Become a Digital Nomad in Bali: The Lost Guide&amp;#34; description = &amp;#34;Everything you need to know to become a Digital Nomad in Bali.&amp;#34; author = &amp;#34;After Dark&amp;#34; date = &amp;#34;2017-02-02T11:57:24&#43;08:00&amp;#34; publishdate = &amp;#34;2017-01-28T02:31:22&#43;08:00&amp;#34; images = [ &amp;#34;https://source.unsplash.com/-09QE4q0ezw/2000x1322&amp;#34; ] Adjust images to specify an external image or, if using Page Bundles, specify the relative path to the image resource to use:
+images = [ &amp;#34;/post/post-title/images/lana-abie-581813-unsplash.jpg&amp;#34; ]  Why use arrays? Open Graph supports multiple image sizes. And though After Dark doesn&amp;rsquo;t support multiple sizes, users can create custom layouts that do.  If no page-level image is provided After Dark will fallback to a site-wide image which may be adjusted or removed from Site Configuration:
+[params] images = [ &amp;#34;https://source.unsplash.com/-09QE4q0ezw/2000x1322&amp;#34; # site-wide og:image ] See Unsplash and Unsplash Source for thousands of royalty-free images.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

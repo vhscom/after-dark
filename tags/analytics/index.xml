@@ -1,0 +1,45 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
+    <title>analytics on After Dark</title>
+    <link>https://vhs.codeberg.page/after-dark/tags/analytics/</link>
+    <description>Recent content in analytics on After Dark</description>
+    <image>
+      <title>analytics on After Dark</title>
+      <link>https://vhs.codeberg.page/after-dark/tags/analytics/</link>
+      <url>https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png</url>
+    </image>
+    <ttl>1440</ttl>
+    <generator>After Dark 9.2.3 (Hugo 0.78.1)</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; VHS. Licensed under AGPL-3.0-or-later.</copyright>
+    <lastBuildDate>Fri, 04 Mar 2022 15:00:15 UT</lastBuildDate>
+    <atom:link href="https://vhs.codeberg.page/after-dark/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Module System</title>
+      <link>https://vhs.codeberg.page/after-dark/feature/module-system/</link>
+      <guid>https://vhs.codeberg.page/after-dark/feature/module-system/</guid>
+      <description>After Dark uses Theme Components and Fetch Injection to provide a plug-in system for enhancing site functionality using optional add-on modules.
+View the list of available modules.</description>
+      <category domain="https://vhs.codeberg.page/categories/core">Core</category>
+      <content:encoded><![CDATA[After Dark uses Theme Components and Fetch Injection to provide a plug-in system for enhancing site functionality using optional add-on modules.
+View the list of available modules.
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Voyeur</title>
+      <link>https://vhs.codeberg.page/after-dark/module/voyeur/</link>
+      <guid>https://vhs.codeberg.page/after-dark/module/voyeur/</guid>
+      <description>DIY self-hosted Fathom Analytics.</description>
+      <category domain="https://vhs.codeberg.page/categories/addon">Addon</category>
+      <content:encoded><![CDATA[Fathom Mirror: codeberg.org/vhs/mirrors/fathom
+Module Source: codeberg.org/vhs/voyeur
+   Voyeur Analytics Dashboard.    Please visit the Fathom Website for interactive product demo.
+Installation Choose module download source:
+  www.npmjs.com/package/mod-voyeur  www.jsdelivr.com/package/npm/mod-voyeur  codeberg.org/vhs/voyeur  Extract module contents into site themes directory:
+├── static └── themes ├── after-dark └── voyeur Specify module in site config:
+6# Controls default theme and theme components 7theme = [ 8 &amp;#34;voyeur&amp;#34;, # sequence before &amp;#34;after-dark&amp;#34; 9 &amp;#34;after-dark&amp;#34; 10] See README.md to confirm you&amp;rsquo;re using the minimum required version of After Dark; and module setup, configuration and usage instructions. If you need help you may Submit an Issue with your question.
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
