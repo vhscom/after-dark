@@ -1,20 +1,11 @@
-<img
-  alt="After Dark"
-  src="https://codeberg.org/vhs/after-dark/raw/branch/trunk/static/images/logo-dark.png"
-  width="358">
+# After Dark
 
-**Retro Dark Theme for Hugo**
-<br>[Docs](https://vhs.codeberg.page/after-dark) • [Releases](https://codeberg.org/vhs/after-dark/releases) • [Community](https://t.me/afterdarkhugo)
-
-## After Dark
-
-[![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
-[![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
-[![Minimum Hugo version](https://img.shields.io/badge/hugo->%3D%200.51-FF4088.svg?style=flat-square)](https://gohugo.io)
-[![IRC chat](https://img.shields.io/badge/irc-%23after--dark-32AFED.svg?style=flat-square&longCache=true)](https://vhs.codeberg.page/after-dark/#chat)
+[![Latest NPM version](https://flat.badgen.net/npm/v/after-dark)](https://www.npmjs.com/after-dark)
+[![Weekly downloads](https://flat.badgen.net/npm/dw/after-dark)](https://www.npmjs.com/after-dark)
+[![Minimum Hugo version](https://flat.badgen.net/badge/hugo/>=0.51/FF4088)](https://gohugo.io)
 [![AGPL licensed](https://img.shields.io/npm/l/after-dark.svg?style=flat-square&longCache=true)](https://codeberg.org/vhs/after-dark/src/branch/trunk/COPYING)
 
-## Features
+## Highlights
 
 - **Developer Focused:** Cross-platform, 1 dependency, single-codebase.
 - **Incredibly Fast:** ~0.615s average build time and decisecond page loads.
@@ -29,7 +20,7 @@
 
 ## Screenshot
 
-[![Demo](https://codeberg.org/vhs/after-dark/raw/branch/trunk/docs/static/images/screenshots/after-dark-v6.15.0-homepage-fs8.png)](https://codeberg.org/vhs/after-dark)
+[![](https://codeberg.org/vhs/after-dark/raw/branch/trunk/docs/static/images/screenshots/after-dark-v6.15.0-homepage-fs8.png)](https://codeberg.org/vhs/after-dark)
 
 ## Requirements
 
