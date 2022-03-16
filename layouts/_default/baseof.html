@@ -33,6 +33,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {{ if or (in $noindex_kinds .Kind) ($is_noindex_true) }}
       <meta name="robots" content="noindex">
     {{ end }}
+    <base href="{{ .Site.BaseURL }}" />
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
     {{ partial "meta/ogimage-maybe.html" . }}
