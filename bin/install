@@ -18,22 +18,24 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-validate_hugo () {
+validate_hugo() {
    # Exit with error if hugo is not installed
-   if ! hash hugo 2>/dev/null ; then
-     echo "Error: After Dark requires Hugo version 0.51 or greater" >&2; exit 1
+   if ! hash hugo 2>/dev/null; then
+      echo "Error: After Dark requires Hugo version 0.51 or greater" >&2
+      exit 1
    fi
 
    # Exit with error if not minimum required hugo version
    re="v(0\d*\.([5-9][1-9]|[6-9])|[1-9]).*"
-   if ! hugo version | grep -qE "$re" ; then
-      echo "Error: After Dark requires Hugo version 0.51 or greater" >&2; exit 1
+   if ! hugo version | grep -qE "$re"; then
+      echo "Error: After Dark requires Hugo version 0.51 or greater" >&2
+      exit 1
    fi
 }
 
-create_site_dir () {
+create_site_dir() {
    SITE_DIR="flying-toasters"
-   if [ "$1" != "" ] ; then
+   if [ "$1" != "" ]; then
       SITE_DIR="$1"
    fi
 
@@ -41,13 +43,13 @@ create_site_dir () {
    mkdir -p "$SITE_DIR"
 }
 
-create_site () {
+create_site() {
    echo "Creating a new Hugo site ..."
    hugo new site "$SITE_DIR" 1>/dev/null
    cd "$SITE_DIR" || exit 1
 }
 
-download_theme () {
+download_theme() {
    echo "Downloading the latest version of After Dark ..."
    LATEST_META=$(wget -qO - https://registry.npmjs.org/after-dark/latest)
    vers=$(echo "$LATEST_META" | grep -oE "\"version\".*[^,]*," | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '" ')
@@ -56,8 +58,11 @@ download_theme () {
    echo "Version $vers downloaded to $SITE_DIR/themes/after-dark"
 }
 
-download_module () {
-   [ -z "$1" ] && { echo "Error: Attempt to download undefined module" >&2; exit 1; }
+download_module() {
+   [ -z "$1" ] && {
+      echo "Error: Attempt to download undefined module" >&2
+      exit 1
+   }
    echo "Downloading $1 module for After Dark ..."
    meta=$(wget -qO - https://registry.npmjs.org/"$1"/latest)
    vers=$(echo "$meta" | grep -oE "\"version\".*[^,]*," | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '" ')
@@ -66,9 +71,9 @@ download_module () {
    echo "Version $vers downloaded to $SITE_DIR/themes/$1"
 }
 
-configure_theme () {
+configure_theme() {
    echo "Configuring basic After Dark theme settings ..."
-   tee "config.toml" > /dev/null <<TOML
+   tee "config.toml" >/dev/null <<TOML
 baseurl = "https://domain.example" # Controls base URL sitewide
 languageCode = "en-US" # Controls site language
 title = "After Dark" # Homepage title and page title suffix
@@ -114,32 +119,32 @@ sectionPagesMenu = "main" # Enable menu system for lazy bloggers
 TOML
 }
 
-update_archetypes () {
+update_archetypes() {
    echo "Updating the default content archetype ..."
    rm -f archetypes/default.md
    cp themes/after-dark/archetypes/default.md archetypes
 }
 
-create_welcome_post () {
+create_welcome_post() {
    echo "Creating welcome post ..."
    hugo new post/welcome.md 1>/dev/null
 }
 
-serve_site () {
+serve_site() {
    echo "Starting site server ..."
    hugo serve --buildDrafts --navigateToChanged --port 1313 1>/dev/null &
 }
 
-generate_help_docs () {
+generate_help_docs() {
    echo "Generating help documentation ..."
    THEME_PATH=themes/after-dark
    meta_path="$THEME_PATH"/data/npm
-   mkdir -p "$meta_path" && echo "$LATEST_META" | tr '\r\n' ' ' > "$meta_path"/latest.json
+   mkdir -p "$meta_path" && echo "$LATEST_META" | tr '\r\n' ' ' >"$meta_path"/latest.json
    cd "$THEME_PATH"/docs && mkdir themes && ln -s ../.. "$THEME_PATH"
    hugo new validate.md --kind validate 1>/dev/null
 }
 
-serve_help () {
+serve_help() {
    echo "Starting help server ..."
    hugo serve --disableLiveReload --port 1414 1>/dev/null &
 }
