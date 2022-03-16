@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/sh
 #
 # Copyright (C) 2019  VHS <vhsdev@tutanota.com>
 #
@@ -17,6 +17,8 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
+
+set -eu
 
 validate_hugo() {
    # Exit with error if hugo is not installed

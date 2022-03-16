@@ -19,6 +19,8 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
+set -eu
+
 THEME_PATH=themes/after-dark
 
 echo "Starting help server ..."
