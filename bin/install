@@ -35,14 +35,81 @@ validate_hugo() {
    fi
 }
 
-create_site_dir() {
-   SITE_DIR="flying-toasters"
-   if [ "$1" != "" ]; then
-      SITE_DIR="$1"
-   fi
+confirm_intent() {
+   while true; do
+      printf "Do you wish to install After Dark? (y/n) "
+      read -r yn </dev/tty
+      case $yn in
+      [Yy]*)
+         break
+         ;;
+      [Nn]*) exit ;;
+      *) echo "Please answer yes or no." ;;
+      esac
+   done
+}
 
+prompt_site_name() {
+   printf "Please enter a name for your site: "
+   read -r response </dev/tty
+   SITE_NAME=$(echo "$response" | tr -cd '[:alnum:] [:space:]' | tr -s '[:space:]')
+   while true; do
+      printf "You entered %s. Is that correct? (y/n) " "\"$SITE_NAME\""
+      read -r yn </dev/tty
+      case $yn in
+      [Yy]*)
+         break
+         ;;
+      [Nn]*)
+         prompt_site_name
+         break
+         ;;
+      *) echo "Please answer yes or no." ;;
+      esac
+   done
+}
+
+format_dir_name() {
+   echo "$1" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]._-'
+}
+
+prompt_install_dir() {
+   default_dir=$(format_dir_name "$SITE_NAME")
+   printf "Choose an installation directory name (%s): " "$default_dir"
+   read -r response </dev/tty
+   if [ "$response" = "" ]; then
+      SITE_DIR=$default_dir
+   elif [ "${response%"${response#?}"}" = "/" ]; then
+      echo "Directory name not allowed. Proceeding with default..."
+      SITE_DIR=$default_dir
+   else
+      formatted_input_dir=$(format_dir_name "$response")
+      if [ "$formatted_input_dir" = "" ]; then
+         echo "Directory name not allowed. Proceeding with default..."
+         SITE_DIR=$default_dir
+      else
+         SITE_DIR=$formatted_input_dir
+      fi
+   fi
+   while true; do
+      printf "Installation directory name set to %s. Is that correct? (y/n) " "\"$SITE_DIR\""
+      read -r yn </dev/tty
+      case $yn in
+      [Yy]*)
+         break
+         ;;
+      [Nn]*)
+         prompt_install_dir
+         break
+         ;;
+      *) echo "Please answer yes or no." ;;
+      esac
+   done
+}
+
+create_site_dir() {
    SITE_DIR_ABS="$PWD/$SITE_DIR"
-   mkdir -p "$SITE_DIR"
+   mkdir "$SITE_DIR"
 }
 
 create_site() {
@@ -78,7 +145,7 @@ configure_theme() {
    tee "config.toml" >/dev/null <<TOML
 baseurl = "https://domain.example" # Controls base URL sitewide
 languageCode = "en-US" # Controls site language
-title = "After Dark" # Homepage title and page title suffix
+title = "$SITE_NAME" # Homepage title and page title suffix
 paginate = 11 # Number of posts to show before paginating
 copyright = "Copyright &copy; Copyright Owner. Licensed under <a target=\"_blank\" rel=\"external noopener license\" href=\"https://creativecommons.org/licenses/by-nd/4.0/\">CC-BY-ND-4.0</a>." # Optional, remove to suppress copyright notices
 
@@ -132,11 +199,6 @@ create_welcome_post() {
    hugo new post/welcome.md 1>/dev/null
 }
 
-serve_site() {
-   echo "Starting site server ..."
-   hugo serve --buildDrafts --navigateToChanged --port 1313 1>/dev/null &
-}
-
 generate_help_docs() {
    echo "Generating help documentation ..."
    THEME_PATH=themes/after-dark
@@ -146,32 +208,25 @@ generate_help_docs() {
    hugo new validate.md --kind validate 1>/dev/null
 }
 
-serve_help() {
-   echo "Starting help server ..."
-   hugo serve --disableLiveReload --port 1414 1>/dev/null &
-}
-
 echo "Welcome to the After Dark quick installer. Press CTRL-C at any time to abort."
 
+confirm_intent
 validate_hugo
-create_site_dir "$1"
+prompt_site_name
+prompt_install_dir
+create_site_dir
 create_site
 download_theme
 update_archetypes
 download_module "fractal-forest"
 configure_theme
 create_welcome_post
-serve_site
 generate_help_docs
-serve_help
 
 YELLOW='\033[0;33m'
 NC='\033[0m'
 
-printf "${YELLOW}Installation successful!${NC}\n"
+echo "${YELLOW}Installation successful!${NC}"
 echo "Site created in $SITE_DIR_ABS"
-echo "Site server started at http://localhost:1313/"
-echo "To stop it run \"kill \$(ps aux | awk '/[h]ugo.*1313/ {print \$2}')\"."
-echo "Help server started at http://localhost:1414/"
-echo "To stop and restart it run \"./themes/after-dark/bin/help\"."
+echo "Serve your site with \"hugo serve --buildDrafts --navigateToChanged\""
 echo "Thank you for choosing After Dark."

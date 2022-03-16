@@ -34,7 +34,7 @@ The fastest installation method is to run the quick install script:
 wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
 ```
 
-Quick Install is ideal for first-time users and does not require use of git. Quick install will automatically run two servers: One containing your website ready to use and the other containing comprehensive help documentation.
+Quick Install is ideal for first-time users and does not require use of git. Quick install will help you create and configure your site, install an example After Dark module, and generate a welcome post and online help documentation for offline use.
 
 By convention After Dark may also be used with an existing Hugo site by git cloning to or adding as a submodule of the `themes` directory of your Hugo site:
 
