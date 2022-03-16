@@ -1,5 +1,5 @@
 /*!
- * Copyright (C) 2019  VHS <vhsdev@tutanota.com>
+ * Copyright (C) 2019, 2022  VHS <vhsdev@tutanota.com>
  *
  * This file is part of After Dark.
  *
@@ -17,4 +17,5 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-fetchInject(["{{ "/js/lazysizes.min.js" | relURL }}"]);
+import fetchInject from '{{ "/js/modules/fetch-inject.min.js" | relURL }}';
+fetchInject(['{{ "/js/lazysizes.min.js" | relURL }}']);

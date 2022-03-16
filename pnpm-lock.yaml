@@ -4,7 +4,7 @@ specifiers:
   atom-one-chroma: ^2.0.0
   commitizen: ^4.2.2
   cz-conventional-changelog: ^3.3.0
-  fetch-inject: ^2.0.4
+  fetch-inject: ^3.2.0
   fuse.js: ^6.4.5
   hack: ^0.8.1
   lazysizes: ^5.3.0
@@ -17,7 +17,7 @@ devDependencies:
   atom-one-chroma: 2.0.0
   commitizen: 4.2.4
   cz-conventional-changelog: 3.3.0
-  fetch-inject: 2.0.4
+  fetch-inject: 3.2.0
   fuse.js: 6.5.3
   hack: 0.8.1
   lazysizes: 5.3.2
@@ -799,8 +799,8 @@ packages:
     dev: true
     optional: true
 
-  /fetch-inject/2.0.4:
-    resolution: {integrity: sha512-pUXrJWsXjuti4H2mVEIIz+CMxId/iQ1Uj4U6Bqv3pvg63FbrN/9V9Reqrb86MYGWzUYAe3en4tN8gj+4FahmdQ==}
+  /fetch-inject/3.2.0:
+    resolution: {integrity: sha512-sTtDQaQTQQGMaR5NQNFwVEgV19IEj6v1Jf+4GaVgKCDK2JgqxkH9R1e3MlSzfnDmfNtNCvfKSxJQxYu/EqRTJQ==}
     dev: true
 
   /figures/2.0.0:
