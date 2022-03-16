@@ -1,5 +1,5 @@
 {{/*
-Copyright (C) 2019  VHS <vhsdev@tutanota.com>
+Copyright (C) 2019, 2022  VHS <vhsdev@tutanota.com>
 
 This file is part of After Dark.
 
@@ -48,7 +48,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {{ .Content }}
   </section>
   <section class="hero">
-    {{ partial "components/figure.html" (dict "alt" "After Dark screenshots" "src" "/images/minimal-mac_2400x1800-fs8.png" "lqipsrc" "/images/minimal-mac_800x600-fs8.png") }}
+    {{ partial "components/figure.html" (dict "alt" "After Dark screenshots" "src" ("/images/minimal-mac_2400x1800-fs8.png" | relURL) "lqipsrc" ("/images/minimal-mac_800x600-fs8.png" | relURL)) }}
   </section>
   {{ range .Params.spotlight }}
     <section id="feature-{{ .name }}" class="{{ if eq .name "workflow" }}capabilities{{ else }}feature{{ end }}">
