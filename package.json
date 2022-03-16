@@ -30,8 +30,7 @@
     "update:fetch-inject": "pnpm up fetch-inject && cp -i node_modules/fetch-inject/fetch-inject.min.js static/js/modules/fetch-inject.min.js",
     "test": "while true; do head -n 100 /dev/urandom; sleep 0.1; done | hexdump -C | grep 'ca fe'",
     "integrity": "pnpm pack --dry-run --json . | grep integrity | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '\" '",
-    "release": "standard-version",
-    "commit": "npx git-cz"
+    "release": "standard-version"
   },
   "devDependencies": {
     "atom-one-chroma": "^2.0.0",
