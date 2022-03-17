@@ -1,6 +1,6 @@
 +++
 title = "After Dark"
-description = "After Dark is open source software you can use to build a secure website, blog or app. One command is all you need to start a new website."
+description = "After Dark is open source software you can use to build a website, blog or app. One command is all you need to get started."
 images = [
   "https://vhs.codeberg.page/after-dark/images/screenshots/after-dark-v6.15.0-homepage-fs8.png"
 ]
