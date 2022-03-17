@@ -1,5 +1,5 @@
 {{/*
-Copyright (C) 2019  VHS <vhsdev@tutanota.com>
+Copyright (C) 2019, 2022  VHS <vhsdev@tutanota.com>
 
 This file is part of After Dark.
 
@@ -22,6 +22,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {{- end }}
 {{ define "header" }}
   {{ partial "masthead.html" . }}
+  {{ $script := resources.Get "/js/search.js" | resources.ExecuteAsTemplate "search.js" . }}
+  <script type="module" integrity="{{ ($script | resources.Fingerprint "sha512").Data.Integrity }}">
+    {{- $script.Content | safeJS -}}
+  </script>
 {{ end }}
 {{ define "main" }}
   <header>
@@ -63,8 +67,4 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   <small class="muted">
     {{ partial "copyright-notice.html" . }}
   </small>
-  {{ $script := resources.Get "/js/search.js" | resources.ExecuteAsTemplate "search.js" . }}
-  <script integrity="{{ printf "%s" ($script | resources.Fingerprint "sha512").Data.Integrity | safeHTML }}">
-    {{- $script.Content | safeJS -}}
-  </script>
 {{ end }}

@@ -42,6 +42,16 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
       {{ partial "meta/verifications.html" . }}
     {{ end }}
     {{ partial "meta/http-referrer.html" . }}
+    {{ $highlights := findRE "class\\s*?=\\s*?\".*?\\bhighlight\\b.*?\"|class\\s*?=\\s*?highlight\\b" .Content }}
+    {{ if ge (len $highlights) 1 }}
+      <script type="module">
+        import fetchInject from '{{ "/js/modules/fetch-inject.min.js" | relURL }}';
+        fetchInject(['{{ "/css/syntax.css" | relURL }}']);
+      </script>
+      <noscript>
+        <link href="{{ "/css/syntax.css" | relURL }}" rel="stylesheet">
+      </noscript>
+    {{ end }}
     {{ $baseof := resources.Get "/js/baseof.js" | resources.ExecuteAsTemplate "baseof.js" . }}
     <script type="module" integrity="{{ ($baseof | resources.Fingerprint "sha512").Data.Integrity }}">
       {{- $baseof.Content | safeJS -}}
@@ -59,13 +69,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {{ end }}
     {{ partial "head/favicon.html" . }}
     {{ partial "global-styles.html" . }}
-    {{ $highlights := findRE "class\\s*?=\\s*?\".*?\\bhighlight\\b.*?\"|class\\s*?=\\s*?highlight\\b" .Content }}
-    {{ if ge (len $highlights) 1 }}
-      <script integrity="sha512-ISTAV0GadOIz/NXXHOS+eCM0ysXVVHhQTlvA6LJxz/DeA5yIxm0Vqf5IE+WH0yuuXkayAKtoZkQ326nch5f/fg==">fetchInject([{{ "/css/syntax.css" | relURL }}]);</script>
-      <noscript>
-        <link href="{{ "/css/syntax.css" | relURL }}" rel="stylesheet">
-      </noscript>
-    {{ end }}
   </head>
   {{ $hackcss_disabled := .Site.Params.hackcss.disabled | default false }}
   {{ $hackcss_mode := .Site.Params.hackcss.mode | default "hack" }}

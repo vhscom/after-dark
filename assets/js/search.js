@@ -1,5 +1,5 @@
 /*!
- * Copyright (C) 2019  VHS <vhsdev@tutanota.com>
+ * Copyright (C) 2019, 2022  VHS <vhsdev@tutanota.com>
  *
  * This file is part of After Dark.
  *
@@ -17,6 +17,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+import fetchInject from '{{ "/js/modules/fetch-inject.min.js" | relURL }}';
 fetchInject([
   "{{ "/js/vue.min.js" | relURL }}",
   "{{ "/js/lodash.custom.min.js" | relURL }}",
