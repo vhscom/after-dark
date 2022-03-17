@@ -26,9 +26,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   {{ with $modules.hall_of_mirrors }}
     {{ partial "modules/hall-of-mirrors/index.html" (dict "settings" . "page" $.Page) }}
   {{ end }}
-  {{ with (default $defaults.toxic_swamp $modules.toxic_swamp) }}
-    {{ partial "modules/toxic-swamp/index.html" (dict "settings" . "data" $.Site.Data) }}
-  {{ end }}
   {{ with $modules.voyeur }}
     {{ partial "modules/voyeur/index.html" . }}
   {{ end }}

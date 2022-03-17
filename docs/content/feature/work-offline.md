@@ -19,7 +19,6 @@ Unless running the [Quick Install](../quick-install) After Dark does not require
 - Run your site behind a NAT or firewall blocking all outbound requests.
 - Review the [Online Help](../online-help) docs during a flight on Virgin Galactic.
 - Keep a personal journal while couchsurfing through Southeast Asia.
-- Securely generate configuration for the [Web Mining](/module/toxic-swamp#config-generator) add-on module.
 - Develop your content using {{< external href="https://termux.com" text="Termux" />}} on Android in airplane mode.
 - Create an [Image Gallery](/module/hall-of-mirrors) while trekking the Mount Nimbus via ferrata.
 

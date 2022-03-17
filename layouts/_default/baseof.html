@@ -77,12 +77,5 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <header>{{ block "header" . }}{{ end }}</header>
     <main>{{ block "main" . }}{{ end }}</main>
     <footer>{{ block "footer" . }}{{ end }}</footer>
-    {{ $defaults := .Site.Params.defaults.modules }}
-    {{ $modules := .Site.Params.modules }}
-    {{ if (or $modules $defaults) }}
-      {{ with (default $defaults.toxic_swamp $modules.toxic_swamp) }}
-        {{ partial "modules/toxic-swamp/toolbar.html" dict }}
-      {{ end }}
-    {{ end }}
   </body>
 </html>

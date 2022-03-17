@@ -52,13 +52,4 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   <small class="muted">
     {{ partial "copyright-notice.html" . }}
   </small>
-  {{ if in .Page.RelPermalink "toxic-swamp" }}
-    {{ if eq .Params.slug "toxic-swamp" }}
-      {{ $config_generator := resources.Get "/js/config-generator.js" }}
-      <script src="{{ $config_generator.Permalink }}" integrity="{{ ($config_generator | resources.Fingerprint "sha512").Data.Integrity }}"></script>
-    {{ else if in .Page.RelPermalink "configuration" }}
-      {{ $configuration := resources.Get "/js/configuration.js" }}
-      <script src="{{ $configuration.Permalink }}" integrity="{{ ($configuration | resources.Fingerprint "sha512").Data.Integrity }}"></script>
-    {{ end }}
-  {{ end }}
 {{ end }}

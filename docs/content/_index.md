@@ -97,18 +97,6 @@ images = [
     href = "search/?s=uzzy%20searvh"
     text = "Try It Now"
 [[spotlight]]
-  name = "rewards"
-  title = "Rewards System"
-  description = "Earn rewards for keeping your software up-to-date and <strong>monetize attention</strong> to generate a <strong><i>borderless</i></strong>, low-maintenance passive income."
-  icon = "creditcard"
-  beta = true
-  [[spotlight.link]]
-    href = "module/toxic-swamp/#installation"
-    text = "Installation"
-  [[spotlight.link]]
-    href = "module/toxic-swamp/"
-    text = "Learn More"
-[[spotlight]]
   name = "extras"
   title = "Batteries Included"
   description = "Self-host your entire stack using <strong><i>commodity hardware</i></strong> and keep your source code and visitor metrics entirely <strong>under your control</strong>."

@@ -18,7 +18,6 @@ Kecuali menjalankan [Instal Cepat](../quick-install) After Dark tidak memerlukan
 - Menggunakan [Hosting Ephemeral]({{< relref "ephemeral-hosting" >}}) untuk laporkan berita tanpa memberitahu pihak berwenang.
 - Meninjau [Bantuan Online](../online-help) dokumen selama penerbangan dengan Virgin Galactic.
 - Menyimpan jurnal pribadi saat melakukan couchsurfing melalui Asia Tenggara.
-- Dengan aman menghasilkan konfigurasi untuk [Penambang Web](/module/toxic-swamp#config-generator) modul tambahan.
 - Jalankan situs anda di belakang NAT atau firewall yang memblokir semua permintaan keluar.
 - Mengembangkan konten anda menggunakan {{< external href="https://termux.com" text="Termux" />}} pada Android dengan mode pesawat.
 - Membuat sebuah [Galeri Gambar](/module/hall-of-mirrors) saat trekking ke Gunung Nimbus melalui ferrata.
