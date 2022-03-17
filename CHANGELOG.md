@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.1.0](https://codeberg.org/vhs/after-dark/compare/v10.0.0...v10.1.0) (2022-03-17)
+
+
+### Features
+
+* ✨ create interactive installer ([20a5457](https://codeberg.org/vhs/after-dark/commit/20a5457eb629d4c5ed5dd14913f189d09e8d855a))
+* ✨ improve script safety ([0a34aee](https://codeberg.org/vhs/after-dark/commit/0a34aeeb2d41a99f0131df6c641e3522e257f341))
+
+
+### Bug Fixes
+
+* 🐛 allow unbound variables in upgrade script ([be3eabc](https://codeberg.org/vhs/after-dark/commit/be3eabc871745cb5b3ab882ec316d817ae472dec))
+* 🐛 import fetchInject where needed ([c8d3b67](https://codeberg.org/vhs/after-dark/commit/c8d3b676be763cf4d6a5d4d588b55964f07fc483)), closes [#3](https://codeberg.org/vhs/after-dark/issues/3)
+
 ## 10.0.0 (2022-03-16)
 
 
