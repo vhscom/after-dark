@@ -26,7 +26,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   </header>
   <ul>
     {{ range $key, $value := .Data.Terms }}
-      <li><a href="{{ $key | urlize }}">{{ $key }}</a> ({{ len $value }})
+      <li><a href="{{ .Page.Permalink }}">{{ $key }}</a> ({{ len $value }})
     {{ end }}
   </ul>
 {{ end }}
