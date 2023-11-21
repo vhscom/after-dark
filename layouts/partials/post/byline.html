@@ -30,10 +30,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}
   </time>
   {{ with .Params.categories }}
-    in <span itemprop="articleSection">{{ delimit (apply (apply (sort .) "partial" "post/category-link.html" ".") "chomp" ".") ", " " and " }}</span>
+    in <span itemprop="articleSection">{{ delimit (apply (apply (sort .) "partial" "post/category-link.html" ".") "chomp" ".") ", " " and " | safeHTML }}</span>
   {{ end }}
   {{ with .Params.tags }}
-    and tagged {{ delimit (apply (apply (sort .) "partial" "post/tag-link.html" ".") "chomp" ".") ", " " and " }}
+    and tagged {{ delimit (apply (apply (sort .) "partial" "post/tag-link.html" ".") "chomp" ".") ", " " and " | safeHTML }}
   {{ end }}
   using <span itemprop="wordCount">{{ .WordCount }}</span> words.
 </p>
