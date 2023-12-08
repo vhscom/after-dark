@@ -28,9 +28,13 @@ validate_hugo() {
    fi
 
    # Exit with error if not minimum required hugo version
-   re="v(0\d*\.([5-9][1-9]|[6-9])|[1-9]).*"
-   if ! hugo version | grep -qE "$re"; then
-      echo "Error: After Dark requires Hugo version 0.51 or greater" >&2
+   vers() { echo "$@" | awk -F. '{ printf("%d%03d%03d%03d\n", $1,$2,$3,$4); }'; }
+   hv="$(hugo version)"
+   hv=$(echo "${hv#"${hv%%[0-9]*}"}")
+   hv=$(echo ${hv%"${hv##*extended}"})
+   hv=$(echo "${hv%"${hv##*[0-9]}"}")
+   if [ "$(vers "$hv")" -lt "$(vers "0.51")" ]; then
+      echo "Error: After Dark requires Hugo version 0.51 or greater"
       exit 1
    fi
 }
@@ -210,7 +214,7 @@ generate_help_docs() {
 
 echo "Welcome to the After Dark quick installer. Press CTRL-C at any time to abort."
 
-confirm_intent
+confirm_intent # FIXME: throws in alpine no tty
 validate_hugo
 prompt_site_name
 prompt_install_dir
