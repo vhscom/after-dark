@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [10.1.2](https://codeberg.org/vhs/after-dark/compare/v10.1.1...v10.1.2) (2023-12-10)
+
+
+### Bug Fixes
+
+* 🐛 remove base tag in default base layout ([8f97b12](https://codeberg.org/vhs/after-dark/commit/8f97b12cb540733798e8c09c311dcb6e41e3f1e0)), closes [#2](https://codeberg.org/vhs/after-dark/issues/2) [#4](https://codeberg.org/vhs/after-dark/issues/4)
+* 🐛 restore classic install behavior ([0d25078](https://codeberg.org/vhs/after-dark/commit/0d250789409855013914bf4c9a571a184022fac5)), closes [#7](https://codeberg.org/vhs/after-dark/issues/7)
+
 ### [10.1.1](https://codeberg.org/vhs/after-dark/compare/v10.1.0...v10.1.1) (2023-12-08)
 
 
