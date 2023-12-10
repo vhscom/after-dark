@@ -1,6 +1,7 @@
-#!/bin/sh
+#!/usr/bin/env -S sh -euo pipefail
+
 #
-# Copyright (C) 2019  VHS <vhsdev@tutanota.com>
+# Copyright (C) 2019, 2023  VHS <vhsdev@tutanota.com>
 #
 # This file is part of After Dark.
 #
@@ -18,8 +19,6 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-set -eu
-
 validate_hugo() {
    # Exit with error if hugo is not installed
    if ! hash hugo 2>/dev/null; then
@@ -29,11 +28,11 @@ validate_hugo() {
 
    # Exit with error if not minimum required hugo version
    vers() { echo "$@" | awk -F. '{ printf("%d%03d%03d%03d\n", $1,$2,$3,$4); }'; }
-   hv="$(hugo version)"
-   hv=$(echo "${hv#"${hv%%[0-9]*}"}")
-   hv=$(echo ${hv%"${hv##*extended}"})
-   hv=$(echo "${hv%"${hv##*[0-9]}"}")
-   if [ "$(vers "$hv")" -lt "$(vers "0.51")" ]; then
+   hugovers="$(hugo version)"
+   hugovers="${hugovers#"${hugovers%%[0-9]*}"}"
+   hugovers="${hugovers%"${hugovers##*extended}"}"
+   hugovers="${hugovers%"${hugovers##*[0-9]}"}"
+   if [ "$(vers "$hugovers")" -lt "$(vers "0.51")" ]; then
       echo "Error: After Dark requires Hugo version 0.51 or greater"
       exit 1
    fi
@@ -53,10 +52,14 @@ confirm_intent() {
    done
 }
 
+set_default_site_name() {
+   SITE_NAME="Flying Toasters"
+}
+
 prompt_site_name() {
    printf "Please enter a name for your site: "
    read -r response </dev/tty
-   SITE_NAME=$(echo "$response" | tr -cd '[:alnum:] [:space:]' | tr -s '[:space:]')
+   SITE_NAME="$(echo "$response" | tr -cd '[:alnum:] [:space:]' | tr -s '[:space:]')"
    while true; do
       printf "You entered %s. Is that correct? (y/n) " "\"$SITE_NAME\""
       read -r yn </dev/tty
@@ -77,8 +80,12 @@ format_dir_name() {
    echo "$1" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]._-'
 }
 
+set_default_install_dir() {
+   SITE_DIR="$(format_dir_name "$SITE_NAME")"
+}
+
 prompt_install_dir() {
-   default_dir=$(format_dir_name "$SITE_NAME")
+   default_dir="$(format_dir_name "$SITE_NAME")"
    printf "Choose an installation directory name (%s): " "$default_dir"
    read -r response </dev/tty
    if [ "$response" = "" ]; then
@@ -124,10 +131,10 @@ create_site() {
 
 download_theme() {
    echo "Downloading the latest version of After Dark ..."
-   LATEST_META=$(wget -qO - https://registry.npmjs.org/after-dark/latest)
+   LATEST_META=$(wget -qO- https://registry.npmjs.org/after-dark/latest)
    vers=$(echo "$LATEST_META" | grep -oE "\"version\".*[^,]*," | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '" ')
    mkdir -p themes/after-dark
-   wget -qO - https://registry.npmjs.org/after-dark/-/after-dark-"$vers".tgz | tar --strip-components=1 -xz -C themes/after-dark
+   wget -qO- https://registry.npmjs.org/after-dark/-/after-dark-"$vers".tgz | tar --strip-components=1 -xz -C themes/after-dark
    echo "Version $vers downloaded to $SITE_DIR/themes/after-dark"
 }
 
@@ -137,10 +144,10 @@ download_module() {
       exit 1
    }
    echo "Downloading $1 module for After Dark ..."
-   meta=$(wget -qO - https://registry.npmjs.org/"$1"/latest)
+   meta=$(wget -qO- https://registry.npmjs.org/"$1"/latest)
    vers=$(echo "$meta" | grep -oE "\"version\".*[^,]*," | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '" ')
    mkdir -p themes/"$1"
-   wget -qO - https://registry.npmjs.org/"$1"/-/"$1"-"$vers".tgz | tar --strip-components=1 -xz -C themes/"$1"
+   wget -qO- https://registry.npmjs.org/"$1"/-/"$1"-"$vers".tgz | tar --strip-components=1 -xz -C themes/"$1"
    echo "Version $vers downloaded to $SITE_DIR/themes/$1"
 }
 
@@ -203,6 +210,11 @@ create_welcome_post() {
    hugo new post/welcome.md 1>/dev/null
 }
 
+serve_site() {
+   echo "Starting site server ..."
+   hugo serve --buildDrafts --navigateToChanged --port 1313 1>/dev/null &
+}
+
 generate_help_docs() {
    echo "Generating help documentation ..."
    THEME_PATH=themes/after-dark
@@ -212,12 +224,25 @@ generate_help_docs() {
    hugo new validate.md --kind validate 1>/dev/null
 }
 
+serve_help() {
+   echo "Starting help server ..."
+   hugo serve --disableLiveReload --port 1414 1>/dev/null &
+}
+
+
 echo "Welcome to the After Dark quick installer. Press CTRL-C at any time to abort."
 
-confirm_intent # FIXME: throws in alpine no tty
+if [ -n "${AFTRDRK_INTERACTIVE_INSTALL-}" ]; then
+   confirm_intent
+fi
 validate_hugo
-prompt_site_name
-prompt_install_dir
+if [ -n "${AFTRDRK_INTERACTIVE_INSTALL-}" ]; then
+   prompt_site_name
+   prompt_install_dir
+else
+   set_default_site_name
+   set_default_install_dir
+fi
 create_site_dir
 create_site
 download_theme
@@ -225,12 +250,17 @@ update_archetypes
 download_module "fractal-forest"
 configure_theme
 create_welcome_post
+serve_site
 generate_help_docs
+serve_help
 
-YELLOW='\033[0;33m'
-NC='\033[0m'
+lime_yellow=$(tput setaf 190)
+normal=$(tput sgr0)
 
-echo "${YELLOW}Installation successful!${NC}"
+printf '%sInstallation successful!%s\n' "${lime_yellow}" "${normal}"
 echo "Site created in $SITE_DIR_ABS"
-echo "Serve your site with \"hugo serve --buildDrafts --navigateToChanged\""
+echo "Site server started at http://localhost:1313/"
+echo "To stop it run \"kill \$(ps aux | awk '/[h]ugo.*1313/ {print \$2}')\"."
+echo "Help server started at http://localhost:1414/"
+echo "To stop and restart it run \"./themes/after-dark/bin/help\"."
 echo "Thank you for choosing After Dark."
