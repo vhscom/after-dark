@@ -45,7 +45,7 @@ RUN \
 FROM node:alpine as sitebuilder
 COPY --from=hugobuilder /go/bin/hugo /usr/local/bin/hugo
 WORKDIR /tmp
-RUN wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
+RUN wget -qO- https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
 
 # Move compiled sources into micro container
 FROM busybox

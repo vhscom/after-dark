@@ -31,7 +31,7 @@ Hugo 0.51+ is the only requirement. ([Install Hugo](https://gohugo.io/getting-st
 The fastest installation method is to run the quick install script:
 
 ```sh
-wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
+wget -qO- https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
 ```
 
 Quick Install is ideal for first-time users and does not require use of git. Quick install will help you create and configure your site, install an example After Dark module, and generate a welcome post and online help documentation for offline use.

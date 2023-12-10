@@ -42,7 +42,7 @@ Berikut adalah tiga metode untuk men-download dan menjalankan:
 1. Unduh dan kirim ke `sh` secara langsung:
 
     {{< hackcss-alert >}}
-    {{< highlight shell >}}wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh{{< /highlight >}}
+    {{< highlight shell >}}wget -qO- https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh{{< /highlight >}}
     {{< /hackcss-alert >}}
 
 2. Unduh di file baru, `chmod` dan jalankan:

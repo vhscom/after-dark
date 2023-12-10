@@ -14,7 +14,7 @@ aliases = [
 +++
 
 {{< hackcss-alert type="success" >}}
-{{< highlight shell >}}wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh{{< /highlight >}}
+{{< highlight shell >}}wget -qO- https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh{{< /highlight >}}
 {{< /hackcss-alert >}}
 
 Run the above command in a terminal emulator after {{< external href="https://gohugo.io/getting-started/installing" text="installing Hugo" />}} to start a new website in 5-10 seconds. Hugo version `0.51` or greater required.
@@ -49,7 +49,7 @@ Here are three methods for downloading and running:
 1. Download and pipe to `sh` directly:
 
     {{< hackcss-alert >}}
-    {{< highlight shell >}}wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh{{< /highlight >}}
+    {{< highlight shell >}}wget -qO- https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh{{< /highlight >}}
     {{< /hackcss-alert >}}
 
 2. Download into new file, `chmod` and execute:
