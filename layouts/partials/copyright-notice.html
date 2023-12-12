@@ -22,7 +22,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {{ range . }}
       Copyright &copy; {{ .date }} {{ .owner }}.
       {{ with (index $.Site.Data.licenses .license) }}
-        Licensed under {{ partial "components/external.html" (dict "href" .link "body" .shorthand "rel" "external noopener license") }}.
+        Licensed under {{ partial "components/external.html" (dict "href" .link "body" .shorthand "rel" "external license") }}.
       {{ else }}
         Copyright &copy; {{ .date }} {{ .owner }}.
       {{ end }}

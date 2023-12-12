@@ -16,7 +16,7 @@ images = [
 [[spotlight]]
   name = "speed"
   title = "Incredibly Fast"
-  description = "With <a target=\"_blank\" rel=\"external nofollow noopener\" href=\"https://forestry.io/blog/hugo-vs-jekyll-benchmark/\">0.615s average</a> builds and <strong><i>decisecond</i> page loads</strong> you could conceivably develop and serve your content from an <a target=\"_blank\" rel=\"external nofollow noopener\" href=\"https://amzn.to/2Wx7xJk\">ODROID</a> in space."
+  description = "With <a target=\"_blank\" rel=\"external nofollow\" href=\"https://forestry.io/blog/hugo-vs-jekyll-benchmark/\">0.615s average</a> builds and <strong><i>decisecond</i> page loads</strong> you could conceivably develop and serve your content from an <a target=\"_blank\" rel=\"external nofollow\" href=\"https://amzn.to/2Wx7xJk\">ODROID</a> in space."
   icon = "lightning"
   [[spotlight.link]]
     href = "feature/fetch-injection/"
@@ -28,7 +28,7 @@ images = [
     href = "https://tools.pingdom.com/#5a399f9666400000"
     text = "Benchmark"
     target = "_blank"
-    rel = "external nofollow noopener"
+    rel = "external nofollow"
 [[spotlight]]
   name = "privacy"
   title = "Privacy Aware"

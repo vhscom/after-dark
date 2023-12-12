@@ -51,10 +51,10 @@ With a trusted URL:
 With external link styling removed:
 
 ```html
-{{</* external rel="noopener" href="https://blog.domain.example" /*/>}}
+{{</* external rel="author" href="https://blog.domain.example" /*/>}}
 ```
 
-{{< external rel="noopener" href="https://blog.domain.example" />}}
+{{< external rel="author" href="https://blog.domain.example" />}}
 
 With internal link opening in a new window:
 

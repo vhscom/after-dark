@@ -19,7 +19,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <figure{{ with .class }} class="{{ . }}"{{ end }}>
   {{ if .link }}
-    <a href="{{ .link }}"{{ if .linktarget }} target="{{ .linktarget }}"{{ end }}{{ if eq .linktarget "_blank" }} rel="external noopener noreferrer"{{ end }} itemprop="url">
+    <a href="{{ .link }}"{{ if .linktarget }} target="{{ .linktarget }}"{{ end }}{{ if eq .linktarget "_blank" }} rel="external noreferrer"{{ end }} itemprop="url">
       {{- if .lqipsrc -}}
         <img class="lazyload blur-up" src="{{ .lqipsrc }}" data-src="{{ .src }}" {{ if or .alt .caption }}alt="{{ with .alt }}{{ . }}{{ else }}{{ .caption }}{{ end }}"{{ end }} itemprop="image">
       {{- else -}}

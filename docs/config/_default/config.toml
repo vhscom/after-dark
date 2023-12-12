@@ -20,7 +20,7 @@
 baseurl = "https://localhost:1414/" # Controls base URL sitewide
 title = "After Dark" # Homepage title and page title suffix
 paginate = 40 # Number of items to show before paginating
-copyright = "Copyright &copy; VHS. Licensed under <a target=\"_blank\" rel=\"external noopener license\" href=\"https://www.gnu.org/licenses/agpl.html\">AGPL-3.0-or-later</a>."
+copyright = "Copyright &copy; VHS. Licensed under <a target=\"_blank\" rel=\"external license\" href=\"https://www.gnu.org/licenses/agpl.html\">AGPL-3.0-or-later</a>."
 
 # Controls default theme and theme components
 theme = [
