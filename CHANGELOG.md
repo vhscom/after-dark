@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [10.1.6](https://codeberg.org/vhs/after-dark/compare/v10.1.5...v10.1.6) (2023-12-13)
+
+
+### Bug Fixes
+
+* **bin:** 🐛 setops strongly and shell check ([fa6d525](https://codeberg.org/vhs/after-dark/commit/fa6d5253fd454c167d68da7eae3bf1d77213d685))
+
 ### [10.1.5](https://codeberg.org/vhs/after-dark/compare/v10.1.4...v10.1.5) (2023-12-13)
 
 
