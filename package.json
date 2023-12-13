@@ -39,13 +39,13 @@
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "fetch-inject": "^3.2.0",
-    "fuse.js": "^6.4.5",
+    "fuse.js": "^7.0.0",
     "hack": "^0.8.1",
     "lazysizes": "^5.3.0",
     "lodash-cli": "^4.17.5",
     "mark.js": "^8.11.1",
     "standard-version": "^9.5.0",
-    "vue": "^2.6.12"
+    "vue": "^2.7.15"
   },
   "config": {
     "commitizen": {
