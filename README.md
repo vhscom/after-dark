@@ -54,7 +54,7 @@ After Dark releases are tagged in git and [packaged on NPM](https://www.npmjs.co
 Run the online help server after installing for detailed instructions:
 
 ```
-sh ./themes/after-dark/bin/help
+./themes/after-dark/bin/help
 ```
 
 See the [Hugo docs](https://gohugo.io/documentation/) as well. There's also a [Hugo community forum](https://discourse.gohugo.io/) in case you get stuck.

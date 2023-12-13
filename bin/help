@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/usr/bin/env -S sh -euo pipefail
 
 #
-# Copyright (C) 2019  VHS <vhsdev@tutanota.com>
+# Copyright (C) 2019, 2023  VHS <vhsdev@tutanota.com>
 #
 # This file is part of After Dark.
 #
@@ -19,13 +19,11 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-set -eu
-
 THEME_PATH=themes/after-dark
 
 echo "Starting help server ..."
-kill $(ps aux | awk '/[h]ugo.*1414/ {print $2}') 2>/dev/null
+kill "$(ps aux | awk '/[h]ugo.*1414/ {print $2}')" 2>/dev/null || true
 cd "$THEME_PATH"/docs && hugo serve --disableLiveReload --port 1414 1>/dev/null &
 echo "Help server started at http://localhost:1414/"
-echo "To stop it run \"kill \$(ps aux | awk '/[h]ugo.*1414/ {print \$2}')\"."
+echo "To stop it run command \"kill \$(ps aux | awk '/[h]ugo.*1414/ {print \$2}')\"."
 echo "To start it again run \"./themes/after-dark/bin/help\"."
