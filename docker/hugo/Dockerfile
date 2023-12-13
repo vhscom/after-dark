@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019  VHS <vhsdev@tutanota.com>
+# Copyright (C) 2019, 2023  VHS <vhsdev@tutanota.com>
 #
 # This file is part of After Dark.
 #
@@ -17,17 +17,18 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-# DOCKER-VERSION 19.03.5, build 633a0ea
+# DOCKER-VERSION 19.03.5, build 633a0ea (2019)
+# DOCKER-VERSION 24.0.7, build afdd53b (2023)
 
 # Specify build image
-ARG GO_VERSION=1.13.4
-ARG BUILD_TARGET=alpine3.10
+ARG GO_VERSION=1.21.5
+ARG BUILD_TARGET=alpine3.19
 
 # Pull builder base image
 FROM golang:${GO_VERSION}-${BUILD_TARGET} AS hugobuilder
 
 # Set environment variables
-ENV HUGO_VERSION=0.61.0 \
+ENV HUGO_VERSION=0.119.0 \
     CGO_ENABLED=1 \
     GOOS=linux \
     GO111MODULE=on \
@@ -36,9 +37,8 @@ ENV HUGO_VERSION=0.61.0 \
 # Build from source using specified version
 RUN \
   apk add --update --no-cache git gcc g++ && \
-  git clone https://github.com/gohugoio/hugo.git $GOPATH/src/github.com/gohugoio/hugo && \
+  git clone --depth 1 --branch v${HUGO_VERSION} https://github.com/gohugoio/hugo.git $GOPATH/src/github.com/gohugoio/hugo && \
   cd ${GOPATH:-$HOME/go}/src/github.com/gohugoio/hugo && \
-  git checkout v$HUGO_VERSION && \
   go install -ldflags '-s -w -extldflags "-static"' -tags ${BUILD_TAGS}
 
 # Move compiled binary into own container
