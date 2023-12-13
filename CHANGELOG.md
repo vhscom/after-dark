@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [10.1.5](https://codeberg.org/vhs/after-dark/compare/v10.1.4...v10.1.5) (2023-12-13)
+
+
+### Bug Fixes
+
+* 🐛 all is well that ends well ([ae2050c](https://codeberg.org/vhs/after-dark/commit/ae2050c5d2c747b2dca22dd38072cb4a7fbeb16f))
+
 ### [10.1.4](https://codeberg.org/vhs/after-dark/compare/v10.1.3...v10.1.4) (2023-12-12)
 
 ### [10.1.3](https://codeberg.org/vhs/after-dark/compare/v10.1.2...v10.1.3) (2023-12-10)
