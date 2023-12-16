@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.2.0](https://codeberg.org/vhs/after-dark/compare/v10.1.6...v10.2.0) (2023-12-16)
+
+
+### Features
+
+* **build:** ✨ 📦️ add makefile using podman ([4f0697b](https://codeberg.org/vhs/after-dark/commit/4f0697bb81448b6a4afdab739473e01c00589a68))
+* **security:** ✨ 🔒️ add trivy alpine srcbuild ([2fd0b31](https://codeberg.org/vhs/after-dark/commit/2fd0b31055f1ac1409157ad48b18402a80195f58))
+
+
+### Bug Fixes
+
+* **layouts:** 🐛 fix htmltest error on 404 page ([c1260be](https://codeberg.org/vhs/after-dark/commit/c1260beaaa3f4e8f81d761f453068e78fdc553c8))
+
 ### [10.1.6](https://codeberg.org/vhs/after-dark/compare/v10.1.5...v10.1.6) (2023-12-13)
 
 
