@@ -27,8 +27,8 @@ ARG BUILD_TARGET=alpine3.19
 FROM golang:${GO_VERSION}-${BUILD_TARGET} AS trivybuilder
 
 # Set trivy environment variables
-ENV TRIVY_VERSION=0.48.0 \
-    CGO_ENABLED=0 \
+ARG TRIVY_VERSION=0.48.0
+ENV CGO_ENABLED=0 \
     GOOS=linux \
     GO111MODULE=on
 

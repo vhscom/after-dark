@@ -24,10 +24,10 @@ ARG GO_VERSION=1.21.5
 ARG BUILD_TARGET=alpine3.19
 
 # Pull builder base image
-FROM golang:${GO_VERSION}-${BUILD_TARGET} AS htmltestbuilder
+FROM golang:${GO_VERSION}-${BUILD_TARGET} AS docklebuilder
 
 # Set build variables
-ARG HTMLTEST_VERSION=0.17.0
+ARG DOCKLE_VERSION=0.4.13
 ENV CGO_ENABLED=0 \
     GOOS=linux \
     GO111MODULE=on
@@ -36,15 +36,13 @@ ENV CGO_ENABLED=0 \
 RUN \
   apk add --update --no-cache git musl-dev && \
   git -c advice.detachedHead=false clone --depth 1 \
-      --branch v${HTMLTEST_VERSION} https://github.com/wjdp/htmltest.git \
-          $GOPATH/src/github.com/wjdp/htmltest && \
-  cd ${GOPATH:-$HOME/go}/src/github.com/wjdp/htmltest && \
-  go mod download && \
-  go install -installsuffix 'static' \
-      -ldflags "-X main.date=`date -u +%Y-%m-%dT%H:%M:%SZ` -X main.version=`git describe --tags`"
+      --branch v${DOCKLE_VERSION} https://github.com/goodwithtech/dockle.git \
+          $GOPATH/src/github.com/goodwithtech/dockle && \
+  cd ${GOPATH:-$HOME/go}/src/github.com/goodwithtech/dockle && \
+  go install ./cmd/dockle
 
 # Move compiled binary into own container
 FROM scratch
-COPY --from=htmltestbuilder /go/bin/htmltest /htmltest
-ENTRYPOINT ["/htmltest"]
+COPY --from=docklebuilder /go/bin/dockle /dockle
+ENTRYPOINT ["/dockle"]
 CMD ["--help"]

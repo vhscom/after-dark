@@ -3,10 +3,11 @@ BUILD_TARGET := alpine3.19
 HUGO_VERS := 0.119.0
 HTMLTEST_VERS := 0.17.0
 TRIVY_VERS := 0.48.0
+DOCKLE_VERS := 0.4.13
 
 bindir := ${HOME}/.local/bin
 
-all: check hugo trivy htmltest
+all: check hugo trivy htmltest dockle
 
 check:
 	hash podman
@@ -39,4 +40,13 @@ hugo: configure
 	@echo
 	@echo Installed
 	@echo "  ${bindir}/hugo"
+	@echo
+
+dockle: configure
+	podman build -t dockle/v${DOCKLE_VERS} ./docker/dockle/
+	podman create --replace --name temp dockle/v${DOCKLE_VERS}:latest
+	podman cp temp:/dockle ${bindir}/dockle && podman rm -fv temp
+	@echo
+	@echo Installed
+	@echo "  ${bindir}/dockle"
 	@echo
