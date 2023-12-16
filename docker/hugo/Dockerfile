@@ -17,8 +17,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-# DOCKER-VERSION 19.03.5, build 633a0ea (2019)
-# DOCKER-VERSION 24.0.7, build afdd53b (2023)
+# DOCKER-VERSION 24.0.7, build afdd53b (podman version 4.8.1)
 
 # Specify build image
 ARG GO_VERSION=1.21.5
@@ -36,8 +35,10 @@ ENV HUGO_VERSION=0.119.0 \
 
 # Build from source using specified version
 RUN \
-  apk add --update --no-cache git gcc g++ && \
-  git clone --depth 1 --branch v${HUGO_VERSION} https://github.com/gohugoio/hugo.git $GOPATH/src/github.com/gohugoio/hugo && \
+  apk add --update --no-cache git gcc g++ musl-dev && \
+  git -c advice.detachedHead=false clone --depth 1 \
+      --branch v${HUGO_VERSION} https://github.com/gohugoio/hugo.git \
+          $GOPATH/src/github.com/gohugoio/hugo && \
   cd ${GOPATH:-$HOME/go}/src/github.com/gohugoio/hugo && \
   go install -ldflags '-s -w -extldflags "-static"' -tags ${BUILD_TAGS}
 

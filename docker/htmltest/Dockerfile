@@ -17,8 +17,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-# DOCKER-VERSION 19.03.1-ce, build 74b1e89e8a (2019)
-# DOCKER-VERSION 24.0.7, build afdd53b (2023)
+# DOCKER-VERSION 24.0.7, build afdd53b (podman version 4.8.1)
 
 # Specify build image
 ARG GO_VERSION=1.21.5
@@ -35,12 +34,14 @@ ENV CGO_ENABLED=0 \
 
 # Build from source using specified version
 RUN \
-  apk add --update --no-cache ca-certificates git musl-dev && \
-  git clone https://github.com/wjdp/htmltest.git $GOPATH/src/github.com/wjdp/htmltest && \
+  apk add --update --no-cache git musl-dev && \
+  git -c advice.detachedHead=false clone --depth 1 \
+      --branch v${HTMLTEST_VERSION} https://github.com/wjdp/htmltest.git \
+          $GOPATH/src/github.com/wjdp/htmltest && \
   cd ${GOPATH:-$HOME/go}/src/github.com/wjdp/htmltest && \
-  git checkout v$HTMLTEST_VERSION && \
   go mod download && \
-  go install -installsuffix 'static' -ldflags "-X main.date=`date -u +%Y-%m-%dT%H:%M:%SZ` -X main.version=`git describe --tags`"
+  go install -installsuffix 'static' \
+      -ldflags "-X main.date=`date -u +%Y-%m-%dT%H:%M:%SZ` -X main.version=`git describe --tags`"
 
 # Move compiled binary into own container
 FROM scratch

@@ -34,7 +34,7 @@ ENV TRIVY_VERSION=0.48.0 \
 
 # Build trivy from source using specified version
 RUN \
-  apk add --update --no-cache git gcc g++ binutils-gold && \
+  apk add --update --no-cache git gcc g++ musl-dev binutils-gold && \
   git -c advice.detachedHead=false clone --depth 1 \
       --branch v${TRIVY_VERSION} https://github.com/aquasecurity/trivy.git \
           $GOPATH/src/github.com/aquasecurity/trivy && \
