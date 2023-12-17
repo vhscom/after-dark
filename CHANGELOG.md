@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.3.0](https://codeberg.org/vhs/after-dark/compare/v10.2.0...v10.3.0) (2023-12-17)
+
+
+### Features
+
+* ✨ add full support for hugo@0.112 to latest ([0704d37](https://codeberg.org/vhs/after-dark/commit/0704d373c736cc868953f1478941e1b761b05aa3))
+
 ## [10.2.0](https://codeberg.org/vhs/after-dark/compare/v10.1.6...v10.2.0) (2023-12-16)
 
 
