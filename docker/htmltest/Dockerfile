@@ -19,16 +19,16 @@
 
 # DOCKER-VERSION 24.0.7, build afdd53b (podman version 4.8.1)
 
-# Specify build image
+# Specify builder base image
 ARG GO_VERSION=1.21.5
 ARG BUILD_TARGET=alpine3.19
 
 # Pull builder base image
 FROM golang:${GO_VERSION}-${BUILD_TARGET} AS htmltestbuilder
 
-# Set build variables
-ARG HTMLTEST_VERSION=0.17.0
-ENV CGO_ENABLED=0 \
+# Set environment variables
+ENV HTMLTEST_VERSION=0.17.0 \
+    CGO_ENABLED=0 \
     GOOS=linux \
     GO111MODULE=on
 
@@ -43,7 +43,7 @@ RUN \
   go install -installsuffix 'static' \
       -ldflags "-X main.date=`date -u +%Y-%m-%dT%H:%M:%SZ` -X main.version=`git describe --tags`"
 
-# Move compiled binary into own container
+# Move compiled binary into scratch container
 FROM scratch
 COPY --from=htmltestbuilder /go/bin/htmltest /htmltest
 ENTRYPOINT ["/htmltest"]

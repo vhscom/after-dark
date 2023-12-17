@@ -19,16 +19,16 @@
 
 # DOCKER-VERSION 24.0.7, build afdd53b (podman version 4.8.1)
 
-# Specify build image
+# Specify builder base image
 ARG GO_VERSION=1.21.5
 ARG BUILD_TARGET=alpine3.19
 
 # Pull builder base image
 FROM golang:${GO_VERSION}-${BUILD_TARGET} AS docklebuilder
 
-# Set build variables
-ARG DOCKLE_VERSION=0.4.13
-ENV CGO_ENABLED=0 \
+# Set environment variables
+ENV DOCKLE_VERSION=0.4.13 \
+    CGO_ENABLED=0 \
     GOOS=linux \
     GO111MODULE=on
 
@@ -41,7 +41,7 @@ RUN \
   cd ${GOPATH:-$HOME/go}/src/github.com/goodwithtech/dockle && \
   go install ./cmd/dockle
 
-# Move compiled binary into own container
+# Move compiled binary into scratch container
 FROM scratch
 COPY --from=docklebuilder /go/bin/dockle /dockle
 ENTRYPOINT ["/dockle"]

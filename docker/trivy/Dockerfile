@@ -19,20 +19,20 @@
 
 # DOCKER-VERSION 24.0.7, build afdd53b (podman version 4.8.1)
 
-# Specify build image
+# Specify builder base image
 ARG GO_VERSION=1.21.5
 ARG BUILD_TARGET=alpine3.19
 
 # Pull builder base image
 FROM golang:${GO_VERSION}-${BUILD_TARGET} AS trivybuilder
 
-# Set trivy environment variables
-ARG TRIVY_VERSION=0.48.0
-ENV CGO_ENABLED=0 \
+# Set environment variables
+ENV TRIVY_VERSION=0.48.0 \
+    CGO_ENABLED=0 \
     GOOS=linux \
     GO111MODULE=on
 
-# Build trivy from source using specified version
+# Build from source using specified version
 RUN \
   apk add --update --no-cache git gcc g++ musl-dev binutils-gold && \
   git -c advice.detachedHead=false clone --depth 1 \
@@ -41,7 +41,7 @@ RUN \
   cd ${GOPATH:-$HOME/go}/src/github.com/aquasecurity/trivy && \
   go install ./cmd/trivy/
 
-# Move compiled binary into own container
+# Move compiled binary into scratch container
 FROM scratch
 COPY --from=trivybuilder /go/bin/trivy /trivy
 ENTRYPOINT ["/trivy"]

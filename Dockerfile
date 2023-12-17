@@ -19,21 +19,21 @@
 
 # DOCKER-VERSION 24.0.7, build afdd53b (podman version 4.8.1)
 
-# Specify build image
+# Specify builder base image
 ARG GO_VERSION=1.21.5
 ARG BUILD_TARGET=alpine3.19
 
 # Pull builder base image
 FROM golang:${GO_VERSION}-${BUILD_TARGET} AS hugobuilder
 
-# Set hugo environment variables
-ARG HUGO_VERSION=0.111.3
-ENV CGO_ENABLED=1 \
+# Set environment variables
+ENV HUGO_VERSION=0.111.3 \
+    CGO_ENABLED=1 \
     GOOS=linux \
     GO111MODULE=on \
     BUILD_TAGS="extended"
 
-# Build hugo from source using specified version
+# Build from source using specified version
 RUN \
   apk add --update --no-cache git gcc g++ musl-dev && \
   git -c advice.detachedHead=false clone --depth 1 \
@@ -48,11 +48,10 @@ COPY --from=hugobuilder /go/bin/hugo /usr/local/bin/hugo
 WORKDIR /tmp
 RUN wget -qO- https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh
 
-# Move compiled sources into micro container
+# Move compiled binary into scratch container
 FROM busybox
 EXPOSE 80
 COPY --from=hugobuilder /go/bin/hugo /usr/local/bin/hugo
 COPY --from=sitebuilder /tmp/flying-toasters/ /opt/after-dark/
 ENTRYPOINT ["/usr/local/bin/hugo"]
-CMD ["server","trust","--source","/opt/after-dark"]
 CMD ["server","--buildDrafts","--bind","0.0.0.0","--port","80","--source","/opt/after-dark","--destination","/var/www"]

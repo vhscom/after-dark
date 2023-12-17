@@ -19,7 +19,7 @@
 
 # DOCKER-VERSION 24.0.7, build afdd53b (podman version 4.8.1)
 
-# Specify build image
+# Specify builder base image
 ARG GO_VERSION=1.21.5
 ARG BUILD_TARGET=alpine3.19
 
@@ -27,8 +27,8 @@ ARG BUILD_TARGET=alpine3.19
 FROM golang:${GO_VERSION}-${BUILD_TARGET} AS hugobuilder
 
 # Set environment variables
-ARG HUGO_VERSION=0.119.0
-ENV CGO_ENABLED=1 \
+ENV HUGO_VERSION=0.111.3 \
+    CGO_ENABLED=1 \
     GOOS=linux \
     GO111MODULE=on \
     BUILD_TAGS="extended"
@@ -42,7 +42,7 @@ RUN \
   cd ${GOPATH:-$HOME/go}/src/github.com/gohugoio/hugo && \
   go install -ldflags '-s -w -extldflags "-static"' -tags ${BUILD_TAGS}
 
-# Move compiled binary into own container
+# Move compiled binary into scratch container
 FROM scratch
 COPY --from=hugobuilder /go/bin/hugo /hugo
 ENTRYPOINT ["/hugo"]
