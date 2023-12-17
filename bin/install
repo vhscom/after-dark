@@ -19,6 +19,13 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
+vers() { echo "$@" | awk -F. '{ printf("%d%03d%03d%03d\n", $1,$2,$3,$4); }'; }
+parse_hugo_vers() {
+   hugovers=$(hugo version | sed 's/-.*//')
+   hugovers="${hugovers#"${hugovers%%[0-9]*}"}"
+   HUGO_VERSION=${hugovers}
+}
+
 validate_hugo() {
    # Exit with error if hugo is not installed
    if ! hash hugo 2>/dev/null; then
@@ -27,12 +34,8 @@ validate_hugo() {
    fi
 
    # Exit with error if not minimum required hugo version
-   vers() { echo "$@" | awk -F. '{ printf("%d%03d%03d%03d\n", $1,$2,$3,$4); }'; }
-   hugovers="$(hugo version)"
-   hugovers="${hugovers#"${hugovers%%[0-9]*}"}"
-   hugovers="${hugovers%"${hugovers##*extended}"}"
-   hugovers="${hugovers%"${hugovers##*[0-9]}"}"
-   if [ "$(vers "$hugovers")" -lt "$(vers "0.51")" ]; then
+   parse_hugo_vers
+   if [ "$(vers "$HUGO_VERSION")" -lt "$(vers "0.51")" ]; then
       echo "Error: After Dark requires Hugo version 0.51 or greater"
       exit 1
    fi
@@ -153,7 +156,10 @@ download_module() {
 
 configure_theme() {
    echo "Configuring basic After Dark theme settings ..."
-   tee "config.toml" >/dev/null <<TOML
+   configfile=config.toml
+   parse_hugo_vers
+   [ "$(vers "$HUGO_VERSION")" -ge "$(vers "0.112")" ] && configfile=hugo.toml
+   tee "${configfile}" >/dev/null <<TOML
 baseurl = "https://domain.example" # Controls base URL sitewide
 languageCode = "en-US" # Controls site language
 title = "$SITE_NAME" # Homepage title and page title suffix
@@ -228,7 +234,6 @@ serve_help() {
    echo "Starting help server ..."
    hugo serve --disableLiveReload --port 1414 1>/dev/null &
 }
-
 
 echo "Welcome to the After Dark quick installer. Press CTRL-C at any time to abort."
 
